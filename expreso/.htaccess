@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^expreso.8manos.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www.expreso.8manos.com$
+RewriteRule ^/?$ "http\:\/\/expresocolombia\.com\.co" [R=301,L]
+
