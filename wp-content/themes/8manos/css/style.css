@@ -219,11 +219,22 @@ body {
 	color: #333333;
 }
 
+h1 , h2 , h3 , h4 , h5 , h6 {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight:normal;
+}
+
 a ,
 a:link ,
 a:visited {
 	color:#660033;
 	text-decoration:none;
+}
+
+.sombreado {
+	-webkit-box-shadow: 1px 1px 1px 1px #ccc;
+	-moz-box-shadow: 1px 1px 1px 1px #ccc;
+	box-shadow: 1px 1px 1px 1px #ccc;
 }
 
 header {
@@ -277,9 +288,43 @@ header {
 	max-width:960px;
 	margin:0 auto;
 	text-align:left;
-	padding:0 1em;
+	padding:1em;
 }
 
+.post-type-archive-portafolio #contenidos {
+	text-align:center;
+}
+
+.post-type-archive-portafolio article {
+	display:inline-block;
+	width:180px;
+	height:165px;
+	margin:0 0.88em 1.4em;
+	-webkit-box-shadow: 1px 1px 1px 1px #ccc;
+	-moz-box-shadow: 1px 1px 1px 1px #ccc;
+	box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+	.post-type-archive-portafolio article:hover {
+		-webkit-box-shadow: 1px 1px 1px 1px #bbb;
+		-moz-box-shadow: 1px 1px 1px 1px #bbb;
+		box-shadow: 1px 1px 1px 1px #bbb;
+	}
+
+	.post-type-archive-portafolio article:hover a {
+		color:#660033
+	}
+
+	.post-type-archive-portafolio article h2 {
+		text-align:center;
+		margin:0 0;
+		line-height:30px;
+		font-size:0.95em;
+	}
+
+	.post-type-archive-portafolio article h2 a {
+		color:#808080;
+	}
 
 footer {
 	padding:1em 0;

@@ -9,12 +9,7 @@ function wpcf7_messages() {
 
 		'mail_sent_ng' => array(
 			'description' => __( "Sender's message was failed to send", 'wpcf7' ),
-			'default' => __( 'Failed to send your message. Please try later or contact administrator by other way.', 'wpcf7' )
-		),
-
-		'akismet_says_spam' => array(
-			'description' => __( "Akismet judged the sending activity as spamming", 'wpcf7' ),
-			'default' => __( 'Failed to send your message. Please try later or contact administrator by other way.', 'wpcf7' )
+			'default' => __( 'Failed to send your message. Please try later or contact the administrator by another method.', 'wpcf7' )
 		),
 
 		'validation_error' => array(
@@ -39,6 +34,21 @@ function wpcf7_messages() {
 	);
 
 	return apply_filters( 'wpcf7_messages', $messages );
+}
+
+function wpcf7_get_default_template( $prop = 'form' ) {
+	if ( 'form' == $prop )
+		$template = wpcf7_default_form_template();
+	elseif ( 'mail' == $prop )
+		$template = wpcf7_default_mail_template();
+	elseif ( 'mail_2' == $prop )
+		$template = wpcf7_default_mail_2_template();
+	elseif ( 'messages' == $prop )
+		$template = wpcf7_default_messages_template();
+	else
+		$template = null;
+
+	return apply_filters( 'wpcf7_default_template', $template, $prop );
 }
 
 function wpcf7_default_form_template() {
@@ -95,27 +105,13 @@ function wpcf7_default_messages_template() {
 	return $messages;
 }
 
-function wpcf7_is_multisite() { // will be removed when WordPress 2.9 is not supported
-	if ( function_exists( 'is_multisite' ) )
-		return is_multisite();
-
-	return false;
-}
-
-function wpcf7_is_main_site() { // will be removed when WordPress 2.9 is not supported
-	if ( function_exists( 'is_main_site' ) )
-		return is_main_site();
-
-	return false;
-}
-
 function wpcf7_upload_dir( $type = false ) {
 	global $switched;
 
 	$siteurl = get_option( 'siteurl' );
 	$upload_path = trim( get_option( 'upload_path' ) );
 
-	$main_override = wpcf7_is_multisite() && defined( 'MULTISITE' ) && wpcf7_is_main_site();
+	$main_override = is_multisite() && defined( 'MULTISITE' ) && is_main_site();
 
 	if ( empty( $upload_path ) ) {
 		$dir = WP_CONTENT_DIR . '/uploads';
@@ -145,7 +141,7 @@ function wpcf7_upload_dir( $type = false ) {
 		$url = trailingslashit( $siteurl ) . UPLOADS;
 	}
 
-	if ( wpcf7_is_multisite() && ! $main_override
+	if ( is_multisite() && ! $main_override
 	&& ( ! isset( $switched ) || $switched === false ) ) {
 
 		if ( defined( 'BLOGUPLOADDIR' ) )
@@ -169,6 +165,7 @@ function wpcf7_l10n() {
 		'af' => __( 'Afrikaans', 'wpcf7' ),
 		'sq' => __( 'Albanian', 'wpcf7' ),
 		'ar' => __( 'Arabic', 'wpcf7' ),
+		'hy_AM' => __( 'Armenian', 'wpcf7' ),
 		'bn_BD' => __( 'Bangla', 'wpcf7' ),
 		'bs' => __( 'Bosnian', 'wpcf7' ),
 		'pt_BR' => __( 'Brazilian Portuguese', 'wpcf7' ),
@@ -197,6 +194,8 @@ function wpcf7_l10n() {
 		'ko_KR' => __( 'Korean', 'wpcf7' ),
 		'lv' => __( 'Latvian', 'wpcf7' ),
 		'lt_LT' => __( 'Lithuanian', 'wpcf7' ),
+		'mk_MK' => __( 'Macedonian', 'wpcf7' ),
+		'ms_MY' => __( 'Malay', 'wpcf7' ),
 		'ml_IN' => __( 'Malayalam', 'wpcf7' ),
 		'nb_NO' => __( 'Norwegian', 'wpcf7' ),
 		'fa_IR' => __( 'Persian', 'wpcf7' ),
@@ -205,10 +204,12 @@ function wpcf7_l10n() {
 		'ru_RU' => __( 'Russian', 'wpcf7' ),
 		'ro_RO' => __( 'Romanian', 'wpcf7' ),
 		'sr_RS' => __( 'Serbian', 'wpcf7' ),
+		'si_LK' => __( 'Sinhala', 'wpcf7' ),
 		'sk' => __( 'Slovak', 'wpcf7' ),
 		'sl_SI' => __( 'Slovene', 'wpcf7' ),
 		'es_ES' => __( 'Spanish', 'wpcf7' ),
 		'sv_SE' => __( 'Swedish', 'wpcf7' ),
+		'ta' => __( 'Tamil', 'wpcf7' ),
 		'th' => __( 'Thai', 'wpcf7' ),
 		'tr_TR' => __( 'Turkish', 'wpcf7' ),
 		'uk' => __( 'Ukrainian', 'wpcf7' ),

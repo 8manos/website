@@ -4,12 +4,14 @@ function wpcf7_admin_has_edit_cap() {
 	return current_user_can( WPCF7_ADMIN_READ_WRITE_CAPABILITY );
 }
 
-add_action( 'admin_menu', 'wpcf7_admin_add_pages', 9 );
+add_action( 'admin_init', 'wpcf7_admin_init' );
 
-function wpcf7_admin_add_pages() {
+function wpcf7_admin_init() {
+	if ( ! wpcf7_admin_has_edit_cap() )
+		return;
 
-	if ( isset( $_POST['wpcf7-save'] ) && wpcf7_admin_has_edit_cap() ) {
-		$id = $_POST['wpcf7-id'];
+	if ( isset( $_POST['wpcf7-save'] ) ) {
+		$id = $_POST['post_ID'];
 		check_admin_referer( 'wpcf7-save_' . $id );
 
 		if ( ! $contact_form = wpcf7_contact_form( $id ) ) {
@@ -17,7 +19,7 @@ function wpcf7_admin_add_pages() {
 			$contact_form->initial = true;
 		}
 
-		$title = trim( $_POST['wpcf7-title'] );
+		$contact_form->title = trim( $_POST['wpcf7-title'] );
 
 		$form = trim( $_POST['wpcf7-form'] );
 
@@ -45,7 +47,8 @@ function wpcf7_admin_add_pages() {
 				isset( $_POST['wpcf7-mail-2-use-html'] ) && 1 == $_POST['wpcf7-mail-2-use-html']
 		);
 
-		$messages = $contact_form->messages;
+		$messages = isset( $contact_form->messages ) ? $contact_form->messages : array();
+
 		foreach ( wpcf7_messages() as $key => $arr ) {
 			$field_name = 'wpcf7-message-' . strtr( $key, '_', '-' );
 			if ( isset( $_POST[$field_name] ) )
@@ -54,15 +57,14 @@ function wpcf7_admin_add_pages() {
 
 		$additional_settings = trim( $_POST['wpcf7-additional-settings'] );
 
+		$props = apply_filters( 'wpcf7_contact_form_admin_posted_properties',
+			compact( 'form', 'mail', 'mail_2', 'messages', 'additional_settings' ) );
+
+		foreach ( (array) $props as $key => $prop )
+			$contact_form->{$key} = $prop;
+
 		$query = array();
 		$query['message'] = ( $contact_form->initial ) ? 'created' : 'saved';
-
-		$contact_form->title = $title;
-		$contact_form->form = $form;
-		$contact_form->mail = $mail;
-		$contact_form->mail_2 = $mail_2;
-		$contact_form->messages = $messages;
-		$contact_form->additional_settings = $additional_settings;
 
 		$contact_form->save();
 
@@ -70,8 +72,10 @@ function wpcf7_admin_add_pages() {
 		$redirect_to = wpcf7_admin_url( $query );
 		wp_redirect( $redirect_to );
 		exit();
-	} elseif ( isset( $_POST['wpcf7-copy'] ) && wpcf7_admin_has_edit_cap() ) {
-		$id = $_POST['wpcf7-id'];
+	}
+
+	if ( isset( $_POST['wpcf7-copy'] ) ) {
+		$id = $_POST['post_ID'];
 		check_admin_referer( 'wpcf7-copy_' . $id );
 
 		$query = array();
@@ -89,8 +93,10 @@ function wpcf7_admin_add_pages() {
 		$redirect_to = wpcf7_admin_url( $query );
 		wp_redirect( $redirect_to );
 		exit();
-	} elseif ( isset( $_POST['wpcf7-delete'] ) && wpcf7_admin_has_edit_cap() ) {
-		$id = $_POST['wpcf7-id'];
+	}
+
+	if ( isset( $_POST['wpcf7-delete'] ) ) {
+		$id = $_POST['post_ID'];
 		check_admin_referer( 'wpcf7-delete_' . $id );
 
 		if ( $contact_form = wpcf7_contact_form( $id ) )
@@ -99,24 +105,12 @@ function wpcf7_admin_add_pages() {
 		$redirect_to = wpcf7_admin_url( array( 'message' => 'deleted' ) );
 		wp_redirect( $redirect_to );
 		exit();
-	} elseif ( isset( $_GET['wpcf7-create-table'] ) ) {
-		check_admin_referer( 'wpcf7-create-table' );
-
-		$query = array();
-
-		if ( ! wpcf7_table_exists() && current_user_can( 'activate_plugins' ) ) {
-			wpcf7_install();
-			if ( wpcf7_table_exists() ) {
-				$query['message'] = 'table_created';
-			} else {
-				$query['message'] = 'table_not_created';
-			}
-		}
-
-		wp_redirect( wpcf7_admin_url( $query ) );
-		exit();
 	}
+}
 
+add_action( 'admin_menu', 'wpcf7_admin_menu', 9 );
+
+function wpcf7_admin_menu() {
 	add_menu_page( __( 'Contact Form 7', 'wpcf7' ), __( 'Contact', 'wpcf7' ),
 		WPCF7_ADMIN_READ_CAPABILITY, 'wpcf7', 'wpcf7_admin_management_page' );
 
@@ -143,7 +137,7 @@ function wpcf7_admin_enqueue_styles() {
 	}
 }
 
-add_action( 'admin_print_scripts', 'wpcf7_admin_enqueue_scripts' );
+add_action( 'admin_enqueue_scripts', 'wpcf7_admin_enqueue_scripts' );
 
 function wpcf7_admin_enqueue_scripts() {
 	global $plugin_page;
@@ -152,6 +146,7 @@ function wpcf7_admin_enqueue_scripts() {
 		return;
 
 	wp_enqueue_script( 'thickbox' );
+	wp_enqueue_script( 'postbox' );
 
 	wp_enqueue_script( 'wpcf7-admin-taggenerator', wpcf7_plugin_url( 'admin/taggenerator.js' ),
 		array( 'jquery' ), WPCF7_VERSION, true );
@@ -159,9 +154,7 @@ function wpcf7_admin_enqueue_scripts() {
 	wp_enqueue_script( 'wpcf7-admin', wpcf7_plugin_url( 'admin/scripts.js' ),
 		array( 'jquery', 'wpcf7-admin-taggenerator' ), WPCF7_VERSION, true );
 	wp_localize_script( 'wpcf7-admin', '_wpcf7L10n', array(
-		'generateTag' => __( 'Generate Tag', 'wpcf7' ),
-		'show' => __( "Show", 'wpcf7' ),
-		'hide' => __( "Hide", 'wpcf7' ) ) );
+		'generateTag' => __( 'Generate Tag', 'wpcf7' ) ) );
 }
 
 add_action( 'admin_footer', 'wpcf7_admin_footer' );
@@ -187,83 +180,36 @@ var _wpcf7 = {
 }
 
 function wpcf7_admin_management_page() {
-	$contact_forms = wpcf7_contact_forms();
+	$contact_forms = get_posts( array(
+		'numberposts' => -1,
+		'orderby' => 'ID',
+		'order' => 'ASC',
+		'post_type' => 'wpcf7_contact_form' ) );
 
+	$cf = null;
 	$unsaved = false;
 
 	if ( ! isset( $_GET['contactform'] ) )
 		$_GET['contactform'] = '';
 
-	if ( 'new' == $_GET['contactform'] ) {
+	if ( 'new' == $_GET['contactform'] && wpcf7_admin_has_edit_cap() ) {
 		$unsaved = true;
 		$current = -1;
-		$cf = wpcf7_contact_form_default_pack( isset( $_GET['locale'] ) ? $_GET['locale'] : '' );
+		$cf = wpcf7_get_contact_form_default_pack(
+			array( 'locale' => ( isset( $_GET['locale'] ) ? $_GET['locale'] : '' ) ) );
 	} elseif ( $cf = wpcf7_contact_form( $_GET['contactform'] ) ) {
 		$current = (int) $_GET['contactform'];
 	} else {
 		$first = reset( $contact_forms ); // Returns first item
-		$current = $first->id;
-		$cf = wpcf7_contact_form( $current );
-	}
 
-	require_once WPCF7_PLUGIN_DIR . '/admin/edit.php';
-}
-
-/* Install and default settings */
-
-add_action( 'activate_' . WPCF7_PLUGIN_BASENAME, 'wpcf7_install' );
-
-function wpcf7_install() {
-	global $wpdb, $wpcf7;
-
-	if ( wpcf7_table_exists() )
-		return; // Exists already
-
-	$charset_collate = '';
-	if ( $wpdb->has_cap( 'collation' ) ) {
-		if ( ! empty( $wpdb->charset ) )
-			$charset_collate = "DEFAULT CHARACTER SET $wpdb->charset";
-		if ( ! empty( $wpdb->collate ) )
-			$charset_collate .= " COLLATE $wpdb->collate";
-	}
-
-	$wpdb->query( "CREATE TABLE IF NOT EXISTS $wpcf7->contactforms (
-		cf7_unit_id bigint(20) unsigned NOT NULL auto_increment,
-		title varchar(200) NOT NULL default '',
-		form text NOT NULL,
-		mail text NOT NULL,
-		mail_2 text NOT NULL,
-		messages text NOT NULL,
-		additional_settings text NOT NULL,
-		PRIMARY KEY (cf7_unit_id)) $charset_collate;" );
-
-	if ( ! wpcf7_table_exists() )
-		return false; // Failed to create
-
-	$legacy_data = get_option( 'wpcf7' );
-	if ( is_array( $legacy_data )
-		&& is_array( $legacy_data['contact_forms'] ) && $legacy_data['contact_forms'] ) {
-		foreach ( $legacy_data['contact_forms'] as $key => $value ) {
-			$wpdb->insert( $wpcf7->contactforms, array(
-				'cf7_unit_id' => $key,
-				'title' => $value['title'],
-				'form' => maybe_serialize( $value['form'] ),
-				'mail' => maybe_serialize( $value['mail'] ),
-				'mail_2' => maybe_serialize( $value['mail_2'] ),
-				'messages' => maybe_serialize( $value['messages'] ),
-				'additional_settings' => maybe_serialize( $value['additional_settings'] )
-				), array( '%d', '%s', '%s', '%s', '%s', '%s', '%s' ) );
+		if ( $first ) {
+			$current = $first->ID;
+			$cf = wpcf7_contact_form( $current );
 		}
-	} else {
-		wpcf7_load_plugin_textdomain();
-
-		$wpdb->insert( $wpcf7->contactforms, array(
-			'title' => __( 'Contact form', 'wpcf7' ) . ' 1',
-			'form' => maybe_serialize( wpcf7_default_form_template() ),
-			'mail' => maybe_serialize( wpcf7_default_mail_template() ),
-			'mail_2' => maybe_serialize ( wpcf7_default_mail_2_template() ),
-			'messages' => maybe_serialize( wpcf7_default_messages_template() ) ) );
 	}
+
+	require_once WPCF7_PLUGIN_DIR . '/admin/includes/meta-boxes.php';
+	require_once WPCF7_PLUGIN_DIR . '/admin/edit.php';
 }
 
 /* Misc */
@@ -317,19 +263,13 @@ function wpcf7_updated_message( &$contact_form ) {
 		case 'deleted':
 			$updated_message = __( "Contact form deleted.", 'wpcf7' );
 			break;
-		case 'table_created':
-			$updated_message = __( "Database table created.", 'wpcf7' );
-			break;
-		case 'table_not_created':
-			$updated_message = __( "Failed to create database table.", 'wpcf7' );
-			break;
 	}
 
 	if ( ! $updated_message )
 		return;
 
 ?>
-<div id="message" class="updated fade"><p><?php echo esc_html( $updated_message ); ?></p></div>
+<div id="message" class="updated"><p><?php echo esc_html( $updated_message ); ?></p></div>
 <?php
 }
 

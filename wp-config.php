@@ -69,7 +69,7 @@ $table_prefix  = 'wp_';
  * de.mo to wp-content/languages and set WPLANG to 'de' to enable German
  * language support.
  */
-define ('WPLANG', '');
+define ('WPLANG', 'es_ES');
 
 /**
  * For developers: WordPress debugging mode.
@@ -88,3 +88,4 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
