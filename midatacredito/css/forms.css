@@ -1,0 +1,984 @@
+/*
+
+Forms.css:
+- 
+
+Creado por:
+Version 1.0 - carloscaicedo en gmail. 23 de Agosto de 2010
+
+*/
+
+/* Contenedores */
+.contenedorForm {
+	width:500px;
+	float:left;
+	margin-top:20px;
+/*	overflow:hidden;*/
+}
+.centerForm {
+	display:block;
+	margin:110px auto 0 auto;
+	float:none;
+}
+.contenedorAyudas {
+	width:330px;
+/*	height:400px;*/
+	float:left;
+	margin:30px 0 0 30px;
+/*	z-index:0;*/
+}
+.contenedorAyudas img {
+	margin-top:20px
+	margin-bottom:20px;
+}
+.contenedorAyudas ul li{
+	margin-bottom:20px;
+	font:normal 14px/18px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+/* Titulos */
+.title {
+	padding:20px 0 20px 35px;
+}
+.title h1{
+	font-size:28px;
+	color:#006699;
+	margin:0 0 10px 0;
+}
+.title p {
+	font-size:14px;
+	line-height:18px;	
+}
+/* Mensajes y errores*/
+.error {
+	float:left;
+	width:636px;
+	padding:20px 110px 20px 130px;
+	border:1px solid #c00;
+	margin:20px 0 !important;
+	background:#fffafa url(../imgs/iconos/alert.png) 30px 20px no-repeat;
+}
+.error h1 {
+	font-size:24px;
+	margin-bottom:5px;
+}
+.error p {
+	font:15px/19px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-bottom:10px;
+}
+.error p strong{
+	color:#c00;
+}
+.field-error {
+	color:#c00 !important;
+	background:url(../imgs/iconos/error.png) right 22px no-repeat
+} 
+.field-error .input {
+	background:url(../imgs/backgrounds/cl-input-error.gif) left 0 no-repeat !important;
+}
+.field-error .input-back {
+	background:url(../imgs/backgrounds/cr-input-error.gif) right 0 no-repeat !important;
+}
+.field-error small {
+	color:#c00 !important;
+}
+.field-error .help a{
+	background-position:50% -102px !important;
+}
+.field-succes {
+	background:url(../imgs/iconos/succes.png) right 22px no-repeat
+} 
+.field-succes .input {
+	background:url(../imgs/backgrounds/cl-input-succes.gif) left 0 no-repeat !important;
+}
+.field-succes .input-back {
+	background:url(../imgs/backgrounds/cr-input-succes.gif) right 0 no-repeat !important;
+}
+.field-succes .help a{
+	display:none !important;
+}
+/* Partes del form*/
+form {
+}
+fieldset{
+	margin:0 0 40px 0;
+	background: url(../imgs/backgrounds/login-box.gif) 0 bottom repeat-x;
+	border:1px solid #ccc;
+	border-top:none;
+	padding-bottom:30px;
+	padding-top:20px;
+}
+fieldset p {
+	font:13px/18px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin:0 40px 20px 40px;	
+}
+.field { position:relative;}
+.field,
+.buttons,
+fieldset p {
+	float:none;
+	display:block;
+	clear:both;
+	margin-left:70px;
+	margin-right:60px;
+}
+form .fieldset-header {
+	background:url(../imgs/backgrounds/cl-fieldsetHeader.gif) left 0 no-repeat;
+	border-bottom:1px dashed #999;
+	height:36px;
+}
+form .fieldset-header h2 {
+	background:url(../imgs/backgrounds/cr-fieldsetHeader.gif) right 0 no-repeat;
+	font-size:20px;
+	font-family: Arial, Helvetica, Sans-serif;
+	line-height:20px;
+	padding:8px 20px 8px 15px;
+	color:#006699;
+}
+.field {
+	margin-bottom:15px;
+	float:left;
+}
+.field label,
+.label {
+	font:bold 13px/17px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	display:block;
+	margin-bottom:5px;
+}
+.field .input {
+	background:url(../imgs/backgrounds/cl-input.gif) left 0 no-repeat;
+	padding-left:1px;
+	width:338px;
+	float:left;
+}
+.field .input-back {
+	background:url(../imgs/backgrounds/cr-input.gif) right 0 no-repeat; 
+	height:26px;
+}
+.field input{
+	font-size:13px;
+	padding:5px;
+	width:327px;
+	border:none;
+	background-color:transparent;
+}
+.field textarea{
+	font-size:13px;
+	padding:5px;
+	width:327px;
+	border:none;
+	background-color:transparent;
+	background-image:none;
+}
+.textarea .input {
+	background:url(../imgs/backgrounds/cl-textarea.gif) left 0 no-repeat;
+	padding-left:1px;
+	width:338px;
+	float:left;
+}
+.textarea .input-back {
+	background: url(../imgs/backgrounds/cr-textarea.gif) right 0 no-repeat; 
+	height:100px;
+}
+.field small {
+	font-size:10px;
+	color:#999;
+	font-style:italic;
+	text-align:right;
+	margin-right:0px;
+	padding-top:2px;
+	float:left;
+	width:337px;
+}
+.block input{
+	background:#EEEEEE;
+	cursor:default;
+}
+/* Partes Especiales del form */
+/* Ayudas */
+
+.help {
+	float:right;
+	position:relative;
+	z-index:0 !important;
+}
+.help a {
+	background:url(../imgs/iconos/pregunta.png) -2px -2px no-repeat;
+	display:block;
+	text-indent:-10000px;
+	height:22px;
+	width:23px;
+}
+.help .tooltip {
+	background: url(../imgs/backgrounds/tooltip-bottom.png) 0 bottom no-repeat;
+    position: absolute !important;
+	top: -5px;
+	left: 25px; /*Este valor debe ser el mismo que esta en el html*/
+	z-index: 999 !important;
+	width:207px;
+	display:none;
+}
+.tablaDatos thead .help a  {
+ 	background-position:-2px -4px;
+}
+.help a:hover {
+	background-position:-2px -52px;
+}
+.tablaDatos thead .help a:hover  {
+ 	background-position:-2px -54px;
+}
+.help .tooltip p{
+	background: url(../imgs/backgrounds/tooltip.png) 0 -5px no-repeat;
+	position:relative;
+	top:0px;
+	left:-70px;
+	width: 165px;
+	padding: 15px 20px 0 30px;
+	font:normal 12px/14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.header .help .tooltip, 
+.tablaDatos thead .help .tooltip,
+.tablaSencilla th .help .tooltip,
+.simulador .help .tooltip,
+.reclamaciones .field .help .tooltip,
+.alertas .header .help .tooltip,
+#columnaSecundaria .help .tooltip{
+    padding-bottom:20px;
+}
+.header .help .tooltip p, 
+.tablaDatos thead .help .tooltip p ,
+.tablaSencilla th .help .tooltip p,
+.simulador .help .tooltip p,
+.reclamaciones .field .help .tooltip p,
+.alertas .header .help .tooltip p,
+#columnaSecundaria .help .tooltip p{
+    left:0px !important;
+	color:#000 !important;
+	text-align:left !important;
+	font-size:12px !important;
+}
+
+.help .tooltip p a {
+    background:none !important;
+	display:block;
+	text-indent:0 !important;
+	height:auto !important;
+	width:auto !important;
+}
+#planesOfrecidos .help .tooltip{
+    padding-bottom:20px;
+	top: -25px;
+	left: 80px; /*Este valor debe ser el mismo que esta en el html*/
+	background: url(../imgs/backgrounds/tooltip-bottom.png) 0 bottom no-repeat !important;
+}
+#planesOfrecidos .help .tooltip .content{
+	background: url(../imgs/backgrounds/tooltip.png) 0 -5px no-repeat;
+	position:relative;
+	top:0px;
+	width: 165px;
+	padding: 5px 20px 0 30px;
+	font:normal 12px/14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#planesOfrecidos .help .tooltip .content h3 {
+	color:#000 !important;
+	margin:15px 0 5px 0 !important;
+	padding:0 !important;
+	font-size:12px !important;
+	text-align:left !important;
+}
+#planesOfrecidos .help .tooltip .content  ul {
+    margin:0 0 0 15px !important;
+	padding:0 !important;
+	z-index: 0 !important;
+}
+#planesOfrecidos .help .tooltip .content  li {
+	text-align:left !important;
+	font-size:11px !important;
+	color:#000 !important;
+	margin:0 0 3px 0 !important;
+	padding:0 !important;
+	list-style:disc !important;
+}
+#planesOfrecidos .help {
+	float:none;
+}
+#planesOfrecidos .help a{
+	background:none !important;
+	display:block;
+	text-indent:0 !important;
+	width:100% !important;
+	text-decoration:none;
+	height:auto !important;
+}
+/* Date picker */
+.calendario {
+	background:url(../imgs/iconos/calendar.png) 310px 20px no-repeat;
+}
+.calendario .input {
+	width:305px;
+	margin-right:33px
+}
+.calendario input {
+	width:283px;
+}
+.calendario small {
+	width:305px;
+}
+/* Radios y Checkboxes */
+.radios {
+	margin-bottom:15px;
+	float:left;
+}
+.radios .option {
+	float:left;
+	display:block;
+	clear:both;
+	margin:5px 0 0 40px;
+}
+.radios .option label{
+	float:left;
+	width:300px;	
+	font:normal 12px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-top:-4px;
+}
+.radios .option input {
+ 	float:left;
+	width:20px;		
+	margin:0;
+}
+.radios .tarjetas {
+	float:left;
+	margin:0 10px 20px 20px;
+}
+.gender  {
+	background-position:right 0px
+} 
+.gender .label {
+	width:70px; 
+	float:left;
+}
+.gender .option {
+	float:left;
+	display:block;
+	clear:none;
+	margin:5px 0 0 0;
+	width:110px; 
+}
+.gender .option label {
+   width:80px;
+}
+.gender .help {
+	margin-left:55px;
+}
+/* Combo */
+.field select {
+	font-size:13px;
+	padding:3px 5px 3px 5px;
+	width:338px;
+	border:none;
+	background-color:transparent;
+}
+/* Capcha */
+/* Date picker */
+.capcha {
+	margin-top:15px; 
+	float:left;
+}
+.capcha img {
+	border:1px solid #ccc;
+	float:left;
+	margin:-15px 0 0 10px;	
+}
+.capcha .input {
+	width:163px;
+}
+.capcha input {
+	width:151px;
+}
+.capcha small {
+	margin-right:0px;
+}
+/* boletin */
+.boletin {
+	margin:30px 0 20px 70px;
+	float:left;
+}
+.boletin input{
+  	float:left;
+	width:10px;		
+	margin:0;
+	padding:0;
+}
+.boletin p {
+	float:left;
+	width:350px;
+	margin:-16px 0 0 20px;
+}
+/* Botones */
+.buttons {
+	text-align:right;
+	padding-right:30px;
+	padding-top:10px;
+}
+.btn {
+	float: right;
+	clear: both;
+	
+}
+.btn button{
+	float: left;
+	height: 29px;
+	font:bold 13px/13px Arial, Helvetica, Sans-serif;
+	padding: 0 10px;
+	color: #fff;
+	text-decoration: none;
+	border:none;
+	cursor:pointer;
+	margin:0 !important;
+}
+.btn span {
+	float: left;
+	width: 10px;
+	height: 29px;
+}
+.verde {
+	background:url(../imgs/backgrounds/bt-cr-green.gif) right 0 no-repeat;
+}
+.verde button {
+	background:#fff url(../imgs/backgrounds/bt-cl-green.gif) 0 0 no-repeat;
+	padding: 0 10px 0 25px;
+}
+.rojo {
+	float:left;
+	margin:0 0 0 -70px;
+	background:url(../imgs/backgrounds/bt-cr-red.gif) right 0 no-repeat;
+}
+.rojo button {
+	padding-right:0;
+	background:#fff url(../imgs/backgrounds/bt-cl-red.gif) 0 0 no-repeat;
+}
+.gris {
+	float:left;
+	margin:0 0 0 -70px;
+	background:url(../imgs/backgrounds/bt-cr-gray.gif) right 0 no-repeat;
+}
+.gris button {
+	padding-right:0;
+	background:#fff url(../imgs/backgrounds/bt-cl-gray.gif) 0 0 no-repeat;
+}
+	/* Modificacion para el boton pequeno */
+	body#paginaUsuario #btnPequeno 
+	{
+		margin-top: 0;
+		margin-bottom: 20px;
+		margin-right: 60px;
+	}
+	#btnPequeno .btn button
+	{
+		padding: 0 5px 0 20px;
+		font-size: 12px;
+		height:25px;
+	}
+/* Tabla Exito */
+.formExito {
+	background-image:none !important;
+	background-color:#c00;
+}
+.formExito .contenedorForm {
+	width:500px;
+}
+.exito ul {
+	border:1px solid #ccc; 
+	list-style:none; 
+	padding:0; 
+	margin:0 0 30px 0; 
+	float:left;
+}
+.exito ul li {
+	border-bottom:1px solid #ccc; 
+	font-size:12px; 
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	float:left;
+}
+.exito ul li strong {
+	width:175px; 
+	float:left; 
+	display:block; 
+	background-color:#e5e5e5; 
+	text-align:right; 
+	padding:5px 10px;
+}
+.exito ul li span {
+	width:280px; 
+	float:left; 
+	display:block; 
+	padding:5px 10px;
+}
+.exito p {
+	font-size:13px;
+	padding:20px 0 20px 50px;
+	clear:both;
+}
+.exito .email {
+	border-bottom:1px solid #ccc;
+	background:url(../imgs/iconos/email.png) 10px 50% no-repeat;
+}
+.exito .print {
+	background:url(../imgs/iconos/print.png) 10px 50% no-repeat;
+}
+.exito .print a{
+	color:#000;
+	text-decoration:none;
+}
+.exito .print a:hover {
+	text-decoration:underline;
+}
+.simulador  fieldset{
+    border:none;
+	background-image:none;
+	padding:0 !important;
+	margin:0;
+}
+.simulador  fieldset p {
+	background:url(../imgs/backgrounds/simulador.jpg) 15px 0 no-repeat;
+	margin:0;
+	padding:0 20px 20px 80px;
+}
+#marcoContenido .simulador  fieldset h3 {
+	padding:10px 20px 0px 80px;
+	color: #404040;
+	font-size: 15px;
+}
+.simulador  fieldset h2 {
+	font-size:18px; 
+	border-bottom:1px dashed #ccc; 
+	padding-bottom:5px; 
+	margin-bottom:20px;
+}
+.simulador  fieldset .field {
+	margin:0 0 20px 0;
+}
+.simulador  fieldset .field label {
+	float:left; 
+	width:260px; 
+	padding-top:4px;
+}
+.simulador .field .input {
+	width:268px;
+}
+.simulador .field input{
+	width:255px;
+}
+.simulador .buttons {
+    margin:0 95px 10px 0 !important;
+}
+.resultado{
+	background: url(../imgs/backgrounds/simuladores-back2.jpg) 0 30px no-repeat;
+	float:left;
+	height:127px;
+	width:600px;
+}
+.resultado h2 {
+	color:#5ea214;
+	font-size:18px;
+}
+.resultado .field {
+	width:200px;
+	float:left !important;
+	margin:30px 0 0 45px;
+	clear:none;
+}
+.resultado .field label {
+	float:left;
+}
+.resultado .field .input {
+	width:200px;
+}
+.resultado .field .help {
+	top:2px;
+}
+.reclamaciones h2 {
+	float:none !important;
+	clear:both;
+}
+.reclamaciones p{
+	float:left;
+}
+.reclamaciones .field  {margin-top:30px;}
+.reclamaciones .field label {
+	float:left;
+	width:150px;
+	padding-top:3px;
+}
+.reclamaciones .field .input {
+	width:250px;
+}
+.reclamaciones .field select {
+	width:250px !important;
+}
+.reclamaciones .field .help {top:4px;}
+.reclamaciones .buttons {
+	padding:0; 
+	height:30px; 
+	width:200px; 
+	margin:0 0 0 222px; 
+}
+.reclamaciones .buttons .btn {
+	clear:none; 
+	float:left;
+}
+.reclamaciones .buttons .rojo {
+	float:right;
+}
+.reclamaciones .boletin { 
+	padding:0; 
+	margin:20px 0 0 150px;
+}
+#aceptacionTerm
+{
+	margin-left: 0;
+}
+#aceptacionBtn
+{
+	float: right;
+	margin:0;
+	width: auto;
+}
+
+.reclamaciones .boletin p {
+	margin:0 0 0 10px;
+}
+.alertas #moduloActividad{
+	background:url(../imgs/backgrounds/back-alertas.jpg) 10px 35px no-repeat;
+}
+.formule-alerta .field {width:530px;}
+.formule-alerta .field .option{width:500px;}
+.formule-alerta .field .option label {width:400px;}
+.formule-alerta h2 {margin-left:80px;}
+.formule-alerta p {margin-left:80px; margin-bottom:20px;}
+.formule-alerta .help p {margin:0;}
+.alertas #textoAcuerdo {width:590px;}
+
+.correo .header .help .tooltip p,
+.movil .header .help .tooltip p{
+	margin:0!important;
+}
+.correo #moduloActividad{
+	background:url(../imgs/backgrounds/correo_activo.jpg) 20px 50px no-repeat;
+}
+.movil #moduloActividad{
+	background:url(../imgs/backgrounds/movil_activo.jpg) 25px 40px no-repeat;
+}
+.correo #moduloActividad h2,
+.movil #moduloActividad h2{
+	margin:30px 0 30px 80px
+}
+.correo #moduloActividad p ,
+.movil #moduloActividad p{
+margin:0 0 10px 20px;
+}
+fieldset h5 {
+	text-align:center;
+	font-size:20px;
+	color:#006699;
+	margin:10px 0 30px 0;
+}
+fieldset li {
+	font-size:13px;
+	margin:0 20px 10px 0;
+}
+fieldset li a {
+	text-decoration:none;
+}
+fieldset li a:hover {
+	text-decoration:underline;
+}
+fieldset h4 {
+	text-align:center;
+	font-size:16px;
+	font-weight:normal !important;
+	color:#006699;
+	padding:30px 0 0 0;
+	clear:both
+}
+
+
+/* Ajustes al formulario de contacto */
+
+.oblig
+{
+	color: #FF6600;
+	font-weight: bold;
+}
+#formContacto
+{
+	margin-top: 40px;
+}
+	#formContacto .field
+	{
+		float: left;
+		clear: both;
+		width: 550px;
+		margin-left: 150px;
+		margin-bottom: 25px;
+	}
+		#formContacto .field label
+		{
+			float: left;
+			width: 200px;
+		}
+		#formContacto .field .input
+		{
+			float: left;
+		}
+	#formContacto .buttons
+	{
+		margin-right: 180px;
+	}
+
+
+/* Separador punteado */
+
+.separador
+{
+	width: 368px;
+	height: 1px;
+	border-top: 1px dashed #CCCCCC;
+	float: left;
+	clear: both;
+	margin: 40px 60px 10px 70px;
+}
+
+/* Default styling for jQuery Datepicker v4.0.2. */
+.datepick {
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #ccc;
+    border-radius: 0.25em;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+	font-family: Arial,Helvetica,Sans-serif;
+	font-size: 12px;
+	padding:5px;
+}
+.datepick-rtl {
+	direction: rtl;
+}
+.datepick-popup {
+	z-index: 1000;
+}
+.datepick-disable {
+	position: absolute;
+	z-index: 100;
+	background-color: white;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.datepick a {
+	color: #fff;
+	text-decoration: none;
+}
+.datepick a.datepick-disabled {
+	color: #888;
+	cursor: auto;
+}
+.datepick button {
+    margin: 0.25em;
+    padding: 0.125em 0em;
+    background-color: #fcc;
+    border: none;
+    border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    font-weight: bold;
+}
+.datepick-nav, .datepick-ctrl {
+	float: left;
+	width: 100%;
+	background-color: #fff;
+	color: #000 !important;
+	font-size: 12px;
+	font-weight: normal;
+}
+.datepick-nav a {color: #666}
+.datepick-ctrl {
+	background-color: #fff;
+}
+.datepick-cmd {
+	width: 30%;  	background-color: #f;
+
+}
+.datepick-cmd:hover {
+	background-color: #666;
+	color:#fff;
+}
+.datepick-ctrl a.datepick-cmd {color:#999; margin-top:3px;}
+.datepick-ctrl .datepick-cmd:hover {
+	background-color: #666; color:#fff;
+}
+.datepick-cmd-prevJump, .datepick-cmd-nextJump {
+	width: 8%;
+}
+a.datepick-cmd {
+	display:block;
+	padding:3px 0;
+	text-align:center;
+}
+button.datepick-cmd {
+	text-align: center;
+}
+.datepick-cmd-prev, .datepick-cmd-prevJump, .datepick-cmd-clear {
+	float: left;
+	padding-left: 2%;
+}
+.datepick-cmd-current, .datepick-cmd-today {
+	float: left;
+	width: 35%;
+	text-align: center;
+}
+.datepick-cmd-next, .datepick-cmd-nextJump, .datepick-cmd-close {
+	float: right;
+	padding-right: 2%;
+	text-align: right;
+}
+.datepick-rtl .datepick-cmd-prev, .datepick-rtl .datepick-cmd-prevJump,
+.datepick-rtl .datepick-cmd-clear {
+	float: right;
+	padding-left: 0%;
+	padding-right: 2%;
+	text-align: right;
+}
+.datepick-rtl .datepick-cmd-current, .datepick-rtl .datepick-cmd-today {
+	float: right;
+}
+.datepick-rtl .datepick-cmd-next, .datepick-rtl .datepick-cmd-nextJump,
+.datepick-rtl .datepick-cmd-close {
+	float: left;
+	padding-left: 2%;
+	padding-right: 0%;
+	text-align: left;
+}
+.datepick-month-nav {
+	float: left;
+	background-color: #777;
+	text-align: center;
+}
+.datepick-month-nav div {
+	float: left;
+	width: 12.5%;
+	margin: 1%;
+	padding: 1%;
+}
+.datepick-month-nav span {
+	color: #888;
+}
+.datepick-month-row {
+	clear: left;
+}
+.datepick-month {
+	float: left;
+	width: 15em;
+	text-align: center;
+}
+.datepick-month-header, .datepick-month-header select, .datepick-month-header input {
+	margin-top:5px;
+	height:25px;
+	background-color: #1b4167;
+	color: #fff;
+	font-weight: bold;
+}
+.datepick-month-header select, .datepick-month-header input {
+	height: 1.4em;
+	border: none;
+}
+.datepick-month-header input {
+	position: absolute;
+	display: none;
+}
+.datepick-month table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.datepick-month thead {
+	border-bottom: 1px solid #aaa;
+}
+.datepick-month th, .datepick-month td {
+	margin: 0em;
+	padding: 0em;
+	font-weight: normal;
+	text-align: center;
+}
+.datepick-month th {
+	border-bottom: 1px solid #e5e5e5;
+}
+.datepick-month th, .datepick-month th a {
+	background-color: #fff;
+	color: #000;
+	padding:5px;
+}
+.datepick-month td {
+	background-color: #eee;
+	border: 1px solid #e5e5e5;
+}
+.datepick-month td.datepick-week {
+	border: 1px solid #777;
+}
+.datepick-month td.datepick-week * {
+	background-color: #777;
+	color: #fff;
+	border: none;
+}
+.datepick-month a {
+	display: block;
+	width: 100%;
+	padding: 0.125em 0em;
+	background-color: #f1f1f1;
+	color: #000;
+	text-decoration: none;
+}
+.datepick-month span {
+	display: block;
+	width: 100%;
+	padding: 0.125em 0em;
+}
+.datepick-month td span {
+	color: #888;
+}
+.datepick-month td .datepick-other-month {
+	background-color: #fff;
+}
+.datepick-month td .datepick-weekend {
+	background-color: #fff; color:#ccc;
+}
+.datepick-month td .datepick-today {
+	background-color: #70c9f0; color:#fff;
+}
+.datepick-month td .datepick-highlight {
+	background-color: #1b4167; color:#fff;
+}
+.datepick-month td .datepick-selected {
+	background-color: #1b4167;
+	color: #fff;
+}
+.datepick-month th.datepick-week {
+	background-color: #777;
+	color: #fff;
+}
+.datepick-status {
+	clear: both;
+	background-color: #ddd;
+	text-align: center;
+}
+.datepick-clear-fix {
+	clear: both;
+}
+.datepick-cover {
+    display: none;
+    display/**/: block;
+    position: absolute;
+    z-index: -1;
+    filter: mask();
+    top: -1px;
+    left: -1px;
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>P&aacute;gina principal - midatacredito.com</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="css/general.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8"/>
+		<link href="css/navegacion.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8"/>
+		<link href="css/contenidos.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8"/>
+		<link href="css/inicial.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8"/>
+		<link href="css/forms.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8"/>
+		<link href="css/zonauser.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8"/>
+		<link href="css/tabs.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8"/>
+         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox-1.3.1.js"></script>
+
+        
+        <!-- lightbox y tabs -->
+        <script type="text/javascript">
+		$(document).ready(function() {
+			$("a#monitoree").fancybox();		
+			$("a#alertas").fancybox();		
+			$("a#seguimiento").fancybox();		
+			$("#feedback-link").fancybox({
+				'titleShow'		: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+			
+			// Inicializa tabs y ajusta sus propiedades 
+			
+			var myTabs = $("#tabs").tabs();
+			myTabs.tabs( 'rotate', 15000, false ); 
+			 
+			myTabs.tabs( "option", "fx", { opacity: 'toggle' } );
+		});
+	</script>
+	</head>
+	<body>
+		<div id="marcoCabezote">
+			<div id="fondoCabezote">
+				<div id="cabezote" class="contenedor">
+					<h1><a href="#">midatacredito.com</a></h1>
+					<ul id="navAuxiliar">
+						<li><a href="#">Ingrese</a></li>
+						<li><a href="#">Reg&iacute;strese</a></li>
+					</ul>
+					<ul id="navGeneral">
+						<li><a href="#">Porqué usar Mi DataCrédito</a></li>
+						<li><a href="#">Le ayudamos</a></li>
+						<li><a href="#">Preguntas frecuentes</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="marcoContenidos" class="contenedor">
+			<div id="fondoContenidos">
+				<div id="contenidos">
+				<div id="tabs" class="clearfix">
+					
+					<!-- 
+						== Navegacion TABS ==
+						En la lista #tabs_nav un link al hash del modulo que se quiere mostrar.
+						Luego un loop de divs. Todos menos el primero deben tener el class ui-tabs-hide para prevenir el FOUC (Flash Of Unstyled Content)
+					-->
+					
+					<ul id="tabs_nav">
+						<li><a id="tab1" href="#inicialPromocional">Conozca, administre, proteja</a></li>
+						<li><a id="tab2" href="#inicialPromocional2">Monitoree</a></li>
+						<li><a id="tab3" href="#inicialPromocional3">Alerte</a></li>
+						<li><a id="tab4" href="#inicialPromocional4">Visualice</a></li>
+					</ul>
+					
+					<!-- Presentacion de cada modulo -->
+					<div id="inicialPromocional" class="modulo">
+						<h2>Administre, analice y proteja su informaci&oacute;n de cr&eacute;dito</h2>
+						<ul>
+							<li>Monitoree desde su m&oacute;vil y correo electr&oacute;nico la actividad en sus obligaciones y/o cuentas.</li>
+							<li>Alerte al sistema financiero sobre cualquier posible intento de fraude con su identidad.</li>
+							<li>Conozca en tiempo real qui&eacute;n lo consulta.</li>
+							<li>Visualice de una forma f&aacute;cil y amigable la informaci&oacute;n consolidada y detallada de su comportamiento financiero.</li>
+						</ul>
+					</div>
+					<!-- / Se repite para cada modulo -->
+					
+					<div id="inicialPromocional2" class="modulo ui-tabs-hide">
+						<h2>Monitoree desde su m&oacute;vil y correo electr&oacute;nico la actividad en sus obligaciones y/o cuentas.</h2>
+
+						<ul>
+							<li>Monitoreo y reportes actualizados del estado de sus obligaciones.</li>
+							<li>Ent&eacute;rese de forma autom&aacute;tica de todos los cambios en su informaci&oacute;n de cr&eacute;dito.</li>
+							<li>Tenga la tranquilidad de saber que est&aacute; pasando siempre con su informaci&oacute;n de cr&eacute;dito.</li>
+						</ul>
+					</div>
+	
+					<div id="inicialPromocional3" class="modulo ui-tabs-hide">
+						<h2>Alerte al sistema financiero sobre cualquier posible intento de fraude con su identidad.</h2>
+
+						<ul>
+							<li>Prevenga ser v&iacute;ctima de un fraude por suplantaci&oacute;n de identidad.</li>
+							
+							<li>Alerte al sistema en caso de p&eacute;rdida / robo de documento y tarjetas de cr&eacute;dito.</li>
+							<li>Reduzca la posibilidad de que su informaci&oacute;n personal se utilice para realizar actividades fraudulentas a su nombre.</li>
+
+						</ul>
+					</div>
+					
+					<div id="inicialPromocional4" class="modulo ui-tabs-hide">
+						<h2>Visualice de una forma f&aacute;cil y amigable la informaci&oacute;n consolidada y detallada de su comportamiento financiero.</h2>
+
+						<ul>
+							<li>Construya su informaci&oacute;n de cr&eacute;dito d&iacute;a a d&iacute;a</li>
+							<li>Mi Datacr&eacute;dito es su mejor aliado para mantenerse al d&iacute;a con su informaci&oacute;n crediticia.</li>
+							<li>Su informaci&oacute;n de cr&eacute;dito es su mejor carta de presentaci&oacute;n y ahora es m&aacute;s f&aacute;cil administrarla.</li>
+						</ul>
+					</div>	
+					
+					
+					<!-- 
+						== LINKS FIJOS ==
+						Tambien pueden ser usados dentro de cada div.modulo si se necesita que sean dinamicos.	
+					 -->
+					
+					<div id="videoProbar">
+						<a href="#">&iquest;Qu&eacute; es midatacredito.com?</a>
+					</div>	
+					
+					<div id="probarProducto">
+						<h3>Pruebe midatacredito.com</h3>
+						<span class="boton"><a href="#">&iexcl;Adqui&eacute;ralo ya!</a></span>
+						<p>Desde $13.300 pesos mensuales</p>
+					</div>	
+							
+				</div><!-- cierra tabs -->
+					
+					<div id="inicialPresentacion" class="modulo">
+						<h2>As&iacute; es midatacredito.com</h2>
+						<div class="columnas">
+							<div class="columnaSencilla">
+                            		<a id="monitoree" href="imgs/demo-img-1.jpg" title="Monitoree sus cuentas desde su m&oacute;vil y/o correo electr&oacute;nico">
+                                    	<img src="imgs/temp-img01.jpg" title="Monitoree sus cuentas desde su m&oacute;vil y/o correo electr&oacute;nico" />
+                                    </a>
+                              </div>
+							<div class="columnaSencilla">
+                       		  <a id="alertas" href="imgs/demo-img-2.jpg" title="Alerte al sistema financiero sobre situaciones que lo expongan a ser v&iacute;ctima de suplantaci&oacute;n de identidad">
+                          <img src="imgs/temp-img02.jpg" title="Alerte al sistema financiero sobre situaciones que lo expongan a ser v&iacute;ctima de suplantaci&oacute;n de identidad" /></a></div>
+						</div>
+						<div class="columnas">
+							<p id="btnAdquirir"><a href="#">&iexcl;Adqui&eacute;ralo ya!</a></p>
+						</div>
+						<div class="columnas">
+							<div class="columnaSencilla">
+                            <a id="seguimiento" href="imgs/demo-img-3.jpg" title="Haga seguimiento a cualquier cambio en su informaci&oacute;n de cr&eacute;dito">
+                            <img src="imgs/temp-img03.jpg" title="Haga seguimiento a cualquier cambio en su informaci&oacute;n de cr&eacute;dito" /></a></div>
+							<div class="columnaSencilla">
+                            <a id="seguimiento" href="imgs/demo-img-4.jpg" title="Tenga un vistazo consolidado de su informaci&oacute;n de cr&eacute;dito">
+                            <img src="imgs/temp-img04.jpg" title="Tenga un vistazo consolidado de su informaci&oacute;n de cr&eacute;dito" /></a></div>
+						</div>
+					</div>
+					<div id="inicialClientes" class="modulo">
+						<h2>Qu&eacute; dicen nuestros clientes</h2>
+						<div class="testimonioCliente">
+							<blockquote>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.</p>
+							</blockquote>
+							<div class="infoCliente">
+								<div class="imagen"><img src="imgs/clientes-pic1.jpg" alt="Pedro G&oacute;mez"/></div>
+								<h3>Pedro G&oacute;mez</h3>
+								<p>Comerciante<br />
+								Medell&iacute;n</p>
+							</div>
+						</div>
+						<div class="testimonioCliente">
+							<blockquote>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.</p>
+							</blockquote>
+							<div class="infoCliente">
+								<div class="imagen"><img src="imgs/clientes-pic2.jpg" alt="Ana Mar&iacute;a Garc&iacute;a"/></div>
+								<h3>Ana Mar&iacute;a Garc&iacute;a</h3>
+								<p>Gerente de Cuentas<br />
+								Bogot&aacute;</p>
+							</div>
+						</div>
+						<div class="testimonioCliente">
+							<blockquote>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.</p>
+							</blockquote>
+							<div class="infoCliente">
+								<div class="imagen"><img src="imgs/clientes-pic3.jpg" alt="Carlos Mario Agudelo"/></div>
+								<h3>Carlos Mario Agudelo</h3>
+								<p>Ingeniero<br />
+								Cali</p>
+							</div>
+						</div>
+					</div>
+					<div id="pieBoton" class="modulo">
+						<div class="columnas">
+							<p><a href="#">&iexcl;Adqui&eacute;ralo ya!</a></p>
+						</div>
+					</div>
+				</div>
+<!-- Fin del div contenidos -->
+			</div>
+		</div>
+
+         <div id="fondoPie">
+			<div id="marcoPie">
+				<div id="pie" class="modulo">
+					<div class="columnas">
+						<div id="columnaLogo">
+							<h1><a href="#">midatacredito.com</a></h1>
+						</div>
+						<div id="columnaMidata">
+							<h3>midatacredito.com</h3>
+							<ul>
+								<li><a href="#">Porqu&eacute; usar midatacredito</a></li>
+								<li><a href="#">As&iacute; es midatacredito</a></li>
+								<li><a href="#">Qu&eacute; dicen nuestros clientes</a></li>
+								<li><a href="#">Adqui&eacute;ralo ya</a></li>
+							</ul>
+						</div>
+						<div id="columnaFaq">
+							<h3>Preguntas frecuentes</h3>
+							<ul>
+								<li><a href="#">C&oacute;mo funciona midatacredito</a></li>
+								<li><a href="#">Paquetes y planes</a></li>
+								<li><a href="#">Mis servicios</a></li>
+								<li><a href="#">Mi informaci&oacute;n</a></li>
+							</ul>
+						</div>
+						<div id="columnaAyuda">
+							<h3>Le ayudamos</h3>
+							<ul>
+								<li><a href="#">Preguntas frecuentes</a></li>
+								<li><a href="#">Cont&aacute;ctenos</a></li>
+							</ul>
+						</div>
+						<div id="columnaQuienes">
+							<h3>Qui&eacute;nes somos</h3>
+							<ul>
+								<li><a href="#">Acerca de midatacredito</a></li>
+								<li><a href="#">Qu&eacute; es Datacredito</a></li>
+								<li><a href="#">Qui&eacute;n es Computec</a></li>
+								<li><a href="#">T&eacute;rminos y condiciones</a></li>
+								<li><a href="#">Mapa del sitio</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="pieCreditos">
+						<p><a href="#">Un proyecto digital Platafor.ma</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>

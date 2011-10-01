@@ -1,0 +1,881 @@
+/*
+
+Navegacion.css:
+- Formato para el menu principal
+- Menu adicional
+- Pie de pagina
+
+Creado por:
+Version 1.0 - carloscaicedo en gmail. 13 de Agosto de 2010
+
+*/
+
+/* Estructura del sitio web */
+#navAuxiliar
+{
+	list-style-type: none;
+	margin: 0;
+}
+	#navAuxiliar li
+	{
+		float: left;
+	}
+	#navAuxiliar li:first-child
+	{ 
+		border-right:1px solid #004178;
+	}
+	body#paginaUsuario #navAuxiliar li,
+	body.noBg #navAuxiliar li,
+	body#paginaFaq #navAuxiliar li
+	{
+		border-left:1px solid #004178;
+	}
+	body#paginaUsuario #navAuxiliar li:first-child,
+	body.noBg #navAuxiliar li:first-child,
+	body#paginaFaq #navAuxiliar li:first-child
+	{
+		border: 0;
+	}
+		#navAuxiliar a 
+		{
+			font-weight:bold;
+			font-size:12px;
+			color:#004178;
+			text-decoration:none;
+			margin:0 7px;
+		}
+			#navAuxiliar strong a
+			{
+				font-size: 1.1em;
+				font-weight: bold;
+			}
+		#navAuxiliar a:hover
+		{
+			text-decoration:underline;
+		}
+		#navAuxiliar li.actual a
+		{
+			color: #006699;
+		}
+#navGeneral
+{
+	list-style-type: none;
+	margin: 0;
+}
+	/* Hack box*/
+	#navGeneral
+	{
+		padding: 0 13px 0 13px;
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width: 924px; /*Para el ie60*/
+	}
+		html>body div#navGeneral
+		{
+			width: 924px; /*Para el firefox*/
+		}
+	/**/
+	#navGeneral li
+	{
+		float: left;
+		font-size: 1.1em;
+	}
+		#navGeneral li a
+		{
+			height: 39px;
+			float: left;
+			color: #FFFFFF;
+			font-weight: bold;
+			text-decoration: none;
+			background: url('../imgs/navegacion-f2.gif') right top no-repeat;
+		}
+		/* Hack box*/
+		#navGeneral li a
+		{
+			padding: 11px 13px 15px 13px;
+			voice-family: "\"}\"";
+			voice-family: inherit;
+			height: 13px; /*Para el ie60*/
+		}
+			html>body ul#navGeneral li a
+			{
+				height: 13px; /*Para el firefox*/
+			}
+		/**/
+		#navGeneral li a:hover
+		{
+			text-decoration: underline;
+		}
+		#navGeneral li a.actual
+		{
+			background: url('../imgs/navegacion-f3.gif') right top no-repeat;
+		}
+
+/* Formato para el camino de migas */
+
+#caminoMigas
+{
+	font-size:12px;
+	padding-bottom:25px;
+	color: #266397;
+}
+	#caminoMigas a
+	{
+		color:#636363;
+		color: #266397;
+		text-decoration:none;
+	}
+		#caminoMigas a.inicial
+		{
+			color: #636363;
+		}
+	#caminoMigas a:hover
+	{
+		text-decoration:underline;
+	}
+
+body#paginaFaq #caminoMigas
+{
+	margin-left: 10px;
+	padding-bottom: 30px;
+}
+
+/* Definicion de la barra de navegacion para el registro y el pago */
+
+#navegacionPago
+{
+	width: 879px;
+	height: 44px;
+	margin: 45px 0 0 0;
+	float: left;
+	clear: both;
+	background: url('../imgs/nav-registro_pago-f1.jpg') 0 0 no-repeat;
+}
+	#navegacionPago ul
+	{
+		list-style-type: none;
+		float: left;
+		clear: both;
+		width: 864px;
+		margin: 0 0 0 15px;
+		padding: 0;
+	}
+		#navegacionPago li
+		{
+			float: left;
+			height: 44px;
+			margin-left: 5px;
+		}
+			#navegacionPago li a
+			{
+				padding-left: 10px;
+				float: left;
+				text-decoration: none;
+			}
+				#navegacionPago li.actual a
+				{
+					background: url('../imgs/nav-registro_pago-f2.gif') left top no-repeat;
+				}
+					#navegacionPago li.actual div
+					{
+						background: url('../imgs/nav-registro_pago-f4.png') center top no-repeat;
+						float: left;
+						height: 44px;
+					}
+			#navegacionPago li a span
+			{
+				float: left;
+				display: block;
+				height: 44px;
+				color: #FFFFFF;
+				text-decoration: none;
+			}
+				/* Hack box*/
+				#navegacionPago li a span
+				{
+					padding: 20px 10px 0 0;
+					voice-family: "\"}\"";
+					voice-family: inherit;
+					height: 24px; /*Para el ie60*/
+				}
+					html>body div#navegacionPago li a span
+					{
+						height: 24px; /*Para el firefox*/
+					}
+				/**/
+				#navegacionPago li a span strong
+				{
+					color: #1B416B;
+					font-weight: bold;
+				}
+				#navegacionPago li.actual a span
+				{
+					background: url('../imgs/nav-registro_pago-f3.gif') right top no-repeat;
+				}
+					#navegacionPago li.actual a span strong
+					{
+						color: #8ED6F0;
+					}
+
+/* Presentacion para un formulario */
+
+#formulario p
+{
+	margin-bottom: 1em;
+}
+	#formulario p.boton
+	{
+		text-align:right;
+	}
+	#formulario button
+	{
+		display: block;
+		height: 29px;
+		float: right;
+		background: url('../imgs/btn-formularios-f1.png') left top no-repeat;
+		border:0;
+		padding: 0 0 0 15px;
+	}
+		#formulario button span
+		{
+			margin: -2px 0 0 0;
+			float: left;
+			display: block;
+			height: 29px;
+			color: #FFFFFF;
+			font-weight: bold;
+			font-size: 1em;
+			background: url('../imgs/btn-formularios-f2.png') right 0 no-repeat;
+		}
+			/* Hack box*/
+			#formulario button span
+			{
+				padding: 7px 15px 0 0;
+				voice-family: "\"}\"";
+				voice-family: inherit;
+				height: 22px; /*Para el ie60*/
+			}
+				html>body div#formulario button span
+				{
+					height: 22px; /*Para el firefox*/
+				}
+			/**/
+
+/* Formulario de registro e ingreso */
+
+#ingresoRegistro label
+{
+	font-size: 1em;
+	color: #212121;
+}
+#ingresoRegistro select
+{
+	width: 234px;
+	font-size: 1em;
+	color: #404040;
+}
+#ingresoRegistro input
+{
+	width: 234px;
+	height: 26px;
+	border: none;
+	background: url('../imgs/ingreso_registro-input.gif') 0 0;
+	font-size: 1em;
+	color: #404040;
+}
+	/* Hack box*/
+	#ingresoRegistro input
+	{
+		padding: 5px 10px 0 10px;
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width: 214px;
+		height: 21px; /*Para el ie60*/
+	}
+		html>body div#ingresoRegistro input
+		{
+			width: 214px;
+			height: 21px; /*Para el firefox*/
+		}
+	/**/
+	#ingresoRegistro .btn
+	{
+		margin-right: 20px;
+		padding-bottom: 20px;
+	}
+
+/* Presentacin de la barra de activacion de movil*/
+
+#activarMovil h4
+{
+	width: 255px;
+	height: 53px;
+	display: block;
+	background: url('../imgs/activar-movil-f1.jpg') 0 0 no-repeat;
+	font-size: 1.2em;
+}
+	/* Hack box*/
+	#activarMovil h4
+	{
+		padding: 20px 0 10px 40px;
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width: 215px;
+		height: 23px; /*Para el ie60*/
+	}
+		html>body div#activarMovil h4
+		{
+			width: 215px;
+			height: 23px; /*Para el firefox*/
+		}
+	/**/
+	#activarMovil form
+	{
+		margin-top: 15px;
+	}
+		#activarMovil input
+		{
+			width: 244px;
+			height: 30px;
+			background: url(../imgs/backgrounds/input-activar.gif) 0 0 no-repeat;
+			display:block;
+			border: none;
+			margin: 0 10px 10px 0px;
+			font-size: 1.1em;
+			color: #333333;
+		}
+			/* Hack box*/
+			#activarMovil input
+			{
+				padding: 6px 10px 0 10px;
+				voice-family: "\"}\"";
+				voice-family: inherit;
+				width: 224px;
+				height: 24px /*Para el ie60*/
+			}
+				html>body div#activarMovil input
+				{
+					width: 224px;
+					height: 24px; /*Para el firefox*/
+				}
+			/**/
+
+/* Presentacion de las barras de navegacion para la zona de usuarios*/
+
+#navegacionUsuario
+{
+	list-style-type: none;
+}
+	/* Hack box*/
+	#navegacionUsuario
+	{
+		padding: 0 0 0 420px;
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width: 520px; /*Para el ie60*/
+	}
+		html>body ul#navegacionUsuario
+		{
+			width: 520px; /*Para el firefox*/
+		}
+	/**/
+	#navegacionUsuario li
+	{
+		float: left;
+		list-style-type: none;
+		font-size: 1em;
+		background: url('../imgs/navegacion-usuario-f2.jpg') left top no-repeat;
+	}
+		/* Hack box*/
+		#navegacionUsuario li
+		{
+			padding:13px 10px 0 12px;
+			voice-family: "\"}\"";
+			voice-family: inherit;
+			height: 27px; /*Para el ie60*/
+		}
+			html>body ul#navegacionUsuario li
+			{
+				height: 27px; /*Para el firefox*/
+			}
+		/**/
+		#navegacionUsuario li:first-child
+		{
+			padding-left: 0;
+			background: none;
+		}
+		#navegacionUsuario a
+		{
+			color: #FFFFFF;
+			font-weight: bold;
+			text-decoration: none;
+		}
+			#navegacionUsuario a:hover
+			{
+				text-decoration: underline;
+			}
+	#navegacionUsuario li.actual,
+	#navGeneral li.actual
+	{
+		background: url('../imgs/navegacion-f3.gif') left top no-repeat;
+	}
+
+#barraFunciones
+{
+}
+#barraFunciones h2
+{
+	display: block;
+	width: 241px;
+	height: 40px;
+	float: left;
+	clear: both;
+	height: 35px; /* Ajuste pendiente*/
+	color: #FFFFFF;
+	font-size: 1em;
+	background: url('../imgs/barra-funciones-f1.png') 0 0 no-repeat;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+	/* Hack box*/
+	#barraFunciones h2
+	{
+		padding: 11px 20px 0 23px;
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width: 198px;
+		height: 24px; /*Para el ie60*/
+	}
+		html>body div#barraFunciones h2
+		{
+			width: 198px;
+			height: 24px; /*Para el firefox*/
+		}
+	/**/
+#barraFunciones h3
+{
+	display: block;
+	width: 241px;
+	height: 35px;
+	float: left;
+	clear: both;
+	color: #1B4168;
+	font-size: 1em;
+	font-weight:bold;
+	background: url('../imgs/barra-funciones-f2.gif') 0 0 no-repeat;
+}
+	/* Hack box*/
+	#barraFunciones h3
+	{
+		padding: 11px 20px 0 23px;
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width: 198px;
+		height: 24px; /*Para el ie60*/
+	}
+		html>body div#barraFunciones h3
+		{
+			width: 198px;
+			height: 24px; /*Para el firefox*/
+		}
+	/**/
+#barraFunciones ul
+{
+	list-style-type: none;
+	width: 241px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	clear: both;
+}
+	#barraFunciones li
+	{
+		background: url('../imgs/barra-funciones-f3.png') 0 0 no-repeat;
+		width: 241px;
+		float: left;
+		clear: both;
+	}
+		#barraFunciones li a
+		{
+			width: 241px;
+			height: 50px;
+			display: block;
+			color: #1B4168;
+			font-size: 12px;
+			float: left;
+			font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			text-decoration: none;
+			background-position: left top;
+			background-repeat: no-repeat;
+		}
+		/* Hack box*/
+		#barraFunciones li a
+		{
+			padding: 20px 20px 0 50px;
+			voice-family: "\"}\"";
+			voice-family: inherit;
+			width: 171px;
+			height: 30px; /*Para el ie60*/
+		}
+			html>body div#barraFunciones li a
+			{
+				width: 171px;
+				height: 30px; /*Para el firefox*/
+			}
+		/**/
+		
+		#barraFunciones li a:hover
+		{
+			text-decoration: underline;
+		}
+		#barraFunciones li.actual
+		{
+			background: url('../imgs/barra-funciones-f4.png') 0 0 no-repeat;
+		}
+
+
+
+		/* Asignacion de iconos a cada elemento del menu */
+		#iconoMonitoree a
+		{
+			background-image: url('../imgs/iconos/icono_usuario-monitoree.png');
+		}
+		#iconoAlertas a
+		{
+			background-image: url('../imgs/iconos/icono_usuario-alertas.png');
+		}
+		#iconoReclamaciones a
+		{
+			background-image: url('../imgs/iconos/icono_usuario-reclamaciones.png');
+		}
+		#iconoSimuladores a
+		{
+			background-image: url('../imgs/iconos/icono_usuario-simuladores.png');
+		}
+		#iconoTarjetas a
+		{
+			background-image: url('../imgs/iconos/icono_usuario-tarjetas_credito.png ');
+		}
+		#iconoPrestamos a
+		{
+			background-image: url('../imgs/iconos/icono_usuario-prestamos.png');
+		}
+		#iconoCahorro a
+		{
+			background-image: url('../imgs/iconos/icono_usuario-cuentas.png');
+		}
+		#iconoCcte a
+		{
+			background-image: url('../imgs/iconos/icono_usuario-tarjetas_cuentas.png');
+		}
+		#iconoCelulares a
+		{
+			background-image: url('../imgs/iconos/icono_usuario-celulares.png ');
+		}
+		#iconoTelecom a
+		{
+			background-image: url('../imgs/iconos/icono_usuario-telecom.png');
+		}
+		#iconoCoop a
+		{
+			background-image: url('../imgs/iconos/icono_usuario-coop_otros.png');
+		}
+		#iconoSeguros a
+		{
+			background-image: url('../imgs/iconos/icono_usuario-seguros.png');
+		}
+		#iconoPensiones a
+		{
+			background-image: url('../imgs/iconos/icono_usuario-pensiones.png');
+		}
+		#iconoFinca a
+		{
+			background-image: url('../imgs/iconos/icono_usuario-finca.png');
+		}
+		#iconoCcerradas a
+		{
+			background-image: url('../imgs/iconos/icono_usuario-cuentas_cerradas.png');
+		}
+		
+		/* Se define el submenu */
+		
+		#barraFunciones li.subnivel
+		{
+			background: url('../imgs/barra-funciones-f3.png') -241px 0 no-repeat;
+		}
+		#barraFunciones li.subnivel ul
+		{
+			float: left;
+			clear: both;
+			border-top: 1px solid #B2B2B2;
+			background: #F8F8F8;
+			display: block;
+		}
+			#barraFunciones li.subnivel ul li
+			{
+				margin-left: 15px;
+				width: 226px;
+				border-top: 1px dashed #0061B4;
+			}
+			#barraFunciones li.subnivel ul li:first-child
+			{
+				border-top: none;
+			}
+				#barraFunciones li.subnivel ul li a
+				{
+					width: 226px;
+					height: auto;
+					background:url('../imgs/barra-funciones-submenu-f1.png') 0 50% no-repeat;
+					color: #0060B5;
+				}
+				/* Hack box*/
+				#barraFunciones li.subnivel ul li a
+				{
+					padding: 10px 15px 10px 15px;
+					voice-family: "\"}\"";
+					voice-family: inherit;
+					width: 196px; /*Para el ie60*/
+				}
+					html>body div#barraFunciones li.subnivel ul li a
+					{
+						width: 196px; /*Para el firefox*/
+					}
+				/**/
+				#barraFunciones li.subnivel ul li.actual a
+				{
+					background:url('../imgs/barra-funciones-submenu-f1.png') -226px 50% no-repeat;
+				}
+
+/* Presentacion del modulo de ayuda */
+
+#moduloAyuda
+{
+	position: absolute;
+	top: 27px;
+	right: 25px;
+}
+	#moduloAyuda a
+	{
+		width: 160px;
+		height: 50px;
+		display: block;
+		text-indent: -9000px;
+		background: url('../imgs/icono-ayuda-pq.jpg') 0 0 no-repeat;
+		float: left;
+	}
+
+
+/* Modificaciones en la barra de funciones para ajustarla a las FAQ*/
+
+body#paginaFaq #barraFunciones h2
+{
+	width: 244px;
+	height: 38px;
+	background: url('../imgs/faqs-navegacion-f3.png') 0 0 no-repeat;
+	color: #276397;
+	font-weight: bold;
+}
+	/* Hack box*/
+	body#paginaFaq #barraFunciones h2
+	{
+		padding: 15px 15px 0 15px;
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width: 214px;
+		height: 23px; /*Para el ie60*/
+	}
+		html>body#paginaFaq #barraFunciones h2
+		{
+			width: 214px;
+			height: 23px; /*Para el firefox*/
+		}
+	/**/
+
+body#paginaFaq #barraFunciones ul
+{
+	width: 244px;
+	background: url('../imgs/faqs-navegacion-f1.jpg') 0 0 no-repeat;
+	min-height: 625px;
+}
+	body#paginaFaq #barraFunciones ul li
+	{
+		width: 243px;
+		border-bottom: 1px dashed #B1B1B1;
+		background: none;
+	}
+		body#paginaFaq #barraFunciones ul li a
+		{
+			background: url('../imgs/faqs-navegacion-f4.png') 0 50% no-repeat;
+			width: 244px;
+			height: auto;
+			line-height: 1.2em;
+		}
+			/* Hack box*/
+			body#paginaFaq #barraFunciones ul li a
+			{
+				padding: 8px 20px 8px 30px;
+				voice-family: "\"}\"";
+				voice-family: inherit;
+				width: 194px; /*Para el ie60*/
+			}
+				html>body#paginaFaq #barraFunciones ul li a
+				{
+					width: 194px; /*Para el firefox*/
+				}
+			/**/
+	body#paginaFaq #barraFunciones ul li.actual
+	{
+		background: url('../imgs/faqs-navegacion-f2.jpg') 0 0 no-repeat;
+	}
+		body#paginaFaq #barraFunciones ul li.actual a
+		{
+			color: #69AA12;
+			background: url('../imgs/faqs-navegacion-f4.png') -244px 50% no-repeat;
+		}
+
+/* Presentacion para el buscador de faqs */
+
+body#paginaFaq #faqBuscador
+{
+	width: 622px;
+	height: 53px;
+	background: url('../imgs/faqs-buscador-f1.png') 0 0 no-repeat;
+	float: left;
+	clear: both;
+	position: relative;
+	display: block;
+	margin-bottom: 30px;
+}
+	body#paginaFaq #faqBuscador fieldset
+	{
+		position: absolute;
+		left: 23px;
+		top: 11px;
+		background: none;
+		width: auto;
+		height: auto;
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+		body#paginaFaq #faqBuscador fieldset input
+		{
+			position: absolute;
+			left: 0;
+			top: 8px;
+			width: 263px;
+			border: 0;
+			height: 16px;
+			background: #FFFFFF;
+			color: #919191;
+		}
+		body#paginaFaq #faqBuscador fieldset div
+		{
+			position: absolute;
+			top:0;
+			left: 285px;
+			padding-right: 5px; /* Ajuste para cazar un bug en chrome*/
+		}
+	body#paginaFaq #faqBuscador p
+	{
+		position: absolute;
+		right: 20px;
+		top: 18px;
+	}
+		body#paginaFaq #faqBuscador p a
+		{
+			color: #539B13;
+			text-decoration: underline;
+			padding-left: 13px;
+			background: url('../imgs/faqs-buscador-f2.png') 0 0 no-repeat;
+		}
+
+
+/* Navegacion entre los contenidos de Le ayudamos */
+
+#listadoOpciones
+{
+	width: 550px;
+	padding-left: 0;
+	margin-bottom: 30px;
+	float: left;
+	clear: both;
+	list-style-type: none;
+}
+	#listadoOpciones li
+	{
+		width: 550px;
+		float: left;
+		text-align: left;
+		margin:0;
+		padding: 0;
+		border-bottom: 1px dashed #B2B1AC;
+		list-style-type: none;
+	}
+		#listadoOpciones li:first-child
+		{
+
+		}
+		#listadoOpciones li a
+		{
+			float: left;
+			padding: 10px 10px 10px 35px;
+			font-size: 1.2em;
+			color: #686868 !important;
+			text-decoration: none;
+			background: url('../imgs/listado-opciones-f1.png') 5px 50% no-repeat;
+		}
+			#listadoOpciones li a:hover
+			{
+				text-decoration: underline;
+			}
+
+/* Pie de pagina*/
+#pie h1 a
+{
+	width: 145px;
+	height: 25px;
+	display: block;
+	text-indent: -9000px;
+	background: url('../imgs/pie-logo-midatacredito.png') 0 0 no-repeat;
+}
+#pie h3
+{
+	color: #FFFFFF;
+	margin: 0 10px 25px 10px;
+	font-size: 1em;
+	font-weight: bold;
+}
+	#pie ul
+	{
+		list-style-type: none;
+		margin: 0 15px 0 10px;
+		padding: 0;
+		font-size: 0.9em;
+		font-weight: normal;
+	}
+		#pie ul li
+		{
+			margin-bottom: 0.5em;
+			line-height: 1.3em;
+		}
+			#pie ul li a
+			{
+				color: #FFFFFF;
+				text-decoration: none;
+			}
+				#pie ul li a:hover
+				{
+					text-decoration: underline;
+				}
+
+#pieCreditos p a
+{
+	float: right;
+	width: 187px;
+	height: 28px;
+	display: block;
+	background: url('../imgs/pie-logo-plataforma.png') 0 0 no-repeat;
+	text-indent: -9000px;
+	margin-top:-20px;
+}

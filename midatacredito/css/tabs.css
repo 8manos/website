@@ -1,0 +1,175 @@
+/* >> The Magnificent CLEARFIX << */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; } /* Hides from IE-mac \*/
+.clearfix { display: block; }
+
+#inicialPromocional
+{
+	height: 387px;
+	background:url('../imgs/carrusel_final/administre.png') -55px -85px no-repeat;
+}
+
+	#inicialPromocional h2 {
+		background:url('../imgs/carrusel_final/titulo administre.png') -55px -95px no-repeat;
+	}
+
+#inicialPromocional2
+{
+	height: 387px;
+	background:url('../imgs/carrusel_final/monitoree.png') -55px -85px no-repeat;
+}
+
+	#inicialPromocional2 h2 {
+		background:url('../imgs/carrusel_final/titulo monitoree.png') -65px -115px no-repeat;
+	}
+
+#inicialPromocional3
+{
+	height: 387px;
+	background:url('../imgs/carrusel_final/alerte.png') -55px -85px no-repeat;
+}
+
+	#inicialPromocional3 h2 {
+		background:url('../imgs/carrusel_final/titulo alerte.png') -65px -115px no-repeat;
+	}
+
+#inicialPromocional4
+{
+	height: 387px;
+	background:url('../imgs/carrusel_final/visualice.png') -55px -85px no-repeat;
+}
+
+	#inicialPromocional4 h2 {
+		background:url('../imgs/carrusel_final/titulo visualice.png') -95px -115px no-repeat;
+	}
+
+#tabs {
+	position:relative;
+	padding:0 0 5px 0;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	height:379px;
+}
+
+#tabs .modulo h2
+{
+	position: absolute;
+	left: 60px;
+	top: 10px;
+	display: block;
+	width: 690px;
+	height: 110px;
+	text-indent: -9000px;
+}
+
+	#tabs .modulo ul
+	{
+		position: absolute;
+		left: 311px;
+		top: 135px;
+		display: block;
+		width: 290px;
+		height: 200px;
+		overflow: hidden;
+		margin: 0;
+		padding: 0 0 0 15px;
+	}
+		#tabs .modulo ul li
+		{
+			list-style-image: url('../imgs/promocional-vin01.png');
+			color: #404040;
+			font-size:1em;
+			margin-bottom: 13px;
+		}
+	
+	
+	#tabs_nav {
+		position:absolute;
+		bottom:3px;
+		left:0;
+		margin:0 0 0 4px;
+		padding:0 0 0 0;
+		width:auto;
+		background-image:#000;
+		z-index:105;
+	}
+	
+		#tabs_nav li {
+			display:block;
+			float:left;
+			width:233px;
+			margin:0 0 0 0;
+			padding:0 0 0 0;
+		}
+		
+		#tabs_nav li a {
+			display:inline-block;
+			color:#fff;
+			text-align:center;
+			width:100%;
+			padding:0 0 0 0;
+			margin:0 0 0 0;
+			text-decoration:none;
+			position:relative;
+			overflow:hidden;
+			text-indent:-9999em;
+			height:45px;
+		}
+		
+			#tabs_nav li a:hover {
+				text-decoration:underline;
+			}
+			
+		#tabs_nav li.ui-tabs-selected a#tab1 {
+			background-image: url(http://midatacredito.8manos.com/imgs/carrusel_final/menu%20administre.png);
+			background-position: -59px -420px;
+		}
+		
+		#tabs_nav li a#tab1 {
+			background-image: url(http://midatacredito.8manos.com/imgs/carrusel_final/menu%20alerte.png);
+			background-position: -59px -420px;
+		}
+		
+		#tabs_nav li.ui-tabs-selected a#tab2 {
+			background-image: url(http://midatacredito.8manos.com/imgs/carrusel_final/menu%20monitoree.png);
+			background-position: -294px -420px;
+		}
+		
+		#tabs_nav li a#tab2 {
+			background-image: url(http://midatacredito.8manos.com/imgs/carrusel_final/menu%20administre.png);
+			background-position: -294px -420px;
+		}
+		
+		#tabs_nav li.ui-tabs-selected a#tab3 {
+			background-image: url(http://midatacredito.8manos.com/imgs/carrusel_final/menu%20alerte.png);
+			background-position: -527px -420px;
+		}
+		
+		#tabs_nav li a#tab3 {
+			background-image: url(http://midatacredito.8manos.com/imgs/carrusel_final/menu%20monitoree.png);
+			background-position: -527px -420px;
+		}
+		
+		#tabs_nav li a#tab4 {
+			background-image: url(http://midatacredito.8manos.com/imgs/carrusel_final/menu%20alerte.png);
+			background-position: -761px -420px;
+		}
+		
+		#tabs_nav li.ui-tabs-selected a#tab4 {
+			background-image: url(http://midatacredito.8manos.com/imgs/carrusel_final/menu%20visualice.png);
+			background-position: -761px -420px;
+		}
+		
+	#tabs_nav .ui-tabs-selected a {
+		font-weight:bold;
+	}
+		
+	.ui-tabs-panel {
+		height:100%;
+		overflow:hidden;
+	}
+
+.ui-tabs-hide {
+	display:none;
+}

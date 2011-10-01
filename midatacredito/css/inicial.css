@@ -1,0 +1,219 @@
+/*
+
+Inicial.css:
+- Promocional
+- Descripcion de productos
+- Clientes
+
+Creado por:
+Version 1.0 - carloscaicedo en gmail. 13 de Agosto de 2010
+
+*/
+
+a {
+	outline:0;
+}
+
+
+#probarProducto
+{
+	position: absolute;
+	z-index: 100;
+	left: 641px;
+	top: 167px;
+	display: block;
+	width: 275px;
+	height: 192px;
+	background: url('../imgs/probar_producto-f1.png');
+	position: relative;
+}
+	#probarProducto h3
+	{
+		color: #FFFFFF;
+		font-size: 1.4em;
+		position: absolute;
+		left: 19px;
+		top: 21px;
+	}
+	#probarProducto span.boton
+	{
+		position: absolute;
+		left: 34px;
+		top: 84px;
+	}
+		#probarProducto span.boton a
+		{
+			display: block;
+			width: 205px;
+			height: 43px;
+			text-indent: -9000px;
+			background: url('../imgs/btn-adquirir.png') 0 0 no-repeat;
+		}
+	#probarProducto p
+	{
+		position: absolute;
+		left: 36px;
+		top: 143px;
+		color: #003E73;
+		font-size: 0.9em;
+	}
+
+#videoProbar
+{
+	position: absolute;
+	left: 790px;
+	top: 35px;
+}
+	#videoProbar a
+	{
+		display: block;
+		width: 120px;
+		height: 103px;
+		background: url('../imgs/btn-video-que_es.png') 0 0 no-repeat;
+		text-indent: -9000px;
+	}
+
+#btnVerVideo
+{
+	position: absolute;
+	z-index: 100;
+	left: 737px;
+	top: 55px;
+}
+	#btnVerVideo a
+	{
+		text-indent: -9000px;
+		display: block;
+		width: 210px;
+		height: 66px;
+		background: url('../imgs/planes-precios-que_es.png');
+
+	}
+#inicialPresentacion,
+#pieBoton
+{
+	padding: 50px 0 50px 0;
+}
+	#inicialPresentacion h2
+	{
+		margin: 0 0 18px 22px;
+	}
+	#inicialPresentacion p
+	{
+		text-align: center;
+		margin: 25px auto 25px auto;
+	}
+		#inicialPresentacion p a,
+		#pieBoton p a
+		{
+			display: block;
+			width: 252px;
+			height: 55px;
+			background: url('../imgs/btn-aquieralo_ya.gif') 0 0 no-repeat;
+			text-indent: -9000px;
+			margin: auto;
+		}
+
+	#inicialPresentacion .columnas,
+	#pieBoton .columnas
+	{
+		width: 912px;
+		margin: 0 14px 0 14px;
+		float: left;
+		clear: both;
+	}
+		#inicialPresentacion .columnas div.columnaSencilla
+		{
+			float: left;
+			width: 424px;
+			margin-left: 64px;
+		}
+		#inicialPresentacion .columnas div:first-child
+		{
+			margin-left: 0;
+		}
+
+#inicialClientes
+{
+	background: url('../imgs/clientes-f1.jpg') 0 0 no-repeat;
+	padding: 15px 0 15px 0;
+}
+	#inicialClientes h2
+	{
+		margin-left: 40px;
+	}
+	.testimonioCliente
+	{
+		width: 255px;
+		float: left;
+		margin-left: 48px;
+	}
+		.testimonioCliente blockquote
+		{
+			width: 255px;
+			background: url('../imgs/clientes-f2.png') 0 0 no-repeat;
+			float: left;
+			clear: both;
+			font-style: italic;
+			font-size: 0.8em;
+			color: #404040;
+			line-height: 1.3em;
+		}
+			/* Hack box*/
+			.testimonioCliente blockquote
+			{
+				padding: 10px 15px 5px 15px;
+				voice-family: "\"}\"";
+				voice-family: inherit;
+				width: 225px; /*Para el ie60*/
+			}
+				html>body div.testimonioCliente blockquote
+				{
+					width: 225px; /*Para el firefox*/
+				}
+			/**/
+		.infoCliente
+		{
+			width: 255px;
+			background: url('../imgs/clientes-f3.png') 0 0 no-repeat;
+			float: left;
+			clear: both;
+		}
+			/* Hack box*/
+			.infoCliente
+			{
+				padding: 30px 5px 0 5px;
+				voice-family: "\"}\"";
+				voice-family: inherit;
+				width: 245px; /*Para el ie60*/
+			}
+				html>body div.infoCliente
+				{
+					width: 245px; /*Para el firefox*/
+				}
+			/**/
+			.infoCliente div.imagen
+			{
+				float: left;
+				margin-right:13px;
+			}
+				.infoCliente div.imagen img
+				{
+					border: 1px solid #A8A8A8;
+				}
+					.infoCliente h3
+					{
+						font-size: 1em;
+						font-weight: bold;
+					}
+					.infoCliente p
+					{
+						font-size: 0.9em;
+						line-height: 1.1em;
+						color: #404040;
+					}
+.creditos {
+	text-align:right;
+	font-size:11px;
+	
+}

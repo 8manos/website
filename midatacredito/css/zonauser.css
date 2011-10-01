@@ -1,0 +1,886 @@
+/*
+
+Forms.css:
+- 
+
+Creado por:
+Version 1.0 - carloscaicedo en gmail. 23 de Agosto de 2010
+
+*/
+body#paginaUsuario .box{
+	float:left;
+	margin:20px 0 20px 0;
+	color: #404040;
+}
+body#paginaUsuario .box ul{
+	padding:0 10px 0 10px;
+	margin:0;
+}
+body#paginaUsuario .box li
+{
+	list-style:none;
+	border-bottom:1px dashed #ccc;
+	float:left;
+	width: 604px;
+	position: relative;
+}
+	/* Hack box*/
+	body#paginaUsuario .box li
+	{
+		padding:10px 20px 10px 55px;
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width: 529px; /*Para el ie60*/
+	}
+		html>body#paginaUsuario .box li
+		{
+			width: 529px; /*Para el firefox*/
+		}
+	/**/
+body#paginaUsuario .box li img {
+	float:left;
+	margin-right:10px;
+}
+body#paginaUsuario .box li p {
+ 	float:left;
+	padding-right:10px;
+	font-size:12px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+body#paginaUsuario .box li p small {
+	font-size:12px;
+	font-style:italic;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:#666;
+}
+	body#paginaUsuario .box li p a
+	{
+		color: #404040;
+		text-decoration: underline;
+	}
+body#paginaUsuario .box li h3 {
+	font-size:11px;
+	font-weight:bold;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	float:left;
+	width:540px;
+	margin-bottom:5px;
+	color:#666;
+}
+body#paginaUsuario .box .close {
+	float:right;
+}                      
+body#paginaUsuario .box .close a {
+	background:url(../imgs/iconos/close.png) 0 0 no-repeat;
+	text-indent:-10000px;
+	display:block;
+	width:18px;
+	height:20px;
+}
+body#paginaUsuario .box .close a:hover{
+	background-position:0 -44px;
+}
+	/*Excepcion para el caso de los cabezotes*/
+	body#paginaUsuario .box #textoCerrar a
+	{
+		text-indent: 0;
+		display: inline;
+		width: auto;
+		height: auto;
+		background: none;
+		font-size: 0.7em;
+		text-decoration: none;
+		color: #404040;
+		float: right;
+		padding-top: 2px;
+	}
+		body#paginaUsuario .box #textoCerrar a:hover
+		{
+			text-decoration: underline;
+		}
+
+body#paginaUsuario .box .header
+{
+	font-weight: bold;
+}
+body#paginaUsuario .box .textosActividad
+{
+	float: left;
+	width: 200px;
+}
+body#paginaUsuario .box .links {
+    float:right;
+	overflow:hidden;
+}
+body#paginaUsuario .box .links a {
+	font-size:12px;
+	float:left;
+	text-decoration:none;
+	border-left:1px solid #ccc;
+	padding:0 10px;
+}
+	body#paginaUsuario .box .links a:first-child
+	{
+		border-left: 0;
+	}
+	/*Icono para configurar el cel */
+	body#paginaUsuario .box .links a.configureMovil
+	{
+		padding: 0px 20px 0 10px;
+		background: url('../imgs/configure-movil-f1.png') right top no-repeat;
+	}
+body#paginaUsuario .box .links a:hover {
+	text-decoration:underline;
+}
+body#paginaUsuario .box .help {
+	margin:-5px 17px 0 0;
+	float:left
+}
+body#paginaUsuario .box .grafica {
+	width:622px;
+	padding:20px 0;
+	text-align:center;
+}
+body#paginaUsuario .box .buttons {
+	margin:15px 20px 0 0;
+	padding:0;
+	float:right
+}
+	body#paginaUsuario #infoPersonal .buttons
+	{
+		margin-top: 27px;
+	}
+/*Elementos propios de cada modulo*/
+
+#moduloNotificaciones
+{
+	padding: 0 0 10px 0;
+	background: url('../imgs/usuario-modulo1-f2.gif') bottom left no-repeat #FFFFE1;
+}
+	#moduloNotificaciones ul .close
+	{
+		position: absolute;
+		right: 7px;
+	}
+#moduloNotificaciones div.header
+{
+	background: url('../imgs/usuario-modulo1-f1.gif') 0 0 no-repeat;
+	height: 36px;
+	color: #404040;
+}
+	/* Hack box*/
+	#moduloNotificaciones div.header
+	{
+		padding: 12px 17px 0 17px;
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		height: 24px; /*Para el ie60*/
+	}
+		html>body div#moduloNotificaciones div.header
+		{
+			height: 24px; /*Para el firefox*/
+		}
+	/**/
+	#moduloNotificaciones .header ul
+	{
+		background: #FFFFE1;
+	}
+		#moduloNotificaciones li.movil
+		{
+			background: url('../imgs/iconos/icono_notificacion-movil.gif') left center no-repeat;
+		}
+		#moduloNotificaciones li.alerta
+		{
+			background: url('../imgs/iconos/icono_notificacion-alerta.gif') left center no-repeat;
+		}
+		#moduloNotificaciones li.sms
+		{
+			background: url('../imgs/iconos/icono_notificacion-sms.gif') left center no-repeat;
+		}
+
+
+#moduloActividad,
+#moduloCreditos
+{
+	padding:0;
+	background:#fff url(../imgs/backgrounds/zonaUser-box-back.gif) 0 30px repeat-x;
+}
+	#moduloActividad ul .close,
+	#moduloCreditos ul .close
+	{
+		position: absolute;
+		right: 7px;
+	}
+#moduloActividad div.header,
+#moduloCreditos div.header,
+#moduloSaldos div.header,
+#alerts div.header,
+#infoPersonal div.header,
+#moduloDetalle div.header
+{
+	background: url('../imgs/usuario-modulo2-f1.png') 0 0 no-repeat;
+	height: 30px;
+	color: #005EAD;
+	position: relative;
+	margin-bottom:10px;
+}
+	/* Hack box */
+	#moduloActividad div.header,
+	#moduloCreditos div.header,
+	#moduloSaldos div.header,
+	#alerts div.header,
+	#infoPersonal div.header,
+	#moduloDetalle div.header
+	{
+		padding: 10px 17px 0 17px;
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		height: 20px; /*Para el ie60*/
+	}
+		html>body div#moduloActividad div.header,
+		html>body div#moduloCreditos div.header,
+		html>body div#moduloSaldos div.header,
+		html>body div#alerts div.header,
+		html>body #infoPersonal div.header,
+		#moduloDetalle div.header
+		{
+			height: 20px; /*Para el firefox*/
+		}
+	
+	#moduloSaldos div.header {
+		background-image:none;
+		margin-bottom:10px;
+	}
+	#alerts div.header {
+		background-image:none;
+		border-bottom:1px dashed #999;
+		padding-bottom:10px
+	}
+	#infoPersonal div.header {
+		background-image:none;
+		border-bottom:1px dashed #999;
+		padding-bottom:7px;
+		padding-top:14px;
+	}
+	#moduloActividad div.header .help,
+	#moduloCreditos div.header .help,
+	#moduloSaldos div.header .help,
+	#alerts div.header .help,
+	#infoPersonal div.header .help
+	{
+		position: absolute;
+		top: 7px;
+	}
+	#moduloActividad div.header .help{
+		left:155px;
+	}
+	#moduloDetalle div.header .help{
+		left:300px !important;
+	}
+	#moduloCreditos div.header .help {
+		left:110px;
+	}
+	#moduloSaldos div.header .help
+	{
+		left: 135px;
+		top:15px;
+	}
+	#alerts div.header .help {
+		left:125px;
+		top:13px;
+	}
+	#infoPersonal div.header .help {
+		left:195px;
+		top:13px;
+	}
+	#moduloSaldos div.header img {
+		margin:0 5px -10px 0;
+	}
+	#alerts div.header img {
+		margin:2px 5px -8px 0;
+	}
+	#moduloActividad .header a,
+	#moduloCreditos .header a,
+	#moduloSaldos .header a
+	{
+		color: #005EAD;
+	}
+	#moduloActividad .header ul,
+	#moduloCreditos .header ul
+	{
+		background: #FFFFE1;
+	}
+		body#paginaUsuario #moduloActividad li, #moduloDetalle li
+		{
+			background: url('../imgs/iconos/icono_notificacion-alerta1.gif') left center no-repeat;
+			border-bottom: 1px solid #CCCCCC;
+		}
+			body#paginaUsuario #moduloActividad li p
+			{
+				padding-right: 120px;
+			}
+			.detalle-tarjeta li p strong {
+			    margin-left:5px;
+			}
+			#moduloDetalle li .help {
+                left:210px;
+			}
+			.detalle-tarjeta .gris{
+			    background-color:#f4f4f4 !important;
+			}
+			body#paginaUsuario #moduloActividad li .fecha
+			{
+				position: absolute;
+				top: 12px;
+				right: 65px;
+				text-align: right;
+				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				font-size: 0.8em;
+				color: #005EAD;
+				width: 70px;
+			}
+#moduloActividad .footer
+{
+	float:left;
+	width:270px;
+	height: 25px;
+	display: block;
+	background:url('../imgs/usuario-modulo2-f3.gif') 0 0 no-repeat;
+	margin-left: 345px;
+}
+	#moduloActividad .footer a
+	{
+		float: left;
+		color: #005EAD;
+		text-decoration: none;
+		font-size: 11px;
+		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		margin: 5px 5px 0 20px;
+	}
+
+#moduloCreditos .saldo
+{
+	color: #404040;
+	position: absolute;
+	right: 1px;
+	top:-5px;
+	float: left;
+	width: 270px;
+	height: 60px;
+	z-index: 10;
+}
+	#moduloCreditos .saldo .titulo
+	{
+		position: absolute;
+		top: 13px;
+	}
+	#moduloCreditos .saldo .valor
+	{
+		background:url('../imgs/usuario-saldo-f1.gif') right top no-repeat;
+		margin:-4px 0 0 10px;
+		height: 60px;
+		float: right;
+		display: block;
+		width: auto;
+		z-index: 100;
+	}
+	#moduloCreditos .saldo .valor span
+	{
+		background:url('../imgs/usuario-saldo-f2.gif') left top no-repeat;
+		padding: 16px 5px 0 10px;
+		height: 80px;
+		display:block;
+		margin-right:5px;
+		font-size:16px;
+		font-weight:bold;
+		color:#fff;
+		z-index: 100;
+		margin-top: 0;
+	}
+		/* Hack box
+		#moduloCreditos .saldo .valor span
+		{
+			voice-family: "\"}\"";
+			voice-family: inherit;
+			height: 20px; /*Para el ie60
+		}
+			html>body div#moduloCreditos .saldo .valor span
+			{
+				height: 20px; /*Para el firefox
+			}
+		/**/
+#moduloSaldos {
+	border-top:1px solid #ccc;
+	background:url(../imgs/backgrounds/saldos.gif) right 40px no-repeat;
+	width:100%;
+}
+#moduloSaldos ul,
+ul.saldos {
+	padding:0 !important;
+	margin:0;
+}
+#moduloSaldos ul li,
+ul.saldos li {
+	float:left;
+	width:150px !important;
+	display:block;
+	height:50px;
+	border-bottom:none !important;
+	background: url('../imgs/backgrounds/mis-saldos-f1.gif') right top no-repeat;
+	text-align:center;
+	padding:43px 0 0 0 !important;
+}
+#moduloSaldos ul li:last-child,
+#moduloSaldos ul li:first-child,
+ul.saldos li:last-child,
+ul.saldos li:first-child {
+	border:none;
+}
+#moduloSaldos ul li.mora30,
+ul.saldos li.mora30 {
+	background:url(../imgs/iconos/nnora-30.gif) 50% 10px no-repeat;
+}
+#moduloSaldos ul li.mora60,
+ul.saldos li.mora60 {
+	background:url(../imgs/iconos/nnora-60.gif) 50% 10px no-repeat;
+}
+#moduloSaldos ul li.mora90,
+ul.saldos li.mora90 {
+	background:url(../imgs/iconos/nnora-90.gif) 50% 10px no-repeat;
+}
+#moduloSaldos ul li p,
+ul.saldos li p {
+	color:#fff;
+	font-weight:normal;
+	font-size:12px;
+	margin:0 0 3px 33px;
+	color:#000;
+	display:block;
+	clear:both;
+}
+#moduloSaldos ul li h4,
+ul.saldos li h4 {
+	font-size:15px;
+	font-weight:normal;
+	color:#000;
+	display:block;
+	clear:both;
+}
+#moduloSaldos ul li.totales,
+ul.saldos li.totales {
+	background:url(../imgs/backgrounds/saldos-azul.gif) 0 0 no-repeat;
+	width:160px !important;
+	height:70px;
+	padding:0;
+	text-align:center;
+	padding:28px 0 0 0 !important;
+}
+#moduloSaldos ul li.totales p,
+ul.saldos li.totales p {
+	color:#fff;
+	font-weight:normal;
+	font-size:12px;
+	margin:0 0 5px 16px;
+}
+#moduloSaldos ul li.totales h4,
+ul.saldos li.totales h4 {
+	font-size:18px;
+	font-weight:bold;
+	color:#fff;
+}
+#alerts {
+	width:301px;
+	float:left;
+	background:url(../imgs/backgrounds/media-caja.gif) 0 0 no-repeat;
+}
+#infoPersonal {
+	width:301px;
+	float:right !important;
+	background:url(../imgs/backgrounds/media-caja.gif) 0 0 no-repeat;
+}
+#alerts fieldset, #infoPersonal fieldset {
+	border:none;
+	background:none;
+	margin:0;
+	padding:0;
+}
+#alerts fieldset p {
+	margin:15px 15px 15px 15px;
+	font-size:11px;
+	line-height:14px;
+}
+#alerts .field {
+	margin:0;
+	padding:0;
+}
+#alerts .field input{
+	margin:0 0 0 -25px;
+	padding:0;
+}
+#alerts .field label {
+	width:230px;
+	line-height:16px;
+}	
+#infoPersonal ul {
+	margin:0;
+	padding:0 !important;
+}
+#infoPersonal h4 {
+	font-size:18px;
+	padding:15px 20px 5px 20px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#infoPersonal ul li {
+	border:none !important;
+	font-size:11px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height:16px;
+	padding:5px 0 0 20px !important;
+	width:270px !important;
+}
+
+body#paginaUsuario #moduloActividad .listado
+{
+	list-style: decimal;
+	width: 100%;
+	float: left;
+	clear: both;
+	margin-bottom: 35px;
+}
+
+	body#paginaUsuario #moduloActividad .listado li
+	{
+		background: none;
+		border: 0;
+		padding-left: 0;
+		padding-right: 0;
+		font-size:12px;
+		padding-bottom: 0px;
+	}
+
+#movilInscripcion
+{
+	float:left;
+	margin:20px 0 0 0;
+}
+	#movilInscripcion fieldset
+	{
+		background:none;
+		border:none;
+		margin:0;
+		padding:0 !important;
+	}
+/* Definicion de caracteristicas para el modulo de tarjetas de credito */
+
+.dobleColumna
+{
+	width: 623px;
+	float: left;
+	clear: both;
+	margin: 30px 0 30px 0;
+}
+	.dobleColumna .columna
+	{
+		float: left;
+		width: 303px;
+		margin-left: 17px;
+		border-bottom: 1px solid #D8D8D8;
+	}
+		.dobleColumna .columna:first-child
+		{
+			margin-left: 0;
+		}
+		.dobleColumna .columna .header
+		{
+			float: left;
+			clear: both;
+			width: 303px;
+			height: 45px;
+			background: url('../imgs/usuario-modulo5-f1.gif') 0 0 no-repeat;
+		}
+			/* Hack box*/
+			.dobleColumna .columna .header
+			{
+				padding: 13px 20px 0 20px;
+				voice-family: "\"}\"";
+				voice-family: inherit;
+				width: 263px;
+				height: 32px:/*Para el ie60*/
+			}
+				html>body div.dobleColumna .columna .header
+				{
+					width: 263px;
+					height: 32px;/*Para el firefox*/
+				}
+			/**/
+		.dobleColumna .reclamacion
+		{
+			background: url('../imgs/backgrounds/reclamacion-f1.jpg') 0 0 no-repeat;
+		}
+
+/* Presentacion de la tabla de tarjetas de credito */
+
+.tarjetasCredito
+{
+	width: 623px;
+	float: left;
+	clear: both;
+	position: relative; 
+	z-index:0;
+}
+	#marcoContenido h3
+	{
+		color: #005EAD;
+		font-weight: bold;
+	}
+		#marcoContenido h3.titulo
+		{
+			margin: 25px 0 0 16px;
+		}
+
+	/* Presentacion para las tablas */
+	table.tablaDatos
+	{
+		width: 623px;
+		border: 0;
+		padding: 0;
+		margin: 15px 0 15px 0;
+		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	}
+		
+		table#detalleTarjeta
+		{
+			width: 580px;
+			margin-left: 20px;
+			margin-right: 23px;
+		}
+			
+			table#detalleTarjeta tbody td
+			{
+				text-align: center;
+			}
+		
+		.tablaDatos thead
+		{
+			background:#88c716;
+		}
+			.tablaDatos thead th
+			{
+				font-weight: bold;
+				color: #FFFFFF;
+				padding: 10px 0 5px 15px;
+				font-size: 0.9em;
+			}
+			.tablaDatos thead th:first-child{
+			    background-image:url('../imgs/usuario-modulo6-f1.gif');
+			    background-position: 0 0; 
+			    background-repeat:no-repeat;
+			}
+			.tablaDatos thead th:last-child{
+			    background-image:url('../imgs/usuario-modulo6-f1.gif');
+			    background-position: right 0; 
+			    background-repeat:no-repeat;
+			}
+			
+			div.relativo
+			{
+				position: relative;
+				float: left;
+				z-index:0;
+			}
+				body#paginaUsuario .tablaDatos div.relativo span
+				{
+					margin-top: -13px;
+				}
+			
+			/*Link para ordenar datos */
+				.tablaDatos thead th a.ordenar
+				{
+					color: #FFFFFF;
+					text-decoration: none;
+					padding-right: 20px;
+					background: url('../imgs/ordenar-columna.png') right center no-repeat;
+				}
+					.tablaDatos thead th a.ordenar:hover
+					{
+						text-decoration: underline;
+					}
+			
+			.tablaDatos tbody td,
+			.tablaDatos tbody th
+			{
+				border-bottom: 1px solid #D8D8D8;
+				padding: 12px 15px 12px 14px;
+				color: #404040;
+				font-size: 0.85em;
+			}
+				.tablaDatos td a
+				{
+					color: #005EAD;
+					text-decoration: none;
+				}
+					.tablaDatos td a:hover
+					{
+						text-decoration: underline;
+					}
+		.tablaDatos tfoot
+		{
+			background:#ededed;
+			height: 30px;
+		}
+			.tablaDatos tfoot td
+			{
+				padding: 9px 10px 10px 10px;
+				font-size: 0.8em;
+				color: #404040;
+			}
+			.tablaDatos tfoot td:first-child{
+			    background:url('../imgs/usuario-modulo6-f2.gif') 0 0 no-repeat;
+			}
+			.tablaDatos tfoot td:last-child{
+			    background:url('../imgs/usuario-modulo6-f2.gif') right 0 no-repeat;
+			}
+				.tablaDatos tfoot td.antSig
+				{
+					text-align: right;
+					color: #005EAD;
+				}
+		.tablaDatos td,
+		.tablaDatos th
+		{
+			background: none;
+		}
+	/* Tabla sencilla */
+	.tablaSencilla
+	{
+		width: 303px;
+		height:213px;
+		border: 0;
+		position: relative;
+		z-index:0;
+	}
+		.tablaSencilla td,
+		.tablaSencilla th
+		{
+			padding: 5px 10px 5px 10px;
+			color: #404040;
+			font-size: 0.9em;
+			font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			position: relative;
+		}
+			.tablaSencilla span.titulo
+			{
+				position: relative;
+			}
+			.tablaSencilla td
+			{
+				text-align: right;
+			}
+			.tablaSencilla td, .tablaSencilla th
+			{
+				border-bottom:1px solid #e9e9e9;
+			}
+
+/* Ajustes no muy bonitos para ubicar el icono de ayuda.*/
+.tarjeCredito #moduloActividad div.header .help 
+{
+	left: auto;
+}
+	.tarjeCredito #moduloActividad #detalleTC .help
+	{
+		left: 305px;
+	}
+.tarjeCredito .header
+{
+	position: relative;
+	z-index:0;
+}
+.tarjeCredito .help
+{
+	margin-left: 5px;
+	float: inherit;
+	display: inline;
+	position: absolute;
+	top: 8px;
+}
+	.tarjeCredito .tarjetasCredito .help
+	{
+		top: -6px;
+		left: 150px;
+	}
+
+.reclamacion p{
+    clear:both;
+    padding:10px 10px 10px 60px;
+    font-size:12px;
+}
+
+.tablaSencilla .help
+{
+	top: -5px;
+	position: absolute;
+}
+
+/* Presentacion del desplegable para cooperativas */
+
+#desplegableCoop
+{
+	float: left;
+	clear: both;
+	width: 623px;
+	height: 45px;
+	margin: 30px 0 0px 0;
+	text-align: right;
+	background: url('../imgs/backgrounds/cooperativas-f.png') right top no-repeat;
+}
+	#desplegableCoop label
+	{
+		color:#404040;
+		font-family:"Lucida Sans Unicode","Lucida Grande",sans-serif;
+		font-size:12px;
+		margin-right: 13px;
+	}
+	#desplegableCoop select
+	{
+
+		color:#404040;
+		font-family:"Lucida Sans Unicode","Lucida Grande",sans-serif;
+		font-size: 0.8em;
+		width: 212px;
+		margin: 13px 15px 0 0;
+	}
+
+/*Paginacion modulos*/
+
+.paginacionModulo
+{
+	float: left;
+	clear: both;
+	width: 100%;
+	color:#404040;
+	font-size:0.8em;
+	padding: 10px 0 10px 0;
+}
+	.paginacionModulo a
+	{
+		color:#005EAD;
+		text-decoration:none;
+	}
+	.paginacionModulo .paginas
+	{
+		float: left;
+		padding-left: 10px;
+	}
+	.paginacionModulo .antSig
+	{
+		float: right;
+		padding-right: 10px;
+		text-align: right;
+	}
+
+/* Presentacion del area de configuracion */
+
+#opcionesActivacion
+{
+	margin: 10px 0 10px 0;
+}

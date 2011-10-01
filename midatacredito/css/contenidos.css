@@ -1,0 +1,437 @@
+/*
+
+Contenidos.css:
+- Definiciones tipograficas
+
+Creado por:
+Version 1.0 - carloscaicedo en gmail. 13 de Agosto de 2010
+
+*/
+
+body
+{	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 14px;
+	text-align: center;
+	color: #000000;
+}
+	h2
+	{
+		color: #266397;
+		font-weight: normal;
+		font-size: 1.7em;
+		/*font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+		margin-bottom: 7px;
+	}
+	p
+	{
+		color: #404040;
+		line-height: 16px;
+		font-size:12px;
+		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	}
+		p a
+		{
+			color: #0061B3;
+			text-decoration: none;
+		}
+			p a:hover
+			{
+				text-decoration: underline;
+			}
+
+#paginaContenidos #contenidos h2,
+#paginaContenido #contenidos h2
+{
+	margin-bottom: 13px; 
+}
+#paginaContenidos #contenidos h3,
+#paginaContenido #contenidos h3
+{
+	color: #1B4168;
+	font-weight: bold;
+	margin-bottom: 1em; 
+}
+#paginaContenidos #contenidos h4,
+#paginaContenido #contenidos h4
+{
+	color: #266397;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+	#paginaContenidos #contenidos h4 a,
+	#paginaContenido #contenidos h4 a
+	{
+		color: #266397;
+		text-decoration: none;
+	}
+		#paginaContenidos #contenidos h4 a:hover,
+		#paginaContenido #contenidos h4 a:hover
+		{
+			text-decoration: underline;
+		}
+	#paginaContenidos #contenidos h4.fondoAyuda,
+	#paginaContenido #contenidos h4.fondoAyuda
+	{
+		padding-top: 3px;
+		padding-bottom: 4px;
+	}
+#paginaContenidos #contenidos p,
+#paginaContenido #contenidos p,
+#paginaContenidos #contenidos li,
+#paginaContenido #contenidos li
+{
+	color: #404040;
+}
+	#paginaContenidos #contenidos p,
+	#paginaContenido #contenidos p
+	{
+		line-height: 1.2em;
+	}
+	#paginaContenidos #contenidos p a,
+	#paginaContenido #contenidos p a,
+	#paginaContenidos #contenidos li a,
+	#paginaContenido #contenidos li a
+	{
+		color: #266397;
+	}
+
+
+
+
+/* Ajustes a la presentacion de una columna secundaria */
+
+#columnaSecundaria p
+{
+	font-size: 0.9em;
+	line-height: 1.2em; 
+}
+	#columnaSecundaria p.opcion
+	{
+		text-align: right;
+		color: #559B13;
+		margin: 15px 0 0 0;
+	}
+		#columnaSecundaria p.opcion a
+		{
+			color: #559B13 !important;
+		}
+
+	a.iconoAyuda
+	{
+		height: 81px;
+		width: 255px;
+		display: block;
+		text-indent: -9000px;
+		background: url('../imgs/icono-ayuda.jpg') 0 0 no-repeat;
+	}
+
+/* Presentacion para los modulos de registro e ingreso */
+
+#ingresoRegistro h3
+{
+	width: 305px;
+	height: 38px;
+	display: block;
+	color: #006699;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+	/* Hack box*/
+	#ingresoRegistro h3
+	{
+		padding: 12px 15px 0 60px;
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width: 245px;
+		height:26px; /*Para el ie60*/
+	}
+		html>body div#ingresoRegistro h3
+		{
+			width: 245px;
+			height:26px; /*Para el firefox*/
+		}
+	/**/
+	#ingresoRegistro h3.registroTitulo
+	{
+		background: url('../imgs/ingreso-registro-tit_registro.png') 0 0 no-repeat;
+	}
+	#ingresoRegistro h3.ingresoTitulo
+	{
+		background: url('../imgs/ingreso-registro-tit_ingreso.png') 0 0 no-repeat;
+	}
+#ingresoRegistro h4
+{
+	color: #006699;
+	font-weight: bold;
+	font-size: 1em;
+	margin: 10px 15px 10px 15px;
+}
+#ingresoRegistro .separadorModulo
+{
+	width: 301px
+	height:1px;
+	background: #FDFDFD;
+	display: block;
+	font-size: 1px;
+	text-indent: -9000px;
+	margin: 10px 2px 10px 2px;
+}
+#ingresoRegistro p
+{
+	margin: 15px 30px 15px 30px;
+	color: #212121;
+}
+#ingresoRegistro p#crearCuenta
+{
+	text-align: center;
+}
+	#ingresoRegistro p#crearCuenta a
+	{
+		background: url('../imgs/ingreso-registro-btn_crear.gif') 0 0 no-repeat;
+		width: 207px;
+		height: 44px;
+		display: block;
+		text-indent: -9000px;
+		margin-left: 15px;
+	}
+#ingresoRegistro ul
+{
+	margin:15px 20px 15px 20px;
+	list-style-image: url('../imgs/ingreso_registro-vin1.gif');
+	padding-left: 15px;
+}
+	#ingresoRegistro ul li
+	{
+		margin: 0 0 20px 0;
+		padding: 0;
+		color: #404040;
+	}
+	#ingresoRegistro p.ayuda
+	{
+		text-align: right;
+		font-size: 0.9em;
+	}
+		#ingresoRegistro p.ayuda a
+		{
+			color: #005FAF;
+		}
+
+#avisoSeguro .texto h3
+{
+	color: #1B4269;
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+#avisoSeguro .texto p
+{
+	color: #414141;
+	font-size: 0.9em;
+}
+#avisoSeguro .iconos a
+{
+	float: left;
+	display: block;
+	height: 81px;
+	text-indent: -9000px;
+}
+	#avisoSeguro .iconos a#iconoVeriSign
+	{
+		width: 68px;
+		background: url('../imgs/icono-verisign.gif') 0 0 no-repeat;
+	}
+	#avisoSeguro .iconos a#iconoAyuda
+	{
+		width: 255px;
+		margin-left: 50px;
+		background: url('../imgs/icono-ayuda.jpg') 0 0 no-repeat;
+	}
+
+/* Presentacion para el acuerdo de uso */
+
+#textoAcuerdo p
+{
+	font-size: 0.9em;
+	margin-bottom: 1em;
+}
+	#textoAcuerdo li
+	{
+		font-size: 0.9em;
+		line-height: 1.2em;
+	}
+
+p#aceptacion
+{
+	margin: 20px 0 20px 70px;
+	font-size: 1.2em;
+}
+p#alertasAceptacion
+{
+	margin: 20px 0 20px 0px;
+	font-size: 1.2em;
+}
+.infoPersonal {
+	background:url('../imgs/backgrounds/icon-maleta.jpg') 30px 23px no-repeat !important
+}
+.infoPersonal h2 { margin-left:70px;}
+.infoPersonal p { margin-left:70px;}
+.infoPersonal .fieldset-header h2 { margin-left:0px;}
+
+
+/* Presentacion para las faqs */
+
+body#paginaFaq #marcoContenido h3
+{
+	margin-bottom: 20px;
+}
+	.faqListado
+	{
+		padding-left:0;
+	}
+	.faqListado li
+	{
+		list-style-type: none;
+		border-bottom: 1px solid #D8D8D8;
+		padding: 10px 0 10px 18px;
+		background: url('../imgs/faqs-vin1.gif') 0 0 no-repeat;
+	}
+		.faqListado li a
+		{
+			text-decoration: none;
+			color: #404040;
+		}
+			.faqListado li a:hover
+			{
+				text-decoration: underline;
+			}
+body#paginaFaq .faqPregunta
+{
+	margin: 0 0 20px 0;
+}
+body#paginaFaq .faqPregunta img {
+	float:left;
+	border:1px solid #ccc;
+	margin:0 20px 15px 0;
+}
+	body#paginaFaq .faqPregunta p.pregunta
+	{
+		margin:0 0 10px 0;
+	}
+body#paginaFaq .faqRespuesta
+{
+}
+	body#paginaFaq .faqRespuesta p
+	{
+		line-height: 1.5em;
+		margin-bottom: 1em;
+	}
+
+
+
+/* Presentacion para los planes ofrecidos */
+
+#planesOfrecidos
+{
+	text-align: center;
+	color: #FFFFFF;
+}
+	#paginaContenido #planMensual h3,
+	#paginaContenido #planTrimestral h3,
+	#paginaContenido #planSemestral h3
+	{
+		margin: 52px 0 0 0;
+		color: #FFFFFF;
+		font-size: 1.1em;
+		font-family: Helvetica, Arial, Sans-serif;
+		font-weight: normal;	
+	}
+	#paginaContenido #planMensual p,
+	#paginaContenido #planTrimestral p,
+	#paginaContenido #planSemestral p
+	{
+		font-size: 1em;
+		margin: 0px 0 0 0;
+		color: #FFFFFF;
+		font-family: Helvetica, Arial, Sans-serif;
+	}
+		#paginaContenido #planMensual p.valor,
+		#paginaContenido #planTrimestral p.valor,
+		#paginaContenido #planSemestral p.valor
+		{
+			margin: 0px 0 0 0;
+			color: #FFFFFF;
+			font-size: 1.5em;
+		}
+	#paginaContenido #planMensual ul,
+	#paginaContenido #planTrimestral ul,
+	#paginaContenido #planSemestral ul
+	{
+		margin: 35px 20px 0 20px;
+		padding: 0;
+	}
+		#paginaContenido #planMensual li,
+		#paginaContenido #planTrimestral li,
+		#paginaContenido #planSemestral li
+		{
+			list-style-type: none;
+			color: #003E73;
+			font-size: 0.9em;
+			margin-bottom: 15px;
+		}
+	#paginaContenido #planMensual p.boton,
+	#paginaContenido #planTrimestral p.boton,
+	#paginaContenido #planSemestral p.boton
+	{
+		margin-left: 40px;
+	}
+		#planesOfrecidos p.boton a
+		{
+			display: block;
+			width: 127px;
+			height: 22px;
+			text-indent: -9000px;
+			background: url('../imgs/planes-precios-btn_adquirir.gif') 0 0 no-repeat;
+		}
+		#paginaContenido #planSemestral p.boton
+		{
+			margin-left: 35px;
+		}
+
+
+	#paginaContenido #planTrimestral h3
+	{
+		margin: 30px 0 0 0;
+		font-size: 1.2em;
+	}
+	#paginaContenido #planTrimestral p
+	{
+		font-size: 1.1em;
+	}
+		#paginaContenido #planTrimestral p.valor
+		{
+			font-size: 1.9em;
+		}
+	#paginaContenido #planTrimestral ul
+	{
+		margin: 35px 50px 0 50px;
+	}
+		#paginaContenido #planTrimestral li
+		{
+			font-size: 1em;
+			line-height: 1.3em;
+			margin-bottom: 10px;
+		}
+	#paginaContenido #planTrimestral p.boton
+	{
+		margin-left: 50px;
+	}
+		#paginaContenido #planTrimestral p.boton
+		{
+			margin-left: 32px;
+		}
+		#paginaContenido #planTrimestral p.boton a
+		{
+			width: 209px;
+			height: 46px;
+			background: url('../imgs/planes-precios-btn_adquirir-grande.png') 0 0 no-repeat;
+		}
