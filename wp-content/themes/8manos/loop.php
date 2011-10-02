@@ -1,4 +1,4 @@
-
+<?php global $debug; ?>
     <?php if ( have_posts() ) : ?>
       <?php while ( have_posts() ) : the_post(); ?>
         <article>
@@ -13,6 +13,10 @@
           <div class="post-content">
             <?php the_content(); ?>
           </div>
+
+	<?php if($debug == true){ ?>
+		<?php the_meta(); ?> 
+	<?php } ?>
         </article>
       <?php endwhile; ?>
     <?php else : ?>

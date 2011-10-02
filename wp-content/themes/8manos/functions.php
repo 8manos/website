@@ -6,4 +6,7 @@
 		'primary' => __( 'Acceso', 'manos' ),
 	) );
 
+	$debug = true;
+	global $debug;
+
 ?>

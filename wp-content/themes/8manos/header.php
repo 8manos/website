@@ -13,7 +13,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic' rel='stylesheet' type='text/css'>
-  <?php wp_head(); ?>
+  <?php 
+	wp_head(); 
+  ?>
   <script src="<?php bloginfo('template_directory'); ?>/js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 
