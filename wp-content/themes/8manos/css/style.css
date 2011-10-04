@@ -295,20 +295,22 @@ header {
 	text-align:center;
 }
 
+/* PORTAFOLIO */
+
 .post-type-archive-portafolio article {
 	display:inline-block;
 	width:180px;
 	height:165px;
 	margin:0 0.88em 1.4em;
-	-webkit-box-shadow: 1px 1px 1px 1px #ccc;
-	-moz-box-shadow: 1px 1px 1px 1px #ccc;
-	box-shadow: 1px 1px 1px 1px #ccc;
+	-webkit-box-shadow: 0px 1px 2px 1px #CCC;
+	-moz-box-shadow: 0px 1px 2px 1px #CCC;
+	box-shadow: 0px 1px 2px 1px #CCC;
 }
 
 	.post-type-archive-portafolio article:hover {
-		-webkit-box-shadow: 1px 1px 1px 1px #bbb;
-		-moz-box-shadow: 1px 1px 1px 1px #bbb;
-		box-shadow: 1px 1px 1px 1px #bbb;
+		-webkit-box-shadow: 0px 1px 2px 1px #BBB;
+		-moz-box-shadow: 0px 1px 2px 1px #BBB;
+		box-shadow: 0px 1px 2px 1px #BBB;
 	}
 
 	.post-type-archive-portafolio article:hover a {
@@ -322,8 +324,92 @@ header {
 		font-size:0.95em;
 	}
 
+		.single-portafolio article h2 {
+			background-repeat:no-repeat;
+			background-position:left 50%;
+			padding:0 0 0 20px;
+			margin:0 0 0 -20px;
+		}
+
 	.post-type-archive-portafolio article h2 a {
 		color:#808080;
+	}
+
+/* EQUIPO */
+
+.post-type-archive-equipo article {
+	position:relative;
+	display: inline-block;
+	min-width: 350px;
+	max-width:400px;
+	min-height:134px;
+	width: 48%;
+	height: auto;
+	margin: 1.8em 0 2em;
+	float: left;
+}
+
+	.foto_perfil {
+		padding:8px;
+		float:left;
+		margin:0 1.8em 0 0;
+		-webkit-box-shadow: 0px 1px 2px 1px #CCC;
+		-moz-box-shadow: 0px 1px 2px 1px #CCC;
+		box-shadow: 0px 1px 2px 1px #CCC;
+	}
+
+.post-type-archive-equipo article:nth-child(even){
+	float:right;
+}
+
+	.foto_perfil:hover {
+		-webkit-box-shadow: 0px 1px 2px 1px #BBB;
+		-moz-box-shadow: 0px 1px 2px 1px #BBB;
+		box-shadow: 0px 1px 2px 1px #BBB;
+	}
+
+	.post-type-archive-equipo article:hover a {
+		color:#660033
+	}
+
+	.post-type-archive-equipo article h2 {
+		margin:0 0;
+	}
+
+		.single-equipo article h2 {
+			background-repeat:no-repeat;
+			background-position:left 50%;
+			padding:0 0 0 20px;
+			margin:0 0 0 -20px;
+		}
+
+	.post-type-archive-equipo article h2 a {
+		color:#333;
+	}
+
+	.especialidades {
+		color:#808080;
+		list-style-type:none;
+		padding:1.4em 0;
+		margin:0;
+	}
+
+
+/* COLUMNAS */
+
+
+	.col_izq {
+		width:38%;
+		float:left;
+	}
+
+		.col_izq img {
+			max-width:100%
+		}
+
+	.has_col_izq .post-content {
+		width:62%;
+		float:right;
 	}
 
 footer {
