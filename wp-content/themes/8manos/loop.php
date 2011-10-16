@@ -14,7 +14,7 @@
 
         <article id="article-<?php the_ID(); ?>" <?php post_class($classes); ?>>
 
-	<?php if(is_archive() && get_post_type() == 'equipo'){ ?>
+	<?php if(is_archive() && get_post_type() == 'equipo' || is_single() && get_post_type() == 'equipo'){ ?>
 		<div class="foto_perfil">
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 			<?php the_post_thumbnail('thumb-equipo'); ?>
@@ -32,7 +32,7 @@
 	    </a>
           </h2>
 
-	<?php if(is_archive() && get_post_type() == 'equipo'){ 
+	<?php if(is_archive() && get_post_type() == 'equipo' || is_single() && get_post_type() == 'equipo'){ 
 		$terms = wp_get_object_terms(get_the_ID(), "especialidades");
 		 $count = count($terms);
 		 if ( $count > 0 ){
@@ -60,11 +60,13 @@
 			}
 		  ?>
 
-          <div class="post-content">
-		<?php
-			the_content();
-		?>
-          </div>
+		<?php if(!is_archive()){ ?>
+		  <div class="post-content">
+			<?php
+				the_content();
+			?>
+		  </div>
+		<?php } ?>
 
 	  <?php } ?>
 

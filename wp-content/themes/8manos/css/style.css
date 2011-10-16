@@ -299,8 +299,8 @@ header {
 
 .post-type-archive-portafolio article {
 	display:inline-block;
-	width:180px;
-	height:165px;
+	width:250px;
+	height:230px;
 	margin:0 0.88em 1.4em;
 	-webkit-box-shadow: 0px 1px 2px 1px #CCC;
 	-moz-box-shadow: 0px 1px 2px 1px #CCC;
@@ -321,8 +321,13 @@ header {
 		text-align:center;
 		margin:0 0;
 		line-height:30px;
-		font-size:0.95em;
+		font-size:1.25em;
 	}
+
+		.post-type-archive-portafolio article h2 a {
+			display:block;
+			height:100%;
+		}
 
 		.single-portafolio article h2 {
 			background-repeat:no-repeat;
@@ -334,6 +339,23 @@ header {
 	.post-type-archive-portafolio article h2 a {
 		color:#808080;
 	}
+
+		.single-equipo article .foto_perfil {
+			float:left;
+		} 
+
+		.single-equipo article h2 {
+			float:none;
+			width:425px;
+			font-size:2.81em;
+			margin-bottom:0;
+		} 
+
+			.single-equipo article h2 a , 
+			.single-equipo article h2 a:link ,
+			.single-equipo article h2 a:visited {
+				color:#333333;
+			}
 
 /* EQUIPO */
 
@@ -393,6 +415,29 @@ header {
 		padding:1.4em 0;
 		margin:0;
 	}
+
+		.single .especialidades {
+			padding: 0 0 1.4em;
+		}
+
+	/* TABS */
+	.ui-tabs-hide {
+		display:none;
+	}
+
+	#tabs {
+		padding:1.6em 0 0 0;
+	}
+
+	#tabs #tabs_nav {
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+
+		#tabs #tabs_nav li {
+			display:inline;
+		}
 
 
 /* COLUMNAS */

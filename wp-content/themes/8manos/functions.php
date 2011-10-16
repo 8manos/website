@@ -1,6 +1,6 @@
 <?php
 	add_theme_support( 'post-thumbnails' );
-	add_image_size('thumb-portafolio',180,130, false);
+	add_image_size('thumb-portafolio',250,230, false);
 	add_image_size('thumb-equipo',134,134, false);
 
 	// This theme uses wp_nav_menu() in one location.

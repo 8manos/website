@@ -16,13 +16,16 @@
   <?php 
 	wp_head(); 
   ?>
+  <!-- ADAPTIVE IMAGES -->
+  <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
+
   <script src="<?php bloginfo('template_directory'); ?>/js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
   <header>
     <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name');?></a></h1>
-    <h2><?php bloginfo('description'); ?></h2>
+    <h2 class="visuallyhidden"><?php bloginfo('description'); ?></h2>
 
     <nav id="acceso" class="clearfix">
       <?php wp_nav_menu(); ?>
