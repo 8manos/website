@@ -9,6 +9,7 @@
 *.vi
 *~
 *.sass-cache
+ai-cache/*
 
 # WordPress
 wp-content/uploads/*
