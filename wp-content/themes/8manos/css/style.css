@@ -426,6 +426,7 @@ header {
 	}
 
 	#tabs {
+		clear:both;
 		padding:1.6em 0 0 0;
 	}
 
@@ -438,6 +439,28 @@ header {
 		#tabs #tabs_nav li {
 			display:inline;
 		}
+
+			#tabs #tabs_nav li a {
+				color:#808080;
+				display:block;
+				float:left;
+				padding:0.318em 0.618em;
+				margin:0 0.618em 0.618em 0;
+				border:1px solid #D8D8D8;
+			}
+
+			#tabs #tabs_nav li.ui-tabs-selected a {
+				color:#333;
+				font-weight:bold;
+			}
+
+		#tabs .ui-tabs-panel {
+			padding:0 0.618em;
+		}
+
+			#tabs .ui-tabs-panel h3 {
+				display:none;
+			}
 
 
 /* COLUMNAS */

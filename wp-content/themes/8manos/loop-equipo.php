@@ -49,7 +49,7 @@
           <div class="post-content">
 
 		<div id="tabs">
-			<ul id="tabs_nav">
+			<ul id="tabs_nav" class="clearfix">
 				<li><a href="#presentacion-personal">Datos personales</a></li>
 
 				<?php if($experiencia){ ?>
