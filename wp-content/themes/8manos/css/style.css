@@ -240,11 +240,27 @@ a:visited {
 header {
 	border-bottom:1px solid #D8D8D8;
 	padding:1em 0;
+	text-align:center;
 }
 
 	header h1 {
 		font-family: 'Ubuntu', sans-serif;
+		margin:0;
+		padding:0;
+		display:inline;
 	}
+
+		header h1 a {
+			display: block;
+			border: 0;
+			text-indent: -999em;
+			overflow: hidden;
+			background-color: transparent;
+			background-repeat: no-repeat;
+			text-align: left;
+			direction: ltr;
+			margin: 0 auto;
+		}
 
 	#acceso {
 		max-width:960px;
