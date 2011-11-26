@@ -4,7 +4,7 @@ Donate link: http://contactform7.com/donate/
 Tags: contact, form, contact form, feedback, email, ajax, captcha, akismet, multilingual
 Requires at least: 3.2
 Tested up to: 3.2.1
-Stable tag: 2.4.6
+Stable tag: 3.0
 
 Just another contact form plugin. Simple but flexible.
 
@@ -29,6 +29,7 @@ It is hard to continue development and support for this plugin without contribut
 * Arabic (ar) - [Tarek Chaaban](http://www.chaaban.info/), Muhammed Lardi, [Yaser Mohammed](http://www.englize.com/)
 * Armenian (hy_AM) - [Emmanuelle Traduction](http://www.translatonline.com/)
 * Bangla (bn_BD) - [SM Mehdi Akram](http://www.shamokaldarpon.com/)
+* Belarusian (be_BY) - [Igor Dubilei](http://www.iflexion.com/)
 * Bosnian (bs) - [Vedran](http://www.seorabbit.com/)
 * Brazilian Portuguese (pt_BR) - [Leonardo Pinheiro](http://www.eletrikabarbarella.com.br/), [Henrique Vianna](http://henriquevianna.com/), [Caciano Gabriel Batista](http://www.gn10.com.br/), [Gervásio Antônio](http://twitter.com/gervasioantonio)
 * Bulgarian (bg_BG) - [Iliyan Darganov](http://www.darganov.com/)
@@ -58,11 +59,12 @@ It is hard to continue development and support for this plugin without contribut
 * Macedonian (mk_MK) - [Darko](http://www.findermind.com/)
 * Malay (ms_MY) - [Zairul Azmil](http://www.zairul.com/)
 * Malayalam (ml_IN) - [RAHUL.S.A](http://www.infution.co.cc/)
+* Maltese (mt_MT) - [Ajoft Technologies](http://www.ajoft.com/)
 * Norwegian (nb_NO) - Kjetil M. Bergem, [aanvik.net](http://www.aanvik.net), [Peter Holme](http://holme.se/nettsteder/)
 * Persian (Farsi; fa_IR) - [Mohammad Musavi](http://www.musavis.com/)
 * Polish (pl_PL) - [Zbigniew Czernik](http://zibik.jogger.pl/), [Daniel Fruzynski](http://www.poradnik-webmastera.com), [RafalDesign](http://www.rafaldesign.pl/)
 * Portuguese (pt_PT) - [Hugo Baeta](http://hugobaeta.com)
-* Russian (ru_RU) - Dmitry Volotovich, [Denis Voituk](http://artprima.cz/)
+* Russian (ru_RU) - Dmitry Volotovich, [Denis Voituk](http://artprima.cz/), [kg69design](http://kg69design.com/)
 * Romanian (ro_RO) - [Stas Sushkov](http://stas.nerd.ro/), [Anunturi Jibo](http://www.jibo.ro/)
 * Serbian (sr_RS) - [Vedran](http://www.seorabbit.com/), [Aleksandar Urošević](http://blog.urosevic.net/)
 * Sinhala (si_LK) - [Nitin Aggarwal](http://offshoreally.com/)
@@ -70,6 +72,7 @@ It is hard to continue development and support for this plugin without contribut
 * Slovene (sl_SI) - [Mihael Simonič](http://smihael.bplaced.net)
 * Spanish (es_ES) - [Jordi Sancho](http://www.qasolutions.net/blog), [Vladimir Prieto](http://vladimir.prie.to/), [Federico Mikaelian](http://www.fedemika.com.ar/), [Matias Baldanza](http://matiasbaldanza.com/), [Carlos Agnese](http://albumdecarlitos.com.ar/)
 * Swedish (sv_SE) - [Fredrik Jonsson](http://www.fredda-o-ac.se/), [the Swedish community](http://wp-support.se/)
+* Tagalog (tl) - [Rupert Agnew Lanuza](http://wheretobuy.com.ph/)
 * Tamil (ta) - [Nitin Aggarwal](http://offshoreally.com/)
 * Thai (th) - [kazama](http://blog.wordthai.com/)
 * Turkish (tr_TR) - [Roman Neumuller](http://katpatuka.wordpress.com), [Hasan Yılmaz](http://hedefturkce.com/), [Emin Buğra Saral](http://www.rahmetli.info/)
@@ -103,6 +106,16 @@ Do you have questions or issues with Contact Form 7? Use these support channels 
 1. screenshot-1.png 
 
 == Changelog ==
+
+= 3.0.1 =
+
+* Removed unused icl.php file from modules folder.
+* Replaced deprecated get_bloginfo('text_direction') with is_rtl().
+* Made “Acceptable file types” field in the File upload tag generator being able to accept comma (,) and pipe (|) as separating character in addition to space.
+* Added sanitization for $_POST['_wpcf7_unit_tag'] value for avoiding possible abuse.
+* Updated jquery.form.js to 2.87.
+* Translations for Tagalog, Belarusian, and Maltese have been created.
+* Translations for Italian, German, Japanese, Russian, Latvian, and Afrikaans have been updated.
 
 = 3.0 =
 

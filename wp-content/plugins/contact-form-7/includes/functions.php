@@ -18,17 +18,17 @@ function wpcf7_messages() {
 		),
 
 		'accept_terms' => array(
-			'description' => __( "There is a field of term that sender is needed to accept", 'wpcf7' ),
+			'description' => __( "There are terms that the sender must accept", 'wpcf7' ),
 			'default' => __( 'Please accept the terms to proceed.', 'wpcf7' )
 		),
 
 		'invalid_email' => array(
-			'description' => __( "Email address that sender entered is invalid", 'wpcf7' ),
+			'description' => __( "Email address that the sender entered is invalid", 'wpcf7' ),
 			'default' => __( 'Email address seems invalid.', 'wpcf7' )
 		),
 
 		'invalid_required' => array(
-			'description' => __( "There is a field that sender is needed to fill in", 'wpcf7' ),
+			'description' => __( "There is a field that the sender must fill in", 'wpcf7' ),
 			'default' => __( 'Please fill the required field.', 'wpcf7' )
 		)
 	);
@@ -167,6 +167,7 @@ function wpcf7_l10n() {
 		'ar' => __( 'Arabic', 'wpcf7' ),
 		'hy_AM' => __( 'Armenian', 'wpcf7' ),
 		'bn_BD' => __( 'Bangla', 'wpcf7' ),
+		'be_BY' => __( 'Belarusian', 'wpcf7' ),
 		'bs' => __( 'Bosnian', 'wpcf7' ),
 		'pt_BR' => __( 'Brazilian Portuguese', 'wpcf7' ),
 		'bg_BG' => __( 'Bulgarian', 'wpcf7' ),
@@ -197,6 +198,7 @@ function wpcf7_l10n() {
 		'mk_MK' => __( 'Macedonian', 'wpcf7' ),
 		'ms_MY' => __( 'Malay', 'wpcf7' ),
 		'ml_IN' => __( 'Malayalam', 'wpcf7' ),
+		'mt_MT' => __( 'Maltese', 'wpcf7' ),
 		'nb_NO' => __( 'Norwegian', 'wpcf7' ),
 		'fa_IR' => __( 'Persian', 'wpcf7' ),
 		'pl_PL' => __( 'Polish', 'wpcf7' ),
@@ -211,6 +213,7 @@ function wpcf7_l10n() {
 		'sv_SE' => __( 'Swedish', 'wpcf7' ),
 		'ta' => __( 'Tamil', 'wpcf7' ),
 		'th' => __( 'Thai', 'wpcf7' ),
+		'tl' => __( 'Tagalog', 'wpcf7' ),
 		'tr_TR' => __( 'Turkish', 'wpcf7' ),
 		'uk' => __( 'Ukrainian', 'wpcf7' ),
 		'vi' => __( 'Vietnamese', 'wpcf7' )
