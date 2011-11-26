@@ -250,7 +250,7 @@ header {
 		display:inline;
 	}
 
-		header h1 a {
+		.home header h1 a {
 			display: block;
 			border: 0;
 			text-indent: -999em;
