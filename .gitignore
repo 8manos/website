@@ -1,6 +1,7 @@
 expreso
 midatacredito
 test
+wp-content/plugins/wp-gallery-cycle
 
 # Numerous always-ignore extensions
 *.diff
