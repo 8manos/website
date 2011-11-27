@@ -1,4 +1,12 @@
 <?php
+
+// Desactivar el reporte de version de WordPress para evitar ataques automáticos
+function sin_generators()
+{
+return '';
+}
+add_filter('the_generator','sin_generators');
+
 // Defaul support
 	add_theme_support( 'post-thumbnails' );
 	add_image_size('thumb-portafolio',250,230, false);
@@ -64,4 +72,21 @@
 			return false;
 		}
 	}
+
+// Revisa si el prefijo http existe, lo agrega si no existe.
+function httpify($link, $append = 'http://', $allowed = array('http://', 'https://')){
+  $found = false;
+
+  foreach($allowed as $protocol){
+    	if(strpos($link, $protocol) != 0){
+      		$found = true;
+	}
+  }
+
+  if($found){
+	return $link;
+  }else{
+	return $append.$link;
+  }
+}
 ?>

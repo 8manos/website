@@ -22,15 +22,19 @@
 		</div>
 	  <?php } ?>
 
-          <h2 class="entry-title" style="<?php el_estilo($url); ?>">
-            <a href="<?php the_permalink(); ?>">
-		<?php if($url && is_archive() && get_post_type() == 'portafolio'){ ?>
-			<?php echo($url); ?>
-		<?php }else{ ?>
-			<?php the_title(); ?>
+	<h2 class="entry-title" style="<?php el_estilo($url); ?>">
+		<a href="<?php the_permalink(); ?>">
+			<?php if($url && is_archive() && get_post_type() == 'portafolio'){ ?>
+				<?php echo($url); ?>
+			<?php }else{ ?>
+				<?php the_title(); ?>
+			<?php } ?>
+		</a>
+
+		<?php if($url && is_single() && get_post_type() == 'portafolio'){ ?>
+			<a href="<?php echo(httpify($url)); ?>" class="visit_link" target="blank">VER SITIO ➚</a>
 		<?php } ?>
-	    </a>
-          </h2>
+	</h2>
 
 	<?php if(is_archive() && get_post_type() == 'equipo' || is_single() && get_post_type() == 'equipo'){ 
 		$terms = wp_get_object_terms(get_the_ID(), "especialidades");

@@ -352,6 +352,14 @@ header {
 			margin:0 0 0 -20px;
 		}
 
+			.single-portafolio article h2 .visit_link {
+				display:inline-block;
+				float:right;
+				vertical-align: bottom;
+				line-height: 1.5em;
+				font-size: 0.6em;
+			}
+
 	.post-type-archive-portafolio article h2 a {
 		color:#808080;
 	}
