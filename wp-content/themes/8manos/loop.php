@@ -52,13 +52,21 @@
 
 	  <?php }else{ ?>
 
-		  <?php 
+		<?php
+			if(is_single() && get_post_type() == 'portafolio'){
+				echo "<div class='portfolio_gallery'>";
+					echo do_shortcode('[gallery]');
+				echo "</div>";
+			}
+		?>
+
+		<?php 
 			if($col_izq){
 			echo("<div class='col_izq'>");
 				echo($col_izq);	
 			echo('</div>');		
 			}
-		  ?>
+		?>
 
 		<?php if(!is_archive()){ ?>
 		  <div class="post-content">
