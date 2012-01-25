@@ -1,5 +1,25 @@
 <?php
 
+function wpcf7_plugin_path( $path = '' ) {
+	return path_join( WPCF7_PLUGIN_DIR, trim( $path, '/' ) );
+}
+
+function wpcf7_plugin_url( $path = '' ) {
+	return plugins_url( $path, WPCF7_PLUGIN_BASENAME );
+}
+
+function wpcf7_admin_url( $args = array() ) {
+	$defaults = array( 'page' => 'wpcf7' );
+	$args = wp_parse_args( $args, $defaults );
+
+	$url = menu_page_url( $args['page'], false );
+	unset( $args['page'] );
+
+	$url = add_query_arg( $args, $url );
+
+	return esc_url_raw( $url );
+}
+
 function wpcf7_messages() {
 	$messages = array(
 		'mail_sent_ok' => array(
@@ -179,6 +199,7 @@ function wpcf7_l10n() {
 		'da_DK' => __( 'Danish', 'wpcf7' ),
 		'nl_NL' => __( 'Dutch', 'wpcf7' ),
 		'en_US' => __( 'English', 'wpcf7' ),
+		'eo_EO' => __( 'Esperanto', 'wpcf7' ),
 		'et' => __( 'Estonian', 'wpcf7' ),
 		'fi' => __( 'Finnish', 'wpcf7' ),
 		'fr_FR' => __( 'French', 'wpcf7' ),
@@ -207,7 +228,7 @@ function wpcf7_l10n() {
 		'ro_RO' => __( 'Romanian', 'wpcf7' ),
 		'sr_RS' => __( 'Serbian', 'wpcf7' ),
 		'si_LK' => __( 'Sinhala', 'wpcf7' ),
-		'sk' => __( 'Slovak', 'wpcf7' ),
+		'sk_SK' => __( 'Slovak', 'wpcf7' ),
 		'sl_SI' => __( 'Slovene', 'wpcf7' ),
 		'es_ES' => __( 'Spanish', 'wpcf7' ),
 		'sv_SE' => __( 'Swedish', 'wpcf7' ),
@@ -220,6 +241,13 @@ function wpcf7_l10n() {
 	);
 
 	return $l10n;
+}
+
+function wpcf7_is_rtl() {
+	if ( function_exists( 'is_rtl' ) )
+		return is_rtl();
+
+	return false;
 }
 
 ?>

@@ -70,7 +70,7 @@ function wpcf7_admin_init() {
 
 		$query['contactform'] = $contact_form->id;
 		$redirect_to = wpcf7_admin_url( $query );
-		wp_redirect( $redirect_to );
+		wp_safe_redirect( $redirect_to );
 		exit();
 	}
 
@@ -91,7 +91,7 @@ function wpcf7_admin_init() {
 		}
 
 		$redirect_to = wpcf7_admin_url( $query );
-		wp_redirect( $redirect_to );
+		wp_safe_redirect( $redirect_to );
 		exit();
 	}
 
@@ -103,7 +103,7 @@ function wpcf7_admin_init() {
 			$contact_form->delete();
 
 		$redirect_to = wpcf7_admin_url( array( 'message' => 'deleted' ) );
-		wp_redirect( $redirect_to );
+		wp_safe_redirect( $redirect_to );
 		exit();
 	}
 }
@@ -118,7 +118,7 @@ function wpcf7_admin_menu() {
 		WPCF7_ADMIN_READ_CAPABILITY, 'wpcf7', 'wpcf7_admin_management_page' );
 }
 
-add_action( 'admin_print_styles', 'wpcf7_admin_enqueue_styles' );
+add_action( 'admin_enqueue_scripts', 'wpcf7_admin_enqueue_styles' );
 
 function wpcf7_admin_enqueue_styles() {
 	global $plugin_page;
@@ -131,7 +131,7 @@ function wpcf7_admin_enqueue_styles() {
 	wp_enqueue_style( 'contact-form-7-admin', wpcf7_plugin_url( 'admin/styles.css' ),
 		array(), WPCF7_VERSION, 'all' );
 
-	if ( is_rtl() ) {
+	if ( wpcf7_is_rtl() ) {
 		wp_enqueue_style( 'contact-form-7-admin-rtl',
 			wpcf7_plugin_url( 'admin/styles-rtl.css' ), array(), WPCF7_VERSION, 'all' );
 	}
@@ -220,7 +220,7 @@ function wpcf7_plugin_action_links( $links, $file ) {
 	if ( $file != WPCF7_PLUGIN_BASENAME )
 		return $links;
 
-	$url = wpcf7_admin_url( array( 'page' => 'wpcf7' ) );
+	$url = wpcf7_admin_url();
 
 	$settings_link = '<a href="' . esc_attr( $url ) . '">'
 		. esc_html( __( 'Settings', 'wpcf7' ) ) . '</a>';
@@ -279,7 +279,7 @@ function wpcf7_donation_link( &$contact_form ) {
 	if ( ! WPCF7_SHOW_DONATION_LINK )
 		return;
 
-	if ( 'new' == $_GET['contactform'] || ! empty($_GET['message']) )
+	if ( 'new' == $_GET['contactform'] || ! empty( $_GET['message'] ) )
 		return;
 
 	$show_link = true;
@@ -303,6 +303,26 @@ function wpcf7_donation_link( &$contact_form ) {
 ?>
 <div class="donation">
 <p><a href="<?php echo esc_url_raw( __( 'http://contactform7.com/donate/', 'wpcf7' ) ); ?>"><?php echo esc_html( $text ); ?></a> <a href="<?php echo esc_url_raw( __( 'http://contactform7.com/donate/', 'wpcf7' ) ); ?>" class="button"><?php echo esc_html( __( "Donate", 'wpcf7' ) ); ?></a></p>
+</div>
+<?php
+}
+
+add_action( 'admin_notices', 'wpcf7_old_wp_version_error', 9 );
+
+function wpcf7_old_wp_version_error() {
+	global $plugin_page;
+
+	if ( 'wpcf7' != $plugin_page )
+		return;
+
+	$wp_version = get_bloginfo( 'version' );
+
+	if ( ! version_compare( $wp_version, WPCF7_REQUIRED_WP_VERSION, '<' ) )
+		return;
+
+?>
+<div class="error">
+<p><?php echo sprintf( __( '<strong>Contact Form 7 %1$s requires WordPress %2$s or higher.</strong> Please <a href="%3$s">update WordPress</a> first.', 'wpcf7' ), WPCF7_VERSION, WPCF7_REQUIRED_WP_VERSION, admin_url( 'update-core.php' ) ); ?></p>
 </div>
 <?php
 }

@@ -38,6 +38,7 @@ define('DB_COLLATE', '');
  *
  * Define cada clave secreta con una frase aleatoria distinta.
  * Puedes generarlas usando el {@link https://api.wordpress.org/secret-key/1.1/salt/ servicio de claves secretas de WordPress}
+ * Puedes cambiar las claves en cualquier momento para invalidar todas las cookies existentes. Esto forzará a todos los usuarios a volver a hacer login.
  *
  * @since 2.6.0
  */
@@ -49,6 +50,7 @@ define('AUTH_SALT', 'pon aquí tu frase aleatoria'); // Cambia esto por tu frase
 define('SECURE_AUTH_SALT', 'pon aquí tu frase aleatoria'); // Cambia esto por tu frase aleatoria.
 define('LOGGED_IN_SALT', 'pon aquí tu frase aleatoria'); // Cambia esto por tu frase aleatoria.
 define('NONCE_SALT', 'pon aquí tu frase aleatoria'); // Cambia esto por tu frase aleatoria.
+
 /**#@-*/
 
 /**
@@ -67,7 +69,7 @@ $table_prefix  = 'wp_';
  * Por ejemplo, instala ca_ES.mo copiándolo a wp-content/languages y define WPLANG como 'ca_ES'
  * para traducir WordPress al catalán.
  */
-define ('WPLANG', 'es_ES');
+define('WPLANG', 'es_ES');
 
 /**
  * Para desarrolladores: modo debug de WordPress.
@@ -86,4 +88,4 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-?>
+

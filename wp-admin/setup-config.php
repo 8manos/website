@@ -40,10 +40,12 @@ define('WP_DEBUG', false);
 /**#@-*/
 
 require_once(ABSPATH . WPINC . '/load.php');
+require_once(ABSPATH . WPINC . '/version.php');
+wp_check_php_mysql_versions();
+
 require_once(ABSPATH . WPINC . '/compat.php');
 require_once(ABSPATH . WPINC . '/functions.php');
 require_once(ABSPATH . WPINC . '/class-wp-error.php');
-require_once(ABSPATH . WPINC . '/version.php');
 
 if (!file_exists(ABSPATH . 'wp-config-sample.php'))
 	wp_die('Lo siento, necesito un fichero wp-config-sample.php desde el que trabajar. Por favor, vuelve a subir este archivo desde tu instalación de WordPress.');
@@ -57,12 +59,6 @@ if (file_exists(ABSPATH . 'wp-config.php'))
 // Comprobamos si existe un wp-config.php por encima del directorio raiz pero que no sea parte de otra instalación
 if (file_exists(ABSPATH . '../wp-config.php') && ! file_exists(ABSPATH . '../wp-settings.php'))
 	wp_die("<p>El archivo 'wp-config.php' ya existe un nivel por encima de tu instalación de WordPress. Si necesitas reiniciar alguno de los elementos de la configuración de este archivo bórralo primero. Puedes tratar de <a href='install.php'>instalar ahora</a>.</p>");
-
-if ( version_compare( $required_php_version, phpversion(), '>' ) )
-	wp_die( sprintf( /*WP_I18N_OLD_PHP*/'Tu servidor está usando la versión de PHP %1$s pero WordPress requiere al menos la %2$s.'/*/WP_I18N_OLD_PHP*/, phpversion(), $required_php_version ) );
-
-if ( !extension_loaded('mysql') && !file_exists(ABSPATH . 'wp-content/db.php') )
-	wp_die( /*WP_I18N_OLD_MYSQL*/'Tu instalación de PHP parece que no dispone de la extensión MySQL requerida por WordPress.'/*/WP_I18N_OLD_MYSQL*/ );
 
 if (isset($_GET['step']))
 	$step = $_GET['step'];
@@ -176,8 +172,10 @@ switch($step) {
 
 	// Fallará si los valores son incorrectos.
 	require_wp_db();
-	if ( !empty($wpdb->error) )
-		wp_die($wpdb->error->get_error_message());
+	if ( ! empty( $wpdb->error ) ) {
+		$back = '<p class="step"><a href="setup-config.php?step=1" onclick="javascript:history.go(-1);return false;" class="button">Inténtalo de nuevo</a></p>';
+		wp_die( $wpdb->error->get_error_message() . $back );
+	}
 
 	// Carga o generación de las claves y salts.
 	$no_api = isset( $_POST['noapi'] );

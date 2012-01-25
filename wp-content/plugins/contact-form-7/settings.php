@@ -1,29 +1,5 @@
 <?php
 
-function wpcf7_plugin_path( $path = '' ) {
-	return path_join( WPCF7_PLUGIN_DIR, trim( $path, '/' ) );
-}
-
-function wpcf7_plugin_url( $path = '' ) {
-	return plugins_url( $path, WPCF7_PLUGIN_BASENAME );
-}
-
-function wpcf7_admin_url( $query = array() ) {
-	global $plugin_page;
-
-	if ( ! isset( $query['page'] ) )
-		$query['page'] = $plugin_page;
-
-	$path = 'admin.php';
-
-	if ( $query = build_query( $query ) )
-		$path .= '?' . $query;
-
-	$url = admin_url( $path );
-
-	return esc_url_raw( $url );
-}
-
 function wpcf7() {
 	global $wpdb, $wpcf7;
 
@@ -124,11 +100,6 @@ function wpcf7_upgrade() {
 	$opt['version'] = $new_ver;
 
 	update_option( 'wpcf7', $opt );
-
-	if ( is_admin() && isset( $_GET['page'] ) && 'wpcf7' == $_GET['page'] ) {
-		wp_redirect( wpcf7_admin_url( array( 'page' => 'wpcf7' ) ) );
-		exit();
-	}
 }
 
 add_action( 'wpcf7_upgrade', 'wpcf7_convert_to_cpt', 10, 2 );
@@ -139,14 +110,19 @@ function wpcf7_convert_to_cpt( $new_ver, $old_ver ) {
 	if ( ! version_compare( $old_ver, '3.0-dev', '<' ) )
 		return;
 
+	$old_rows = array();
+
 	$table_name = $wpdb->prefix . "contact_form_7";
 
-	if ( ! $wpdb->get_var( "SHOW TABLES LIKE '$table_name'" ) )
-		return;
+	if ( $wpdb->get_var( "SHOW TABLES LIKE '$table_name'" ) ) {
+		$old_rows = $wpdb->get_results( "SELECT * FROM $table_name" );
+	} elseif ( ( $opt = get_option( 'wpcf7' ) ) && ! empty( $opt['contact_forms'] ) ) {
+		foreach ( (array) $opt['contact_forms'] as $key => $value ) {
+			$old_rows[] = (object) array_merge( $value, array( 'cf7_unit_id' => $key ) );
+		}
+	}
 
-	$old_rows = $wpdb->get_results( "SELECT * FROM $table_name" );
-
-	foreach ( $old_rows as $row ) {
+	foreach ( (array) $old_rows as $row ) {
 		$q = "SELECT post_id FROM $wpdb->postmeta WHERE meta_key = '_old_cf7_unit_id'"
 			. $wpdb->prepare( " AND meta_value = %d", $row->cf7_unit_id );
 
@@ -162,12 +138,13 @@ function wpcf7_convert_to_cpt( $new_ver, $old_ver ) {
 
 		if ( $post_id ) {
 			update_post_meta( $post_id, '_old_cf7_unit_id', $row->cf7_unit_id );
-			update_post_meta( $post_id, 'form', maybe_unserialize( $row->form ) );
-			update_post_meta( $post_id, 'mail', maybe_unserialize( $row->mail ) );
-			update_post_meta( $post_id, 'mail_2', maybe_unserialize( $row->mail_2 ) );
-			update_post_meta( $post_id, 'messages', maybe_unserialize( $row->messages ) );
-			update_post_meta( $post_id, 'additional_settings',
-				maybe_unserialize( $row->additional_settings ) );
+
+			$metas = array( 'form', 'mail', 'mail_2', 'messages', 'additional_settings' );
+
+			foreach ( $metas as $meta ) {
+				update_post_meta( $post_id, $meta,
+					wpcf7_normalize_newline_deep( maybe_unserialize( $row->{$meta} ) ) );
+			}
 		}
 	}
 }

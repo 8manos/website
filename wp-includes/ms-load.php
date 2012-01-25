@@ -119,8 +119,8 @@ function get_current_site_name( $current_site ) {
 		$current_site->site_name = $wpdb->get_var( $wpdb->prepare( "SELECT meta_value FROM $wpdb->sitemeta WHERE site_id = %d AND meta_key = 'site_name'", $current_site->id ) );
 		if ( ! $current_site->site_name )
 			$current_site->site_name = ucfirst( $current_site->domain );
+		wp_cache_set( $current_site->id . ':site_name', $current_site->site_name, 'site-options' );
 	}
-	wp_cache_set( $current_site->id . ':site_name', $current_site->site_name, 'site-options' );
 
 	return $current_site;
 }
@@ -134,6 +134,10 @@ function get_current_site_name( $current_site ) {
  */
 function wpmu_current_site() {
 	global $wpdb, $current_site, $domain, $path, $sites, $cookie_domain;
+
+	if ( empty( $current_site ) )
+		$current_site = new stdClass;
+
 	if ( defined( 'DOMAIN_CURRENT_SITE' ) && defined( 'PATH_CURRENT_SITE' ) ) {
 		$current_site->id = defined( 'SITE_ID_CURRENT_SITE' ) ? SITE_ID_CURRENT_SITE : 1;
 		$current_site->domain = DOMAIN_CURRENT_SITE;
@@ -234,7 +238,7 @@ function ms_not_installed() {
 		$msg .= '<p>' . sprintf( /*WP_I18N_TABLES_MISSING_LONG*/'<strong>Se han perdido las tablas de la base de datos.</strong> Esto quiere decir que MySQL no está funcionando, WordPress no ha sido instalado correctamente, o alguien ha eliminado <code>%s</code>. Realmente, debes revisar tu base de datos ahora mismo.'/*/WP_I18N_TABLES_MISSING_LONG*/, $wpdb->site ) . '</p>';
 	else
 		$msg .= '<p>' . sprintf( /*WP_I18N_NO_SITE_FOUND*/'<strong>No podemos encontrar el sitio <code>%1$s</code>.</strong> Buscamos la tabla <code>%2$s</code>en la base de datos <code>%3$s</code>. ¿Es correcto?'/*/WP_I18N_NO_SITE_FOUND*/, rtrim( $domain . $path, '/' ), $wpdb->blogs, DB_NAME ) . '</p>';
-	$msg .= '<p><strong>' . /*WP_I18N_WHAT_DO_I_DO*/'What do I do now?'/*WP_I18N_WHAT_DO_I_DO*/ . '</strong> ';
+	$msg .= '<p><strong>' . /*WP_I18N_WHAT_DO_I_DO*/'¿Ahora qué hago?'/*/WP_I18N_WHAT_DO_I_DO*/ . '</strong> ';
 	$msg .= /*WP_I18N_RTFM*/'Lee la <a target="_blank" href="http://codex.wordpress.org/Debugging_a_WordPress_Network">página de errores</a>. Algunas de las guías que hay ahí pueden ayudarte a hacerte una idea sobre qué ha ido mal.'/*/WP_I18N_RTFM*/;
 	$msg .= ' ' . /*WP_I18N_STUCK*/'Si todavía estás atascado con este mensaje, comprueba que tu base de datos contiene las siguientes tablas:'/*/WP_I18N_STUCK*/ . '</p><ul>';
 	foreach ( $wpdb->tables('global') as $t => $table ) {

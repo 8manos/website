@@ -66,6 +66,9 @@ Email me: gabe.roth at gmail.
 
 == Changelog ==
 
+= 1.4.7 =
+* Tumblr's API started inserting some extra whitespace before the XML, making it invalid; this revision trims that whitespace before processing.
+
 = 1.4.6 =
 * Fixed bug with video resizing code.
 

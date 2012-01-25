@@ -3,8 +3,8 @@ Contributors: takayukister
 Donate link: http://contactform7.com/donate/
 Tags: contact, form, contact form, feedback, email, ajax, captcha, akismet, multilingual
 Requires at least: 3.2
-Tested up to: 3.2.1
-Stable tag: 3.0
+Tested up to: 3.3
+Stable tag: 3.0.2.1
 
 Just another contact form plugin. Simple but flexible.
 
@@ -40,6 +40,7 @@ It is hard to continue development and support for this plugin without contribut
 * Czech (cs_CZ) - Korry, [Radovan Fiser](http://algymsa.cz/), [Tomas Vesely](http://www.mcmotylek.cz/)
 * Danish (da_DK) - [Jens Griebel](http://www.kompas-it.dk/), [Georg S. Adamsen](http://wordpress.blogos.dk/)
 * Dutch (nl_NL) - [Chris Devriese](http://www.100it.be/), [Martin Hein](http://www.split-a-pixel.nl/), [Rene](http://wpwebshop.com/)
+* Esperanto (eo_EO) - Arkadiusz Zychewicz
 * Estonian (et) - [Peeter Rahuvarm](http://www.kraabus.ee), Egon Elbre
 * Finnish (fi) - [Miika Turunen](http://www.webwork.fi/), [Mediajalostamo](http://www.mediajalostamo.fi/)
 * French (fr_FR) - [Jillij](http://www.jillij.com/), [Oncle Tom](http://case.oncle-tom.net/), [Maître Mô](http://maitremo.fr/)
@@ -68,13 +69,13 @@ It is hard to continue development and support for this plugin without contribut
 * Romanian (ro_RO) - [Stas Sushkov](http://stas.nerd.ro/), [Anunturi Jibo](http://www.jibo.ro/)
 * Serbian (sr_RS) - [Vedran](http://www.seorabbit.com/), [Aleksandar Urošević](http://blog.urosevic.net/)
 * Sinhala (si_LK) - [Nitin Aggarwal](http://offshoreally.com/)
-* Slovak (sk) - [Patrik Bóna](http://www.mrhead.sk/)
+* Slovak (sk_SK) - [Patrik Bóna](http://www.mrhead.sk/)
 * Slovene (sl_SI) - [Mihael Simonič](http://smihael.bplaced.net)
 * Spanish (es_ES) - [Jordi Sancho](http://www.qasolutions.net/blog), [Vladimir Prieto](http://vladimir.prie.to/), [Federico Mikaelian](http://www.fedemika.com.ar/), [Matias Baldanza](http://matiasbaldanza.com/), [Carlos Agnese](http://albumdecarlitos.com.ar/)
 * Swedish (sv_SE) - [Fredrik Jonsson](http://www.fredda-o-ac.se/), [the Swedish community](http://wp-support.se/)
 * Tagalog (tl) - [Rupert Agnew Lanuza](http://wheretobuy.com.ph/)
 * Tamil (ta) - [Nitin Aggarwal](http://offshoreally.com/)
-* Thai (th) - [kazama](http://blog.wordthai.com/)
+* Thai (th) - [kazama](http://blog.wordthai.com/), [ToshiK](http://www.tuntikorn.com/)
 * Turkish (tr_TR) - [Roman Neumuller](http://katpatuka.wordpress.com), [Hasan Yılmaz](http://hedefturkce.com/), [Emin Buğra Saral](http://www.rahmetli.info/)
 * Ukrainian (uk) - [Andrey Kovba](http://myserver.com.ua/), [Ukrainian WordPress localization team](http://wordpress.co.ua/plugins/contact-form-7.html)
 * Vietnamese (vi) - Thanh Hải, Hà, [Khang Minh](http://betterwp.net/)
@@ -106,6 +107,23 @@ Do you have questions or issues with Contact Form 7? Use these support channels 
 1. screenshot-1.png 
 
 == Changelog ==
+
+= 3.0.2.1 =
+
+* Fix a critical bug of losing checkbox option values when you save contact form.
+
+= 3.0.2 =
+
+* Show alert messages when you use it on old version of WordPress.
+* Introduce wpcf7_is_rtl() to avoid “not exist” error of is_rtl().
+* Take back data conversion from Contact Form 7 1.x.
+* Normalize newline characters to \n (line feed) on save (fix export/import problem).
+* Rewrite wpcf7_admin_url() and use menu_page_url() inside it.
+* Use wp_enqueue_scripts and admin_enqueue_scripts action hooks instead of wp_print_styles and admin_print_styles.
+* Use wp_safe_redirect() instead of wp_redirect().
+* Updated jquery.form.js to 2.94.
+* Translation for Esperanto has been created.
+* Translations for German, Japanese, Malay, Thai, Slovak, and Hungarian have been updated.
 
 = 3.0.1 =
 
