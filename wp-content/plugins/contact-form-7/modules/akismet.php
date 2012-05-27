@@ -8,6 +8,9 @@ add_filter( 'wpcf7_spam', 'wpcf7_akismet' );
 function wpcf7_akismet( $spam ) {
 	global $akismet_api_host, $akismet_api_port;
 
+	if ( $spam )
+		return $spam;
+
 	if ( ! function_exists( 'akismet_get_key' ) || ! akismet_get_key() )
 		return false;
 
@@ -17,7 +20,10 @@ function wpcf7_akismet( $spam ) {
 	$fes = wpcf7_scan_shortcode();
 
 	foreach ( $fes as $fe ) {
-		if ( ! isset( $fe['name'] ) || ! is_array( $fe['options'] ) )
+		if ( ! isset( $fe['name'] ) || ! isset( $_POST[$fe['name']] ) )
+			continue;
+
+		if ( ! is_array( $fe['options'] ) )
 			continue;
 
 		if ( preg_grep( '%^akismet:author$%', $fe['options'] ) ) {
@@ -86,6 +92,8 @@ function wpcf7_akismet( $spam ) {
 
 	if ( 'true' == $response[1] )
 		$spam = true;
+
+	$spam = apply_filters( 'wpcf7_akismet_comment_check', $spam, $c );
 
 	return $spam;
 }

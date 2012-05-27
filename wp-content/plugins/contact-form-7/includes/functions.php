@@ -186,6 +186,7 @@ function wpcf7_l10n() {
 		'sq' => __( 'Albanian', 'wpcf7' ),
 		'ar' => __( 'Arabic', 'wpcf7' ),
 		'hy_AM' => __( 'Armenian', 'wpcf7' ),
+		'az_AZ' => __( 'Azerbaijani', 'wpcf7' ),
 		'bn_BD' => __( 'Bangla', 'wpcf7' ),
 		'be_BY' => __( 'Belarusian', 'wpcf7' ),
 		'bs' => __( 'Bosnian', 'wpcf7' ),
@@ -248,6 +249,40 @@ function wpcf7_is_rtl() {
 		return is_rtl();
 
 	return false;
+}
+
+function wpcf7_ajax_loader() {
+	$url = wpcf7_plugin_url( 'images/ajax-loader.gif' );
+
+	return apply_filters( 'wpcf7_ajax_loader', $url );
+}
+
+/* Nonce functions: wpcf7_verify_nonce() and wpcf7_create_nonce()
+ * For front-end use only.
+ * Almost the same as wp_verify_nonce() and wp_create_nonce() except that $uid is always 0.
+*/
+
+function wpcf7_verify_nonce( $nonce, $action = -1 ) {
+	$i = wp_nonce_tick();
+	$uid = 0;
+
+	// Nonce generated 0-12 hours ago
+	if ( substr( wp_hash( $i . $action . $uid, 'nonce' ), -12, 10 ) == $nonce )
+		return 1;
+
+	// Nonce generated 12-24 hours ago
+	if ( substr( wp_hash( ( $i - 1 ) . $action . $uid, 'nonce' ), -12, 10 ) == $nonce )
+		return 2;
+
+	// Invalid nonce
+	return false;
+}
+
+function wpcf7_create_nonce( $action = -1 ) {
+	$i = wp_nonce_tick();
+	$uid = 0;
+
+	return substr( wp_hash( $i . $action . $uid, 'nonce' ), -12, 10 );
 }
 
 ?>
