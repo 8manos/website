@@ -28,6 +28,7 @@
 					if (data.invalids) {
 						$.each(data.invalids, function(i, n) {
 							$(data.into).find(n.into).wpcf7NotValidTip(n.message);
+							$(data.into).find(n.into).find('.wpcf7-form-control').addClass('wpcf7-not-valid');
 						});
 						ro.addClass('wpcf7-validation-errors');
 					}
@@ -42,7 +43,6 @@
 						ro.addClass('wpcf7-spam-blocked');
 
 					if (1 == data.mailSent) {
-						$(data.into).find('form').resetForm().clearForm();
 						ro.addClass('wpcf7-mail-sent-ok');
 
 						if (data.onSentOk)
@@ -54,11 +54,14 @@
 					if (data.onSubmit)
 						$.each(data.onSubmit, function(i, n) { eval(n) });
 
+					if (1 == data.mailSent)
+						$(data.into).find('form').resetForm().clearForm();
+
 					$(data.into).find('.wpcf7-use-title-as-watermark.watermark').each(function(i, n) {
 						$(n).val($(n).attr('title'));
 					});
 
-					ro.append(data.message).slideDown('fast');
+					$(data.into).wpcf7FillResponseOutput(data.message);
 				}
 			});
 
@@ -67,6 +70,8 @@
 					$(n).wpcf7OnloadRefill();
 
 				$(n).wpcf7ToggleSubmit();
+
+				$(n).find('.wpcf7-submit').wpcf7AjaxLoader();
 
 				$(n).find('.wpcf7-acceptance').click(function() {
 					$(n).wpcf7ToggleSubmit();
@@ -98,6 +103,16 @@
 		} catch (e) {
 		}
 	});
+
+	$.fn.wpcf7AjaxLoader = function() {
+		return this.each(function() {
+			var loader = $('<img class="ajax-loader" />')
+				.attr({ src: _wpcf7.loaderUrl, alt: _wpcf7.sending })
+				.css('visibility', 'hidden');
+
+			$(this).after(loader);
+		});
+	};
 
 	$.fn.wpcf7ToggleSubmit = function() {
 		return this.each(function() {
@@ -192,6 +207,12 @@
 			$(this).find('div.wpcf7-response-output').hide().empty().removeClass('wpcf7-mail-sent-ok wpcf7-mail-sent-ng wpcf7-validation-errors wpcf7-spam-blocked');
 			$(this).find('span.wpcf7-not-valid-tip').remove();
 			$(this).find('img.ajax-loader').css({ visibility: 'hidden' });
+		});
+	};
+
+	$.fn.wpcf7FillResponseOutput = function(message) {
+		return this.each(function() {
+			$(this).find('div.wpcf7-response-output').append(message).slideDown('fast');
 		});
 	};
 

@@ -112,7 +112,8 @@ add_action( 'admin_menu', 'wpcf7_admin_menu', 9 );
 
 function wpcf7_admin_menu() {
 	add_menu_page( __( 'Contact Form 7', 'wpcf7' ), __( 'Contact', 'wpcf7' ),
-		WPCF7_ADMIN_READ_CAPABILITY, 'wpcf7', 'wpcf7_admin_management_page' );
+		WPCF7_ADMIN_READ_CAPABILITY, 'wpcf7', 'wpcf7_admin_management_page',
+		wpcf7_plugin_url( 'admin/images/menu-icon.png' ) );
 
 	add_submenu_page( 'wpcf7', __( 'Edit Contact Forms', 'wpcf7' ), __( 'Edit', 'wpcf7' ),
 		WPCF7_ADMIN_READ_CAPABILITY, 'wpcf7', 'wpcf7_admin_management_page' );
@@ -140,7 +141,7 @@ function wpcf7_admin_enqueue_styles() {
 add_action( 'admin_enqueue_scripts', 'wpcf7_admin_enqueue_scripts' );
 
 function wpcf7_admin_enqueue_scripts() {
-	global $plugin_page;
+	global $plugin_page, $wpcf7_tag_generators;
 
 	if ( ! isset( $plugin_page ) || 'wpcf7' != $plugin_page )
 		return;
@@ -153,27 +154,44 @@ function wpcf7_admin_enqueue_scripts() {
 
 	wp_enqueue_script( 'wpcf7-admin', wpcf7_plugin_url( 'admin/scripts.js' ),
 		array( 'jquery', 'wpcf7-admin-taggenerator' ), WPCF7_VERSION, true );
-	wp_localize_script( 'wpcf7-admin', '_wpcf7L10n', array(
-		'generateTag' => __( 'Generate Tag', 'wpcf7' ) ) );
+
+	$taggenerators = array();
+
+	foreach ( (array) $wpcf7_tag_generators as $name => $tg ) {
+		$taggenerators[$name] = array_merge(
+			(array) $tg['options'],
+			array( 'title' => $tg['title'], 'content' => $tg['content'] ) );
+	}
+
+	wp_localize_script( 'wpcf7-admin', '_wpcf7', array(
+		'generateTag' => __( 'Generate Tag', 'wpcf7' ),
+		'pluginUrl' => wpcf7_plugin_url(),
+		'tagGenerators' => $taggenerators ) );
 }
 
-add_action( 'admin_footer', 'wpcf7_admin_footer' );
+add_action( 'admin_print_footer_scripts', 'wpcf7_print_taggenerators_json', 20 );
 
-function wpcf7_admin_footer() {
-	global $plugin_page;
+function wpcf7_print_taggenerators_json() { // for backward compatibility
+	global $plugin_page, $wpcf7_tag_generators;
+
+	if ( ! version_compare( get_bloginfo( 'version' ), '3.3-dev', '<' ) )
+		return;
 
 	if ( ! isset( $plugin_page ) || 'wpcf7' != $plugin_page )
 		return;
 
+	$taggenerators = array();
+
+	foreach ( (array) $wpcf7_tag_generators as $name => $tg ) {
+		$taggenerators[$name] = array_merge(
+			(array) $tg['options'],
+			array( 'title' => $tg['title'], 'content' => $tg['content'] ) );
+	}
+
 ?>
 <script type="text/javascript">
 /* <![CDATA[ */
-var _wpcf7 = {
-	pluginUrl: '<?php echo wpcf7_plugin_url(); ?>',
-	tagGenerators: {
-<?php wpcf7_print_tag_generators(); ?>
-	}
-};
+_wpcf7.tagGenerators = <?php echo json_encode( $taggenerators ) ?>;
 /* ]]> */
 </script>
 <?php

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the 3.3.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2012-01-03 23:08:59+0000\n"
+"PO-Revision-Date: 2012-04-20 17:58:41+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -175,47 +175,47 @@ msgstr "Añadir desde URL"
 msgid "Refresh"
 msgstr "Actualizar"
 
-#: wp-admin/press-this.php:497
+#: wp-admin/press-this.php:488
 msgid "Post Format:"
 msgstr "Formato de entrada:"
 
-#: wp-admin/press-this.php:534
+#: wp-admin/press-this.php:525
 msgid "You cannot modify this Taxonomy."
 msgstr "No puedes modificar esta taxonomía."
 
-#: wp-admin/press-this.php:595
+#: wp-admin/press-this.php:586
 msgid "Your post has been saved."
 msgstr "Tu entrada ha sido guardada correctamente."
 
-#: wp-admin/press-this.php:596
+#: wp-admin/press-this.php:587
 msgid "View post"
 msgstr "Ver entrada"
 
-#: wp-admin/press-this.php:598
+#: wp-admin/press-this.php:589
 msgid "Close Window"
 msgstr "Cerrar ventana"
 
-#: wp-admin/press-this.php:608
+#: wp-admin/press-this.php:599
 msgid "Loading..."
 msgstr "Cargando..."
 
-#: wp-admin/press-this.php:628
+#: wp-admin/press-this.php:619
 msgid "via "
 msgstr "vía "
 
-#: wp-admin/press-this.php:636
+#: wp-admin/press-this.php:627
 msgid "Add:"
 msgstr "Añadir:"
 
-#: wp-admin/press-this.php:640 wp-admin/press-this.php:641
+#: wp-admin/press-this.php:631 wp-admin/press-this.php:632
 msgid "Insert an Image"
 msgstr "Insertar imagen"
 
-#: wp-admin/press-this.php:645
+#: wp-admin/press-this.php:636
 msgid "Embed a Video"
 msgstr "Insertar vídeo"
 
-#: wp-admin/user/menu.php:14 wp-admin/user-edit.php:28 wp-admin/menu.php:170
+#: wp-admin/menu.php:170 wp-admin/user/menu.php:14 wp-admin/user-edit.php:28
 msgid "Profile"
 msgstr "Perfil"
 
@@ -227,7 +227,7 @@ msgstr "No tienes suficientes permisos para añadir enlaces a este sitio."
 msgid "Add New Link"
 msgstr "Añadir enlace"
 
-#: wp-admin/post.php:135 wp-admin/edit-tags.php:128 wp-admin/edit-tags.php:143
+#: wp-admin/edit-tags.php:128 wp-admin/edit-tags.php:143 wp-admin/post.php:135
 msgid "You attempted to edit an item that doesn&#8217;t exist. Perhaps it was deleted?"
 msgstr "Lo que intentas editar no existe. ¿Habrá sido borrado?"
 
@@ -761,143 +761,143 @@ msgstr "No tienes suficientes permisos para administrar los plugins de este siti
 msgid "You do not have sufficient permissions to activate plugins for this site."
 msgstr "No tienes suficientes permisos para activar plugins en este sitio."
 
-#: wp-admin/plugins.php:154 wp-admin/plugins.php:167
+#: wp-admin/plugins.php:154 wp-admin/plugins.php:171
 msgid "You do not have sufficient permissions to deactivate plugins for this site."
 msgstr "No tienes suficientes permisos para desactivar plugins en este sitio."
 
-#: wp-admin/plugins.php:190
+#: wp-admin/plugins.php:200
 msgid "You do not have sufficient permissions to delete plugins for this site."
 msgstr "No tienes suficientes permisos para eliminar plugins en este sitio."
 
-#: wp-admin/plugins.php:247
+#: wp-admin/plugins.php:257
 msgid "Delete Plugin"
 msgid_plural "Delete Plugins"
 msgstr[0] "Eliminar Plugin"
 msgstr[1] "Eliminar Plugins"
 
-#: wp-admin/plugins.php:250
+#: wp-admin/plugins.php:260
 msgid "This plugin may be active on other sites in the network."
 msgid_plural "These plugins may be active on other sites in the network."
 msgstr[0] "Este plugin puede estar activado para otros sitios de la red."
 msgstr[1] "Estos plugins pueden estar activos para otros sitios de la red."
 
-#: wp-admin/plugins.php:252
+#: wp-admin/plugins.php:262
 msgid "You are about to remove the following plugin:"
 msgid_plural "You are about to remove the following plugins:"
 msgstr[0] "Estás a punto de eliminar el siguiente plugin:"
 msgstr[1] "Estás a punto de eliminar los siguientes plugins:"
 
-#: wp-admin/plugins.php:259
+#: wp-admin/plugins.php:269
 msgid "<strong>%1$s</strong> by <em>%2$s</em> (will also <strong>delete its data</strong>)"
 msgstr "<strong>%1$s</strong> por <em>%2$s</em> (también <strong>elimina sus propios datos</strong>)"
 
-#: wp-admin/plugins.php:263
+#: wp-admin/plugins.php:273
 msgid "<strong>%1$s</strong> by <em>%2$s</em>"
 msgstr "<strong>%1$s</strong> por <em>%2$s</em>"
 
-#: wp-admin/plugins.php:270
+#: wp-admin/plugins.php:280
 msgid "Are you sure you wish to delete these files and data?"
 msgstr "¿Estás seguro de que deseas eliminar estos archivos y datos?"
 
-#: wp-admin/plugins.php:272
+#: wp-admin/plugins.php:282
 msgid "Are you sure you wish to delete these files?"
 msgstr "¿Estás seguro de que deseas eliminar estos archivos?"
 
-#: wp-admin/plugins.php:282
+#: wp-admin/plugins.php:292
 msgid "Yes, Delete these files and data"
 msgstr "Sí, quiero borrar estos archivos y datos"
 
-#: wp-admin/plugins.php:282
+#: wp-admin/plugins.php:292
 msgid "Yes, Delete these files"
 msgstr "Sí, quiero borrar estos archivos"
 
-#: wp-admin/plugins.php:285
+#: wp-admin/plugins.php:295
 msgid "No, Return me to the plugin list"
 msgstr "No, quiero volver a la lista de plugins"
 
-#: wp-admin/plugins.php:288
+#: wp-admin/plugins.php:298
 msgid "Click to view entire list of files which will be deleted"
 msgstr "Pulsa aquí para ver la lista completa de archivos que serán eliminados"
 
-#: wp-admin/plugins.php:319
+#: wp-admin/plugins.php:329
 msgctxt "plugins per page (screen options)"
 msgid "Plugins"
 msgstr "Plugins"
 
-#: wp-admin/plugins.php:325
+#: wp-admin/plugins.php:335
 msgid "Plugins extend and expand the functionality of WordPress. Once a plugin is installed, you may activate it or deactivate it here."
 msgstr "Los plugins amplían las funcionalidades de WordPress. Una vez instalados, puedes activarlos o desactivarlos desde aquí."
 
-#: wp-admin/plugins.php:326
+#: wp-admin/plugins.php:336
 msgid "You can find additional plugins for your site by using the <a href=\"%1$s\">Plugin Browser/Installer</a> functionality or by browsing the <a href=\"%2$s\" target=\"_blank\">WordPress Plugin Directory</a> directly and installing new plugins manually. To manually install a plugin you generally just need to upload the plugin file into your <code>/wp-content/plugins</code> directory. Once a plugin has been installed, you can activate it here."
 msgstr "Puedes encontrar plugins adicionales para tu sitio usando la funcionalidad <a href=\"%1$s\">Instalador/navegador de plugins</a> o navegando por el <a href=\"%2$s\" target=\"_blank\">directorio de plugins de WordPress</a> directamente e instalando manualmente nuevos plugins. Para instalar manualmente un plugin normalmente necesitarás subir el fichero del plugin a tu directorio <code>/wp-content/plugins</code>. Una vez se haya instalado el plugin puedes activarlo aquí."
 
-#: wp-admin/plugins.php:330
+#: wp-admin/plugins.php:340
 msgid "Troubleshooting"
 msgstr "Solución de problemas"
 
-#: wp-admin/plugins.php:332
+#: wp-admin/plugins.php:342
 msgid "Most of the time, plugins play nicely with the core of WordPress and with other plugins. Sometimes, though, a plugin&#8217;s code will get in the way of another plugin, causing compatibility issues. If your site starts doing strange things, this may be the problem. Try deactivating all your plugins and re-activating them in various combinations until you isolate which one(s) caused the issue."
 msgstr "La mayoría de las veces los plugins funcionan perfectamente con el núcleo de WordPress y con los otros plugins. Algunas veces, puede haber incompatibilidades entre algunos plugins produciendo problemas. Tu sitio podría comenzar a hacer cosas raras, esto podría ser un problema. Prueba a desactivar tus plugin e ir activándolos uno a uno y comprobando que el problema no reaparezca. Es la forma de detectar el plugin problemático o la combinación de plugins problemáticos."
 
-#: wp-admin/plugins.php:333
+#: wp-admin/plugins.php:343
 msgid "If something goes wrong with a plugin and you can&#8217;t use WordPress, delete or rename that file in the <code>%s</code> directory and it will be automatically deactivated."
 msgstr "Si algo va mal con un plugin y no puedes utilizar tu WordPress, borra o renombra ese archivo en el directorio <code>%s</code> y se desactivará automáticamente."
 
-#: wp-admin/plugins.php:338
+#: wp-admin/plugins.php:348
 msgid "<a href=\"http://codex.wordpress.org/Managing_Plugins#Plugin_Management\" target=\"_blank\">Documentation on Managing Plugins</a>"
 msgstr "<a href=\"http://codex.wordpress.org/Managing_Plugins#Plugin_Management\" target=\"_blank\">Documentación sobre cómo gestionar plugins</a>"
 
-#: wp-admin/plugins.php:350
+#: wp-admin/plugins.php:360
 msgid "The plugin <code>%s</code> has been <strong>deactivated</strong> due to an error: %s"
 msgstr "El plugin <code>%s</code> se ha <strong>desactivado</strong> debido a un error: %s"
 
-#: wp-admin/plugins.php:356
+#: wp-admin/plugins.php:366
 msgid "You cannot delete a plugin while it is active on the main site."
 msgstr "No puedes borrar un plugin si está activado para el sitio principal."
 
-#: wp-admin/plugins.php:358
+#: wp-admin/plugins.php:368
 msgid "The plugin generated %d characters of <strong>unexpected output</strong> during activation.  If you notice &#8220;headers already sent&#8221; messages, problems with syndication feeds or other issues, try deactivating or removing this plugin."
 msgstr "El plugin ha generado %d caracteres de <strong>salida inesperada</strong>  durante la activación. Si te sale el mensaje de advertencia &#8220;headers already sent&#8221; (cabeceras ya enviadas), problemas con las feeds u otros problemas, prueba a desactivar o eliminar este plugin."
 
-#: wp-admin/plugins.php:360
+#: wp-admin/plugins.php:370
 msgid "Plugin could not be activated because it triggered a <strong>fatal error</strong>."
 msgstr "El plugin no ha podido activarse porque ha provocado un <strong>error fatal</strong>."
 
-#: wp-admin/plugins.php:375
+#: wp-admin/plugins.php:385
 msgid "Plugin could not be deleted due to an error: %s"
 msgstr "El plugin no se ha podido eliminar debido a un error: %s"
 
-#: wp-admin/plugins.php:377
+#: wp-admin/plugins.php:387
 msgid "The selected plugins have been <strong>deleted</strong>."
 msgstr "Los plugins elegidos han sido <strong>eliminados</strong>."
 
-#: wp-admin/plugins.php:380
+#: wp-admin/plugins.php:390
 msgid "Plugin <strong>activated</strong>."
 msgstr "El plugin ha sido <strong>activado</strong>."
 
-#: wp-admin/plugins.php:382
+#: wp-admin/plugins.php:392
 msgid "Selected plugins <strong>activated</strong>."
 msgstr "Los plugins elegidos han sido <strong>activados</strong>."
 
-#: wp-admin/plugins.php:384
+#: wp-admin/plugins.php:394
 msgid "Plugin <strong>deactivated</strong>."
 msgstr "El plugin ha sido <strong>desactivado</strong>."
 
-#: wp-admin/plugins.php:386
+#: wp-admin/plugins.php:396
 msgid "Selected plugins <strong>deactivated</strong>."
 msgstr "Los plugins elegidos han sido <strong>desactivados</strong>."
 
-#: wp-admin/plugins.php:388
+#: wp-admin/plugins.php:398
 msgid "No out of date plugins were selected."
 msgstr "Ningún plugin actualizable elegido."
 
-#: wp-admin/plugins.php:395 wp-admin/menu.php:161
+#: wp-admin/menu.php:161 wp-admin/plugins.php:405
 msgctxt "plugin"
 msgid "Add New"
 msgstr "Añadir nuevo"
 
-#: wp-admin/plugins.php:406
+#: wp-admin/plugins.php:416
 msgid "Search Installed Plugins"
 msgstr "Buscar Plugins Instalados"
 
@@ -1001,34 +1001,34 @@ msgstr "Las categorías se pueden convertir a voluntad en etiquetas usando el <a
 msgid "Tags can be selectively converted to categories using the <a href=\"%s\">tag to category converter</a>"
 msgstr "Las etiquetas se pueden convertir a voluntad a categorías usando el <a href=\"%s\">conversor de etiquetas a categorías</a>"
 
-#: wp-admin/edit-tags.php:360 wp-admin/edit-tag-form.php:40
+#: wp-admin/edit-tag-form.php:40 wp-admin/edit-tags.php:360
 msgctxt "Taxonomy Name"
 msgid "Name"
 msgstr "Nombre"
 
-#: wp-admin/edit-tags.php:362 wp-admin/edit-tag-form.php:42
+#: wp-admin/edit-tag-form.php:42 wp-admin/edit-tags.php:362
 msgid "The name is how it appears on your site."
 msgstr "El nombre es cómo aparecerá en tu sitio."
 
-#: wp-admin/edit-tags.php:366 wp-admin/edit-tag-form.php:46
+#: wp-admin/edit-tag-form.php:46 wp-admin/edit-tags.php:366
 msgctxt "Taxonomy Slug"
 msgid "Slug"
 msgstr "Slug"
 
-#: wp-admin/edit-tags.php:368 wp-admin/edit-tag-form.php:48
+#: wp-admin/edit-tag-form.php:48 wp-admin/edit-tags.php:368
 msgid "The &#8220;slug&#8221; is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens."
 msgstr "El &#8220;slug&#8221; es la versión amigable de la URL del nombre. Suele estar en minúsculas y contiene sólo letras, números y guiones."
 
-#: wp-admin/edit-tags.php:373 wp-admin/edit-tag-form.php:53
+#: wp-admin/edit-tag-form.php:53 wp-admin/edit-tags.php:373
 msgctxt "Taxonomy Parent"
 msgid "Parent"
 msgstr "Superior"
 
-#: wp-admin/edit-tags.php:376 wp-admin/edit-tag-form.php:57
+#: wp-admin/edit-tag-form.php:57 wp-admin/edit-tags.php:376
 msgid "Categories, unlike tags, can have a hierarchy. You might have a Jazz category, and under that have children categories for Bebop and Big Band. Totally optional."
 msgstr "Las categorías, a diferencia de las etiquetas, pueden tener jerarquías. Podrías tener una categoría de Jazz, y por debajo las categorías Bebop y Big Band. Totalmente opcional."
 
-#: wp-admin/edit-tags.php:381 wp-admin/edit-tag-form.php:63
+#: wp-admin/edit-tag-form.php:63 wp-admin/edit-tags.php:381
 msgctxt "Taxonomy Description"
 msgid "Description"
 msgstr "Descripción"
@@ -1951,7 +1951,7 @@ msgstr ""
 msgid " $db->get_row(string query, output type, int offset) -- Output type must be one of: OBJECT, ARRAY_A, ARRAY_N"
 msgstr " $db->get_row(string query, output type, int offset) -- El tipo de salida (output) debe ser uno de estos: OBJECT, ARRAY_A, ARRAY_N"
 
-#: wp-admin/setup-config.php:163
+#: wp-admin/setup-config.php:166
 msgid "<strong>ERROR</strong>: \"Table Prefix\" can only contain numbers, letters, and underscores."
 msgstr "<strong>ERROR</strong>: El \"Prefijo Tabla\" sólo puede contener números, letras y guiones bajos."
 
@@ -2064,28 +2064,28 @@ msgid_plural "Sticky <span class=\"count\">(%s)</span>"
 msgstr[0] "<span class=\"count\">(%s)</span> fija"
 msgstr[1] "<span class=\"count\">(%s)</span> fijas"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:195
-#: wp-admin/includes/media.php:1159
+#: wp-admin/edit-form-comment.php:71
 #: wp-admin/includes/class-wp-comments-list-table.php:202
-#: wp-admin/includes/meta-boxes.php:200 wp-admin/edit-form-comment.php:71
+#: wp-admin/includes/class-wp-posts-list-table.php:195
+#: wp-admin/includes/media.php:1159 wp-admin/includes/meta-boxes.php:200
 msgid "Move to Trash"
 msgstr "Mover a la papelera"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:211
 #: wp-admin/includes/class-wp-links-list-table.php:64
+#: wp-admin/includes/class-wp-posts-list-table.php:211
 msgid "View all categories"
 msgstr "Ver todas las categorías"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:221
 #: wp-admin/includes/class-wp-comments-list-table.php:227
-#: wp-admin/includes/class-wp-media-list-table.php:94
 #: wp-admin/includes/class-wp-links-list-table.php:71
+#: wp-admin/includes/class-wp-media-list-table.php:94
+#: wp-admin/includes/class-wp-posts-list-table.php:221
 msgid "Filter"
 msgstr "Filtrar"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:225
 #: wp-admin/includes/class-wp-comments-list-table.php:232
 #: wp-admin/includes/class-wp-media-list-table.php:100
+#: wp-admin/includes/class-wp-posts-list-table.php:225
 msgid "Empty Trash"
 msgstr "Vaciar papelera"
 
@@ -2102,8 +2102,8 @@ msgstr "Editar este elemento"
 msgid "Edit this item inline"
 msgstr "Editar este elemento en línea"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:538
 #: wp-admin/includes/class-wp-comments-list-table.php:416
+#: wp-admin/includes/class-wp-posts-list-table.php:538
 #: wp-admin/includes/class-wp-terms-list-table.php:259
 msgid "Quick&nbsp;Edit"
 msgstr "Edición rápida"
@@ -2116,9 +2116,9 @@ msgstr "Restaurar este elemento desde la papelera"
 msgid "Move this item to the Trash"
 msgstr "Mover este elemento a la papelera"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:544
 #: wp-admin/includes/class-wp-media-list-table.php:362
 #: wp-admin/includes/class-wp-media-list-table.php:378
+#: wp-admin/includes/class-wp-posts-list-table.php:544
 msgid "Trash"
 msgstr "Papelera"
 
@@ -2135,29 +2135,29 @@ msgstr "Borrar este elemento permanentemente"
 msgid "Preview &#8220;%s&#8221;"
 msgstr "Vista previa &#8220;%s&#8221;"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:553
 #: wp-admin/includes/class-wp-media-list-table.php:367
 #: wp-admin/includes/class-wp-media-list-table.php:386
+#: wp-admin/includes/class-wp-posts-list-table.php:553
 msgid "View &#8220;%s&#8221;"
 msgstr "Ver &#8220;%s&#8221;"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:553
-#: wp-admin/includes/class-wp-terms-list-table.php:263
 #: wp-admin/includes/class-wp-media-list-table.php:367
 #: wp-admin/includes/class-wp-media-list-table.php:386
+#: wp-admin/includes/class-wp-posts-list-table.php:553
+#: wp-admin/includes/class-wp-terms-list-table.php:263
 msgid "View"
 msgstr "Ver"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:566
 #: wp-admin/includes/class-wp-media-list-table.php:277
+#: wp-admin/includes/class-wp-posts-list-table.php:566
 msgid "Unpublished"
 msgstr "Sin publicar"
 
+#: wp-admin/includes/class-wp-comments-list-table.php:334
+#: wp-admin/includes/class-wp-media-list-table.php:286
 #: wp-admin/includes/class-wp-posts-list-table.php:576
 #: wp-admin/includes/plugin-install.php:315
-#: wp-admin/includes/class-wp-comments-list-table.php:334
 #: wp-admin/includes/theme-install.php:165
-#: wp-admin/includes/class-wp-media-list-table.php:286
 #: wp-content/plugins/akismet/admin.php:369
 #: wp-content/plugins/akismet/admin.php:397
 msgid "%s ago"
@@ -2171,8 +2171,8 @@ msgstr "Programación perdida"
 msgid "Last Modified"
 msgstr "Última modificación"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:634
 #: wp-admin/includes/class-wp-media-list-table.php:262
+#: wp-admin/includes/class-wp-posts-list-table.php:634
 msgid "No Tags"
 msgstr "Sin etiquetas"
 
@@ -2180,8 +2180,8 @@ msgstr "Sin etiquetas"
 msgid "Bulk Edit"
 msgstr "Edición masiva"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:727
 #: wp-admin/includes/class-wp-comments-list-table.php:416
+#: wp-admin/includes/class-wp-posts-list-table.php:727
 #: wp-admin/includes/class-wp-terms-list-table.php:337
 msgid "Quick Edit"
 msgstr "Edición rápida"
@@ -2244,8 +2244,8 @@ msgstr "Permitir"
 msgid "Do not allow"
 msgstr "No permitir"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:921
 #: wp-admin/includes/class-wp-comments-list-table.php:219
+#: wp-admin/includes/class-wp-posts-list-table.php:921
 msgid "Pings"
 msgstr "Pings"
 
@@ -2453,10 +2453,10 @@ msgstr "Imagen guardada"
 
 #: wp-admin/includes/misc.php:566 wp-admin/user-edit.php:214
 msgid "Admin Color Scheme"
-msgstr "Esquema de color de administración"
+msgstr "Paleta de color de administración"
 
-#: wp-admin/includes/class-wp-themes-list-table.php:65
 #: wp-admin/includes/class-wp-list-table.php:190
+#: wp-admin/includes/class-wp-themes-list-table.php:65
 msgid "No items found."
 msgstr "No se ha encontrado nada."
 
@@ -2486,11 +2486,11 @@ msgstr "Vista previa de &#8220;%s&#8221;"
 msgid "Activate &#8220;%s&#8221;"
 msgstr "Activar &#8220;%s&#8221;"
 
+#: wp-admin/includes/class-wp-plugins-list-table.php:252
+#: wp-admin/includes/class-wp-plugins-list-table.php:373
 #: wp-admin/includes/class-wp-themes-list-table.php:152
 #: wp-admin/includes/class-wp-upgrader.php:1422
 #: wp-admin/includes/class-wp-upgrader.php:1478
-#: wp-admin/includes/class-wp-plugins-list-table.php:252
-#: wp-admin/includes/class-wp-plugins-list-table.php:373
 msgid "Activate"
 msgstr "Activar"
 
@@ -2502,19 +2502,18 @@ msgstr ""
 "Estás a punto de borrar este tema '%s'\n"
 "  'Aceptar' para borrar, 'Cancelar' para salir."
 
-#: wp-admin/includes/class-wp-themes-list-table.php:155
-#: wp-admin/includes/media.php:1153
-#: wp-admin/includes/class-wp-users-list-table.php:130
-#: wp-admin/includes/class-wp-users-list-table.php:252
-#: wp-admin/includes/template.php:478
+#: wp-admin/includes/class-wp-links-list-table.php:47
+#: wp-admin/includes/class-wp-links-list-table.php:140
 #: wp-admin/includes/class-wp-plugins-list-table.php:262
 #: wp-admin/includes/class-wp-plugins-list-table.php:367
 #: wp-admin/includes/class-wp-plugins-list-table.php:376
 #: wp-admin/includes/class-wp-terms-list-table.php:83
 #: wp-admin/includes/class-wp-terms-list-table.php:262
-#: wp-admin/includes/class-wp-links-list-table.php:47
-#: wp-admin/includes/class-wp-links-list-table.php:140
-#: wp-admin/includes/widgets.php:206 wp-admin/includes/meta-boxes.php:642
+#: wp-admin/includes/class-wp-themes-list-table.php:155
+#: wp-admin/includes/class-wp-users-list-table.php:130
+#: wp-admin/includes/class-wp-users-list-table.php:252
+#: wp-admin/includes/media.php:1153 wp-admin/includes/meta-boxes.php:642
+#: wp-admin/includes/template.php:478 wp-admin/includes/widgets.php:206
 #: wp-admin/widgets.php:289
 msgid "Delete"
 msgstr "Borrar"
@@ -2738,8 +2737,8 @@ msgstr "&laquo;"
 msgid "&raquo;"
 msgstr "&raquo;"
 
-#: wp-admin/includes/media.php:1852
 #: wp-admin/includes/class-wp-list-table.php:377
+#: wp-admin/includes/media.php:1852
 msgid "Show all dates"
 msgstr "Mostrar todas las fechas"
 
@@ -2842,11 +2841,11 @@ msgstr "Si tienes un plugin en un archivo .zip, puedes subirlo e instalarlo desd
 msgid "Plugin zip file"
 msgstr "Archivo .zip del plugin"
 
+#: wp-admin/includes/class-wp-plugin-install-list-table.php:200
 #: wp-admin/includes/plugin-install.php:150
 #: wp-admin/includes/plugin-install.php:291
 #: wp-admin/includes/theme-install.php:122
 #: wp-admin/includes/theme-install.php:291
-#: wp-admin/includes/class-wp-plugin-install-list-table.php:200
 msgid "Install Now"
 msgstr "Instalar ahora"
 
@@ -2920,42 +2919,42 @@ msgstr "Página del plugin  &#187;"
 msgid "Average Rating"
 msgstr "Puntuación promedio"
 
+#: wp-admin/includes/class-wp-plugin-install-list-table.php:221
 #: wp-admin/includes/plugin-install.php:330
 #: wp-admin/includes/plugin-install.php:338
 #: wp-admin/includes/theme-install.php:173
-#: wp-admin/includes/class-wp-plugin-install-list-table.php:221
 msgid "(based on %s rating)"
 msgid_plural "(based on %s ratings)"
 msgstr[0] "(basado en %s voto)"
 msgstr[1] "(basado en %s votos)"
 
+#: wp-admin/includes/class-wp-plugin-install-list-table.php:230
 #: wp-admin/includes/plugin-install.php:332
 #: wp-admin/includes/theme-install.php:175
-#: wp-admin/includes/class-wp-plugin-install-list-table.php:230
 msgid "5 stars"
 msgstr "5 estrellas"
 
+#: wp-admin/includes/class-wp-plugin-install-list-table.php:231
 #: wp-admin/includes/plugin-install.php:333
 #: wp-admin/includes/theme-install.php:176
-#: wp-admin/includes/class-wp-plugin-install-list-table.php:231
 msgid "4 stars"
 msgstr "4 estrellas"
 
+#: wp-admin/includes/class-wp-plugin-install-list-table.php:232
 #: wp-admin/includes/plugin-install.php:334
 #: wp-admin/includes/theme-install.php:177
-#: wp-admin/includes/class-wp-plugin-install-list-table.php:232
 msgid "3 stars"
 msgstr "3 estrellas"
 
+#: wp-admin/includes/class-wp-plugin-install-list-table.php:233
 #: wp-admin/includes/plugin-install.php:335
 #: wp-admin/includes/theme-install.php:178
-#: wp-admin/includes/class-wp-plugin-install-list-table.php:233
 msgid "2 stars"
 msgstr "2 estrellas"
 
+#: wp-admin/includes/class-wp-plugin-install-list-table.php:234
 #: wp-admin/includes/plugin-install.php:336
 #: wp-admin/includes/theme-install.php:179
-#: wp-admin/includes/class-wp-plugin-install-list-table.php:234
 msgid "1 star"
 msgstr "1 estrella"
 
@@ -2967,9 +2966,9 @@ msgstr "<strong>Atención:</strong> Este plugin <strong>no ha sido probado</stro
 msgid "<strong>Warning:</strong> This plugin has <strong>not been marked as compatible</strong> with your version of WordPress."
 msgstr "<strong>Atención:</strong> Este plugin <strong>no es compatible</strong> con esta versión de WordPress."
 
+#: wp-admin/includes/class-wp-plugin-install-list-table.php:31
 #: wp-admin/includes/class-wp-theme-install-list-table.php:31
 #: wp-admin/includes/file.php:26
-#: wp-admin/includes/class-wp-plugin-install-list-table.php:31
 msgid "Search Results"
 msgstr "Resultados de la búsqueda"
 
@@ -2988,8 +2987,8 @@ msgctxt "Theme Installer"
 msgid "Recently Updated"
 msgstr "Actualizados recientemente"
 
-#: wp-admin/includes/class-wp-theme-install-list-table.php:98
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:86
+#: wp-admin/includes/class-wp-theme-install-list-table.php:98
 msgid "Try again"
 msgstr "Inténtalo de nuevo"
 
@@ -3278,7 +3277,7 @@ msgstr "La URL especificada no es válido."
 msgid "Could not create Temporary file."
 msgstr "No ha sido posible crear el archivo temporal."
 
-#: wp-admin/includes/file.php:538 wp-admin/includes/class-wp-upgrader.php:42
+#: wp-admin/includes/class-wp-upgrader.php:42 wp-admin/includes/file.php:538
 #: wp-admin/includes/plugin.php:684 wp-admin/includes/theme.php:94
 msgid "Could not access filesystem."
 msgstr "No ha sido posible acceder al sistema de archivos."
@@ -3291,8 +3290,8 @@ msgstr "Archivo incompatible."
 msgid "Could not retrieve file from archive."
 msgstr "No se puede recuperar el archivo."
 
-#: wp-admin/includes/file.php:632 wp-admin/includes/file.php:724
-#: wp-admin/includes/file.php:783 wp-admin/includes/class-wp-upgrader.php:54
+#: wp-admin/includes/class-wp-upgrader.php:54 wp-admin/includes/file.php:632
+#: wp-admin/includes/file.php:724 wp-admin/includes/file.php:783
 #: wp-admin/includes/update-core.php:591
 msgid "Could not create directory."
 msgstr "No ha sido posible crear el directorio"
@@ -3415,9 +3414,9 @@ msgstr "La contraseña del SSH2 es necesaria"
 msgid "Failed to connect to SSH2 Server %1$s:%2$s"
 msgstr "Ha sido imposible conectar con el SSH2 %1$s:%2$s"
 
-#: wp-admin/includes/class-wp-filesystem-ssh2.php:117
-#: wp-admin/includes/class-wp-filesystem-ftpsockets.php:74
 #: wp-admin/includes/class-wp-filesystem-ftpext.php:79
+#: wp-admin/includes/class-wp-filesystem-ftpsockets.php:74
+#: wp-admin/includes/class-wp-filesystem-ssh2.php:117
 msgid "Username/Password incorrect for %s"
 msgstr "Nombre de usuario y/o contraseña incorrecto/s para %s"
 
@@ -3637,13 +3636,13 @@ msgstr "Tamaño máximo: %s"
 msgid "Upload file and import"
 msgstr "Subir archivo e importar"
 
-#: wp-admin/includes/template.php:955 wp-admin/press-this.php:477
-#: wp-admin/press-this.php:511 wp-admin/press-this.php:561
+#: wp-admin/includes/template.php:955 wp-admin/press-this.php:468
+#: wp-admin/press-this.php:502 wp-admin/press-this.php:552
 msgid "Click to toggle"
 msgstr "Haz clic para cambiar"
 
-#: wp-admin/includes/template.php:1026 wp-admin/includes/template.php:1066
 #: wp-admin/includes/plugin.php:1602 wp-admin/includes/plugin.php:1625
+#: wp-admin/includes/template.php:1026 wp-admin/includes/template.php:1066
 msgid "The miscellaneous options group has been removed. Use another settings group."
 msgstr "Las opciones misceláneas de grupo se han eliminado. Usa otros ajustes de grupo."
 
@@ -3651,8 +3650,8 @@ msgstr "Las opciones misceláneas de grupo se han eliminado. Usa otros ajustes d
 msgid "Find Posts or Pages"
 msgstr "Buscar entradas o páginas"
 
-#: wp-admin/includes/template.php:1452 wp-admin/includes/meta-boxes.php:119
-#: wp-admin/includes/meta-boxes.php:144
+#: wp-admin/includes/meta-boxes.php:119 wp-admin/includes/meta-boxes.php:144
+#: wp-admin/includes/template.php:1452
 msgid "Password protected"
 msgstr "Protegida con contraseña"
 
@@ -3896,10 +3895,10 @@ msgstr "Actualizar plugin"
 msgid "Reactivating the plugin&#8230;"
 msgstr "Reactivando el plugin&#8230;"
 
+#: wp-admin/includes/class-wp-plugins-list-table.php:373
 #: wp-admin/includes/class-wp-upgrader.php:1114
 #: wp-admin/includes/class-wp-upgrader.php:1349
 #: wp-admin/includes/class-wp-upgrader.php:1351
-#: wp-admin/includes/class-wp-plugins-list-table.php:373
 msgid "Activate this plugin"
 msgstr "Activar este plugin"
 
@@ -3983,13 +3982,13 @@ msgstr "El plugin <strong>%s %s</strong> se ha instalado correctamente."
 msgid "Activate Plugin &amp; Run Importer"
 msgstr "Activar plugin y Comenzar Importación"
 
-#: wp-admin/includes/class-wp-upgrader.php:1354
 #: wp-admin/includes/class-wp-plugins-list-table.php:365
+#: wp-admin/includes/class-wp-upgrader.php:1354
 msgid "Activate this plugin for all sites in this network"
 msgstr "Activar este plugin para todos los sitios en esta red"
 
-#: wp-admin/includes/class-wp-upgrader.php:1354
 #: wp-admin/includes/class-wp-plugins-list-table.php:365
+#: wp-admin/includes/class-wp-upgrader.php:1354
 msgid "Network Activate"
 msgstr "Activar para la red"
 
@@ -4067,24 +4066,24 @@ msgstr "Ir a la página siguiente"
 msgid "Go to the last page"
 msgstr "Ir a la última página"
 
-#: wp-admin/includes/class-wp-filesystem-ftpsockets.php:38
 #: wp-admin/includes/class-wp-filesystem-ftpext.php:44
+#: wp-admin/includes/class-wp-filesystem-ftpsockets.php:38
 msgid "FTP hostname is required"
 msgstr "El nombre del servidor del FTP es necesario"
 
-#: wp-admin/includes/class-wp-filesystem-ftpsockets.php:47
 #: wp-admin/includes/class-wp-filesystem-ftpext.php:53
+#: wp-admin/includes/class-wp-filesystem-ftpsockets.php:47
 msgid "FTP username is required"
 msgstr "El nombre de usuario del FTP es necesario"
 
-#: wp-admin/includes/class-wp-filesystem-ftpsockets.php:52
 #: wp-admin/includes/class-wp-filesystem-ftpext.php:58
+#: wp-admin/includes/class-wp-filesystem-ftpsockets.php:52
 msgid "FTP password is required"
 msgstr "La contraseña del FTP es necesaria"
 
+#: wp-admin/includes/class-wp-filesystem-ftpext.php:74
 #: wp-admin/includes/class-wp-filesystem-ftpsockets.php:64
 #: wp-admin/includes/class-wp-filesystem-ftpsockets.php:69
-#: wp-admin/includes/class-wp-filesystem-ftpext.php:74
 msgid "Failed to connect to FTP Server %1$s:%2$s"
 msgstr "Ha sido imposible conectar con el servidor FTP %1$s:%2$s"
 
@@ -4117,8 +4116,8 @@ msgstr "Si tienes un tema en un archivo .zip, puedes instalarlo subiendo el arch
 msgid "Install &#8220;%s&#8221;"
 msgstr "Instalar &#8220;%s&#8221;"
 
-#: wp-admin/includes/theme-install.php:160
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:192
+#: wp-admin/includes/theme-install.php:160
 msgid "Details"
 msgstr "Detalles"
 
@@ -4254,9 +4253,9 @@ msgstr "Borrar este plugin"
 msgid "Open this file in the Plugin Editor"
 msgstr "Abrir este archivo en el editor de plugins"
 
+#: wp-admin/includes/class-wp-plugin-install-list-table.php:185
 #: wp-admin/includes/class-wp-plugins-list-table.php:428
 #: wp-admin/includes/plugin.php:145
-#: wp-admin/includes/class-wp-plugin-install-list-table.php:185
 msgid "By %s"
 msgstr "Por %s"
 
@@ -4290,7 +4289,7 @@ msgctxt "Default link category slug"
 msgid "Blogroll"
 msgstr "Sitios de interés"
 
-#: wp-admin/includes/upgrade.php:199 wp-admin/includes/schema.php:889
+#: wp-admin/includes/schema.php:889 wp-admin/includes/upgrade.php:199
 msgid "Welcome to <a href=\"SITE_URL\">SITE_NAME</a>. This is your first post. Edit or delete it, then start blogging!"
 msgstr "Te damos la bienvenida a <a href=\"SITE_URL\">SITE_NAME</a>. Este es tu primer artículo. Edítalo o bórralo... ¡y comienza a publicar!"
 
@@ -4501,8 +4500,8 @@ msgctxt "nav menu home label"
 msgid "Home"
 msgstr "Inicio"
 
-#: wp-admin/includes/nav-menu.php:878 wp-admin/includes/meta-boxes.php:327
-#: wp-admin/includes/meta-boxes.php:672 wp-admin/press-this.php:518
+#: wp-admin/includes/meta-boxes.php:327 wp-admin/includes/meta-boxes.php:672
+#: wp-admin/includes/nav-menu.php:878 wp-admin/press-this.php:509
 msgid "Most Used"
 msgstr "Más utilizadas"
 
@@ -4916,8 +4915,8 @@ msgid "Visible"
 msgstr "Visible"
 
 #: wp-admin/includes/class-wp-links-list-table.php:85
-#: wp-admin/includes/meta-boxes.php:904
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:143
+#: wp-admin/includes/meta-boxes.php:904
 msgid "Rating"
 msgstr "Valoración"
 
@@ -5118,7 +5117,7 @@ msgstr "Programar para:<b>%1$s</b>"
 msgid "Publish on: <b>%1$s</b>"
 msgstr "Publicar el: <b>%1$s</b>"
 
-#: wp-admin/includes/meta-boxes.php:351 wp-admin/press-this.php:540
+#: wp-admin/includes/meta-boxes.php:351 wp-admin/press-this.php:531
 msgid "+ %s"
 msgstr "+ %s"
 
@@ -5315,7 +5314,7 @@ msgstr "El horario de invierno comienza el: <code>%s</code>."
 msgid "This timezone does not observe daylight saving time."
 msgstr "Esta zona horaria no tiene en cuenta el horario de verano."
 
-#: wp-admin/options-general.php:236 wp-admin/includes/schema.php:380
+#: wp-admin/includes/schema.php:380 wp-admin/options-general.php:236
 msgid "F j, Y"
 msgstr "j F, Y"
 
@@ -5327,7 +5326,7 @@ msgstr "Personalizado:"
 msgid "<a href=\"http://codex.wordpress.org/Formatting_Date_and_Time\">Documentation on date and time formatting</a>."
 msgstr "<a href=\"http://codex.wordpress.org/Formatting_Date_and_Time\">Documentación sobre formatos de fecha y hora</a>."
 
-#: wp-admin/options-general.php:269 wp-admin/includes/schema.php:382
+#: wp-admin/includes/schema.php:382 wp-admin/options-general.php:269
 msgid "g:i a"
 msgstr "G:i"
 
@@ -5363,7 +5362,7 @@ msgstr "Si quieres ver más temas entre los que elegir haz clic en la pestaña &
 msgid "Adding Themes"
 msgstr "Añadir temas"
 
-#: wp-admin/themes.php:65 wp-admin/theme-editor.php:39
+#: wp-admin/theme-editor.php:39 wp-admin/themes.php:65
 msgid "<a href=\"http://codex.wordpress.org/Using_Themes\" target=\"_blank\">Documentation on Using Themes</a>"
 msgstr "<a href=\"http://codex.wordpress.org/Using_Themes\" target=\"_blank\">Documentación sobre el uso de temas</a>"
 
@@ -5396,7 +5395,7 @@ msgstr "Tema actual"
 msgid "Current theme preview"
 msgstr "Vista previa del tema actual"
 
-#: wp-admin/themes.php:107 wp-admin/includes/class-wp-themes-list-table.php:167
+#: wp-admin/includes/class-wp-themes-list-table.php:167 wp-admin/themes.php:107
 msgid "%1$s %2$s by %3$s"
 msgstr "%1$s %2$s por %3$s"
 
@@ -5404,7 +5403,7 @@ msgstr "%1$s %2$s por %3$s"
 msgid "Options:"
 msgstr "Opciones:"
 
-#: wp-admin/themes.php:141 wp-admin/includes/class-wp-themes-list-table.php:177
+#: wp-admin/includes/class-wp-themes-list-table.php:177 wp-admin/themes.php:141
 msgid "Tags:"
 msgstr "Etiquetas:"
 
@@ -5416,7 +5415,7 @@ msgstr "Temas disponibles"
 msgid "Search Installed Themes"
 msgstr "Buscar temas instalados"
 
-#: wp-admin/themes.php:167 wp-admin/includes/theme-install.php:79
+#: wp-admin/includes/theme-install.php:79 wp-admin/themes.php:167
 msgid "Feature Filter"
 msgstr "Filtrar por características"
 
@@ -5481,7 +5480,7 @@ msgstr "<a href=\"http://codex.wordpress.org/Media_Add_New_Screen#Edit_Media\" t
 msgid "Media attachment updated."
 msgstr "El archivo ha sido actualizado."
 
-#: wp-admin/media.php:110 wp-admin/upload.php:179 wp-admin/menu.php:60
+#: wp-admin/media.php:110 wp-admin/menu.php:60 wp-admin/upload.php:179
 msgctxt "file"
 msgid "Add New"
 msgstr "Añadir nuevo"
@@ -5518,7 +5517,7 @@ msgstr "Cabecera personalizada"
 msgid "Header updated. <a href=\"%s\">Visit your site</a> to see how it looks."
 msgstr "Cabezera actualizada. <a href=\"%s\">Visita tu sitio</a> para ver los cambios."
 
-#: wp-admin/custom-header.php:512 wp-admin/custom-background.php:243
+#: wp-admin/custom-background.php:243 wp-admin/custom-header.php:512
 msgid "Upload Image"
 msgstr "Subir imagen"
 
@@ -5530,14 +5529,14 @@ msgstr "Puedes subir una imagen de cabecera personalizada para que se vea en tu 
 msgid "Images of exactly <strong>%1$d &times; %2$d pixels</strong> will be used as-is."
 msgstr "Las imágenes de exactamente <strong>%1$d x %2$d pixels</strong> se utilizarán tal cual."
 
-#: wp-admin/custom-header.php:518 wp-admin/custom-background.php:245
+#: wp-admin/custom-background.php:245 wp-admin/custom-header.php:518
 msgid "Choose an image from your computer:"
 msgstr "Elige una imagen desde tu ordenador:"
 
-#: wp-admin/custom-header.php:522 wp-admin/custom-background.php:248
-#: wp-admin/includes/media.php:1381 wp-admin/includes/media.php:1383
-#: wp-admin/includes/class-wp-theme-install-list-table.php:32
+#: wp-admin/custom-background.php:248 wp-admin/custom-header.php:522
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:32
+#: wp-admin/includes/class-wp-theme-install-list-table.php:32
+#: wp-admin/includes/media.php:1381 wp-admin/includes/media.php:1383
 msgid "Upload"
 msgstr "Subir"
 
@@ -5561,7 +5560,7 @@ msgstr "Si no quieres subir tu propia imagen puedes usar una de estas cabeceras 
 msgid "You can use one of these cool headers or show a random one on each page."
 msgstr "Puedes usar una de estas cabeceras tan chulas o mostrarlas aleatoriamente en cada página."
 
-#: wp-admin/custom-header.php:562 wp-admin/custom-background.php:218
+#: wp-admin/custom-background.php:218 wp-admin/custom-header.php:562
 msgid "Remove Image"
 msgstr "Eliminar Imagen"
 
@@ -5589,7 +5588,7 @@ msgstr "Restaurar imagen de cabecera original"
 msgid "Display Text"
 msgstr "Visualización de texto"
 
-#: wp-admin/custom-header.php:590 wp-admin/comment.php:192
+#: wp-admin/comment.php:192 wp-admin/custom-header.php:590
 #: wp-admin/includes/class-wp-links-list-table.php:110
 msgid "No"
 msgstr "No"
@@ -5607,7 +5606,7 @@ msgstr "Color de texto"
 msgid "If you want to hide header text, add <strong>#blank</strong> as text color."
 msgstr "Si quieres ocultar el texto de la cabecera, añade <strong>#blank</strong> como color de texto."
 
-#: wp-admin/custom-header.php:602 wp-admin/custom-background.php:307
+#: wp-admin/custom-background.php:307 wp-admin/custom-header.php:602
 msgid "Select a Color"
 msgstr "Elige un color"
 
@@ -5655,7 +5654,7 @@ msgstr "Recortar y publicar"
 msgid "You do not have permission to customize headers."
 msgstr "No tienes autorización para personalizar cabeceras."
 
-#: wp-admin/options-discussion.php:15 wp-admin/edit-form-advanced.php:202
+#: wp-admin/edit-form-advanced.php:202 wp-admin/options-discussion.php:15
 msgid "Discussion Settings"
 msgstr "Ajustes de comentarios"
 
@@ -5935,10 +5934,9 @@ msgstr "Examinando <strong>%s</strong> (inactivo)"
 msgid "Select plugin to edit:"
 msgstr "Elige el plugin a editar:"
 
-#: wp-admin/plugin-editor.php:199 wp-admin/theme-editor.php:168
-#: wp-admin/includes/template.php:1312
 #: wp-admin/includes/class-wp-plugins-list-table.php:390
-#: wp-admin/nav-menus.php:505
+#: wp-admin/includes/template.php:1312 wp-admin/nav-menus.php:505
+#: wp-admin/plugin-editor.php:199 wp-admin/theme-editor.php:168
 msgid "Select"
 msgstr "Elegir"
 
@@ -6111,8 +6109,8 @@ msgctxt "Theme stylesheets in theme editor"
 msgid "Styles"
 msgstr "Estilos"
 
-#: wp-admin/theme-editor.php:245 wp-admin/comment.php:161
-#: wp-admin/plugins.php:250
+#: wp-admin/comment.php:161 wp-admin/plugins.php:260
+#: wp-admin/theme-editor.php:245
 msgid "Caution:"
 msgstr "Atención:"
 
@@ -6192,7 +6190,7 @@ msgstr "No puedes instalar porque <a href=\"http://codex.wordpress.org/Version_%
 msgid "Insufficient Requirements"
 msgstr "Requisitos Insuficientes"
 
-#: wp-admin/install.php:170 wp-admin/includes/screen.php:813
+#: wp-admin/includes/screen.php:813 wp-admin/install.php:170
 msgid "Welcome"
 msgstr "Bienvenido"
 
@@ -6236,24 +6234,24 @@ msgstr "¡Lo lograste!"
 msgid "WordPress has been installed. Were you expecting more steps? Sorry to disappoint."
 msgstr "Wordpress se ha instalado correctamente. ¿Esperabas más pasos? Sentimos decepcionarte. :)"
 
-#: wp-admin/tools.php:12 wp-admin/menu.php:190
+#: wp-admin/menu.php:190 wp-admin/tools.php:12
 msgid "Tools"
 msgstr "Herramientas"
 
+#: wp-admin/includes/dashboard.php:509 wp-admin/options-writing.php:27
+#: wp-admin/options-writing.php:124 wp-admin/options-writing.php:128
+#: wp-admin/press-this.php:302 wp-admin/press-this.php:469
 #: wp-admin/tools.php:16 wp-admin/tools.php:41 wp-admin/tools.php:46
-#: wp-admin/options-writing.php:27 wp-admin/options-writing.php:124
-#: wp-admin/options-writing.php:128 wp-admin/includes/dashboard.php:509
-#: wp-admin/press-this.php:302 wp-admin/press-this.php:478
 msgid "Press This"
 msgstr "Publicar esto"
 
-#: wp-admin/tools.php:17 wp-admin/options-writing.php:28
+#: wp-admin/options-writing.php:28 wp-admin/tools.php:17
 msgid "Press This is a bookmarklet that makes it easy to blog about something you come across on the web. You can use it to just grab a link, or to post an excerpt. Press This will even allow you to choose from images included on the page and use them in your post. Just drag the Press This link on this screen to your bookmarks bar in your browser, and you&#8217;ll be on your way to easier content creation. Clicking on it while on another website opens a popup window with all these options."
 msgstr ""
 "Publicar esto es un marcador de enlaces que hace fácil bloguear sobre algo con lo que te hayas topado en la web. Puedes usarlo para guardar un enlace, para publicar un resumen del mismo. Publicar esto te permite elegir de entre las imágenes de esa página cuál se utilizará para tu entrada. \n"
 "Sólo tienes que arrastrar el enlace de Publicar esto de esta pantalla a la barra de enlaces favoritos de tu navegador y tendrás la forma más fácil de crear contenido. Haciendo clic en él mientras estés visitando cualquier sitio web se abre una ventana emergente con las opciones mencionadas. "
 
-#: wp-admin/tools.php:21 wp-admin/tools.php:60 wp-admin/import.php:37
+#: wp-admin/import.php:37 wp-admin/tools.php:21 wp-admin/tools.php:60
 msgid "Categories and Tags Converter"
 msgstr "Conversor de etiquetas y categorías"
 
@@ -6269,19 +6267,19 @@ msgstr "El enlace al conversor de categorías y etiquetas de esta página te lle
 msgid "<a href=\"http://codex.wordpress.org/Tools_Screen\" target=\"_blank\">Documentation on Tools</a>"
 msgstr "<a href=\"http://codex.wordpress.org/Tools_Screen\" target=\"_blank\">Documentación sobre herramientas </a>"
 
-#: wp-admin/tools.php:42 wp-admin/options-writing.php:125
+#: wp-admin/options-writing.php:125 wp-admin/tools.php:42
 msgid "Press This is a bookmarklet: a little app that runs in your browser and lets you grab bits of the web."
 msgstr "Publicar esto es un marcador: una pequeña aplicación que se ejecuta en el navegador y permite coger secciones de la web."
 
-#: wp-admin/tools.php:44 wp-admin/options-writing.php:126
+#: wp-admin/options-writing.php:126 wp-admin/tools.php:44
 msgid "Use Press This to clip text, images and videos from any web page. Then edit and add more straight from Press This before you save or publish it in a post on your site."
 msgstr "Utiliza Publicar esto para copiar texto, imágenes y vídeos de cualquier página Web. Después corrige y añade más directamente desde Publicar esto antes de guardarlo o publicarlo en una entrada del sitio."
 
-#: wp-admin/tools.php:45 wp-admin/options-writing.php:127
+#: wp-admin/options-writing.php:127 wp-admin/tools.php:45
 msgid "Drag-and-drop the following link to your bookmarks bar or right click it and add it to your favorites for a posting shortcut."
 msgstr "Arrastra el siguente enlace y colócalo en tu barra de marcadores o haz clic con el botón derecho para añadirlo en tu lista de favoritos como un atajo de publicación de entradas."
 
-#: wp-admin/tools.php:48 wp-admin/options-writing.php:130
+#: wp-admin/options-writing.php:130 wp-admin/tools.php:48
 msgid "If your bookmarks toolbar is hidden: copy the code below, open your Bookmarks manager, create new bookmark, type Press This into the name field and paste the code into the URL field."
 msgstr "Si tu barra de marcadores está oculta: copia el siguiente código, abre el gestor de marcadores, crea un nuevo marcador, teclea Publica esto en el campo de nombre y pega el código en el campo de la URL."
 
@@ -6326,7 +6324,7 @@ msgid "Post scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2
 msgstr "Entrada programada el: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Vista previa</a>"
 
 #: wp-admin/edit-form-advanced.php:43 wp-admin/edit-form-advanced.php:56
-#: wp-admin/includes/meta-boxes.php:159 wp-admin/edit-form-comment.php:58
+#: wp-admin/edit-form-comment.php:58 wp-admin/includes/meta-boxes.php:159
 msgid "M j, Y @ G:i"
 msgstr "j F Y G:i a"
 
@@ -6493,16 +6491,16 @@ msgstr "<a href=\"http://codex.wordpress.org/Pages_Screen#Editing_Individual_Pag
 msgid "Get Shortlink"
 msgstr "Obtener enlace corto"
 
-#: wp-admin/edit-form-advanced.php:331 wp-admin/admin-ajax.php:1541
+#: wp-admin/admin-ajax.php:1541 wp-admin/edit-form-advanced.php:331
 msgid "Last edited by %1$s on %2$s at %3$s"
 msgstr "Última edición por %1$s el %2$s a las %3$s"
 
-#: wp-admin/edit-form-advanced.php:333 wp-admin/admin-ajax.php:1543
+#: wp-admin/admin-ajax.php:1543 wp-admin/edit-form-advanced.php:333
 msgid "Last edited on %1$s at %2$s"
 msgstr "Última edición el %1$s a las %2$s"
 
-#: wp-admin/async-upload.php:29 wp-admin/upload.php:13
-#: wp-admin/media-upload.php:19 wp-app.php:600 wp-app.php:788
+#: wp-admin/async-upload.php:29 wp-admin/media-upload.php:19
+#: wp-admin/upload.php:13 wp-app.php:600 wp-app.php:788
 msgid "You do not have permission to upload files."
 msgstr "No tienes autorización para subir archivos."
 
@@ -6510,8 +6508,8 @@ msgstr "No tienes autorización para subir archivos."
 msgid "Unknown post type."
 msgstr "Tipo de entrada desconocida."
 
-#: wp-admin/async-upload.php:38 wp-admin/post.php:138
-#: wp-admin/edit-tags.php:253
+#: wp-admin/async-upload.php:38 wp-admin/edit-tags.php:253
+#: wp-admin/post.php:138
 msgid "You are not allowed to edit this item."
 msgstr "No tienes autorización para editar esto."
 
@@ -6719,7 +6717,7 @@ msgstr "Buscar comentarios"
 msgid "You do not have sufficient permissions to import content in this site."
 msgstr "No tienes suficientes permisos para importar contenidos en este sitio."
 
-#: wp-admin/import.php:17 wp-admin/menu.php:192 wp-admin/admin.php:193
+#: wp-admin/admin.php:193 wp-admin/import.php:17 wp-admin/menu.php:192
 msgid "Import"
 msgstr "Importar"
 
@@ -7180,9 +7178,9 @@ msgstr[1] "%s elementos restaurados de la papelera."
 msgid "You are not allowed to scan for lost attachments."
 msgstr "No tienes autorización para buscar adjuntos perdidos."
 
-#: wp-admin/upload.php:62 wp-admin/admin-ajax.php:966
-#: wp-admin/admin-ajax.php:1196 wp-admin/includes/post.php:158
-#: wp-admin/includes/post.php:1318 wp-admin/press-this.php:35
+#: wp-admin/admin-ajax.php:966 wp-admin/admin-ajax.php:1196
+#: wp-admin/includes/post.php:158 wp-admin/includes/post.php:1318
+#: wp-admin/press-this.php:35 wp-admin/upload.php:62
 msgid "You are not allowed to edit this post."
 msgstr "No tienes autorización para editar esta entrada."
 
@@ -7206,7 +7204,7 @@ msgstr "Error al restaurar de la papelera..."
 msgid "You are not allowed to delete this post."
 msgstr "No tienes autorización para borrar esta entrada."
 
-#: wp-admin/upload.php:139 wp-admin/includes/media.php:21
+#: wp-admin/includes/media.php:21 wp-admin/upload.php:139
 msgid "Media Library"
 msgstr "Librería multimedia"
 
@@ -7279,8 +7277,8 @@ msgstr "Medios movidos a la papelera."
 msgid "Media restored from the trash."
 msgstr "Medios restaurados de la papelera."
 
-#: wp-admin/upload.php:231 wp-admin/includes/media.php:1783
-#: wp-admin/includes/media.php:1785
+#: wp-admin/includes/media.php:1783 wp-admin/includes/media.php:1785
+#: wp-admin/upload.php:231
 msgid "Search Media"
 msgstr "Buscar medios"
 
@@ -7388,9 +7386,8 @@ msgstr "No actualizado."
 msgid "Date"
 msgstr "Fecha"
 
-#: wp-admin/admin-ajax.php:1314
+#: wp-admin/admin-ajax.php:1314 wp-admin/edit-form-comment.php:35
 #: wp-admin/includes/class-wp-posts-list-table.php:952
-#: wp-admin/edit-form-comment.php:35
 msgid "Status"
 msgstr "Estado"
 
@@ -7449,8 +7446,8 @@ msgstr "Todo el contenido"
 msgid "This will contain all of your posts, pages, comments, custom fields, terms, navigation menus and custom posts."
 msgstr "Esto contendrá todas tus entradas, páginas, comentarios, campos personalizados, menús de navegación y entradas personalizadas."
 
-#: wp-admin/export.php:136 wp-admin/includes/class-wp-users-list-table.php:167
-#: wp-admin/includes/class-wp-terms-list-table.php:109 wp-admin/menu.php:42
+#: wp-admin/export.php:136 wp-admin/includes/class-wp-terms-list-table.php:109
+#: wp-admin/includes/class-wp-users-list-table.php:167 wp-admin/menu.php:42
 msgid "Posts"
 msgstr "Entradas"
 
@@ -7579,8 +7576,8 @@ msgstr "<a href=\"http://codex.wordpress.org/Roles_and_Capabilities\" target=\"_
 msgid "You can&#8217;t edit that user."
 msgstr "No puedes editar ese usuario."
 
-#: wp-admin/users.php:94 wp-admin/includes/user.php:34
-#: wp-admin/includes/user.php:88
+#: wp-admin/includes/user.php:34 wp-admin/includes/user.php:88
+#: wp-admin/users.php:94
 msgid "You can&#8217;t give users that role."
 msgstr "No puedes dar este perfil a los usuarios."
 
@@ -7707,18 +7704,18 @@ msgstr "No puedes eliminar el usuario actual."
 msgid "Other users have been removed."
 msgstr "Otros usuarios han sido eliminados."
 
-#: wp-admin/users.php:397 wp-admin/user-edit.php:186 wp-admin/menu.php:176
-#: wp-admin/menu.php:178
+#: wp-admin/menu.php:176 wp-admin/menu.php:178 wp-admin/user-edit.php:186
+#: wp-admin/users.php:397
 msgctxt "user"
 msgid "Add New"
 msgstr "Añadir nuevo"
 
-#: wp-admin/users.php:399 wp-admin/user-edit.php:188
+#: wp-admin/user-edit.php:188 wp-admin/users.php:399
 msgctxt "user"
 msgid "Add Existing"
 msgstr "Añadir usuario existente"
 
-#: wp-admin/users.php:410 wp-admin/includes/dashboard.php:468
+#: wp-admin/includes/dashboard.php:468 wp-admin/users.php:410
 msgid "Search Users"
 msgstr "Buscar usuarios"
 
@@ -7734,20 +7731,20 @@ msgstr "No es necesaria la actualización"
 msgid "Your WordPress database is already up-to-date!"
 msgstr "¡Tu base de datos de WordPress ya está actualizada!"
 
-#: wp-admin/upgrade.php:65 wp-admin/upgrade.php:97
-#: wp-admin/includes/media.php:1155
+#: wp-admin/includes/media.php:1155 wp-admin/upgrade.php:65
+#: wp-admin/upgrade.php:97
 msgid "Continue"
 msgstr "Continuar"
 
-#: wp-admin/upgrade.php:69 wp-admin/update-core.php:54
+#: wp-admin/update-core.php:54 wp-admin/upgrade.php:69
 msgid "You cannot update because <a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
 msgstr "No puedes instalar a causa de que <a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requiere la versión %2$s o superior de PHP y la versión %3$s o superior de MySQL. Estás usando la versión %4$s de PHP y la versión %5$s de MySQL."
 
-#: wp-admin/upgrade.php:71 wp-admin/update-core.php:56
+#: wp-admin/update-core.php:56 wp-admin/upgrade.php:71
 msgid "You cannot update because <a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires PHP version %2$s or higher. You are running version %3$s."
 msgstr "La actualización no puede instalarse ya que <a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requiere la versión %2$s o superior de PHP. Estás usando la versión %3$s."
 
-#: wp-admin/upgrade.php:73 wp-admin/update-core.php:58
+#: wp-admin/update-core.php:58 wp-admin/upgrade.php:73
 msgid "You cannot update because <a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires MySQL version %2$s or higher. You are running version %3$s."
 msgstr "La actualización no puede instalarse porque <a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requiere la versión %2$s o superior de MySQL. Estás usando la versión %3$s."
 
@@ -7851,7 +7848,7 @@ msgstr "Categoría predeterminada para las entradas"
 msgid "Default Post Format"
 msgstr "Formato de entrada por defecto"
 
-#: wp-admin/options-writing.php:104 wp-admin/includes/meta-boxes.php:256
+#: wp-admin/includes/meta-boxes.php:256 wp-admin/options-writing.php:104
 msgid "Standard"
 msgstr "Estándar"
 
@@ -7895,8 +7892,8 @@ msgstr "Protocolo de publicación Atom"
 msgid "Enable the Atom Publishing Protocol."
 msgstr "Activar el protocolo de publicación Atom."
 
-#: wp-admin/options-writing.php:180 wp-admin/options-writing.php:181
-#: wp-admin/credits.php:156
+#: wp-admin/credits.php:156 wp-admin/options-writing.php:180
+#: wp-admin/options-writing.php:181
 msgid "XML-RPC"
 msgstr "XML-RPC"
 
@@ -7917,8 +7914,8 @@ msgstr "WordPress no está notificando a ningún <a href=\"http://codex.wordpres
 msgid "You do not have sufficient permissions to update this site."
 msgstr "No tienes los permisos adecuados para actualizar este sitio."
 
-#: wp-admin/update-core.php:33
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:204
+#: wp-admin/update-core.php:33
 msgid "Update Now"
 msgstr "Actualizar ahora"
 
@@ -8018,9 +8015,9 @@ msgstr "Tus plugins están todos actualizados."
 msgid "The following plugins have new versions available. Check the ones you want to update and then click &#8220;Update Plugins&#8221;."
 msgstr "Hay nuevas versiones de los siguientes plugins. Marca aquellos que quieras actualizar y haz clic en &#8220;Actualizar plugins&#8221;."
 
-#: wp-admin/update-core.php:219 wp-admin/update-core.php:276
-#: wp-admin/update-core.php:504 wp-admin/update-core.php:509
-#: wp-admin/plugins.php:111
+#: wp-admin/plugins.php:111 wp-admin/update-core.php:219
+#: wp-admin/update-core.php:276 wp-admin/update-core.php:504
+#: wp-admin/update-core.php:509
 msgid "Update Plugins"
 msgstr "Actualizar plugins"
 
@@ -8074,15 +8071,15 @@ msgstr "Actualizar WordPress"
 msgid "Installation Failed"
 msgstr "Instalación fallida"
 
-#: wp-admin/update-core.php:385 wp-admin/includes/update-core.php:626
+#: wp-admin/includes/update-core.php:626 wp-admin/update-core.php:385
 msgid "WordPress updated successfully"
 msgstr "WordPress ha sido actualizado correctamente"
 
-#: wp-admin/update-core.php:386 wp-admin/includes/update-core.php:627
+#: wp-admin/includes/update-core.php:627 wp-admin/update-core.php:386
 msgid "Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href=\"%s\">here</a>."
 msgstr "Bienvenido a Wordpress %1$s. Serás redirigido a la pantalla \"Sobre WordPress\". Si no es así, haz clic  <a href=\"%s\">aquí</a>."
 
-#: wp-admin/update-core.php:387 wp-admin/includes/update-core.php:628
+#: wp-admin/includes/update-core.php:628 wp-admin/update-core.php:387
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "Bienvenido a WordPress %1$s. <a href=\"%2$s\">Aprende más</a>."
 
@@ -8146,8 +8143,8 @@ msgstr "Una <a href=\"%s\">página estática</a> (seleccionar abajo)"
 msgid "Front page: %s"
 msgstr "Página inicial: %s"
 
-#: wp-admin/options-reading.php:96 wp-admin/options-reading.php:97
-#: wp-admin/includes/template.php:521 wp-admin/widgets.php:270
+#: wp-admin/includes/template.php:521 wp-admin/options-reading.php:96
+#: wp-admin/options-reading.php:97 wp-admin/widgets.php:270
 msgid "&mdash; Select &mdash;"
 msgstr "&mdash; Seleccionar &mdash;"
 
@@ -8195,33 +8192,32 @@ msgstr "Codificación para páginas y feeds"
 msgid "The <a href=\"http://codex.wordpress.org/Glossary#Character_set\">character encoding</a> of your site (UTF-8 is recommended, if you are adventurous there are some <a href=\"http://en.wikipedia.org/wiki/Character_set\">other encodings</a>)"
 msgstr "La <a href=\"http://codex.wordpress.org/Glossary#Character_set\">codificación de caracteres</a> de tu sitio (recomendamos UTF-8, pero si eres un aventurero, tienes <a href=\"http://en.wikipedia.org/wiki/Character_set\">otras codificaciones</a>)"
 
-#: wp-admin/freedoms.php:12 wp-admin/freedoms.php:32 wp-admin/about.php:32
-#: wp-admin/credits.php:63
+#: wp-admin/about.php:32 wp-admin/credits.php:63 wp-admin/freedoms.php:12
+#: wp-admin/freedoms.php:32
 msgid "Freedoms"
 msgstr "Derechos"
 
-#: wp-admin/freedoms.php:20 wp-admin/about.php:20 wp-admin/credits.php:51
+#: wp-admin/about.php:20 wp-admin/credits.php:51 wp-admin/freedoms.php:20
 msgid "Welcome to WordPress %s"
 msgstr "Bienvenido a WordPress %s"
 
-#: wp-admin/freedoms.php:22 wp-admin/about.php:22 wp-admin/credits.php:53
+#: wp-admin/about.php:22 wp-admin/credits.php:53 wp-admin/freedoms.php:22
 msgid "Thank you for updating to the latest version! Using WordPress %s will improve your looks, personality, and web publishing experience. Okay, just the last one, but still. :)"
 msgstr "¡Gracias por actualizar a la última versión! Utilizar WordPress %s va a mejorar tu apariencia, personalidad y experiencia en la publicación web. Está bien, sólo la última, pero aún así... :)"
 
-#: wp-admin/freedoms.php:24 wp-admin/about.php:24
-#: wp-admin/includes/dashboard.php:1290
+#: wp-admin/about.php:24 wp-admin/credits.php:55 wp-admin/freedoms.php:24
 #: wp-admin/includes/class-wp-plugins-list-table.php:423
-#: wp-admin/includes/update.php:86 wp-admin/includes/update.php:109
-#: wp-admin/credits.php:55
+#: wp-admin/includes/dashboard.php:1290 wp-admin/includes/update.php:86
+#: wp-admin/includes/update.php:109
 msgid "Version %s"
 msgstr "Versión %s"
 
-#: wp-admin/freedoms.php:28 wp-admin/about.php:28 wp-admin/credits.php:59
+#: wp-admin/about.php:28 wp-admin/credits.php:59 wp-admin/freedoms.php:28
 msgid "What&#8217;s New"
 msgstr "¿Qué hay de nuevo?"
 
-#: wp-admin/freedoms.php:30 wp-admin/about.php:30 wp-admin/credits.php:12
-#: wp-admin/credits.php:61
+#: wp-admin/about.php:30 wp-admin/credits.php:12 wp-admin/credits.php:61
+#: wp-admin/freedoms.php:30
 msgid "Credits"
 msgstr "Créditos"
 
@@ -8257,229 +8253,229 @@ msgstr "Cada plugin y tema del directorio de WordPress.org es 100%% GPL o con un
 msgid "Don&#8217;t you wish all software came with these freedoms? So do we! For more information, check out the <a href=\"http://www.fsf.org/\">Free Software Foundation</a>."
 msgstr "¿No te gustaría que todo el software tuviera esa libertad? Nosotros también. Para más información ve a la <a href=\"http://www.fsf.org/\">Free Software Foundation</a>."
 
-#: wp-admin/about.php:45
+#: wp-admin/about.php:49
 msgid "Easier Uploading"
 msgstr "Subida más fácil"
 
-#: wp-admin/about.php:53
+#: wp-admin/about.php:57
 msgid "File Type Detection"
 msgstr "Detección de Tipo de Archivo"
 
-#: wp-admin/about.php:54
+#: wp-admin/about.php:58
 msgid "We&#8217;ve streamlined things! Instead of needing to click on a specific upload icon based on your file type, now there&#8217;s just one. Once your file is uploaded, the appropriate fields will be displayed for entering information based on the file type."
 msgstr "¡Hemos limado algunas cosas! En vez de necesitar el hacer clic en un icono de carga u otro según el tipo de archivo a subir, ahora sólo hay uno. Una vez que el archivo se ha subido, los campos correspondientes se mostrarán según qué tipo de archivo sea."
 
-#: wp-admin/about.php:56
+#: wp-admin/about.php:60
 msgid "Drag-and-Drop Media Uploader"
 msgstr "Subida de archivos Drag-and-Drop"
 
-#: wp-admin/about.php:57
+#: wp-admin/about.php:61
 msgid "Adding photos or other files to posts and pages just got easier. Drag files from your desktop and drop them into the uploader. Add one file at a time, or many at once."
 msgstr "Añadir fotos u otro tipo de archivos a los artículos y páginas es más fácil. Arrastra los archivos desde tu escritorio y suéltalos en la subida de archivos. Añade los archivos de uno en uno, o muchos a la vez. "
 
-#: wp-admin/about.php:59
+#: wp-admin/about.php:63
 msgid "More File Formats"
 msgstr "Más tipos de archivos"
 
-#: wp-admin/about.php:60
+#: wp-admin/about.php:64
 msgid "We&#8217;ve added the rar and 7z file formats to the list of allowed file types in the uploader."
 msgstr "Hemos añadido los formatos rar y 7z a la lista de los archivos permitidos en la subida."
 
-#: wp-admin/about.php:66
+#: wp-admin/about.php:70
 msgid "Dashboard Design"
 msgstr "Diseño del Escritorio"
 
-#: wp-admin/about.php:69
+#: wp-admin/about.php:73
 msgid "Flyout Menus"
 msgstr "Menús Flotantes"
 
-#: wp-admin/about.php:70
+#: wp-admin/about.php:74
 msgid "Speed up navigating the dashboard and reduce repetitive clicking with our new flyout submenus. As you hover over each main menu item in your dashboard navigation, the submenus will magically appear, providing single-click access to any dashboard screen."
 msgstr "Acelera la navegación por el escritorio y reduce clics repetitivos con nuestros nuevos submenús flotantes. A medida que pases sobre cada menú principal los submenús aparecerá por arte de magia, ofreciendo acceso con un único clic a cualquier pantalla del escritorio."
 
-#: wp-admin/about.php:73
+#: wp-admin/about.php:77
 msgid "Header + Admin Bar = Toolbar"
 msgstr "Cabecera + Barra de navegación = Barra de Herramientas"
 
-#: wp-admin/about.php:74
+#: wp-admin/about.php:78
 msgid "To save space and increase efficiency, we&#8217;ve combined the admin bar and the old Dashboard header into one persistent toolbar. Hovering over the toolbar items will reveal submenus when available for quick access. "
 msgstr "Para ahorrar espacio y aumentar la eficiencia, hemos combinado la barra de administración y la cabecera del antiguo escritorio en una barra permanente. Para tener un acceso rápido, al pasar por encima de los elementos de la barra se muestran los submenus."
 
-#: wp-admin/about.php:81
+#: wp-admin/about.php:85
 msgid "Responsive Design"
 msgstr "Diseño adaptable"
 
-#: wp-admin/about.php:82
+#: wp-admin/about.php:86
 msgid "Certain dashboard screens have been updated to look better at various sizes, including improved iPad/tablet support."
 msgstr "Algunas pantallas del escritorio se han actualizado para verse mejor a distintos tamaños, incluyendo soporte mejorado para iPad/tablet."
 
-#: wp-admin/about.php:86
+#: wp-admin/about.php:90
 msgid "Help Tabs"
 msgstr "Pestañas de ayuda"
 
-#: wp-admin/about.php:87
+#: wp-admin/about.php:91
 msgid "The Help tabs located in the upper corner of the dashboard screens below your name have gotten a facelift. Help content is broken into smaller sections for easier access, with links to relevant documentation and the support forums always visible."
 msgstr "Las pestañas de Ayuda, situadas en la esquina superior de las pantallas del escritorio bajo tu nombre, han recibido un lavado de cara. El contenido de la ayuda se divide ahora en secciones más pequeñas para facilitar el acceso, con enlaces a la documentación pertinente y los foros de soporte siempre visibles."
 
-#: wp-admin/about.php:93
+#: wp-admin/about.php:97
 msgid "Feels Like the First Time"
 msgstr "Como la Primera Vez"
 
-#: wp-admin/about.php:101
+#: wp-admin/about.php:105
 msgid "New Feature Pointers"
 msgstr "Nuevos Punteros de Características"
 
-#: wp-admin/about.php:102
+#: wp-admin/about.php:106
 msgid "When we add new features, move navigation, or do anything else with the dashboard that might throw you for a loop when you update your WordPress site, we&#8217;ll let you know about it with new feature pointers explaining the change."
 msgstr "Cuando añadimos nuevas características, movemos la navegación, o hacemos cualquier otra cosa con el escritorio que pueden hacer que te líes cuando actualizas tu WordPress, te lo haremos saber utilizando los nuevos punteros para explicarte los cambios."
 
-#: wp-admin/about.php:104
+#: wp-admin/about.php:108
 msgid "Post-update Changelog"
 msgstr "Cambios tras actualizar. "
 
-#: wp-admin/about.php:105
+#: wp-admin/about.php:109
 msgid "This screen! From now on when you update WordPress, you&#8217;ll be brought to this screen &mdash; also accessible any time from the W logo in the corner of the toolbar &mdash; to get an overview of what&#8217;s changed."
 msgstr "¡Esta pantalla! A partir de ahora, al actualizar WordPress, verás esta pantalla. También puedes acceder a ella en cualquier momento desde el logotipo de W en la esquina de la barra de herramientas para obtener una visión general de qué ha cambiado."
 
-#: wp-admin/about.php:107
+#: wp-admin/about.php:111
 msgid "Dashboard Welcome"
 msgstr "Bienvenida en el Escritorio"
 
-#: wp-admin/about.php:108
+#: wp-admin/about.php:112
 msgid "The dashboard home screen will have a Welcome area that displays when a new WordPress installation is accessed for the first time, prompting the site owner to complete various setup tasks. Once dismissed, this welcome can be accessed via the dashboard home screen options tab."
 msgstr "La pantalla de escritorio tendrá un área de Bienvenida  que se mostrará cuando se acceda a una nueva instalación de WordPress por primera vez, pidiendo al dueño del sitio que complete varias tareas de configuración. Si la has descartado, puedes acceder a ella a través de la pestaña de opciones del escritorio. "
 
-#: wp-admin/about.php:115
+#: wp-admin/about.php:119
 msgid "Content Tools"
 msgstr "Herramientas de contenido"
 
-#: wp-admin/about.php:119
+#: wp-admin/about.php:123
 msgid "Better Co-Editing"
 msgstr "Co-Edición mejorada"
 
-#: wp-admin/about.php:121
+#: wp-admin/about.php:125
 msgid "Have you ever gone to edit a post after someone else has finished with it, only to get an alert that tells you the other person is still editing the post? From now on, you&#8217;ll only get that alert if another person is still on the editing screen &mdash; no more time lag."
 msgstr "¿Alguna vez has ido a editar un artículo después de que alguien haya terminado con él y te has encontrado con un mensaje diciéndote que otra persona está editando el artículo? Desde ahora, sólo verás esta alerta si la otra persona está en la pantalla de edición &mdash; haciendo que no pierdas el tiempo."
 
-#: wp-admin/about.php:124
+#: wp-admin/about.php:128
 msgid "Tumblr Importer"
 msgstr "Importado Tumblr"
 
-#: wp-admin/about.php:125
+#: wp-admin/about.php:129
 msgid "Want to import content from Tumblr to WordPress? No problem! Go to <span class=\"no-break\">Tools &rarr; Import</span> to get the new Tumblr Importer, which maps your Tumblog posts to the matching WordPress post formats. Tip: Choose a theme designed to display post formats to get the greatest benefit from the importer."
 msgstr "¿Quieres importar contenido de Tumblr a WordPress? ¡No hay problema! Ve a <span class=\"no-break\">Herramientas &rarr; Importar</span> para obtener el nuevo importador de Tumblr, que traslada tus entradas en el Tumblog a su correspondiente tipo de entrada de WordPress. Consejo: elige un tema diseñado para mostrar varios tipos de entradas para sacarle todo el jugo al importador."
 
-#: wp-admin/about.php:128
+#: wp-admin/about.php:132
 msgid "Widget Improvements"
 msgstr "Mejoras de widgets"
 
-#: wp-admin/about.php:129
+#: wp-admin/about.php:133
 msgid "Changing themes often requires widget re-configuration based on the number and position of sidebars. Now if you change back to a previous theme, the widgets will automatically go back to how you had them arranged in that theme. <em>Note: if you&#8217;ve added new widgets since the switch, you&#8217;ll need to rescue them from the Inactive Widgets area.</em>"
 msgstr "Cambiar los temas a veces implica reconfigurar los widgets basándome en la posición de los laterales. Actualmente, si vuelves al tema anterior, los widgets volverán automáticamente a como estaban configurados en ese tema. <em>Nota: si has añadido widgets nuevos desde el cambio, tendrás que rescatarlos del área de widgets inactivos.</em>"
 
-#: wp-admin/about.php:136
+#: wp-admin/about.php:140
 msgid "Under the Hood"
 msgstr "Bajo el Capó"
 
-#: wp-admin/about.php:140
+#: wp-admin/about.php:144
 msgid "Flexible Permalinks"
 msgstr "Enlaces permanentes flexibles"
 
-#: wp-admin/about.php:141
+#: wp-admin/about.php:145
 msgid "You have more freedom when choosing a post permalink structure. Skip the date information or add a category slug without a performance penalty."
 msgstr "Tienes más libertad a la hora de elegir una estructura de enlace permanente. No muestres la fecha o añade tu categoría sin una penalización de rendimiento. "
 
-#: wp-admin/about.php:144
+#: wp-admin/about.php:148
 msgid "Post Slugs: Less Funky"
 msgstr "Slugs: Menos Funky"
 
-#: wp-admin/about.php:145
+#: wp-admin/about.php:149
 msgid "Funky characters in post titles (e.g. curly quotes from a word processor) will no longer result in garbled post slugs."
 msgstr "Los caracteres extraños en los títulos de posts (p.ej. comillas tipográficas de un procesador de textos) ya no crearán enlaces ilegibles."
 
-#: wp-admin/about.php:148
+#: wp-admin/about.php:152
 msgid "jQuery and jQuery UI"
 msgstr "jQuery y jQuery UI"
 
-#: wp-admin/about.php:149
+#: wp-admin/about.php:153
 msgid "WordPress now includes the entire jQuery UI stack and the latest version of jQuery: %s."
 msgstr "WordPress ahora incluye la UI completa de jQuery y la última versión de jQuery: %s."
 
-#: wp-admin/about.php:156
+#: wp-admin/about.php:160
 msgid "This handy method will tell you if a <code>WP_Query</code> object is the main WordPress query or a secondary query."
 msgstr "Esta práctica función te dirá si un objeto <code>WP_Query</code> es la consulta principal de WordPress o una secundaria. "
 
-#: wp-admin/about.php:159
+#: wp-admin/about.php:163
 msgid "WP_Screen API"
 msgstr "WP_Screen API"
 
-#: wp-admin/about.php:160
+#: wp-admin/about.php:164
 msgid "WordPress has a nice new API for working with admin screens. Create rich screens, add help documentation, adapt to screen contexts, and more."
 msgstr "WordPress tiene una nueva API para trabajar con pantallas de administración. Crea pantallas más completas, agrega la documentación de ayuda, adapta los contextos de pantalla, y mucho más."
 
-#: wp-admin/about.php:163
+#: wp-admin/about.php:167
 msgid "Editor API Overhaul"
 msgstr "Reacondicionamiento de la API del servidor"
 
-#: wp-admin/about.php:164
+#: wp-admin/about.php:168
 msgid "The new editor API automatically pulls in all the JS and CSS goodness for the editor. It even supports multiple editors on the same page."
 msgstr "La nueva API de edición carga ahora automáticamente todas las extensiones de JS y CSS. Incluso soporta múltiples editores en la misma página."
 
-#: wp-admin/about.php:173
+#: wp-admin/about.php:177
 msgid "Return to Updates"
 msgstr "Volver a las actualizaciones"
 
-#: wp-admin/about.php:173
+#: wp-admin/about.php:177
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "Vuelve a Escritorio &rarr; Actualizaciones"
 
-#: wp-admin/about.php:176
+#: wp-admin/about.php:180
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Ve a Escritorio &rarr; Inicio"
 
-#: wp-admin/about.php:187
+#: wp-admin/about.php:191
 msgid "Maintenance Release"
 msgid_plural "Maintenance Releases"
 msgstr[0] "Versión de mantenimiento"
 msgstr[1] "Versiones de mantenimiento"
 
-#: wp-admin/about.php:188
+#: wp-admin/about.php:192
 msgid "Security Release"
 msgid_plural "Security Releases"
 msgstr[0] "Versión de seguridad"
 msgstr[1] "Versiones de seguridad"
 
-#: wp-admin/about.php:37 wp-admin/about.php:189
+#: wp-admin/about.php:37 wp-admin/about.php:193
 msgid "Maintenance and Security Release"
 msgid_plural "Maintenance and Security Releases"
 msgstr[0] "Versión de mantenimiento y seguridad"
 msgstr[1] "Versiones de mantenimiento y seguridad"
 
-#: wp-admin/about.php:192
+#: wp-admin/about.php:196
 msgid "<strong>Version %1$s</strong> addressed a security issue."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues."
 msgstr[0] "<strong>La versión %1$s</strong> resuelve un problema de seguridad."
 msgstr[1] "<strong>La versión %1$s</strong> resuelve varios problemas de seguridad."
 
-#: wp-admin/about.php:196
+#: wp-admin/about.php:200
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>Versión %1$s</strong> soluciona el bug %2$s."
 msgstr[1] "<strong>Versión %1$s</strong> soluciona %2$s bugs."
 
-#: wp-admin/about.php:38 wp-admin/about.php:200
+#: wp-admin/about.php:42 wp-admin/about.php:204
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>Versión %1$s</strong> marcada como actualización de seguridad, soluciona el error %2$s."
 msgstr[1] "<strong>Versión %1$s</strong> marcada como actualización de seguridad, soluciona %2$s errores."
 
-#: wp-admin/about.php:204
+#: wp-admin/about.php:38 wp-admin/about.php:208
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>Versión %1$s</strong> marcada como actualización de seguridad, soluciona el error %2$s."
 msgstr[1] "<strong>Versión %1$s</strong> marcada como actualización de seguridad, soluciona %2$s errores."
 
-#: wp-admin/about.php:40 wp-admin/about.php:207
+#: wp-admin/about.php:40 wp-admin/about.php:44 wp-admin/about.php:211
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Para más información, lee <a href=\"%s\">las notas de la versión</a>."
 
@@ -8674,23 +8670,23 @@ msgid "Reset"
 msgstr "Reiniciar"
 
 #: wp-admin/includes/dashboard.php:563 wp-admin/includes/meta-boxes.php:219
-#: wp-admin/includes/meta-boxes.php:220 wp-admin/press-this.php:487
+#: wp-admin/includes/meta-boxes.php:220 wp-admin/press-this.php:478
 msgid "Submit for Review"
 msgstr "Enviar para revisión"
 
-#: wp-admin/includes/dashboard.php:594
+#: wp-admin/includes/class-wp-links-list-table.php:136
+#: wp-admin/includes/class-wp-media-list-table.php:209
+#: wp-admin/includes/class-wp-media-list-table.php:227
 #: wp-admin/includes/class-wp-posts-list-table.php:522
 #: wp-admin/includes/class-wp-posts-list-table.php:528
 #: wp-admin/includes/class-wp-terms-list-table.php:254
-#: wp-admin/includes/class-wp-media-list-table.php:209
-#: wp-admin/includes/class-wp-media-list-table.php:227
-#: wp-admin/includes/class-wp-links-list-table.php:136
+#: wp-admin/includes/dashboard.php:594
 msgid "Edit &#8220;%s&#8221;"
 msgstr "Editar &#8220;%s&#8221;"
 
-#: wp-admin/includes/dashboard.php:594
-#: wp-admin/includes/class-wp-posts-list-table.php:569
 #: wp-admin/includes/class-wp-media-list-table.php:279
+#: wp-admin/includes/class-wp-posts-list-table.php:569
+#: wp-admin/includes/dashboard.php:594
 msgid "Y/m/d g:i:s A"
 msgstr "d/m/Y G:i"
 
@@ -8698,85 +8694,84 @@ msgstr "d/m/Y G:i"
 msgid "There are no drafts at the moment"
 msgstr "En este momento no hay borradores"
 
-#: wp-admin/includes/dashboard.php:699
 #: wp-admin/includes/class-wp-comments-list-table.php:394
 #: wp-admin/includes/class-wp-comments-list-table.php:396
+#: wp-admin/includes/dashboard.php:699
 msgid "Approve this comment"
 msgstr "Aprobar este comentario"
 
-#: wp-admin/includes/dashboard.php:699
 #: wp-admin/includes/class-wp-comments-list-table.php:190
 #: wp-admin/includes/class-wp-comments-list-table.php:394
 #: wp-admin/includes/class-wp-comments-list-table.php:396
+#: wp-admin/includes/dashboard.php:699
 msgid "Approve"
 msgstr "Aprobar"
 
-#: wp-admin/includes/dashboard.php:700
 #: wp-admin/includes/class-wp-comments-list-table.php:392
 #: wp-admin/includes/class-wp-comments-list-table.php:397
+#: wp-admin/includes/dashboard.php:700
 msgid "Unapprove this comment"
 msgstr "Rechazar este comentario"
 
-#: wp-admin/includes/dashboard.php:700
 #: wp-admin/includes/class-wp-comments-list-table.php:188
 #: wp-admin/includes/class-wp-comments-list-table.php:392
 #: wp-admin/includes/class-wp-comments-list-table.php:397
+#: wp-admin/includes/dashboard.php:700
 msgid "Unapprove"
 msgstr "Rechazar"
 
-#: wp-admin/includes/dashboard.php:701
-#: wp-admin/includes/class-wp-posts-list-table.php:190
-#: wp-admin/includes/class-wp-posts-list-table.php:537
+#: wp-admin/edit-form-comment.php:62
 #: wp-admin/includes/class-wp-comments-list-table.php:415
-#: wp-admin/includes/class-wp-users-list-table.php:246
-#: wp-admin/includes/class-wp-plugins-list-table.php:381
-#: wp-admin/includes/class-wp-terms-list-table.php:258
+#: wp-admin/includes/class-wp-links-list-table.php:139
 #: wp-admin/includes/class-wp-media-list-table.php:359
 #: wp-admin/includes/class-wp-media-list-table.php:373
-#: wp-admin/includes/post.php:1127
-#: wp-admin/includes/class-wp-links-list-table.php:139
-#: wp-admin/includes/widgets.php:182 wp-admin/includes/meta-boxes.php:84
+#: wp-admin/includes/class-wp-plugins-list-table.php:381
+#: wp-admin/includes/class-wp-posts-list-table.php:190
+#: wp-admin/includes/class-wp-posts-list-table.php:537
+#: wp-admin/includes/class-wp-terms-list-table.php:258
+#: wp-admin/includes/class-wp-users-list-table.php:246
+#: wp-admin/includes/dashboard.php:701 wp-admin/includes/meta-boxes.php:84
 #: wp-admin/includes/meta-boxes.php:130 wp-admin/includes/meta-boxes.php:182
-#: wp-admin/edit-form-comment.php:62
+#: wp-admin/includes/post.php:1127 wp-admin/includes/widgets.php:182
 msgid "Edit"
 msgstr "Editar"
 
-#: wp-admin/includes/dashboard.php:702
 #: wp-admin/includes/class-wp-comments-list-table.php:417
+#: wp-admin/includes/dashboard.php:702
 msgid "Reply to this comment"
 msgstr "Responder a este comentario"
 
-#: wp-admin/includes/dashboard.php:703
 #: wp-admin/includes/class-wp-comments-list-table.php:401
+#: wp-admin/includes/dashboard.php:703
 msgid "Mark this comment as spam"
 msgstr "Marcar este comentario como spam"
 
-#: wp-admin/includes/dashboard.php:703
 #: wp-admin/includes/class-wp-comments-list-table.php:401
+#: wp-admin/includes/dashboard.php:703
 msgctxt "verb"
 msgid "Spam"
 msgstr "Spam"
 
-#: wp-admin/includes/dashboard.php:705
-#: wp-admin/includes/class-wp-posts-list-table.php:193
-#: wp-admin/includes/class-wp-posts-list-table.php:546
-#: wp-admin/includes/media.php:1151
+#: wp-admin/edit-form-comment.php:71
 #: wp-admin/includes/class-wp-comments-list-table.php:200
 #: wp-admin/includes/class-wp-comments-list-table.php:409
 #: wp-admin/includes/class-wp-media-list-table.php:79
 #: wp-admin/includes/class-wp-media-list-table.php:365
 #: wp-admin/includes/class-wp-media-list-table.php:381
-#: wp-admin/includes/meta-boxes.php:198 wp-admin/edit-form-comment.php:71
+#: wp-admin/includes/class-wp-posts-list-table.php:193
+#: wp-admin/includes/class-wp-posts-list-table.php:546
+#: wp-admin/includes/dashboard.php:705 wp-admin/includes/media.php:1151
+#: wp-admin/includes/meta-boxes.php:198
 msgid "Delete Permanently"
 msgstr "Borrar permanentemente"
 
-#: wp-admin/includes/dashboard.php:707
 #: wp-admin/includes/class-wp-comments-list-table.php:411
+#: wp-admin/includes/dashboard.php:707
 msgid "Move this comment to the trash"
 msgstr "Mover este comentario a la papelera"
 
-#: wp-admin/includes/dashboard.php:707
 #: wp-admin/includes/class-wp-comments-list-table.php:411
+#: wp-admin/includes/dashboard.php:707
 msgctxt "verb"
 msgid "Trash"
 msgstr "Enviar a la Papelera"
@@ -8901,9 +8896,9 @@ msgstr[1] "%d Actualizaciones temas"
 msgid "Do you want to use the WYSIWYG mode for this textarea?"
 msgstr "¿Quieres usar el editor visual en este área de texto?"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:13
-#: wp-admin/includes/screen.php:946
 #: wp-admin/includes/class-wp-list-table.php:303
+#: wp-admin/includes/screen.php:946
+#: wp-includes/js/tinymce/langs/wp-langs.php:13
 msgid "Apply"
 msgstr "Aplicar"
 
@@ -8958,7 +8953,7 @@ msgstr "{#field} debe ser un número o porcentaje"
 msgid "More colors"
 msgstr "Más colores"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:31 wp-admin/includes/theme.php:280
+#: wp-admin/includes/theme.php:280 wp-includes/js/tinymce/langs/wp-langs.php:31
 msgid "Black"
 msgstr "Negro"
 
@@ -8994,7 +8989,7 @@ msgstr "Gris muy oscuro"
 msgid "Maroon"
 msgstr "Granate"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:40 wp-admin/includes/theme.php:285
+#: wp-admin/includes/theme.php:285 wp-includes/js/tinymce/langs/wp-langs.php:40
 msgid "Orange"
 msgstr "Naranja"
 
@@ -9002,7 +8997,7 @@ msgstr "Naranja"
 msgid "Olive"
 msgstr "Verde oliva"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:42 wp-admin/includes/theme.php:284
+#: wp-admin/includes/theme.php:284 wp-includes/js/tinymce/langs/wp-langs.php:42
 msgid "Green"
 msgstr "Verde"
 
@@ -9010,7 +9005,7 @@ msgstr "Verde"
 msgid "Teal"
 msgstr "Turquesa"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:44 wp-admin/includes/theme.php:281
+#: wp-admin/includes/theme.php:281 wp-includes/js/tinymce/langs/wp-langs.php:44
 msgid "Blue"
 msgstr "Azul"
 
@@ -9018,11 +9013,11 @@ msgstr "Azul"
 msgid "Grayish blue"
 msgstr "Azul grisáceo"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:46 wp-admin/includes/theme.php:283
+#: wp-admin/includes/theme.php:283 wp-includes/js/tinymce/langs/wp-langs.php:46
 msgid "Gray"
 msgstr "Gris"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:47 wp-admin/includes/theme.php:288
+#: wp-admin/includes/theme.php:288 wp-includes/js/tinymce/langs/wp-langs.php:47
 msgid "Red"
 msgstr "Rojo"
 
@@ -9046,7 +9041,7 @@ msgstr "Turquesa"
 msgid "Royal blue"
 msgstr "Azul real"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:53 wp-admin/includes/theme.php:287
+#: wp-admin/includes/theme.php:287 wp-includes/js/tinymce/langs/wp-langs.php:53
 msgid "Purple"
 msgstr "Púrpura"
 
@@ -9062,7 +9057,7 @@ msgstr "Magenta"
 msgid "Gold"
 msgstr "Dorado"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:57 wp-admin/includes/theme.php:292
+#: wp-admin/includes/theme.php:292 wp-includes/js/tinymce/langs/wp-langs.php:57
 msgid "Yellow"
 msgstr "Amarillo"
 
@@ -9078,15 +9073,15 @@ msgstr "Agua"
 msgid "Sky blue"
 msgstr "Azul cielo"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:61 wp-admin/includes/theme.php:282
+#: wp-admin/includes/theme.php:282 wp-includes/js/tinymce/langs/wp-langs.php:61
 msgid "Brown"
 msgstr "Marrón"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:62 wp-admin/includes/theme.php:289
+#: wp-admin/includes/theme.php:289 wp-includes/js/tinymce/langs/wp-langs.php:62
 msgid "Silver"
 msgstr "Gris"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:63 wp-admin/includes/theme.php:286
+#: wp-admin/includes/theme.php:286 wp-includes/js/tinymce/langs/wp-langs.php:63
 msgid "Pink"
 msgstr "Rosa"
 
@@ -9114,37 +9109,37 @@ msgstr "Azul cielo claro"
 msgid "Plum"
 msgstr "Ciruela"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:70 wp-admin/includes/theme.php:291
+#: wp-admin/includes/theme.php:291 wp-includes/js/tinymce/langs/wp-langs.php:70
 msgid "White"
 msgstr "Blanco"
 
+#: wp-admin/includes/media.php:809 wp-admin/includes/media.php:1971
 #: wp-includes/js/tinymce/langs/wp-langs.php:73
 #: wp-includes/js/tinymce/langs/wp-langs.php:330
-#: wp-admin/includes/media.php:809 wp-admin/includes/media.php:1971
 msgid "Alignment"
 msgstr "Alineación"
 
+#: wp-admin/custom-background.php:265 wp-admin/includes/media.php:685
+#: wp-admin/includes/media.php:1976
 #: wp-includes/js/tinymce/langs/wp-langs.php:74
 #: wp-includes/js/tinymce/langs/wp-langs.php:337
 #: wp-includes/js/tinymce/langs/wp-langs.php:436
-#: wp-admin/custom-background.php:265 wp-admin/includes/media.php:685
-#: wp-admin/includes/media.php:1976
 msgid "Left"
 msgstr "Izquierda"
 
+#: wp-admin/custom-background.php:269 wp-admin/includes/media.php:685
+#: wp-admin/includes/media.php:1978
 #: wp-includes/js/tinymce/langs/wp-langs.php:75
 #: wp-includes/js/tinymce/langs/wp-langs.php:416
 #: wp-includes/js/tinymce/langs/wp-langs.php:437
-#: wp-admin/custom-background.php:269 wp-admin/includes/media.php:685
-#: wp-admin/includes/media.php:1978
 msgid "Center"
 msgstr "Centrar"
 
+#: wp-admin/custom-background.php:273 wp-admin/includes/media.php:685
+#: wp-admin/includes/media.php:1980
 #: wp-includes/js/tinymce/langs/wp-langs.php:76
 #: wp-includes/js/tinymce/langs/wp-langs.php:338
 #: wp-includes/js/tinymce/langs/wp-langs.php:434
-#: wp-admin/custom-background.php:273 wp-admin/includes/media.php:685
-#: wp-admin/includes/media.php:1980
 msgid "Right"
 msgstr "Derecha"
 
@@ -9172,14 +9167,14 @@ msgstr "Insertar hora"
 msgid "Print"
 msgstr "Imprimir"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:93
-#: wp-includes/js/tinymce/langs/wp-langs.php:359 wp-admin/custom-header.php:491
-#: wp-admin/custom-background.php:193
+#: wp-admin/custom-background.php:193 wp-admin/custom-header.php:491
 #: wp-admin/includes/class-wp-posts-list-table.php:551
 #: wp-admin/includes/class-wp-themes-list-table.php:153
 #: wp-admin/includes/class-wp-upgrader.php:1421
 #: wp-admin/includes/class-wp-upgrader.php:1477
-#: wp-admin/includes/theme-install.php:145 wp-admin/includes/meta-boxes.php:48
+#: wp-admin/includes/meta-boxes.php:48 wp-admin/includes/theme-install.php:145
+#: wp-includes/js/tinymce/langs/wp-langs.php:93
+#: wp-includes/js/tinymce/langs/wp-langs.php:359
 msgid "Preview"
 msgstr "Vista previa"
 
@@ -9284,10 +9279,10 @@ msgstr "Pegar como texto plano"
 msgid "Paste from Word"
 msgstr "Pegar desde Word"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:147 wp-admin/update-core.php:224
-#: wp-admin/update-core.php:231 wp-admin/update-core.php:302
-#: wp-admin/update-core.php:309 wp-admin/includes/nav-menu.php:781
-#: wp-admin/includes/nav-menu.php:958
+#: wp-admin/includes/nav-menu.php:781 wp-admin/includes/nav-menu.php:958
+#: wp-admin/update-core.php:224 wp-admin/update-core.php:231
+#: wp-admin/update-core.php:302 wp-admin/update-core.php:309
+#: wp-includes/js/tinymce/langs/wp-langs.php:147
 msgid "Select All"
 msgstr "Elegir todo"
 
@@ -9461,8 +9456,8 @@ msgstr "Insertar salto de página"
 msgid "Types"
 msgstr "Tipos"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:214
 #: wp-admin/options-permalink.php:196
+#: wp-includes/js/tinymce/langs/wp-langs.php:214
 msgid "Default"
 msgstr "Predeterminado"
 
@@ -9700,9 +9695,10 @@ msgstr "Propiedades de la imagen"
 msgid "New document"
 msgstr "Nuevo documento"
 
+#: wp-admin/includes/screen.php:744
 #: wp-includes/js/tinymce/langs/wp-langs.php:285
 #: wp-includes/js/tinymce/langs/wp-langs.php:301
-#: wp-includes/js/tinymce/wp-mce-help.php:260 wp-admin/includes/screen.php:744
+#: wp-includes/js/tinymce/wp-mce-help.php:260
 msgid "Help"
 msgstr "Ayuda"
 
@@ -9727,8 +9723,8 @@ msgstr "Ayuda sobre accesibilidad"
 msgid "Press ALT F10 for toolbar. Press ALT 0 for help."
 msgstr "Pulsa ALT F10 para la barra de herramientas. Pulsa ALT 0 para ayuda."
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:295 wp-admin/user-edit.php:226
-#: wp-admin/user-edit.php:227
+#: wp-admin/user-edit.php:226 wp-admin/user-edit.php:227
+#: wp-includes/js/tinymce/langs/wp-langs.php:295
 msgid "Toolbar"
 msgstr "Barra de herramientas"
 
@@ -9737,8 +9733,8 @@ msgstr "Barra de herramientas"
 msgid "About TinyMCE"
 msgstr "Acerca de TinyMCE"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:300
-#: wp-includes/js/tinymce/wp-mce-help.php:206 wp-admin/about.php:12
+#: wp-admin/about.php:12 wp-includes/js/tinymce/langs/wp-langs.php:300
+#: wp-includes/js/tinymce/wp-mce-help.php:206
 msgid "About"
 msgstr "Acerca de"
 
@@ -9746,19 +9742,19 @@ msgstr "Acerca de"
 msgid "License"
 msgstr "Licencia"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:303 wp-admin/update-core.php:203
-#: wp-admin/update-core.php:215 wp-admin/includes/dashboard.php:75
-#: wp-admin/plugins.php:342
+#: wp-admin/includes/dashboard.php:75 wp-admin/plugins.php:352
+#: wp-admin/update-core.php:203 wp-admin/update-core.php:215
+#: wp-includes/js/tinymce/langs/wp-langs.php:303
 msgid "Plugins"
 msgstr "Plugins"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:304
 #: wp-admin/includes/class-wp-plugins-list-table.php:187
+#: wp-includes/js/tinymce/langs/wp-langs.php:304
 msgid "Plugin"
 msgstr "Plugin"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:306
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:142
+#: wp-includes/js/tinymce/langs/wp-langs.php:306
 msgid "Version"
 msgstr "Versión"
 
@@ -9874,14 +9870,14 @@ msgstr "Texto superior"
 msgid "Text bottom"
 msgstr "Texto inferior"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:340
 #: wp-admin/includes/media.php:938
+#: wp-includes/js/tinymce/langs/wp-langs.php:340
 msgid "Link URL"
 msgstr "URL del enlace"
 
+#: wp-admin/edit-link-form.php:29 wp-admin/includes/meta-boxes.php:714
 #: wp-includes/js/tinymce/langs/wp-langs.php:341
-#: wp-includes/js/tinymce/langs/wp-langs.php:392 wp-admin/edit-link-form.php:29
-#: wp-admin/includes/meta-boxes.php:714
+#: wp-includes/js/tinymce/langs/wp-langs.php:392
 msgid "Target"
 msgstr "Destino"
 
@@ -9913,8 +9909,8 @@ msgstr "Uso general"
 msgid "General"
 msgstr "Generales"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:355
-#: wp-includes/js/tinymce/wp-mce-help.php:204 wp-admin/edit-link-form.php:31
+#: wp-admin/edit-link-form.php:31 wp-includes/js/tinymce/langs/wp-langs.php:355
+#: wp-includes/js/tinymce/wp-mce-help.php:204
 msgid "Advanced"
 msgstr "Avanzado"
 
@@ -9970,8 +9966,8 @@ msgstr "Mostrar menú"
 msgid "Quality"
 msgstr "Calidad"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:371
 #: wp-admin/includes/image-edit.php:89
+#: wp-includes/js/tinymce/langs/wp-langs.php:371
 msgid "Scale"
 msgstr "Escala"
 
@@ -10306,8 +10302,8 @@ msgstr "Más..."
 msgid "Next page..."
 msgstr "Siguiente página..."
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:469
 #: wp-admin/includes/media.php:381
+#: wp-includes/js/tinymce/langs/wp-langs.php:469
 msgid "Add Media"
 msgstr "Añadir objeto"
 
@@ -10331,8 +10327,8 @@ msgstr "Editar galería"
 msgid "Delete Gallery"
 msgstr "Eliminar galería"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:478
 #: wp-admin/includes/media.php:1106
+#: wp-includes/js/tinymce/langs/wp-langs.php:478
 msgid "Edit Image"
 msgstr "Editar imagen"
 
@@ -10344,23 +10340,23 @@ msgstr "Eliminar imagen"
 msgid "Advanced Settings"
 msgstr "Ajustes avanzados"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:482
 #: wp-admin/includes/media.php:748
+#: wp-includes/js/tinymce/langs/wp-langs.php:482
 msgid "Size"
 msgstr "Tamaño"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:483
 #: wp-admin/includes/image-edit.php:181 wp-admin/includes/media.php:711
+#: wp-includes/js/tinymce/langs/wp-langs.php:483
 msgid "Thumbnail"
 msgstr "Miniatura"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:484
 #: wp-admin/includes/media.php:711
+#: wp-includes/js/tinymce/langs/wp-langs.php:484
 msgid "Medium"
 msgstr "Medio"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:485
 #: wp-admin/includes/media.php:711
+#: wp-includes/js/tinymce/langs/wp-langs.php:485
 msgid "Full Size"
 msgstr "Tamaño completo"
 
@@ -10372,8 +10368,8 @@ msgstr "Enlace actual"
 msgid "Link to Image"
 msgstr "Enlazar a imagen"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:488
 #: wp-admin/includes/media.php:941 wp-admin/includes/media.php:1992
+#: wp-includes/js/tinymce/langs/wp-langs.php:488
 msgid "Enter a link URL or click above for presets."
 msgstr "Introduce una URL para el enlace o clic sobre el actual."
 
@@ -10381,15 +10377,15 @@ msgstr "Introduce una URL para el enlace o clic sobre el actual."
 msgid "Advanced Image Settings"
 msgstr "Ajustes avanzados de imágenes"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:491 wp-admin/options-media.php:62
-#: wp-admin/options-media.php:108 wp-admin/includes/theme.php:306
-#: wp-admin/includes/theme.php:356
+#: wp-admin/includes/theme.php:306 wp-admin/includes/theme.php:356
+#: wp-admin/options-media.php:62 wp-admin/options-media.php:108
+#: wp-includes/js/tinymce/langs/wp-langs.php:491
 msgid "Width"
 msgstr "Ancho"
 
+#: wp-admin/options-media.php:64 wp-admin/options-media.php:110
 #: wp-includes/js/tinymce/langs/wp-langs.php:492
-#: wp-includes/js/tinymce/langs/wp-langs.php:497 wp-admin/options-media.php:64
-#: wp-admin/options-media.php:110
+#: wp-includes/js/tinymce/langs/wp-langs.php:497
 msgid "Height"
 msgstr "Altura"
 
@@ -10443,13 +10439,13 @@ msgstr "120%"
 msgid "130%"
 msgstr "130%"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:509
 #: wp-admin/includes/media.php:929
+#: wp-includes/js/tinymce/langs/wp-langs.php:509
 msgid "Caption"
 msgstr "Leyenda"
 
-#: wp-includes/js/tinymce/langs/wp-langs.php:510
 #: wp-admin/includes/media.php:804 wp-admin/includes/media.php:1964
+#: wp-includes/js/tinymce/langs/wp-langs.php:510
 msgid "Alternate Text"
 msgstr "Texto alternativo"
 
@@ -10555,16 +10551,16 @@ msgstr "Acción"
 msgid "Select all"
 msgstr "Seleccionar todos"
 
-#: wp-includes/js/tinymce/wp-mce-help.php:239 wp-admin/edit-comments.php:192
-#: wp-admin/edit-comments.php:200 wp-admin/edit.php:254 wp-admin/upload.php:203
-#: wp-admin/upload.php:215 wp-admin/includes/image-edit.php:56
+#: wp-admin/edit-comments.php:192 wp-admin/edit-comments.php:200
+#: wp-admin/edit.php:254 wp-admin/includes/image-edit.php:56
 #: wp-admin/includes/media.php:1160 wp-admin/includes/template.php:381
-#: wp-admin/includes/template.php:384
+#: wp-admin/includes/template.php:384 wp-admin/upload.php:203
+#: wp-admin/upload.php:215 wp-includes/js/tinymce/wp-mce-help.php:239
 msgid "Undo"
 msgstr "Deshacer"
 
-#: wp-includes/js/tinymce/wp-mce-help.php:239
 #: wp-admin/includes/image-edit.php:57
+#: wp-includes/js/tinymce/wp-mce-help.php:239
 msgid "Redo"
 msgstr "Rehacer"
 
@@ -10618,8 +10614,8 @@ msgstr "Borrar enlace"
 msgid "Quote"
 msgstr "Cita"
 
-#: wp-includes/js/tinymce/wp-mce-help.php:258 wp-admin/press-this.php:160
-#: wp-admin/press-this.php:664
+#: wp-admin/press-this.php:160 wp-admin/press-this.php:655
+#: wp-includes/js/tinymce/wp-mce-help.php:258
 msgid "Insert Image"
 msgstr "Insertar imagen"
 
@@ -10655,9 +10651,9 @@ msgstr "Más estrecho"
 msgid "Default width"
 msgstr "Ancho por defecto"
 
-#: wp-includes/js/tinymce/wp-mce-help.php:273
 #: wp-admin/includes/plugin-install.php:310
 #: wp-admin/includes/theme-install.php:162
+#: wp-includes/js/tinymce/wp-mce-help.php:273
 msgid "Version:"
 msgstr "Versión:"
 
@@ -10711,8 +10707,8 @@ msgstr "URL del sitio"
 msgid "Time Zone"
 msgstr "Zona horaria"
 
-#: wp-includes/class-wp-xmlrpc-server.php:316 wp-admin/options-general.php:96
-#: wp-admin/install.php:97
+#: wp-admin/install.php:97 wp-admin/options-general.php:96
+#: wp-includes/class-wp-xmlrpc-server.php:316
 msgid "Site Title"
 msgstr "Título del sitio"
 
@@ -10720,13 +10716,13 @@ msgstr "Título del sitio"
 msgid "Site Tagline"
 msgstr "Descripción corta"
 
-#: wp-includes/class-wp-xmlrpc-server.php:326 wp-admin/options-general.php:230
-#: wp-admin/options-general.php:232
+#: wp-admin/options-general.php:230 wp-admin/options-general.php:232
+#: wp-includes/class-wp-xmlrpc-server.php:326
 msgid "Date Format"
 msgstr "Formato de fecha"
 
-#: wp-includes/class-wp-xmlrpc-server.php:331 wp-admin/options-general.php:263
-#: wp-admin/options-general.php:265
+#: wp-admin/options-general.php:263 wp-admin/options-general.php:265
+#: wp-includes/class-wp-xmlrpc-server.php:331
 msgid "Time Format"
 msgstr "Formato de hora"
 
@@ -10921,9 +10917,9 @@ msgstr "Una de dos, o el archivo no tiene permisos de escritura, o ha ocurrido a
 msgid "Sorry, you are not allowed to post on this site."
 msgstr "Disculpa, no tienes autorización para publicar en este sitio."
 
+#: wp-app.php:446 wp-app.php:641 wp-app.php:827
 #: wp-includes/class-wp-xmlrpc-server.php:2038
-#: wp-includes/class-wp-xmlrpc-server.php:2428 wp-app.php:446 wp-app.php:641
-#: wp-app.php:827
+#: wp-includes/class-wp-xmlrpc-server.php:2428
 msgid "Sorry, your entry could not be posted. Something wrong happened."
 msgstr "Disculpa, ha sido imposible publicar la entrada. Algo ha ocurrido."
 
@@ -10934,8 +10930,8 @@ msgstr "Disculpa, ha sido imposible publicar la entrada. Algo ha ocurrido."
 msgid "Sorry, no such post."
 msgstr "Disculpa, no existe la entrada."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2078 wp-app.php:507 wp-app.php:673
-#: wp-app.php:746 wp-app.php:796
+#: wp-app.php:507 wp-app.php:673 wp-app.php:746 wp-app.php:796
+#: wp-includes/class-wp-xmlrpc-server.php:2078
 msgid "Sorry, you do not have the right to edit this post."
 msgstr "Lo sentimos, no tienes autorización para editar esta entrada."
 
@@ -10944,15 +10940,15 @@ msgstr "Lo sentimos, no tienes autorización para editar esta entrada."
 msgid "Sorry, you do not have the right to publish this post."
 msgstr "Disculpa, no tienes autorización para publicar esta entrada."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2094 wp-app.php:530 wp-app.php:689
+#: wp-app.php:530 wp-app.php:689 wp-includes/class-wp-xmlrpc-server.php:2094
 msgid "For some strange yet very annoying reason, this post could not be edited."
 msgstr "Por alguna extraña razón esta entrada no puede editarse."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2128 wp-app.php:552 wp-app.php:710
+#: wp-app.php:552 wp-app.php:710 wp-includes/class-wp-xmlrpc-server.php:2128
 msgid "Sorry, you do not have the right to delete this post."
 msgstr "Lo sentimos, no tienes autorización para borrar esta entrada."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2133 wp-app.php:560 wp-app.php:725
+#: wp-app.php:560 wp-app.php:725 wp-includes/class-wp-xmlrpc-server.php:2133
 msgid "For some strange yet very annoying reason, this post could not be deleted."
 msgstr "Por alguna extraña y desagradable razón esta entrada no puede borrarse."
 
@@ -11121,11 +11117,11 @@ msgstr "Posible razón: el servidor puede tener deshabilitada la función mail()
 msgid "Invalid key"
 msgstr "Clave no válida."
 
-#: wp-login.php:294 wp-admin/includes/user.php:134
+#: wp-admin/includes/user.php:134 wp-login.php:294
 msgid "<strong>ERROR</strong>: Please enter a username."
 msgstr "<strong>ERROR</strong>: Por favor, introduce un nombre de usuario."
 
-#: wp-login.php:296 wp-admin/includes/user.php:163
+#: wp-admin/includes/user.php:163 wp-login.php:296
 msgid "<strong>ERROR</strong>: This username is invalid because it uses illegal characters. Please enter a valid username."
 msgstr "<strong>ERROR</strong>: Este nombre de usuario no es válido, ya que usa caracteres no permitidos. Por favor, introduce un nombre de usuario válido."
 
@@ -11141,7 +11137,7 @@ msgstr "<strong>ERROR</strong>: Por favor, escribe tu correo electrónico."
 msgid "<strong>ERROR</strong>: The email address isn&#8217;t correct."
 msgstr "<strong>ERROR</strong>: La dirección de correo electrónico no es correcta."
 
-#: wp-login.php:309 wp-admin/includes/user.php:174
+#: wp-admin/includes/user.php:174 wp-login.php:309
 msgid "<strong>ERROR</strong>: This email is already registered, please choose another one."
 msgstr "<strong>ERROR</strong>: Esa dirección de correo electrónico ya está registrada. Por favor, elige otra."
 
@@ -11197,8 +11193,8 @@ msgstr "Nueva contraseña"
 msgid "Confirm new password"
 msgstr "Confirma la nueva contraseña"
 
-#: wp-login.php:464 wp-admin/user-new.php:341 wp-admin/install.php:123
-#: wp-admin/user-edit.php:384
+#: wp-admin/install.php:123 wp-admin/user-edit.php:384
+#: wp-admin/user-new.php:341 wp-login.php:464
 msgid "Hint: The password should be at least seven characters long. To make it stronger, use upper and lower case letters, numbers and symbols like ! \" ? $ % ^ &amp; )."
 msgstr "Tu contraseña debe tener al menos siete caracteres. Para que tu contraseña sea segura, usa mayúsculas, minúsculas, números y símbolos como ! \" ? $ % ^ &amp; )."
 
@@ -11279,21 +11275,23 @@ msgstr "Estas revisiones son idénticas."
 msgid "You do not have sufficient permissions to edit the links for this site."
 msgstr "No tienes suficientes permisos para editar los enlaces en este sitio."
 
-#: wp-admin/link-manager.php:45 wp-admin/user-new.php:156 wp-admin/index.php:35
-#: wp-admin/edit-link-form.php:44 wp-admin/options-general.php:74
-#: wp-admin/themes.php:45 wp-admin/media.php:72 wp-admin/custom-header.php:104
-#: wp-admin/options-discussion.php:20 wp-admin/plugin-editor.php:115
-#: wp-admin/plugin-install.php:40 wp-admin/options-privacy.php:20
-#: wp-admin/theme-editor.php:25 wp-admin/comment.php:50
-#: wp-admin/edit-comments.php:116 wp-admin/import.php:21
-#: wp-admin/custom-background.php:85 wp-admin/options-media.php:34
-#: wp-admin/edit.php:154 wp-admin/edit.php:199 wp-admin/upload.php:150
-#: wp-admin/export.php:43 wp-admin/theme-install.php:47 wp-admin/users.php:25
-#: wp-admin/options-writing.php:20 wp-admin/update-core.php:436
-#: wp-admin/options-reading.php:46 wp-admin/includes/screen.php:669
-#: wp-admin/options-permalink.php:20 wp-admin/user-edit.php:48
-#: wp-admin/widgets.php:40 wp-admin/plugins.php:323 wp-admin/edit-tags.php:204
-#: wp-admin/media-upload.php:65 wp-admin/nav-menus.php:450
+#: wp-admin/comment.php:50 wp-admin/custom-background.php:85
+#: wp-admin/custom-header.php:104 wp-admin/edit-comments.php:116
+#: wp-admin/edit-link-form.php:44 wp-admin/edit-tags.php:204
+#: wp-admin/edit.php:154 wp-admin/edit.php:199 wp-admin/export.php:43
+#: wp-admin/import.php:21 wp-admin/includes/screen.php:669
+#: wp-admin/index.php:35 wp-admin/link-manager.php:45
+#: wp-admin/media-upload.php:65 wp-admin/media.php:72
+#: wp-admin/nav-menus.php:450 wp-admin/options-discussion.php:20
+#: wp-admin/options-general.php:74 wp-admin/options-media.php:34
+#: wp-admin/options-permalink.php:20 wp-admin/options-privacy.php:20
+#: wp-admin/options-reading.php:46 wp-admin/options-writing.php:20
+#: wp-admin/plugin-editor.php:115 wp-admin/plugin-install.php:40
+#: wp-admin/plugins.php:333 wp-admin/theme-editor.php:25
+#: wp-admin/theme-install.php:47 wp-admin/themes.php:45
+#: wp-admin/update-core.php:436 wp-admin/upload.php:150
+#: wp-admin/user-edit.php:48 wp-admin/user-new.php:156 wp-admin/users.php:25
+#: wp-admin/widgets.php:40
 msgid "Overview"
 msgstr "Vista previa"
 
@@ -11317,22 +11315,23 @@ msgstr "Borrar enlaces"
 msgid "If you delete a link, it will be removed permanently, as Links do not have a Trash function yet."
 msgstr "Si eliminas un enlace, será eliminado de forma permanente. Aún no existe una Papelera para los enlaces."
 
-#: wp-admin/link-manager.php:59 wp-admin/user-new.php:174 wp-admin/index.php:80
-#: wp-admin/edit-link-form.php:52 wp-admin/options-general.php:79
-#: wp-admin/themes.php:64 wp-admin/media.php:81 wp-admin/custom-header.php:112
-#: wp-admin/options-discussion.php:26 wp-admin/plugin-editor.php:125
-#: wp-admin/plugin-install.php:54 wp-admin/options-privacy.php:26
-#: wp-admin/theme-editor.php:37 wp-admin/tools.php:27
+#: wp-admin/comment.php:57 wp-admin/custom-background.php:94
+#: wp-admin/custom-header.php:112 wp-admin/edit-comments.php:134
 #: wp-admin/edit-form-advanced.php:208 wp-admin/edit-form-advanced.php:233
-#: wp-admin/comment.php:57 wp-admin/edit-comments.php:134
-#: wp-admin/import.php:28 wp-admin/custom-background.php:94
-#: wp-admin/options-media.php:39 wp-admin/edit.php:191 wp-admin/edit.php:212
-#: wp-admin/upload.php:169 wp-admin/export.php:49 wp-admin/theme-install.php:52
-#: wp-admin/users.php:60 wp-admin/options-writing.php:57
-#: wp-admin/update-core.php:452 wp-admin/options-reading.php:54
-#: wp-admin/options-permalink.php:43 wp-admin/user-edit.php:53
-#: wp-admin/widgets.php:62 wp-admin/plugins.php:337 wp-admin/edit-tags.php:234
-#: wp-admin/media-upload.php:76 wp-admin/nav-menus.php:464
+#: wp-admin/edit-link-form.php:52 wp-admin/edit-tags.php:234
+#: wp-admin/edit.php:191 wp-admin/edit.php:212 wp-admin/export.php:49
+#: wp-admin/import.php:28 wp-admin/index.php:80 wp-admin/link-manager.php:59
+#: wp-admin/media-upload.php:76 wp-admin/media.php:81
+#: wp-admin/nav-menus.php:464 wp-admin/options-discussion.php:26
+#: wp-admin/options-general.php:79 wp-admin/options-media.php:39
+#: wp-admin/options-permalink.php:43 wp-admin/options-privacy.php:26
+#: wp-admin/options-reading.php:54 wp-admin/options-writing.php:57
+#: wp-admin/plugin-editor.php:125 wp-admin/plugin-install.php:54
+#: wp-admin/plugins.php:347 wp-admin/theme-editor.php:37
+#: wp-admin/theme-install.php:52 wp-admin/themes.php:64 wp-admin/tools.php:27
+#: wp-admin/update-core.php:452 wp-admin/upload.php:169
+#: wp-admin/user-edit.php:53 wp-admin/user-new.php:174 wp-admin/users.php:60
+#: wp-admin/widgets.php:62
 msgid "For more information:"
 msgstr "Para más información:"
 
@@ -11340,34 +11339,35 @@ msgstr "Para más información:"
 msgid "<a href=\"http://codex.wordpress.org/Links_Screen\" target=\"_blank\">Documentation on Managing Links</a>"
 msgstr "<a href=\"http://codex.wordpress.org/Links_Screen\" target=\"_blank\">Documentación sobre la gestión de enlaces </a>"
 
-#: wp-admin/link-manager.php:61 wp-admin/user-new.php:176 wp-admin/index.php:82
-#: wp-admin/edit-link-form.php:54 wp-admin/options-general.php:81
-#: wp-admin/themes.php:66 wp-admin/media.php:83 wp-admin/custom-header.php:114
-#: wp-admin/options-discussion.php:28 wp-admin/plugin-editor.php:128
-#: wp-admin/plugin-install.php:56 wp-admin/options-privacy.php:28
-#: wp-admin/theme-editor.php:42 wp-admin/tools.php:29
+#: wp-admin/comment.php:59 wp-admin/custom-background.php:96
+#: wp-admin/custom-header.php:114 wp-admin/edit-comments.php:138
 #: wp-admin/edit-form-advanced.php:210 wp-admin/edit-form-advanced.php:236
-#: wp-admin/comment.php:59 wp-admin/edit-comments.php:138
-#: wp-admin/import.php:30 wp-admin/custom-background.php:96
-#: wp-admin/options-media.php:41 wp-admin/edit.php:193 wp-admin/edit.php:214
-#: wp-admin/upload.php:171 wp-admin/export.php:51 wp-admin/theme-install.php:54
-#: wp-admin/users.php:63 wp-admin/options-writing.php:59
-#: wp-admin/update-core.php:454 wp-admin/options-reading.php:56
-#: wp-admin/options-permalink.php:46 wp-admin/user-edit.php:55
-#: wp-admin/widgets.php:64 wp-admin/plugins.php:339 wp-admin/edit-tags.php:243
-#: wp-admin/media-upload.php:78 wp-admin/nav-menus.php:466
+#: wp-admin/edit-link-form.php:54 wp-admin/edit-tags.php:243
+#: wp-admin/edit.php:193 wp-admin/edit.php:214 wp-admin/export.php:51
+#: wp-admin/import.php:30 wp-admin/index.php:82 wp-admin/link-manager.php:61
+#: wp-admin/media-upload.php:78 wp-admin/media.php:83
+#: wp-admin/nav-menus.php:466 wp-admin/options-discussion.php:28
+#: wp-admin/options-general.php:81 wp-admin/options-media.php:41
+#: wp-admin/options-permalink.php:46 wp-admin/options-privacy.php:28
+#: wp-admin/options-reading.php:56 wp-admin/options-writing.php:59
+#: wp-admin/plugin-editor.php:128 wp-admin/plugin-install.php:56
+#: wp-admin/plugins.php:349 wp-admin/theme-editor.php:42
+#: wp-admin/theme-install.php:54 wp-admin/themes.php:66 wp-admin/tools.php:29
+#: wp-admin/update-core.php:454 wp-admin/upload.php:171
+#: wp-admin/user-edit.php:55 wp-admin/user-new.php:176 wp-admin/users.php:63
+#: wp-admin/widgets.php:64
 msgid "<a href=\"http://wordpress.org/support/\" target=\"_blank\">Support Forums</a>"
 msgstr "<a href=\"http://es.forums.wordpress.org/\" target=\"_blank\">Foros de soporte</a>"
 
-#: wp-admin/link-manager.php:73 wp-admin/edit-link-form.php:62
+#: wp-admin/edit-link-form.php:62 wp-admin/link-manager.php:73
 #: wp-admin/menu.php:65
 msgctxt "link"
 msgid "Add New"
 msgstr "Añadir nuevo"
 
-#: wp-admin/link-manager.php:75 wp-admin/edit-comments.php:158
-#: wp-admin/edit.php:226 wp-admin/upload.php:181 wp-admin/users.php:403
-#: wp-admin/plugins.php:398 wp-admin/edit-tags.php:268
+#: wp-admin/edit-comments.php:158 wp-admin/edit-tags.php:268
+#: wp-admin/edit.php:226 wp-admin/link-manager.php:75 wp-admin/plugins.php:408
+#: wp-admin/upload.php:181 wp-admin/users.php:403
 msgid "Search results for &#8220;%s&#8221;"
 msgstr "Resultados de búsqueda para &#8220;%s&#8221;"
 
@@ -11381,16 +11381,16 @@ msgstr[1] "%s enlaces eliminados."
 msgid "Search Links"
 msgstr "Buscar enlaces"
 
-#: wp-admin/user-new.php:14 wp-admin/user-new.php:16 wp-admin/user-new.php:59
-#: wp-admin/user-new.php:93 wp-admin/themes.php:13 wp-admin/themes.php:26
 #: wp-admin/custom-header.php:640 wp-admin/custom-header.php:726
-#: wp-admin/edit-comments.php:12 wp-admin/edit.php:22 wp-admin/post-new.php:40
-#: wp-admin/users.php:13 wp-admin/users.php:112
-#: wp-admin/includes/bookmark.php:30 wp-admin/press-this.php:17
-#: wp-admin/widgets.php:16 wp-admin/plugins.php:16 wp-admin/edit-tags.php:21
+#: wp-admin/edit-comments.php:12 wp-admin/edit-tags.php:21
 #: wp-admin/edit-tags.php:48 wp-admin/edit-tags.php:86
-#: wp-admin/edit-tags.php:100 wp-admin/edit-tags.php:139
-#: wp-admin/nav-menus.php:23 wp-admin/options.php:35 wp-admin/options.php:59
+#: wp-admin/edit-tags.php:100 wp-admin/edit-tags.php:139 wp-admin/edit.php:22
+#: wp-admin/includes/bookmark.php:30 wp-admin/nav-menus.php:23
+#: wp-admin/options.php:35 wp-admin/options.php:59 wp-admin/plugins.php:16
+#: wp-admin/post-new.php:40 wp-admin/press-this.php:17 wp-admin/themes.php:13
+#: wp-admin/themes.php:26 wp-admin/user-new.php:14 wp-admin/user-new.php:16
+#: wp-admin/user-new.php:59 wp-admin/user-new.php:93 wp-admin/users.php:13
+#: wp-admin/users.php:112 wp-admin/widgets.php:16
 #: wp-content/plugins/akismet/admin.php:58
 msgid "Cheatin&#8217; uh?"
 msgstr "¡Haciendo trampas! ¿eh?"
@@ -11441,8 +11441,8 @@ msgstr ""
 msgid "[%s] Joining confirmation"
 msgstr "[%s] Esperando confirmación"
 
-#: wp-admin/user-new.php:135 wp-admin/user-new.php:291 wp-admin/menu.php:185
-#: wp-admin/menu.php:187
+#: wp-admin/menu.php:185 wp-admin/menu.php:187 wp-admin/user-new.php:135
+#: wp-admin/user-new.php:291
 msgid "Add New User"
 msgstr "Añadir nuevo usuario"
 
@@ -11556,8 +11556,8 @@ msgstr "Escribe el correo electrónico o el nombre de usuario de un miembro de e
 msgid "E-mail or Username"
 msgstr "Correo electrónico o nombre usuario"
 
-#: wp-admin/user-new.php:271 wp-admin/user-new.php:351
 #: wp-admin/includes/class-wp-users-list-table.php:166
+#: wp-admin/user-new.php:271 wp-admin/user-new.php:351
 msgid "Role"
 msgstr "Perfil"
 
@@ -11577,11 +11577,11 @@ msgstr "Añadir usuario existente"
 msgid "Create a brand new user and add it to this site."
 msgstr "Crear un nuevo usuario y añadirlo a este sitio."
 
-#: wp-admin/user-new.php:322 wp-admin/user-edit.php:282
+#: wp-admin/user-edit.php:282 wp-admin/user-new.php:322
 msgid "First Name"
 msgstr "Nombre"
 
-#: wp-admin/user-new.php:326 wp-admin/user-edit.php:287
+#: wp-admin/user-edit.php:287 wp-admin/user-new.php:326
 msgid "Last Name"
 msgstr "Apellidos"
 
@@ -11732,13 +11732,13 @@ msgstr "Dirección web"
 msgid "Example: <code>http://wordpress.org/</code> &#8212; don&#8217;t forget the <code>http://</code>"
 msgstr "Ejemplo: <code>http://wordpress.org/</code> &#8212;no olvides poner <code>http://</code>"
 
-#: wp-admin/edit-link-form.php:107 wp-admin/themes.php:231
-#: wp-admin/includes/media.php:933
-#: wp-admin/includes/class-wp-plugins-list-table.php:188
-#: wp-admin/includes/nav-menu.php:166 wp-admin/includes/nav-menu.php:1145
-#: wp-admin/includes/class-wp-terms-list-table.php:101
+#: wp-admin/edit-link-form.php:107
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:144
-#: wp-admin/press-this.php:146 wp-admin/press-this.php:661
+#: wp-admin/includes/class-wp-plugins-list-table.php:188
+#: wp-admin/includes/class-wp-terms-list-table.php:101
+#: wp-admin/includes/media.php:933 wp-admin/includes/nav-menu.php:166
+#: wp-admin/includes/nav-menu.php:1145 wp-admin/press-this.php:146
+#: wp-admin/press-this.php:652 wp-admin/themes.php:231
 msgid "Description"
 msgstr "Descripción"
 
@@ -11810,10 +11810,10 @@ msgstr "WordPress puede también tratar de optimizar la base de datos. Esto mejo
 msgid "Repair and Optimize Database"
 msgstr "Reparar y optimizar la base de datos"
 
-#: wp-admin/options-general.php:13 wp-admin/options-discussion.php:13
-#: wp-admin/options-privacy.php:13 wp-admin/options-media.php:13
-#: wp-admin/options-writing.php:13 wp-admin/options-reading.php:13
-#: wp-admin/options-permalink.php:13
+#: wp-admin/options-discussion.php:13 wp-admin/options-general.php:13
+#: wp-admin/options-media.php:13 wp-admin/options-permalink.php:13
+#: wp-admin/options-privacy.php:13 wp-admin/options-reading.php:13
+#: wp-admin/options-writing.php:13
 msgid "You do not have sufficient permissions to manage options for this site."
 msgstr "No tienes suficientes permisos para administrar las opciones de este sitio."
 
@@ -11846,10 +11846,10 @@ msgstr "Si quieres que los visitantes puedan registrarse sólos, no que sea el a
 msgid "UTC means Coordinated Universal Time."
 msgstr "UTC quiere decir  Hora universal coordinada (Coordinated Universal Time)"
 
-#: wp-admin/options-general.php:70 wp-admin/options-discussion.php:22
-#: wp-admin/options-media.php:30 wp-admin/options-writing.php:22
-#: wp-admin/options-reading.php:50 wp-admin/options-permalink.php:23
+#: wp-admin/options-discussion.php:22 wp-admin/options-general.php:70
+#: wp-admin/options-media.php:30 wp-admin/options-permalink.php:23
 #: wp-admin/options-permalink.php:32 wp-admin/options-permalink.php:39
+#: wp-admin/options-reading.php:50 wp-admin/options-writing.php:22
 msgid "You must click the Save Changes button at the bottom of the screen for new settings to take effect."
 msgstr "Debes hacer clic en el botón Guardar cambios en la parte inferior de la pantalla para que los nuevos ajustes tengan efecto."
 
@@ -11937,8 +11937,8 @@ msgstr "El horario de verano comienza el: <code>%s</code>."
 msgid "Plugin Information:"
 msgstr "Información del plugin:"
 
-#: wp-includes/script-loader.php:332 wp-admin/includes/meta-boxes.php:65
-#: wp-admin/includes/meta-boxes.php:92
+#: wp-admin/includes/meta-boxes.php:65 wp-admin/includes/meta-boxes.php:92
+#: wp-includes/script-loader.php:332
 msgid "Privately Published"
 msgstr "Publicada como privada"
 
@@ -11950,15 +11950,16 @@ msgstr "Comentarios para %1$s buscando en %2$s"
 msgid "Unable to create directory %s. Is its parent directory writable by the server?"
 msgstr "No se pudo crear el directorio %s. Asegúrate de que el servidor tiene permisos de escritura para el directorio superior."
 
-#: wp-includes/class-wp-editor.php:722 wp-admin/admin-ajax.php:1337
-#: wp-admin/includes/class-wp-posts-list-table.php:578
+#: wp-admin/admin-ajax.php:1337
 #: wp-admin/includes/class-wp-comments-list-table.php:356
 #: wp-admin/includes/class-wp-media-list-table.php:288
 #: wp-admin/includes/class-wp-media-list-table.php:309
+#: wp-admin/includes/class-wp-posts-list-table.php:578
+#: wp-includes/class-wp-editor.php:722
 msgid "Y/m/d"
 msgstr "d/m/Y"
 
-#: wp-includes/locale.php:132 wp-includes/js/tinymce/langs/wp-langs.php:87
+#: wp-includes/js/tinymce/langs/wp-langs.php:87 wp-includes/locale.php:132
 msgid "Mon"
 msgstr "Lun"
 
@@ -11970,8 +11971,8 @@ msgstr "Tu intento de editar esta categoría: &#8220;%s&#8221; ha fallado."
 msgid "Saving Draft&#8230;"
 msgstr "Guardando borrador&#8230;"
 
-#: wp-includes/script-loader.php:396 wp-includes/script-loader.php:506
 #: wp-includes/js/tinymce/langs/wp-langs.php:179
+#: wp-includes/script-loader.php:396 wp-includes/script-loader.php:506
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr "Los cambios realizados se perderán si abres otra página."
 
@@ -12000,7 +12001,7 @@ msgstr "%1$s fue llamado con un argumento que está <strong>obsoleto</strong> de
 msgid "Taxonomy:"
 msgstr "Taxonomía:"
 
-#: wp-includes/feed-rss2-comments.php:46 wp-includes/feed-atom-comments.php:54
+#: wp-includes/feed-atom-comments.php:54 wp-includes/feed-rss2-comments.php:46
 msgid "By: %s"
 msgstr "Por: %s"
 
@@ -12053,7 +12054,7 @@ msgctxt "taxonomy general name"
 msgid "Categories"
 msgstr "Categorías"
 
-#: wp-includes/class-wp-editor.php:670 wp-admin/edit-form-advanced.php:323
+#: wp-admin/edit-form-advanced.php:323 wp-includes/class-wp-editor.php:670
 msgid "Word count: %s"
 msgstr "Número de palabras: %s"
 
@@ -12092,13 +12093,13 @@ msgctxt "widgets"
 msgid "%1$s on %2$s"
 msgstr "%1$s en %2$s"
 
-#: wp-includes/default-widgets.php:603 wp-includes/default-widgets.php:644
-#: wp-admin/includes/dashboard.php:53
+#: wp-admin/includes/dashboard.php:53 wp-includes/default-widgets.php:603
+#: wp-includes/default-widgets.php:644
 msgid "Recent Comments"
 msgstr "Comentarios recientes"
 
-#: wp-includes/class-wp-editor.php:650 wp-admin/admin-ajax.php:1528
-#: wp-admin/includes/media.php:564
+#: wp-admin/admin-ajax.php:1528 wp-admin/includes/media.php:564
+#: wp-includes/class-wp-editor.php:650
 msgid "Saved."
 msgstr "Guardado."
 
@@ -12108,16 +12109,16 @@ msgid_plural "Scheduled <span class=\"count\">(%s)</span>"
 msgstr[0] "Programada <span class=\"count\">(%s)</span>"
 msgstr[1] "Programadas <span class=\"count\">(%s)</span>"
 
-#: wp-includes/post.php:1188 wp-admin/press-this.php:597
+#: wp-admin/press-this.php:588 wp-includes/post.php:1188
 msgid "Edit Post"
 msgstr "Editar entrada"
 
-#: wp-includes/post.php:4689 wp-admin/index.php:73
 #: wp-admin/includes/dashboard.php:261 wp-admin/includes/dashboard.php:543
+#: wp-admin/index.php:73 wp-includes/post.php:4689
 msgid "Content"
 msgstr "Contenido"
 
-#: wp-includes/locale.php:134 wp-includes/js/tinymce/langs/wp-langs.php:87
+#: wp-includes/js/tinymce/langs/wp-langs.php:87 wp-includes/locale.php:134
 msgid "Wed"
 msgstr "Mie"
 
@@ -12141,7 +12142,7 @@ msgstr "http://es.forums.wordpress.org/forum/peticiones-y-feedback"
 msgid "T_Thursday_initial"
 msgstr "J"
 
-#: wp-includes/post.php:1195 wp-admin/menu.php:69
+#: wp-admin/menu.php:69 wp-includes/post.php:1195
 msgid "All Pages"
 msgstr "Todas las páginas"
 
@@ -12153,13 +12154,13 @@ msgstr "Buscar páginas"
 msgid "Navigation Menu Items"
 msgstr "Elementos del menú de navegación"
 
-#: wp-includes/post.php:4688 wp-includes/class-wp-editor.php:754
-#: wp-includes/js/tinymce/langs/wp-langs.php:344
-#: wp-includes/js/tinymce/langs/wp-langs.php:508 wp-admin/admin-ajax.php:1314
-#: wp-admin/includes/dashboard.php:532
+#: wp-admin/admin-ajax.php:1314
 #: wp-admin/includes/class-wp-posts-list-table.php:739
-#: wp-admin/includes/media.php:924 wp-admin/includes/media.php:1690
-#: wp-admin/includes/media.php:1954
+#: wp-admin/includes/dashboard.php:532 wp-admin/includes/media.php:924
+#: wp-admin/includes/media.php:1690 wp-admin/includes/media.php:1954
+#: wp-includes/class-wp-editor.php:754
+#: wp-includes/js/tinymce/langs/wp-langs.php:344
+#: wp-includes/js/tinymce/langs/wp-langs.php:508 wp-includes/post.php:4688
 msgid "Title"
 msgstr "Título"
 
@@ -12195,7 +12196,7 @@ msgstr "El ID de objeto dado no es de un objeto de menú."
 msgid "No pages found."
 msgstr "No se encontraron páginas."
 
-#: wp-includes/feed-rss2-comments.php:44 wp-includes/feed-atom-comments.php:52
+#: wp-includes/feed-atom-comments.php:52 wp-includes/feed-rss2-comments.php:44
 msgid "Comment on %1$s by %2$s"
 msgstr "Comentario en %1$s por %2$s"
 
@@ -12207,7 +12208,7 @@ msgstr "Comentarios protegidos: Por favor, escribe tu contraseña para ver los c
 msgid "Your attempt to delete this comment: &#8220;%s&#8221; has failed."
 msgstr "Tu intento de borrar este comentario: &#8220;%s&#8221; ha fallado."
 
-#: wp-includes/locale.php:136 wp-includes/js/tinymce/langs/wp-langs.php:87
+#: wp-includes/js/tinymce/langs/wp-langs.php:87 wp-includes/locale.php:136
 msgid "Fri"
 msgstr "Vie"
 
@@ -12220,13 +12221,14 @@ msgctxt "Post format"
 msgid "Gallery"
 msgstr "Galería"
 
-#: wp-includes/post.php:600 wp-admin/admin-ajax.php:1326
+#: wp-admin/admin-ajax.php:1326
 #: wp-admin/includes/class-wp-posts-list-table.php:964
 #: wp-admin/includes/meta-boxes.php:74 wp-admin/includes/meta-boxes.php:96
+#: wp-includes/post.php:600
 msgid "Pending Review"
 msgstr "Pendiente de revisión"
 
-#: wp-includes/feed-rss2-comments.php:26 wp-includes/feed-atom-comments.php:23
+#: wp-includes/feed-atom-comments.php:23 wp-includes/feed-rss2-comments.php:26
 msgid "Comments for %s"
 msgstr "Comentarios para %s"
 
@@ -12246,7 +12248,7 @@ msgstr "Buscar entradas"
 msgid "Comments on %s"
 msgstr "Comentarios en %s"
 
-#: wp-includes/locale.php:133 wp-includes/js/tinymce/langs/wp-langs.php:87
+#: wp-includes/js/tinymce/langs/wp-langs.php:87 wp-includes/locale.php:133
 msgid "Tue"
 msgstr "Mar"
 
@@ -12262,8 +12264,8 @@ msgstr "Por favor, mira <a href=\"http://codex.wordpress.org/Debugging_in_WordPr
 msgid "S_Sunday_initial"
 msgstr "D"
 
-#: wp-includes/locale.php:109 wp-includes/locale.php:119
-#: wp-includes/locale.php:132 wp-includes/js/tinymce/langs/wp-langs.php:86
+#: wp-includes/js/tinymce/langs/wp-langs.php:86 wp-includes/locale.php:109
+#: wp-includes/locale.php:119 wp-includes/locale.php:132
 msgid "Monday"
 msgstr "Lunes"
 
@@ -12275,15 +12277,15 @@ msgstr "Entrada siguiente"
 msgid "Previous Post"
 msgstr "Entrada anterior"
 
-#: wp-includes/link-template.php:1565 wp-includes/link-template.php:1601
 #: wp-content/plugins/akismet/legacy.php:239
-#: wp-content/plugins/akismet/legacy.php:306
+#: wp-content/plugins/akismet/legacy.php:306 wp-includes/link-template.php:1565
+#: wp-includes/link-template.php:1601
 msgid "&laquo; Previous Page"
 msgstr "&laquo; Página anterior"
 
-#: wp-includes/link-template.php:1494 wp-includes/link-template.php:1602
 #: wp-content/plugins/akismet/legacy.php:260
-#: wp-content/plugins/akismet/legacy.php:327
+#: wp-content/plugins/akismet/legacy.php:327 wp-includes/link-template.php:1494
+#: wp-includes/link-template.php:1602
 msgid "Next Page &raquo;"
 msgstr "Página siguiente &raquo;"
 
@@ -12295,13 +12297,13 @@ msgstr "Últimos comentarios &raquo;"
 msgid "Use commas instead of %s to separate excluded categories."
 msgstr "Utiliza comas en vez de %s para separar categorías excluidas."
 
-#: wp-includes/link-template.php:1056 wp-admin/link.php:104
+#: wp-admin/link.php:104 wp-includes/link-template.php:1056
 msgid "Edit Link"
 msgstr "Editar enlace"
 
-#: wp-includes/link-template.php:1015 wp-admin/edit-comments.php:212
-#: wp-admin/edit-comments.php:218 wp-admin/includes/dashboard.php:701
+#: wp-admin/edit-comments.php:212 wp-admin/edit-comments.php:218
 #: wp-admin/includes/class-wp-comments-list-table.php:415
+#: wp-admin/includes/dashboard.php:701 wp-includes/link-template.php:1015
 msgid "Edit comment"
 msgstr "Editar comentario"
 
@@ -12314,18 +12316,18 @@ msgstr "Editar Esto"
 msgid "Comments Feed"
 msgstr "Feed de comentarios"
 
-#: wp-includes/admin-bar.php:581 wp-admin/custom-header.php:86
-#: wp-admin/includes/file.php:19
+#: wp-admin/custom-header.php:86 wp-admin/includes/file.php:19
+#: wp-includes/admin-bar.php:581
 msgid "Header"
 msgstr "Cabecera"
 
-#: wp-includes/admin-bar.php:578 wp-includes/js/tinymce/langs/wp-langs.php:375
-#: wp-admin/custom-background.php:67
+#: wp-admin/custom-background.php:67 wp-includes/admin-bar.php:578
+#: wp-includes/js/tinymce/langs/wp-langs.php:375
 msgid "Background"
 msgstr "Fondo"
 
-#: wp-includes/admin-bar.php:575 wp-admin/menu.php:130 wp-admin/menu.php:135
-#: wp-admin/nav-menus.php:474
+#: wp-admin/menu.php:130 wp-admin/menu.php:135 wp-admin/nav-menus.php:474
+#: wp-includes/admin-bar.php:575
 msgid "Menus"
 msgstr "Menús"
 
@@ -12344,11 +12346,11 @@ msgid_plural "Drafts <span class=\"count\">(%s)</span>"
 msgstr[0] "Borrador <span class=\"count\">(%s)</span>"
 msgstr[1] "Borradores <span class=\"count\">(%s)</span>"
 
+#: wp-admin/edit-link-form.php:27 wp-admin/includes/image-edit.php:75
+#: wp-admin/includes/meta-boxes.php:25 wp-admin/includes/meta-boxes.php:617
+#: wp-admin/includes/nav-menu.php:516 wp-admin/includes/widgets.php:211
 #: wp-includes/class-wp-editor.php:598
-#: wp-includes/js/tinymce/langs/wp-langs.php:107 wp-admin/edit-link-form.php:27
-#: wp-admin/includes/image-edit.php:75 wp-admin/includes/nav-menu.php:516
-#: wp-admin/includes/widgets.php:211 wp-admin/includes/meta-boxes.php:25
-#: wp-admin/includes/meta-boxes.php:617
+#: wp-includes/js/tinymce/langs/wp-langs.php:107
 msgid "Save"
 msgstr "Guardar"
 
@@ -12390,12 +12392,12 @@ msgstr "Elegir categoría"
 msgid "A list or dropdown of categories"
 msgstr "Una lista o desplegable de categorías"
 
-#: wp-includes/default-widgets.php:688 wp-admin/includes/dashboard.php:784
+#: wp-admin/includes/dashboard.php:784 wp-includes/default-widgets.php:688
 msgid "Number of comments to show:"
 msgstr "Número de comentarios a mostrar:"
 
-#: wp-includes/locale.php:114 wp-includes/locale.php:124
-#: wp-includes/locale.php:137 wp-includes/js/tinymce/langs/wp-langs.php:86
+#: wp-includes/js/tinymce/langs/wp-langs.php:86 wp-includes/locale.php:114
+#: wp-includes/locale.php:124 wp-includes/locale.php:137
 msgid "Saturday"
 msgstr "Sábado"
 
@@ -12436,17 +12438,16 @@ msgctxt "Post format"
 msgid "Link"
 msgstr "Enlace"
 
-#: wp-includes/default-widgets.php:175 wp-includes/general-template.php:163
-#: wp-includes/class-wp-editor.php:765 wp-includes/admin-bar.php:619
-#: wp-admin/includes/plugin-install.php:86
-#: wp-admin/includes/class-wp-theme-install-list-table.php:29
-#: wp-admin/includes/template.php:1293 wp-admin/includes/template.php:1295
-#: wp-admin/includes/theme-install.php:66 wp-admin/includes/nav-menu.php:666
-#: wp-admin/includes/nav-menu.php:695 wp-admin/includes/nav-menu.php:697
-#: wp-admin/includes/nav-menu.php:880 wp-admin/includes/nav-menu.php:929
-#: wp-admin/includes/nav-menu.php:931
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:29
-#: wp-content/plugins/akismet/legacy.php:176
+#: wp-admin/includes/class-wp-theme-install-list-table.php:29
+#: wp-admin/includes/nav-menu.php:666 wp-admin/includes/nav-menu.php:695
+#: wp-admin/includes/nav-menu.php:697 wp-admin/includes/nav-menu.php:880
+#: wp-admin/includes/nav-menu.php:929 wp-admin/includes/nav-menu.php:931
+#: wp-admin/includes/plugin-install.php:86 wp-admin/includes/template.php:1293
+#: wp-admin/includes/template.php:1295 wp-admin/includes/theme-install.php:66
+#: wp-content/plugins/akismet/legacy.php:176 wp-includes/admin-bar.php:619
+#: wp-includes/class-wp-editor.php:765 wp-includes/default-widgets.php:175
+#: wp-includes/general-template.php:163
 msgid "Search"
 msgstr "Buscar"
 
@@ -12491,13 +12492,12 @@ msgstr "El nombre de archivo está vacío."
 msgid "Select Link Category"
 msgstr "Elige la categoría del enlace"
 
-#: wp-includes/default-widgets.php:66 wp-includes/default-widgets.php:196
-#: wp-includes/default-widgets.php:262 wp-includes/default-widgets.php:317
-#: wp-includes/default-widgets.php:357 wp-includes/default-widgets.php:403
-#: wp-includes/default-widgets.php:489 wp-includes/default-widgets.php:585
-#: wp-includes/default-widgets.php:685 wp-includes/default-widgets.php:1032
-#: wp-includes/default-widgets.php:1105
-#: wp-content/plugins/akismet/widget.php:51
+#: wp-content/plugins/akismet/widget.php:51 wp-includes/default-widgets.php:66
+#: wp-includes/default-widgets.php:196 wp-includes/default-widgets.php:262
+#: wp-includes/default-widgets.php:317 wp-includes/default-widgets.php:357
+#: wp-includes/default-widgets.php:403 wp-includes/default-widgets.php:489
+#: wp-includes/default-widgets.php:585 wp-includes/default-widgets.php:685
+#: wp-includes/default-widgets.php:1032 wp-includes/default-widgets.php:1105
 msgid "Title:"
 msgstr "Título:"
 
@@ -12529,15 +12529,15 @@ msgstr "No se pudo escribir el archivo %s."
 msgid "Invalid file type"
 msgstr "Tipo de archivo no válido"
 
-#: wp-includes/user.php:1294
+#: wp-includes/user.php:1295
 msgid "This email address is already registered."
 msgstr "Esta dirección de correo electrónico ya está registrada."
 
-#: wp-includes/user.php:1279
+#: wp-includes/user.php:1280
 msgid "This username is already registered."
 msgstr "Este usuario ya está registrado."
 
-#: wp-includes/user.php:1276
+#: wp-includes/user.php:1277
 msgid "Cannot create a user with an empty login name."
 msgstr "No se puede crear un usuario con el nombre de identificación vacio."
 
@@ -12549,11 +12549,10 @@ msgstr "Por favor, accede de nuevo."
 msgid "View Page"
 msgstr "Ver página"
 
-#: wp-includes/general-template.php:259 wp-login.php:636
-#: wp-admin/user-new.php:335 wp-admin/install.php:230
-#: wp-admin/options-writing.php:151
 #: wp-admin/includes/class-wp-posts-list-table.php:791
-#: wp-admin/includes/file.php:1004
+#: wp-admin/includes/file.php:1004 wp-admin/install.php:230
+#: wp-admin/options-writing.php:151 wp-admin/user-new.php:335
+#: wp-includes/general-template.php:259 wp-login.php:636
 msgid "Password"
 msgstr "Contraseña"
 
@@ -12561,7 +12560,7 @@ msgstr "Contraseña"
 msgid "\"caller_get_posts\" is deprecated. Use \"ignore_sticky_posts\" instead."
 msgstr "\"caller_get_posts\" está obsoleto. Utilice \"ignore_sticky_posts\" en su lugar."
 
-#: wp-includes/formatting.php:36 wp-includes/formatting.php:2986
+#: wp-includes/formatting.php:36 wp-includes/formatting.php:3088
 msgctxt "opening curly quote"
 msgid "&#8220;"
 msgstr "&#8220;"
@@ -12571,7 +12570,7 @@ msgctxt "closing curly quote"
 msgid "&#8221;"
 msgstr "&#8221;"
 
-#: wp-includes/formatting.php:2774
+#: wp-includes/formatting.php:2876
 msgid " and "
 msgstr "y "
 
@@ -12579,15 +12578,15 @@ msgstr "y "
 msgid "The <code>%s</code> option is deprecated for the family of <code>bloginfo()</code> functions."
 msgstr "La opción <code>%s</code> es obsoleta, ya no se utiliza en la familia de funciones <code>bloginfo()</code>."
 
-#: wp-includes/formatting.php:2617
+#: wp-includes/formatting.php:2719
 msgid "The timezone you have entered is not valid. Please select a valid timezone."
 msgstr "La zona horaria que has introducido no es válida. Por favor, selecciona una zona horaria válida."
 
-#: wp-includes/formatting.php:2592
+#: wp-includes/formatting.php:2694
 msgid "The WordPress address you entered did not appear to be a valid URL. Please enter a valid URL."
 msgstr "La dirección de WordPress parece no ser una URL válida. Por favor, introduce una válida."
 
-#: wp-includes/formatting.php:2770
+#: wp-includes/formatting.php:2872
 msgid ", "
 msgstr ", "
 
@@ -12600,7 +12599,7 @@ msgstr "Registrarse"
 msgid "Use the <code>%s</code> option instead."
 msgstr "Usa la opción <code>%s</code> en su lugar."
 
-#: wp-includes/formatting.php:2772
+#: wp-includes/formatting.php:2874
 msgid ", and "
 msgstr ", y "
 
@@ -12609,11 +12608,11 @@ msgctxt "en dash"
 msgid "&#8211;"
 msgstr "&#8211;"
 
-#: wp-includes/general-template.php:258 wp-login.php:512 wp-login.php:632
-#: wp-admin/user-new.php:313 wp-admin/install.php:101 wp-admin/install.php:226
-#: wp-admin/includes/file.php:1003
 #: wp-admin/includes/class-wp-users-list-table.php:163
-#: wp-admin/user-edit.php:245
+#: wp-admin/includes/file.php:1003 wp-admin/install.php:101
+#: wp-admin/install.php:226 wp-admin/user-edit.php:245
+#: wp-admin/user-new.php:313 wp-includes/general-template.php:258
+#: wp-login.php:512 wp-login.php:632
 msgid "Username"
 msgstr "Nombre de usuario"
 
@@ -12630,8 +12629,8 @@ msgctxt "Post format"
 msgid "Audio"
 msgstr "Audio"
 
-#: wp-includes/post.php:4690 wp-admin/edit-form-advanced.php:128
-#: wp-admin/includes/meta-boxes.php:382
+#: wp-admin/edit-form-advanced.php:128 wp-admin/includes/meta-boxes.php:382
+#: wp-includes/post.php:4690
 msgid "Excerpt"
 msgstr "Extracto"
 
@@ -12659,7 +12658,7 @@ msgstr ""
 "No se ha indicado ningún término de búsqueda. Se mostrarán\n"
 " los objetos más recientes."
 
-#: wp-includes/post.php:1186 wp-admin/menu.php:71
+#: wp-admin/menu.php:71 wp-includes/post.php:1186
 msgctxt "page"
 msgid "Add New"
 msgstr "Añadir nueva"
@@ -12668,7 +12667,7 @@ msgstr "Añadir nueva"
 msgid "http://wordpress.org/support/"
 msgstr "http://es.forums.wordpress.org/"
 
-#: wp-includes/post.php:1189 wp-includes/admin-bar.php:364
+#: wp-includes/admin-bar.php:364 wp-includes/post.php:1189
 msgid "New Post"
 msgstr "Nueva entrada"
 
@@ -12693,9 +12692,9 @@ msgstr "Un calendario de las entradas de tu sitio"
 msgid "Tag Cloud"
 msgstr "Nube de etiquetas"
 
-#: wp-includes/default-widgets.php:1006 wp-admin/includes/dashboard.php:550
 #: wp-admin/includes/class-wp-posts-list-table.php:276
-#: wp-admin/press-this.php:562 wp-admin/press-this.php:566
+#: wp-admin/includes/dashboard.php:550 wp-admin/press-this.php:553
+#: wp-admin/press-this.php:557 wp-includes/default-widgets.php:1006
 msgid "Tags"
 msgstr "Etiquetas"
 
@@ -12719,7 +12718,7 @@ msgstr "http://codex.wordpress.org"
 msgid "Use this widget to add one of your custom menus as a widget."
 msgstr "Usa este widget para añadir uno de tus menús de navegación como widget."
 
-#: wp-includes/default-widgets.php:1063 wp-admin/includes/theme.php:317
+#: wp-admin/includes/theme.php:317 wp-includes/default-widgets.php:1063
 msgid "Custom Menu"
 msgstr "Menú personalizado"
 
@@ -12727,7 +12726,7 @@ msgstr "Menú personalizado"
 msgid "No menus have been created yet. <a href=\"%s\">Create some</a>."
 msgstr "Aún no se han creado menús. <a href=\"%s\">Crea alguno</a>."
 
-#: wp-includes/default-widgets.php:1109 wp-admin/nav-menus.php:495
+#: wp-admin/nav-menus.php:495 wp-includes/default-widgets.php:1109
 msgid "Select Menu:"
 msgstr "Elegir menú:"
 
@@ -12739,8 +12738,8 @@ msgstr "Comentarios en: %s"
 msgid "Comments for %s searching on %s"
 msgstr "Comentarios para %s buscando en %s"
 
-#: wp-includes/locale.php:110 wp-includes/locale.php:120
-#: wp-includes/locale.php:133 wp-includes/js/tinymce/langs/wp-langs.php:86
+#: wp-includes/js/tinymce/langs/wp-langs.php:86 wp-includes/locale.php:110
+#: wp-includes/locale.php:120 wp-includes/locale.php:133
 msgid "Tuesday"
 msgstr "Martes"
 
@@ -12753,11 +12752,11 @@ msgctxt "Post format"
 msgid "Chat"
 msgstr "Chat"
 
-#: wp-includes/post.php:599 wp-includes/post.php:620
 #: wp-admin/admin-ajax.php:1329
 #: wp-admin/includes/class-wp-posts-list-table.php:965
-#: wp-admin/includes/template.php:1456 wp-admin/includes/meta-boxes.php:78
-#: wp-admin/includes/meta-boxes.php:98 wp-admin/includes/meta-boxes.php:100
+#: wp-admin/includes/meta-boxes.php:78 wp-admin/includes/meta-boxes.php:98
+#: wp-admin/includes/meta-boxes.php:100 wp-admin/includes/template.php:1456
+#: wp-includes/post.php:599 wp-includes/post.php:620
 msgid "Draft"
 msgstr "Borrador"
 
@@ -12797,9 +12796,8 @@ msgctxt "Post format"
 msgid "Aside"
 msgstr "Minientrada"
 
-#: wp-includes/post.php:5129
 #: wp-admin/includes/class-wp-posts-list-table.php:1006
-#: wp-admin/press-this.php:499
+#: wp-admin/press-this.php:490 wp-includes/post.php:5129
 msgctxt "Post format"
 msgid "Standard"
 msgstr "Estándar"
@@ -12831,7 +12829,7 @@ msgstr "Contenido, título y extracto están vacios."
 msgid "Passing an integer number of posts is deprecated. Pass an array of arguments instead."
 msgstr "Pasar un número entero de entradas es obsoleto. Pasa una matriz de argumentos en su lugar."
 
-#: wp-includes/locale.php:135 wp-includes/js/tinymce/langs/wp-langs.php:87
+#: wp-includes/js/tinymce/langs/wp-langs.php:87 wp-includes/locale.php:135
 msgid "Thu"
 msgstr "Jue"
 
@@ -12859,12 +12857,13 @@ msgstr "Un archivo mensual de las entradas de tu sitio"
 msgid "Your attempt to edit this comment: &#8220;%s&#8221; has failed."
 msgstr "Tu intento de editar este comentario: &#8220;%s&#8221; ha fallado."
 
-#: wp-includes/formatting.php:2602
+#: wp-includes/formatting.php:2704
 msgid "The Site address you entered did not appear to be a valid URL. Please enter a valid URL."
 msgstr "La dirección del sitio no parece ser una URL válida. Por favor, introduce una válida."
 
-#: wp-includes/default-widgets.php:94 wp-admin/link-manager.php:40
-#: wp-admin/includes/class-wp-terms-list-table.php:106 wp-admin/menu.php:62
+#: wp-admin/includes/class-wp-terms-list-table.php:106
+#: wp-admin/link-manager.php:40 wp-admin/menu.php:62
+#: wp-includes/default-widgets.php:94
 msgid "Links"
 msgstr "Enlaces"
 
@@ -12971,7 +12970,7 @@ msgstr "ID del término no válido"
 msgid "Invalid Taxonomy"
 msgstr "Taxonomía no válida"
 
-#: wp-includes/taxonomy.php:415 wp-admin/press-this.php:575
+#: wp-admin/press-this.php:566 wp-includes/taxonomy.php:415
 msgid "Choose from the most used tags"
 msgstr "Elige entre las etiquetas más utilizadas"
 
@@ -12991,9 +12990,9 @@ msgstr "Nombre de la nueva categoría"
 msgid "Add New Category"
 msgstr "Añadir nueva categoría"
 
+#: wp-admin/edit-tags.php:13 wp-admin/edit-tags.php:18
+#: wp-admin/includes/class-wp-terms-list-table.php:23
 #: wp-includes/taxonomy.php:1977 wp-includes/taxonomy.php:2282
-#: wp-admin/includes/class-wp-terms-list-table.php:23 wp-admin/edit-tags.php:13
-#: wp-admin/edit-tags.php:18
 msgid "Invalid taxonomy"
 msgstr "Taxonomia no válida"
 
@@ -13001,16 +13000,15 @@ msgstr "Taxonomia no válida"
 msgid "Empty Term"
 msgstr "Término vacío"
 
-#: wp-includes/class-wp-editor.php:661 wp-admin/edit-form-advanced.php:290
+#: wp-admin/edit-form-advanced.php:290 wp-includes/class-wp-editor.php:661
 msgid "Enter title here"
 msgstr "Introduce el título aquí"
 
-#: wp-includes/class-wp-editor.php:751 wp-admin/comment.php:176
-#: wp-admin/includes/media.php:1946 wp-admin/includes/template.php:328
-#: wp-admin/includes/template.php:704 wp-admin/includes/nav-menu.php:129
-#: wp-admin/includes/nav-menu.php:550
-#: wp-admin/includes/class-wp-links-list-table.php:81
-#: wp-admin/press-this.php:658
+#: wp-admin/comment.php:176 wp-admin/includes/class-wp-links-list-table.php:81
+#: wp-admin/includes/media.php:1946 wp-admin/includes/nav-menu.php:129
+#: wp-admin/includes/nav-menu.php:550 wp-admin/includes/template.php:328
+#: wp-admin/includes/template.php:704 wp-admin/press-this.php:649
+#: wp-includes/class-wp-editor.php:751
 msgid "URL"
 msgstr "URL"
 
@@ -13052,7 +13050,7 @@ msgstr "Salir de pantalla completa"
 msgid "The page template is invalid."
 msgstr "La plantilla de la página no es válida."
 
-#: wp-includes/post.php:1195 wp-admin/menu.php:43
+#: wp-admin/menu.php:43 wp-includes/post.php:1195
 msgid "All Posts"
 msgstr "Todas las entradas"
 
@@ -13099,12 +13097,12 @@ msgstr "Antiguo"
 msgid "Compare Revisions"
 msgstr "Comparar revisiones"
 
-#: wp-includes/post-template.php:1381
-#: wp-admin/includes/class-wp-posts-list-table.php:188
-#: wp-admin/includes/class-wp-posts-list-table.php:542
 #: wp-admin/includes/class-wp-comments-list-table.php:195
 #: wp-admin/includes/class-wp-comments-list-table.php:405
 #: wp-admin/includes/class-wp-media-list-table.php:376
+#: wp-admin/includes/class-wp-posts-list-table.php:188
+#: wp-admin/includes/class-wp-posts-list-table.php:542
+#: wp-includes/post-template.php:1381
 msgid "Restore"
 msgstr "Restaurar"
 
@@ -13121,29 +13119,29 @@ msgstr "%s [Revisión Actual]"
 msgid "%1$s [Autosave]"
 msgstr "%s [Autoguardado]"
 
-#: wp-includes/formatting.php:1868
+#: wp-includes/formatting.php:1970
 msgid "%s hour"
 msgid_plural "%s hours"
 msgstr[0] "%s hora"
 msgstr[1] "%s horas"
 
-#: wp-includes/formatting.php:1922 wp-includes/general-template.php:1977
+#: wp-includes/formatting.php:2024 wp-includes/general-template.php:1977
 msgid "&hellip;"
 msgstr "&hellip;"
 
-#: wp-includes/formatting.php:1874
+#: wp-includes/formatting.php:1976
 msgid "%s day"
 msgid_plural "%s days"
 msgstr[0] "%s día"
 msgstr[1] "%s días"
 
-#: wp-includes/formatting.php:1862
+#: wp-includes/formatting.php:1964
 msgid "%s min"
 msgid_plural "%s mins"
 msgstr[0] "%s min"
 msgstr[1] "%s mins"
 
-#: wp-includes/formatting.php:2499 wp-includes/formatting.php:2508
+#: wp-includes/formatting.php:2601 wp-includes/formatting.php:2610
 msgid "The email address entered did not appear to be a valid email address. Please enter a valid email address."
 msgstr "La dirección de correo electrónico parece que no es válida. Por favor, introduce una válida."
 
@@ -13189,17 +13187,17 @@ msgstr "Etiquetas populares"
 msgid "All Tags"
 msgstr "Todas las etiquetas"
 
-#: wp-includes/taxonomy.php:405 wp-admin/includes/meta-boxes.php:671
+#: wp-admin/includes/meta-boxes.php:671 wp-includes/taxonomy.php:405
 msgid "All Categories"
 msgstr "Todas las categorías"
 
-#: wp-includes/locale.php:113 wp-includes/locale.php:123
-#: wp-includes/locale.php:136 wp-includes/js/tinymce/langs/wp-langs.php:86
+#: wp-includes/js/tinymce/langs/wp-langs.php:86 wp-includes/locale.php:113
+#: wp-includes/locale.php:123 wp-includes/locale.php:136
 msgid "Friday"
 msgstr "Viernes"
 
-#: wp-includes/general-template.php:261 wp-login.php:623 wp-login.php:642
 #: wp-admin/install.php:145 wp-admin/install.php:239
+#: wp-includes/general-template.php:261 wp-login.php:623 wp-login.php:642
 msgid "Log In"
 msgstr "Acceder"
 
@@ -13211,7 +13209,7 @@ msgstr "No ha sido posible actualizar la entrada en la base de datos"
 msgid "Or link to existing content"
 msgstr "O enlaza a contenido ya existente"
 
-#: wp-includes/class-wp-editor.php:757 wp-admin/includes/nav-menu.php:149
+#: wp-admin/includes/nav-menu.php:149 wp-includes/class-wp-editor.php:757
 msgid "Open link in a new window/tab"
 msgstr "Abrir enlace en una nueva ventana/pestaña"
 
@@ -13219,14 +13217,13 @@ msgstr "Abrir enlace en una nueva ventana/pestaña"
 msgid "Template is missing."
 msgstr "Falta la plantilla."
 
-#: wp-includes/theme.php:242
 #: wp-admin/includes/class-wp-plugins-list-table.php:427
-#: wp-admin/includes/plugin.php:141
+#: wp-admin/includes/plugin.php:141 wp-includes/theme.php:242
 msgid "Visit author homepage"
 msgstr "Visitar la web del autor"
 
-#: wp-includes/widgets.php:490 wp-admin/includes/file.php:20
-#: wp-admin/widgets.php:253
+#: wp-admin/includes/file.php:20 wp-admin/widgets.php:253
+#: wp-includes/widgets.php:490
 msgid "Sidebar"
 msgstr "Barra lateral"
 
@@ -13242,12 +13239,12 @@ msgstr "No encontramos el tema principal. Por favor, instala el tema principal \
 msgid "Revision"
 msgstr "Revisión"
 
-#: wp-includes/post.php:71 wp-admin/revision.php:97 wp-admin/revision.php:123
-#: wp-admin/edit-form-advanced.php:152
+#: wp-admin/edit-form-advanced.php:152 wp-admin/revision.php:97
+#: wp-admin/revision.php:123 wp-includes/post.php:71
 msgid "Revisions"
 msgstr "Revisiones"
 
-#: wp-includes/post.php:54 wp-admin/media.php:45
+#: wp-admin/media.php:45 wp-includes/post.php:54
 msgid "Edit Media"
 msgstr "Editar multimedia"
 
@@ -13266,8 +13263,8 @@ msgstr "Lista ordenada (Alt + Mayúsculas + O)"
 msgid "Unlink (Alt + Shift + S)"
 msgstr "Desvincular (Alt + Shift + S)"
 
-#: wp-includes/widgets.php:67 wp-admin/includes/widgets.php:194
-#: wp-admin/widgets.php:248
+#: wp-admin/includes/widgets.php:194 wp-admin/widgets.php:248
+#: wp-includes/widgets.php:67
 msgid "There are no options for this widget."
 msgstr "No hay opciones para este widget."
 
@@ -13286,7 +13283,7 @@ msgctxt "admin color scheme"
 msgid "Blue"
 msgstr "Azul"
 
-#: wp-includes/post.php:1190 wp-content/plugins/akismet/legacy.php:294
+#: wp-content/plugins/akismet/legacy.php:294 wp-includes/post.php:1190
 msgid "View Post"
 msgstr "Ver entrada"
 
@@ -13315,13 +13312,13 @@ msgstr "%1$s %2$s %3$s RSS de la etiqueta"
 msgid "Just write."
 msgstr "Simplemente escribe."
 
-#: wp-includes/post.php:1186 wp-admin/menu.php:45
+#: wp-admin/menu.php:45 wp-includes/post.php:1186
 msgctxt "post"
 msgid "Add New"
 msgstr "Añadir nueva"
 
-#: wp-includes/post.php:53 wp-admin/includes/media.php:1646
-#: wp-admin/menu.php:56 wp-admin/menu.php:204
+#: wp-admin/includes/media.php:1646 wp-admin/menu.php:56 wp-admin/menu.php:204
+#: wp-includes/post.php:53
 msgid "Media"
 msgstr "Multimedia"
 
@@ -13373,7 +13370,7 @@ msgstr "%1$s %2$s"
 msgid "&laquo; Older Comments"
 msgstr "&laquo; Comentarios más viejos"
 
-#: wp-includes/locale.php:131 wp-includes/js/tinymce/langs/wp-langs.php:87
+#: wp-includes/js/tinymce/langs/wp-langs.php:87 wp-includes/locale.php:131
 msgid "Sun"
 msgstr "Dom"
 
@@ -13381,13 +13378,13 @@ msgstr "Dom"
 msgid "T_Tuesday_initial"
 msgstr "M"
 
-#: wp-includes/locale.php:112 wp-includes/locale.php:122
-#: wp-includes/locale.php:135 wp-includes/js/tinymce/langs/wp-langs.php:86
+#: wp-includes/js/tinymce/langs/wp-langs.php:86 wp-includes/locale.php:112
+#: wp-includes/locale.php:122 wp-includes/locale.php:135
 msgid "Thursday"
 msgstr "Jueves"
 
-#: wp-includes/locale.php:111 wp-includes/locale.php:121
-#: wp-includes/locale.php:134 wp-includes/js/tinymce/langs/wp-langs.php:86
+#: wp-includes/js/tinymce/langs/wp-langs.php:86 wp-includes/locale.php:111
+#: wp-includes/locale.php:121 wp-includes/locale.php:134
 msgid "Wednesday"
 msgstr "Miércoles"
 
@@ -13419,8 +13416,8 @@ msgstr "WordPress &rsaquo; Error"
 msgid "You are attempting to log out of %s"
 msgstr "Estás intentando cerrar tu sesión en %s."
 
-#: wp-includes/functions.php:2720 wp-includes/functions.php:2722
-#: wp-admin/comment.php:186
+#: wp-admin/comment.php:186 wp-includes/functions.php:2720
+#: wp-includes/functions.php:2722
 msgid "Are you sure you want to do this?"
 msgstr "¿Seguro que quieres hacer esto?"
 
@@ -13441,8 +13438,8 @@ msgstr "Etiquetas"
 msgid "Do you really want to <a href='%s'>log out</a>?"
 msgstr "¿Estás seguro de que quieres <a href='%s'>desconectarte</a>?"
 
-#: wp-includes/functions.php:3321 wp-includes/admin-bar.php:572
-#: wp-admin/widgets.php:35
+#: wp-admin/widgets.php:35 wp-includes/admin-bar.php:572
+#: wp-includes/functions.php:3321
 msgid "Widgets"
 msgstr "Widgets"
 
@@ -13538,8 +13535,8 @@ msgstr "Tu intento de añadir este enlace ha fallado."
 msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "%1$s está <strong>obsoleto</strong> desde la versión %2$s. Utiliza %3$s en su lugar."
 
-#: wp-includes/taxonomy.php:90 wp-includes/taxonomy.php:91
-#: wp-admin/edit-form-advanced.php:105
+#: wp-admin/edit-form-advanced.php:105 wp-includes/taxonomy.php:90
+#: wp-includes/taxonomy.php:91
 msgctxt "post format"
 msgid "Format"
 msgstr "Formato"
@@ -13576,7 +13573,7 @@ msgstr "Buscar categorías de enlaces"
 msgid "Link Category"
 msgstr "Categoría de enlaces"
 
-#: wp-includes/taxonomy.php:60 wp-admin/menu.php:66
+#: wp-admin/menu.php:66 wp-includes/taxonomy.php:60
 msgid "Link Categories"
 msgstr "Categorías de enlaces"
 
@@ -13616,8 +13613,8 @@ msgstr "Conectado como <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Salir
 msgid "Required fields are marked %s"
 msgstr "Los campos necesarios están marcados %s"
 
-#: wp-includes/script-loader.php:329 wp-admin/includes/meta-boxes.php:125
-#: wp-admin/includes/meta-boxes.php:140
+#: wp-admin/includes/meta-boxes.php:125 wp-admin/includes/meta-boxes.php:140
+#: wp-includes/script-loader.php:329
 msgid "Public"
 msgstr "Público"
 
@@ -13637,12 +13634,12 @@ msgstr "No hay extracto porque es una entrada protegida."
 msgid "Pages:"
 msgstr "Páginas:"
 
-#: wp-includes/script-loader.php:326 wp-admin/includes/meta-boxes.php:33
+#: wp-admin/includes/meta-boxes.php:33 wp-includes/script-loader.php:326
 msgid "Save as Pending"
 msgstr "Guardar como pendiente"
 
-#: wp-includes/post-template.php:1424 wp-admin/users.php:54
-#: wp-admin/includes/media.php:1648
+#: wp-admin/includes/media.php:1648 wp-admin/users.php:54
+#: wp-includes/post-template.php:1424
 msgid "Actions"
 msgstr "Acciones"
 
@@ -13676,7 +13673,7 @@ msgstr "Escribe tu contraseña para ver los comentarios."
 msgid "Password Protected"
 msgstr "Protegida con contraseña"
 
-#: wp-includes/script-loader.php:330 wp-admin/includes/meta-boxes.php:122
+#: wp-admin/includes/meta-boxes.php:122 wp-includes/script-loader.php:330
 msgid "Public, Sticky"
 msgstr "Pública, Fija"
 
@@ -13700,8 +13697,8 @@ msgstr "Página siguiente"
 msgid "1 Comment"
 msgstr "1 comentario"
 
-#: wp-includes/comment-template.php:678 wp-includes/comment-template.php:1536
-#: wp-admin/comment.php:181
+#: wp-admin/comment.php:181 wp-includes/comment-template.php:678
+#: wp-includes/comment-template.php:1536
 msgctxt "noun"
 msgid "Comment"
 msgstr "Comentario"
@@ -13718,22 +13715,22 @@ msgstr "Puedes usar las siguientes etiquetas y atributos <abbr title=\"HyperText
 msgid "No Comments"
 msgstr "No hay comentarios"
 
-#: wp-includes/script-loader.php:323 wp-admin/edit-form-advanced.php:102
-#: wp-admin/includes/dashboard.php:563 wp-admin/includes/meta-boxes.php:215
-#: wp-admin/includes/meta-boxes.php:216 wp-admin/press-this.php:484
+#: wp-admin/edit-form-advanced.php:102 wp-admin/includes/dashboard.php:563
+#: wp-admin/includes/meta-boxes.php:215 wp-admin/includes/meta-boxes.php:216
+#: wp-admin/press-this.php:475 wp-includes/script-loader.php:323
 msgid "Publish"
 msgstr "Publicar"
 
-#: wp-includes/script-loader.php:328 wp-includes/post.php:601
-#: wp-includes/post.php:621 wp-admin/includes/class-wp-posts-list-table.php:803
+#: wp-admin/includes/class-wp-posts-list-table.php:803
 #: wp-admin/includes/class-wp-posts-list-table.php:961
-#: wp-admin/includes/template.php:1454 wp-admin/includes/meta-boxes.php:116
-#: wp-admin/includes/meta-boxes.php:146
+#: wp-admin/includes/meta-boxes.php:116 wp-admin/includes/meta-boxes.php:146
+#: wp-admin/includes/template.php:1454 wp-includes/post.php:601
+#: wp-includes/post.php:621 wp-includes/script-loader.php:328
 msgid "Private"
 msgstr "Privada"
 
-#: wp-includes/script-loader.php:327 wp-admin/includes/dashboard.php:560
-#: wp-admin/includes/meta-boxes.php:31 wp-admin/press-this.php:482
+#: wp-admin/includes/dashboard.php:560 wp-admin/includes/meta-boxes.php:31
+#: wp-admin/press-this.php:473 wp-includes/script-loader.php:327
 msgid "Save Draft"
 msgstr "Guardar borrador"
 
@@ -13741,7 +13738,7 @@ msgstr "Guardar borrador"
 msgid "Use <code>get_trackback_url()</code> instead if you do not want the value echoed."
 msgstr "Utiliza <code>get_trackback_url()</code> en su lugar si no quieres un valor vacío."
 
-#: wp-includes/comment-template.php:680 wp-admin/includes/dashboard.php:741
+#: wp-admin/includes/dashboard.php:741 wp-includes/comment-template.php:680
 msgid "Pingback"
 msgstr "Pingback"
 
@@ -13749,11 +13746,11 @@ msgstr "Pingback"
 msgid "This post is password protected. To view it please enter your password below:"
 msgstr "Esta entrada está protegida. Para verla escribe la contraseña:"
 
-#: wp-includes/post-template.php:896 wp-admin/menu.php:27
+#: wp-admin/menu.php:27 wp-includes/post-template.php:896
 msgid "Home"
 msgstr "Inicio"
 
-#: wp-includes/comment-template.php:679 wp-admin/includes/dashboard.php:744
+#: wp-admin/includes/dashboard.php:744 wp-includes/comment-template.php:679
 msgid "Trackback"
 msgstr "Trackback"
 
@@ -13769,7 +13766,7 @@ msgstr "No se pudo establecer como imagen de miniatura. Prueba con otro adjunto.
 msgid "Saving..."
 msgstr "Guardando..."
 
-#: wp-includes/script-loader.php:385 wp-admin/includes/media.php:1175
+#: wp-admin/includes/media.php:1175 wp-includes/script-loader.php:385
 msgid "Use as featured image"
 msgstr "Usar como imagen destacada"
 
@@ -13777,11 +13774,11 @@ msgstr "Usar como imagen destacada"
 msgid "Could not load the preview image. Please reload the page and try again."
 msgstr "No se puede cargar la previsualización de la imagen. Por favor, recarga la página y prueba de nuevo."
 
-#: wp-includes/post-template.php:1221 wp-admin/includes/dashboard.php:186
+#: wp-admin/includes/dashboard.php:186 wp-includes/post-template.php:1221
 msgid "Submit"
 msgstr "Enviar"
 
-#: wp-includes/post-template.php:1221 wp-admin/includes/meta-boxes.php:145
+#: wp-admin/includes/meta-boxes.php:145 wp-includes/post-template.php:1221
 msgid "Password:"
 msgstr "Contraseña:"
 
@@ -13801,8 +13798,8 @@ msgstr "Dejar un comentario"
 msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
 msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">dice:</span>"
 
-#: wp-includes/script-loader.php:324 wp-admin/includes/meta-boxes.php:212
-#: wp-admin/includes/meta-boxes.php:213
+#: wp-admin/includes/meta-boxes.php:212 wp-admin/includes/meta-boxes.php:213
+#: wp-includes/script-loader.php:324
 msgid "Schedule"
 msgstr "Programar"
 
@@ -13819,11 +13816,12 @@ msgstr "Error al guardar los cambios."
 msgid "Submitted on:"
 msgstr "Enviado el:"
 
-#: wp-includes/script-loader.php:333 wp-includes/post.php:602
-#: wp-includes/post.php:622 wp-admin/admin-ajax.php:1320
+#: wp-admin/admin-ajax.php:1320
 #: wp-admin/includes/class-wp-posts-list-table.php:588
 #: wp-admin/includes/class-wp-posts-list-table.php:958
 #: wp-admin/includes/meta-boxes.php:68 wp-admin/includes/meta-boxes.php:90
+#: wp-includes/post.php:602 wp-includes/post.php:622
+#: wp-includes/script-loader.php:333
 msgid "Published"
 msgstr "Publicada"
 
@@ -13903,8 +13901,8 @@ msgstr "Sin título"
 msgid "An error has occurred; the feed is probably down. Try again later."
 msgstr "Ha ocurrido un error; probablemente el feed está caído. Inténtalo de nuevo más tarde."
 
-#: wp-includes/default-widgets.php:794 wp-admin/includes/dashboard.php:805
-#: wp-admin/includes/dashboard.php:921
+#: wp-admin/includes/dashboard.php:805 wp-admin/includes/dashboard.php:921
+#: wp-includes/default-widgets.php:794
 msgid "<strong>RSS Error</strong>: %s"
 msgstr "<strong>Error en el RSS:</strong> %s"
 
@@ -13912,7 +13910,7 @@ msgstr "<strong>Error en el RSS:</strong> %s"
 msgid "Syndicate this content"
 msgstr "Sindicar este contenido"
 
-#: wp-includes/default-widgets.php:740 wp-admin/includes/dashboard.php:1122
+#: wp-admin/includes/dashboard.php:1122 wp-includes/default-widgets.php:740
 msgid "Unknown Feed"
 msgstr "Feed desconocido"
 
@@ -13944,7 +13942,7 @@ msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr> de las entradas"
 msgid "Display as dropdown"
 msgstr "Mostrar como desplegable"
 
-#: wp-includes/default-widgets.php:704 wp-admin/import.php:41
+#: wp-admin/import.php:41 wp-includes/default-widgets.php:704
 msgid "RSS"
 msgstr "RSS"
 
@@ -13986,12 +13984,12 @@ msgstr "Estás enviando comentarios a demasiada velocidad. Un poco de calma."
 msgid "Duplicate comment detected; it looks as though you&#8217;ve already said that!"
 msgstr "Comentario duplicado: ¡parece que ya había sido enviado antes!"
 
-#: wp-includes/comment.php:391 wp-admin/edit-form-comment.php:52
+#: wp-admin/edit-form-comment.php:52 wp-includes/comment.php:391
 msgctxt "adjective"
 msgid "Spam"
 msgstr "Spam"
 
-#: wp-includes/comment.php:389 wp-admin/edit-form-comment.php:50
+#: wp-admin/edit-form-comment.php:50 wp-includes/comment.php:389
 msgctxt "adjective"
 msgid "Approved"
 msgstr "Aprobado"
@@ -14000,8 +13998,8 @@ msgstr "Aprobado"
 msgid "Unapproved"
 msgstr "Rechazado"
 
-#: wp-includes/admin-bar.php:566 wp-admin/update-core.php:284
-#: wp-admin/update-core.php:292 wp-admin/menu.php:128 wp-admin/menu.php:133
+#: wp-admin/menu.php:128 wp-admin/menu.php:133 wp-admin/update-core.php:284
+#: wp-admin/update-core.php:292 wp-includes/admin-bar.php:566
 msgid "Themes"
 msgstr "Temas"
 
@@ -14044,7 +14042,7 @@ msgstr "Enlace corto"
 msgid "Manage Comments"
 msgstr "Gestionar comentarios"
 
-#: wp-includes/admin-bar.php:341 wp-admin/includes/theme.php:312
+#: wp-admin/includes/theme.php:312 wp-includes/admin-bar.php:341
 msgid "Blavatar"
 msgstr "Blavatar"
 
@@ -14052,7 +14050,7 @@ msgstr "Blavatar"
 msgid "Visit Network"
 msgstr "Visitar la red"
 
-#: wp-includes/admin-bar.php:316 wp-admin/users.php:17 wp-admin/menu.php:168
+#: wp-admin/menu.php:168 wp-admin/users.php:17 wp-includes/admin-bar.php:316
 msgid "Users"
 msgstr "Usuarios"
 
@@ -14060,11 +14058,11 @@ msgstr "Usuarios"
 msgid "Sites"
 msgstr "Sitios"
 
-#: wp-includes/admin-bar.php:297 wp-admin/admin-header.php:25
+#: wp-admin/admin-header.php:25 wp-includes/admin-bar.php:297
 msgid "Network Admin"
 msgstr "Administrador de la red"
 
-#: wp-includes/admin-bar.php:284 wp-admin/menu.php:30
+#: wp-admin/menu.php:30 wp-includes/admin-bar.php:284
 msgid "My Sites"
 msgstr "Mis sitios"
 
@@ -14088,8 +14086,8 @@ msgstr "Editar mi perfil"
 msgid "W_Wednesday_initial"
 msgstr "X"
 
-#: wp-includes/locale.php:108 wp-includes/locale.php:118
-#: wp-includes/locale.php:131 wp-includes/js/tinymce/langs/wp-langs.php:86
+#: wp-includes/js/tinymce/langs/wp-langs.php:86 wp-includes/locale.php:108
+#: wp-includes/locale.php:118 wp-includes/locale.php:131
 msgid "Sunday"
 msgstr "Domingo"
 
@@ -14125,15 +14123,15 @@ msgstr "Ya no es necesario incluir este archivo."
 msgid "The site you have requested is not installed properly. Please contact the system administrator."
 msgstr "El sitio que has solicitado no está instalado correctamente. Por favor, ponte en contacto con el administrador del sistema."
 
-#: wp-includes/user.php:1491
+#: wp-includes/user.php:1492
 msgid "Jabber / Google Talk"
 msgstr "Jabber / Google Talk"
 
-#: wp-includes/user.php:1490
+#: wp-includes/user.php:1491
 msgid "Yahoo IM"
 msgstr "Yahoo IM"
 
-#: wp-includes/user.php:1489
+#: wp-includes/user.php:1490
 msgid "AIM"
 msgstr "AIM"
 
@@ -14151,115 +14149,115 @@ msgstr "Demasiadas redirecciones."
 msgid "Could not open handle for fopen() to %s"
 msgstr "No se pudo utilizar la función fopen() para %s."
 
-#: wp-includes/locale.php:137 wp-includes/js/tinymce/langs/wp-langs.php:87
+#: wp-includes/js/tinymce/langs/wp-langs.php:87 wp-includes/locale.php:137
 msgid "Sat"
 msgstr "Sab"
 
-#: wp-includes/locale.php:140 wp-includes/locale.php:155
-#: wp-includes/js/tinymce/langs/wp-langs.php:84
+#: wp-includes/js/tinymce/langs/wp-langs.php:84 wp-includes/locale.php:140
+#: wp-includes/locale.php:155
 msgid "January"
 msgstr "enero"
 
-#: wp-includes/locale.php:141 wp-includes/locale.php:156
-#: wp-includes/js/tinymce/langs/wp-langs.php:84
+#: wp-includes/js/tinymce/langs/wp-langs.php:84 wp-includes/locale.php:141
+#: wp-includes/locale.php:156
 msgid "February"
 msgstr "febrero"
 
-#: wp-includes/locale.php:142 wp-includes/locale.php:157
-#: wp-includes/js/tinymce/langs/wp-langs.php:84
+#: wp-includes/js/tinymce/langs/wp-langs.php:84 wp-includes/locale.php:142
+#: wp-includes/locale.php:157
 msgid "March"
 msgstr "marzo"
 
-#: wp-includes/locale.php:143 wp-includes/locale.php:158
-#: wp-includes/js/tinymce/langs/wp-langs.php:84
+#: wp-includes/js/tinymce/langs/wp-langs.php:84 wp-includes/locale.php:143
+#: wp-includes/locale.php:158
 msgid "April"
 msgstr "abril"
 
-#: wp-includes/locale.php:144 wp-includes/locale.php:159
-#: wp-includes/js/tinymce/langs/wp-langs.php:84
+#: wp-includes/js/tinymce/langs/wp-langs.php:84 wp-includes/locale.php:144
+#: wp-includes/locale.php:159
 msgid "May"
 msgstr "mayo"
 
-#: wp-includes/locale.php:145 wp-includes/locale.php:160
-#: wp-includes/js/tinymce/langs/wp-langs.php:84
+#: wp-includes/js/tinymce/langs/wp-langs.php:84 wp-includes/locale.php:145
+#: wp-includes/locale.php:160
 msgid "June"
 msgstr "junio"
 
-#: wp-includes/locale.php:146 wp-includes/locale.php:161
-#: wp-includes/js/tinymce/langs/wp-langs.php:84
+#: wp-includes/js/tinymce/langs/wp-langs.php:84 wp-includes/locale.php:146
+#: wp-includes/locale.php:161
 msgid "July"
 msgstr "julio"
 
-#: wp-includes/locale.php:147 wp-includes/locale.php:162
-#: wp-includes/js/tinymce/langs/wp-langs.php:84
+#: wp-includes/js/tinymce/langs/wp-langs.php:84 wp-includes/locale.php:147
+#: wp-includes/locale.php:162
 msgid "August"
 msgstr "agosto"
 
-#: wp-includes/locale.php:148 wp-includes/locale.php:163
-#: wp-includes/js/tinymce/langs/wp-langs.php:84
+#: wp-includes/js/tinymce/langs/wp-langs.php:84 wp-includes/locale.php:148
+#: wp-includes/locale.php:163
 msgid "September"
 msgstr "septiembre"
 
-#: wp-includes/locale.php:149 wp-includes/locale.php:164
-#: wp-includes/js/tinymce/langs/wp-langs.php:84
+#: wp-includes/js/tinymce/langs/wp-langs.php:84 wp-includes/locale.php:149
+#: wp-includes/locale.php:164
 msgid "October"
 msgstr "octubre"
 
-#: wp-includes/locale.php:150 wp-includes/locale.php:165
-#: wp-includes/js/tinymce/langs/wp-langs.php:84
+#: wp-includes/js/tinymce/langs/wp-langs.php:84 wp-includes/locale.php:150
+#: wp-includes/locale.php:165
 msgid "November"
 msgstr "noviembre"
 
-#: wp-includes/locale.php:151 wp-includes/locale.php:166
-#: wp-includes/js/tinymce/langs/wp-langs.php:84
+#: wp-includes/js/tinymce/langs/wp-langs.php:84 wp-includes/locale.php:151
+#: wp-includes/locale.php:166
 msgid "December"
 msgstr "diciembre"
 
-#: wp-includes/locale.php:155 wp-includes/js/tinymce/langs/wp-langs.php:85
+#: wp-includes/js/tinymce/langs/wp-langs.php:85 wp-includes/locale.php:155
 msgid "Jan_January_abbreviation"
 msgstr "ene"
 
-#: wp-includes/locale.php:156 wp-includes/js/tinymce/langs/wp-langs.php:85
+#: wp-includes/js/tinymce/langs/wp-langs.php:85 wp-includes/locale.php:156
 msgid "Feb_February_abbreviation"
 msgstr "feb"
 
-#: wp-includes/locale.php:157 wp-includes/js/tinymce/langs/wp-langs.php:85
+#: wp-includes/js/tinymce/langs/wp-langs.php:85 wp-includes/locale.php:157
 msgid "Mar_March_abbreviation"
 msgstr "mar"
 
-#: wp-includes/locale.php:158 wp-includes/js/tinymce/langs/wp-langs.php:85
+#: wp-includes/js/tinymce/langs/wp-langs.php:85 wp-includes/locale.php:158
 msgid "Apr_April_abbreviation"
 msgstr "abr"
 
-#: wp-includes/locale.php:159 wp-includes/js/tinymce/langs/wp-langs.php:85
+#: wp-includes/js/tinymce/langs/wp-langs.php:85 wp-includes/locale.php:159
 msgid "May_May_abbreviation"
 msgstr "may"
 
-#: wp-includes/locale.php:160 wp-includes/js/tinymce/langs/wp-langs.php:85
+#: wp-includes/js/tinymce/langs/wp-langs.php:85 wp-includes/locale.php:160
 msgid "Jun_June_abbreviation"
 msgstr "jun"
 
-#: wp-includes/locale.php:161 wp-includes/js/tinymce/langs/wp-langs.php:85
+#: wp-includes/js/tinymce/langs/wp-langs.php:85 wp-includes/locale.php:161
 msgid "Jul_July_abbreviation"
 msgstr "jul"
 
-#: wp-includes/locale.php:162 wp-includes/js/tinymce/langs/wp-langs.php:85
+#: wp-includes/js/tinymce/langs/wp-langs.php:85 wp-includes/locale.php:162
 msgid "Aug_August_abbreviation"
 msgstr "ago"
 
-#: wp-includes/locale.php:163 wp-includes/js/tinymce/langs/wp-langs.php:85
+#: wp-includes/js/tinymce/langs/wp-langs.php:85 wp-includes/locale.php:163
 msgid "Sep_September_abbreviation"
 msgstr "sep"
 
-#: wp-includes/locale.php:164 wp-includes/js/tinymce/langs/wp-langs.php:85
+#: wp-includes/js/tinymce/langs/wp-langs.php:85 wp-includes/locale.php:164
 msgid "Oct_October_abbreviation"
 msgstr "oct"
 
-#: wp-includes/locale.php:165 wp-includes/js/tinymce/langs/wp-langs.php:85
+#: wp-includes/js/tinymce/langs/wp-langs.php:85 wp-includes/locale.php:165
 msgid "Nov_November_abbreviation"
 msgstr "nov"
 
-#: wp-includes/locale.php:166 wp-includes/js/tinymce/langs/wp-langs.php:85
+#: wp-includes/js/tinymce/langs/wp-langs.php:85 wp-includes/locale.php:166
 msgid "Dec_December_abbreviation"
 msgstr "dic"
 
@@ -14305,11 +14303,11 @@ msgstr "Este archivo no es una imagen. Por favor, prueba con otro."
 msgid "[%1$s] Pingback: \"%2$s\""
 msgstr "[%1$s] Pingback: \"%2$s\""
 
-#: wp-includes/theme-compat/footer.php:10
-#: wp-includes/theme-compat/sidebar.php:10
-#: wp-includes/theme-compat/comments.php:10
-#: wp-includes/theme-compat/header.php:10
 #: wp-includes/theme-compat/comments-popup.php:10
+#: wp-includes/theme-compat/comments.php:10
+#: wp-includes/theme-compat/footer.php:10
+#: wp-includes/theme-compat/header.php:10
+#: wp-includes/theme-compat/sidebar.php:10
 msgid "Please include a %1$s template in your theme."
 msgstr "Por favor, incluye la plantilla %1$s en tu tema"
 
@@ -14330,17 +14328,18 @@ msgstr "%d consultas. %s segundos."
 msgid "Username: %s"
 msgstr "Nombre de usuario: %s"
 
-#: wp-includes/theme-compat/sidebar.php:21 wp-includes/post-template.php:1423
-#: wp-includes/js/tinymce/langs/wp-langs.php:305
-#: wp-admin/edit-form-advanced.php:148 wp-admin/comment.php:165
-#: wp-admin/includes/class-wp-posts-list-table.php:270
-#: wp-admin/includes/class-wp-posts-list-table.php:776
-#: wp-admin/includes/plugin-install.php:127
+#: wp-admin/comment.php:165 wp-admin/edit-form-advanced.php:148
+#: wp-admin/edit-form-comment.php:86
 #: wp-admin/includes/class-wp-comments-list-table.php:254
 #: wp-admin/includes/class-wp-comments-list-table.php:526
-#: wp-admin/includes/theme-install.php:62
 #: wp-admin/includes/class-wp-media-list-table.php:133
-#: wp-admin/includes/meta-boxes.php:528 wp-admin/edit-form-comment.php:86
+#: wp-admin/includes/class-wp-posts-list-table.php:270
+#: wp-admin/includes/class-wp-posts-list-table.php:776
+#: wp-admin/includes/meta-boxes.php:528
+#: wp-admin/includes/plugin-install.php:127
+#: wp-admin/includes/theme-install.php:62
+#: wp-includes/js/tinymce/langs/wp-langs.php:305
+#: wp-includes/post-template.php:1423 wp-includes/theme-compat/sidebar.php:21
 msgid "Author"
 msgstr "Autor"
 
@@ -14348,13 +14347,13 @@ msgstr "Autor"
 msgid "Mail (will not be published)"
 msgstr "Correo electrónico (no será publicado)"
 
-#: wp-includes/script-loader.php:269 wp-includes/class-wp-editor.php:790
 #: wp-admin/edit-link-form.php:20 wp-admin/includes/meta-boxes.php:650
+#: wp-includes/class-wp-editor.php:790 wp-includes/script-loader.php:269
 msgid "Add Link"
 msgstr "Añadir enlace"
 
-#: wp-includes/script-loader.php:270 wp-includes/script-loader.php:356
-#: wp-admin/includes/template.php:1345
+#: wp-admin/includes/template.php:1345 wp-includes/script-loader.php:270
+#: wp-includes/script-loader.php:356
 msgid "(no title)"
 msgstr "(sin título)"
 
@@ -14364,9 +14363,9 @@ msgid_plural "Currently %s comments are waiting for approval. Please visit the m
 msgstr[0] "Actualmente hay %s comentario en espera de aprobación. Por favor visita el panel de moderación:"
 msgstr[1] "Actualmente hay %s comentarios en espera de aprobación. Por favor visita el panel de moderación:"
 
-#: wp-includes/script-loader.php:288 wp-admin/includes/widgets.php:182
 #: wp-admin/includes/meta-boxes.php:293 wp-admin/includes/meta-boxes.php:697
-#: wp-admin/press-this.php:570
+#: wp-admin/includes/widgets.php:182 wp-admin/press-this.php:561
+#: wp-includes/script-loader.php:288
 msgid "Add"
 msgstr "Añadir"
 
@@ -14378,13 +14377,6 @@ msgstr "Separa múltiples categorías con comas."
 msgid "You are currently browsing the <a href=\"%1$s/\">%2$s</a> blog archives."
 msgstr "Estás navegando por el archivo de  <a href=\"%1$s/\">%2$s</a>."
 
-#: wp-includes/functions.wp-styles.php:30
-#: wp-includes/functions.wp-styles.php:57
-#: wp-includes/functions.wp-styles.php:85
-#: wp-includes/functions.wp-styles.php:106
-#: wp-includes/functions.wp-styles.php:137
-#: wp-includes/functions.wp-styles.php:159
-#: wp-includes/functions.wp-styles.php:183
 #: wp-includes/functions.wp-scripts.php:29
 #: wp-includes/functions.wp-scripts.php:56
 #: wp-includes/functions.wp-scripts.php:90
@@ -14392,6 +14384,13 @@ msgstr "Estás navegando por el archivo de  <a href=\"%1$s/\">%2$s</a>."
 #: wp-includes/functions.wp-scripts.php:129
 #: wp-includes/functions.wp-scripts.php:153
 #: wp-includes/functions.wp-scripts.php:177
+#: wp-includes/functions.wp-styles.php:30
+#: wp-includes/functions.wp-styles.php:57
+#: wp-includes/functions.wp-styles.php:85
+#: wp-includes/functions.wp-styles.php:106
+#: wp-includes/functions.wp-styles.php:137
+#: wp-includes/functions.wp-styles.php:159
+#: wp-includes/functions.wp-styles.php:183
 msgid "Scripts and styles should not be registered or enqueued until the %1$s, %2$s, or %3$s hooks."
 msgstr "Los scripts y estilos que utilices no deberías utlizarlos (registrarlos o engancharlos) a los ganchos %1, %2 y %3."
 
@@ -14404,9 +14403,9 @@ msgstr "El uso de niveles de usuarios por plugins y temas está obsoleto. Usa lo
 msgid "Use <code>WP_User->ID</code> instead."
 msgstr "Utiliza <code>WP_User->ID</code> en su lugar."
 
-#: wp-includes/script-loader.php:307 wp-includes/comment-template.php:1039
-#: wp-admin/includes/dashboard.php:702
 #: wp-admin/includes/class-wp-comments-list-table.php:417
+#: wp-admin/includes/dashboard.php:702 wp-includes/comment-template.php:1039
+#: wp-includes/script-loader.php:307
 msgid "Reply"
 msgstr "Responder"
 
@@ -14414,7 +14413,7 @@ msgstr "Responder"
 msgid "Delete it: %s"
 msgstr "Borrarlo: %s"
 
-#: wp-includes/theme-compat/sidebar.php:75 wp-includes/default-widgets.php:299
+#: wp-includes/default-widgets.php:299 wp-includes/theme-compat/sidebar.php:75
 msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
 msgstr "Gestionado con WordPress, una avanzada plataforma semántica de publicación personal."
 
@@ -14432,16 +14431,15 @@ msgstr "URL    : %s"
 msgid "Empty command string"
 msgstr "Cadena de comandos vacía"
 
-#: wp-includes/script-loader.php:268 wp-includes/script-loader.php:325
-#: wp-includes/class-wp-editor.php:598
-#: wp-includes/js/tinymce/langs/wp-langs.php:15
+#: wp-admin/edit-form-comment.php:74 wp-admin/edit-tag-form.php:90
+#: wp-admin/includes/class-wp-plugins-list-table.php:260
 #: wp-admin/includes/class-wp-posts-list-table.php:1032
 #: wp-admin/includes/class-wp-posts-list-table.php:1034
 #: wp-admin/includes/class-wp-posts-list-table.php:1037
-#: wp-admin/includes/template.php:480
-#: wp-admin/includes/class-wp-plugins-list-table.php:260
 #: wp-admin/includes/meta-boxes.php:224 wp-admin/includes/meta-boxes.php:225
-#: wp-admin/edit-form-comment.php:74 wp-admin/edit-tag-form.php:90
+#: wp-admin/includes/template.php:480 wp-includes/class-wp-editor.php:598
+#: wp-includes/js/tinymce/langs/wp-langs.php:15
+#: wp-includes/script-loader.php:268 wp-includes/script-loader.php:325
 msgid "Update"
 msgstr "Actualizar"
 
@@ -14489,9 +14487,9 @@ msgstr "Nuevo trackback a tu entrada \"%s\""
 msgid "[%1$s] Comment: \"%2$s\""
 msgstr "[%1$s] Comentario: \"%2$s\""
 
-#: wp-includes/theme-compat/sidebar.php:55 wp-includes/post-template.php:816
-#: wp-includes/default-widgets.php:18 wp-includes/default-widgets.php:24
 #: wp-admin/export.php:172 wp-admin/menu.php:68
+#: wp-includes/default-widgets.php:18 wp-includes/default-widgets.php:24
+#: wp-includes/post-template.php:816 wp-includes/theme-compat/sidebar.php:55
 msgid "Pages"
 msgstr "Páginas"
 
@@ -14511,9 +14509,9 @@ msgstr "El tamaño del archivo %s excede el tamaño permitido en este sitio."
 msgid "This file is empty. Please try another."
 msgstr "Este archivo está vacio. Por favor, prueba con otro."
 
-#: wp-includes/script-loader.php:101 wp-includes/script-loader.php:210
 #: wp-admin/async-upload.php:55 wp-admin/includes/dashboard.php:1197
-#: wp-admin/includes/dashboard.php:1289
+#: wp-admin/includes/dashboard.php:1289 wp-includes/script-loader.php:101
+#: wp-includes/script-loader.php:210
 msgid "Dismiss"
 msgstr "Omitir"
 
@@ -14529,8 +14527,8 @@ msgstr "Artículos (RSS)"
 msgid "This file type is not allowed. Please try another."
 msgstr "Este tipo de archivo no está permitido. Por favor, prueba con otro."
 
-#: wp-includes/script-loader.php:316 wp-admin/includes/template.php:619
 #: wp-admin/includes/meta-boxes.php:103 wp-admin/includes/meta-boxes.php:149
+#: wp-admin/includes/template.php:619 wp-includes/script-loader.php:316
 msgid "OK"
 msgstr "Aceptar"
 
@@ -14542,8 +14540,8 @@ msgstr "Las líneas y párrafos saltan automáticamente, nunca se mostrarán los
 msgid "Upload failed."
 msgstr "Falló la subida."
 
-#: wp-includes/theme-compat/comments.php:66
 #: wp-includes/comment-template.php:1537
+#: wp-includes/theme-compat/comments.php:66
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "Disculpa, debes <a href=\"%s\">iniciar sesión</a> para escribir un comentario."
 
@@ -14603,8 +14601,8 @@ msgstr "Cerrar esta ventana."
 msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr> feed for comments on this post."
 msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr> feed para los comentarios de esta entrada."
 
-#: wp-includes/theme-compat/sidebar.php:57 wp-includes/default-widgets.php:218
-#: wp-includes/default-widgets.php:225 wp-admin/includes/file.php:21
+#: wp-admin/includes/file.php:21 wp-includes/default-widgets.php:218
+#: wp-includes/default-widgets.php:225 wp-includes/theme-compat/sidebar.php:57
 msgid "Archives"
 msgstr "Archivos"
 
@@ -14616,10 +14614,10 @@ msgstr "No se pudo leer el tamaño de imagen"
 msgid "You are currently browsing the <a href=\"%1$s/\">%2$s</a> blog archives for %3$s."
 msgstr "Actualmente estás viendo el archivo del sitio <a href=\"%1$s/\">%2$s</a> de %3$s."
 
-#: wp-includes/theme-compat/comments-popup.php:80 wp-login.php:516
-#: wp-admin/user-new.php:255 wp-admin/user-new.php:317 wp-admin/comment.php:170
-#: wp-admin/includes/class-wp-users-list-table.php:165
+#: wp-admin/comment.php:170 wp-admin/includes/class-wp-users-list-table.php:165
 #: wp-admin/includes/template.php:323 wp-admin/user-edit.php:337
+#: wp-admin/user-new.php:255 wp-admin/user-new.php:317
+#: wp-includes/theme-compat/comments-popup.php:80 wp-login.php:516
 msgid "E-mail"
 msgstr "Correo electrónico"
 
@@ -14797,12 +14795,12 @@ msgstr "Programar para el:"
 msgid "Publish on:"
 msgstr "Publicar el:"
 
-#: wp-includes/theme-compat/sidebar.php:63
-#: wp-includes/category-template.php:427 wp-includes/default-widgets.php:422
-#: wp-includes/default-widgets.php:428 wp-admin/edit-link-form.php:28
-#: wp-admin/includes/class-wp-posts-list-table.php:273
+#: wp-admin/edit-link-form.php:28
 #: wp-admin/includes/class-wp-links-list-table.php:82
-#: wp-admin/press-this.php:512
+#: wp-admin/includes/class-wp-posts-list-table.php:273
+#: wp-admin/press-this.php:503 wp-includes/category-template.php:427
+#: wp-includes/default-widgets.php:422 wp-includes/default-widgets.php:428
+#: wp-includes/theme-compat/sidebar.php:63
 msgid "Categories"
 msgstr "Categorías"
 
@@ -14891,8 +14889,8 @@ msgstr "Correo electrónico : %s"
 msgid "connection not established"
 msgstr "no se estableció la conexión"
 
-#: wp-includes/theme-compat/sidebar.php:69 wp-includes/default-widgets.php:283
-#: wp-includes/default-widgets.php:288
+#: wp-includes/default-widgets.php:283 wp-includes/default-widgets.php:288
+#: wp-includes/theme-compat/sidebar.php:69
 msgid "Meta"
 msgstr "Meta"
 
@@ -14916,9 +14914,9 @@ msgstr "Etiquetas: "
 msgid "%1$s is proudly powered by %2$s"
 msgstr "%1$s funciona gracias a %2$s"
 
+#: wp-admin/user-edit.php:350 wp-admin/user-new.php:330
+#: wp-includes/comment-template.php:1529
 #: wp-includes/theme-compat/comments.php:84
-#: wp-includes/comment-template.php:1529 wp-admin/user-new.php:330
-#: wp-admin/user-edit.php:350
 msgid "Website"
 msgstr "Web"
 
@@ -14950,10 +14948,10 @@ msgstr "Aprobar y responder"
 msgid "New comment on your post \"%s\""
 msgstr "Nuevo comentario a tu entrada \"%s\""
 
-#: wp-includes/script-loader.php:174
-#: wp-includes/js/tinymce/langs/wp-langs.php:17
-#: wp-includes/js/tinymce/wp-mce-help.php:287 wp-login.php:578
 #: wp-admin/includes/template.php:1311 wp-admin/includes/widgets.php:207
+#: wp-includes/js/tinymce/langs/wp-langs.php:17
+#: wp-includes/js/tinymce/wp-mce-help.php:287 wp-includes/script-loader.php:174
+#: wp-login.php:578
 msgid "Close"
 msgstr "Cerrar"
 
@@ -14961,7 +14959,7 @@ msgstr "Cerrar"
 msgid "abort"
 msgstr "cancelar"
 
-#: wp-includes/script-loader.php:172 wp-admin/includes/media.php:1942
+#: wp-admin/includes/media.php:1942 wp-includes/script-loader.php:172
 msgid "Image"
 msgstr "Imagen"
 
@@ -14973,8 +14971,8 @@ msgstr "&lt; Anterior"
 msgid "Next &gt;"
 msgstr "Siguiente &gt;"
 
-#: wp-includes/pluggable.php:1194
 #: wp-admin/includes/class-wp-users-list-table.php:291
+#: wp-includes/pluggable.php:1194
 msgid "E-mail: %s"
 msgstr "Correo electrónico: %s"
 
@@ -14982,30 +14980,30 @@ msgstr "Correo electrónico: %s"
 msgid "No password submitted"
 msgstr "No se envió la contraseña"
 
-#: wp-includes/theme-compat/comments-popup.php:33
-#: wp-admin/edit-form-advanced.php:141 wp-admin/edit-comments.php:110
-#: wp-admin/edit-comments.php:155
+#: wp-admin/edit-comments.php:110 wp-admin/edit-comments.php:155
+#: wp-admin/edit-form-advanced.php:141
+#: wp-admin/includes/class-wp-comments-list-table.php:218
+#: wp-admin/includes/class-wp-media-list-table.php:139
 #: wp-admin/includes/class-wp-posts-list-table.php:280
 #: wp-admin/includes/class-wp-posts-list-table.php:912
-#: wp-admin/includes/class-wp-comments-list-table.php:218
 #: wp-admin/includes/file.php:16 wp-admin/includes/screen.php:833
-#: wp-admin/includes/class-wp-media-list-table.php:139
 #: wp-content/plugins/akismet/legacy.php:214
+#: wp-includes/theme-compat/comments-popup.php:33
 msgid "Comments"
 msgstr "Comentarios"
 
-#: wp-includes/script-loader.php:317 wp-includes/class-wp-editor.php:787
-#: wp-includes/js/tinymce/langs/wp-langs.php:16
-#: wp-admin/includes/dashboard.php:156
 #: wp-admin/includes/class-wp-posts-list-table.php:1029
-#: wp-admin/includes/image-edit.php:74 wp-admin/includes/media.php:1156
-#: wp-admin/includes/media.php:1384 wp-admin/includes/template.php:342
-#: wp-admin/includes/template.php:532 wp-admin/includes/template.php:620
-#: wp-admin/includes/theme-install.php:285 wp-admin/includes/nav-menu.php:189
 #: wp-admin/includes/class-wp-terms-list-table.php:366
+#: wp-admin/includes/dashboard.php:156 wp-admin/includes/image-edit.php:74
+#: wp-admin/includes/media.php:1156 wp-admin/includes/media.php:1384
 #: wp-admin/includes/meta-boxes.php:104 wp-admin/includes/meta-boxes.php:150
-#: wp-admin/press-this.php:130 wp-admin/press-this.php:160
-#: wp-admin/press-this.php:291 wp-admin/widgets.php:286
+#: wp-admin/includes/nav-menu.php:189 wp-admin/includes/template.php:342
+#: wp-admin/includes/template.php:532 wp-admin/includes/template.php:620
+#: wp-admin/includes/theme-install.php:285 wp-admin/press-this.php:130
+#: wp-admin/press-this.php:160 wp-admin/press-this.php:291
+#: wp-admin/widgets.php:286 wp-includes/class-wp-editor.php:787
+#: wp-includes/js/tinymce/langs/wp-langs.php:16
+#: wp-includes/script-loader.php:317
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -15037,8 +15035,8 @@ msgstr "La <abbr title=\"Universal Resource Locator\">URL</abbr> para realizar u
 msgid "by %1$s &#8212; %2$s @ <a href=\"#comment-%3$s\">%4$s</a>"
 msgstr "por %1$s &#8212; %2$s @ <a href=\"#comment-%3$s\">%4$s</a>"
 
-#: wp-includes/theme-compat/comments-popup.php:62
 #: wp-admin/includes/dashboard.php:665 wp-admin/includes/meta-boxes.php:484
+#: wp-includes/theme-compat/comments-popup.php:62
 msgid "No comments yet."
 msgstr "Aún no hay comentarios."
 
@@ -15062,8 +15060,8 @@ msgstr "La librería de imágenes GD no está instalada."
 msgid "This page validates as XHTML 1.0 Transitional"
 msgstr "Esta página valida como XHTML 1.0 transicional"
 
-#: wp-includes/script-loader.php:252 wp-login.php:463 wp-admin/user-new.php:340
 #: wp-admin/install.php:122 wp-admin/user-edit.php:383
+#: wp-admin/user-new.php:340 wp-includes/script-loader.php:252 wp-login.php:463
 msgid "Strength indicator"
 msgstr "Seguridad de la contraseña"
 
@@ -15079,11 +15077,11 @@ msgstr "Autentificación fallida"
 msgid "No connection to server"
 msgstr "No hay conexión con el servidor."
 
-#: wp-includes/theme-compat/footer.php:10
-#: wp-includes/theme-compat/sidebar.php:10
-#: wp-includes/theme-compat/comments.php:10
-#: wp-includes/theme-compat/header.php:10
 #: wp-includes/theme-compat/comments-popup.php:10
+#: wp-includes/theme-compat/comments.php:10
+#: wp-includes/theme-compat/footer.php:10
+#: wp-includes/theme-compat/header.php:10
+#: wp-includes/theme-compat/sidebar.php:10
 msgid "Theme without %1$s"
 msgstr "Tema sin %1$s"
 
@@ -15095,9 +15093,9 @@ msgstr "Deja un comentario"
 msgid "Memory exceeded. Please try another smaller file."
 msgstr "Memoria excedida. Por favor, prueba con otro archivo más pequeño."
 
-#: wp-includes/script-loader.php:267
 #: wp-includes/js/tinymce/langs/wp-langs.php:131
 #: wp-includes/js/tinymce/langs/wp-langs.php:339
+#: wp-includes/script-loader.php:267
 msgid "Insert/edit link"
 msgstr "Insertar/Editar enlace"
 
@@ -15123,13 +15121,13 @@ msgstr "Esta función requiere de frames insertados. Tienes los iframes desactiv
 msgid "Published on:"
 msgstr "Publicada el:"
 
-#: wp-includes/theme-compat/comments.php:59
 #: wp-includes/comment-template.php:1198 wp-includes/comment-template.php:1544
+#: wp-includes/theme-compat/comments.php:59
 msgid "Leave a Reply to %s"
 msgstr "Responder a %s"
 
-#: wp-includes/theme-compat/comments.php:59
 #: wp-includes/comment-template.php:1197 wp-includes/comment-template.php:1543
+#: wp-includes/theme-compat/comments.php:59
 msgid "Leave a Reply"
 msgstr "Deja un comentario"
 
@@ -15137,18 +15135,18 @@ msgstr "Deja un comentario"
 msgid "Comments are closed."
 msgstr "Los comentarios están cerrados."
 
+#: wp-admin/user-edit.php:292 wp-admin/user-edit.php:337
+#: wp-admin/user-new.php:313 wp-admin/user-new.php:317
 #: wp-includes/theme-compat/comments.php:78
-#: wp-includes/theme-compat/comments.php:81 wp-admin/user-new.php:313
-#: wp-admin/user-new.php:317 wp-admin/user-edit.php:292
-#: wp-admin/user-edit.php:337
+#: wp-includes/theme-compat/comments.php:81
 msgid "(required)"
 msgstr "(requerido)"
 
-#: wp-includes/theme-compat/comments.php:78
-#: wp-includes/theme-compat/comments-popup.php:75
-#: wp-includes/comment-template.php:1525
 #: wp-admin/includes/class-wp-users-list-table.php:164
 #: wp-admin/includes/template.php:318 wp-admin/user-edit.php:241
+#: wp-includes/comment-template.php:1525
+#: wp-includes/theme-compat/comments-popup.php:75
+#: wp-includes/theme-compat/comments.php:78
 msgid "Name"
 msgstr "Nombre"
 
@@ -15166,9 +15164,8 @@ msgstr[1] "%s temas"
 msgid "No categories"
 msgstr "No hay categorías"
 
-#: wp-includes/category-template.php:161
 #: wp-admin/includes/class-wp-posts-list-table.php:614
-#: wp-admin/includes/upgrade.php:109
+#: wp-admin/includes/upgrade.php:109 wp-includes/category-template.php:161
 msgid "Uncategorized"
 msgstr "Sin categoría"
 
@@ -15179,15 +15176,15 @@ msgstr "Sin categoría"
 msgid "View all posts in %s"
 msgstr "Ver todas las entradas en %s"
 
-#: wp-includes/deprecated.php:2847 wp-includes/deprecated.php:2849
+#: wp-admin/index.php:22 wp-admin/menu.php:25 wp-admin/user/menu.php:10
 #: wp-includes/admin-bar.php:257 wp-includes/admin-bar.php:304
-#: wp-includes/admin-bar.php:356 wp-admin/index.php:22
-#: wp-admin/user/menu.php:10 wp-admin/menu.php:25
+#: wp-includes/admin-bar.php:356 wp-includes/deprecated.php:2847
+#: wp-includes/deprecated.php:2849
 msgid "Dashboard"
 msgstr "Escritorio"
 
-#: wp-includes/deprecated.php:2845 wp-includes/admin-bar.php:247
-#: wp-includes/admin-bar.php:378
+#: wp-includes/admin-bar.php:247 wp-includes/admin-bar.php:378
+#: wp-includes/deprecated.php:2845
 msgid "Visit Site"
 msgstr "Visitar sitio"
 
@@ -15207,11 +15204,11 @@ msgstr "Falta el archivo"
 msgid "Last updated"
 msgstr "Última actualización"
 
-#: wp-includes/deprecated.php:707 wp-includes/js/tinymce/langs/wp-langs.php:481
+#: wp-admin/edit-tag-form.php:55 wp-admin/edit-tags.php:374
+#: wp-admin/includes/class-wp-users-list-table.php:264
 #: wp-admin/includes/media.php:685 wp-admin/includes/media.php:779
 #: wp-admin/includes/media.php:1974 wp-admin/includes/media.php:1990
-#: wp-admin/includes/class-wp-users-list-table.php:264
-#: wp-admin/edit-tags.php:374 wp-admin/edit-tag-form.php:55
+#: wp-includes/deprecated.php:707 wp-includes/js/tinymce/langs/wp-langs.php:481
 msgid "None"
 msgstr "Ninguna"
 

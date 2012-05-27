@@ -3,7 +3,7 @@
 Plugin Name: Simple Fields
 Plugin URI: http://eskapism.se/code-playground/simple-fields/
 Description: Add groups of textareas, input-fields, dropdowns, radiobuttons, checkboxes and files to your edit post screen.
-Version: 0.4
+Version: 0.5
 Author: Pär Thernström
 Author URI: http://eskapism.se/
 License: GPL2
@@ -34,7 +34,6 @@ if (isset($_GET["wp_abspath"])) {
 }
 */
 
-
 define( "EASY_FIELDS_URL", WP_PLUGIN_URL . '/simple-fields/');
 define( "EASY_FIELDS_NAME", "Simple Fields"); 
 define( "EASY_FIELDS_VERSION", "0.4");
@@ -55,8 +54,7 @@ function simple_fields_admin_init() {
 	wp_enqueue_script("jquery");
 	wp_enqueue_script("jquery-ui-core");
 	wp_enqueue_script("jquery-ui-sortable");
-	wp_enqueue_script("jquery-ui-effects-core", EASY_FIELDS_URL . "jquery.effects.core.js");
-	wp_enqueue_script("jquery-ui-effects-highlight", EASY_FIELDS_URL . "jquery.effects.highlight.js");
+	wp_enqueue_script("jquery-effects-highlight");
 	wp_enqueue_script("thickbox");
 	wp_enqueue_style("thickbox");
 	wp_enqueue_script("jscolor", EASY_FIELDS_URL . "jscolor/jscolor.js"); // color picker for type color

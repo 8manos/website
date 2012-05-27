@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Multisite package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2012-01-03 23:08:59+0000\n"
+"PO-Revision-Date: 2012-04-20 17:58:42+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -312,8 +312,8 @@ msgid "Not Spam"
 msgstr "No es Spam"
 
 #: wp-admin/includes/class-wp-ms-sites-list-table.php:144
-#: wp-admin/network/site-new.php:126 wp-admin/network/site-new.php:128
-#: wp-admin/network/site-info.php:125
+#: wp-admin/network/site-info.php:125 wp-admin/network/site-new.php:126
+#: wp-admin/network/site-new.php:128
 msgid "Domain"
 msgstr "Dominio"
 
@@ -691,27 +691,27 @@ msgstr "Los usuarios que se registran en la red sin crear un sitio son añadidos
 msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">Documentation on Network Users</a>"
 msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">Documentación sobre Usuarios de la red</a>"
 
-#: wp-admin/network/user-new.php:31 wp-admin/network/index.php:38
-#: wp-admin/network/site-users.php:36 wp-admin/network/site-settings.php:33
-#: wp-admin/network/site-new.php:30 wp-admin/network/users.php:247
-#: wp-admin/network/sites.php:46 wp-admin/network/site-info.php:33
-#: wp-admin/network/site-themes.php:38
+#: wp-admin/network/index.php:38 wp-admin/network/site-info.php:33
+#: wp-admin/network/site-new.php:30 wp-admin/network/site-settings.php:33
+#: wp-admin/network/site-themes.php:38 wp-admin/network/site-users.php:36
+#: wp-admin/network/sites.php:46 wp-admin/network/user-new.php:31
+#: wp-admin/network/users.php:247
 msgid "<a href=\"http://wordpress.org/support/forum/multisite/\" target=\"_blank\">Support Forums</a>"
 msgstr "<a href=\"http://es.forums.wordpress.org/forum/multisite/\" target=\"_blank\">Foros de soporte</a>"
 
-#: wp-admin/network/user-new.php:37 wp-admin/network/index.php:20
-#: wp-admin/network/site-users.php:49 wp-admin/network/site-settings.php:43
-#: wp-admin/network/site-new.php:37 wp-admin/network/users.php:17
-#: wp-admin/network/users.php:95 wp-admin/network/users.php:117
-#: wp-admin/network/users.php:132 wp-admin/network/users.php:183
-#: wp-admin/network/upgrade.php:39 wp-admin/network/sites.php:17
+#: wp-admin/network/index.php:20 wp-admin/network/settings.php:17
+#: wp-admin/network/site-info.php:43 wp-admin/network/site-new.php:37
+#: wp-admin/network/site-settings.php:43 wp-admin/network/site-themes.php:61
+#: wp-admin/network/site-users.php:49 wp-admin/network/sites.php:17
 #: wp-admin/network/sites.php:62 wp-admin/network/sites.php:79
 #: wp-admin/network/sites.php:123 wp-admin/network/sites.php:133
 #: wp-admin/network/sites.php:143 wp-admin/network/sites.php:154
 #: wp-admin/network/sites.php:165 wp-admin/network/sites.php:175
 #: wp-admin/network/sites.php:185 wp-admin/network/sites.php:195
-#: wp-admin/network/settings.php:17 wp-admin/network/site-info.php:43
-#: wp-admin/network/site-themes.php:61
+#: wp-admin/network/upgrade.php:39 wp-admin/network/user-new.php:37
+#: wp-admin/network/users.php:17 wp-admin/network/users.php:95
+#: wp-admin/network/users.php:117 wp-admin/network/users.php:132
+#: wp-admin/network/users.php:183
 msgid "You do not have permission to access this page."
 msgstr "No tienes autorización para acceder a esta página"
 
@@ -723,11 +723,11 @@ msgstr "No se puede crear un usuario vacio"
 msgid "Cannot add user."
 msgstr "No se pudo añadir el usuario."
 
-#: wp-admin/network/user-new.php:100 wp-admin/network/site-users.php:309
+#: wp-admin/network/site-users.php:309 wp-admin/network/user-new.php:100
 msgid "Username and password will be mailed to the above email address."
 msgstr "Se enviarán el nombre de usuario y la contraseña a esta dirección de correo electrónico."
 
-#: wp-admin/network/user-new.php:104 wp-admin/network/site-users.php:277
+#: wp-admin/network/site-users.php:277 wp-admin/network/user-new.php:104
 msgid "Add User"
 msgstr "Añadir usuario"
 
@@ -791,7 +791,7 @@ msgstr[1] "Sí, borrar estos temas"
 msgid "No, Return me to the theme list"
 msgstr "No, devuélveme a la lista de temas"
 
-#: wp-admin/network/themes.php:204 wp-admin/network/site-themes.php:131
+#: wp-admin/network/site-themes.php:131 wp-admin/network/themes.php:204
 msgctxt "themes per page (screen options)"
 msgid "Themes"
 msgstr "Temas"
@@ -812,18 +812,18 @@ msgstr "Los temas puede activarlos el administrador de la red sitio a sitio en l
 msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Themes_Screen\" target=\"_blank\">Documentation on Network Themes</a>"
 msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Themes_Screen\" target=\"_blank\">Documentación sobre Temas de la red</a>"
 
-#: wp-admin/network/themes.php:230 wp-admin/network/menu.php:32
+#: wp-admin/network/menu.php:32 wp-admin/network/themes.php:230
 msgctxt "theme"
 msgid "Add New"
 msgstr "Añadir nuevo"
 
-#: wp-admin/network/themes.php:238 wp-admin/network/site-themes.php:162
+#: wp-admin/network/site-themes.php:162 wp-admin/network/themes.php:238
 msgid "Theme enabled."
 msgid_plural "%s themes enabled."
 msgstr[0] "Tema activado"
 msgstr[1] "%s temas activados."
 
-#: wp-admin/network/themes.php:241 wp-admin/network/site-themes.php:165
+#: wp-admin/network/site-themes.php:165 wp-admin/network/themes.php:241
 msgid "Theme disabled."
 msgid_plural "%s themes disabled."
 msgstr[0] "Tema desactivado."
@@ -836,7 +836,7 @@ msgid_plural "%s themes deleted."
 msgstr[0] "Tema borrado."
 msgstr[1] "%s temas borrados."
 
-#: wp-admin/network/themes.php:246 wp-admin/network/site-themes.php:167
+#: wp-admin/network/site-themes.php:167 wp-admin/network/themes.php:246
 msgid "No theme selected."
 msgstr "Ningún tema seleccionado."
 
@@ -844,59 +844,59 @@ msgstr "Ningún tema seleccionado."
 msgid "You cannot delete a theme while it is active on the main site."
 msgstr "No puedes borrar un tema si está activo en el sitio principal."
 
-#: wp-admin/network/site-users.php:17 wp-admin/network/site-settings.php:17
-#: wp-admin/network/site-info.php:17
+#: wp-admin/network/site-info.php:17 wp-admin/network/site-settings.php:17
+#: wp-admin/network/site-users.php:17
 msgid "You do not have sufficient permissions to edit this site."
 msgstr "No tienes suficientes permisos para editar este sitio."
 
-#: wp-admin/network/site-users.php:26 wp-admin/network/site-settings.php:23
-#: wp-admin/network/site-info.php:23 wp-admin/network/site-themes.php:28
+#: wp-admin/network/site-info.php:23 wp-admin/network/site-settings.php:23
+#: wp-admin/network/site-themes.php:28 wp-admin/network/site-users.php:26
 msgid "The menu is for editing information specific to individual sites, particularly if the admin area of a site is unavailable."
 msgstr "El meno es para editar información específica de sitios individuadles, especialmente si el área de administrador de un sitio no está disponible."
 
-#: wp-admin/network/site-users.php:27 wp-admin/network/site-settings.php:24
-#: wp-admin/network/site-info.php:24 wp-admin/network/site-themes.php:29
+#: wp-admin/network/site-info.php:24 wp-admin/network/site-settings.php:24
+#: wp-admin/network/site-themes.php:29 wp-admin/network/site-users.php:27
 msgid "<strong>Info</strong> - The domain and path are rarely edited as this can cause the site to not work properly. The Registered date and Last Updated date are displayed. Network admins can mark a site as archived, spam, deleted and mature, to remove from public listings or disable."
 msgstr "<strong>Información:</strong>  El dominio y la ruta raramente se editan porque podría provocar que el sistema no funcionase correctamente. Se muestran las fechas de registro y de la última actualización. Los administradores de red puede marcar un sitio como guardado, spam, borrado y de contenido pata adultos, para borrarlo de las listas públicas o desactivado."
 
-#: wp-admin/network/site-users.php:28 wp-admin/network/site-settings.php:25
-#: wp-admin/network/site-info.php:25 wp-admin/network/site-themes.php:30
+#: wp-admin/network/site-info.php:25 wp-admin/network/site-settings.php:25
+#: wp-admin/network/site-themes.php:30 wp-admin/network/site-users.php:28
 msgid "<strong>Users</strong> - This displays the users associated with this site. You can also change their role, reset their password, or remove them from the site. Removing the user from the site does not remove the user from the network."
 msgstr "<strong>Usuarios</strong> - Esto muestra los usuarios asociados a este sitio. También puedes cambiar su perfil, reiniciar su contraseña o borrarlos del sitio. Borrar un usuario del sitio no borra al usuario de la red."
 
-#: wp-admin/network/site-users.php:29 wp-admin/network/site-settings.php:26
-#: wp-admin/network/site-info.php:26 wp-admin/network/site-themes.php:31
+#: wp-admin/network/site-info.php:26 wp-admin/network/site-settings.php:26
+#: wp-admin/network/site-themes.php:31 wp-admin/network/site-users.php:29
 msgid "<strong>Themes</strong> - This area shows themes that are not already enabled across the network. Enabling a theme in this menu makes it accessible to this site. It does not activate the theme, but allows it to show in the site&#8217;s Appearance menu. To enable a theme for the entire network, see the <a href=\"%s\">Network Themes</a> screen."
 msgstr "<strong>Temas</strong> - Esta área muestra temas que yo no están activos en la red. Activando un tema en este menú hará que esté disponible para este sitio. No activa el tema pero permite que se muestre en el menú de Aspecto del sitio. Para activar un tema para toda la red ve a la pantalla de <a href=\"%s\">Temas de la red</a>."
 
-#: wp-admin/network/site-users.php:30 wp-admin/network/site-settings.php:27
-#: wp-admin/network/site-info.php:27 wp-admin/network/site-themes.php:32
+#: wp-admin/network/site-info.php:27 wp-admin/network/site-settings.php:27
+#: wp-admin/network/site-themes.php:32 wp-admin/network/site-users.php:30
 msgid "<strong>Settings</strong> - This page shows a list of all settings associated with this site. Some are created by WordPress and others are created by plugins you activate. Note that some fields are grayed out and say Serialized Data. You cannot modify these values due to the way the setting is stored in the database."
 msgstr "<strong>Ajustes</strong> - Esta página muestra una lista de todos los ajustes asociados a este sitio. Algunos han sido creados por WordPerss y otros los crean los plugins que activas. Observa que algunos campos están oscurecidos y muestran Serialized data. No puedes modificar estos valores por el modo en que el ajuste está almacenado en la base de datos."
 
-#: wp-admin/network/site-users.php:35 wp-admin/network/site-settings.php:32
-#: wp-admin/network/site-new.php:29 wp-admin/network/sites.php:45
-#: wp-admin/network/site-info.php:32 wp-admin/network/site-themes.php:37
+#: wp-admin/network/site-info.php:32 wp-admin/network/site-new.php:29
+#: wp-admin/network/site-settings.php:32 wp-admin/network/site-themes.php:37
+#: wp-admin/network/site-users.php:35 wp-admin/network/sites.php:45
 msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Sites_Screens\" target=\"_blank\">Documentation on Site Management</a>"
 msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Sites_Screens\" target=\"_blank\">Documentación sobre Gestión del sitio</a>"
 
-#: wp-admin/network/site-users.php:45 wp-admin/network/site-settings.php:39
-#: wp-admin/network/site-info.php:39 wp-admin/network/site-themes.php:55
+#: wp-admin/network/site-info.php:39 wp-admin/network/site-settings.php:39
+#: wp-admin/network/site-themes.php:55 wp-admin/network/site-users.php:45
 msgid "Invalid site ID."
 msgstr "ID de sitio no válido."
 
-#: wp-admin/network/site-users.php:168 wp-admin/network/site-settings.php:78
-#: wp-admin/network/site-info.php:88 wp-admin/network/site-themes.php:134
+#: wp-admin/network/site-info.php:88 wp-admin/network/site-settings.php:78
+#: wp-admin/network/site-themes.php:134 wp-admin/network/site-users.php:168
 msgid "Edit Site: <a href=\"%1$s\">%2$s</a>"
 msgstr "Editar sitio: <a href=\"%1$s\">%2$s</a>"
 
-#: wp-admin/network/site-users.php:169 wp-admin/network/site-settings.php:79
-#: wp-admin/network/site-info.php:89 wp-admin/network/site-themes.php:135
+#: wp-admin/network/site-info.php:89 wp-admin/network/site-settings.php:79
+#: wp-admin/network/site-themes.php:135 wp-admin/network/site-users.php:169
 msgid "Edit Site: %s"
 msgstr "Editar sitio: %s"
 
-#: wp-admin/network/site-users.php:182 wp-admin/network/site-settings.php:94
-#: wp-admin/network/site-info.php:104 wp-admin/network/site-themes.php:148
+#: wp-admin/network/site-info.php:104 wp-admin/network/site-settings.php:94
+#: wp-admin/network/site-themes.php:148 wp-admin/network/site-users.php:182
 msgid "Info"
 msgstr "Información"
 
@@ -1092,8 +1092,8 @@ msgstr "Usuarios eliminados de spam."
 msgid "Users deleted."
 msgstr "Usuarios eliminados."
 
-#: wp-admin/network/upgrade.php:18 wp-admin/network/upgrade.php:43
-#: wp-admin/network/upgrade.php:85 wp-admin/network/menu.php:60
+#: wp-admin/network/menu.php:60 wp-admin/network/upgrade.php:18
+#: wp-admin/network/upgrade.php:43 wp-admin/network/upgrade.php:85
 msgid "Update Network"
 msgstr "Actualizar red"
 
@@ -1238,12 +1238,12 @@ msgstr "Sitio eliminado de spam."
 msgid "Site marked as spam."
 msgstr "Sitio marcado como spam."
 
-#: wp-admin/network/sites.php:295 wp-admin/network/menu.php:18
+#: wp-admin/network/menu.php:18 wp-admin/network/sites.php:295
 msgctxt "site"
 msgid "Add New"
 msgstr "Añadir nuevo"
 
-#: wp-admin/network/settings.php:19 wp-admin/network/menu.php:47
+#: wp-admin/network/menu.php:47 wp-admin/network/settings.php:19
 msgid "Network Settings"
 msgstr "Ajustes de red"
 
@@ -2061,7 +2061,7 @@ msgstr "Has sido añadido a este sitio. Por favor, visita la <a href=\"%s\">pág
 msgid "Success"
 msgstr "¡Lo lograste!"
 
-#: wp-includes/ms-functions.php:1899
+#: wp-includes/ms-functions.php:1900
 msgid ""
 "Dear User,\n"
 "\n"
@@ -2109,19 +2109,19 @@ msgstr "La constante <code>VHOST</code> <strong> está obsoleta</strong>. Usa la
 msgid "<strong>Conflicting values for the constants VHOST and SUBDOMAIN_INSTALL.</strong> The value of SUBDOMAIN_INSTALL will be assumed to be your subdomain configuration setting."
 msgstr "<strong>Hay valores en conflicto para las constantes VHOST y SUBDOMAIN_INSTALL.</strong> Se asumirá que el valor de la configuración de subdominio es SUBDOMAIN_INSTALL."
 
-#: wp-admin/my-sites.php:13 wp-admin/ms-delete-site.php:13
-#: wp-admin/network/user-new.php:14 wp-admin/network/index.php:17
-#: wp-admin/network/themes.php:14 wp-admin/network/plugin-editor.php:14
-#: wp-admin/network/plugin-install.php:17 wp-admin/network/site-users.php:14
-#: wp-admin/network/theme-editor.php:14 wp-admin/network/setup.php:14
-#: wp-admin/network/site-settings.php:14 wp-admin/network/site-new.php:14
-#: wp-admin/network/edit.php:14 wp-admin/network/theme-install.php:17
-#: wp-admin/network/users.php:14 wp-admin/network/upgrade.php:14
-#: wp-admin/network/update-core.php:14 wp-admin/network/sites.php:14
-#: wp-admin/network/settings.php:14 wp-admin/network/user-edit.php:14
-#: wp-admin/network/site-info.php:14 wp-admin/network/plugins.php:14
-#: wp-admin/network/profile.php:14 wp-admin/network/update.php:17
-#: wp-admin/network/site-themes.php:14 wp-admin/network/admin.php:16
+#: wp-admin/ms-delete-site.php:13 wp-admin/my-sites.php:13
+#: wp-admin/network/admin.php:16 wp-admin/network/edit.php:14
+#: wp-admin/network/index.php:17 wp-admin/network/plugin-editor.php:14
+#: wp-admin/network/plugin-install.php:17 wp-admin/network/plugins.php:14
+#: wp-admin/network/profile.php:14 wp-admin/network/settings.php:14
+#: wp-admin/network/setup.php:14 wp-admin/network/site-info.php:14
+#: wp-admin/network/site-new.php:14 wp-admin/network/site-settings.php:14
+#: wp-admin/network/site-themes.php:14 wp-admin/network/site-users.php:14
+#: wp-admin/network/sites.php:14 wp-admin/network/theme-editor.php:14
+#: wp-admin/network/theme-install.php:17 wp-admin/network/themes.php:14
+#: wp-admin/network/update-core.php:14 wp-admin/network/update.php:17
+#: wp-admin/network/upgrade.php:14 wp-admin/network/user-edit.php:14
+#: wp-admin/network/user-new.php:14 wp-admin/network/users.php:14
 msgid "Multisite support is not enabled."
 msgstr "El soporte multisitio no está activado."
 
@@ -2153,8 +2153,8 @@ msgstr "Debes ser miembro de, al menos, un sitio para usar esta página."
 msgid "Global Settings"
 msgstr "Ajustes globales"
 
-#: wp-admin/my-sites.php:105
 #: wp-admin/includes/class-wp-ms-sites-list-table.php:267
+#: wp-admin/my-sites.php:105
 msgid "Visit"
 msgstr "Visitar"
 
