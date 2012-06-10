@@ -4,7 +4,8 @@
         <li><strong>&infin;manos s.a.s</strong></li>
         <li><a href="http://8manos.com">8manos.com</a></li>
         <li><a href="mailto:info@8manos.com"></a></li>
-        <li>cel: 3108077316 - 3104818369</li>
+        <li>cel: 3108077316</li>
+        <li>Cll 94 #15-32 of. 301 - Bogotá</li>
         <li>NIT: 900381428-7</li>
       </ul>
     </nav>
