@@ -1,18 +1,12 @@
-=== Plugin Name ===
-
-Contributors: eskapism, MarsApril, samface, angrycreative
-
+=== Simple Fields ===
+Contributors: eskapism, MarsApril, samface, angrycreative, earth people
 Donate link: http://eskapism.se/sida/donate/
-
-Tags: admin, fields, custom fields, field manager, attachments, text areas, input fields, tinymce, radio button, drop down, files, meta box, edit, post, post_meta, post meta, custom
-
+Tags: admin, fields, custom fields, advanced custom fields, extended custom fields, field manager, attachments, text areas, input fields, tinymce, radio button, drop down, files, meta box, edit, post, post_meta, post meta, custom
 Requires at least: 3.3.1
+Tested up to: 3.4.2
+Stable tag: 1.0.2
 
-Tested up to: 3.3.1
-
-Stable tag: 0.5
-
-Add different kind of input fields to your edit post page. Field can be of type textarea, TinyMCE, checkbox, radio buttons, drop downs or files.
+Add more advanced custom fields types to your edit post page. Field can be of several types, including textarea, checkbox, radio buttons, files and color picker.
 
 == Description ==
 
@@ -34,23 +28,22 @@ Simple Fields turns WordPress into an even more powerful Content Management Syst
 For more information check out my introductory blog post:
 http://eskapism.se/blogg/2010/05/simple-fields-wp-custom-fields-on-steroids/
 
-Also check out this short tutorial:
-http://eskapism.se/code-playground/simple-fields/tutorial/
+To get started check out the getting started section here:
+http://simple-fields.com/documentation/getting-started/
 
-#### Beta? You bet!
+#### Upgrading? Then backup your database
 
-Please note that this plugin still is in a very early version. Please try it out but be aware of bugs. 
-Also, please remember to backup your database, just to be sure if anything goes wrong.
-For bugreports, feature request and so on, please contact me at par.thernstrom@gmail.com or through twitter
-http://twitter.com/eskapism/.
+Please remember to backup your database when you upgrade this plugin. Everything should work fine, but just to be sure and safe: backup the database!
 
 #### Help and Support
-If you have questions/bug reports/feature requests for Simple Fields please use the WordPress [Support Forum](http://wordpress.org/tags/simple-fields?forum_id=10).
+
+If you have questions/bug reports/feature requests for Simple Fields please use the WordPress [Support Forum](http://wordpress.org/tags/simple-fields?forum_id=10) or 
+[the new GitHub project page for Simple Fields](github.com/bonny/WordPress-Simple-Fields/).
 There are also [tutorials available for Simple Fields](http://eskapism.se/code-playground/simple-fields/).
 
 #### Donation and more plugins
-* If you like this plugin don't forget to [donate to support further development](http://eskapism.se/sida/donate/).
-* Check out some [more plugins](http://wordpress.org/extend/plugins/profile/eskapism) by the same author.
+* If you like this plugin don't forget to [donate to support further development](http://simple-fields.com/about/donate/).
+* Also check out some [more CMS-focused plugins](http://wordpress.org/extend/plugins/profile/eskapism) by the same author.
 
 
 == Installation ==
@@ -60,8 +53,102 @@ As always, make a backup of your database first!
 1. Upload the folder "simple-fields" to "/wp-content/plugins/"
 1. Activate the plugin through the "Plugins" menu in WordPress
 1. Start poking around with Simple Fields under Settings > Simple Fields
-1. Get help at http://eskapism.se/code-playground/simple-fields/ and ask your questions at http://wordpress.org/tags/simple-fields?forum_id=10
+1. Get help at http://eskapism.se/code-playground/simple-fields/ and ask your questions at http://wordpress.org/support/plugin/simple-fields
 1. That's it; you know have a super cool and powerful CMS based on WordPress!
+
+
+== Example usage: Define your simple fields in your theme ==
+
+Simple fields now supports registering field groups and fields with php code. For example, try this in your functions.php:
+
+--- 8< ---
+
+simple_fields_register_field_group('test',
+                array (
+                    'name' => 'Test field group',
+                    'description' => "Test field description",
+                    'repeatable' => 1,
+                    'fields' => array(
+                                    array('name' => 'Test text',
+                                          'description' => 'Text description',
+                                          'type' => 'text'
+                                    ),
+                                    array('name' => 'Test textarea',
+                                          'description' => 'Textarea description',
+                                          'type' => 'textarea',
+                                          'type_textarea_options' => array('use_html_editor' => 1)
+                                    ),
+                                    array('name' => 'Test checkbox',
+                                          'description' => 'Checkbox description',
+                                          'type' => 'checkbox',
+                                          'type_checkbox_options' => array('checked_by_default' => 1)
+                                    ),
+                                    array('name' => 'Test radiobutton',
+                                          'description' => 'Radiobutton description',
+                                          'type' => 'radiobutton',
+                                          'type_radiobutton_options' => array(array("value" => "Yes"),
+                                                                              array("value" => "No")
+                                                                        )
+                                    ),
+                                    array('name' => 'Test dropdown',
+                                          'description' => 'Dropdown description',
+                                          'type' => 'dropdown',
+                                          'type_dropdown_options' => array(array("value" => "Yes"),
+                                                                           array("value" => "No")
+                                                                     )
+                                    ),
+                                    array('name' => 'Test file',
+                                          'description' => 'File description',
+                                          'type' => 'file'
+                                    ),
+                                    array('name' => 'Test post',
+                                          'description' => 'Post description',
+                                          'type' => 'post',
+                                          'type_post_options' => array("enabled_post_types" => array("post"))
+                                    ),
+                                    array('name' => 'Test taxonomy',
+                                          'description' => 'Taxonomy description',
+                                          'type' => 'taxonomy',
+                                          'type_taxonomy_options' => array("enabled_taxonomies" => array("category"))
+                                    ),
+                                    array('name' => 'Test taxonomy term',
+                                          'description' => 'Taxonomy term description',
+                                          'type' => 'taxonomyterm',
+                                          'type_taxonomyterm_options' => array("enabled_taxonomy" => "category")
+                                    ),
+                                    array('name' => 'Test color selector',
+                                          'description' => 'Color selector description',
+                                          'type' => 'color'
+                                    ),
+                                    array('name' => 'Test date selector',
+                                          'description' => 'Date selector description',
+                                          'type' => 'date',
+                                          'type_date_options' => array('use_time' => 1)
+                                    ),
+                                    array('name' => 'Test user selector',
+                                          'description' => 'User selector description',
+                                          'type' => 'user'
+                                    )
+                                )
+                )
+);
+
+simple_fields_register_post_connector('test_connector',
+                array (
+                    'name' => "A test connector",
+                    'field_groups' => array(
+                                            array('name' => 'Test fields',
+                                                  'key' => 'test',
+                                                  'context' => 'normal',
+                                                  'priority' => 'high')
+                                      ),
+                    'post_types' => array('post')
+                )
+);
+
+simple_fields_register_post_type_default('test_connector', 'post');
+
+--- >8 ---
 
 
 == Screenshots ==
@@ -76,6 +163,30 @@ See that "Add"-link above "Article images"? That means that it is repeatable, so
 
 
 == Changelog ==
+
+#### Version 1.0.2
+- Changed: Don't load example field types
+- Fixed: jQuery is needed for debug output but was not enqueued
+- Added: French translation. Thank you very much, translator!
+- Small bugfixes
+- Added unit tests. Hopefully this makes it easier for me to spot bugs in the future. Btw: these are the first unit tests I've ever written, so please feel free to comment on the way I've done it! :)
+
+#### Version 1.0.1
+- Fixed: some warning and notice-errors, for example when a post connector did not have any field groups connected
+
+#### Version 1.0
+- Note: This is a pretty big update, so please backup your databases before installation!
+- Added: Support for adding Custom Field Types/Field Type extensions. Makes Simple Fields Endless Extendable! :)
+- Added: New functions for registering field groups and fields in php, see example usage.
+- Added: New better/easier functions for getting the saved values for a post: simple_fields_value() and simple_fields_values()
+- Added: Field slugs and field group slugs. Now you can use the slug instead of the id to get the values.
+- Added: Added CSS classes to field groups in admin area, so developers can style things there.
+- Added: Actions and filter so developers can modify parts of Simple Fields behavior.
+- Added: Functions for getting the connector for the current post. See simple_fields_connector() and simple_fields_is_connector().
+- Added: Function to set value, see simple_fields_set_value()
+- Added: German translation by Johann Heyne (http://johannheyne.de). Thanks a lot!
+- Fixed: Simple Fields is now mostly a class.
+- Fixed: Various bugfixes.
 
 #### 0.5
 - Added: New function: simple_fields_query_posts(). Fetch and sort posts by simple fields value.

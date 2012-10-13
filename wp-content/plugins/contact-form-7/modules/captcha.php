@@ -195,6 +195,9 @@ function wpcf7_captcha_messages( $messages ) {
 add_action( 'admin_init', 'wpcf7_add_tag_generator_captcha', 45 );
 
 function wpcf7_add_tag_generator_captcha() {
+	if ( ! function_exists( 'wpcf7_add_tag_generator' ) )
+		return;
+
 	wpcf7_add_tag_generator( 'captcha', __( 'CAPTCHA', 'wpcf7' ),
 		'wpcf7-tg-pane-captcha', 'wpcf7_tg_pane_captcha' );
 }
@@ -272,10 +275,10 @@ function wpcf7_tg_pane_captcha( &$contact_form ) {
 
 /* Warning message */
 
-add_action( 'wpcf7_admin_before_subsubsub', 'wpcf7_captcha_display_warning_message' );
+add_action( 'wpcf7_admin_notices', 'wpcf7_captcha_display_warning_message' );
 
-function wpcf7_captcha_display_warning_message( &$contact_form ) {
-	if ( ! $contact_form )
+function wpcf7_captcha_display_warning_message() {
+	if ( empty( $_GET['post'] ) || ! $contact_form = wpcf7_contact_form( $_GET['post'] ) )
 		return;
 
 	$has_tags = (bool) $contact_form->form_scan_shortcode(

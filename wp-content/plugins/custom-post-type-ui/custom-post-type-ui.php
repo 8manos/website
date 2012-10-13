@@ -4,12 +4,12 @@ Plugin Name: Custom Post Type UI
 Plugin URI: http://webdevstudios.com/support/wordpress-plugins/
 Description: Admin panel for creating custom post types and custom taxonomies in WordPress
 Author: WebDevStudios.com
-Version: 0.7.1
+Version: 0.7.2
 Author URI: http://webdevstudios.com/
 */
 
 // Define current version constant
-define( 'CPT_VERSION', '0.7.1' );
+define( 'CPT_VERSION', '0.7.2' );
 
 // Define plugin URL constant
 $CPT_URL = cpt_check_return( 'add' );
@@ -44,28 +44,31 @@ function cpt_plugin_menu() {
 
 //temp fix, should do: http://planetozh.com/blog/2008/04/how-to-load-javascript-with-your-wordpress-plugin/
 //only load JS if on a CPT page
-If ( strpos($_SERVER['REQUEST_URI'], 'cpt')>0 ) {
+if ( strpos( $_SERVER['REQUEST_URI'], 'cpt' ) > 0 ) {
 	add_action( 'admin_head', 'cpt_wp_add_styles' );
 }
+
 // Add JS Scripts
 function cpt_wp_add_styles() {
+	
+	wp_enqueue_script( 'jquery' );
 	?>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js">
-        </script>
+
         <script type="text/javascript" >
-        jQuery(document).ready(function()
-        {
-        jQuery(".comment_button").click(function(){
+			jQuery(document).ready(function()
+			{
+				jQuery(".comment_button").click(function(){
 
-        var element = jQuery(this);
-        var I = element.attr("id");
+					var element = jQuery(this);
+					var I = element.attr("id");
 
-        jQuery("#slidepanel"+I).slideToggle(300);
-        jQuery(this).toggleClass("active");
+					jQuery("#slidepanel"+I).slideToggle(300);
+					jQuery(this).toggleClass("active");
 
-        return false;
-        });
-        });
+					return false;
+					
+				});
+			});
         </script>
     <?php
 }
@@ -102,6 +105,7 @@ function cpt_create_custom_post_types() {
 			}
 
 			$cpt_has_archive = ( isset ( $cpt_post_type["has_archive"] ) ) ? get_disp_boolean( $cpt_post_type["has_archive"] ) : null;
+			$cpt_exclude_from_search = ( isset ( $cpt_post_type["exclude_from_search"] ) ) ? get_disp_boolean( $cpt_post_type["exclude_from_search"] ) : null;
 
 			$cpt_labels['add_new'] = ( $cpt_post_type[2]["add_new"] ) ? $cpt_post_type[2]["add_new"] : 'Add ' .$cpt_singular;
 			$cpt_labels['add_new_item'] = ( $cpt_post_type[2]["add_new_item"] ) ? $cpt_post_type[2]["add_new_item"] : 'Add New ' .$cpt_singular;
@@ -123,6 +127,7 @@ function cpt_create_custom_post_types() {
 				'show_in_menu' => $cpt_show_in_menu,
 				'capability_type' => $cpt_post_type["capability_type"],
 				'hierarchical' => get_disp_boolean($cpt_post_type["hierarchical"]),
+				'exclude_from_search' => $cpt_exclude_from_search,
 				'rewrite' => array('slug' => $cpt_rewrite_slug),
 				'query_var' => get_disp_boolean($cpt_post_type["query_var"]),
 				'description' => esc_html($cpt_post_type["description"]),
@@ -187,46 +192,49 @@ function cpt_delete_post_type() {
 	global $CPT_URL;
 
 	//check if we are deleting a custom post type
-	If(isset($_GET['deltype'])) {
-		check_admin_referer('cpt_delete_post_type');
-		$delType = intval($_GET['deltype']);
-		$cpt_post_types = get_option('cpt_custom_post_types');
+	if( isset( $_GET['deltype'] ) ) {
+		
+		//nonce security check
+		check_admin_referer( 'cpt_delete_post_type' );
+		
+		$delType = intval( $_GET['deltype'] );
+		$cpt_post_types = get_option( 'cpt_custom_post_types' );
 
-		unset($cpt_post_types[$delType]);
+		unset( $cpt_post_types[$delType] );
 
-		$cpt_post_types = array_values($cpt_post_types);
+		$cpt_post_types = array_values( $cpt_post_types );
 
-		update_option('cpt_custom_post_types', $cpt_post_types);
+		update_option( 'cpt_custom_post_types', $cpt_post_types );
 
-		If (isset($_GET['return'])) {
-			$RETURN_URL = cpt_check_return(esc_attr($_GET['return']));
-		}Else{
+		if ( isset( $_GET['return'] ) ) {
+			$RETURN_URL = cpt_check_return( esc_attr( $_GET['return'] ) );
+		}else{
 			$RETURN_URL = $CPT_URL;
 		}
 
-		wp_redirect($RETURN_URL .'&cpt_msg=del');
+		wp_redirect( $RETURN_URL .'&cpt_msg=del' );
 	}
 
 	//check if we are deleting a custom taxonomy
-	If(isset($_GET['deltax'])) {
-		check_admin_referer('cpt_delete_tax');
+	if( isset( $_GET['deltax'] ) ) {
+		check_admin_referer( 'cpt_delete_tax' );
 
-		$delType = intval($_GET['deltax']);
-		$cpt_taxonomies = get_option('cpt_custom_tax_types');
+		$delType = intval( $_GET['deltax'] );
+		$cpt_taxonomies = get_option( 'cpt_custom_tax_types' );
 
-		unset($cpt_taxonomies[$delType]);
+		unset( $cpt_taxonomies[$delType] );
 
-		$cpt_taxonomies = array_values($cpt_taxonomies);
+		$cpt_taxonomies = array_values( $cpt_taxonomies );
 
-		update_option('cpt_custom_tax_types', $cpt_taxonomies);
+		update_option( 'cpt_custom_tax_types', $cpt_taxonomies );
 
-		If (isset($_GET['return'])) {
-			$RETURN_URL = cpt_check_return(esc_attr($_GET['return']));
-		}Else{
+		if ( isset( $_GET['return'] ) ) {
+			$RETURN_URL = cpt_check_return( esc_attr( $_GET['return'] ) );
+		}else{
 			$RETURN_URL = $CPT_URL;
 		}
 
-		wp_redirect($RETURN_URL .'&cpt_msg=del');
+		wp_redirect( $RETURN_URL .'&cpt_msg=del' );
 	}
 
 }
@@ -234,12 +242,12 @@ function cpt_delete_post_type() {
 function cpt_register_settings() {
 	global $cpt_error, $CPT_URL;
 
-	If (isset($_POST['cpt_edit'])) {
+	if ( isset( $_POST['cpt_edit'] ) ) {
 		//edit a custom post type
-		check_admin_referer('cpt_add_custom_post_type');
+		check_admin_referer( 'cpt_add_custom_post_type' );
 
 		//custom post type to edit
-		$cpt_edit = intval($_POST['cpt_edit']);
+		$cpt_edit = intval( $_POST['cpt_edit'] );
 
 		//edit the custom post type
 		$cpt_form_fields = $_POST['cpt_custom_post_type'];
@@ -250,184 +258,192 @@ function cpt_register_settings() {
 
 		//add taxonomies support checkbox values to array
 		$cpt_addon_taxes = ( isset( $_POST['cpt_addon_taxes'] ) ) ? $_POST['cpt_addon_taxes'] : null;
-		array_push($cpt_form_fields, $cpt_addon_taxes);
+		array_push( $cpt_form_fields, $cpt_addon_taxes );
 
 		//add label values to array
-		array_push($cpt_form_fields, $_POST['cpt_labels']);
+		array_push( $cpt_form_fields, $_POST['cpt_labels'] );
 
 		//load custom posts saved in WP
-		$cpt_options = get_option('cpt_custom_post_types');
+		$cpt_options = get_option( 'cpt_custom_post_types' );
 
-		If (is_array($cpt_options)) {
+		if ( is_array( $cpt_options ) ) {
 
-			unset($cpt_options[$cpt_edit]);
+			unset( $cpt_options[$cpt_edit] );
 
 			//insert new custom post type into the array
-			array_push($cpt_options, $cpt_form_fields);
+			array_push( $cpt_options, $cpt_form_fields );
 
-			$cpt_options = array_values($cpt_options);
+			$cpt_options = array_values( $cpt_options );
 
 			//save custom post types
-			update_option('cpt_custom_post_types', $cpt_options);
+			update_option( 'cpt_custom_post_types', $cpt_options );
 
-			If (isset($_GET['return'])) {
-				$RETURN_URL = cpt_check_return(esc_attr($_GET['return']));
-			}Else{
+			if ( isset( $_GET['return'] ) ) {
+				$RETURN_URL = cpt_check_return( esc_attr( $_GET['return'] ) );
+			}else{
 				$RETURN_URL = $CPT_URL;
 			}
 
-			wp_redirect($RETURN_URL);
+			wp_redirect( $RETURN_URL );
 
 		}
 
-	}ElseIf(isset($_POST['cpt_submit'])) {
+	}elseif( isset( $_POST['cpt_submit'] ) ) {
 		//create a new custom post type
-		check_admin_referer('cpt_add_custom_post_type');
+		
+		//nonce security check
+		check_admin_referer( 'cpt_add_custom_post_type' );
 
 		//retrieve new custom post type values
 		$cpt_form_fields = $_POST['cpt_custom_post_type'];
 
-		If (empty($cpt_form_fields["name"])) {
-			If (isset($_GET['return'])) {
-				$RETURN_URL = cpt_check_return(esc_attr($_GET['return']));
-			}Else{
+		if ( empty( $cpt_form_fields["name"] ) ) {
+			if ( isset( $_GET['return'] ) ) {
+				$RETURN_URL = cpt_check_return( esc_attr( $_GET['return'] ) );
+			}else{
 				$RETURN_URL = $CPT_URL;
 			}
 
-			wp_redirect($RETURN_URL .'&cpt_error=1');
+			wp_redirect( $RETURN_URL .'&cpt_error=1' );
 			exit();
 		}
 
 		//add support checkbox values to array
 		$cpt_supports = ( isset( $_POST['cpt_supports'] ) ) ? $_POST['cpt_supports'] : null;
-		array_push($cpt_form_fields, $cpt_supports);
+		array_push( $cpt_form_fields, $cpt_supports );
 
 		//add taxonomies support checkbox values to array
 		$cpt_addon_taxes = ( isset( $_POST['cpt_addon_taxes'] ) ) ? $_POST['cpt_addon_taxes'] : null;
-		array_push($cpt_form_fields, $cpt_addon_taxes);
+		array_push( $cpt_form_fields, $cpt_addon_taxes );
 
 		//add label values to array
-		array_push($cpt_form_fields, $_POST['cpt_labels']);
+		array_push( $cpt_form_fields, $_POST['cpt_labels'] );
 
 		//load custom posts saved in WP
-		$cpt_options = get_option('cpt_custom_post_types');
+		$cpt_options = get_option( 'cpt_custom_post_types' );
 
 		//check if option exists, if not create an array for it
-		If (!is_array($cpt_options)) {
+		if ( !is_array( $cpt_options ) ) {
 			$cpt_options = array();
 		}
 
 		//insert new custom post type into the array
-		array_push($cpt_options, $cpt_form_fields);
+		array_push( $cpt_options, $cpt_form_fields );
 
 		//save new custom post type array in the CPT option
-		update_option('cpt_custom_post_types', $cpt_options);
+		update_option( 'cpt_custom_post_types', $cpt_options );
 
-		If (isset($_GET['return'])) {
-			$RETURN_URL = cpt_check_return(esc_attr($_GET['return']));
-		}Else{
+		if ( isset( $_GET['return'] ) ) {
+			$RETURN_URL = cpt_check_return( esc_attr( $_GET['return'] ) );
+		}else{
 			$RETURN_URL = $CPT_URL;
 		}
 
-		wp_redirect($RETURN_URL .'&cpt_msg=1');
+		wp_redirect( $RETURN_URL .'&cpt_msg=1' );
 	}
 
-	If (isset($_POST['cpt_edit_tax'])) {
+	if ( isset( $_POST['cpt_edit_tax'] ) ) {
 		//edit a custom taxonomy
-		check_admin_referer('cpt_add_custom_taxonomy');
+		
+		//nonce security check
+		check_admin_referer( 'cpt_add_custom_taxonomy' );
 
 		//custom taxonomy to edit
-		$cpt_edit = intval($_POST['cpt_edit_tax']);
+		$cpt_edit = intval( $_POST['cpt_edit_tax'] );
 
 		//edit the custom taxonomy
 		$cpt_form_fields = $_POST['cpt_custom_tax'];
 
 		//add label values to array
-		array_push($cpt_form_fields, $_POST['cpt_tax_labels']);
+		array_push( $cpt_form_fields, $_POST['cpt_tax_labels'] );
 
 		//add attached post type values to array
-		array_push($cpt_form_fields, $_POST['cpt_post_types']);
+		array_push( $cpt_form_fields, $_POST['cpt_post_types'] );
 
 		//load custom posts saved in WP
-		$cpt_options = get_option('cpt_custom_tax_types');
+		$cpt_options = get_option( 'cpt_custom_tax_types' );
 
-		If (is_array($cpt_options)) {
+		if ( is_array( $cpt_options ) ) {
 
-			unset($cpt_options[$cpt_edit]);
+			unset( $cpt_options[$cpt_edit] );
 
 			//insert new custom post type into the array
-			array_push($cpt_options, $cpt_form_fields);
+			array_push( $cpt_options, $cpt_form_fields );
 
-			$cpt_options = array_values($cpt_options);
+			$cpt_options = array_values( $cpt_options );
 
 			//save custom post types
-			update_option('cpt_custom_tax_types', $cpt_options);
+			update_option( 'cpt_custom_tax_types', $cpt_options );
 
-			If (isset($_GET['return'])) {
-				$RETURN_URL = cpt_check_return(esc_attr($_GET['return']));
-			}Else{
+			if ( isset( $_GET['return'] ) ) {
+				$RETURN_URL = cpt_check_return( esc_attr( $_GET['return'] ) );
+			}else{
 				$RETURN_URL = $CPT_URL;
 			}
 
-			wp_redirect($RETURN_URL);
+			wp_redirect( $RETURN_URL );
 
 		}
 
-	}ElseIf(isset($_POST['cpt_add_tax'])) {
+	}elseif( isset( $_POST['cpt_add_tax'] ) ) {
 		//create new custom taxonomy
-		check_admin_referer('cpt_add_custom_taxonomy');
+		
+		//nonce security check
+		check_admin_referer( 'cpt_add_custom_taxonomy' );
 
 		//retrieve new custom taxonomy values
 		$cpt_form_fields = $_POST['cpt_custom_tax'];
 
 		//verify required fields are filled out
-		If (empty($cpt_form_fields["name"])) {
-			If (isset($_GET['return'])) {
-				$RETURN_URL = cpt_check_return(esc_attr($_GET['return']));
+		if ( empty( $cpt_form_fields["name"] ) ) {
+			if ( isset( $_GET['return'] ) ) {
+				$RETURN_URL = cpt_check_return( esc_attr( $_GET['return'] ) );
 			}Else{
 				$RETURN_URL = $CPT_URL;
 			}
 
-			wp_redirect($RETURN_URL .'&cpt_error=2');
+			wp_redirect( $RETURN_URL .'&cpt_error=2' );
 			exit();
+			
 		}elseif ( empty( $_POST['cpt_post_types'] ) ) {
-			If (isset($_GET['return'])) {
-				$RETURN_URL = cpt_check_return(esc_attr($_GET['return']));
-			}Else{
+			if ( isset( $_GET['return'] ) ) {
+				$RETURN_URL = cpt_check_return( esc_attr( $_GET['return'] ) );
+			}else{
 				$RETURN_URL = $CPT_URL;
 			}
 
-			wp_redirect($RETURN_URL .'&cpt_error=3');
+			wp_redirect( $RETURN_URL .'&cpt_error=3' );
 			exit();
+			
 		}
 
 		//add label values to array
-		array_push($cpt_form_fields, $_POST['cpt_tax_labels']);
+		array_push( $cpt_form_fields, $_POST['cpt_tax_labels'] );
 
 		//add attached post type values to array
-		array_push($cpt_form_fields, $_POST['cpt_post_types']);
+		array_push( $cpt_form_fields, $_POST['cpt_post_types'] );
 
 		//load custom taxonomies saved in WP
-		$cpt_options = get_option('cpt_custom_tax_types');
+		$cpt_options = get_option( 'cpt_custom_tax_types' );
 
 		//check if option exists, if not create an array for it
-		If (!is_array($cpt_options)) {
+		if ( !is_array( $cpt_options ) ) {
 			$cpt_options = array();
 		}
 
 		//insert new custom taxonomy into the array
-		array_push($cpt_options, $cpt_form_fields);
+		array_push( $cpt_options, $cpt_form_fields );
 
 		//save new custom taxonomy array in the CPT option
-		update_option('cpt_custom_tax_types', $cpt_options);
+		update_option( 'cpt_custom_tax_types', $cpt_options );
 
-		If (isset($_GET['return'])) {
-			$RETURN_URL = cpt_check_return(esc_attr($_GET['return']));
-		}Else{
+		if ( isset( $_GET['return'] ) ) {
+			$RETURN_URL = cpt_check_return( esc_attr( $_GET['return'] ) );
+		}else{
 			$RETURN_URL = $CPT_URL;
 		}
 
-		wp_redirect($RETURN_URL .'&cpt_msg=2');
+		wp_redirect( $RETURN_URL .'&cpt_msg=2' );
 
 	}
 }
@@ -464,7 +480,7 @@ function cpt_settings() {
 			</form>
 		    </p>
 		</td>
-		<td valign="top" width="33%"><a href="http://bit.ly/pro-wp" target="_blank"><img src="<?php echo plugins_url( '/images/professional-wordpress.jpg', __FILE__ ); ?>" width="200"></a><br />The leading book on WordPress design and development!</td>
+		<td valign="top" width="33%"><a href="http://bit.ly/pro-wp" target="_blank"><img src="<?php echo plugins_url( '/images/professional-wordpress.jpg', __FILE__ ); ?>" width="200"></a><br />The leading book on WordPress design and development!<br /><strong>Second Edition coming December 2012!</strong></td>
 		<td valign="top" width="33%"><a href="http://amzn.to/plugindevbook" target="_blank"><img src="<?php echo plugins_url( '/images/professional-wordpress-plugin-development.png', __FILE__ ); ?>" width="200"></a><br />Check out my new book all about plugin development!</td>
 	    </tr>
 	</table>
@@ -654,6 +670,10 @@ If (isset($_GET['cpt_msg']) && $_GET['cpt_msg']=='del') { ?>
 						    $custom_post_type .= '\'has_archive\' => '. disp_boolean( $cpt_post_type["has_archive"] ).',';
 						}
 
+						if ( isset( $cpt_post_type["exclude_from_search"] ) ) {
+						    $custom_post_type .= '\'exclude_from_search\' => '. disp_boolean( $cpt_post_type["exclude_from_search"] ).',';
+						}
+						
 						if ( $cpt_post_type["menu_position"] ) {
 						    $custom_post_type .= '\'menu_position\' => '. $cpt_post_type["menu_position"].',';
 						}
@@ -949,6 +969,7 @@ If (isset($_GET['edittype']) && !isset($_GET['cpt_edit'])) {
 	$cpt_taxes = $cpt_options[$editType][1];
 	$cpt_labels = $cpt_options[$editType][2];
 	$cpt_has_archive = ( isset( $cpt_options[$editType]["has_archive"] ) ) ? $cpt_options[$editType]["has_archive"] : null;
+	$cpt_exclude_from_search = ( isset( $cpt_options[$editType]["exclude_from_search"] ) ) ? $cpt_options[$editType]["exclude_from_search"] : null;
 	$cpt_show_in_menu = ( isset( $cpt_options[$editType]["show_in_menu"] ) ) ? $cpt_options[$editType]["show_in_menu"] : null;
 	$cpt_show_in_menu_string = ( isset( $cpt_options[$editType]["show_in_menu_string"] ) ) ? $cpt_options[$editType]["show_in_menu_string"] : null;
 
@@ -1016,9 +1037,9 @@ If (isset($_GET['cpt_msg']) && $_GET['cpt_msg']==1) { ?>
 }
 ?>
 <?php screen_icon( 'plugins' ); ?>
-<?php If ( isset( $_GET['edittype'] ) || isset( $_GET['edittax'] ) ) { ?>
+<?php if ( isset( $_GET['edittype'] ) || isset( $_GET['edittax'] ) ) { ?>
     <h2><?php _e('Edit Custom Post Type or Taxonomy', 'cpt-plugin') ?> &middot; <a href="<?php echo cpt_check_return( 'add' ); ?>"><?php _e('Reset', 'cpt-plugin');?></a></h2>
-<?php }Else{ ?>
+<?php }else{ ?>
     <h2><?php _e('Create New Custom Post Type or Taxonomy', 'cpt-plugin') ?> &middot; <a href="<?php echo cpt_check_return( 'add' ); ?>"><?php _e('Reset', 'cpt-plugin');?></a></h2>
 <?php } ?>
 <table border="0" cellspacing="10" class="widefat">
@@ -1026,17 +1047,22 @@ If (isset($_GET['cpt_msg']) && $_GET['cpt_msg']==1) { ?>
     	<td width="50%" valign="top">
             <p><?php _e('If you are unfamiliar with the options below only fill out the <strong>Post Type Name</strong> and <strong>Label</strong> fields and check which meta boxes to support.  The other settings are set to the most common defaults for custom post types.', 'cpt-plugin'); ?></p>
             <form method="post" <?php echo $RETURN_URL; ?>>
-                <?php if ( function_exists('wp_nonce_field') )
-                    wp_nonce_field('cpt_add_custom_post_type'); ?>
-                <?php If (isset($_GET['edittype'])) { ?>
-                <input type="hidden" name="cpt_edit" value="<?php echo $editType; ?>" />
+                <?php 
+				if ( function_exists( 'wp_nonce_field' ) )
+                    wp_nonce_field( 'cpt_add_custom_post_type' ); 
+				?>
+                <?php if ( isset( $_GET['edittype'] ) ) { ?>
+                <input type="hidden" name="cpt_edit" value="<?php echo esc_attr( $editType ); ?>" />
                 <?php } ?>
                 <table class="form-table">
                     <tr valign="top">
-                    <th scope="row"><?php _e('Post Type Name', 'cpt-plugin') ?> <span style="color:red;">*</span></th>
-                    <td><input type="text" name="cpt_custom_post_type[name]" tabindex="1" value="<?php If (isset($cpt_post_type_name)) { echo esc_attr($cpt_post_type_name); } ?>" /> <a href="#" title="The post type name.  Used to retrieve custom post type content.  Should be short and sweet" style="cursor: help;">?</a> (e.g. movies)</td>
+						<th scope="row"><?php _e('Post Type Name', 'cpt-plugin') ?> <span style="color:red;">*</span></th>
+						<td><input type="text" name="cpt_custom_post_type[name]" tabindex="1" value="<?php If (isset($cpt_post_type_name)) { echo esc_attr($cpt_post_type_name); } ?>" maxlength="20" onblur="this.value=this.value.toLowerCase()" /> <a href="#" title="The post type name.  Used to retrieve custom post type content.  Should be short and sweet" style="cursor: help;">?</a> (e.g. movies)
+						<br />
+						<p><strong><?php _e( 'Max 20 characters, can not contain capital letters or spaces', 'cpt-plugin' ); ?></strong></p>
+						</td>
                     </tr>
-
+					
                     <tr valign="top">
                     <th scope="row"><?php _e('Label', 'cpt-plugin') ?></th>
                     <td><input type="text" name="cpt_custom_post_type[label]" tabindex="2" value="<?php If (isset($cpt_label)) { echo esc_attr($cpt_label); } ?>" /> <a href="#" title="Post type label.  Used in the admin menu for displaying post types." style="cursor: help;">?</a> (e.g. Movies)</td>
@@ -1164,8 +1190,18 @@ If (isset($_GET['cpt_msg']) && $_GET['cpt_msg']==1) { ?>
                     </tr>
 
                     <tr valign="top">
+                    <th scope="row"><?php _e('Exclude From Search', 'cpt-plugin') ?></th>
+                    <td>
+                        <SELECT name="cpt_custom_post_type[exclude_from_search]" tabindex="6">
+                            <OPTION value="0" <?php If (isset($cpt_exclude_from_search)) { If ($cpt_exclude_from_search == 0) { echo 'selected="selected"'; } }Else{ echo 'selected="selected"'; } ?>>False</OPTION>
+                            <OPTION value="1" <?php If (isset($cpt_exclude_from_search)) { If ($cpt_exclude_from_search == 1) { echo 'selected="selected"'; } } ?>>True</OPTION>
+                        </SELECT> <a href="#" title="Whether the post type will be searchable" style="cursor: help;">?</a> (default: False)
+                    </td>
+                    </tr>
+					
+                    <tr valign="top">
                     <th scope="row"><?php _e('Capability Type', 'cpt-plugin') ?></th>
-                    <td><input type="text" name="cpt_custom_post_type[capability_type]" tabindex="6" value="post" value="<?php echo esc_attr($cpt_capability); ?>" /> <a href="#" title="The post type to use for checking read, edit, and delete capabilities" style="cursor: help;">?</a></td>
+                    <td><input type="text" name="cpt_custom_post_type[capability_type]" tabindex="6" value="post" value="<?php if ( isset( $cpt_capability ) ) { echo esc_attr( $cpt_capability ); } ?>" /> <a href="#" title="The post type to use for checking read, edit, and delete capabilities" style="cursor: help;">?</a></td>
                     </tr>
 
                     <tr valign="top">
@@ -1215,7 +1251,7 @@ If (isset($_GET['cpt_msg']) && $_GET['cpt_msg']==1) { ?>
                             <OPTION value="0" <?php If (isset($cpt_show_in_menu)) { If ($cpt_show_in_menu == 0 && $cpt_show_in_menu != '') { echo 'selected="selected"'; } } ?>>False</OPTION>
                             <OPTION value="1" <?php If (isset($cpt_show_in_menu)) { If ($cpt_show_in_menu == 1 || is_null($cpt_show_in_menu)) { echo 'selected="selected"'; } }Else{ echo 'selected="selected"'; } ?>>True</OPTION>
                         </SELECT> <a href="#" title="" style="cursor: help;">?</a> Top level page (e.g. 'plugins.php')
-			<input type="text" name="cpt_custom_post_type[show_in_menu_string]" tabindex="12" size="5" value="<?php If (isset($cpt_show_in_menu_string)) { echo esc_attr($cpt_show_in_menu_string); } ?>" /> <a href="#" title="Whether to show the post type in the admin menu and where to show that menu. Note that show_ui must be true" style="cursor: help;">?</a></td>
+						<input type="text" name="cpt_custom_post_type[show_in_menu_string]" tabindex="12" size="5" value="<?php If (isset($cpt_show_in_menu_string)) { echo esc_attr($cpt_show_in_menu_string); } ?>" /> <a href="#" title="Whether to show the post type in the admin menu and where to show that menu. Note that show_ui must be true" style="cursor: help;">?</a></td>
                     </tr>
 
                     <tr valign="top">

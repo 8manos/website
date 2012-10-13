@@ -211,10 +211,12 @@ function wpmu_current_site() {
 	}
 
 	// Still no dice.
+	wp_load_translations_early();
+
 	if ( 1 == count( $sites ) )
-		wp_die( sprintf( /*WP_I18N_BLOG_DOESNT_EXIST*/'Este sitio no existe. Por favor, prueba <a href="%s">%s</a>.'/*/WP_I18N_BLOG_DOESNT_EXIST*/, $sites[0]->domain . $sites[0]->path ) );
+		wp_die( sprintf( __( 'That site does not exist. Please try <a href="%s">%s</a>.' ), 'http://' . $sites[0]->domain . $sites[0]->path ) );
 	else
-		wp_die( /*WP_I18N_NO_SITE_DEFINED*/'No se ha definido un sitio para este servidor. Si eres el propietario de este sitio, por favor, consulta <a href="http://codex.wordpress.org/Debugging_a_WordPress_Network">Arreglando una red de WordPress</a> para tener ayuda.'/*/WP_I18N_NO_SITE_DEFINED*/ );
+		wp_die( __( 'No site defined on this host. If you are the owner of this site, please check <a href="http://codex.wordpress.org/Debugging_a_WordPress_Network">Debugging a WordPress Network</a> for help.' ) );
 }
 
 /**
@@ -228,19 +230,21 @@ function wpmu_current_site() {
 function ms_not_installed() {
 	global $wpdb, $domain, $path;
 
-	$title = /*WP_I18N_FATAL_ERROR*/'Error estableciendo conexión con la base de datos'/*/WP_I18N_FATAL_ERROR*/;
+	wp_load_translations_early();
+
+	$title = __( 'Error establishing database connection' );
 	$msg  = '<h1>' . $title . '</h1>';
 	if ( ! is_admin() )
 		die( $msg );
-	$msg .= '<p>' . /*WP_I18N_CONTACT_OWNER*/'Si tu sitio no se muestra contacta con el propietario de esta red.'/*/WP_I18N_CONTACT_OWNER*/ . '';
-	$msg .= ' ' . /*WP_I18N_CHECK_MYSQL*/'Si eres el propietario de esta red comprueba que MySQL se está ejecutando adecuadamente y que niguna de las tablas tiene errores.'/*/WP_I18N_CHECK_MYSQL*/ . '</p>';
+	$msg .= '<p>' . __( 'If your site does not display, please contact the owner of this network.' ) . '';
+	$msg .= ' ' . __( 'If you are the owner of this network please check that MySQL is running properly and all tables are error free.' ) . '</p>';
 	if ( false && !$wpdb->get_var( "SHOW TABLES LIKE '$wpdb->site'" ) )
-		$msg .= '<p>' . sprintf( /*WP_I18N_TABLES_MISSING_LONG*/'<strong>Se han perdido las tablas de la base de datos.</strong> Esto quiere decir que MySQL no está funcionando, WordPress no ha sido instalado correctamente, o alguien ha eliminado <code>%s</code>. Realmente, debes revisar tu base de datos ahora mismo.'/*/WP_I18N_TABLES_MISSING_LONG*/, $wpdb->site ) . '</p>';
+		$msg .= '<p>' . sprintf( __( '<strong>Database tables are missing.</strong> This means that MySQL is not running, WordPress was not installed properly, or someone deleted <code>%s</code>. You really should look at your database now.' ), $wpdb->site ) . '</p>';
 	else
-		$msg .= '<p>' . sprintf( /*WP_I18N_NO_SITE_FOUND*/'<strong>No podemos encontrar el sitio <code>%1$s</code>.</strong> Buscamos la tabla <code>%2$s</code>en la base de datos <code>%3$s</code>. ¿Es correcto?'/*/WP_I18N_NO_SITE_FOUND*/, rtrim( $domain . $path, '/' ), $wpdb->blogs, DB_NAME ) . '</p>';
-	$msg .= '<p><strong>' . /*WP_I18N_WHAT_DO_I_DO*/'¿Ahora qué hago?'/*/WP_I18N_WHAT_DO_I_DO*/ . '</strong> ';
-	$msg .= /*WP_I18N_RTFM*/'Lee la <a target="_blank" href="http://codex.wordpress.org/Debugging_a_WordPress_Network">página de errores</a>. Algunas de las guías que hay ahí pueden ayudarte a hacerte una idea sobre qué ha ido mal.'/*/WP_I18N_RTFM*/;
-	$msg .= ' ' . /*WP_I18N_STUCK*/'Si todavía estás atascado con este mensaje, comprueba que tu base de datos contiene las siguientes tablas:'/*/WP_I18N_STUCK*/ . '</p><ul>';
+		$msg .= '<p>' . sprintf( __( '<strong>Could not find site <code>%1$s</code>.</strong> Searched for table <code>%2$s</code> in database <code>%3$s</code>. Is that right?' ), rtrim( $domain . $path, '/' ), $wpdb->blogs, DB_NAME ) . '</p>';
+	$msg .= '<p><strong>' . __( 'What do I do now?' ) . '</strong> ';
+	$msg .= __( 'Read the <a target="_blank" href="http://codex.wordpress.org/Debugging_a_WordPress_Network">bug report</a> page. Some of the guidelines there may help you figure out what went wrong.' );
+	$msg .= ' ' . __( 'If you&#8217;re still stuck with this message, then check that your database contains the following tables:' ) . '</p><ul>';
 	foreach ( $wpdb->tables('global') as $t => $table ) {
 		if ( 'sitecategories' == $t )
 			continue;
@@ -250,5 +254,3 @@ function ms_not_installed() {
 
 	wp_die( $msg, $title );
 }
-
-?>

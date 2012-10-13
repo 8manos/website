@@ -1,10 +1,10 @@
 === Custom Post Type UI ===
 Contributors: williamsba1
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3084056
-Tags: custom post types, CMS, post, types, post type, cck, taxonomy, tax
+Tags: custom post types, CPT, CMS, post, types, post type, cck, taxonomy, tax, custom
 Requires at least: 3.0
-Tested up to: 3.2.1
-Stable tag: 0.7.1
+Tested up to: 3.4.1
+Stable tag: 0.7.2
 
 Admin UI for creating custom post types and custom taxonomies in WordPress
 
@@ -24,6 +24,13 @@ Below is a slightly outdated example video showing Custom Post Type UI in action
 5. Custom taxonomies are automatically added to your content type screens
 
 == Changelog ==
+
+= 0.7.2 =
+* Added exclude_from_search support
+* Fixed display bug with capability type
+* Fixed JavaScript bug
+* Strict CPT name check
+* Code cleanup
 
 = 0.7.1 =
 * Fixed XSS security bug (props Duck)
@@ -106,6 +113,13 @@ Below is a slightly outdated example video showing Custom Post Type UI in action
 * First beta release
 
 == Upgrade Notice ==
+
+= 0.7.2 =
+* Added exclude_from_search support
+* Fixed display bug with capability type
+* Fixed JavaScript bug
+* Strict CPT name check
+* Code cleanup
 
 = 0.7.1 =
 * XSS security bug patched
@@ -199,10 +213,6 @@ The More Fields plugin does a great job at creating custom meta boxes and fully 
 
 You can either change the custom post type name back to the original name or try the Post Type Switcher plugin here: http://wordpress.org/extend/plugins/post-type-switcher/
 
-= I upgraded the plugin and all of my custom post types broke =
-
-v0.5 reworked how custom post types are stored.  You need to delete and recreate your post types.  You will NOT lose any content by doing this.
-
 = I receive a 404 error when viewing custom post type content =
 
 This is usually caused if the rewrite slug was changed.  To fix this issue simply visit Settings > Permalinks to flush the rewrite rules in WordPress
@@ -210,10 +220,6 @@ This is usually caused if the rewrite slug was changed.  To fix this issue simpl
 = Will this work in previous version of WordPress =
 
 The register_post_type function was added in WordPress 2.9 so technically it should work in 2.9, but there is no admin menu UI so all post types are created and used behind the scenes.
-
-= I'm getting an error: Undefined offset =
-
-v0.3 reworked how custom taxonomies are stored.  You need to delete your current taxonomies and recreate them in the new version for this error to go away.
 
 == Plugin Support ==
 [Custom Post Type UI Support](http://webdevstudios.com/support/forum/custom-post-type-ui/ "WordPress Plugins and Support Services")
