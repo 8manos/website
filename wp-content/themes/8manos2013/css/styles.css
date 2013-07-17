@@ -1,3 +1,14 @@
 .logo-text {
 	font: 2.5em 'Ubuntu', sans-serif;
 }
+
+.archive article {
+	display: inline-block;
+	margin: 0 1%;
+	min-width: 300px;
+	width: 47%;
+}
+.archive article img {
+	height: auto;
+	max-width: 100%;
+}
