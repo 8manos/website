@@ -9,6 +9,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500&text=∞manos' rel='stylesheet' type='text/css'>
 	<link href="<?php bloginfo('template_directory'); ?>/css/normalize.css" rel="stylesheet" media="all">
 	<link href="<?php bloginfo('template_directory'); ?>/css/styles.css" rel="stylesheet" media="all">
 
@@ -20,7 +21,7 @@
 
 	<header role="banner">
 
-		<h1><?php bloginfo('name');?></h1>
+		<h1 class="logo-text"><?php bloginfo('name');?></h1>
 
 		<nav role="navigation">
 			<?php wp_nav_menu(); ?>
@@ -38,7 +39,11 @@
 
 	<footer role="contentinfo">
 
-		<small>Copyright &copy; <time datetime="2013">2013</time></small>
+		<ul>
+			<li><a href="https://twitter.com/8manos">twitter</a></li>
+			<li><a href="https://github.com/8manos">github</a></li>
+		</ul>
+		<p>8manos S.A.S - NIT: 900381428-7 - cel: 3108077316 - Cll 94 #15-32 of. 301, Bogotá, Colombia</p>
 
 	</footer>
 
