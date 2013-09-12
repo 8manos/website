@@ -79,7 +79,7 @@ nav ul li a {
 	text-decoration:none;
 	}
 /*social*/
-.social li {
+.social-menu li {
 	display:inline-block;
 	margin:0 8px 0 0;
 	}
@@ -237,6 +237,20 @@ h1.main-title  span {
 	overflow: hidden;
 	margin: 80px 0 0;
 	padding: 16px 80px;
+}
+.social-menu {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.social-menu li {
+	display: inline;
+}
+#footer .info {
+	color: #eee;
+	float: right;
+	margin: 0;
 }
 .social-menu {
 	float: left;
