@@ -8,8 +8,9 @@
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500&text=∞manos' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500&text=∞manos|Lato:400,700' rel='stylesheet' type='text/css'>
 	<link href="<?php bloginfo('template_directory'); ?>/css/normalize.css" rel="stylesheet" media="all">
 	<link href="<?php bloginfo('template_directory'); ?>/css/styles.css" rel="stylesheet" media="all">
 
@@ -21,11 +22,11 @@
 
 	<header role="banner">
 
-		<h1 class="logo-text"><?php bloginfo('name');?></h1>
-
 		<nav role="navigation">
 			<?php wp_nav_menu(); ?>
 		</nav>
+        
+        <h1 class="logo-text"> <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name');?></a></h1>
 
 	</header>
 

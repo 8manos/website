@@ -4,7 +4,7 @@
 
 	<footer role="contentinfo">
 
-		<ul>
+		<ul class="social">
 			<li><a href="https://twitter.com/8manos">twitter</a></li>
 			<li><a href="https://github.com/8manos">github</a></li>
 		</ul>

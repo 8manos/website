@@ -1,6 +1,187 @@
 .logo-text {
-	font: 2.5em 'Ubuntu', sans-serif;
+	font: normal 2.5em 'Ubuntu', sans-serif;
 }
+/*-------header-------*/
+header {
+	width:100%;
+	height:23px;
+	background:#2B2B2B /*#262C33*/;
+	}
+nav {
+	width:80%;
+	height:40px;
+	margin-left:6%;
+	background:#393939 /*#323A45*/;
+	}
+nav ul {
+	list-style:none;
+	margin-left:4%;
+	}
+nav ul li {
+	display:inline-block;
+	margin-right:5px;
+	line-height:40px;
+	}
+nav ul li a {
+	color:#FFF;
+	display:block;
+	padding:0 12px;
+	text-decoration:none;
+	/*fuente temporal*/
+	font-family:Apajarita, serif;
+	font-size:1.2em;
+	text-transform:capitalize;
+	}
+.top_l {
+	width:14%;
+	height:40px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background:#727272;
+	}
+.top_l h1 {
+	margin:0 14px;
+	line-height:40px;
+	font-size:1.5em;
+	}
+.top_l h1 a {
+	color:#FFF;
+	text-decoration:none;
+	}
+/*social*/
+.social li {
+	display:inline-block;
+	margin:0 8px 0 0;
+	}
+.social a {
+	width:30px;
+	height:0;
+	padding-top:30px;
+	display:block;
+	overflow:hidden;
+	background:url(../img/srpite_.png);
+	background:url(../img/srpite_retina.png);
+	background-size: 240px 65px;
+	}
+	
+.twitter { background-position:-180px 0;}
+.github  { background-position:-150px 0;}
+
+/*-------footer-------*/
+footer {
+	width:100%;
+	height:80px;
+	background:#2B2B2B;
+	border-top:7px solid #7A7A7A;
+	margin-top:80px;
+	color:#F5F5F5;
+	position:relative;
+	}
+footer .social {
+	margin:20px 6%;
+	}
+footer .twitter { background-position:-180px -35px;}
+footer .github { background-position:-150px -35px;}
+
+footer p {
+	position:absolute;
+	top:20px;
+	right:6%;
+	font-family:Apajarita, serif;
+	font-size:1em;
+	}
+footer p span {
+	font-style:italic;
+	display:inline-block; 
+	margin-left:20px;
+	}
+.wrap {
+	margin-top:87px;
+	width:80%;
+	margin-left:6%;
+	}
+h1.main-title {
+	font-weight:normal;
+	font-size:2.5em;
+	}
+h1.main-title  span {
+	font-family:'Ubuntu', sans-serif;
+	font-size:1.5em;
+	margin-left:12px;
+	display:inline-block;
+	}
+.wrap .intro {
+	color:#545454;
+	width:74%;
+	margin:58px auto 80px;
+	font-size:1.2em;
+	text-align:center;
+	}
+	
+.portafolio article {
+	width:43%;
+	display:inline-block;
+	vertical-align:top;
+	margin:0 5% 76px 1%;
+	}
+.portafolio article:nth-child(even) {
+	margin:0 0 0 6%;
+	}
+.portafolio article img {
+	width:100%;
+	display:block;
+	padding:10px;
+	border:1px solid #D3D3D3;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	}
+.portafolio article .info {
+	position:relative;
+	padding:16px 24px 0;
+	}
+.portafolio article a {
+	color:#7C7C7C;
+	font-family:Apajarita, serif;
+	text-decoration:none;
+	}
+.portafolio article h2{
+	font-weight:normal;
+	color:#515151;
+	font-size:2.2em;
+	}
+.portafolio article h4 {
+	font-weight:normal;
+	font-style:italic;
+	font-size:14px;
+	}
+.portafolio article .tags {
+	position:absolute;
+	top:-1px;
+	right:0;
+	list-style:none;
+	display:inline-block;
+	padding:6px 10px;
+	border:1px solid #D3D3D3;
+	border-top-color:#FFF;
+	}
+.portafolio article .tags li {
+	display:inline-block;
+	padding-right:3px;
+	}
+.portafolio article .tags li:last-child {
+	margin:0;
+	}
+.portafolio article .tags li:before {
+	content:'+ ';
+	font-size:12px;
+	color:#A0A0A0;
+	} 
+.portafolio article .tags li:first-child:before {
+	content:'';
+	}
+
+
 
 .archive article {
 	display: inline-block;
@@ -12,3 +193,5 @@
 	height: auto;
 	max-width: 100%;
 }
+
+
