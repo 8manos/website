@@ -2,6 +2,14 @@
 
 	<h1><?php post_type_archive_title(); ?></h1>
 
+	<h2>
+		<?php
+		global $wp_query;
+		$post_type = get_post_type_object( $wp_query->query['post_type'] );
+		echo $post_type->description;
+		?>
+	</h2>
+
 	<?php if ( have_posts() ) : ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
