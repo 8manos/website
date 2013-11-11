@@ -58,7 +58,7 @@ nav ul li a {
 	text-transform:capitalize;
 	}
 .top_l {
-	width:15%;
+	width:14%;
 	height:40px;
 	position: absolute;
 	top: 0;
@@ -89,8 +89,14 @@ nav ul li a {
 	background-size: 242px 65px;
 	}
 	
-.twitter a { background-position:-180px 0;}
-.github  a { background-position:-150px 0;}
+.dribbble a { background-position:0 0;}
+.behance  a { background-position:-30px 0;}
+.skype a 	{ background-position:-60px 0;}
+.flickr a 	{ background-position:-90px 0;}
+.vimeo a 	{ background-position:-120px 0;}
+.github  a 	{ background-position:-150px 0;}
+.twitter a 	{ background-position:-180px 0;}
+.mail  a 	{ background-position:-210px 0;}
 
 /*-------footer-------*/
 footer {
@@ -131,6 +137,7 @@ h1.main-title {
 	font-weight:normal;
 	font-size:2.5em;
 	position:relative;
+	margin-left:2.5%;
 	}
 h1.main-title  span {
 	font-family:'Ubuntu', sans-serif;
@@ -148,7 +155,8 @@ h1.main-title  span {
 	text-align:center;
 	}
 /*submenu*/
-.sub-menu {
+.sub-menu,
+.nav-tabs{
 	list-style:none;
 	width:100%;
 	text-align:center;
@@ -161,7 +169,8 @@ h1.main-title  span {
 	display:inline-block;
 	margin:0 -3px;
 	}
-.sub-menu li a {
+.sub-menu li a,
+.nav-tabs li a{
 	display:block;
 	color:#3A3A3A;
 	padding:6px 14px;
@@ -173,7 +182,8 @@ h1.main-title  span {
 	background:#565656;
 	color:#FFF;
 	}
-.sub-menu li.active a:before {
+.sub-menu li.active a:before,
+.nav-tabs li.active a:before {
 	content:'';
 	width: 0px;
 	height: 0px;
@@ -184,6 +194,21 @@ h1.main-title  span {
 	bottom:-12px;
 	left:50%;
 	margin:0 -14px;
+	}
+/*navtabs*/
+.nav-tabs {
+	text-align:left;
+	font-size:20px;
+	margin-top:-60px;
+	}
+.nav-tabs li {
+	display: inline-block;
+	margin-left:-2px;
+	}
+.nav-tabs li.active a,
+.nav-tabs li a:hover{
+	background:#565656;
+	color:#FFF;
 	}
 	
 .portafolio article {
@@ -255,6 +280,7 @@ article .tags li:first-child:before {
 article .info {
 	color:#B8B8B8;
 	font-size:14px;
+	margin-left:2.5%;
 	/*float:left;*/ /*para que la margen superior de el parrafo en portafolio detalle no sea tan alta*/ 
 }
 article .tags {
@@ -347,12 +373,21 @@ article .tags {
 	display:inline-block;
 	}
 .team ul li a {
+	color:#393939;
 	padding-left:18px;
 	background:url(../img/bullet.png) no-repeat 2px 5px;
 	}
 .team ul li a:hover {
 	background-position:2px -14px;
 	color:#6B6B6B;
+	}
+.team ul li a .date {
+	color:#aaa;
+	font-family:Apajarita, serif;
+	font-style:italic;
+	display:inline-block;
+	margin-left:8px;
+	font-size:12px;
 	}
 	
 	
@@ -376,7 +411,7 @@ article .tags {
 }
 
 /*equipo*/
-article.member {
+.member {
 	width: 200px;
 	height: 231px;
 	overflow: hidden;
@@ -389,7 +424,7 @@ article.member {
 	display:inline-block;
 	margin:8px;
 	}
-article.member .thumb-con {
+.member .thumb-con {
 	width: 100%;
     height: 100%;
     overflow: hidden;
@@ -398,12 +433,12 @@ article.member .thumb-con {
          -o-transform: rotate(-60deg);
             transform: rotate(-60deg);
 	}
-article.member .thumbnail{
+.member .thumbnail{
 	display:block;
 	width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    background-position: 50%;
+    background-position: 50% 50%;
     background-image: url(http://placehold.it/240x240&text=default);
     visibility: visible;
     -webkit-transform: rotate(-60deg);
@@ -411,7 +446,7 @@ article.member .thumbnail{
          -o-transform: rotate(-60deg);
             transform: rotate(-60deg);
 }
-article.member img { display:none;}
+.member img { display:none;}
 article.member .name {
 	position:absolute;
 	bottom:0;
@@ -446,6 +481,55 @@ article.member .name h2 + h2 {
 		 -o-transform-origin: 40% -420%;
 			transform-origin: 40% -420%;
 	}
+/*perfil*/
+/*clase temporal mientras se ajusta a wordpress*/
+.perfil h1.main-title { padding-top:18px;}
+.perfil h1.main-title span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	/*margin-top: -18px;*/
+	color:#E6E7E8;
+	}
+.profile-frame {
+	background:url(../img/bg_.png) #808080 repeat;
+	padding:20px 0;
+	margin-top:58px;
+	}
+.profile-frame .wrap {
+	margin-top:0;
+	}
+.profile-frame .member {
+	width: 230px;
+	height: 268px;
+	margin:0 4%;
+	cursor:default;
+}
+.profile-frame .member .thumbnail {background-size:cover;}
+
+.profile-frame .member-intro {
+	display:inline-block;
+	vertical-align:top;
+	margin-top:36px;
+	width:46%;
+	color:#FFF;
+	}
+.profile-frame .member-intro h2 {
+	font-size:36px;
+	font-family:Apajarita, serif;
+	font-weight:normal;
+	line-height:30px;
+	margin-bottom:24px;
+	}
+.profile-frame .member-intro p {
+	margin-bottom:24px;
+	}
+.profile-frame .social-menu li { margin:0;}
+
+.content.tabs {
+	display:none;
+	}
+
 /*---laboratorio---*/
 .laboratorio article {
 	/*width:30%;*/
@@ -529,6 +613,96 @@ article.member .name h2 + h2 {
 	padding:6px 10px;
 	background:#FFF;
 	}
+/*------contacto-----*/
+.contact-frame {
+	background:url(../img/bg_.png) #999999 repeat;
+	padding:20px 0;
+	margin-top:58px;
+	}
+.contact-frame .wrap {
+	margin-top:0;
+	}
+.data {
+	width:26%;
+	display:inline-block;
+	margin-left:2%;
+	}
+.data ul {
+	list-style:none;
+	color:#FFFFFF;
+	}
+.data ul li {
+	padding-top:3px;
+	font-size:13px;
+	}
+.data ul li a {
+	color:#FFFFFF;
+	}
+.data li.mail,
+.data li.twitter,
+.data li.github {
+	padding-left:35px;
+	position:relative;
+	font-size:16px;
+	margin-bottom:15px;
+	}
+.data li.mail:before,
+.data li.twitter:before,
+.data li.github:before {
+	content:'';
+	width:30px;
+	height:30px;
+	display:inline-block;
+	background:url(../img/srpite_.png);
+	background:url(../img/srpite_retina.png);
+	background-size: 242px 65px;
+	position:absolute;
+	top:0;
+	left:0;
+	}
+.data li.mail:before	{ background-position:-210px -35px;}
+.data li.twitter:before { background-position:-180px -35px;}
+.data li.github:before  { background-position:-150px -35px;}
+.data li.cel {
+	font-size:16px;
+	margin-bottom:15px;
+	}
+.form {
+	width:43%;
+	/*max-width:350px;*/
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	}
+input[type=text],
+textarea {
+	padding:8px 9px;
+	border:none;
+	width:100%;
+	margin-bottom:14px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	}
+textarea {
+	overflow: auto;
+	resize: vertical;
+	height:80px;
+	max-height: 220px;
+	margin:0;
+	}
+input[type=submit] {
+	background:#393939;
+	border:none;
+	color:#FFF;
+	padding:4px 16px;
+	font-family:Apajarita, serif;
+	font-style:italic;
+	position:absolute;
+	bottom:0;
+	right:-90px;
+	}
+
 
 @media screen and (max-width: 1240px) {
 	.laboratorio article { width:310px;}
