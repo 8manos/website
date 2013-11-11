@@ -28,13 +28,22 @@
 	$('.nav-tabs li:first').addClass('active').show();
 	$('.content.tabs:first').show();
 
-	$('.nav-tabs li').click(function() {
+	$('.nav-tabs li').on('click', function() {
 		$('.nav-tabs li').removeClass('active');
 		$(this).addClass('active');
 		$('.content.tabs').hide();
 		var activeTab = $(this).find('a').attr('href');
 		$(activeTab).fadeIn();
+		//$('html, body').stop().animate({scrollTop: $(activeTab).offset().top}, 1000);
 		return false;
 	});
+	
+/////// form aplicar
+	 $('.aplicar').on('click', function() {
+		var scrollPoint = $(this).attr('href');
+		$('.contact-frame').slideDown(800);
+		$('html, body').stop().animate({scrollTop: $(scrollPoint).offset().top}, 1000);
+		return false;
+  	});
 	
 })(jQuery);
