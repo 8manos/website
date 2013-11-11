@@ -11,5 +11,14 @@
 		maxItems: 3
 	});
 	
+	
+/////// imagenes equipo
+	var imageUrl = $('.thumbnail').find('img').attr('src');
+	$('.thumbnail').css('background-image', 'url("' + imageUrl + '")');
 
+/////// mosaico laboratorio
+	$('#mosaic').freetile({
+		selector: 'article'
+	});
+	
 })(jQuery);
