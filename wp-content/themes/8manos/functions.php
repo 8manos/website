@@ -89,4 +89,23 @@ function httpify($link, $append = 'http://', $allowed = array('http://', 'https:
 	return $append.$link;
   }
 }
+
+
+//Woocommerce
+remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20 );
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+
+add_filter( 'woocommerce_currencies', 'add_col_pesos' );
+function add_col_pesos( $currencies ) {
+	$currencies['COP'] = __( 'Pesos Colombianos', 'woocommerce' );
+	return $currencies;
+}
+
+add_filter('woocommerce_currency_symbol', 'add_col_pesos_symbol', 10, 2);
+function add_col_pesos_symbol( $currency_symbol, $currency ) {
+	switch( $currency ) {
+		case 'COP': $currency_symbol = '$'; break;
+	}
+	return $currency_symbol;
+}
 ?>
