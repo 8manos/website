@@ -1,0 +1,25 @@
+*** API Manager Changelog ***
+
+2013.11.15 - version 1.2.1
+ * Added: Delete button on My Account dashboard to allow customer to delete domain names they activated for an order.
+ * Added: public $text_domain to the software update class, so it is now required. See the plugin example.
+ * Fix: class-wc-plugin-update.php in the example plugin, and class-cc-tk-plugin-update.php in the example theme, are now using $this->text_domain to do localization for error messages.
+ * Fix: CSS table column now properly expands on My Account page when the subscriptions plugin is activated.
+ * Fix: My Account page had some text that was not being run through WP translation functions.
+ * Fix: Admin Menu had some text not being run through WP translation functions.
+ * Fix: The API Manager will remove self-upgrade data for the itself when it is deactivated for toddlahman.com customers. This change has no impact on WooThemes customers.
+ * Fix: Translation updates applied to plugin example, also applied to theme example.
+ * Change: Refactored localization to use public $text_domain.
+ * Fix: Invalid request deactivation message was fixed in the example plugin in the class-wc-api-manager-menu.php file using the line:
+	if ( $_REQUEST['option_page'] != 'am_deactivate_example_checkbox' ) {
+ * Fix: Invalid request deactivation message was fixed in the example theme in the class-cc-tk-license-menu.php file using the line:
+ 	if ( $_REQUEST['option_page'] != 'cc_tk_deactivate_checkbox' ) {
+ * Added: French translation
+
+2013.11.08 - version 1.2
+ * Change: In class-wc-api-manager-order-admin.php removed readonly attribute for Software Title and Software Version to allow those fields to be edited.
+ * Fix: Fixed option key typo in API Manager plugin example zip file.
+ * Rewrite: Rewrote WooCommerce API Manager Account Prep Tool zip file to build API Manager data for old accounts, and to rebuild data for existing accounts. The rebuild feature allows improperly built data, due to product misconfiguration or bad data that already existed before the API Manager was installed, to be rebuilt by simply activating the plugin, then deactivate.
+
+2013.09.28 - version 1.1.1
+ * First Release

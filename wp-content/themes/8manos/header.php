@@ -6,7 +6,7 @@
 <head>
 
 <script type="text/javascript">var a=new Date,b=a.getUTCHours();if(0==a.getUTCMonth()&&2012==a.getUTCFullYear()&&((18==a.getUTCDate()&&13<=b)||(19==a.getUTCDate()&&0>=b)))window.location="http://sopastrike.com/strike";</script>
-	
+
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -17,13 +17,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic' rel='stylesheet' type='text/css'>
-  <?php 
-	wp_head(); 
+  <?php
+	wp_head();
   ?>
   <!-- ADAPTIVE IMAGES -->
   <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
 
-  <script src="<?php bloginfo('template_directory'); ?>/js/libs/modernizr-2.0.6.min.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/libs/modernizr.custom.2.7.1.35896.js"></script>
 </head>
 
 <body <?php body_class(); ?>>

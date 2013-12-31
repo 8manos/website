@@ -1,0 +1,212 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wc-gateway-payu\n"
+"POT-Creation-Date: 2013-11-28 08:57-0500\n"
+"PO-Revision-Date: 2013-11-28 09:04-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../gateway-payu.php:86 ../gateway-payu.php:195
+msgid ""
+"PayU Latam works by sending the user to <a href=\"http://www.payulatam.com/"
+"\">payulatam</a> to enter their payment information."
+msgstr ""
+"PayU Latam envía al comprador a <a href=\"http://www.payulatam.com/"
+"\">payulatam</a> para que ingrese su información de pago."
+
+#: ../gateway-payu.php:124
+msgid "Enable/Disable"
+msgstr ""
+
+#: ../gateway-payu.php:126
+msgid "Enable PayU Latam"
+msgstr "Habilitar PayU Latam"
+
+#: ../gateway-payu.php:130
+msgid "Title"
+msgstr ""
+
+#: ../gateway-payu.php:132
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+
+#: ../gateway-payu.php:133
+msgid "PayU Latam"
+msgstr ""
+
+#: ../gateway-payu.php:137
+msgid "Description"
+msgstr ""
+
+#: ../gateway-payu.php:139
+msgid "This controls the description which the user sees during checkout."
+msgstr ""
+
+#: ../gateway-payu.php:155
+msgid "Test mode"
+msgstr "Modo de pruebas"
+
+#: ../gateway-payu.php:157
+msgid "Enable PayU test mode"
+msgstr "Habilitar modo de pruebas PayU"
+
+#: ../gateway-payu.php:162
+msgid "Debug Log"
+msgstr ""
+
+#: ../gateway-payu.php:164
+msgid "Enable logging"
+msgstr ""
+
+#: ../gateway-payu.php:166
+#, php-format
+msgid ""
+"Log PayU events, such as IPN requests, inside <code>woocommerce/logs/payu-%s."
+"txt</code>"
+msgstr ""
+"Registra eventos generados por PayU y los guarda en <code>woocommerce/logs/"
+"payu-%s.txt</code>"
+
+#: ../gateway-payu.php:207
+msgid "Gateway Disabled"
+msgstr ""
+
+#: ../gateway-payu.php:207
+msgid "PayU does not support your store currency."
+msgstr ""
+
+#: ../gateway-payu.php:298
+msgid ""
+"Thank you for your order. We are now redirecting you to PayU to make payment."
+msgstr ""
+
+#: ../gateway-payu.php:321
+msgid "Pay via PayU"
+msgstr ""
+
+#: ../gateway-payu.php:321
+msgid "Cancel order &amp; restore cart"
+msgstr ""
+
+#: ../gateway-payu.php:363
+msgid ""
+"Thank you for your order, please click the button below to pay with PayU."
+msgstr ""
+
+#: ../woo-updater/plugin-updater.class.php:147
+msgid "WooThemes Updates"
+msgstr ""
+
+#: ../woo-updater/plugin-updater.class.php:167
+msgid "WooThemes Plugin Updater"
+msgstr ""
+
+#: ../woo-updater/plugin-updater.class.php:174
+msgid "WooThemes Username"
+msgstr ""
+
+#: ../woo-updater/plugin-updater.class.php:178
+msgid "WooThemes Password"
+msgstr ""
+
+#: ../woo-updater/plugin-updater.class.php:187
+msgid "Login"
+msgstr ""
+
+#: ../woo-updater/plugin-updater.class.php:238
+msgid "Switch WooThemes Account"
+msgstr ""
+
+#: ../woo-updater/plugin-updater.class.php:240
+#, php-format
+msgid ""
+"You are currently logged in as %1$s. To switch to a different WooThemes "
+"account, please fill in the login details below."
+msgstr ""
+
+#: ../woo-updater/plugin-updater.class.php:243
+msgid "Update your Plugins"
+msgstr ""
+
+#: ../woo-updater/plugin-updater.class.php:250
+msgid "Login Error"
+msgstr ""
+
+#: ../woo-updater/plugin-updater.class.php:252
+msgid "The login details supplied are invalid. Please try again."
+msgstr ""
+
+#: ../woo-updater/plugin-updater.class.php:262
+msgid "Enable WooThemes Plugin Updates."
+msgstr ""
+
+#: ../woo-updater/plugin-updater.class.php:264
+#, php-format
+msgid "Please <a href=\"%1$s\">login</a> to enable automatic plugin updates."
+msgstr ""
+
+#: ../woo-updater/plugin-updater.class.php:277
+msgid "Hide This Message"
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:17
+msgid "Your order was cancelled."
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:19
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction."
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:24
+msgid "Please attempt your purchase again or go to your account page."
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:26
+msgid "Please attempt your purchase again."
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:31
+msgid "Pay"
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:35
+msgid "My Account"
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:42
+#: ../woocommerce/checkout/thankyou.php:76
+msgid "Thank you. Your order has been received."
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:44
+msgid ""
+"Your order has been received and is now being processed. Your order details "
+"are shown below for your reference:"
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:49
+msgid "Order:"
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:53
+msgid "Date:"
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:57
+msgid "Total:"
+msgstr ""
+
+#: ../woocommerce/checkout/thankyou.php:62
+msgid "Payment method:"
+msgstr ""

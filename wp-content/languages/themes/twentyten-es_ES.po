@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Twenty Ten package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2012-12-11 23:35:14+0000\n"
+"PO-Revision-Date: 2013-07-31 13:24:16+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,8 +10,20 @@ msgstr ""
 "X-Generator: GlotPress/0.1\n"
 "Project-Id-Version: Twenty Ten\n"
 
-msgid "http://wordpress.org/extend/themes/twentyten"
-msgstr "http://wordpress.org/extend/themes/twentyten"
+msgid "http://wordpress.org/themes/twentyten"
+msgstr "http://wordpress.org/themes/twentyten"
+
+#: functions.php:386
+msgid "Add widgets here to appear in your sidebar."
+msgstr "Añade widgets aquí y aparecerán en tu barra lateral."
+
+#: functions.php:397
+msgid "An optional secondary widget area, displays below the primary widget area in your sidebar."
+msgstr "Un área secundaria de widgets opcional, se muestra debajo del área de widgets primaria de tu barra lateral."
+
+#: functions.php:408 functions.php:419 functions.php:430 functions.php:441
+msgid "An optional widget area for your site footer."
+msgstr ""
 
 msgid "One column, no sidebar"
 msgstr "Una columna, sin barra lateral"
@@ -26,20 +38,20 @@ msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
 
-#: loop.php:82
+#: loop.php:81
 msgid "This gallery contains <a %1$s>%2$s photo</a>."
 msgid_plural "This gallery contains <a %1$s>%2$s photos</a>."
 msgstr[0] "Esta galería contiene <a %1$s>%2$s foto</a>."
 msgstr[1] "Esta galería contiene <a %1$s>%2$s fotos</a>."
 
-#: loop.php:93
+#: loop.php:92
 msgid "View Galleries"
 msgstr "Ver galerías"
 
 msgid "The 2010 theme for WordPress is stylish, customizable, simple, and readable -- make it yours with a custom menu, header image, and background. Twenty Ten supports six widgetized areas (two in the sidebar, four in the footer) and featured images (thumbnails for gallery posts and custom header images for posts and pages). It includes stylesheets for print and the admin Visual Editor, special styles for posts in the \"Asides\" and \"Gallery\" categories, and has an optional one-column page template that removes the sidebar."
 msgstr "El tema 2010 para WordPress, es elegante, personalizable, sencillo y legible -- hazlo tuyo con un menú, una imagen de cabecera, y un fondo personalizados. Twenty Ten soporta seis áreas para widgets (dos en la barra lateral, cuatro en el pie de página) e imágenes destacadas (miniaturas para las entradas de la galería e imágenes de cabecera personalizadas para las entradas y páginas). Incluye hojas de estilo para impresión y el editor visual del administrador, estilos especiales para las entradas de las categorías \"Citas\" y \"Galería\", y tiene una plantilla opcional de página de una columna que quita la barra lateral."
 
-#: loop.php:151
+#: loop.php:150
 msgid "<span class=\"%1$s\">Posted in</span> %2$s"
 msgstr "<span class=\"%1$s\">Publicado en</span> %2$s"
 
@@ -47,7 +59,7 @@ msgstr "<span class=\"%1$s\">Publicado en</span> %2$s"
 msgid "<span class=\"%1$s\">Posted on</span> %2$s <span class=\"meta-sep\">by</span> %3$s"
 msgstr "<span class=\"%1$s\">Publicado el</span> %2$s <span class=\"meta-sep\">por</span> %3$s"
 
-#: loop.php:160
+#: loop.php:159
 msgid "<span class=\"%1$s\">Tagged</span> %2$s"
 msgstr "<span class=\"%1$s\">Etiquetado</span> %2$s"
 
@@ -125,12 +137,12 @@ msgid_plural "%1$s Responses to %2$s"
 msgstr[0] "Una respuesta a %2$s"
 msgstr[1] "%1$s respuestas a %2$s"
 
-#: loop.php:106
+#: loop.php:105
 msgctxt "asides category slug"
 msgid "asides"
 msgstr "citas"
 
-#: loop.php:60 loop.php:95 loop.php:96
+#: loop.php:60 loop.php:94
 msgctxt "gallery category slug"
 msgid "gallery"
 msgstr "galería"
@@ -177,7 +189,7 @@ msgstr "(Editar)"
 msgid "Comments are closed."
 msgstr "Los comentarios están cerrados."
 
-#: loop.php:99 loop.php:122 loop.php:164
+#: loop.php:98 loop.php:121 loop.php:163
 msgid "% Comments"
 msgstr "% comentarios"
 
@@ -237,61 +249,37 @@ msgstr "Plataforma semántica de publicación personal"
 msgid "Page %s"
 msgstr "Página %s"
 
-#: loop.php:99 loop.php:122 loop.php:164
+#: loop.php:98 loop.php:121 loop.php:163
 msgid "1 Comment"
 msgstr "1 comentario"
 
-#: loop.php:99 loop.php:122 loop.php:164
+#: loop.php:98 loop.php:121 loop.php:163
 msgid "Leave a comment"
 msgstr "Deja un comentario"
 
-#: loop.php:93 loop.php:96
+#: loop.php:92 loop.php:95
 msgid "More Galleries"
 msgstr "Más galerías"
 
-#: loop.php:96
+#: loop.php:95
 msgid "View posts in the Gallery category"
 msgstr "Ver las entradas en la categoría de la galería"
 
-#: loop.php:62 loop.php:83 loop.php:131
+#: loop.php:82
 msgid "Permalink to %s"
 msgstr "Enlace permanente a %s"
 
-#: loop.php:26 loop.php:179
+#: loop.php:26 loop.php:178
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Entradas más nuevas <span class=\"meta-nav\">&rarr;</span>"
 
-#: loop.php:25 loop.php:178
+#: loop.php:25 loop.php:177
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
 msgstr "<span class=\"meta-nav\">&larr;</span> Entradas más antiguas"
 
 #: header.php:101
 msgid "Skip to content"
 msgstr "Saltar al contenido"
-
-#: functions.php:441
-msgid "The fourth footer widget area"
-msgstr "Cuarta área de widgets del pie"
-
-#: functions.php:430
-msgid "The third footer widget area"
-msgstr "Tercera área de widgets del pie"
-
-#: functions.php:419
-msgid "The second footer widget area"
-msgstr "Segunda área de widgets del pie"
-
-#: functions.php:408
-msgid "The first footer widget area"
-msgstr "Primera área de widgets del pie"
-
-#: functions.php:397
-msgid "The secondary widget area"
-msgstr "Área secundaria de widgets"
-
-#: functions.php:386
-msgid "The primary widget area"
-msgstr "Área primaria de widgets"
 
 #: comments.php:18
 msgid "This post is password protected. Enter the password to view any comments."
@@ -338,15 +326,15 @@ msgid "View all posts by %s"
 msgstr "Ver todas las entradas de %s"
 
 #: loop-attachment.php:63 loop-attachment.php:111 loop-page.php:30
-#: loop-single.php:56 loop.php:100 loop.php:123 loop.php:165
+#: loop-single.php:56 loop.php:99 loop.php:122 loop.php:164
 msgid "Edit"
 msgstr "Editar"
 
-#: functions.php:255 loop-attachment.php:104 loop.php:115 loop.php:143
+#: functions.php:255 loop-attachment.php:104 loop.php:114 loop.php:142
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Sigue leyendo <span class=\"meta-nav\">&rarr;</span>"
 
-#: loop-attachment.php:105 loop-page.php:29 loop-single.php:34 loop.php:144
+#: loop-attachment.php:105 loop-page.php:29 loop-single.php:34 loop.php:143
 msgid "Pages:"
 msgstr "Páginas:"
 
