@@ -11,6 +11,25 @@
 		maxItems: 2
 	});
 	
+/////// responsive menu
+
+	$('<select />').appendTo('#navigation');
+
+	$('<option />', {
+    	'selected': 'selected',
+    	'value': '',
+    	'text': '- Menu -'
+	}).appendTo('#navigation select');
+
+	$('nav a').each(function () {
+    	var el = $(this);
+   		$('<option />', {
+        	'value': el.attr('href'),
+        	'text': el.text()
+    	}).appendTo('#navigation select');
+	});
+
+	$('#navigation select').change(function () { window.location = $(this).find('option:selected').val();});
 	
 /////// imagenes equipo
 	

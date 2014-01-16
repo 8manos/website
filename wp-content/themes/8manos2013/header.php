@@ -20,7 +20,7 @@
 </head>
 <body <?php body_class(); ?>>
 
-  <header role="banner">
+  <header id="navigation" role="banner">
 
     <nav role="navigation">
       <?php wp_nav_menu(); ?>
