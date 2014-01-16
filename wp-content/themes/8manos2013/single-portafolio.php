@@ -21,18 +21,17 @@
 
     <div class="status"><span class="disable">inactivo</span><a href="#">visitar proyecto</a></div>
 
-    <div class="gallery">
-      <ul class="slides">
-        <li> <img src="http://placehold.it/727x455/AFAFAF" alt="test"> </li>
-        <li> <img src="http://placehold.it/727x455" alt="test"> </li>
-        <li> <img src="http://placehold.it/727x455/939393" alt="test"> </li>
-        <li> <img src="http://placehold.it/727x455" alt="test"> </li>
-        <li> <img src="http://placehold.it/727x455/AFAFAF" alt="test"> </li>
-        <li> <img src="http://placehold.it/727x455" alt="test"> </li>
-        <li> <img src="http://placehold.it/727x455/939393" alt="test"> </li>
-        <li> <img src="http://placehold.it/727x455" alt="test"> </li>
-      </ul>
-    </div>
+    <?php
+    $gallery_args = array(
+      'size' => 'large',
+      'columns' => -1,
+      'link' => 'none',
+      'itemtag' => 'li',
+      'icontag' => 'span',
+      'captiontag' => 'p'
+    );
+    echo gallery_shortcode( $gallery_args );
+    ?>
 
     <div class="content">
       <?php the_content(); ?>
