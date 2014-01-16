@@ -7,8 +7,8 @@
 		directionNav: false,
 		itemWidth: items,
 		itemMargin: 8,
-		minItems: 2,
-		maxItems: 3
+		minItems: 1,
+		maxItems: 2
 	});
 	
 	
