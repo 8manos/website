@@ -19,6 +19,9 @@ function minimal_theme_setup() {
 
     // Most themes need featured images.
     add_theme_support('post-thumbnails');
+
+    //disable cleaner gallery stylesheet
+    add_theme_support( 'cleaner-gallery' );
 }
 add_action('after_setup_theme', 'minimal_theme_setup');
 

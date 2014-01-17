@@ -23,7 +23,7 @@
 
     <?php
     $gallery_args = array(
-      'size' => 'large',
+      'size' => 'medium',
       'columns' => -1,
       'link' => 'none',
       'itemtag' => 'li',

@@ -358,6 +358,7 @@ article .tags {
 	margin-right:8px;
 	}
 .slides li img {
+	height: auto;
 	width:100%;
 	}
 
@@ -774,17 +775,17 @@ input[type=submit] {
 	.wrap { width:94%; margin: 40px auto 0;}
 	.content,
 	.team ul { width:100%;}
-	
+
 	.sub-menu { margin-top:0;}
-	
+
 	.portafolio article {width: 48%; margin: 0 1% 56px 0;}
 	.portafolio article:nth-child(even) {margin: 0 0 56px 2%;}
 	.portafolio article .info {padding: 16px 0 0;}
 	.article-portafolio img { padding:6px;}
-	
+
 	article .info { margin:0;}
 	h1.main-title { margin-left:0;}
-	
+
 	footer p { width:70%;}
 }
 @media screen and (max-width: 820px) {
@@ -792,9 +793,9 @@ input[type=submit] {
 	nav { width:60%; text-align:center;}
 	nav ul li {margin: 0 2%;}
 	.top_l { width: 30%; height: 100%; line-height:80px;}
-	
+
 	.slides li { width:100%;}
-	
+
 	h1.main-title {font-size: 2em;}
 	.content h2 { font-size:1.8em;}
 	.content h3, .team h3 { font-size:1.4em;}
@@ -809,14 +810,14 @@ input[type=submit] {
 	h1.main-title span { display:none;}
 	footer .social-menu { text-align:center; margin-bottom:20px;}
 	footer p {width: 90%;position: relative;top: inherit;right: inherit;margin: 0 auto; padding-bottom: 20px; text-align: center;}
-	
+
 	.portafolio article { width:90%; margin:0 5% 56px;}
 	.portafolio article:nth-child(even) {margin:0 5% 56px;}
-	
-	
+
+
 	.data, .form { width:49%; margin:0; bottom:0; right:0;}
 	input[type=submit] { position:relative; bottom:0; right:0; margin-top:14px;}
-	
+
 }
 @media screen and (max-width : 500px) {
 	body {text-rendering: optimizeSpeed;}
@@ -832,9 +833,9 @@ input[type=submit] {
 		overflow:hidden;
 		}
 	.sub-menu li {display:block;position:relative;left:-110%;}
-	
+
 	.article-portafolio .tags { top: -7px; padding: 3px 7px;}
-	
+
 	.data { display:none;}
 	.form { width:100%;}
 }

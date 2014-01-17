@@ -2,16 +2,16 @@
 /**
  * Cleaner Gallery - A valid image gallery script for WordPress.
  *
- * Cleaner Gallery was created to clean up the invalid HTML and remove the inline styles of the default 
- * implementation of the WordPress [gallery] shortcode.  This has the obvious benefits of creating 
- * sites with clean, valid code.  But, it also allows developers to more easily create custom styles for 
+ * Cleaner Gallery was created to clean up the invalid HTML and remove the inline styles of the default
+ * implementation of the WordPress [gallery] shortcode.  This has the obvious benefits of creating
+ * sites with clean, valid code.  But, it also allows developers to more easily create custom styles for
  * galleries within their themes.
  *
- * This program is free software; you can redistribute it and/or modify it under the terms of the GNU 
- * General Public License as published by the Free Software Foundation; either version 2 of the License, 
+ * This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+ * General Public License as published by the Free Software Foundation; either version 2 of the License,
  * or (at your option) any later version.
  *
- * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without 
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
  * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
  * @package   CleanerGallery
@@ -26,8 +26,8 @@
 add_filter( 'post_gallery', 'cleaner_gallery', 10, 2 );
 
 /**
- * Overwrites the default WordPress [gallery] shortcode's output.  This function removes the invalid 
- * HTML and inline styles.  It adds the number of columns used as a class attribute, which allows 
+ * Overwrites the default WordPress [gallery] shortcode's output.  This function removes the invalid
+ * HTML and inline styles.  It adds the number of columns used as a class attribute, which allows
  * developers to style the gallery more easily.
  *
  * @since  0.9.0
@@ -123,6 +123,10 @@ function cleaner_gallery( $output, $attr ) {
 	/* Open the gallery <div>. */
 	$output = "\n\t\t\t<div id='gallery-{$id}-{$cleaner_gallery_instance}' class='gallery gallery-{$id}'>";
 
+	if ($itemtag == 'li') {
+		$output .= "\n\t\t\t\t<ul class='slides'>";
+	}
+
 	/* Loop through each attachment. */
 	foreach ( $attachments as $attachment ) {
 
@@ -146,7 +150,7 @@ function cleaner_gallery( $output, $attr ) {
 		$output .= "\n\t\t\t\t\t\t<{$icontag} class='gallery-icon {$orientation}'>";
 
 		/* Get the image. */
-		if ( isset( $attr['link'] ) && 'file' == $attr['link'] ) 
+		if ( isset( $attr['link'] ) && 'file' == $attr['link'] )
 			$image = wp_get_attachment_link( $attachment->ID, $size, false, true );
 
 		elseif ( isset( $attr['link'] ) && 'none' == $attr['link'] )
@@ -179,6 +183,10 @@ function cleaner_gallery( $output, $attr ) {
 	/* Close gallery row. */
 	if ( $columns > 0 && $i % $columns !== 0 )
 		$output .= "\n\t\t\t</div>";
+
+	if ($itemtag == 'li') {
+		$output .= "\n\t\t\t\t</ul>";
+	}
 
 	/* Close the gallery <div>. */
 	$output .= "\n\t\t\t</div><!-- .gallery -->\n";
