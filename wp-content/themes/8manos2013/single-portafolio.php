@@ -37,23 +37,33 @@
       <?php the_content(); ?>
     </div>
 
+    <?php
+    // Find connected pages
+    $connected = new WP_Query( array(
+      'connected_type' => 'project_team',
+      'connected_items' => get_queried_object(),
+      'nopaging' => true,
+    ) );
+
+    // Display connected pages
+    if ( $connected->have_posts() ) :
+    ?>
     <div class="team">
       <h3>Equipo</h3>
       <ul>
-        <li><a href="#">Caramels wypas</a></li>
-        <li><a href="#">Lemon drops sesame</a></li>
-        <li><a href="#">snaps tootsie roll</a></li>
-        <li><a href="#">pudding pie caramels</a></li>
-        <li><a href="#">Jelly bonbon cake</a></li>
-        <li><a href="#">cookie cheesecake</a></li>
-        <li><a href="#">Caramels wypas</a></li>
-        <li><a href="#">Lemon drops sesame</a></li>
-        <li><a href="#">snaps tootsie roll</a></li>
-        <li><a href="#">pudding pie caramels</a></li>
-        <li><a href="#">Jelly bonbon cake</a></li>
-        <li><a href="#">cookie cheesecake</a></li>
+      <?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
+        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+      <?php endwhile; ?>
       </ul>
     </div>
+
+    <?php
+    // Prevent weirdness
+    wp_reset_postdata();
+
+    endif;
+    ?>
+
   </article>
 <?php endwhile; ?>
 

@@ -44,3 +44,12 @@ remove_filter('comment_text', 'capital_P_dangit', 31);
 
 // Hide the version of WordPress you're running from source and RSS feed // Want to JUST remove it from the source? Try: remove_action('wp_head', 'wp_generator');
 add_filter('the_generator', '__return_false');
+
+function my_connection_types() {
+    p2p_register_connection_type( array(
+        'name' => 'project_team',
+        'from' => 'portafolio',
+        'to' => 'equipo'
+    ) );
+}
+add_action( 'p2p_init', 'my_connection_types' );
