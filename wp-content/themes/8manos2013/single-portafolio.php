@@ -16,10 +16,13 @@
         }
         echo '</ul>';
       }
+
+      $status = reset( get_the_terms( $post->ID, 'status' ) );
+      $status_class = ( $status->name == 'inactivo' ) ? 'disable' : 'enable';
       ?>
     </div>
 
-    <div class="status"><span class="disable">inactivo</span><a href="#">visitar proyecto</a></div>
+    <div class="status"><span class="<?php echo $status_class; ?>"><?php echo $status->name; ?></span><a href="<?php echo esc_url( simple_fields_value('url') ); ?>">visitar proyecto</a></div>
 
     <?php
     $gallery_args = array(
