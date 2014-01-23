@@ -462,6 +462,10 @@ a.btn {
 	}
 
 /*equipo*/
+.team-wrapper {
+	width: 90%;
+}
+
 .member {
 	width: 200px;
 	height: 231px;
@@ -472,8 +476,8 @@ a.btn {
          -o-transform: rotate(120deg);
             transform: rotate(120deg);
     cursor: pointer;
-	display:inline-block;
-	margin:8px;
+	display: inline-block;
+	margin: 8px 8px -32px;
 	}
 .member .thumb-con {
 	width: 100%;
@@ -532,6 +536,10 @@ article.member .name h2 + h2 {
 		 -o-transform-origin: 40% -420%;
 			transform-origin: 40% -420%;
 	}
+
+.member:nth-child(7n+5) {
+	margin-left: 120px;
+}
 /*perfil*/
 /*clase temporal mientras se ajusta a wordpress*/
 .perfil h1.main-title { padding-top:18px;}
