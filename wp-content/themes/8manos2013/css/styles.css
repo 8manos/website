@@ -438,7 +438,7 @@ a.btn {
   list-style:inside none;
   }
 .team ul li {
-  width:32%;
+  width:45%;
   display:inline-block;
   vertical-align: top;
   margin-bottom:4px;
@@ -817,7 +817,6 @@ input[type=submit] {
   .content h2 { font-size:1.8em;}
   .content h3, .team h3 { font-size:1.4em;}
   .wrap .intro { width:88%; margin: 40px auto; font-size:1em; }
-  .team ul li { width:45%;}
 }
 @media screen and (max-width: 720px) {
   .team-wrapper {
