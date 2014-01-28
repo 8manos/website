@@ -19,6 +19,7 @@ function minimal_theme_setup() {
 
     // Most themes need featured images.
     add_theme_support('post-thumbnails');
+    add_image_size( 'team-thumb', 240, 240, true );
 
     //disable cleaner gallery stylesheet
     add_theme_support( 'cleaner-gallery' );
