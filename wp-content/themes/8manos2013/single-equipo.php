@@ -33,7 +33,7 @@
 
       <ul class="social-menu">
         <?php
-        $contact_links = simple_fields_values('link_type, link_url');
+        $contact_links = get_post_meta( $post->ID, '_contact_link', true );
 
         foreach ($contact_links as $contact) {
           $href = $contact['link_type'] == 'mail' ? 'mailto:'.$contact['link_url'] : esc_url($contact['link_url']);

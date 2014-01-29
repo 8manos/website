@@ -22,7 +22,7 @@
       ?>
     </div>
 
-    <div class="status"><span class="<?php echo $status_class; ?>"><?php echo $status->name; ?></span><a href="<?php echo esc_url( simple_fields_value('url') ); ?>">visitar proyecto</a></div>
+    <div class="status"><span class="<?php echo $status_class; ?>"><?php echo $status->name; ?></span><a href="<?php echo esc_url( get_post_meta( $post->ID, '_url', true ) ); ?>">visitar proyecto</a></div>
 
     <?php
     $gallery_args = array(
