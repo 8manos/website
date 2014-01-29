@@ -2,10 +2,24 @@
 
 <?php while ( have_posts() ) : the_post(); ?>
   <h1 class="main-title"><?php the_title(); ?></h1>
+
+  <div class="info">
+    <?php
+    $skills = get_the_terms( $post->ID, 'especialidades' );
+    if ($skills) {
+      echo '<ul class="tags">';
+      foreach($skills as $tag) {
+        echo '<li>' . $tag->name . '</li>';
+      }
+      echo '</ul>';
+    }
+    ?>
+  </div>
 </div>
 
 <div class="profile-frame">
   <div class="wrap">
+
     <div class="member">
       <div  class="thumb-con">
         <span class="thumbnail">
@@ -13,21 +27,22 @@
         </span>
       </div>
     </div>
+
     <div class="member-intro">
       <?php the_content(); ?>
 
       <ul class="social-menu">
-        <!-- orden alfabetico -->
-        <li class="behance"><a href="">behance</a></li>
-        <li class="dribbble"><a href="">dribbble</a></li>
-        <li class="flickr"><a href="">flickr</a></li>
-        <li class="github"><a href="">github</a></li>
-        <li class="skype"><a href="">skype</a></li>
-        <li class="twitter"><a href="">twitter</a></li>
-        <li class="vimeo"><a href="">vimeo</a></li>
-        <li class="mail"><a href="mailto:">correo electronico</a></li>
+        <?php
+        $contact_links = simple_fields_values('link_type, link_url');
+
+        foreach ($contact_links as $contact) {
+          $href = $contact['link_type'] == 'mail' ? 'mailto:'.$contact['link_url'] : esc_url($contact['link_url']);
+          printf('<li class="%1$s"><a href="%2$s">%1$s</a></li>', $contact['link_type'], $href);
+        }
+        ?>
       </ul>
     </div>
+
   </div>
 </div>
 
