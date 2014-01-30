@@ -11,9 +11,9 @@ class Manos {
 
 	function manos_post_types() {
 		register_post_type('equipo', array(
-			'label' => 'equipo',
+			'label' => 'Equipo',
 			'labels' => array (
-				'name' => 'equipo',
+				'name' => 'Equipo',
 				'add_new' => 'Agregar nuevo',
 				'add_new_item' => 'Agregar nuevo equipo',
 				'edit_item' => 'Editar equipo',
@@ -30,9 +30,9 @@ class Manos {
 		);
 
 		register_post_type('portafolio', array(
-			'label' => 'portafolio',
+			'label' => 'Portafolio',
 			'labels' => array (
-				'name' => 'portafolio',
+				'name' => 'Portafolio',
 				'add_new' => 'Agregar nuevo',
 				'add_new_item' => 'Agregar nuevo portafolio',
 				'edit_item' => 'Editar portafolio',
@@ -47,6 +47,25 @@ class Manos {
 			'taxonomies' => array('post_tag')
 			)
 		);
+
+		register_post_type('lab', array(
+			'label' => 'Lab',
+			'labels' => array (
+				'name' => 'Lab',
+				'add_new' => 'Agregar nuevo',
+				'add_new_item' => 'Agregar nuevo lab',
+				'edit_item' => 'Editar lab',
+				'new_item' => 'Nuevo lab',
+				'view_item' => 'Ver lab',
+				),
+			'description' => 'En 8manos tenemos espacio para la experimentación, para desarrollos propios y proyectos de código abierto.',
+			'public' => true,
+			'map_meta_cap' => true,
+			'hierarchical' => true,
+			'has_archive' => true,
+			'supports' => array('title','editor','revisions','thumbnail','page-attributes')
+			)
+		);
 	}
 
 	function manos_taxonomies() {
@@ -58,6 +77,11 @@ class Manos {
 		register_taxonomy( 'status', 'portafolio', array(
 			'label' => 'Estados',
 			'show_admin_column' => true
+			)
+		);
+
+		register_taxonomy( 'lab_type', 'lab', array(
+			'label' => 'Tipo de Proyecto'
 			)
 		);
 	}
@@ -101,7 +125,20 @@ class Manos {
 						)
 					)
 				)
-			)
+			),
+			'lab' => array(
+				array(
+					'id' => 'extra-data',
+					'title' => 'Extra data',
+					'fields' => array(
+						array(
+							'id' => 'url',
+							'title' => 'URL',
+							'type' => 'text'
+						)
+					)
+				)
+			),
 		);
 
 		return $groups;

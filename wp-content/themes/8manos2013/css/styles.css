@@ -589,7 +589,7 @@ a.btn {
 }
 
 /*---laboratorio---*/
-.laboratorio article {
+#mosaic article {
   /*width:30%;*/
   width:340px;
   display:inline-block;
@@ -603,14 +603,14 @@ a.btn {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-.laboratorio article:nth-child(3n+2) {
+#mosaic article:nth-child(3n+2) {
   /*margin:0;*/
 }
-.laboratorio article .info {
+#mosaic article .info {
   position:relative;
   padding:16px 0 0 24px;
 }
-.laboratorio article .content {
+#mosaic article .content {
   width:100%;
   margin:0;
   position:relative;
@@ -620,23 +620,23 @@ a.btn {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-.laboratorio article .content p {
+#mosaic article .content p {
   color:#FFF;
   font-family:'Courier New', Courier, monospace;
 }
-.laboratorio article b,
-.laboratorio article i,
-.laboratorio article em {
+#mosaic article b,
+#mosaic article i,
+#mosaic article em {
   font-weight:normal;
   font-size:inherit;
   font-style:normal;
 }
-.laboratorio article b    { color:#CDA869;}
-.laboratorio article i    { color:#CF6A4C;}
-.laboratorio article em     { color:#8F9D6A;}
-.laboratorio article p span { color:#5F5A60;}
+#mosaic article b    { color:#CDA869;}
+#mosaic article i    { color:#CF6A4C;}
+#mosaic article em     { color:#8F9D6A;}
+#mosaic article p span { color:#5F5A60;}
 
-.laboratorio article a {
+#mosaic article a {
   width:100%;
   height:100%;
   position:absolute;
@@ -648,21 +648,21 @@ a.btn {
   color:#FFF;
   font-family:Apajarita, serif;
 }
-.laboratorio article a:hover {
+#mosaic article a:hover {
   opacity:1;
 }
-.laboratorio article .info {
+#mosaic article .info {
   color:#FFF;
   padding:14% 0 0 24px;
 }
-.laboratorio article h2{
+#mosaic article h2{
   color:#FFF;
   margin-bottom:6px;
 }
-.laboratorio article h4 {
+#mosaic article h4 {
 
 }
-.laboratorio article .tags {
+#mosaic article .tags {
   position:absolute;
   bottom:0;
   right:0;
@@ -766,7 +766,7 @@ input[type=submit] {
 .contacto .contact-frame { display:none;}
 
 @media screen and (max-width: 1240px) {
-  .laboratorio article { width:310px;}
+  #mosaic article { width:310px;}
   .content { width:90%;}
 
   /*clase temporal*/
