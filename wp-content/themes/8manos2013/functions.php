@@ -21,6 +21,9 @@ function minimal_theme_setup() {
     add_theme_support('post-thumbnails');
     add_image_size( 'team-thumb', 240, 240, true );
 
+    // Custom menu support.
+    register_nav_menu('primary', 'Primary Menu');
+
     //disable cleaner gallery stylesheet
     add_theme_support( 'cleaner-gallery' );
 }

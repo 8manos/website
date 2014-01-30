@@ -5,7 +5,7 @@
       <li class="twitter"><a href="https://twitter.com/8manos">twitter</a></li>
       <li class="github"><a href="https://github.com/8manos">github</a></li>
     </ul>
-    <p>8manos S.A.S <span>NIT:</span> 900381428-7 <span>Cel:</span> 3108077316  <span>Dirección:</span> Cll 94 #15-32 of. 301, Bogotá, Colombia</p>
+    <p>8manos S.A.S <span>NIT:</span> 900381428-7 <span>Tel:</span> (57) 1 - 605 7039 <span>Dirección:</span> Cll 94 #15-32 of. 301, Bogotá, Colombia</p>
 
   </footer>
 
