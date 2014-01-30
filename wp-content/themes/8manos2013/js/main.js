@@ -1,5 +1,5 @@
 (function($) {
-	var items = $('.slides li').width();	  
+	var items = $('.slides li').width();
 	$('.gallery').flexslider({
 		animation: 'slide',
 		slideshow: false,
@@ -10,7 +10,7 @@
 		minItems: 1,
 		maxItems: 2
 	});
-	
+
 /////// responsive menu
 
 	$('<select />').appendTo('#navigation');
@@ -30,9 +30,9 @@
 	});
 
 	$('#navigation select').change(function () { window.location = $(this).find('option:selected').val();});
-	
+
 /////// imagenes equipo
-	
+
 	$('.thumbnail').each(function(){
 	    var imageUrl = $(this).find('img').attr('src');
 		$(this).css('background-image', 'url("' + imageUrl + '")');
@@ -42,7 +42,7 @@
 	$('#mosaic').freetile({
 		selector: 'article'
 	});
-	
+
 /////// tabs
 	$('.nav-tabs li:first').addClass('active').show();
 	$('.content.tabs:first').show();
@@ -56,7 +56,20 @@
 		//$('html, body').stop().animate({scrollTop: $(activeTab).offset().top}, 1000);
 		return false;
 	});
-	
+
+/////// sub menu laboratorio
+  $('.sub-menu a').on('click', function(e) {
+    e.preventDefault();
+
+    var term = $(this).attr('href');
+
+    $('#mosaic article').not('.'+term).fadeOut();
+    $('#mosaic article.'+term).fadeIn();
+
+    $('.active').removeClass('active');
+    $(this).parent().addClass('active');
+  });
+
 /////// form aplicar
 	 $('.aplicar').on('click', function() {
 		var scrollPoint = $(this).attr('href');
@@ -64,5 +77,5 @@
 		$('html, body').stop().animate({scrollTop: $(scrollPoint).offset().top}, 1000);
 		return false;
   	});
-	
+
 })(jQuery);

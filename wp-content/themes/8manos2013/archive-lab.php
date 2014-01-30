@@ -10,12 +10,31 @@
   ?>
 </p>
 
+<?php
+$lab_types = get_terms( 'lab_type');
+echo '<ul class="sub-menu">';
+foreach($lab_types as $term) {
+  printf('<li><a href="%s">%s</a></li>', $term->slug, $term->name);
+}
+echo '</ul>';
+?>
+
 <?php if ( have_posts() ) : ?>
   <div id="mosaic">
 
   <?php while ( have_posts() ) : the_post(); ?>
 
-    <article id="post-<?php the_ID(); ?>">
+  <?php
+  $types = get_the_terms( $post->ID, 'lab_type' );
+  $article_class = '';
+  if ($types) {
+    foreach($types as $term) {
+      $article_class .= $term->slug.' ';
+    }
+  }
+  ?>
+
+    <article id="post-<?php the_ID(); ?>" class="<?php echo $article_class; ?>">
       <div class="content">
         <h1><b>ProjectName=</b> <i><?php the_title(); ?></i></h1>
 
@@ -29,11 +48,10 @@
         </a>
 
         <?php
-        $types = get_the_terms( $post->ID, 'lab_type' );
         if ($types) {
           echo '<ul class="tags">';
-          foreach($types as $type) {
-            echo '<li>' . $type->name . '</li>';
+          foreach($types as $term) {
+            echo '<li>' . $term->name . '</li>';
           }
           echo '</ul>';
         }
