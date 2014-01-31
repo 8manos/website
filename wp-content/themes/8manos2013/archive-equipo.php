@@ -2,8 +2,6 @@
 
 <h1 class="main-title"><?php post_type_archive_title(); ?></h1>
 
-<?php $secondary_title = false; ?>
-
 <p class="intro">
   <?php
   global $wp_query;
@@ -12,42 +10,42 @@
   ?>
 </p>
 
-
 <?php if ( have_posts() ) : ?>
-<div class="team-wrapper">
+  <div class="team-wrapper">
 
-  <?php while ( have_posts() ) : the_post(); ?>
+    <?php while ( have_posts() ) : the_post(); ?>
 
-    <?php
-    $team = get_post_meta( $post->ID, '_team_checkbox', true );
-    if ($team[0] == 'secondary' && ! $secondary_title) {
-      echo '<h1 class="main-title">Colaboradores</h1>';
-      $secondary_title = true;
-    }
-    ?>
+      <?php get_template_part('loop', 'equipo'); ?>
 
-    <article class="member">
-      <div  class="thumb-con">
-        <a class="thumbnail" href="<?php the_permalink(); ?>">
-          <?php the_post_thumbnail('team-thumb'); ?>
-          <div class="name">
-            <?php
-              $full_name = get_the_title();
-              $split_point = ' ';
-              $separator_pos = strrpos($full_name, $split_point);
-              $first_name = substr($full_name, 0, $separator_pos);
-              $last_name = substr($full_name, $separator_pos+1);
-            ?>
-            <h2><?php echo $first_name; ?></h2>
-            <h2><?php echo $last_name; ?></h2>
-          </div>
-        </a>
-      </div>
-    </article>
+    <?php endwhile; ?>
 
-  <?php endwhile; ?>
-
-</div>
+  </div>
 <?php endif; ?>
+
+<?php
+$subteams = get_terms( 'subteam');
+
+foreach ($subteams as $subteam_obj):
+
+  global $wp_query;
+  $args = array_merge( $wp_query->query_vars, array( 'tax_query' => array( array('taxonomy' => 'subteam', 'field' => 'slug', 'terms' => $subteam_obj->slug) ) ) );
+  $subteam_query = new WP_Query( $args );
+?>
+
+  <h1 class="main-title"><?php echo $subteam_obj->name; ?></h1>
+
+  <?php if ( $subteam_query->have_posts() ) : ?>
+    <div class="team-wrapper">
+
+      <?php while ( $subteam_query->have_posts() ) : $subteam_query->the_post(); ?>
+
+        <?php get_template_part('loop', 'equipo'); ?>
+
+      <?php endwhile; ?>
+
+    </div>
+  <?php endif; ?>
+
+<?php endforeach; ?>
 
 <?php get_footer(); ?>

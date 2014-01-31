@@ -49,10 +49,15 @@ remove_filter('comment_text', 'capital_P_dangit', 31);
 // Hide the version of WordPress you're running from source and RSS feed // Want to JUST remove it from the source? Try: remove_action('wp_head', 'wp_generator');
 add_filter('the_generator', '__return_false');
 
-function order_team( $query ) {
-    if ( $query->is_post_type_archive( 'equipo' ) ) {
-        $query->set( 'meta_key', '_team_checkbox' );
-        $query->set( 'orderby', 'meta_value menu_order' );
+function no_sub_team( $query ) {
+    $subteams = get_terms( 'subteam');
+
+    $subteams_slugs = array_map (function ($term) {
+        return $term->slug;
+    }, $subteams);
+
+    if ( $query->is_main_query() && $query->is_post_type_archive( 'equipo' ) ) {
+        $query->set( 'tax_query', array( array('taxonomy' => 'subteam', 'field' => 'slug', 'terms' => $subteams_slugs, 'operator' => 'NOT IN') ) );
     }
 }
-add_action( 'pre_get_posts', 'order_team' );
+add_action( 'pre_get_posts', 'no_sub_team' );

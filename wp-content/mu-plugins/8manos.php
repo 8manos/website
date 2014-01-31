@@ -101,6 +101,12 @@ class Manos {
 			'label' => 'Tipo de Proyecto'
 			)
 		);
+
+		register_taxonomy( 'subteam', 'equipo', array(
+			'label' => 'SubEquipo',
+			'show_admin_column' => true
+			)
+		);
 	}
 
 	function manos_custom_fields($groups) {
@@ -139,22 +145,6 @@ class Manos {
 									'type' => 'text'
 								)
 							)
-						)
-					)
-				),
-				array(
-					'id' => 'team',
-					'title' => 'Equipo',
-					'fields' => array(
-						array(
-							'id'      => 'team_checkbox',
-							'title'   => 'Equipo',
-							'type'    => 'checkbox',
-							'options' => array(
-								'primary' => 'Equipo Principal',
-								'secondary' => 'Colaboradores'
-							),
-							'default'	=> 'secondary'
 						)
 					)
 				)
