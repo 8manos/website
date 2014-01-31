@@ -24,10 +24,10 @@
 
 <?php
 $subteams = get_terms( 'subteam');
+global $wp_query;
 
 foreach ($subteams as $subteam_obj):
 
-  global $wp_query;
   $args = array_merge( $wp_query->query_vars, array( 'tax_query' => array( array('taxonomy' => 'subteam', 'field' => 'slug', 'terms' => $subteam_obj->slug) ) ) );
   $subteam_query = new WP_Query( $args );
 ?>
@@ -47,5 +47,7 @@ foreach ($subteams as $subteam_obj):
   <?php endif; ?>
 
 <?php endforeach; ?>
+
+<?php get_template_part('loop', 'amigos'); ?>
 
 <?php get_footer(); ?>

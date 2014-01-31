@@ -141,6 +141,7 @@ h1.main-title {
   font-size:2.5em;
   position:relative;
   margin-left:2.5%;
+  margin-bottom: 48px;
 }
 h1.main-title  span {
   font-family:'Ubuntu', sans-serif;
@@ -539,6 +540,18 @@ a.btn {
 .member:nth-child(7n+5) {
   margin-left: 120px;
 }
+
+.friend-wrapper {
+  display: inline-block;
+}
+.friend {
+  margin: 8px 24px;
+}
+.friend-title {
+  text-align: center;
+}
+
+
 /*perfil*/
 /*clase temporal mientras se ajusta a wordpress*/
 .perfil h1.main-title { padding-top:18px;}
