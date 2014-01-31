@@ -66,6 +66,23 @@ class Manos {
 			'supports' => array('title','editor','revisions','thumbnail','page-attributes')
 			)
 		);
+
+		register_post_type('friend', array(
+			'label' => 'Amigos',
+			'labels' => array (
+				'name' => 'Amigos',
+				'add_new' => 'Agregar nuevo',
+				'add_new_item' => 'Agregar nuevo amigo',
+				'edit_item' => 'Editar amigo',
+				'new_item' => 'Nuevo amigo',
+				'view_item' => 'Ver amigo',
+				),
+			'public' => true,
+			'map_meta_cap' => true,
+			'hierarchical' => true,
+			'supports' => array('title','excerpt','thumbnail','page-attributes')
+			)
+		);
 	}
 
 	function manos_taxonomies() {
@@ -122,6 +139,22 @@ class Manos {
 									'type' => 'text'
 								)
 							)
+						)
+					)
+				),
+				array(
+					'id' => 'team',
+					'title' => 'Equipo',
+					'fields' => array(
+						array(
+							'id'      => 'team_checkbox',
+							'title'   => 'Equipo',
+							'type'    => 'checkbox',
+							'options' => array(
+								'primary' => 'Equipo Principal',
+								'secondary' => 'Colaboradores'
+							),
+							'default'	=> 'secondary'
 						)
 					)
 				)

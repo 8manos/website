@@ -2,6 +2,8 @@
 
 <h1 class="main-title"><?php post_type_archive_title(); ?></h1>
 
+<?php $secondary_title = false; ?>
+
 <p class="intro">
   <?php
   global $wp_query;
@@ -15,6 +17,14 @@
 <div class="team-wrapper">
 
   <?php while ( have_posts() ) : the_post(); ?>
+
+    <?php
+    $team = get_post_meta( $post->ID, '_team_checkbox', true );
+    if ($team[0] == 'secondary' && ! $secondary_title) {
+      echo '<h1 class="main-title">Colaboradores</h1>';
+      $secondary_title = true;
+    }
+    ?>
 
     <article class="member">
       <div  class="thumb-con">
