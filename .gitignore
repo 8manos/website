@@ -19,6 +19,7 @@ sitemap.xml
 sitemap.xml.gz
 readme.html
 license.txt
+github_update.php
 
 # Numerous always-ignore extensions
 *.diff
