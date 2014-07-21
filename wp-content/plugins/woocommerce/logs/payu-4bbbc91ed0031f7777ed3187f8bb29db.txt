@@ -1,7 +1,0 @@
-12-06-2013 @ 19:59:34 - Generating payment form for order Nº 966. Notify URL: http://8manos.com/?wc-api=WC_Gateway_Payu
-12-06-2013 @ 19:59:34 - Generating payment form for order Nº 966. Notify URL: http://8manos.com/?wc-api=WC_Gateway_Payu
-12-09-2013 @ 00:12:27 - Generating payment form for order Nº 968. Notify URL: http://8manos.com/?wc-api=WC_Gateway_Payu
-12-09-2013 @ 00:12:27 - Generating payment form for order Nº 968. Notify URL: http://8manos.com/?wc-api=WC_Gateway_Payu
-12-09-2013 @ 01:20:29 - Found order #968
-12-09-2013 @ 01:20:29 - Payment status: 6
-12-09-2013 @ 01:20:29 - Payment code: 19

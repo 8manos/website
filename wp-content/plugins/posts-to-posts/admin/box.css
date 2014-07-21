@@ -13,8 +13,7 @@
 /* Tabs */
 
 .p2p-box .tabs-panel {
-	border-width: 1px;
-	border-style: solid;
+	border: 1px solid #DFDFDF;
 	display: none;
 	padding: 10px;
 }
@@ -83,7 +82,7 @@ td.p2p-col-create {
 	text-align: left;
 }
 
-.p2p-connections td input {
+.p2p-connections td input[type="text"] {
 	width: 100%;
 }
 
