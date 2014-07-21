@@ -50,13 +50,14 @@ remove_filter('comment_text', 'capital_P_dangit', 31);
 add_filter('the_generator', '__return_false');
 
 function no_sub_team( $query ) {
-    $subteams = get_terms( 'subteam');
 
-    $subteams_slugs = array_map (function ($term) {
-        return $term->slug;
-    }, $subteams);
+    if ( ! is_admin() && $query->is_main_query() && $query->is_post_type_archive( 'equipo' ) ) {
+        $subteams = get_terms( 'subteam');
 
-    if ( $query->is_main_query() && $query->is_post_type_archive( 'equipo' ) ) {
+        $subteams_slugs = array_map (function ($term) {
+            return $term->slug;
+        }, $subteams);
+
         $query->set( 'tax_query', array( array('taxonomy' => 'subteam', 'field' => 'slug', 'terms' => $subteams_slugs, 'operator' => 'NOT IN') ) );
     }
 }
