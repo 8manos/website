@@ -4,7 +4,7 @@
         <li><strong>&infin;manos s.a.s</strong></li>
         <li><a href="http://8manos.com">8manos.com</a></li>
         <li><a href="mailto:info@8manos.com"></a></li>
-        <li>cel: (57) 3002179039</li>
+        <li>cel: (57) 605 7039</li>
         <li>Cll 94 #15-32 of. 301 - Bogotá</li>
         <li>NIT: 900381428-7</li>
       </ul>
@@ -29,7 +29,7 @@
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
        mathiasbynens.be/notes/async-analytics-snippet -->
   <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
+    var _gaq=[['_setAccount','UA-18501899-1'],['_trackPageview'],['_trackPageLoadTime']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
