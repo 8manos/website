@@ -8,14 +8,30 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+
+		// autoprefixer
+        autoprefixer: {
+            options: {
+                browsers: ['last 2 versions', 'ie 9', 'ios 6', 'android 4'],
+                map: true
+            },
+            files: {
+                expand: true,
+                flatten: true,
+                src: 'css/*.css',
+                dest: 'css'
+            },
+        },
+
 		watch: {
 			css: {
 				files: '**/*.scss',
-				tasks: ['sass']
+				tasks: ['sass', 'autoprefixer']
 			}
 		}
 	});
+	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.registerTask('default',['watch']);
+	grunt.registerTask('default',['sass', 'autoprefixer', 'watch']);
 }
