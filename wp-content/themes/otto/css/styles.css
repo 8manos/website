@@ -1,6 +1,7 @@
 /* ==========================================================================
    Base
    ========================================================================== */
+/* line 5, ../sass/styles.scss */
 body {
   -webkit-transition: all 0.2s ease;
           transition: all 0.2s ease; }
@@ -18,14 +19,16 @@ body {
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
+/* line 30, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
+/* line 31, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
+/* line 32, ../sass/styles.scss */
 .alignright {
   float: right; }
-
 /*# sourceMappingURL=styles.css.map */
