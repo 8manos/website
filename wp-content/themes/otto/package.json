@@ -11,7 +11,7 @@
     "8manos"
   ],
   "author": "8manos S.A.S",
-  "license": "PD",
+  "license": "CC BY-NC-SA",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^1.0.1",
