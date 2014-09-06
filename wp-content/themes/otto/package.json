@@ -11,5 +11,8 @@
     "8manos"
   ],
   "author": "8manos S.A.S",
-  "license": "PD"
+  "license": "PD",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  }
 }
