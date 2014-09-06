@@ -1,0 +1,15 @@
+{
+  "name": "otto",
+  "version": "0.0.1",
+  "description": "Otto site",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "otto",
+    "8manos"
+  ],
+  "author": "8manos S.A.S",
+  "license": "PD"
+}
