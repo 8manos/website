@@ -14,9 +14,13 @@
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-	<!--[if lt IE 9]><script src="<?php bloginfo('template_directory'); ?>/js/html5shiv.js" media="all"></script><![endif]-->
+	<!--[if lt IE 9]><script src="<?php bloginfo('template_directory'); ?>/js/lib/html5shiv.js" media="all"></script><![endif]-->
 
-	<?php wp_head(); ?>
+	<?php
+	wp_enqueue_script( 'underscore', get_bloginfo('template_directory').'/js/lib/underscore-min.js', array(), '1.7.0', true );
+	wp_enqueue_script( 'backbone', get_bloginfo('template_directory').'/js/lib/backbone-min.js', array('jquery', 'underscore'), '1.1.1', true );
+	wp_head();
+	?>
 </head>
 <body <?php body_class(); ?>>
 
