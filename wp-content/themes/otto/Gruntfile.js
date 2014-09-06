@@ -52,6 +52,10 @@ module.exports = function(grunt) {
 			images: {
 				files: ['img/*.{png,jpg,gif}'],
 				tasks: ['imagemin']
+			},
+			livereload: {
+				options: { livereload: true },
+				files: ['/css/styles.css', 'js/*.js', 'img/*.{png,jpg,jpeg,gif,webp,svg}']
 			}
 		}
 	});
