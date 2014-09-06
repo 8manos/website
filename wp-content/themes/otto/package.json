@@ -12,10 +12,8 @@
   ],
   "author": "8manos S.A.S",
   "license": "PD",
-  "dependencies": {
-    "grunt": "^0.4.5"
-  },
   "devDependencies": {
+    "grunt": "^0.4.5",
     "grunt-autoprefixer": "^1.0.1",
     "grunt-contrib-compass": "^1.0.0",
     "grunt-contrib-imagemin": "^0.8.1",
