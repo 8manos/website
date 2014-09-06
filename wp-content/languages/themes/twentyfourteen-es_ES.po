@@ -42,8 +42,8 @@ msgstr "Más minientradas"
 msgid "%s <span class=\"meta-nav\">&rarr;</span>"
 msgstr "%s <span class=\"meta-nav\">&rarr;</span>"
 
-#: inc/customizer.php:37 inc/customizer.php:102 inc/featured-content.php:410
-#: inc/featured-content.php:419 inc/featured-content.php:479
+#: inc/customizer.php:37 inc/customizer.php:102 inc/featured-content.php:407
+#: inc/featured-content.php:416 inc/featured-content.php:476
 msgctxt "featured content default tag slug"
 msgid "featured"
 msgstr "destacado"
@@ -55,7 +55,7 @@ msgstr "Usa este widget para listar minientradas, citas, vídeos, audios, imáge
 msgid "http://wordpress.org/themes/twentyfourteen"
 msgstr "http://wordpress.org/themes/twentyfourteen"
 
-#: inc/customizer.php:36 inc/featured-content.php:409
+#: inc/customizer.php:36 inc/featured-content.php:406
 msgid "Use a <a href=\"%1$s\">tag</a> to feature your posts. If no posts match the tag, <a href=\"%2$s\">sticky posts</a> will be displayed instead."
 msgstr "Usa una <a href=\"%1$s\">etiqueta</a> para destacar tus entradas. Si ninguna entrada se ajusta a la etiqueta entonces se usarán las <a href=\"%2$s\">entradas fijas</a>."
 
@@ -85,11 +85,11 @@ msgstr "Y"
 msgid "Site Title Color"
 msgstr "Color del título del sitio"
 
-#: inc/featured-content.php:431
+#: inc/featured-content.php:428
 msgid "Tag Name"
 msgstr "Nombre de la etiqueta"
 
-#: inc/featured-content.php:436
+#: inc/featured-content.php:433
 msgid "Don&rsquo;t display tag on front end."
 msgstr "No mostrar la etiqueta en la portada."
 
@@ -153,7 +153,7 @@ msgstr "Twenty Fourteen requiere al menos la versión 3.6 de WordPress. Estás u
 msgid "Background may only be visible on wide screens."
 msgstr "El fondo solo será visible en pantallas anchas."
 
-#: inc/customizer.php:35 inc/featured-content.php:408
+#: inc/customizer.php:35 inc/featured-content.php:405
 msgid "Featured Content"
 msgstr "Contenido destacado"
 
@@ -173,19 +173,19 @@ msgstr "Carrusel"
 msgid "Enhance your site design by using <a href=\"%s\">Featured Images</a> for posts you&rsquo;d like to stand out (also known as post thumbnails). This allows you to associate an image with your post without inserting it. Twenty Fourteen uses featured images for posts and pages&mdash;above the title&mdash;and in the Featured Content area on the home page."
 msgstr "Mejora el diseño de tu sitio usando <a href=\"%s\">Imágenes destacadas</a> en las entradas que quieras resaltar (también conocidas como miniaturas de entrada). Esto te permite asociar una imagen con tu entrada sin insertarla en la misma. Twenty Fourteen utiliza las imágenes destacadas de las entradas y páginas&mdash;sobre el título&mdash; y el área de Contenido destacado en la portada."
 
-#: inc/template-tags.php:53
+#: inc/template-tags.php:58
 msgid "Posts navigation"
 msgstr "Navegación de entradas"
 
-#: inc/template-tags.php:84
+#: inc/template-tags.php:89
 msgid "<span class=\"meta-nav\">Published In</span>%title"
 msgstr "<span class=\"meta-nav\">Publicada en</span>%title"
 
-#: inc/template-tags.php:86
+#: inc/template-tags.php:91
 msgid "<span class=\"meta-nav\">Previous Post</span>%title"
 msgstr "<span class=\"meta-nav\">Entrada anterior</span>%title"
 
-#: inc/template-tags.php:87
+#: inc/template-tags.php:92
 msgid "<span class=\"meta-nav\">Next Post</span>%title"
 msgstr "<span class=\"meta-nav\">Entrada siguiente</span>%title"
 
@@ -334,7 +334,7 @@ msgctxt "Lato font: on or off"
 msgid "on"
 msgstr "activada"
 
-#: functions.php:488
+#: functions.php:491
 msgid "Page %s"
 msgstr "Página %s"
 
@@ -350,19 +350,19 @@ msgstr "Menú principal"
 msgid "Skip to content"
 msgstr "Ir al contenido"
 
-#: inc/template-tags.php:80
+#: inc/template-tags.php:85
 msgid "Post navigation"
 msgstr "Ir a la entrada"
 
-#: inc/template-tags.php:45
+#: inc/template-tags.php:50
 msgid "&larr; Previous"
 msgstr "&larr; Anterior"
 
-#: inc/template-tags.php:46
+#: inc/template-tags.php:51
 msgid "Next &rarr;"
 msgstr "Siguiente &rarr;"
 
-#: inc/template-tags.php:104
+#: inc/template-tags.php:109
 msgid "Sticky"
 msgstr "Destacada"
 
