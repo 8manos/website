@@ -12,70 +12,67 @@
 
 	if ( window.DeviceOrientationEvent ) {
 		window.addEventListener('deviceorientation', handleEvent, true);
+	}
 
+	setTimeout( function(){ 
+		console.log( "timeout" );
 
-		setTimeout( function(){ 
-			console.log( "timeout" );
+		console.log( r_x_inicial );
+		console.log( r_y_inicial );
 
-			console.log( r_x_inicial );
-			console.log( r_y_inicial );
+		if( ( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ) || ( r_x_inicial === null && r_y_inicial === null ) ){
+			console.log( 'No me he movido' );
 
-			if( ( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ) || ( r_x_inicial === null && r_y_inicial === null ) ){
-				console.log( 'No me he movido' );
+			r_z = 0;
 
-				r_z = 0;
+			$( window ).mousemove(function( event ) {
 
-				$( window ).mousemove(function( event ) {
+				r_x = event.pageX;
+				r_y = event.pageY;
 
-					r_x = event.pageX;
-					r_y = event.pageY;
+				handleCursor( r_x, r_y, r_z );
 
-					handleCursor( r_x, r_y, r_z );
+			});
 
-				});
-
-				$( window ).on('mousewheel', function(event) {
-					console.log( event.deltaY );
-					r_z = r_z + ( event.deltaY * 2 );
-					if( r_z < 0 ){
-						r_z = 255;
-					}else if( r_z > 255 ){
-						r_z = 0;
-					}
-
-					$( "#mouse_z" ).text( r_z );
-					handleCursor( r_x, r_y, r_z );
-
-				});
-
-				function handleCursor( r_x, r_y, r_z ){
-
-					var doc_height = $(window).height();
-					var doc_width = $(window).width();
-
-					var x_percentage = percentageOfTotal( r_x, doc_width );
-					var y_percentage = percentageOfTotal( r_y, doc_height );
-
-					var r = changeRange100To255( x_percentage );
-					var g = changeRange100To255( y_percentage );
-					var b = r_z;
-
-					$( "#mouse_x" ).text( x_percentage );
-					$( "#mouse_y" ).text( y_percentage );
-
-					// Setting de color
-					setRGB( r, g, b );
-
+			$( window ).on('mousewheel', function(event) {
+				console.log( event.deltaY );
+				r_z = r_z + ( event.deltaY * 2 );
+				if( r_z < 0 ){
+					r_z = 255;
+				}else if( r_z > 255 ){
+					r_z = 0;
 				}
 
-			}else{
-				console.log( 'Me moví ');
+				$( "#mouse_z" ).text( r_z );
+				handleCursor( r_x, r_y, r_z );
+
+			});
+
+			function handleCursor( r_x, r_y, r_z ){
+
+				var doc_height = $(window).height();
+				var doc_width = $(window).width();
+
+				var x_percentage = percentageOfTotal( r_x, doc_width );
+				var y_percentage = percentageOfTotal( r_y, doc_height );
+
+				var r = changeRange100To255( x_percentage );
+				var g = changeRange100To255( y_percentage );
+				var b = r_z;
+
+				$( "#mouse_x" ).text( x_percentage );
+				$( "#mouse_y" ).text( y_percentage );
+
+				// Setting de color
+				setRGB( r, g, b );
+
 			}
 
-		}, 1000);
+		}else{
+			console.log( 'Me moví ');
+		}
 
-		// console.log( window.DeviceOrientationEvent );
-	}
+	}, 1000);
 		            
 	function handleEvent(event) {
 		// Para comparar si se ha movido en unos segundos
