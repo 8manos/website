@@ -1,6 +1,11 @@
 	</div>
 
 	<pre id="orientation">
+
+		raw x: <span id="data-r_x">0</span>
+		raw y: <span id="data-r_y">0</span>
+		raw z: <span id="data-r_z">0</span>
+
 		x: <span id="data-x">0</span>
 		y: <span id="data-y">0</span>
 		z: <span id="data-z">0</span>
