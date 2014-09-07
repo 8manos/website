@@ -1,6 +1,4 @@
-var app = app || {};
-
-app.PageView = Backbone.View.extend({
+OM.Views.PageView = Backbone.View.extend({
   el: 'section.home',
   template: _.template( $( '#pageTemplate' ).html() ),
 
@@ -10,7 +8,7 @@ app.PageView = Backbone.View.extend({
 
   render: function() {
     //this.el is what we defined in tagName. use $el to get access to jQuery html() function
-    console.log(this.collection.models[0].attributes.posts[0]);
+    //console.log(this.collection.models[0].attributes.posts[0]);
     this.$el.html( this.template( this.collection.models[0].attributes.posts[0] ) );
 
     return this;

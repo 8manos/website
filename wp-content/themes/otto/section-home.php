@@ -1,5 +1,2 @@
-<section class="home">
+<section class="home main-section">
 </section>
-<nav class="section-nav">
-  <a href="#">Conócenos</a>
-</nav>

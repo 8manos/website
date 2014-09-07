@@ -1,6 +1,4 @@
-var app = app || {};
-
-$(function() {
-  new app.Router();
+$(document).on('ready', function(){
+  window.routers.router = new OM.Routers.Router();
   Backbone.history.start();
 });
