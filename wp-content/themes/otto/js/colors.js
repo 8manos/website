@@ -57,12 +57,12 @@
 	}
 
 	function changeRangeTo255( val ){
-		var converted = ( val * 255 ) / 360;
+		var converted = ( val * 255 ) / 180;
 		return Math.floor( converted );
 	}
 
 	function changeRangeTo100( val ){
-		var converted = ( val * 100 ) / 360;
+		var converted = ( val * 100 ) / 180;
 		return Math.floor( converted );
 	}
 
