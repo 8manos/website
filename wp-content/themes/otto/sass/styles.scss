@@ -72,7 +72,8 @@ h6 { font-size: $size-seis;}
          display: inline-block; 
          width: 50px;
          border-radius: 50px;
-         border: 3px solid $naranja; 
+         border: 3px solid $naranja;
+         margin-top: -25px; 
       }
       .more-info {
          text-aling: left;
