@@ -7,8 +7,8 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 
-		// compass 
-		compass: { 
+		// compass
+		compass: {
 			dev: {
 				options: {
 					sassDir: 'sass',

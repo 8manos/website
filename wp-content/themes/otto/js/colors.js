@@ -12,69 +12,88 @@
 
 	if ( window.DeviceOrientationEvent ) {
 		window.addEventListener('deviceorientation', handleEvent, true);
+	}
 
+	setTimeout( function(){ 
+		console.log( "timeout" );
 
-		setTimeout( function(){ 
-			console.log( "timeout" );
+		console.log( r_x_inicial );
+		console.log( r_y_inicial );
 
-			console.log( r_x_inicial );
-			console.log( r_y_inicial );
+		var touch_support = Modernizr.touch;
 
-			if( ( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ) || ( r_x_inicial === null && r_y_inicial === null ) ){
-				console.log( 'No me he movido' );
+		if( touch_support == false && ( ( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ) || ( r_x_inicial === null && r_y_inicial === null ) ) ){
+			console.log( 'No me he movido y no tengo touch' );
 
-				r_z = 0;
+			r_z = 0;
 
-				$( window ).mousemove(function( event ) {
+			$( window ).mousemove(function( event ) {
 
-					r_x = event.pageX;
-					r_y = event.pageY;
+				r_x = event.pageX;
+				r_y = event.pageY;
 
-					handleCursor( r_x, r_y, r_z );
+				handleCursor( r_x, r_y, r_z );
 
-				});
+			});
 
-				$( window ).on('mousewheel', function(event) {
-					console.log( event.deltaY );
-					r_z = r_z + ( event.deltaY * 2 );
-					if( r_z < 0 ){
-						r_z = 255;
-					}else if( r_z > 255 ){
-						r_z = 0;
-					}
-
-					$( "#mouse_z" ).text( r_z );
-					handleCursor( r_x, r_y, r_z );
-
-				});
-
-				function handleCursor( r_x, r_y, r_z ){
-
-					var doc_height = $(window).height();
-					var doc_width = $(window).width();
-
-					var x_percentage = percentageOfTotal( r_x, doc_width );
-					var y_percentage = percentageOfTotal( r_y, doc_height );
-
-					var r = changeRange100To255( x_percentage );
-					var g = changeRange100To255( y_percentage );
-					var b = r_z;
-
-					$( "#mouse_x" ).text( x_percentage );
-					$( "#mouse_y" ).text( y_percentage );
-
-					// Setting de color
-					setRGB( r, g, b );
-
+			$( window ).on('mousewheel', function(event) {
+				console.log( event.deltaY );
+				r_z = r_z + ( event.deltaY * 2 );
+				if( r_z < 0 ){
+					r_z = 255;
+				}else if( r_z > 255 ){
+					r_z = 0;
 				}
 
-			}else{
-				console.log( 'Me moví ');
+				handleCursor( r_x, r_y, r_z );
+
+			});
+
+			function handleCursor( r_x, r_y, r_z ){
+
+				var doc_height = $(window).height();
+				var doc_width = $(window).width();
+
+				var x_percentage = percentageOfTotal( r_x, doc_width );
+				var y_percentage = percentageOfTotal( r_y, doc_height );
+
+				var r = changeRange100To255( x_percentage );
+				var g = changeRange100To255( y_percentage );
+				var b = r_z;
+
+				// Setting de color
+				setRGB( r, g, b );
+
 			}
 
-		}, 1000);
+		}else if( Modernizr.touch && ( ( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ) || ( r_x_inicial === null && r_y_inicial === null ) ) ){
+			console.log( 'Touch pero quieto' );
 
-		// console.log( window.DeviceOrientationEvent );
+			randomColor();
+			setInterval( randomColor , 5000 );
+
+		}else{
+			console.log( 'Me moví ');
+		}
+
+	}, 1000);
+
+	function randomColor(){
+
+		var r = Math.floor((Math.random() * 255) + 1);
+		var g = Math.floor((Math.random() * 255) + 1);
+		var b = Math.floor((Math.random() * 255) + 1);
+		// Setting de color
+		setRGB( r, g, b );
+
+		$('a, .color, .color-bg').css({
+			WebkitTransition : 'all 5s linear',
+			MozTransition    : 'all 5s linear',
+			MsTransition     : 'all 5s linear',
+			OTransition      : 'all 5s linear',
+			transition       : 'all 5s linear'
+		});
+
 	}
 		            
 	function handleEvent(event) {
@@ -96,19 +115,12 @@
 	}
 
 	function handleAccelerometer ( r_x, r_y, r_z ){
-				// raw input
-		$('#data-r_x').text( Math.floor(r_x) );
-		$('#data-r_y').text( Math.floor(r_y) );
-		$('#data-r_z').text( Math.floor(r_z) );
+
 
 		// convierte rangos de sensores para que todos vayan de 0 a 360 ver: http://w3c.github.io/deviceorientation/spec-source-orientation.html
 		var x = r_x + 180;           
 		var y = (r_y + 90) * 2;     
 		var z = r_z;                
-
-		$('#data-x').text( Math.floor(x) );
-		$('#data-y').text( Math.floor(y) );
-		$('#data-z').text( Math.floor(z) );
 
 		// RGB
 		var r = cicloCompleto( x, changeRangeTo255 ); 
@@ -120,10 +132,6 @@
 		var s = cicloCompleto( y, changeRangeTo100 ); 
 		var l = cicloCompleto( z, changeRangeTo100 ); 
 
-		$('#data-h').text( h );
-		$('#data-s').text( s );
-		$('#data-l').text( l );
-
 		// Setear colores
 		setRGB( r, g, b );
 
@@ -134,10 +142,6 @@
 
 	// Recibe RGB y setea los colores
 	function setRGB( r, g, b ){
-
-		$('#data-r').text( r );
-		$('#data-g').text( g );
-		$('#data-b').text( b );
 
 		// Setting de color
 		$( 'a, .color' ).css( 'color', 'rgb('+r+','+g+','+b+')' );
