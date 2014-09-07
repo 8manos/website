@@ -2,7 +2,7 @@
 	function handleEvent(event) {
 
 		// accelerometer 
-		var z = event.alpha + 180;          // 0, 360
+		var z = event.alpha;                // 0, 360 // sim: + 180
 		var x = event.beta + 180;           // 0, 360
 		var y = (event.gamma + 90) * 2;     // 0, 360
 
