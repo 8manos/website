@@ -13,7 +13,7 @@ module.exports = function(grunt) {
 				options: {
 					sassDir: 'sass',
 					cssDir: 'css',
-					outputStyle: 'compressed'
+					outputStyle: 'nested'
 				}
 			}
 		},
