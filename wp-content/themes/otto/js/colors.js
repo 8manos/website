@@ -20,9 +20,9 @@
 			console.log( r_x_inicial );
 			console.log( r_y_inicial );
 
-			if( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ){
+			if( ( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ) || ( r_x_inicial === null && r_y_inicial === null ) ){
 				console.log( 'No me he movido' );
-			}else if( r_x_inicial === null && r_y_inicial === null ){
+			}else{
 				console.log( 'Me moví ');
 			}
 
@@ -85,7 +85,7 @@
 		// HSL Descartado
 		// $( 'body' ).css( 'background-color', 'hsl('+h+','+s+'%,'+l+'%)' );
 		console.log("event")
-		// window.console && console.info('Raw Position: x, y, z: ', x, y, z);
+		//window.console && console.info('Raw Position: x, y, z: ', x, y, z);
 	}
 
 	// Evita saltos al pasar de 360 a 0 haciendo un ciclo completo de 0 a 360 y de vuelta
