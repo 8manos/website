@@ -781,6 +781,44 @@ input[type=submit] {
 .contacto .nav-tabs { font-size: 18px;}
 .contacto .contact-frame { display: none;}
 
+/*********DEMO*/
+.grupo-sanduche {
+  margin: 24px 0;
+}
+.grupo-sanduche article {
+  /*padding: 14px 0;*/
+  border-bottom: 1px solid #FF3300; 
+}
+.grupo-sanduche article:first-child {
+  border-top: 1px solid #FF3300; 
+}
+.grupo-sanduche .indice {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 14px;
+  color: #FF3300;
+  cursor: pointer;
+}
+.grupo-sanduche .indice:before {
+  content: '\2665 \00a0 ';
+  color: #000;
+}
+.grupo-sanduche .indice:after {
+  content: '\21a7';
+  color: #000;
+  float: right;
+}
+.grupo-sanduche .indice:hover,
+.grupo-sanduche .indice:active {
+  background: #FF3300;
+  color: #FFF;
+}
+.grupo-sanduche .contenido {
+  display: none;
+
+}
+
 @media screen and (max-width: 1240px) {
   #mosaic article { width: 310px;}
   .content { width: 90%;}
