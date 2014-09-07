@@ -12,64 +12,78 @@
 /* line 22, ../sass/styles.scss */
 body {
   font: normal normal 16px 'Ubuntu', sans-serif;
-  color: #000; }
+  color: #000;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s; }
+  /* line 27, ../sass/styles.scss */
+  body.normal {
+    background: gray;
+    color: blue; }
+  /* line 32, ../sass/styles.scss */
+  body.tenue {
+    background: black;
+    color: white; }
+  /* line 37, ../sass/styles.scss */
+  body.luminoso {
+    background: white;
+    color: black; }
 
-/* line 26, ../sass/styles.scss */
+/* line 42, ../sass/styles.scss */
 a {
   color: #FF3300;
   text-decoration: none;
   font-size: 0.875em; }
 
-/* line 32, ../sass/styles.scss */
+/* line 48, ../sass/styles.scss */
 h1, h2, h3, h4, h5, h6 {
   font-style: italic; }
 
-/* line 36, ../sass/styles.scss */
+/* line 52, ../sass/styles.scss */
 h1 {
   font-size: 1.5em; }
 
-/* line 37, ../sass/styles.scss */
+/* line 53, ../sass/styles.scss */
 h2 {
   font-size: 1.313em; }
 
-/* line 38, ../sass/styles.scss */
+/* line 54, ../sass/styles.scss */
 h3 {
   font-size: 1.125em; }
 
-/* line 39, ../sass/styles.scss */
+/* line 55, ../sass/styles.scss */
 h4 {
   font-size: 1em; }
 
-/* line 40, ../sass/styles.scss */
+/* line 56, ../sass/styles.scss */
 h5 {
   font-size: 0.875em; }
 
-/* line 41, ../sass/styles.scss */
+/* line 57, ../sass/styles.scss */
 h6 {
   font-size: 0.75em; }
 
 /*navegacion*/
-/* line 45, ../sass/styles.scss */
+/* line 61, ../sass/styles.scss */
 header {
   width: 100%;
   background: #FF3300; }
 
-/* line 49, ../sass/styles.scss */
+/* line 65, ../sass/styles.scss */
 nav {
   /*width: 80%;*/
   height: 40px;
   /*margin-left: 6%;*/
   display: inline-block; }
-  /* line 55, ../sass/styles.scss */
+  /* line 71, ../sass/styles.scss */
   nav ul {
     list-style: none;
     margin: 0; }
-    /* line 59, ../sass/styles.scss */
+    /* line 75, ../sass/styles.scss */
     nav ul li {
       display: inline-block;
       margin-right: 5px;
       line-height: 40px; }
-      /* line 64, ../sass/styles.scss */
+      /* line 80, ../sass/styles.scss */
       nav ul li a {
         color: #FFF;
         display: block;
@@ -77,7 +91,7 @@ nav {
         font-size: 1em;
         text-transform: capitalize; }
 
-/* line 74, ../sass/styles.scss */
+/* line 90, ../sass/styles.scss */
 .ochomanos {
   padding: 12px 0;
   width: 130px;
@@ -85,13 +99,13 @@ nav {
   margin: 0 0;
   display: inline-block;
   float: right; }
-  /* line 82, ../sass/styles.scss */
+  /* line 98, ../sass/styles.scss */
   .ochomanos a {
     display: block;
     text-indent: -9999px;
     background: url(../img/8manos.svg) no-repeat; }
 
-/* line 89, ../sass/styles.scss */
+/* line 105, ../sass/styles.scss */
 .wrap {
   /*width: 80%;*/
   /*margin-left: 10%;*/ }
@@ -100,30 +114,30 @@ nav {
    Content
    ========================================================================== */
 /*encabezado modulo*/
-/* line 100, ../sass/styles.scss */
+/* line 116, ../sass/styles.scss */
 .inner-header h2 {
   display: inline-block; }
-  /* line 103, ../sass/styles.scss */
+  /* line 119, ../sass/styles.scss */
   .inner-header h2 span:after {
     content: '\00a0 \2f \00a0'; }
 
-/* line 108, ../sass/styles.scss */
+/* line 124, ../sass/styles.scss */
 .back-link {
   display: inline-block;
   float: right; }
 
-/* line 112, ../sass/styles.scss */
+/* line 128, ../sass/styles.scss */
 .team-wrapper {
   padding: 0 10px; }
-  /* line 115, ../sass/styles.scss */
+  /* line 131, ../sass/styles.scss */
   .team-wrapper .person {
     padding: 12px;
     background: #ECECEC;
     text-align: center; }
-    /* line 123, ../sass/styles.scss */
+    /* line 139, ../sass/styles.scss */
     .team-wrapper .person h4 {
       font-weight: normal; }
-    /* line 126, ../sass/styles.scss */
+    /* line 142, ../sass/styles.scss */
     .team-wrapper .person picture img {
       display: inline-block;
       width: 50px;
@@ -131,18 +145,18 @@ nav {
       border: 3px solid #FF3300;
       margin-top: -25px; }
 
-/* line 135, ../sass/styles.scss */
+/* line 151, ../sass/styles.scss */
 .lab-wrapper {
   padding: 0 10px; }
-  /* line 138, ../sass/styles.scss */
+  /* line 154, ../sass/styles.scss */
   .lab-wrapper .project {
     padding: 12px;
     background: #ECECEC;
     text-align: left; }
-    /* line 146, ../sass/styles.scss */
+    /* line 162, ../sass/styles.scss */
     .lab-wrapper .project h4 {
       font-weight: normal; }
-    /* line 149, ../sass/styles.scss */
+    /* line 165, ../sass/styles.scss */
     .lab-wrapper .project picture img {
       display: inline-block;
       width: 50px;
@@ -150,23 +164,23 @@ nav {
       border: 3px solid #FF3300;
       margin-top: -25px; }
 
-/* line 158, ../sass/styles.scss */
+/* line 174, ../sass/styles.scss */
 .more-info {
   text-align: left; }
-  /* line 161, ../sass/styles.scss */
+  /* line 177, ../sass/styles.scss */
   .more-info p {
     padding-bottom: 10px; }
-  /* line 164, ../sass/styles.scss */
+  /* line 180, ../sass/styles.scss */
   .more-info p + p {
     padding: 5px 0 15px; }
-  /* line 167, ../sass/styles.scss */
+  /* line 183, ../sass/styles.scss */
   .more-info .person-links,
   .more-info .lab-tags {
     margin: 0 10px;
     padding: 15px 10px;
     list-style: none;
     border-top: 2px dotted #FF3300; }
-    /* line 174, ../sass/styles.scss */
+    /* line 190, ../sass/styles.scss */
     .more-info .person-links li,
     .more-info .lab-tags li {
       display: inline-block; }
@@ -177,13 +191,13 @@ nav {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 187, ../sass/styles.scss */
+/* line 203, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.4s linear;
           transition: color 0.4s linear; }
 
-/* line 192, ../sass/styles.scss */
+/* line 208, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.4s linear;
           transition: background-color 0.4s linear; }
@@ -192,16 +206,16 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 202, ../sass/styles.scss */
+/* line 218, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 203, ../sass/styles.scss */
+/* line 219, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 204, ../sass/styles.scss */
+/* line 220, ../sass/styles.scss */
 .alignright {
   float: right; }
 
