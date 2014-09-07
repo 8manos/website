@@ -17,6 +17,10 @@
 		h: <span id="data-h">0</span>
 		s: <span id="data-s">0</span>
 		l: <span id="data-l">0</span>
+
+		mouse x: <span id="mouse_x">0</span>
+		mouse y: <span id="mouse_y">0</span>
+		mouse z: <span id="mouse_z">0</span>
 	</pre>
 
 	<footer role="contentinfo">

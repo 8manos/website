@@ -18,6 +18,7 @@
 
 	<?php
 	wp_enqueue_script( 'otto-modernizr', get_template_directory_uri() . '/js/lib/modernizr.js', array(), '2.5.2', false );
+	wp_enqueue_script( 'otto-plugins', get_template_directory_uri() . '/js/lib/plugins.js', array( 'jquery' ), '2.5.2', true );
 	wp_enqueue_script( 'underscore', get_bloginfo('template_directory').'/js/lib/underscore-min.js', array(), '1.7.0', true );
 	wp_enqueue_script( 'backbone', get_bloginfo('template_directory').'/js/lib/backbone-min.js', array('jquery', 'underscore'), '1.1.1', true );
 	wp_head();
@@ -31,7 +32,7 @@
 			<?php wp_nav_menu(array('theme_location' => 'primary')); ?>
 		</nav>
 
-		<h1 class="8manos"><a href="<?php echo home_url(); ?>/" rel="home"><?php bloginfo('name');?></a></h1>
+		<h1 class="ochomanos"><a href="<?php echo home_url(); ?>/" rel="home"><?php bloginfo('name');?></a></h1>
 	</header>
 
 	<!-- If you want to use an element as a wrapper, i.e. for styling only, then <div> is still the element to use -->

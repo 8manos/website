@@ -1,11 +1,10 @@
 /* ==========================================================================
    Base
    ========================================================================== */
-
-body {
-
+* {
+   margin:0;
+   padding:0;
 }
-a {}
 
 $size-uno: 1.5em;
 $size-dos: 1.313em;
@@ -30,6 +29,10 @@ a {
    font-size: $size-cinco;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-style: italic;
+}
+
 h1 { font-size: $size-uno;}
 h2 { font-size: $size-dos;}
 h3 { font-size: $size-tres;}
@@ -44,18 +47,20 @@ header {
   background: $naranja;
 }
    nav {
-     width: 80%;
+     /*width: 80%;*/
      height: 40px;
-     margin-left: 6%;
-   }
+     /*margin-left: 6%;*/
+     display: inline-block;
+   
       ul {
         list-style: none;
-      }
+        margin: 0;
+
          li {
            display: inline-block;
            margin-right: 5px;
            line-height: 40px;
-         }
+         
             a {
               color: #FFF;
               display: block;
@@ -63,19 +68,28 @@ header {
               font-size: 1em;
               text-transform: capitalize;
             }
-      .8manos {
-         padding: 12px 0;
-         width: 130px;
-         height: 16px;
-         margin: 0;
-      } 
-         a {
-            display: block;
-            text-indent: -9999px;
-            background: url(../img/8manos.svg) no-repeat; 
          }
+      }
+   }
+   .ochomanos {
+      padding: 12px 0;
+      width: 130px;
+      height: 16px;
+      margin: 0 0;
+      display: inline-block;
+      float: right;
+    
+      a {
+         display: block;
+         text-indent: -9999px;
+         background: url(../img/8manos.svg) no-repeat; 
+      }
+   }
 
-
+.wrap {
+  /*width: 80%;*/
+  /*margin-left: 10%;*/
+}
 /* ==========================================================================
    Content
    ========================================================================== */
@@ -83,29 +97,31 @@ header {
 /*encabezado modulo*/
 .inner-header {  
 
-}
    h2 {
       display: inline-block;
-   }
+   
       span:after {
        content: '\00a0 \2f \00a0';
       }
+   }
+}
 .back-link {
    display: inline-block;
    float: right; 
 }
 .team-wrapper {
    padding: 0 10px;
-}
+
    .person {
-      padding: 0 12px;
+      padding: 12px;
       background: $gris;
-      text-aling: center; 
-   }
-      h2 {
-         font-weight: bold;
+      text-align: center; 
+
+      h3 {
+         
       }
-      h3 {    
+      h4 {
+         font-weight: normal;
       }
       picture img {
          display: inline-block; 
@@ -114,20 +130,52 @@ header {
          border: 3px solid $naranja;
          margin-top: -25px; 
       }
-      .more-info {
-         text-aling: left;
-      }
-         p {
-            padding-bottom: 10px;
-            border-bottom: 2px dotted $naranja; 
-         }
-         .person-links {
-            list-style: none;
-         }
-            li {
-             display: inline-block;
-            }
+   }
+}
+.lab-wrapper {
+   padding: 0 10px;
 
+   .project {
+      padding: 12px;
+      background: $gris;
+      text-align: left; 
+
+      h3 {
+         
+      }
+      h4 {
+         font-weight: normal;
+      }
+      picture img {
+         display: inline-block; 
+         width: 50px;
+         border-radius: 50px;
+         border: 3px solid $naranja;
+         margin-top: -25px; 
+      }
+   }
+}
+.more-info {
+   text-align: left;
+
+   p {
+      padding-bottom: 10px;
+   }
+   p + p {
+      padding: 5px 0 15px;
+   }
+   .person-links,
+   .lab-tags {
+      margin: 0 10px;
+      padding: 15px 10px;
+      list-style: none;
+      border-top: 2px dotted $naranja; 
+   
+      li {
+       display: inline-block;
+      }
+   }
+}
 /* ==========================================================================
    Footer
    ========================================================================== */

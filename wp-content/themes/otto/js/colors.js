@@ -4,20 +4,75 @@
 	var r_y = null; 
 	var r_z = null;
 
+	// Para comparar si se mueve en unos segundos
+	var r_x_inicial = null;           
+	var r_y_inicial = null;
+	var r_x_actual = null;
+	var r_y_actual = null;
 
 	if ( window.DeviceOrientationEvent ) {
 		window.addEventListener('deviceorientation', handleEvent, true);
-		console.log( window.DeviceOrientationEvent );
+
+
+		setTimeout( function(){ 
+			console.log( "timeout" );
+
+			console.log( r_x_inicial );
+			console.log( r_y_inicial );
+
+			if( ( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ) || ( r_x_inicial === null && r_y_inicial === null ) ){
+				console.log( 'No me he movido' );
+
+				r_z = 0;
+
+				$( window ).mousemove(function( event ) {
+					$( "#mouse_x" ).text( event.pageX );
+					$( "#mouse_y" ).text( event.pageY );
+					$( "#mouse_z" ).text( r_z );
+
+					r_x = event.pageX;
+					r_y = event.pageY;
+				});
+
+				$( window ).on('mousewheel', function(event) {
+					console.log( event.deltaY );
+					r_z = r_z + event.deltaY;
+					if( r_z < 0 ){
+						r_z = 255;
+					}else if( r_z > 255 ){
+						r_z = 0;
+					}
+				});
+
+			}else{
+				console.log( 'Me moví ');
+			}
+
+		}, 1000);
+
+		// console.log( window.DeviceOrientationEvent );
 	}
 		            
 	function handleEvent(event) {
+		// Para comparar si se ha movido en unos segundos
+		if( !r_x_inicial && !r_y_inicial){		
+			r_x_inicial = event.beta;
+			r_y_inicial = event.gamma;
+		}
 
 		// raw input for color variations from accelerometer
 		var r_x = event.beta;           
 		var r_y = event.gamma; 
-		var r_z = event.alpha;    
+		var r_z = event.alpha; 
 
-		// raw input
+		r_x_actual = r_x;
+		r_y_actual = r_y;
+
+		handleAccelerometer( r_x, r_y, r_z );
+	}
+
+	function handleAccelerometer ( r_x, r_y, r_z ){
+				// raw input
 		$('#data-r_x').text( Math.floor(r_x) );
 		$('#data-r_y').text( Math.floor(r_y) );
 		$('#data-r_z').text( Math.floor(r_z) );
@@ -55,8 +110,7 @@
 
 		// HSL Descartado
 		// $( 'body' ).css( 'background-color', 'hsl('+h+','+s+'%,'+l+'%)' );
-		console.log("event")
-		window.console && console.info('Raw Position: x, y, z: ', x, y, z);
+		//window.console && console.info('Raw Position: x, y, z: ', x, y, z);
 	}
 
 	// Evita saltos al pasar de 360 a 0 haciendo un ciclo completo de 0 a 360 y de vuelta
