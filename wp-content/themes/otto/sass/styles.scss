@@ -37,6 +37,34 @@ h4 { font-size: $size-cuatro;}
 h5 { font-size: $size-cinco;}
 h6 { font-size: $size-seis;}
 
+/*navegacion*/
+
+header {
+  width: 100%;
+  background: $naranja;
+}
+   nav {
+     width: 80%;
+     height: 40px;
+     margin-left: 6%;
+   }
+      ul {
+        list-style: none;
+      }
+         li {
+           display: inline-block;
+           margin-right: 5px;
+           line-height: 40px;
+         }
+            a {
+              color: #FFF;
+              display: block;
+              padding: 0 12px;             
+              font-size: 1em;
+              text-transform: capitalize;
+            }
+
+
 /* ==========================================================================
    Content
    ========================================================================== */
