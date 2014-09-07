@@ -182,7 +182,7 @@ h1.main-title {
 .sub-menu li,
 .nav-tabs li {
   display: inline-block;
-  margin: 0 -1px;
+  margin: 0 -2px;
 }
 .sub-menu li a,
 .nav-tabs li a{
@@ -190,6 +190,7 @@ h1.main-title {
   color: #FFF;
   padding: 10px;
   background: #000;
+  background: rgba(255, 51, 0, 0.2);
   position: relative;
 }
 .sub-menu li.active a,
@@ -202,7 +203,7 @@ h1.main-title {
 }
 .sub-menu li.active a:before,
 .nav-tabs li.active a:before {
-  content:'';
+ /* content:'';*/
   width: 0px;
   height: 0px;
   border-style: solid;
@@ -228,13 +229,15 @@ left:0;
 */
 /*navtabs*/
 .nav-tabs {
-  text-align: left;
-  font-size: 20px;
   margin-top: -60px;
+  padding: 0 8px;
+  border-bottom: 1px solid #FF3300;
+
 }
 .nav-tabs li {
   display: inline-block;
-  margin-left: -2px;
+  margin-left: 1px;
+  width: 32%;
 }
 .content .nav-tabs {
   width: 100%;
@@ -393,7 +396,7 @@ article .info {
 }
 .content ul li,
 .content ol li{
-  margin-bottom: 4px;
+
 }
 .content ol li {
   position: relative;

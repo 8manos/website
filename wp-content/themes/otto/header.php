@@ -26,7 +26,7 @@
 </head>
 <body <?php body_class(); ?>>
 
-	<header class="color-bg" role="banner">
+	<header role="banner">
 		<a href="" class="menu-toggle">Menú</a>
 		<nav role="navigation">
 			<?php wp_nav_menu(array('theme_location' => 'primary')); ?>

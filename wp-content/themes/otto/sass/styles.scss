@@ -42,6 +42,10 @@ a {
    color: $naranja;
    text-decoration: none;
    font-size: $size-cinco;
+   font-weight: bold;
+}
+a:hover {
+   text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,7 +63,7 @@ h6 { font-size: $size-seis;}
 
 header {
   width: 100%;
-  background: $naranja;
+  background: #000;
 }
    nav {
      /*width: 80%;*/
@@ -135,7 +139,7 @@ header {
   
   li {
       display: inline-block;
-      margin-left: -2px;
+      margin-left: 1px;
       width: 32%;
   }
 
