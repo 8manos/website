@@ -25,6 +25,8 @@
 
 	<?php
 		get_template_part('template', 'page');
+		get_template_part('template', 'person');
+		get_template_part('template', 'project');
 	?>
 
 	<?php wp_footer(); ?>
