@@ -66,13 +66,35 @@
 
 			}
 
-		}else if( Modernizr.touch ){
+		}else if( Modernizr.touch && ( ( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ) || ( r_x_inicial === null && r_y_inicial === null ) ) ){
 			console.log( 'Touch pero quieto' );
+
+			randomColor();
+			setInterval( randomColor , 5000 );
+
 		}else{
 			console.log( 'Me moví ');
 		}
 
 	}, 1000);
+
+	function randomColor(){
+
+		var r = Math.floor((Math.random() * 255) + 1);
+		var g = Math.floor((Math.random() * 255) + 1);
+		var b = Math.floor((Math.random() * 255) + 1);
+		// Setting de color
+		setRGB( r, g, b );
+
+		$('a, .color, .color-bg').css({
+			WebkitTransition : 'all 5s linear',
+			MozTransition    : 'all 5s linear',
+			MsTransition     : 'all 5s linear',
+			OTransition      : 'all 5s linear',
+			transition       : 'all 5s linear'
+		});
+
+	}
 		            
 	function handleEvent(event) {
 		// Para comparar si se ha movido en unos segundos
