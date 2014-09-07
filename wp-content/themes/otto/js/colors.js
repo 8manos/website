@@ -2,6 +2,17 @@
 	function handleEvent(event) {
 
 		// accelerometer 
+
+		// raw
+		var r_z = event.alpha;                // 0, 360 // sim: + 180
+		var r_x = event.beta;           // 0, 360
+		var r_y = event.gamma; 
+
+		$('#data-r_x').text( Math.floor(r_x) );
+		$('#data-r_y').text( Math.floor(r_y) );
+		$('#data-r_z').text( Math.floor(r_z) );
+
+		// converted range
 		var z = event.alpha;                // 0, 360 // sim: + 180
 		var x = event.beta + 180;           // 0, 360
 		var y = (event.gamma + 90) * 2;     // 0, 360
