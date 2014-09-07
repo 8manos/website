@@ -132,19 +132,41 @@ nav {
       margin-top: -25px; }
 
 /* line 135, ../sass/styles.scss */
+.lab-wrapper {
+  padding: 0 10px; }
+  /* line 138, ../sass/styles.scss */
+  .lab-wrapper .project {
+    padding: 12px;
+    background: #ECECEC;
+    text-align: left; }
+    /* line 146, ../sass/styles.scss */
+    .lab-wrapper .project h4 {
+      font-weight: normal; }
+    /* line 149, ../sass/styles.scss */
+    .lab-wrapper .project picture img {
+      display: inline-block;
+      width: 50px;
+      border-radius: 50px;
+      border: 3px solid #FF3300;
+      margin-top: -25px; }
+
+/* line 158, ../sass/styles.scss */
 .more-info {
   text-align: left; }
-  /* line 138, ../sass/styles.scss */
+  /* line 161, ../sass/styles.scss */
   .more-info p {
     padding-bottom: 10px; }
-  /* line 141, ../sass/styles.scss */
+  /* line 164, ../sass/styles.scss */
+  .more-info p + p {
+    padding: 5px 0 15px; }
+  /* line 167, ../sass/styles.scss */
   .more-info .person-links,
   .more-info .lab-tags {
     margin: 0 10px;
     padding: 15px 10px;
     list-style: none;
     border-top: 2px dotted #FF3300; }
-    /* line 148, ../sass/styles.scss */
+    /* line 174, ../sass/styles.scss */
     .more-info .person-links li,
     .more-info .lab-tags li {
       display: inline-block; }
@@ -155,13 +177,13 @@ nav {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 161, ../sass/styles.scss */
+/* line 187, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.4s linear;
           transition: color 0.4s linear; }
 
-/* line 166, ../sass/styles.scss */
+/* line 192, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.4s linear;
           transition: background-color 0.4s linear; }
@@ -170,16 +192,16 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 176, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 177, ../sass/styles.scss */
+/* line 203, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 178, ../sass/styles.scss */
+/* line 204, ../sass/styles.scss */
 .alignright {
   float: right; }
 
