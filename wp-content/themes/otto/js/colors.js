@@ -10,6 +10,9 @@
 	var r_x_actual = null;
 	var r_y_actual = null;
 
+	// Para timeout
+	var moved = false;
+
 	if ( window.DeviceOrientationEvent ) {
 		window.addEventListener('deviceorientation', handleEvent, true);
 	}
@@ -97,21 +100,30 @@
 	}
 		            
 	function handleEvent(event) {
-		// Para comparar si se ha movido en unos segundos
-		if( !r_x_inicial && !r_y_inicial){		
-			r_x_inicial = event.beta;
-			r_y_inicial = event.gamma;
-		}
+		moved = true;
 
-		// valores crudos desde el acelerometro
-		var r_x = event.beta;           
-		var r_y = event.gamma; 
-		var r_z = event.alpha; 
+		setInterval(function () {
+			if (moved) {
+				moved = false;
 
-		r_x_actual = r_x;
-		r_y_actual = r_y;
+				// Para comparar si se ha movido en unos segundos
+				if( !r_x_inicial && !r_y_inicial){		
+					r_x_inicial = event.beta;
+					r_y_inicial = event.gamma;
+				}
 
-		handleAccelerometer( r_x, r_y, r_z );
+				// valores crudos desde el acelerometro
+				var r_x = event.beta;           
+				var r_y = event.gamma; 
+				var r_z = event.alpha; 
+
+				r_x_actual = r_x;
+				r_y_actual = r_y;
+
+				handleAccelerometer( r_x, r_y, r_z );
+			}
+
+		}, 20);		
 	}
 
 	function handleAccelerometer ( r_x, r_y, r_z ){
