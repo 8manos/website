@@ -14,7 +14,8 @@ $size-cuatro: 1em;
 $size-cinco: 0.875em;
 $size-seis: 0.750em;
 
-$naranja: #FF3300; 
+$naranja: #FF3300;
+$gris: #ECECEC; 
 
 /* =============================================================================
    Generales
@@ -48,19 +49,44 @@ h6 { font-size: $size-seis;}
       display: inline-block;
    }
       span:after {
-       content '\00a0 / \00a0';
+       content: '\00a0 \2f \00a0';
       }
 .back-link {
    display: inline-block;
    float: right; 
 }
-
-.person-links {
-   list-style: none;
+.team-wrapper {
+   padding: 0 10px;
 }
-   li {
-    display: inline-block;
+   .person {
+      padding: 0 12px;
+      background: $gris;
+      text-aling: center; 
    }
+      h2 {
+         font-weight: bold;
+      }
+      h3 {    
+      }
+      picture img {
+         display: inline-block; 
+         width: 50px;
+         border-radius: 50px;
+         border: 3px solid $naranja; 
+      }
+      .more-info {
+         text-aling: left;
+      }
+         p {
+            padding-bottom: 10px;
+            border-bottom: 2px dotted $naranja; 
+         }
+         .person-links {
+            list-style: none;
+         }
+            li {
+             display: inline-block;
+            }
 
 /* ==========================================================================
    Footer
