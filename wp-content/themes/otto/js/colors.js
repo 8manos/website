@@ -20,8 +20,10 @@
 		console.log( r_x_inicial );
 		console.log( r_y_inicial );
 
-		if( ( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ) || ( r_x_inicial === null && r_y_inicial === null ) ){
-			console.log( 'No me he movido' );
+		var touch_support = Modernizr.touch;
+
+		if( touch_support == false && ( ( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ) || ( r_x_inicial === null && r_y_inicial === null ) ) ){
+			console.log( 'No me he movido y no tengo touch' );
 
 			r_z = 0;
 
@@ -64,6 +66,8 @@
 
 			}
 
+		}else if( Modernizr.touch ){
+			console.log( 'Touch pero quieto' );
 		}else{
 			console.log( 'Me moví ');
 		}
