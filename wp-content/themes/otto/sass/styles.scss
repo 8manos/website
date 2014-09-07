@@ -24,7 +24,6 @@ $gris: #ECECEC;
 body {
    font: normal normal 16px 'Ubuntu', sans-serif; 
    color: #000;
-   transition: all 0.3s;
 
    &.normal {
     background: gray;
@@ -127,6 +126,37 @@ header {
    display: inline-block;
    float: right; 
 }
+.nav-tabs{
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  text-transform: uppercase;
+  padding: 0 8px;
+  border-bottom: 1px solid $naranja;
+  
+  li {
+      display: inline-block;
+      margin-left: -2px;
+      width: 32%;
+  }
+
+  li a {
+     display: block;
+     color: #FFF;
+     padding: 10px;
+     background: rgba(255, 51, 0, 0.2);
+     position: relative;
+     font-weight: bold;
+   }
+   
+   li.active a,
+   li a:hover{
+      background: $naranja;
+      color: #FFF;
+   }
+}
+
 .team-wrapper {
    padding: 0 10px;
 
@@ -204,11 +234,11 @@ header {
 
    a ,
    .color {
-      transition: color 0.4s linear;
+      transition: color 0.2s linear;
    }
 
    .color-bg {
-      transition: background-color 0.4s linear;
+      transition: background-color 0.2s linear;
    }
 
 

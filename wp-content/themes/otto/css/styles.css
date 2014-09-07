@@ -1,4 +1,4 @@
-/* 
+/*
  *  Owl Carousel - Animate Plugin
  */
 /* line 4, ../sass/owl.carousel.scss */
@@ -31,7 +31,7 @@
     opacity: 1; }
   100% {
     opacity: 0; } }
-/* 
+/*
  * 	Owl Carousel - Auto Height Plugin
  */
 /* line 43, ../sass/owl.carousel.scss */
@@ -39,7 +39,7 @@
   -webkit-transition: height 500ms ease-in-out;
   transition: height 500ms ease-in-out; }
 
-/* 
+/*
  *  Core Owl Carousel CSS File
  */
 /* line 54, ../sass/owl.carousel.scss */
@@ -148,7 +148,7 @@
 .no-js .owl-carousel {
   display: block; }
 
-/* 
+/*
  * 	Owl Carousel - Lazy Load Plugin
  */
 /* line 149, ../sass/owl.carousel.scss */
@@ -162,7 +162,7 @@
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d; }
 
-/* 
+/*
  * 	Owl Carousel - Video Plugin
  */
 /* line 164, ../sass/owl.carousel.scss */
@@ -377,7 +377,6 @@ nav {
       border-radius: 50px;
       border: 3px solid #FF3300;
       margin-top: -25px; }
-
 /* line 176, ../sass/styles.scss */
 .more-info {
   text-align: left; }
@@ -408,13 +407,13 @@ nav {
 /* line 205, ../sass/styles.scss */
 a,
 .color {
-  -webkit-transition: color 0.4s linear;
-          transition: color 0.4s linear; }
+  -webkit-transition: color 0.2s linear;
+          transition: color 0.2s linear; }
 
 /* line 210, ../sass/styles.scss */
 .color-bg {
-  -webkit-transition: background-color 0.4s linear;
-          transition: background-color 0.4s linear; }
+  -webkit-transition: background-color 0.2s linear;
+          transition: background-color 0.2s linear; }
 
 /* ==========================================================================
    WordPress Generated Classes
