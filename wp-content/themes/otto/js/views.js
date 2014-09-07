@@ -1,3 +1,29 @@
+OM.Views.FriendsView = Backbone.View.extend({
+  el: 'section.friends',
+  initialize: function(){
+    this.template = _.template($('#friendsTemplate').html());
+    this.render();
+  },
+  render: function(){
+    var posts = this.collection.models[0].attributes.posts;
+    this.$el.html(this.template({'posts': posts}));
+    return this;
+  }
+});
+
+OM.Views.LabsView = Backbone.View.extend({
+  el: 'section.lab',
+  initialize: function(){
+    this.template = _.template($('#labsTemplate').html());
+    this.render();
+  },
+  render: function(){
+    var posts = this.collection.models[0].attributes.posts;
+    this.$el.html(this.template({'posts': posts}));
+    return this;
+  }
+});
+
 OM.Views.PageView = Backbone.View.extend({
   el: 'section.home',
   template: _.template($('#pageTemplate').html()),
@@ -15,10 +41,10 @@ OM.Views.PageView = Backbone.View.extend({
   }
 });
 
-OM.Views.ProjectView = Backbone.View.extend({
+OM.Views.ProjectsView = Backbone.View.extend({
   el: 'section.portfolio',
   initialize: function(){
-    this.template = _.template($('#projectTemplate').html());
+    this.template = _.template($('#projectsTemplate').html());
     this.render();
   },
   render: function(){
@@ -28,10 +54,10 @@ OM.Views.ProjectView = Backbone.View.extend({
   }
 });
 
-OM.Views.PersonView = Backbone.View.extend({
+OM.Views.PersonsView = Backbone.View.extend({
   el: 'section.people',
   initialize: function(){
-    this.template = _.template($('#personTemplate').html());
+    this.template = _.template($('#personsTemplate').html());
     this.render();
   },
   render: function(){

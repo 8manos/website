@@ -1,4 +1,4 @@
-<script id="personTemplate" type="text/template">
+<script id="personsTemplate" type="text/template">
   <div class="inner-header">
     <h2><span><a href="">People</a></span>Equipo</h2>
     <div class="back-link">Volver</div>

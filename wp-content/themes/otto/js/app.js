@@ -5,5 +5,8 @@ $(document).on('ready', function(){
   pages[0] = firstPageId;
 
   window.routers.router = new OM.Routers.Router({pages: pages});
-  Backbone.history.start();
+  Backbone.history.start({
+  	root: '/',
+  	//pushState: true
+  });
 });

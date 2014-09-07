@@ -4,8 +4,10 @@ OM.Routers.Router = Backbone.Router.extend({
   },
   routes: {
     '': 'root',
+    'amigos': 'friends',
     'trabajo/portafolio': 'projects',
-    'equipo/nucleo': 'team_core'
+    'equipo/nucleo': 'team_core',
+    'lab': 'lab'
   },
   root: function(){
     var homeCollection = new OM.Collections.PageCollection({pageId: this.pages[0]});
@@ -17,12 +19,32 @@ OM.Routers.Router = Backbone.Router.extend({
       },
     });
   },
+  friends: function(){
+    var friendsCollection = new OM.Collections.FriendsCollection();
+    friendsCollection.fetch({
+      complete: function(xhr, textStatus){
+        if(textStatus == 'success'){
+          window.views.friends_view = new OM.Views.FriendsView({collection: friendsCollection});
+        }
+      }
+    });
+  },
+  lab: function(){
+    var labCollection = new OM.Collections.LabsCollection();
+    labCollection.fetch({
+      complete: function(xhr, textStatus){
+        if(textStatus == 'success'){
+          window.views.labs_view = new OM.Views.LabsView({collection: labCollection});
+        }
+      }
+    });
+  },
   projects: function(){
-    var projectCollection = new OM.Collections.ProjectCollection();
+    var projectCollection = new OM.Collections.ProjectsCollection();
     projectCollection.fetch({
       complete: function(xhr, textStatus){
         if(textStatus == 'success'){
-          window.views.project_view = new OM.Views.ProjectView({collection: projectCollection});
+          window.views.projects_view = new OM.Views.ProjectsView({collection: projectCollection});
         }
       }
     });
@@ -32,7 +54,7 @@ OM.Routers.Router = Backbone.Router.extend({
     teamCollection.fetch({
       complete: function(xhr, textStatus){
         if(textStatus == 'success'){
-          window.views.person_view = new OM.Views.PersonView({collection: teamCollection});
+          window.views.persons_view = new OM.Views.PersonsView({collection: teamCollection});
         }
       }
     })

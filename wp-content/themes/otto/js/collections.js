@@ -1,11 +1,21 @@
+OM.Collections.FriendsCollection = Backbone.Collection.extend({
+  model: OM.Models.Friend,
+  url: '/wp_api/v1/posts?post_type=amigos',
+});
+
+OM.Collections.LabsCollection = Backbone.Collection.extend({
+  model: OM.Models.Lab,
+  url: '/wp_api/v1/posts?post_type=lab',
+});
+
 OM.Collections.PageCollection = Backbone.Collection.extend({
   initialize: function(options){
-    this.url = '/wp_api/v1/posts?p='+options.pageId;
+    this.url = '/wp_api/v1/posts?p=' + options.pageId;
   },
   model: OM.Models.Page,
 });
 
-OM.Collections.ProjectCollection = Backbone.Collection.extend({
+OM.Collections.ProjectsCollection = Backbone.Collection.extend({
   model: OM.Models.Project,
   url: '/wp_api/v1/posts?post_type=portafolio',
 });

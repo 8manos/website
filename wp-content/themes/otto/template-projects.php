@@ -1,4 +1,4 @@
-<script id="projectTemplate" type="text/template">
+<script id="projectsTemplate" type="text/template">
   <div class="inner-header">
     <h2><span><a href="">Work</a></span>Portafolio</h2>
     <div class="back-link">Volver</div>

@@ -29,8 +29,10 @@
 
 	<?php
 		get_template_part('template', 'page');
-		get_template_part('template', 'person');
-		get_template_part('template', 'project');
+		get_template_part('template', 'persons');
+		get_template_part('template', 'projects');
+		get_template_part('template', 'labs');
+		get_template_part('template', 'friends');
 	?>
 
 	<?php wp_footer(); ?>
