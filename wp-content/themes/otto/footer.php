@@ -4,6 +4,10 @@
 		<small>&copy; <?php bloginfo('name'); ?></small>
 	</footer>
 
+	<?php
+		get_template_part('template', 'page');
+	?>
+
 	<?php wp_footer(); ?>
 
 	<!-- Google Analytics - Optimized version by Mathias Bynens -->
