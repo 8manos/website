@@ -5,6 +5,9 @@
     get_template_part( 'section', 'home' );
     get_template_part( 'section', 'about' );
     get_template_part( 'section', 'people' );
+    get_template_part( 'section', 'work' );
+    get_template_part( 'section', 'lab' );
+    get_template_part( 'section', 'contact' );
   ?>
 </main>
 

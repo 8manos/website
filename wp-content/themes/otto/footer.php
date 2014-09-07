@@ -35,6 +35,12 @@
 	<script>
 		var _gaq=[['_setAccount','UA-XXXX-XX'],['_trackPageview']];(function(a,b){var c=a.createElement(b),d=a.getElementsByTagName(b)[0];c.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";d.parentNode.insertBefore(c,d)})(document,"script");
 	</script>
-
+	<script src="<?php bloginfo('template_directory'); ?>/js/init.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/app.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/models.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/collections.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/routers.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/views.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/colors.js"></script>
 </body>
 </html>
