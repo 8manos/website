@@ -45,12 +45,32 @@ OM.Views.ProjectsView = Backbone.View.extend({
   el: 'section.portfolio',
   initialize: function(){
     this.template = _.template($('#projectsTemplate').html());
+
+    this.render = _.wrap(this.render, function(render) {
+      this.beforeRender();
+      render.apply(this);
+      this.afterRender();
+    });
+
     this.render();
   },
   render: function(){
     var posts = this.collection.models[0].attributes.posts;
     this.$el.html(this.template({'posts': posts}));
     return this;
+  },
+
+  beforeRender: function () {
+    console.log("Before render");
+  },
+
+  afterRender: function () {
+    $(".owl-carousel").owlCarousel({
+      items: 1,
+      loop: true,
+      nav: true,
+      navText: ['&#60;','&#62;']
+    });
   }
 });
 
