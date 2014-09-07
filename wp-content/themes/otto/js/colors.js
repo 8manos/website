@@ -43,7 +43,6 @@
 					r_z = 0;
 				}
 
-				$( "#mouse_z" ).text( r_z );
 				handleCursor( r_x, r_y, r_z );
 
 			});
@@ -59,9 +58,6 @@
 				var r = changeRange100To255( x_percentage );
 				var g = changeRange100To255( y_percentage );
 				var b = r_z;
-
-				$( "#mouse_x" ).text( x_percentage );
-				$( "#mouse_y" ).text( y_percentage );
 
 				// Setting de color
 				setRGB( r, g, b );
@@ -93,19 +89,12 @@
 	}
 
 	function handleAccelerometer ( r_x, r_y, r_z ){
-				// raw input
-		$('#data-r_x').text( Math.floor(r_x) );
-		$('#data-r_y').text( Math.floor(r_y) );
-		$('#data-r_z').text( Math.floor(r_z) );
+
 
 		// convierte rangos de sensores para que todos vayan de 0 a 360 ver: http://w3c.github.io/deviceorientation/spec-source-orientation.html
 		var x = r_x + 180;           
 		var y = (r_y + 90) * 2;     
 		var z = r_z;                
-
-		$('#data-x').text( Math.floor(x) );
-		$('#data-y').text( Math.floor(y) );
-		$('#data-z').text( Math.floor(z) );
 
 		// RGB
 		var r = cicloCompleto( x, changeRangeTo255 ); 
@@ -117,10 +106,6 @@
 		var s = cicloCompleto( y, changeRangeTo100 ); 
 		var l = cicloCompleto( z, changeRangeTo100 ); 
 
-		$('#data-h').text( h );
-		$('#data-s').text( s );
-		$('#data-l').text( l );
-
 		// Setear colores
 		setRGB( r, g, b );
 
@@ -131,10 +116,6 @@
 
 	// Recibe RGB y setea los colores
 	function setRGB( r, g, b ){
-
-		$('#data-r').text( r );
-		$('#data-g').text( g );
-		$('#data-b').text( b );
 
 		// Setting de color
 		$( 'a, .color' ).css( 'color', 'rgb('+r+','+g+','+b+')' );
