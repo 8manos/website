@@ -21,51 +21,55 @@ a {
   font-size: 0.875em; }
 
 /* line 32, ../sass/styles.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-style: italic; }
+
+/* line 36, ../sass/styles.scss */
 h1 {
   font-size: 1.5em; }
 
-/* line 33, ../sass/styles.scss */
+/* line 37, ../sass/styles.scss */
 h2 {
   font-size: 1.313em; }
 
-/* line 34, ../sass/styles.scss */
+/* line 38, ../sass/styles.scss */
 h3 {
   font-size: 1.125em; }
 
-/* line 35, ../sass/styles.scss */
+/* line 39, ../sass/styles.scss */
 h4 {
   font-size: 1em; }
 
-/* line 36, ../sass/styles.scss */
+/* line 40, ../sass/styles.scss */
 h5 {
   font-size: 0.875em; }
 
-/* line 37, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 h6 {
   font-size: 0.75em; }
 
 /*navegacion*/
-/* line 41, ../sass/styles.scss */
+/* line 45, ../sass/styles.scss */
 header {
   width: 100%;
   background: #FF3300; }
 
-/* line 45, ../sass/styles.scss */
+/* line 49, ../sass/styles.scss */
 nav {
-  width: 80%;
+  /*width: 80%;*/
   height: 40px;
-  margin-left: 6%;
+  /*margin-left: 6%;*/
   display: inline-block; }
-  /* line 51, ../sass/styles.scss */
+  /* line 55, ../sass/styles.scss */
   nav ul {
     list-style: none;
     margin: 0; }
-    /* line 55, ../sass/styles.scss */
+    /* line 59, ../sass/styles.scss */
     nav ul li {
       display: inline-block;
       margin-right: 5px;
       line-height: 40px; }
-      /* line 60, ../sass/styles.scss */
+      /* line 64, ../sass/styles.scss */
       nav ul li a {
         color: #FFF;
         display: block;
@@ -73,7 +77,7 @@ nav {
         font-size: 1em;
         text-transform: capitalize; }
 
-/* line 70, ../sass/styles.scss */
+/* line 74, ../sass/styles.scss */
 .ochomanos {
   padding: 12px 0;
   width: 130px;
@@ -81,45 +85,45 @@ nav {
   margin: 0 0;
   display: inline-block;
   float: right; }
-  /* line 78, ../sass/styles.scss */
+  /* line 82, ../sass/styles.scss */
   .ochomanos a {
     display: block;
     text-indent: -9999px;
     background: url(../img/8manos.svg) no-repeat; }
 
-/* line 85, ../sass/styles.scss */
+/* line 89, ../sass/styles.scss */
 .wrap {
-  width: 80%;
-  margin-left: 10%; }
+  /*width: 80%;*/
+  /*margin-left: 10%;*/ }
 
 /* ==========================================================================
    Content
    ========================================================================== */
 /*encabezado modulo*/
-/* line 96, ../sass/styles.scss */
+/* line 100, ../sass/styles.scss */
 .inner-header h2 {
   display: inline-block; }
-  /* line 99, ../sass/styles.scss */
+  /* line 103, ../sass/styles.scss */
   .inner-header h2 span:after {
     content: '\00a0 \2f \00a0'; }
 
-/* line 104, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 .back-link {
   display: inline-block;
   float: right; }
 
-/* line 108, ../sass/styles.scss */
+/* line 112, ../sass/styles.scss */
 .team-wrapper {
   padding: 0 10px; }
-  /* line 111, ../sass/styles.scss */
+  /* line 115, ../sass/styles.scss */
   .team-wrapper .person {
     padding: 12px;
     background: #ECECEC;
     text-align: center; }
-    /* line 116, ../sass/styles.scss */
-    .team-wrapper .person h2 {
-      font-weight: bold; }
-    /* line 121, ../sass/styles.scss */
+    /* line 123, ../sass/styles.scss */
+    .team-wrapper .person h4 {
+      font-weight: normal; }
+    /* line 126, ../sass/styles.scss */
     .team-wrapper .person picture img {
       display: inline-block;
       width: 50px;
@@ -127,18 +131,20 @@ nav {
       border: 3px solid #FF3300;
       margin-top: -25px; }
 
-/* line 130, ../sass/styles.scss */
+/* line 135, ../sass/styles.scss */
 .more-info {
   text-align: left; }
-  /* line 133, ../sass/styles.scss */
+  /* line 138, ../sass/styles.scss */
   .more-info p {
-    padding-bottom: 10px;
-    border-bottom: 2px dotted #FF3300; }
-  /* line 137, ../sass/styles.scss */
+    padding-bottom: 10px; }
+  /* line 141, ../sass/styles.scss */
   .more-info .person-links,
   .more-info .lab-tags {
-    list-style: none; }
-    /* line 141, ../sass/styles.scss */
+    margin: 0 10px;
+    padding: 15px 10px;
+    list-style: none;
+    border-top: 2px dotted #FF3300; }
+    /* line 148, ../sass/styles.scss */
     .more-info .person-links li,
     .more-info .lab-tags li {
       display: inline-block; }
@@ -149,13 +155,13 @@ nav {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 154, ../sass/styles.scss */
+/* line 161, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.4s linear;
           transition: color 0.4s linear; }
 
-/* line 159, ../sass/styles.scss */
+/* line 166, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.4s linear;
           transition: background-color 0.4s linear; }
@@ -164,16 +170,16 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 169, ../sass/styles.scss */
+/* line 176, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 170, ../sass/styles.scss */
+/* line 177, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 171, ../sass/styles.scss */
+/* line 178, ../sass/styles.scss */
 .alignright {
   float: right; }
 

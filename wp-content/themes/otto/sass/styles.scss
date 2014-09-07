@@ -29,6 +29,10 @@ a {
    font-size: $size-cinco;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-style: italic;
+}
+
 h1 { font-size: $size-uno;}
 h2 { font-size: $size-dos;}
 h3 { font-size: $size-tres;}
@@ -43,9 +47,9 @@ header {
   background: $naranja;
 }
    nav {
-     width: 80%;
+     /*width: 80%;*/
      height: 40px;
-     margin-left: 6%;
+     /*margin-left: 6%;*/
      display: inline-block;
    
       ul {
@@ -83,8 +87,8 @@ header {
    }
 
 .wrap {
-  width: 80%;
-  margin-left: 10%;
+  /*width: 80%;*/
+  /*margin-left: 10%;*/
 }
 /* ==========================================================================
    Content
@@ -114,9 +118,10 @@ header {
       text-align: center; 
 
       h2 {
-         font-weight: bold;
+         
       }
-      h3 {    
+      h4 {
+         font-weight: normal;
       }
       picture img {
          display: inline-block; 
@@ -132,11 +137,13 @@ header {
 
    p {
       padding-bottom: 10px;
-      border-bottom: 2px dotted $naranja; 
    }
    .person-links,
    .lab-tags {
+      margin: 0 10px;
+      padding: 15px 10px;
       list-style: none;
+      border-top: 2px dotted $naranja; 
    
       li {
        display: inline-block;
