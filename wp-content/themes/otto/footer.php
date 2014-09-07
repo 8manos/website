@@ -8,6 +8,10 @@
 		r: <span id="data-r">0</span>
 		g: <span id="data-g">0</span>
 		b: <span id="data-b">0</span>
+
+		h: <span id="data-h">0</span>
+		s: <span id="data-s">0</span>
+		l: <span id="data-l">0</span>
 	</pre>
 
 	<footer role="contentinfo">
