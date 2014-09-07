@@ -40,7 +40,7 @@
 		$('#data-l').text( l );
 
 		// Setting de color
-		$( '.color' ).css( 'color', 'rgb('+r+','+g+','+b+')' );
+		$( 'a, .color' ).css( 'color', 'rgb('+r+','+g+','+b+')' );
 		$( '.color-bg' ).css( 'background-color', 'rgb('+r+','+g+','+b+')' );
 
 		// HSL Descartado
