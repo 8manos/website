@@ -25,13 +25,13 @@
 </head>
 <body <?php body_class(); ?>>
 
-	<header role="banner">
+	<header class="color-bg" role="banner">
 		<a href="" class="menu-toggle">Menú</a>
 		<nav role="navigation">
 			<?php wp_nav_menu(array('theme_location' => 'primary')); ?>
 		</nav>
 
-		<h1><a href="<?php echo home_url(); ?>/" rel="home"><?php bloginfo('name');?></a></h1>
+		<h1 class="ochomanos"><a href="<?php echo home_url(); ?>/" rel="home"><?php bloginfo('name');?></a></h1>
 	</header>
 
 	<!-- If you want to use an element as a wrapper, i.e. for styling only, then <div> is still the element to use -->

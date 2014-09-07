@@ -15,6 +15,19 @@ OM.Views.PageView = Backbone.View.extend({
   }
 });
 
+OM.Views.ProjectView = Backbone.View.extend({
+  el: 'section.portfolio',
+  initialize: function(){
+    this.template = _.template($('#projectTemplate').html());
+    this.render();
+  },
+  render: function(){
+    var posts = this.collection.models[0].attributes.posts;
+    this.$el.html(this.template({'posts': posts}));
+    return this;
+  }
+});
+
 OM.Views.PersonView = Backbone.View.extend({
   el: 'section.people',
   initialize: function(){
