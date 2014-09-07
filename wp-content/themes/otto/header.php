@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  <?php language_attributes(); ?>>
+<html  <?php language_attributes(); ?> class="no-js">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 
@@ -17,8 +17,15 @@
 	<!--[if lt IE 9]><script src="<?php bloginfo('template_directory'); ?>/js/lib/html5shiv.js" media="all"></script><![endif]-->
 
 	<?php
+	wp_enqueue_script( 'otto-modernizr', get_template_directory_uri() . '/js/lib/modernizr.js', array(), '2.5.2', false );
+	wp_enqueue_script( 'otto-colors', get_template_directory_uri() . '/js/colors.js', array('jquery'), '0.0.1', true );
 	wp_enqueue_script( 'underscore', get_bloginfo('template_directory').'/js/lib/underscore-min.js', array(), '1.7.0', true );
 	wp_enqueue_script( 'backbone', get_bloginfo('template_directory').'/js/lib/backbone-min.js', array('jquery', 'underscore'), '1.1.1', true );
+	wp_enqueue_script( 'model-page', get_bloginfo('template_directory').'/js/models/page.js', array(), null, true );
+	wp_enqueue_script( 'collection-page', get_bloginfo('template_directory').'/js/collections/page.js', array(), null, true );
+	wp_enqueue_script( 'view-page', get_bloginfo('template_directory').'/js/views/page.js', array(), null, true );
+	wp_enqueue_script( 'router', get_bloginfo('template_directory').'/js/routers/router.js', array(), null, true );
+	wp_enqueue_script( 'app', get_bloginfo('template_directory').'/js/app.js', array(), null, true );
 	wp_head();
 	?>
 </head>

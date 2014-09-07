@@ -1,8 +1,6 @@
-$(document).on('ready', function(){
-	
-	new OM.Routers.Router();
+var app = app || {};
 
-	Backbone.history.start({
-		root: '/',
-	});
+$(function() {
+  new app.Router();
+  Backbone.history.start();
 });

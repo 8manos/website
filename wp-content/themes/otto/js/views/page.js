@@ -1,4 +1,6 @@
-OM.Views.PageView = Backbone.View.extend({
+var app = app || {};
+
+app.PageView = Backbone.View.extend({
   el: 'section.home',
   template: _.template( $( '#pageTemplate' ).html() ),
 

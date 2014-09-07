@@ -1,1 +1,4 @@
-OM.Models.Page = Backbone.Model.extend({});
+var app = app || {};
+
+app.Page = Backbone.Model.extend({
+});
