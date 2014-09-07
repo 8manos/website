@@ -1,0 +1,1 @@
+OM.Models.Page = Backbone.Model.extend({});
