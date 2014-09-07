@@ -39,9 +39,12 @@
 		$('#data-s').text( s );
 		$('#data-l').text( l );
 
-		// Pruebas de setting de color
-		$( 'header' ).css( 'background-color', 'rgb('+r+','+g+','+b+')' );
-		$( 'body' ).css( 'background-color', 'hsl('+h+','+s+'%,'+l+'%)' );
+		// Setting de color
+		$( '.color' ).css( 'color', 'rgb('+r+','+g+','+b+')' );
+		$( '.color-bg' ).css( 'background-color', 'rgb('+r+','+g+','+b+')' );
+
+		// HSL Descartado
+		// $( 'body' ).css( 'background-color', 'hsl('+h+','+s+'%,'+l+'%)' );
 
 		window.console && console.info('Raw Position: x, y, z: ', x, y, z);
 	}
