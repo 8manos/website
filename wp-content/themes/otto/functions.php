@@ -45,3 +45,11 @@ remove_filter( 'comment_text', 'capital_P_dangit', 31 );
 
 // Hide the version of WordPress you're running from source and RSS feed // Want to JUST remove it from the source? Try: remove_action('wp_head', 'wp_generator');
 add_filter('the_generator', '__return_false');
+
+add_filter('nav_menu_css_class' , 'page_id_nav_class' , 10 , 2);
+function page_id_nav_class($classes, $item){
+	if($item->object == "page"){
+		$classes[] = "page-id-".$item->object_id;
+	}
+	return $classes;
+}

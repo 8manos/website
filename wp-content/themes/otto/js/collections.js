@@ -1,6 +1,8 @@
 OM.Collections.PageCollection = Backbone.Collection.extend({
+  initialize: function(options){
+    this.url = '/wp_api/v1/posts?p='+options.pageId;
+  },
   model: OM.Models.Page,
-  url: '/wp_api/v1/posts?pagename=hola',
 });
 
 OM.Collections.ProjectCollection = Backbone.Collection.extend({
