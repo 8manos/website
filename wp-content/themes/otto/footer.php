@@ -23,6 +23,10 @@
 		mouse z: <span id="mouse_z">0</span>
 	</pre>
 
+	<pre id="light-level">
+		raw lux: <span id="lux-level">0</span>
+	</pre>
+
 	<footer role="contentinfo">
 		<small>&copy; <?php bloginfo('name'); ?></small>
 	</footer>
@@ -50,5 +54,6 @@
 	<script src="<?php bloginfo('template_directory'); ?>/js/routers.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/js/views.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/js/colors.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/contrast.js"></script>
 </body>
 </html>
