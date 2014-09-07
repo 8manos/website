@@ -22,7 +22,6 @@ $gris: #ECECEC;
 body {
    font: normal normal 16px 'Ubuntu', sans-serif; 
    color: #000;
-   transition: all 0.3s;
 
    &.normal {
     background: gray;
@@ -233,11 +232,11 @@ header {
 
    a ,
    .color {
-      transition: color 0.4s linear;
+      transition: color 0.2s linear;
    }
 
    .color-bg {
-      transition: background-color 0.4s linear;
+      transition: background-color 0.2s linear;
    }
 
 
