@@ -176,14 +176,13 @@ h1.main-title {
   list-style: none;
   width: 100%;
   text-align: center;
-  margin: -40px 0 20px;
-  /*font-family: Apajarita, serif;*/
-  text-transform: capitalize;
-  font-size: 22px;
+  margin: 20px 0;
+  text-transform: uppercase;
 }
-.sub-menu li {
+.sub-menu li,
+.nav-tabs li {
   display: inline-block;
-  margin: 0 -3px;
+  margin: 0 -1px;
 }
 .sub-menu li a,
 .nav-tabs li a{
