@@ -8,7 +8,7 @@ OM.Collections.LabsCollection = Backbone.Collection.extend({
   url: '/wp_api/v1/posts?post_type=lab',
 });
 
-OM.Collections.PageCollection = Backbone.Collection.extend({
+OM.Collections.PagesCollection = Backbone.Collection.extend({
   initialize: function(options){
     this.url = '/wp_api/v1/posts?p=' + options.pageId;
   },
