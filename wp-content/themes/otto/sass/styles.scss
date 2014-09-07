@@ -1,11 +1,10 @@
 /* ==========================================================================
    Base
    ========================================================================== */
-
-body {
-
+* {
+   margin:0;
+   padding:0;
 }
-a {}
 
 $size-uno: 1.5em;
 $size-dos: 1.313em;
@@ -51,6 +50,7 @@ header {
    
       ul {
         list-style: none;
+        margin: 0;
 
          li {
            display: inline-block;
@@ -63,23 +63,29 @@ header {
               padding: 0 12px;             
               font-size: 1em;
               text-transform: capitalize;
-               }
             }
          }
       }
-      .ochomanos {
-         padding: 12px 0;
-         width: 130px;
-         height: 16px;
-         margin: 0 0;
-       
-         a {
-            display: block;
-            text-indent: -9999px;
-            background: url(../img/8manos.svg) no-repeat; 
-         }
+   }
+   .ochomanos {
+      padding: 12px 0;
+      width: 130px;
+      height: 16px;
+      margin: 0 0;
+      display: inline-block;
+      float: right;
+    
+      a {
+         display: block;
+         text-indent: -9999px;
+         background: url(../img/8manos.svg) no-repeat; 
       }
+   }
 
+.wrap {
+  width: 80%;
+  margin-left: 10%;
+}
 /* ==========================================================================
    Content
    ========================================================================== */
@@ -87,7 +93,6 @@ header {
 /*encabezado modulo*/
 .inner-header {  
 
-}
    h2 {
       display: inline-block;
    
@@ -95,6 +100,7 @@ header {
        content: '\00a0 \2f \00a0';
       }
    }
+}
 .back-link {
    display: inline-block;
    float: right; 
@@ -103,9 +109,9 @@ header {
    padding: 0 10px;
 
    .person {
-      padding: 0 12px;
+      padding: 12px;
       background: $gris;
-      text-aling: center; 
+      text-align: center; 
 
       h2 {
          font-weight: bold;
@@ -119,20 +125,21 @@ header {
          border: 3px solid $naranja;
          margin-top: -25px; 
       }
-      .more-info {
-         text-aling: left;
-      
-         p {
-            padding-bottom: 10px;
-            border-bottom: 2px dotted $naranja; 
-         }
-         .person-links {
-            list-style: none;
-         
-            li {
-             display: inline-block;
-            }
-         }
+   }
+}
+.more-info {
+   text-align: left;
+
+   p {
+      padding-bottom: 10px;
+      border-bottom: 2px dotted $naranja; 
+   }
+   .person-links,
+   .lab-tags {
+      list-style: none;
+   
+      li {
+       display: inline-block;
       }
    }
 }
