@@ -1,0 +1,916 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce API Manager\n"
+"POT-Creation-Date: 2013-11-16 22:20-0800\n"
+"PO-Revision-Date: 2013-11-16 22:20-0800\n"
+"Last-Translator: Todd Lahman <support@toddlahman.com>\n"
+"Language-Team: Todd Lahman LLC <support@toddlahman.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__;_x;_ex;_n\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../woocommerce-api-manager.php:469
+msgid "Invalid Email Address"
+msgstr ""
+
+#: ../woocommerce-api-manager.php:510 ../woocommerce-api-manager.php:515
+msgid "Your API keys"
+msgstr ""
+
+#: ../woocommerce-api-manager.php:519
+msgid "Your API keys have been emailed"
+msgstr ""
+
+#: ../woocommerce-api-manager.php:526
+msgid "No API keys were found for your email address"
+msgstr ""
+
+#: ../woocommerce-api-manager.php:671
+#, php-format
+msgid ""
+"%sWooCommerce Plugin and Theme Update API Manager is inactive.%s The "
+"%sWooCommerce%s plugin must be active for the WooCommerce Plugin and Theme "
+"Update API Manager to work. Please activate WooCommerce on the %splugin page"
+"%s once it is installed."
+msgstr ""
+
+#: ../woocommerce-api-manager.php:720
+msgid "Lost API Key"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:34
+msgid "WC API Manager"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:34
+msgid "API Manager"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:45
+msgid "Dashboard"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:45
+msgid "License Deactivation"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:51
+msgid "WooCommerce API Manager"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:73
+#: ../admin/class-wc-api-manager-menu.php:78
+msgid "Save Changes"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:98
+msgid "License Information"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:99
+msgid "License Key"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:100
+msgid "License email"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:104
+msgid "Plugin License Deactivation"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:105
+msgid "Deactivate Plugin License"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:108
+msgid "Tech Support Information"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:110
+msgid "PHP Version"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:111
+msgid "Database Version"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:112
+msgid "WordPress Version"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:113
+msgid "API Manager Version"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:114
+msgid "Activation Status"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:137
+#: ../admin/class-wc-api-manager-menu.php:151
+msgid "Buy a License Key"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:202
+msgid "Plugin activated. "
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:208
+msgid "Connection failed to the License Key API server. Try again later."
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:295
+msgid ""
+"The license could not be deactivated. Use the License Deactivation tab to "
+"manually deactivate the license before activating a new license."
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:330
+msgid "Plugin license deactivated."
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:353
+msgid "Deactivates plugin license so it can be used on another blog."
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:416
+msgid "Prevent Comment Spam"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:418
+msgid "Simple Comments"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:420
+msgid "Support"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:421
+msgid "To get support peform the steps below in order:"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:423
+msgid "Login to toddlahman.com"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-menu.php:424
+msgid "Fill Out the Support Form"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-settings.php:28
+msgid "Update API Manager"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-settings.php:30
+msgid "Software Add-On License Keys"
+msgstr ""
+
+#: ../admin/class-wc-api-manager-settings.php:32
+msgid ""
+"The Software Add-On license keys replace the Update API Manager license keys "
+"for all products."
+msgstr ""
+
+#: ../classes/class-wc-api-helpers.php:1151
+msgid "The domain name could not be deleted."
+msgstr ""
+
+#: ../classes/class-wc-api-helpers.php:1237
+msgid "Invalid email address."
+msgstr ""
+
+#: ../classes/class-wc-api-helpers.php:1237
+#: ../classes/class-wc-api-helpers.php:1260
+#: ../classes/class-wc-api-helpers.php:1280
+#: ../classes/class-wc-api-helpers.php:1286
+#: ../classes/class-wc-api-helpers.php:1290
+#: ../classes/class-wc-api-helpers.php:1293
+#: ../classes/class-wc-api-helpers.php:1323
+#: ../classes/class-wc-api-helpers.php:1455
+msgid "Go to homepage &rarr;"
+msgstr ""
+
+#: ../classes/class-wc-api-helpers.php:1260
+msgid "Invalid download."
+msgstr ""
+
+#: ../classes/class-wc-api-helpers.php:1280
+msgid "Product no longer exists."
+msgstr ""
+
+#: ../classes/class-wc-api-helpers.php:1286
+msgid "Invalid order."
+msgstr ""
+
+#: ../classes/class-wc-api-helpers.php:1290
+msgid "Sorry, you have reached your download limit for this file"
+msgstr ""
+
+#: ../classes/class-wc-api-helpers.php:1293
+msgid "Sorry, this download has expired"
+msgstr ""
+
+#: ../classes/class-wc-api-helpers.php:1323
+msgid "No file defined"
+msgstr ""
+
+#: ../classes/class-wc-api-helpers.php:1455
+msgid "File not found"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:32
+msgid "Update API Key"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:33
+msgid "License Key API Activations"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:164
+msgid "Click to toggle"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:165
+#, php-format
+msgid ""
+"API Key: %s | Activation Limit: %s | Activations: %s | API Access "
+"Permission: %s |  Product Title: %s | Version: %s"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:172
+#: ../classes/class-wc-api-manager-order-admin.php:258
+#: ../templates/my-api-manager.php:18
+msgid "API License Key"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:176
+msgid "Activation Limit"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:180
+#: ../classes/class-wc-api-manager-order-admin.php:184
+#: ../classes/class-wc-api-manager-order-admin.php:191
+#: ../classes/class-wc-api-manager-product-admin.php:232
+#: ../classes/class-wc-api-manager-product-admin.php:523
+msgid "Unlimited"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:190
+msgid "API Access Permission"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:196
+#: ../classes/class-wc-api-manager-order-admin.php:260
+#: ../classes/class-wc-api-manager-product-admin.php:91
+msgid "Software Title"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:210
+msgid "API License Email"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:211
+msgid "Email Required"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:214
+#: ../classes/class-wc-api-manager-product-admin.php:98
+msgid "Software Version"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:259
+msgid "Instance ID"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:261
+msgid "Status"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:262
+msgid "Date &amp; Time"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:263
+msgid "Domain Name"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:264
+msgid "Action"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:272
+msgid "N/A"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:274
+msgid "Activated"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:274
+msgid "Deactivated"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:275
+msgid "M j Y \\a\\t h:ia"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:278
+msgid "Delete Activation"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:282
+#: ../classes/class-wc-api-manager-order-admin.php:342
+msgid "No activations yet"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-order-admin.php:298
+msgid "Are you sure you want to delete this activation?"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:59
+#: ../classes/class-wc-api-manager-product-admin.php:74
+#: ../classes/class-wc-api-manager-product-admin.php:150
+#: ../classes/class-wc-api-manager-product-admin.php:171
+msgid "API"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:60
+#: ../classes/class-wc-api-manager-product-admin.php:75
+#: ../classes/class-wc-api-manager-product-admin.php:171
+msgid ""
+"Enable this option if this is software that requires the plugin and theme "
+"update API manager."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:92
+#: ../classes/class-wc-api-manager-product-admin.php:558
+msgid "This unique ID is used by the API Manager to find the right software."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:93
+#: ../classes/class-wc-api-manager-product-admin.php:559
+msgid "e.g. My Plugin"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:99
+msgid "The software version number."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:100
+#: ../classes/class-wc-api-manager-product-admin.php:531
+msgid "e.g. 1.2.5"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:105
+msgid "Software Page URL"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:106
+#: ../classes/class-wc-api-manager-product-admin.php:572
+msgid "The software page URL."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:107
+#: ../classes/class-wc-api-manager-product-admin.php:573
+msgid "http://myplugin.com"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:112
+msgid "Software Author"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:113
+msgid "The author of the software."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:114
+msgid "Todd Lahman LLC"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:119
+msgid "WP Version Required"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:120
+msgid "Minimum version of WordpPress software requires."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:121
+msgid "e.g. 3.6"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:126
+msgid "WP Version Tested Up To"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:127
+msgid "Highest version of WordPress software was tested on."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:128
+#: ../classes/class-wc-api-manager-product-admin.php:545
+msgid "e.g. 4.0"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:133
+msgid "Software Last Updated"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:134
+msgid "When the software was last updated."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:135
+#: ../classes/class-wc-api-manager-product-admin.php:551
+msgid "YYYY-MM-DD"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:194
+msgid "Global Settings"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:196
+msgid ""
+"Use the information below to set global options for all variable products."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:209
+#: ../classes/class-wc-api-manager-product-admin.php:511
+msgid "Subscription Required"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:211
+#: ../classes/class-wc-api-manager-product-admin.php:511
+msgid "A subscription is required to receive software updates."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:231
+msgid "Software Activation Limit"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:234
+#: ../classes/class-wc-api-manager-product-admin.php:235
+#: ../classes/class-wc-api-manager-product-admin.php:522
+msgid "Sets the number of activations per API license key."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:254
+#: ../classes/class-wc-api-manager-product-admin.php:580
+msgid "Description"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:264
+#: ../classes/class-wc-api-manager-product-admin.php:277
+#: ../classes/class-wc-api-manager-product-admin.php:290
+#: ../classes/class-wc-api-manager-product-admin.php:303
+#: ../classes/class-wc-api-manager-product-admin.php:316
+#: ../classes/class-wc-api-manager-product-admin.php:329
+msgid "Select a page&hellip;"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:264
+msgid "A description of the software."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:267
+#: ../classes/class-wc-api-manager-product-admin.php:600
+msgid "Changelog"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:277
+msgid "Changes in the software."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:280
+#: ../classes/class-wc-api-manager-product-admin.php:620
+msgid "Installation"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:290
+msgid "How to install the software."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:293
+#: ../classes/class-wc-api-manager-product-admin.php:640
+msgid "FAQ"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:303
+msgid "Frequently Asked Questions."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:306
+#: ../classes/class-wc-api-manager-product-admin.php:660
+msgid "Screenshots"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:316
+#: ../classes/class-wc-api-manager-product-admin.php:660
+msgid "Screenshots of the software."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:319
+#: ../classes/class-wc-api-manager-product-admin.php:680
+msgid "Other Notes"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:329
+msgid "Other details or special facts."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:491
+msgid "API Manager Options"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:499
+msgid ""
+"Override global, or set individual, options for this variable product only."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:499
+msgid "Set API options for this variable product only."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:499
+msgid "The information set here will only apply to this variable product."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:522
+msgid "Software Activation Limit:"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:530
+msgid "Software Version:"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:530
+msgid ""
+"The current software version number, which triggers an update notification "
+"if the customer has an older version installed."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:536
+msgid "WP Version Required:"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:536
+msgid "The minimum version of WordPress required to run the software."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:537
+msgid "e.g. 3.3"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:544
+msgid "WP Version Tested Up To:"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:544
+msgid "The highest version of WordPress the software has been tested on."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:550
+msgid "Software Last Updated:"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:550
+msgid "The date the software was last updated."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:558
+msgid "Software Title:"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:564
+msgid "Software Author:"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:564
+msgid "The name of the software author."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:565
+msgid "Todd Lahman"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:572
+msgid "Software Page URL:"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:580
+msgid "A description of the software, and how it works."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:590
+#: ../classes/class-wc-api-manager-product-admin.php:630
+#: ../classes/class-wc-api-manager-product-admin.php:650
+#: ../classes/class-wc-api-manager-product-admin.php:670
+#: ../classes/class-wc-api-manager-product-admin.php:690
+msgid "Select a page&hellip; (Optional)"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:600
+msgid "A list of changes to the software that should be grouped by date."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:610
+msgid "Select a page&hellip; (Recommended)"
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:620
+msgid ""
+"Instructions on how to install the software, and notes regarding "
+"installation."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:640
+msgid "Frequently Asked Questions about the software."
+msgstr ""
+
+#: ../classes/class-wc-api-manager-product-admin.php:680
+msgid "Other notes about the software."
+msgstr ""
+
+#: ../classes/class-wc-plugin-update.php:378
+#, php-format
+msgid ""
+"The license key for %s has expired. You can reactivate or purchase a license "
+"key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: ../classes/class-wc-plugin-update.php:393
+#, php-format
+msgid ""
+"The subscription for %s is on-hold. You can reactivate the subscription from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: ../classes/class-wc-plugin-update.php:408
+#, php-format
+msgid ""
+"The subscription for %s has been cancelled. You can renew the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>. A new "
+"license key will be emailed to you after your order has been completed."
+msgstr ""
+
+#: ../classes/class-wc-plugin-update.php:423
+#, php-format
+msgid ""
+"The subscription for %s has expired. You can reactivate the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: ../classes/class-wc-plugin-update.php:438
+#, php-format
+msgid ""
+"The subscription for %s has been suspended. You can reactivate the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+
+#: ../classes/class-wc-plugin-update.php:453
+#, php-format
+msgid ""
+"The subscription for %s is still pending. You can check on the status of the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+
+#: ../classes/class-wc-plugin-update.php:468
+#, php-format
+msgid ""
+"The subscription for %s has been placed in the trash and will be deleted "
+"soon. You can purchase a new subscription from your account <a href=\"%s\" "
+"target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: ../classes/class-wc-plugin-update.php:483
+#, php-format
+msgid ""
+"A subscription for %s could not be found. You can purchase a subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: ../classes/class-wc-plugin-update.php:498
+#, php-format
+msgid ""
+"A license key for %s could not be found. Maybe you forgot to enter a license "
+"key when setting up %s, or the key was deactivated in your account. You can "
+"reactivate or purchase a license key from your account <a href=\"%s\" target="
+"\"_blank\">dashboard</a>."
+msgstr ""
+
+#: ../classes/class-wc-plugin-update.php:513
+#, php-format
+msgid ""
+"Download permission for %s has been revoked possibly due to a license key or "
+"subscription expiring. You can reactivate or purchase a license key from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: ../classes/class-wc-plugin-update.php:528
+#, php-format
+msgid ""
+"%s has not been activated. Go to the settings page and enter the license key "
+"and license email to activate %s."
+msgstr ""
+
+#: ../classes/class-wc-plugin-update.php:543
+#, php-format
+msgid ""
+"You changed the subscription for %s, so you will need to enter your new API "
+"License Key in the settings page. The License Key should have arrived in "
+"your email inbox, if not you can get it by logging into your account <a href="
+"\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: ../classes/class-wc-tool-tips.php:23
+msgid ""
+"A license key activates a single installation of the WooCommerce Update API "
+"Manager on a single blog. To move a license to another blog, the plugin "
+"license must be deactivated on the old blog installation, and reactivated "
+"with the license key and license email on the new blog. For multisite "
+"installations, each blog requires its own license key to activate the "
+"WooCommerce Update API Manager."
+msgstr ""
+
+#: ../classes/class-wc-upgrade-api-software.php:28
+#: ../classes/class-wc-upgrade-api-software.php:36
+#: ../classes/class-wc-upgrade-api-software.php:201
+msgid "Invalid API Request"
+msgstr ""
+
+#: ../classes/class-wc-upgrade-api-software.php:53
+msgid "Activation error. The email provided is invalid"
+msgstr ""
+
+#: ../classes/class-wc-upgrade-api-software.php:59
+msgid "Activation error. No matching API license key exists"
+msgstr ""
+
+#: ../classes/class-wc-upgrade-api-software.php:66
+msgid "Activation error. The purchase matching this product is not complete"
+msgstr ""
+
+#: ../classes/class-wc-upgrade-api-software.php:156
+#: ../classes/class-wc-upgrade-api-software.php:170
+msgid "Could not activate API license key"
+msgstr ""
+
+#: ../classes/class-wc-upgrade-api-software.php:164
+msgid "Remaining activations is equal to zero"
+msgstr ""
+
+#: ../classes/class-wc-upgrade-api-software.php:192
+#, php-format
+msgid "%s out of %s activations remaining"
+msgstr ""
+
+#: ../classes/class-wc-upgrade-api-software.php:289
+msgid "Deactivation error. The email provided is invalid"
+msgstr ""
+
+#: ../classes/class-wc-upgrade-api-software.php:295
+msgid "Deactivation error. No matching license key exists"
+msgstr ""
+
+#: ../classes/class-wc-upgrade-api-software.php:301
+msgid "Deactivation error. No matching instance exists"
+msgstr ""
+
+#: ../classes/class-wc-upgrade-api-software.php:393
+msgid ""
+"Invalid API License Key. Login to your My Account page to find a valid API "
+"License Key"
+msgstr ""
+
+#: ../classes/class-wc-upgrade-api-software.php:396
+msgid "Software has been deactivated"
+msgstr ""
+
+#: ../classes/class-wc-upgrade-api-software.php:399
+msgid "Exceeded maximum number of activations"
+msgstr ""
+
+#: ../classes/class-wc-upgrade-api-software.php:402
+msgid "Invalid Instance ID"
+msgstr ""
+
+#: ../classes/class-wc-upgrade-api-software.php:405
+msgid "Invalid security key"
+msgstr ""
+
+#: ../classes/class-wc-upgrade-api-software.php:408
+msgid "Subscription Not Active"
+msgstr ""
+
+#: ../classes/class-wc-upgrade-api-software.php:411
+msgid "Invalid Request"
+msgstr ""
+
+#: ../classes/class-wc-upgrade-api-software.php:416
+msgid "No debug information available"
+msgstr ""
+
+#: ../classes/class-wc-upgrade-api-software.php:468
+msgid "The following required information is missing"
+msgstr ""
+
+#: ../templates/email-keys.php:5
+msgid "Licence Keys"
+msgstr ""
+
+#: ../templates/email-keys.php:9
+#, php-format
+msgid "Version %s"
+msgstr ""
+
+#: ../templates/email-keys.php:12 ../templates/email-lost-api-keys.php:15
+msgid "Licence Email:"
+msgstr ""
+
+#: ../templates/email-keys.php:13
+msgid "Licence Key:"
+msgstr ""
+
+#: ../templates/email-lost-api-keys.php:14
+#: ../templates/email-order-keys.php:15
+msgid "API License Key:"
+msgstr ""
+
+#: ../templates/email-order-keys.php:5
+msgid "API License Keys"
+msgstr ""
+
+#: ../templates/email-order-keys.php:16
+msgid "License Email:"
+msgstr ""
+
+#: ../templates/lost-api-key.php:7
+msgid ""
+"Please tell us the email address used to make the purchase. Your API License "
+"Key will be sent by email."
+msgstr ""
+
+#: ../templates/lost-api-key.php:9
+msgid "If your email address has changed, please contact us."
+msgstr ""
+
+#: ../templates/lost-api-key.php:15
+msgid "Javascript must be enabled to use this form."
+msgstr ""
+
+#: ../templates/lost-api-key.php:17
+msgid "Your email address"
+msgstr ""
+
+#: ../templates/lost-api-key.php:19
+msgid "Email Licence Keys"
+msgstr ""
+
+#: ../templates/lost-api-key.php:64
+msgid "Error processing request"
+msgstr ""
+
+#: ../templates/my-api-manager.php:12
+msgid "My API License Keys"
+msgstr ""
+
+#: ../templates/my-api-manager.php:17
+msgid "Product"
+msgstr ""
+
+#: ../templates/my-api-manager.php:19
+msgid "License Email"
+msgstr ""
+
+#: ../templates/my-api-manager.php:20
+msgid "Activations"
+msgstr ""
+
+#: ../templates/my-api-manager.php:22
+msgid "Subscription"
+msgstr ""
+
+#: ../templates/my-api-manager.php:162
+msgid " out of "
+msgstr ""
+
+#: ../templates/my-api-manager.php:195
+msgid "Delete"
+msgstr ""
+
+#: ../templates/my-api-manager.php:199
+msgid "Domain activated with invalid API License Key."
+msgstr ""
+
+#: ../templates/my-api-manager.php:219
+msgid "You have no API keys."
+msgstr ""

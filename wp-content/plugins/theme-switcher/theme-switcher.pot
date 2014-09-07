@@ -1,0 +1,45 @@
+# Theme Switcher Translation File
+# Copyright (C) 2009 
+# This file is distributed under the same license as the PACKAGE package.
+# Austin Matzko austin@pressedcode.com
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-11-09 13:30-0600\n"
+"PO-Revision-Date: 2009-11-09 13:30-0600\n"
+"Last-Translator: Austin Matzko <austin@pressedcode.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: theme-switcher.php:35
+msgid "Theme Switcher Widget"
+msgstr ""
+
+#: theme-switcher.php:35
+msgid "A widget with options for switching themes."
+msgstr ""
+
+#: theme-switcher.php:41
+msgid "Theme Switcher"
+msgstr ""
+
+#: theme-switcher.php:59
+msgid "Title:"
+msgstr ""
+
+#: theme-switcher.php:64
+msgid "Display themes as:"
+msgstr ""
+
+#: theme-switcher.php:70
+msgid "List"
+msgstr ""
+
+#: theme-switcher.php:75
+msgid "Dropdown"
+msgstr ""
