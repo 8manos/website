@@ -10,8 +10,8 @@
   <div class="more-info">
     <p>Biográfía de la persona</p>
     <ul class="person-links">
-      <li class="icon-twitter">Twitter</li>
-      <li class="icon-github">Github</li>
+      <li class="icon-twitter"><a href="">Twitter</a></li>
+      <li class="icon-github"><a href="">Github</a></li>
     </ul>
   </div>
 </article>
