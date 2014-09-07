@@ -47,34 +47,38 @@ header {
      width: 80%;
      height: 40px;
      margin-left: 6%;
-   }
+     display: inline-block;
+   
       ul {
         list-style: none;
-      }
+
          li {
            display: inline-block;
            margin-right: 5px;
            line-height: 40px;
-         }
+         
             a {
               color: #FFF;
               display: block;
               padding: 0 12px;             
               font-size: 1em;
               text-transform: capitalize;
+               }
             }
+         }
+      }
       .ochomanos {
          padding: 12px 0;
          width: 130px;
          height: 16px;
          margin: 0 0;
-      } 
+       
          a {
             display: block;
             text-indent: -9999px;
             background: url(../img/8manos.svg) no-repeat; 
          }
-
+      }
 
 /* ==========================================================================
    Content
@@ -86,22 +90,23 @@ header {
 }
    h2 {
       display: inline-block;
-   }
+   
       span:after {
        content: '\00a0 \2f \00a0';
       }
+   }
 .back-link {
    display: inline-block;
    float: right; 
 }
 .team-wrapper {
    padding: 0 10px;
-}
+
    .person {
       padding: 0 12px;
       background: $gris;
       text-aling: center; 
-   }
+
       h2 {
          font-weight: bold;
       }
@@ -116,18 +121,21 @@ header {
       }
       .more-info {
          text-aling: left;
-      }
+      
          p {
             padding-bottom: 10px;
             border-bottom: 2px dotted $naranja; 
          }
          .person-links {
             list-style: none;
-         }
+         
             li {
              display: inline-block;
             }
-
+         }
+      }
+   }
+}
 /* ==========================================================================
    Footer
    ========================================================================== */

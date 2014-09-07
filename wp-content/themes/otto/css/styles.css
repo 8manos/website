@@ -49,94 +49,83 @@ header {
 nav {
   width: 80%;
   height: 40px;
-  margin-left: 6%; }
+  margin-left: 6%;
+  display: inline-block; }
+  /* line 52, ../sass/styles.scss */
+  nav ul {
+    list-style: none; }
+    /* line 55, ../sass/styles.scss */
+    nav ul li {
+      display: inline-block;
+      margin-right: 5px;
+      line-height: 40px; }
+      /* line 60, ../sass/styles.scss */
+      nav ul li a {
+        color: #FFF;
+        display: block;
+        padding: 0 12px;
+        font-size: 1em;
+        text-transform: capitalize; }
 
-/* line 51, ../sass/styles.scss */
-ul {
-  list-style: none; }
-
-/* line 54, ../sass/styles.scss */
-li {
-  display: inline-block;
-  margin-right: 5px;
-  line-height: 40px; }
-
-/* line 59, ../sass/styles.scss */
-a {
-  color: #FFF;
-  display: block;
-  padding: 0 12px;
-  font-size: 1em;
-  text-transform: capitalize; }
-
-/* line 66, ../sass/styles.scss */
+/* line 70, ../sass/styles.scss */
 .ochomanos {
   padding: 12px 0;
   width: 130px;
   height: 16px;
   margin: 0 0; }
-
-/* line 72, ../sass/styles.scss */
-a {
-  display: block;
-  text-indent: -9999px;
-  background: url(../img/8manos.svg) no-repeat; }
+  /* line 76, ../sass/styles.scss */
+  .ochomanos a {
+    display: block;
+    text-indent: -9999px;
+    background: url(../img/8manos.svg) no-repeat; }
 
 /* ==========================================================================
    Content
    ========================================================================== */
 /*encabezado modulo*/
-/* line 87, ../sass/styles.scss */
+/* line 91, ../sass/styles.scss */
 h2 {
   display: inline-block; }
+  /* line 94, ../sass/styles.scss */
+  h2 span:after {
+    content: '\00a0 \2f \00a0'; }
 
-/* line 90, ../sass/styles.scss */
-span:after {
-  content: '\00a0 \2f \00a0'; }
-
-/* line 93, ../sass/styles.scss */
+/* line 98, ../sass/styles.scss */
 .back-link {
   display: inline-block;
   float: right; }
 
-/* line 97, ../sass/styles.scss */
+/* line 102, ../sass/styles.scss */
 .team-wrapper {
   padding: 0 10px; }
-
-/* line 100, ../sass/styles.scss */
-.person {
-  padding: 0 12px;
-  background: #ECECEC;
-  text-aling: center; }
-
-/* line 105, ../sass/styles.scss */
-h2 {
-  font-weight: bold; }
-
-/* line 110, ../sass/styles.scss */
-picture img {
-  display: inline-block;
-  width: 50px;
-  border-radius: 50px;
-  border: 3px solid #FF3300;
-  margin-top: -25px; }
-
-/* line 117, ../sass/styles.scss */
-.more-info {
-  text-aling: left; }
-
-/* line 120, ../sass/styles.scss */
-p {
-  padding-bottom: 10px;
-  border-bottom: 2px dotted #FF3300; }
-
-/* line 124, ../sass/styles.scss */
-.person-links {
-  list-style: none; }
-
-/* line 127, ../sass/styles.scss */
-li {
-  display: inline-block; }
+  /* line 105, ../sass/styles.scss */
+  .team-wrapper .person {
+    padding: 0 12px;
+    background: #ECECEC;
+    text-aling: center; }
+    /* line 110, ../sass/styles.scss */
+    .team-wrapper .person h2 {
+      font-weight: bold; }
+    /* line 115, ../sass/styles.scss */
+    .team-wrapper .person picture img {
+      display: inline-block;
+      width: 50px;
+      border-radius: 50px;
+      border: 3px solid #FF3300;
+      margin-top: -25px; }
+    /* line 122, ../sass/styles.scss */
+    .team-wrapper .person .more-info {
+      text-aling: left; }
+      /* line 125, ../sass/styles.scss */
+      .team-wrapper .person .more-info p {
+        padding-bottom: 10px;
+        border-bottom: 2px dotted #FF3300; }
+      /* line 129, ../sass/styles.scss */
+      .team-wrapper .person .more-info .person-links {
+        list-style: none; }
+        /* line 132, ../sass/styles.scss */
+        .team-wrapper .person .more-info .person-links li {
+          display: inline-block; }
 
 /* ==========================================================================
    Footer
@@ -144,13 +133,13 @@ li {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 139, ../sass/styles.scss */
+/* line 147, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.4s linear;
           transition: color 0.4s linear; }
 
-/* line 144, ../sass/styles.scss */
+/* line 152, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.4s linear;
           transition: background-color 0.4s linear; }
@@ -159,16 +148,16 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 154, ../sass/styles.scss */
+/* line 162, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 155, ../sass/styles.scss */
+/* line 163, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 156, ../sass/styles.scss */
+/* line 164, ../sass/styles.scss */
 .alignright {
   float: right; }
 
