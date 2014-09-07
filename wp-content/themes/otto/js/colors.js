@@ -1,39 +1,40 @@
 (function($) {
+
+	// raw input for color variations 
+	var r_x = event.beta;           
+	var r_y = event.gamma; 
+	var r_z = event.alpha;                
+
 	function handleEvent(event) {
 
 		// accelerometer 
-
-		// raw
-		var r_x = event.beta;           // 0, 360
-		var r_y = event.gamma; 
-		var r_z = event.alpha;                // 0, 360 // sim: + 180
 
 		$('#data-r_x').text( Math.floor(r_x) );
 		$('#data-r_y').text( Math.floor(r_y) );
 		$('#data-r_z').text( Math.floor(r_z) );
 
 		// converted range
-		var x = event.beta + 180;           // 0, 360
-		var y = (event.gamma + 90) * 2;     // 0, 360
-		var z = event.alpha;                // 0, 360 // sim: + 180
+		var x = r_x + 180;           
+		var y = (r_y + 90) * 2;     
+		var z = r_z;                
 
 		$('#data-x').text( Math.floor(x) );
 		$('#data-y').text( Math.floor(y) );
 		$('#data-z').text( Math.floor(z) );
 
 		// RGB
-		var r = cicloCompleto( x, changeRangeTo255 ); // 0, 255
-		var g = cicloCompleto( y, changeRangeTo255 ); // 0, 255
-		var b = cicloCompleto( z, changeRangeTo255 ); // 0, 255
+		var r = cicloCompleto( x, changeRangeTo255 ); 
+		var g = cicloCompleto( y, changeRangeTo255 ); 
+		var b = cicloCompleto( z, changeRangeTo255 ); 
 
 		$('#data-r').text( r );
 		$('#data-g').text( g );
 		$('#data-b').text( b );
 
 		// HSL
-		var h = cicloCompleto( x, Math.floor ); // 0, 360
-		var s = cicloCompleto( y, changeRangeTo100 ); // 0, 100
-		var l = cicloCompleto( z, changeRangeTo100 ); // 0, 100
+		var h = cicloCompleto( x, Math.floor ); 
+		var s = cicloCompleto( y, changeRangeTo100 ); 
+		var l = cicloCompleto( z, changeRangeTo100 ); 
 
 		$('#data-h').text( h );
 		$('#data-s').text( s );
@@ -69,5 +70,6 @@
 		return Math.floor( converted );
 	}
 
-	window.addEventListener( 'deviceorientation' , handleEvent, true );	
+	$(window).on( 'deviceorientation' , handleEvent(e) );
+		
 })(jQuery);
