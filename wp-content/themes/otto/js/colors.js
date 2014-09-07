@@ -84,7 +84,7 @@
 			r_y_inicial = event.gamma;
 		}
 
-		// raw input for color variations from accelerometer
+		// valores crudos desde el acelerometro
 		var r_x = event.beta;           
 		var r_y = event.gamma; 
 		var r_z = event.alpha; 
@@ -101,7 +101,7 @@
 		$('#data-r_y').text( Math.floor(r_y) );
 		$('#data-r_z').text( Math.floor(r_z) );
 
-		// converted range so all go from 0 to 360 see: http://w3c.github.io/deviceorientation/spec-source-orientation.html
+		// convierte rangos de sensores para que todos vayan de 0 a 360 ver: http://w3c.github.io/deviceorientation/spec-source-orientation.html
 		var x = r_x + 180;           
 		var y = (r_y + 90) * 2;     
 		var z = r_z;                
@@ -124,7 +124,7 @@
 		$('#data-s').text( s );
 		$('#data-l').text( l );
 
-		// Setting de color
+		// Setear colores
 		setRGB( r, g, b );
 
 		// HSL Descartado
