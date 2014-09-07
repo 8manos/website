@@ -1,19 +1,28 @@
 (function($) {
 
-	// raw input for color variations 
-	var r_x = event.beta;           
-	var r_y = event.gamma; 
-	var r_z = event.alpha;                
+	var r_x = null;           
+	var r_y = null; 
+	var r_z = null;
 
+
+	if ( window.DeviceOrientationEvent ) {
+		window.addEventListener('deviceorientation', handleEvent, true);
+		console.log( window.DeviceOrientationEvent );
+	}
+		            
 	function handleEvent(event) {
 
-		// accelerometer 
+		// raw input for color variations from accelerometer
+		var r_x = event.beta;           
+		var r_y = event.gamma; 
+		var r_z = event.alpha;    
 
+		// raw input
 		$('#data-r_x').text( Math.floor(r_x) );
 		$('#data-r_y').text( Math.floor(r_y) );
 		$('#data-r_z').text( Math.floor(r_z) );
 
-		// converted range
+		// converted range so all go from 0 to 360 see: http://w3c.github.io/deviceorientation/spec-source-orientation.html
 		var x = r_x + 180;           
 		var y = (r_y + 90) * 2;     
 		var z = r_z;                
@@ -46,10 +55,11 @@
 
 		// HSL Descartado
 		// $( 'body' ).css( 'background-color', 'hsl('+h+','+s+'%,'+l+'%)' );
-
+		console.log("event")
 		window.console && console.info('Raw Position: x, y, z: ', x, y, z);
 	}
 
+	// Evita saltos al pasar de 360 a 0 haciendo un ciclo completo de 0 a 360 y de vuelta
 	function cicloCompleto( val, callback ){
 		var converted = val;
 
@@ -60,6 +70,7 @@
 
 	}
 
+	// Cambian rangos con regla de 3
 	function changeRangeTo255( val ){
 		var converted = ( val * 255 ) / 180;
 		return Math.floor( converted );
@@ -70,6 +81,4 @@
 		return Math.floor( converted );
 	}
 
-	$(window).on( 'deviceorientation' , handleEvent(e) );
-		
 })(jQuery);
