@@ -8,12 +8,11 @@
         <source srcset="http://lorempixel.com/150/150/animals 1x, http://lorempixel.com/300/300/animals 2x">
         <img src="http://lorempixel.com/150/150/animals" alt="Otto Manotas">
       </picture>
-
       <div class="more-info">
         <p><%= post.content %></p>
         <ul class="person-links">
-          <li class="icon-twitter">Twitter</li>
-          <li class="icon-github">Github</li>
+          <li class="icon-twitter"><a href="">Twitter</a></li>
+          <li class="icon-github"><a href="">Github</a></li>
         </ul>
       </div>
     </article>

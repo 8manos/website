@@ -1,11 +1,6 @@
 /* ==========================================================================
    Base
    ========================================================================== */
-/* line 5, ../sass/styles.scss */
-body {
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease; }
-
 /* =============================================================================
    Header
    ========================================================================== */
@@ -16,19 +11,34 @@ body {
    Footer
    ========================================================================== */
 /* ==========================================================================
+   Games
+   ========================================================================== */
+/* line 28, ../sass/styles.scss */
+a,
+.color {
+  -webkit-transition: color 0.4s linear;
+          transition: color 0.4s linear; }
+
+/* line 33, ../sass/styles.scss */
+.color-bg {
+  -webkit-transition: background-color 0.4s linear;
+          transition: background-color 0.4s linear; }
+
+/* ==========================================================================
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 30, ../sass/styles.scss */
+/* line 43, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 31, ../sass/styles.scss */
+/* line 44, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 32, ../sass/styles.scss */
+/* line 45, ../sass/styles.scss */
 .alignright {
   float: right; }
+
 /*# sourceMappingURL=styles.css.map */

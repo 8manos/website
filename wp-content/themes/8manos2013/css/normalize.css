@@ -67,8 +67,6 @@ audio:not([controls]) {
 
 html {
     background: #fff; /* 1 */
-    color: #000000; /* 2 */
-    font-family: 'Lato', sans-serif; /* 3 */
     -ms-text-size-adjust: 100%; /* 4 */
     -webkit-text-size-adjust: 100%; /* 4 */
 }

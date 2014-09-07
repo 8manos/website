@@ -3,23 +3,81 @@
    ========================================================================== */
 
 body {
-   transition: all 0.2s ease;
+
 }
 a {}
 
-/* =============================================================================
-   Header
-   ========================================================================== */
+$size-uno: 1.5em;
+$size-dos: 1.313em;
+$size-tres: 1.125em;
+$size-cuatro: 1em;
+$size-cinco: 0.875em;
+$size-seis: 0.750em;
 
+$naranja: #FF3300; 
+
+/* =============================================================================
+   Generales
+   ========================================================================== */
+body {
+   font: normal normal 16px 'Ubuntu', sans-serif; 
+   color: #000;
+}
+a {
+   color: $naranja;
+   text-decoration: none;
+   font-size: $size-cinco;
+}
+
+h1 { font-size: $size-uno;}
+h2 { font-size: $size-dos;}
+h3 { font-size: $size-tres;}
+h4 { font-size: $size-cuatro;}
+h5 { font-size: $size-cinco;}
+h6 { font-size: $size-seis;}
 
 /* ==========================================================================
    Content
    ========================================================================== */
 
+/*encabezado modulo*/
+.inner-header {  
+
+}
+   h2 {
+      display: inline-block;
+   }
+      span:after {
+       content '\00a0 / \00a0';
+      }
+.back-link {
+   display: inline-block;
+   float: right; 
+}
+
+.person-links {
+   list-style: none;
+}
+   li {
+    display: inline-block;
+   }
 
 /* ==========================================================================
    Footer
    ========================================================================== */
+
+/* ==========================================================================
+   Games
+   ========================================================================== */
+
+   a ,
+   .color {
+      transition: color 0.4s linear;
+   }
+
+   .color-bg {
+      transition: background-color 0.4s linear;
+   }
 
 
 /* ==========================================================================
