@@ -31,7 +31,7 @@
 			<?php wp_nav_menu(array('theme_location' => 'primary')); ?>
 		</nav>
 
-		<h1><a href="<?php echo home_url(); ?>/" rel="home"><?php bloginfo('name');?></a></h1>
+		<h1 class="8manos"><a href="<?php echo home_url(); ?>/" rel="home"><?php bloginfo('name');?></a></h1>
 	</header>
 
 	<!-- If you want to use an element as a wrapper, i.e. for styling only, then <div> is still the element to use -->
