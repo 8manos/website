@@ -1,5 +1,5 @@
 (function($){
-	window.addEventListener('devicelight', function(e){
+	$(window).on('devicelight', function(e){
 		var lux = e.value;
 		$("#lux-level").text(lux);
 		/*if (lux < 50) { // luz tenue
