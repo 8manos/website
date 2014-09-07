@@ -22,6 +22,22 @@ $gris: #ECECEC;
 body {
    font: normal normal 16px 'Ubuntu', sans-serif; 
    color: #000;
+   transition: all 0.3s;
+
+   &.normal {
+    background: gray;
+    color: blue;
+   }
+
+   &.tenue {
+    background: black;
+    color: white
+   }
+
+   &.luminoso {
+    background: white;
+    color: black;
+   }
 }
 a {
    color: $naranja;

@@ -3,22 +3,13 @@
 		var lux = e.value;
 		$("#lux-level").text(lux);
 		if (lux < 50) { // luz tenue
-	    	$('body').css({
-	    		'background':'black',
-	    		'color': 'white'
-	    	});
+			document.body.className = 'tenue';
 		}
 		if (lux >= 50 && lux <= 1500) { //luz normal
-	    	$('body').css({
-	    		'background':'gray',
-	    		'color': 'blue'
-	    	});
+			document.body.className = 'normal';
 		}
 		if (lux > 1500)  { // mucha luz
-	    	$('body').css({
-	    		'background':'white',
-	    		'color': 'black'
-	    	});
-		}
+			document.body.className = 'luminoso';
+		} 
 	});
 })(jQuery);
