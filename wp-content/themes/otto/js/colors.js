@@ -12,45 +12,88 @@
 
 	if ( window.DeviceOrientationEvent ) {
 		window.addEventListener('deviceorientation', handleEvent, true);
+	}
 
+	setTimeout( function(){ 
+		console.log( "timeout" );
 
-		setTimeout( function(){ 
-			console.log( "timeout" );
+		console.log( r_x_inicial );
+		console.log( r_y_inicial );
 
-			console.log( r_x_inicial );
-			console.log( r_y_inicial );
+		var touch_support = Modernizr.touch;
 
-			if( ( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ) || ( r_x_inicial === null && r_y_inicial === null ) ){
-				console.log( 'No me he movido' );
+		if( touch_support == false && ( ( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ) || ( r_x_inicial === null && r_y_inicial === null ) ) ){
+			console.log( 'No me he movido y no tengo touch' );
 
-				r_z = 0;
+			r_z = 0;
 
-				$( window ).mousemove(function( event ) {
-					$( "#mouse_x" ).text( event.pageX );
-					$( "#mouse_y" ).text( event.pageY );
-					$( "#mouse_z" ).text( r_z );
+			$( window ).mousemove(function( event ) {
 
-					r_x = event.pageX;
-					r_y = event.pageY;
-				});
+				r_x = event.pageX;
+				r_y = event.pageY;
 
-				$( window ).on('mousewheel', function(event) {
-					console.log( event.deltaY );
-					r_z = r_z + event.deltaY;
-					if( r_z < 0 ){
-						r_z = 255;
-					}else if( r_z > 255 ){
-						r_z = 0;
-					}
-				});
+				handleCursor( r_x, r_y, r_z );
 
-			}else{
-				console.log( 'Me moví ');
+			});
+
+			$( window ).on('mousewheel', function(event) {
+				console.log( event.deltaY );
+				r_z = r_z + ( event.deltaY * 2 );
+				if( r_z < 0 ){
+					r_z = 255;
+				}else if( r_z > 255 ){
+					r_z = 0;
+				}
+
+				handleCursor( r_x, r_y, r_z );
+
+			});
+
+			function handleCursor( r_x, r_y, r_z ){
+
+				var doc_height = $(window).height();
+				var doc_width = $(window).width();
+
+				var x_percentage = percentageOfTotal( r_x, doc_width );
+				var y_percentage = percentageOfTotal( r_y, doc_height );
+
+				var r = changeRange100To255( x_percentage );
+				var g = changeRange100To255( y_percentage );
+				var b = r_z;
+
+				// Setting de color
+				setRGB( r, g, b );
+
 			}
 
-		}, 1000);
+		}else if( Modernizr.touch && ( ( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ) || ( r_x_inicial === null && r_y_inicial === null ) ) ){
+			console.log( 'Touch pero quieto' );
 
-		// console.log( window.DeviceOrientationEvent );
+			randomColor();
+			setInterval( randomColor , 5000 );
+
+		}else{
+			console.log( 'Me moví ');
+		}
+
+	}, 1000);
+
+	function randomColor(){
+
+		var r = Math.floor((Math.random() * 255) + 1);
+		var g = Math.floor((Math.random() * 255) + 1);
+		var b = Math.floor((Math.random() * 255) + 1);
+		// Setting de color
+		setRGB( r, g, b );
+
+		$('a, .color, .color-bg').css({
+			WebkitTransition : 'all 5s linear',
+			MozTransition    : 'all 5s linear',
+			MsTransition     : 'all 5s linear',
+			OTransition      : 'all 5s linear',
+			transition       : 'all 5s linear'
+		});
+
 	}
 		            
 	function handleEvent(event) {
@@ -60,7 +103,7 @@
 			r_y_inicial = event.gamma;
 		}
 
-		// raw input for color variations from accelerometer
+		// valores crudos desde el acelerometro
 		var r_x = event.beta;           
 		var r_y = event.gamma; 
 		var r_z = event.alpha; 
@@ -72,45 +115,38 @@
 	}
 
 	function handleAccelerometer ( r_x, r_y, r_z ){
-				// raw input
-		$('#data-r_x').text( Math.floor(r_x) );
-		$('#data-r_y').text( Math.floor(r_y) );
-		$('#data-r_z').text( Math.floor(r_z) );
 
-		// converted range so all go from 0 to 360 see: http://w3c.github.io/deviceorientation/spec-source-orientation.html
+
+		// convierte rangos de sensores para que todos vayan de 0 a 360 ver: http://w3c.github.io/deviceorientation/spec-source-orientation.html
 		var x = r_x + 180;           
 		var y = (r_y + 90) * 2;     
 		var z = r_z;                
-
-		$('#data-x').text( Math.floor(x) );
-		$('#data-y').text( Math.floor(y) );
-		$('#data-z').text( Math.floor(z) );
 
 		// RGB
 		var r = cicloCompleto( x, changeRangeTo255 ); 
 		var g = cicloCompleto( y, changeRangeTo255 ); 
 		var b = cicloCompleto( z, changeRangeTo255 ); 
 
-		$('#data-r').text( r );
-		$('#data-g').text( g );
-		$('#data-b').text( b );
-
 		// HSL
 		var h = cicloCompleto( x, Math.floor ); 
 		var s = cicloCompleto( y, changeRangeTo100 ); 
 		var l = cicloCompleto( z, changeRangeTo100 ); 
 
-		$('#data-h').text( h );
-		$('#data-s').text( s );
-		$('#data-l').text( l );
+		// Setear colores
+		setRGB( r, g, b );
+
+		// HSL Descartado
+		// $( 'body' ).css( 'background-color', 'hsl('+h+','+s+'%,'+l+'%)' );
+		//window.console && console.info('Raw Position: x, y, z: ', x, y, z);
+	}
+
+	// Recibe RGB y setea los colores
+	function setRGB( r, g, b ){
 
 		// Setting de color
 		$( 'a, .color' ).css( 'color', 'rgb('+r+','+g+','+b+')' );
 		$( '.color-bg' ).css( 'background-color', 'rgb('+r+','+g+','+b+')' );
 
-		// HSL Descartado
-		// $( 'body' ).css( 'background-color', 'hsl('+h+','+s+'%,'+l+'%)' );
-		//window.console && console.info('Raw Position: x, y, z: ', x, y, z);
 	}
 
 	// Evita saltos al pasar de 360 a 0 haciendo un ciclo completo de 0 a 360 y de vuelta
@@ -124,7 +160,18 @@
 
 	}
 
+	// Porcentaje de un total
+	function percentageOfTotal( val, total ){
+		percentage = ( val * 100 ) / total;
+		return Math.floor( percentage );
+	}
+
 	// Cambian rangos con regla de 3
+	function changeRange100To255( val ){
+		var converted = ( val * 255 ) / 100;
+		return Math.floor( converted );
+	}
+
 	function changeRangeTo255( val ){
 		var converted = ( val * 255 ) / 180;
 		return Math.floor( converted );
