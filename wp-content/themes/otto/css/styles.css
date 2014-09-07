@@ -194,13 +194,13 @@ nav {
 /* line 203, ../sass/styles.scss */
 a,
 .color {
-  -webkit-transition: color 0.4s linear;
-          transition: color 0.4s linear; }
+  -webkit-transition: color 0.2s linear;
+          transition: color 0.2s linear; }
 
 /* line 208, ../sass/styles.scss */
 .color-bg {
-  -webkit-transition: background-color 0.4s linear;
-          transition: background-color 0.4s linear; }
+  -webkit-transition: background-color 0.2s linear;
+          transition: background-color 0.2s linear; }
 
 /* ==========================================================================
    WordPress Generated Classes

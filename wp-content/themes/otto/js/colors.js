@@ -26,23 +26,47 @@
 				r_z = 0;
 
 				$( window ).mousemove(function( event ) {
-					$( "#mouse_x" ).text( event.pageX );
-					$( "#mouse_y" ).text( event.pageY );
-					$( "#mouse_z" ).text( r_z );
 
 					r_x = event.pageX;
 					r_y = event.pageY;
+
+					handleCursor( r_x, r_y, r_z );
+
 				});
 
 				$( window ).on('mousewheel', function(event) {
 					console.log( event.deltaY );
-					r_z = r_z + event.deltaY;
+					r_z = r_z + ( event.deltaY * 2 );
 					if( r_z < 0 ){
 						r_z = 255;
 					}else if( r_z > 255 ){
 						r_z = 0;
 					}
+
+					$( "#mouse_z" ).text( r_z );
+					handleCursor( r_x, r_y, r_z );
+
 				});
+
+				function handleCursor( r_x, r_y, r_z ){
+
+					var doc_height = $(window).height();
+					var doc_width = $(window).width();
+
+					var x_percentage = percentageOfTotal( r_x, doc_width );
+					var y_percentage = percentageOfTotal( r_y, doc_height );
+
+					var r = changeRange100To255( x_percentage );
+					var g = changeRange100To255( y_percentage );
+					var b = r_z;
+
+					$( "#mouse_x" ).text( x_percentage );
+					$( "#mouse_y" ).text( y_percentage );
+
+					// Setting de color
+					setRGB( r, g, b );
+
+				}
 
 			}else{
 				console.log( 'Me moví ');
@@ -91,10 +115,6 @@
 		var g = cicloCompleto( y, changeRangeTo255 ); 
 		var b = cicloCompleto( z, changeRangeTo255 ); 
 
-		$('#data-r').text( r );
-		$('#data-g').text( g );
-		$('#data-b').text( b );
-
 		// HSL
 		var h = cicloCompleto( x, Math.floor ); 
 		var s = cicloCompleto( y, changeRangeTo100 ); 
@@ -105,12 +125,24 @@
 		$('#data-l').text( l );
 
 		// Setting de color
-		$( 'a, .color' ).css( 'color', 'rgb('+r+','+g+','+b+')' );
-		$( '.color-bg' ).css( 'background-color', 'rgb('+r+','+g+','+b+')' );
+		setRGB( r, g, b );
 
 		// HSL Descartado
 		// $( 'body' ).css( 'background-color', 'hsl('+h+','+s+'%,'+l+'%)' );
 		//window.console && console.info('Raw Position: x, y, z: ', x, y, z);
+	}
+
+	// Recibe RGB y setea los colores
+	function setRGB( r, g, b ){
+
+		$('#data-r').text( r );
+		$('#data-g').text( g );
+		$('#data-b').text( b );
+
+		// Setting de color
+		$( 'a, .color' ).css( 'color', 'rgb('+r+','+g+','+b+')' );
+		$( '.color-bg' ).css( 'background-color', 'rgb('+r+','+g+','+b+')' );
+
 	}
 
 	// Evita saltos al pasar de 360 a 0 haciendo un ciclo completo de 0 a 360 y de vuelta
@@ -124,7 +156,18 @@
 
 	}
 
+	// Porcentaje de un total
+	function percentageOfTotal( val, total ){
+		percentage = ( val * 100 ) / total;
+		return Math.floor( percentage );
+	}
+
 	// Cambian rangos con regla de 3
+	function changeRange100To255( val ){
+		var converted = ( val * 255 ) / 100;
+		return Math.floor( converted );
+	}
+
 	function changeRangeTo255( val ){
 		var converted = ( val * 255 ) / 180;
 		return Math.floor( converted );
