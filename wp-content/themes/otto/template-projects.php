@@ -21,7 +21,7 @@
         <div class="more-info">
           <p><%= post.content %></p>
           <div class="project-gallery">
-            <div class="gallery-wrapper">
+            <div class="owl-carousel">
               <img src="http://lorempixel.com/300/200/abstract">
               <img src="http://lorempixel.com/300/200/abstract">
             </div>

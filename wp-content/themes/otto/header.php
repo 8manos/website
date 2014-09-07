@@ -19,6 +19,7 @@
 	<?php
 	wp_enqueue_script( 'otto-modernizr', get_template_directory_uri() . '/js/lib/modernizr.js', array(), '2.5.2', false );
 	wp_enqueue_script( 'otto-plugins', get_template_directory_uri() . '/js/lib/plugins.js', array( 'jquery' ), '2.5.2', true );
+	wp_enqueue_script( 'owl', get_bloginfo('template_directory').'/js/lib/owl.carousel.min.js', array(), '2.0.0', true );
 	wp_enqueue_script( 'underscore', get_bloginfo('template_directory').'/js/lib/underscore-min.js', array(), '1.7.0', true );
 	wp_enqueue_script( 'backbone', get_bloginfo('template_directory').'/js/lib/backbone-min.js', array('jquery', 'underscore'), '1.1.1', true );
 	wp_head();
