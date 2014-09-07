@@ -67,7 +67,7 @@ audio:not([controls]) {
 
 html {
     background: #fff; /* 1 */
-    color: #393939; /* 2 */
+    color: #000000; /* 2 */
     font-family: 'Lato', sans-serif; /* 3 */
     -ms-text-size-adjust: 100%; /* 4 */
     -webkit-text-size-adjust: 100%; /* 4 */
@@ -111,10 +111,9 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: 0.2em 0;
 }
 
 /**
