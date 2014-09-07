@@ -1,65 +1,75 @@
 /* ==========================================================================
    Base
    ========================================================================== */
+/* line 4, ../sass/styles.scss */
+* {
+  margin: 0;
+  padding: 0; }
+
 /* =============================================================================
    Generales
    ========================================================================== */
-/* line 23, ../sass/styles.scss */
+/* line 22, ../sass/styles.scss */
 body {
   font: normal normal 16px 'Ubuntu', sans-serif;
   color: #000; }
 
-/* line 27, ../sass/styles.scss */
+/* line 26, ../sass/styles.scss */
 a {
   color: #FF3300;
   text-decoration: none;
   font-size: 0.875em; }
 
-/* line 33, ../sass/styles.scss */
+/* line 32, ../sass/styles.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-style: italic; }
+
+/* line 36, ../sass/styles.scss */
 h1 {
   font-size: 1.5em; }
 
-/* line 34, ../sass/styles.scss */
+/* line 37, ../sass/styles.scss */
 h2 {
   font-size: 1.313em; }
 
-/* line 35, ../sass/styles.scss */
+/* line 38, ../sass/styles.scss */
 h3 {
   font-size: 1.125em; }
 
-/* line 36, ../sass/styles.scss */
+/* line 39, ../sass/styles.scss */
 h4 {
   font-size: 1em; }
 
-/* line 37, ../sass/styles.scss */
+/* line 40, ../sass/styles.scss */
 h5 {
   font-size: 0.875em; }
 
-/* line 38, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 h6 {
   font-size: 0.75em; }
 
 /*navegacion*/
-/* line 42, ../sass/styles.scss */
+/* line 45, ../sass/styles.scss */
 header {
   width: 100%;
   background: #FF3300; }
 
-/* line 46, ../sass/styles.scss */
+/* line 49, ../sass/styles.scss */
 nav {
-  width: 80%;
+  /*width: 80%;*/
   height: 40px;
-  margin-left: 6%;
+  /*margin-left: 6%;*/
   display: inline-block; }
-  /* line 52, ../sass/styles.scss */
+  /* line 55, ../sass/styles.scss */
   nav ul {
-    list-style: none; }
-    /* line 55, ../sass/styles.scss */
+    list-style: none;
+    margin: 0; }
+    /* line 59, ../sass/styles.scss */
     nav ul li {
       display: inline-block;
       margin-right: 5px;
       line-height: 40px; }
-      /* line 60, ../sass/styles.scss */
+      /* line 64, ../sass/styles.scss */
       nav ul li a {
         color: #FFF;
         display: block;
@@ -67,65 +77,77 @@ nav {
         font-size: 1em;
         text-transform: capitalize; }
 
-/* line 70, ../sass/styles.scss */
+/* line 74, ../sass/styles.scss */
 .ochomanos {
   padding: 12px 0;
   width: 130px;
   height: 16px;
-  margin: 0 0; }
-  /* line 76, ../sass/styles.scss */
+  margin: 0 0;
+  display: inline-block;
+  float: right; }
+  /* line 82, ../sass/styles.scss */
   .ochomanos a {
     display: block;
     text-indent: -9999px;
     background: url(../img/8manos.svg) no-repeat; }
 
+/* line 89, ../sass/styles.scss */
+.wrap {
+  /*width: 80%;*/
+  /*margin-left: 10%;*/ }
+
 /* ==========================================================================
    Content
    ========================================================================== */
 /*encabezado modulo*/
-/* line 91, ../sass/styles.scss */
-h2 {
+/* line 100, ../sass/styles.scss */
+.inner-header h2 {
   display: inline-block; }
-  /* line 94, ../sass/styles.scss */
-  h2 span:after {
+  /* line 103, ../sass/styles.scss */
+  .inner-header h2 span:after {
     content: '\00a0 \2f \00a0'; }
 
-/* line 98, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 .back-link {
   display: inline-block;
   float: right; }
 
-/* line 102, ../sass/styles.scss */
+/* line 112, ../sass/styles.scss */
 .team-wrapper {
   padding: 0 10px; }
-  /* line 105, ../sass/styles.scss */
+  /* line 115, ../sass/styles.scss */
   .team-wrapper .person {
-    padding: 0 12px;
+    padding: 12px;
     background: #ECECEC;
-    text-aling: center; }
-    /* line 110, ../sass/styles.scss */
-    .team-wrapper .person h2 {
-      font-weight: bold; }
-    /* line 115, ../sass/styles.scss */
+    text-align: center; }
+    /* line 123, ../sass/styles.scss */
+    .team-wrapper .person h4 {
+      font-weight: normal; }
+    /* line 126, ../sass/styles.scss */
     .team-wrapper .person picture img {
       display: inline-block;
       width: 50px;
       border-radius: 50px;
       border: 3px solid #FF3300;
       margin-top: -25px; }
-    /* line 122, ../sass/styles.scss */
-    .team-wrapper .person .more-info {
-      text-aling: left; }
-      /* line 125, ../sass/styles.scss */
-      .team-wrapper .person .more-info p {
-        padding-bottom: 10px;
-        border-bottom: 2px dotted #FF3300; }
-      /* line 129, ../sass/styles.scss */
-      .team-wrapper .person .more-info .person-links {
-        list-style: none; }
-        /* line 132, ../sass/styles.scss */
-        .team-wrapper .person .more-info .person-links li {
-          display: inline-block; }
+
+/* line 135, ../sass/styles.scss */
+.more-info {
+  text-align: left; }
+  /* line 138, ../sass/styles.scss */
+  .more-info p {
+    padding-bottom: 10px; }
+  /* line 141, ../sass/styles.scss */
+  .more-info .person-links,
+  .more-info .lab-tags {
+    margin: 0 10px;
+    padding: 15px 10px;
+    list-style: none;
+    border-top: 2px dotted #FF3300; }
+    /* line 148, ../sass/styles.scss */
+    .more-info .person-links li,
+    .more-info .lab-tags li {
+      display: inline-block; }
 
 /* ==========================================================================
    Footer
@@ -133,13 +155,13 @@ h2 {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 147, ../sass/styles.scss */
+/* line 161, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.4s linear;
           transition: color 0.4s linear; }
 
-/* line 152, ../sass/styles.scss */
+/* line 166, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.4s linear;
           transition: background-color 0.4s linear; }
@@ -148,16 +170,16 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 162, ../sass/styles.scss */
+/* line 176, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 163, ../sass/styles.scss */
+/* line 177, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 164, ../sass/styles.scss */
+/* line 178, ../sass/styles.scss */
 .alignright {
   float: right; }
 
