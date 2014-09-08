@@ -100,11 +100,15 @@ header {
       margin: 0 0;
       display: inline-block;
       float: right;
+      font-family: 'icomoon';
+      font-size: 0;
+
     
-      a {
+      a:before {
+         content: "\e603";
          display: block;
-         text-indent: -9999px;
-         background: url(../img/8manos.svg) no-repeat; 
+         color: $naranja;
+         font-size: 16px;
       }
    }
 

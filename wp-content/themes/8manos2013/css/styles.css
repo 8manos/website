@@ -1,3 +1,4 @@
+@import url('http://dev.8manos.com/wp-content/themes/otto/css/styles.css');
 body {
   font-family: 'Ubuntu', sans-serif;
   font-style: normal;
@@ -30,9 +31,14 @@ h6 { font-size: 0.750em;}
 }
 .logo-text a{
   display: block;
-  text-indent: -9999px;
-  background: url(../img/8manos.svg) no-repeat; 
+ 
+ 
 }
+.logo-text a:before {
+  font-family: 'icomoon';
+  content: "\e603";
+  color: black !important;
+   }
 
 header {
   width: 100%;
