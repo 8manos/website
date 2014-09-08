@@ -1,3 +1,523 @@
-.owl-carousel .animated{-webkit-animation-duration:1000ms;animation-duration:1000ms;-webkit-animation-fill-mode:both;animation-fill-mode:both}.owl-carousel .owl-animated-in{z-index:0}.owl-carousel .owl-animated-out{z-index:1}.owl-carousel .fadeOut{-webkit-animation-name:fadeOut;animation-name:fadeOut}@-webkit-keyframes fadeOut{0%{opacity:1}100%{opacity:0}}@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}.owl-height{-webkit-transition:height 500ms ease-in-out;transition:height 500ms ease-in-out}.owl-carousel{display:none;width:100%;-webkit-tap-highlight-color:transparent;position:relative;z-index:1}.owl-carousel .owl-stage{position:relative;-ms-touch-action:pan-Y}.owl-carousel .owl-stage:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.owl-carousel .owl-stage-outer{position:relative;overflow:hidden;-webkit-transform:translate3d(0px, 0px, 0px)}.owl-carousel .owl-controls .owl-nav .owl-prev,.owl-carousel .owl-controls .owl-nav .owl-next,.owl-carousel .owl-controls .owl-dot{cursor:pointer;cursor:hand;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-loaded{display:block}.owl-carousel.owl-loading{opacity:0;display:block}.owl-carousel.owl-hidden{opacity:0}.owl-carousel .owl-refresh .owl-item{display:none}.owl-carousel .owl-item{position:relative;min-height:1px;float:left;-webkit-backface-visibility:hidden;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel .owl-item img{display:block;width:100%;-webkit-transform-style:preserve-3d}.owl-carousel.owl-text-select-on .owl-item{-webkit-user-select:auto;-moz-user-select:auto;-ms-user-select:auto;user-select:auto}.owl-carousel .owl-grab{cursor:move;cursor:-webkit-grab;cursor:-o-grab;cursor:-ms-grab;cursor:grab}.owl-carousel.owl-rtl{direction:rtl}.owl-carousel.owl-rtl .owl-item{float:right}.no-js .owl-carousel{display:block}.owl-carousel .owl-item .owl-lazy{opacity:0;-webkit-transition:opacity 400ms ease;transition:opacity 400ms ease}.owl-carousel .owl-item img{-webkit-transform-style:preserve-3d;transform-style:preserve-3d}.owl-carousel .owl-video-wrapper{position:relative;height:100%;background:#000}.owl-carousel .owl-video-play-icon{position:absolute;height:80px;width:80px;left:50%;top:50%;margin-left:-40px;margin-top:-40px;background:url("owl.video.play.png") no-repeat;cursor:pointer;z-index:1;-webkit-backface-visibility:hidden;-webkit-transition:scale 100ms ease;transition:scale 100ms ease}.owl-carousel .owl-video-play-icon:hover{-webkit-transition:scale(1.3, 1.3);transition:scale(1.3, 1.3)}.owl-carousel .owl-video-playing .owl-video-tn,.owl-carousel .owl-video-playing .owl-video-play-icon{display:none}.owl-carousel .owl-video-tn{opacity:0;height:100%;background-position:center center;background-repeat:no-repeat;background-size:contain;-webkit-transition:opacity 400ms ease;transition:opacity 400ms ease}.owl-carousel .owl-video-frame{position:relative;z-index:1}*{margin:0;padding:0}body{font:normal normal 16px 'Ubuntu', sans-serif;color:#000}body.normal{background:gray;color:blue}body.tenue{background:black;color:#fff}body.luminoso{background:white;color:black}a{color:#f30;text-decoration:none;font-size:0.875em}h1,h2,h3,h4,h5,h6{font-style:italic}h1{font-size:1.5em}h2{font-size:1.313em}h3{font-size:1.125em}h4{font-size:1em}h5{font-size:0.875em}h6{font-size:0.75em}header{width:100%;background:#f30}nav{height:40px;display:inline-block}nav ul{list-style:none;margin:0}nav ul li{display:inline-block;margin-right:5px;line-height:40px}nav ul li a{color:#FFF;display:block;padding:0 12px;font-size:1em;text-transform:capitalize}.ochomanos{padding:12px 0;width:130px;height:16px;margin:0 0;display:inline-block;float:right}.ochomanos a{display:block;text-indent:-9999px;background:url(../img/8manos.svg) no-repeat}.inner-header h2{display:inline-block}.inner-header h2 span:after{content:'\00a0 \2f \00a0'}.back-link{display:inline-block;float:right}.nav-tabs{list-style:none;width:100%;text-align:center;margin:20px 0;text-transform:uppercase;padding:0 8px;border-bottom:1px solid #f30}.nav-tabs li{display:inline-block;margin-left:-2px;width:32%}.nav-tabs li a{display:block;color:#FFF;padding:10px;background:rgba(255,51,0,0.2);position:relative;font-weight:bold}.nav-tabs li.active a,.nav-tabs li a:hover{background:#f30;color:#FFF}.team-wrapper{padding:0 10px}.team-wrapper .person{padding:12px;background:#ECECEC;text-align:center}.team-wrapper .person h4{font-weight:normal}.team-wrapper .person picture img{display:inline-block;width:50px;border-radius:50px;border:3px solid #f30;margin-top:-25px}.lab-wrapper{padding:0 10px}.lab-wrapper .project{padding:12px;background:#ECECEC;text-align:left}.lab-wrapper .project h4{font-weight:normal}.lab-wrapper .project picture img{display:inline-block;width:50px;border-radius:50px;border:3px solid #f30;margin-top:-25px}.more-info{text-align:left}.more-info p{padding-bottom:10px}.more-info p+p{padding:5px 0 15px}.more-info .person-links,.more-info .lab-tags{margin:0 10px;padding:15px 10px;list-style:none;border-top:2px dotted #f30}.more-info .person-links li,.more-info .lab-tags li{display:inline-block}a,.color{-webkit-transition:color 0.2s linear;transition:color 0.2s linear}.color-bg{-webkit-transition:background-color 0.2s linear;transition:background-color 0.2s linear}.aligncenter{display:block;margin:0 auto}.alignleft{float:left}.alignright{float:right}
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?6kutlw");
+  src: url("../fonts/icomoon.eot?#iefix6kutlw") format("embedded-opentype"), url("../fonts/icomoon.woff?6kutlw") format("woff"), url("../fonts/icomoon.ttf?6kutlw") format("truetype"), url("../fonts/icomoon.svg?6kutlw#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* line 12, ../sass/fonts.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
-/*# sourceMappingURL=styles.css.map */
+/* line 26, ../sass/fonts.scss */
+.icon-m_tipografico_130x16px:before {
+  content: "\e603"; }
+
+/* line 29, ../sass/fonts.scss */
+.icon-icono_otto:before {
+  content: "\e600"; }
+
+/* line 32, ../sass/fonts.scss */
+.icon-icono_:before {
+  content: "\e601"; }
+
+/* line 35, ../sass/fonts.scss */
+.icon-m_tipografico:before {
+  content: "\e602"; }
+
+/* line 38, ../sass/fonts.scss */
+.icon-menu:before {
+  content: "\e604"; }
+
+/* line 41, ../sass/fonts.scss */
+.icon-close:before {
+  content: "\e605"; }
+
+/* line 44, ../sass/fonts.scss */
+.icon-message-01:before {
+  content: "\e606"; }
+
+/* line 47, ../sass/fonts.scss */
+.icon-svg:before {
+  content: "\e607"; }
+
+/* 
+ *  Owl Carousel - Animate Plugin
+ */
+/* line 4, ../sass/owl.carousel.scss */
+.owl-carousel .animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+/* line 10, ../sass/owl.carousel.scss */
+.owl-carousel .owl-animated-in {
+  z-index: 0; }
+
+/* line 13, ../sass/owl.carousel.scss */
+.owl-carousel .owl-animated-out {
+  z-index: 1; }
+
+/* line 16, ../sass/owl.carousel.scss */
+.owl-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut; }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+/* 
+ * 	Owl Carousel - Auto Height Plugin
+ */
+/* line 43, ../sass/owl.carousel.scss */
+.owl-height {
+  -webkit-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out; }
+
+/* 
+ *  Core Owl Carousel CSS File
+ */
+/* line 54, ../sass/owl.carousel.scss */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1; }
+
+/* line 62, ../sass/owl.carousel.scss */
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y; }
+
+/* line 66, ../sass/owl.carousel.scss */
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+/* line 74, ../sass/owl.carousel.scss */
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px); }
+
+/* line 80, ../sass/owl.carousel.scss */
+.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl-carousel .owl-controls .owl-nav .owl-next,
+.owl-carousel .owl-controls .owl-dot {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* line 91, ../sass/owl.carousel.scss */
+.owl-carousel.owl-loaded {
+  display: block; }
+
+/* line 94, ../sass/owl.carousel.scss */
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block; }
+
+/* line 98, ../sass/owl.carousel.scss */
+.owl-carousel.owl-hidden {
+  opacity: 0; }
+
+/* line 101, ../sass/owl.carousel.scss */
+.owl-carousel .owl-refresh .owl-item {
+  display: none; }
+
+/* line 104, ../sass/owl.carousel.scss */
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* line 116, ../sass/owl.carousel.scss */
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  -webkit-transform-style: preserve-3d; }
+
+/* line 121, ../sass/owl.carousel.scss */
+.owl-carousel.owl-text-select-on .owl-item {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto; }
+
+/* line 127, ../sass/owl.carousel.scss */
+.owl-carousel .owl-grab {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab; }
+
+/* line 134, ../sass/owl.carousel.scss */
+.owl-carousel.owl-rtl {
+  direction: rtl; }
+
+/* line 137, ../sass/owl.carousel.scss */
+.owl-carousel.owl-rtl .owl-item {
+  float: right; }
+
+/* No Js */
+/* line 142, ../sass/owl.carousel.scss */
+.no-js .owl-carousel {
+  display: block; }
+
+/* 
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+/* line 149, ../sass/owl.carousel.scss */
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease;
+  transition: opacity 400ms ease; }
+
+/* line 157, ../sass/owl.carousel.scss */
+.owl-carousel .owl-item img {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d; }
+
+/* 
+ * 	Owl Carousel - Video Plugin
+ */
+/* line 164, ../sass/owl.carousel.scss */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000; }
+
+/* line 169, ../sass/owl.carousel.scss */
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: scale 100ms ease;
+  transition: scale 100ms ease; }
+
+/* line 187, ../sass/owl.carousel.scss */
+.owl-carousel .owl-video-play-icon:hover {
+  -webkit-transition: scale(1.3, 1.3);
+  transition: scale(1.3, 1.3); }
+
+/* line 194, ../sass/owl.carousel.scss */
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none; }
+
+/* line 198, ../sass/owl.carousel.scss */
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: opacity 400ms ease;
+  transition: opacity 400ms ease; }
+
+/* line 213, ../sass/owl.carousel.scss */
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/* line 7, ../sass/styles.scss */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* =============================================================================
+   Generales
+   ========================================================================== */
+/* line 25, ../sass/styles.scss */
+body {
+  font: normal normal 16px 'Ubuntu', sans-serif;
+  color: #000; }
+  /* line 29, ../sass/styles.scss */
+  body.normal {
+    background: gray;
+    color: blue; }
+  /* line 34, ../sass/styles.scss */
+  body.tenue {
+    background: black;
+    color: white; }
+  /* line 39, ../sass/styles.scss */
+  body.luminoso {
+    background: white;
+    color: black; }
+
+/* line 44, ../sass/styles.scss */
+a {
+  color: #FF3300;
+  text-decoration: none;
+  font-size: 0.875em;
+  font-weight: bold; }
+
+/* line 50, ../sass/styles.scss */
+a:hover {
+  text-decoration: underline; }
+
+/* line 54, ../sass/styles.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-style: italic; }
+
+/* line 58, ../sass/styles.scss */
+h1 {
+  font-size: 1.5em; }
+
+/* line 59, ../sass/styles.scss */
+h2 {
+  font-size: 1.313em; }
+
+/* line 60, ../sass/styles.scss */
+h3 {
+  font-size: 1.125em; }
+
+/* line 61, ../sass/styles.scss */
+h4 {
+  font-size: 1em; }
+
+/* line 62, ../sass/styles.scss */
+h5 {
+  font-size: 0.875em; }
+
+/* line 63, ../sass/styles.scss */
+h6 {
+  font-size: 0.75em; }
+
+/*navegacion*/
+/* line 67, ../sass/styles.scss */
+header {
+  width: 100%;
+  background: #000; }
+
+/* line 71, ../sass/styles.scss */
+nav {
+  /*width: 80%;*/
+  height: 40px;
+  /*margin-left: 6%;*/
+  display: inline-block; }
+  /* line 77, ../sass/styles.scss */
+  nav ul {
+    list-style: none;
+    margin: 0; }
+    /* line 81, ../sass/styles.scss */
+    nav ul li {
+      display: inline-block;
+      margin-right: 5px;
+      line-height: 40px; }
+      /* line 86, ../sass/styles.scss */
+      nav ul li a {
+        color: #FFF;
+        display: block;
+        padding: 0 12px;
+        font-size: 1em;
+        text-transform: capitalize; }
+
+/* line 96, ../sass/styles.scss */
+.ochomanos {
+  padding: 12px 0;
+  width: 130px;
+  height: 16px;
+  margin: 0 15px 0 0;
+  display: inline-block;
+  float: right;
+  font-family: 'icomoon';
+  font-size: 0;
+  font-style: normal; }
+  /* line 108, ../sass/styles.scss */
+  .ochomanos a:before {
+    content: "\e603";
+    display: block;
+    font-size: 16px; }
+  /* line 113, ../sass/styles.scss */
+  .ochomanos a:hover {
+    text-decoration: none;
+    opacity: 0.4; }
+
+/* line 119, ../sass/styles.scss */
+.wrap {
+  /*width: 80%;*/
+  /*margin-left: 10%;*/ }
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+/*encabezado modulo*/
+/* line 130, ../sass/styles.scss */
+.inner-header h2 {
+  display: inline-block; }
+  /* line 133, ../sass/styles.scss */
+  .inner-header h2 span:after {
+    content: '\00a0 \2f \00a0'; }
+
+/* line 138, ../sass/styles.scss */
+.back-link {
+  display: inline-block;
+  float: right; }
+
+/* line 142, ../sass/styles.scss */
+.nav-tabs {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  text-transform: uppercase;
+  padding: 0 8px;
+  border-bottom: 1px solid #FF3300; }
+  /* line 151, ../sass/styles.scss */
+  .nav-tabs li {
+    display: inline-block;
+    margin-left: 1px;
+    width: 32%; }
+  /* line 157, ../sass/styles.scss */
+  .nav-tabs li a {
+    display: block;
+    color: #FFF;
+    padding: 10px;
+    background: rgba(255, 51, 0, 0.2);
+    position: relative;
+    font-weight: bold; }
+  /* line 166, ../sass/styles.scss */
+  .nav-tabs li.active a,
+  .nav-tabs li a:hover {
+    background: #FF3300;
+    color: #FFF; }
+
+/* line 173, ../sass/styles.scss */
+.team-wrapper {
+  padding: 0 10px; }
+  /* line 176, ../sass/styles.scss */
+  .team-wrapper .person {
+    padding: 12px;
+    background: #ECECEC;
+    text-align: center; }
+    /* line 184, ../sass/styles.scss */
+    .team-wrapper .person h4 {
+      font-weight: normal; }
+    /* line 187, ../sass/styles.scss */
+    .team-wrapper .person picture img {
+      display: inline-block;
+      width: 50px;
+      border-radius: 50px;
+      border: 3px solid #FF3300;
+      margin-top: -25px; }
+
+/* line 196, ../sass/styles.scss */
+.lab-wrapper {
+  padding: 0 10px; }
+  /* line 199, ../sass/styles.scss */
+  .lab-wrapper .project {
+    padding: 12px;
+    background: #ECECEC;
+    text-align: left; }
+    /* line 207, ../sass/styles.scss */
+    .lab-wrapper .project h4 {
+      font-weight: normal; }
+    /* line 210, ../sass/styles.scss */
+    .lab-wrapper .project picture img {
+      display: inline-block;
+      width: 50px;
+      border-radius: 50px;
+      border: 3px solid #FF3300;
+      margin-top: -25px; }
+
+/* line 219, ../sass/styles.scss */
+.more-info {
+  text-align: left; }
+  /* line 222, ../sass/styles.scss */
+  .more-info p {
+    padding-bottom: 10px; }
+  /* line 225, ../sass/styles.scss */
+  .more-info p + p {
+    padding: 5px 0 15px; }
+  /* line 228, ../sass/styles.scss */
+  .more-info .person-links,
+  .more-info .lab-tags {
+    margin: 0 10px;
+    padding: 15px 10px;
+    list-style: none;
+    border-top: 2px dotted #FF3300; }
+    /* line 235, ../sass/styles.scss */
+    .more-info .person-links li,
+    .more-info .lab-tags li {
+      display: inline-block; }
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+/* ==========================================================================
+   Games
+   ========================================================================== */
+/* line 248, ../sass/styles.scss */
+a,
+.color {
+  -webkit-transition: color 0.2s linear;
+          transition: color 0.2s linear; }
+
+/* line 253, ../sass/styles.scss */
+.color-bg {
+  -webkit-transition: background-color 0.2s linear;
+          transition: background-color 0.2s linear; }
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+/* line 263, ../sass/styles.scss */
+.aligncenter {
+  display: block;
+  margin: 0 auto; }
+
+/* line 264, ../sass/styles.scss */
+.alignleft {
+  float: left; }
+
+/* line 265, ../sass/styles.scss */
+.alignright {
+  float: right; }
