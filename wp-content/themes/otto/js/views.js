@@ -35,7 +35,7 @@ OM.Views.PrinciplesView = Backbone.View.extend({
   render: function() {
     //this.el is what we defined in tagName. use $el to get access to jQuery html() function
     //console.log(this.collection.models[0].attributes.posts[0]);
-    this.$el.html( this.template( this.collection.models[0].attributes.posts[0] ) );
+    this.$el.html(this.template(this.collection.models[0].attributes.posts[0]));
 
     return this;
   }
@@ -75,7 +75,7 @@ OM.Views.ProjectsView = Backbone.View.extend({
 });
 
 OM.Views.PersonsView = Backbone.View.extend({
-  el: 'section.people',
+  el: 'section.team .team-wrapper',
   initialize: function(){
     this.template = _.template($('#personsTemplate').html());
     this.render();
@@ -83,6 +83,18 @@ OM.Views.PersonsView = Backbone.View.extend({
   render: function(){
     var posts = this.collection.models[0].attributes.posts;
     this.$el.html(this.template({'posts': posts}));
+    return this;
+  }
+});
+
+OM.Views.TeamView = Backbone.View.extend({
+  el: 'section.team',
+  initialize: function(){
+    this.template = _.template($('#teamTemplate').html());
+    this.render();
+  },
+  render: function(){
+    this.$el.html(this.template(this.collection.models[0].attributes.posts[0]));
     return this;
   }
 });

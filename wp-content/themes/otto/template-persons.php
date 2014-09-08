@@ -1,10 +1,5 @@
 <script id="personsTemplate" type="text/template">
-  <div class="inner-header">
-    <h2><span><a href="">People</a></span>Equipo</h2>
-    <div class="back-link">Volver</div>
-  </div>
-  <div class="team-wrapper">
-    <% _.each(posts, function(post){ %>
+	<% _.each(posts, function(post){ %>
       <article class="person">
         <h3><%= post.title %></h3>
         <h4>Líder de agilidad</h4>
@@ -22,5 +17,4 @@
         </div>
       </article>
     <% }); %>
-  </div>
 </script>
