@@ -45,6 +45,10 @@ a {
    color: $naranja;
    text-decoration: none;
    font-size: $size-cinco;
+   font-weight: bold;
+}
+a:hover {
+   text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -62,7 +66,7 @@ h6 { font-size: $size-seis;}
 
 header {
   width: 100%;
-  background: $naranja;
+  background: #000;
 }
    nav {
      /*width: 80%;*/
@@ -93,14 +97,22 @@ header {
       padding: 12px 0;
       width: 130px;
       height: 16px;
-      margin: 0 0;
+      margin: 0 15px 0 0;
       display: inline-block;
       float: right;
-    
-      a {
+      font-family: 'icomoon';
+      font-size: 0;
+      font-style: normal;
+
+      
+      a:before {
+         content: "\e603";
          display: block;
-         text-indent: -9999px;
-         background: url(../img/8manos.svg) no-repeat; 
+         font-size: 16px;
+      }
+      a:hover {
+         text-decoration: none;
+         opacity: 0.4;
       }
    }
 
@@ -138,7 +150,7 @@ header {
   
   li {
       display: inline-block;
-      margin-left: -2px;
+      margin-left: 1px;
       width: 32%;
   }
 

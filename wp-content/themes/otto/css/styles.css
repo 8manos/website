@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?oazdkl");
-  src: url("../fonts/icomoon.eot?#iefixoazdkl") format("embedded-opentype"), url("../fonts/icomoon.woff?oazdkl") format("woff"), url("../fonts/icomoon.ttf?oazdkl") format("truetype"), url("../fonts/icomoon.svg?oazdkl#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?6kutlw");
+  src: url("../fonts/icomoon.eot?#iefix6kutlw") format("embedded-opentype"), url("../fonts/icomoon.woff?6kutlw") format("woff"), url("../fonts/icomoon.ttf?6kutlw") format("truetype"), url("../fonts/icomoon.svg?6kutlw#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* line 12, ../sass/fonts.scss */
@@ -18,20 +18,20 @@
   -moz-osx-font-smoothing: grayscale; }
 
 /* line 26, ../sass/fonts.scss */
+.icon-m_tipografico_130x16px:before {
+  content: "\e603"; }
+
+/* line 29, ../sass/fonts.scss */
 .icon-icono_otto:before {
   content: "\e600"; }
 
-/* line 29, ../sass/fonts.scss */
+/* line 32, ../sass/fonts.scss */
 .icon-icono_:before {
   content: "\e601"; }
 
-/* line 32, ../sass/fonts.scss */
+/* line 35, ../sass/fonts.scss */
 .icon-m_tipografico:before {
   content: "\e602"; }
-
-/* line 35, ../sass/fonts.scss */
-.icon-back-alt:before {
-  content: "\e603"; }
 
 /* line 38, ../sass/fonts.scss */
 .icon-menu:before {
@@ -295,58 +295,63 @@ body {
 a {
   color: #FF3300;
   text-decoration: none;
-  font-size: 0.875em; }
+  font-size: 0.875em;
+  font-weight: bold; }
 
 /* line 50, ../sass/styles.scss */
+a:hover {
+  text-decoration: underline; }
+
+/* line 54, ../sass/styles.scss */
 h1, h2, h3, h4, h5, h6 {
   font-style: italic; }
 
-/* line 54, ../sass/styles.scss */
+/* line 58, ../sass/styles.scss */
 h1 {
   font-size: 1.5em; }
 
-/* line 55, ../sass/styles.scss */
+/* line 59, ../sass/styles.scss */
 h2 {
   font-size: 1.313em; }
 
-/* line 56, ../sass/styles.scss */
+/* line 60, ../sass/styles.scss */
 h3 {
   font-size: 1.125em; }
 
-/* line 57, ../sass/styles.scss */
+/* line 61, ../sass/styles.scss */
 h4 {
   font-size: 1em; }
 
-/* line 58, ../sass/styles.scss */
+/* line 62, ../sass/styles.scss */
 h5 {
   font-size: 0.875em; }
 
-/* line 59, ../sass/styles.scss */
+/* line 63, ../sass/styles.scss */
 h6 {
   font-size: 0.75em; }
 
 /*navegacion*/
-/* line 63, ../sass/styles.scss */
+/* line 67, ../sass/styles.scss */
 header {
   width: 100%;
-  background: #FF3300; }
+  background: #000; }
 
-/* line 67, ../sass/styles.scss */
+/* line 71, ../sass/styles.scss */
 nav {
   /*width: 80%;*/
   height: 40px;
   /*margin-left: 6%;*/
   display: inline-block; }
-  /* line 73, ../sass/styles.scss */
+  /* line 77, ../sass/styles.scss */
   nav ul {
     list-style: none;
     margin: 0; }
-    /* line 77, ../sass/styles.scss */
+    /* line 81, ../sass/styles.scss */
     nav ul li {
       display: inline-block;
       margin-right: 5px;
       line-height: 40px; }
-      /* line 82, ../sass/styles.scss */
+      /* line 86, ../sass/styles.scss */
       nav ul li a {
         color: #FFF;
         display: block;
@@ -354,21 +359,28 @@ nav {
         font-size: 1em;
         text-transform: capitalize; }
 
-/* line 92, ../sass/styles.scss */
+/* line 96, ../sass/styles.scss */
 .ochomanos {
   padding: 12px 0;
   width: 130px;
   height: 16px;
-  margin: 0 0;
+  margin: 0 15px 0 0;
   display: inline-block;
-  float: right; }
-  /* line 100, ../sass/styles.scss */
-  .ochomanos a {
+  float: right;
+  font-family: 'icomoon';
+  font-size: 0;
+  font-style: normal; }
+  /* line 108, ../sass/styles.scss */
+  .ochomanos a:before {
+    content: "\e603";
     display: block;
-    text-indent: -9999px;
-    background: url(../img/8manos.svg) no-repeat; }
+    font-size: 16px; }
+  /* line 113, ../sass/styles.scss */
+  .ochomanos a:hover {
+    text-decoration: none;
+    opacity: 0.4; }
 
-/* line 107, ../sass/styles.scss */
+/* line 119, ../sass/styles.scss */
 .wrap {
   /*width: 80%;*/
   /*margin-left: 10%;*/ }
@@ -377,19 +389,19 @@ nav {
    Content
    ========================================================================== */
 /*encabezado modulo*/
-/* line 118, ../sass/styles.scss */
+/* line 130, ../sass/styles.scss */
 .inner-header h2 {
   display: inline-block; }
-  /* line 121, ../sass/styles.scss */
+  /* line 133, ../sass/styles.scss */
   .inner-header h2 span:after {
     content: '\00a0 \2f \00a0'; }
 
-/* line 126, ../sass/styles.scss */
+/* line 138, ../sass/styles.scss */
 .back-link {
   display: inline-block;
   float: right; }
 
-/* line 130, ../sass/styles.scss */
+/* line 142, ../sass/styles.scss */
 .nav-tabs {
   list-style: none;
   width: 100%;
@@ -398,12 +410,12 @@ nav {
   text-transform: uppercase;
   padding: 0 8px;
   border-bottom: 1px solid #FF3300; }
-  /* line 139, ../sass/styles.scss */
+  /* line 151, ../sass/styles.scss */
   .nav-tabs li {
     display: inline-block;
-    margin-left: -2px;
+    margin-left: 1px;
     width: 32%; }
-  /* line 145, ../sass/styles.scss */
+  /* line 157, ../sass/styles.scss */
   .nav-tabs li a {
     display: block;
     color: #FFF;
@@ -411,24 +423,24 @@ nav {
     background: rgba(255, 51, 0, 0.2);
     position: relative;
     font-weight: bold; }
-  /* line 154, ../sass/styles.scss */
+  /* line 166, ../sass/styles.scss */
   .nav-tabs li.active a,
   .nav-tabs li a:hover {
     background: #FF3300;
     color: #FFF; }
 
-/* line 161, ../sass/styles.scss */
+/* line 173, ../sass/styles.scss */
 .team-wrapper {
   padding: 0 10px; }
-  /* line 164, ../sass/styles.scss */
+  /* line 176, ../sass/styles.scss */
   .team-wrapper .person {
     padding: 12px;
     background: #ECECEC;
     text-align: center; }
-    /* line 172, ../sass/styles.scss */
+    /* line 184, ../sass/styles.scss */
     .team-wrapper .person h4 {
       font-weight: normal; }
-    /* line 175, ../sass/styles.scss */
+    /* line 187, ../sass/styles.scss */
     .team-wrapper .person picture img {
       display: inline-block;
       width: 50px;
@@ -436,18 +448,18 @@ nav {
       border: 3px solid #FF3300;
       margin-top: -25px; }
 
-/* line 184, ../sass/styles.scss */
+/* line 196, ../sass/styles.scss */
 .lab-wrapper {
   padding: 0 10px; }
-  /* line 187, ../sass/styles.scss */
+  /* line 199, ../sass/styles.scss */
   .lab-wrapper .project {
     padding: 12px;
     background: #ECECEC;
     text-align: left; }
-    /* line 195, ../sass/styles.scss */
+    /* line 207, ../sass/styles.scss */
     .lab-wrapper .project h4 {
       font-weight: normal; }
-    /* line 198, ../sass/styles.scss */
+    /* line 210, ../sass/styles.scss */
     .lab-wrapper .project picture img {
       display: inline-block;
       width: 50px;
@@ -455,23 +467,23 @@ nav {
       border: 3px solid #FF3300;
       margin-top: -25px; }
 
-/* line 207, ../sass/styles.scss */
+/* line 219, ../sass/styles.scss */
 .more-info {
   text-align: left; }
-  /* line 210, ../sass/styles.scss */
+  /* line 222, ../sass/styles.scss */
   .more-info p {
     padding-bottom: 10px; }
-  /* line 213, ../sass/styles.scss */
+  /* line 225, ../sass/styles.scss */
   .more-info p + p {
     padding: 5px 0 15px; }
-  /* line 216, ../sass/styles.scss */
+  /* line 228, ../sass/styles.scss */
   .more-info .person-links,
   .more-info .lab-tags {
     margin: 0 10px;
     padding: 15px 10px;
     list-style: none;
     border-top: 2px dotted #FF3300; }
-    /* line 223, ../sass/styles.scss */
+    /* line 235, ../sass/styles.scss */
     .more-info .person-links li,
     .more-info .lab-tags li {
       display: inline-block; }
@@ -482,13 +494,13 @@ nav {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 236, ../sass/styles.scss */
+/* line 248, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.2s linear;
           transition: color 0.2s linear; }
 
-/* line 241, ../sass/styles.scss */
+/* line 253, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.2s linear;
           transition: background-color 0.2s linear; }
@@ -497,17 +509,15 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 251, ../sass/styles.scss */
+/* line 263, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 252, ../sass/styles.scss */
+/* line 264, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 253, ../sass/styles.scss */
+/* line 265, ../sass/styles.scss */
 .alignright {
   float: right; }
-
-/*# sourceMappingURL=styles.css.map */

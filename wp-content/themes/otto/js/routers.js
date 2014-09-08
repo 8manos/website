@@ -4,7 +4,7 @@ OM.Routers.Router = Backbone.Router.extend({
     this.route(options.urls[0], 'root');
     this.route(options.urls[1], 'friends');
     this.route(options.urls[2], 'projects');
-    this.route(options.urls[3], 'team_core');
+    this.route(options.urls[3], 'team');
     this.route(options.urls[4], 'lab');
   },
   root: function(){
@@ -47,15 +47,23 @@ OM.Routers.Router = Backbone.Router.extend({
       }
     });
   },
-  team_core: function(){
-    //var principlesCollection = new OM.Collections.PagesCollection({pageId: this.pages[0]});
-    var teamCollection = new OM.Collections.TeamCollection();
+  team: function(){
+    console.log(this.pages)
+    var teamCollection = new OM.Collections.PagesCollection({pageId: this.pages[1]});
+    var personsCollection = new OM.Collections.TeamCollection();
     teamCollection.fetch({
       complete: function(xhr, textStatus){
         if(textStatus == 'success'){
-          window.views.persons_view = new OM.Views.PersonsView({collection: teamCollection});
+          window.views.team_view = new OM.Views.TeamView({collection: teamCollection});
         }
       }
-    })
+    });
+    /*personsCollection.fetch({
+      complete: function(xhr, textStatus){
+        if(textStatus == 'success'){
+          window.views.persons_view = new OM.Views.PersonsView({collection: personsCollection});
+        }
+      }
+    });*/
   }
 });
