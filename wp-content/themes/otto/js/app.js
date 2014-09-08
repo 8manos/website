@@ -6,8 +6,8 @@ $(document).on('ready', function(){
     var linkUrlArray = linkUrl.split(homeUrl);
     var linkPath = linkUrlArray.length > 1 ? linkUrlArray[1] : linkUrlArray[0];
     linkPath = linkPath.replace(/(^\/+|\/+$)/g,''); //trim starting and final slash
+    menuUrls.push(linkPath);
   });
-  console.log(menuUrls);
 
   var pages = [];
   $('#menu-main .menu-item-object-page').each(function() {
@@ -16,8 +16,8 @@ $(document).on('ready', function(){
     pages.push(pageId);
   });
 
-  window.routers.router = new OM.Routers.Router({pages: pages});
+  window.routers.router = new OM.Routers.Router({pages: pages, urls: menuUrls});
   Backbone.history.start({
-  	pushState: true
+    pushState: true,
   });
 });
