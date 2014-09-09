@@ -75,6 +75,10 @@ OM.Views.ProjectsView = Backbone.View.extend({
 });
 
 OM.Views.PersonsView = Backbone.View.extend({
+  events: {
+    'click .module-control.more': 'showMore',
+    'click .module-control.less': 'showLess'
+  },
   el: 'section.team .team-wrapper',
   initialize: function(){
     this.template = _.template($('#personsTemplate').html());
@@ -83,11 +87,23 @@ OM.Views.PersonsView = Backbone.View.extend({
   render: function(){
     var posts = this.collection.models[0].attributes.posts;
     this.$el.html(this.template({'posts': posts}));
+    console.log('PersonsView rendered');
     return this;
+  },
+  showMore: function(e){
+    $(e.currentTarget).removeClass('more').addClass('less');
+    $(e.currentTarget).parent().find('.person-info').slideDown();
+  },
+  showLess: function(e){
+    $(e.currentTarget).removeClass('less').addClass('more');
+    $(e.currentTarget).parent().find('.person-info').slideUp();
   }
 });
 
 OM.Views.TeamView = Backbone.View.extend({
+  events: {
+    'click .team-nav li': 'renderTeam'
+  },
   el: 'section.team',
   initialize: function(){
     this.template = _.template($('#teamTemplate').html());
@@ -96,5 +112,26 @@ OM.Views.TeamView = Backbone.View.extend({
   render: function(){
     this.$el.html(this.template(this.collection.models[0].attributes.posts[0]));
     return this;
+  },
+  renderTeam: function(e){
+    var teamName = $(e.currentTarget).context.className;
+    var newCollection = {};
+    //newCollection changes according to teamName
+    if(teamName == 'team-core'){
+      newCollection = new OM.Collections.TeamCollection();
+    }
+    else if(teamName == 'team-nodes'){
+      newCollection = new OM.Collections.TeamCollection();
+    }
+    else if(teamName == 'team-friends'){
+      newCollection = new OM.Collections.FriendsCollection();
+    }
+    newCollection.fetch({
+      complete: function(xhr, textStatus){
+        if(textStatus == 'success'){
+          window.views.persons_view = new OM.Views.PersonsView({collection: newCollection});
+        }
+      }
+    });
   }
 });

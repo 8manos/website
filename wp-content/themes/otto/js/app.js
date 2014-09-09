@@ -18,6 +18,6 @@ $(document).on('ready', function(){
 
   window.routers.router = new OM.Routers.Router({pages: pages});
   Backbone.history.start({
-  	pushState: true
+  	//pushState: true
   });
 });

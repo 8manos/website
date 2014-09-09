@@ -50,7 +50,7 @@ OM.Routers.Router = Backbone.Router.extend({
     });
   },
   team: function(){
-    console.log(this.pages)
+    console.log(this.pages);
     var teamCollection = new OM.Collections.PagesCollection({pageId: this.pages[1]});
     var personsCollection = new OM.Collections.TeamCollection();
     teamCollection.fetch({
@@ -60,12 +60,12 @@ OM.Routers.Router = Backbone.Router.extend({
         }
       }
     });
-    /*personsCollection.fetch({
+    personsCollection.fetch({
       complete: function(xhr, textStatus){
         if(textStatus == 'success'){
           window.views.persons_view = new OM.Views.PersonsView({collection: personsCollection});
         }
       }
-    });*/
+    });
   }
 });
