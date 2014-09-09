@@ -1,13 +1,11 @@
 OM.Routers.Router = Backbone.Router.extend({
   initialize: function(options){
     this.pages = options.pages;
-  },
-  routes: {
-    '': 'root',
-    'amigos': 'friends',
-    'trabajo/portafolio': 'projects',
-    'equipo': 'team',
-    'lab': 'lab'
+    this.route(options.urls[0], 'root');
+    this.route(options.urls[1], 'friends');
+    this.route(options.urls[2], 'projects');
+    this.route(options.urls[3], 'team');
+    this.route(options.urls[4], 'lab');
   },
   root: function(){
     var principlesCollection = new OM.Collections.PagesCollection({pageId: this.pages[0]});
