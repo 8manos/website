@@ -1,5 +1,5 @@
 OM.Views.FriendsView = Backbone.View.extend({
-  el: 'section.friends',
+  el: 'main',
   initialize: function(){
     this.template = _.template($('#friendsTemplate').html());
     this.render();
@@ -25,7 +25,7 @@ OM.Views.LabsView = Backbone.View.extend({
 });
 
 OM.Views.PrinciplesView = Backbone.View.extend({
-  el: 'section.principles',
+  el: 'main',
   template: _.template($('#principlesTemplate').html()),
 
   initialize: function(){
@@ -42,9 +42,9 @@ OM.Views.PrinciplesView = Backbone.View.extend({
 });
 
 OM.Views.ProjectsView = Backbone.View.extend({
-  el: 'section.portfolio',
+  el: 'main',
   initialize: function(){
-    this.template = _.template($('#projectsTemplate').html());
+    this.template = _.template($('#portfolioTemplate').html());
 
     this.render = _.wrap(this.render, function(render) {
       this.beforeRender();
@@ -102,19 +102,26 @@ OM.Views.PersonsView = Backbone.View.extend({
 
 OM.Views.TeamView = Backbone.View.extend({
   events: {
-    'click .team-nav li': 'renderTeam'
+    'click .team-nav li': 'chooseTeam'
   },
-  el: 'section.team',
+  el: 'main',
   initialize: function(){
     this.template = _.template($('#teamTemplate').html());
     this.render();
+    this.chooseTeam();
   },
   render: function(){
     this.$el.html(this.template(this.collection.models[0].attributes.posts[0]));
     return this;
   },
-  renderTeam: function(e){
-    var teamName = $(e.currentTarget).context.className;
+  chooseTeam: function(e){
+    var teamName = '';
+    if(e){
+      teamName = $(e.currentTarget).context.className;
+    }
+    else{
+      teamName = 'team-core';
+    }
     var newCollection = {};
     //newCollection changes according to teamName
     if(teamName == 'team-core'){
@@ -126,10 +133,13 @@ OM.Views.TeamView = Backbone.View.extend({
     else if(teamName == 'team-friends'){
       newCollection = new OM.Collections.FriendsCollection();
     }
-    newCollection.fetch({
+    this.renderTeam(newCollection)
+  },
+  renderTeam: function(col){
+    col.fetch({
       complete: function(xhr, textStatus){
         if(textStatus == 'success'){
-          window.views.persons_view = new OM.Views.PersonsView({collection: newCollection});
+          window.views.persons_view = new OM.Views.PersonsView({collection: col});
         }
       }
     });

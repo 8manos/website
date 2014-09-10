@@ -8,7 +8,7 @@
 		get_template_part('template', 'principles');
 		get_template_part('template', 'team');
 		get_template_part('template', 'persons');
-		get_template_part('template', 'projects');
+		get_template_part('template', 'portfolio');
 		get_template_part('template', 'labs');
 		get_template_part('template', 'friends');
 	?>
