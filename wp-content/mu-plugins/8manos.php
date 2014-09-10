@@ -31,6 +31,25 @@ class Manos {
 			)
 		);
 
+		register_post_type('colaboradores', array(
+			'label' => 'Colaboradores',
+			'labels' => array (
+				'name' => 'Colaboradores',
+				'add_new' => 'Agregar nuevo',
+				'add_new_item' => 'Agregar nuevo colaborador',
+				'edit_item' => 'Editar colaborador',
+				'new_item' => 'Nuevo colaborador',
+				'view_item' => 'Ver colaborador',
+				'parent' => 'Colaborador padre',
+				),
+			'public' => true,
+			'map_meta_cap' => true,
+			'hierarchical' => true,
+			'has_archive' => true,
+			'supports' => array('title','editor','excerpt','revisions','thumbnail','page-attributes')
+			)
+		);
+
 		register_post_type('portafolio', array(
 			'label' => 'Portafolio',
 			'labels' => array (
@@ -101,12 +120,6 @@ class Manos {
 
 		register_taxonomy( 'lab_type', 'lab', array(
 			'label' => 'Tipo de Proyecto'
-			)
-		);
-
-		register_taxonomy( 'subteam', 'equipo', array(
-			'label' => 'SubEquipo',
-			'show_admin_column' => true
 			)
 		);
 	}
