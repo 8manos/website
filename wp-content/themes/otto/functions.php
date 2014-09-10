@@ -25,6 +25,8 @@ function minimal_theme_setup() {
 }
 add_action('after_setup_theme', 'minimal_theme_setup');
 
+add_filter('show_admin_bar', '__return_false');
+
 /**
  * Remove code from the <head>
  */

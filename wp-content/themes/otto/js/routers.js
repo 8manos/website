@@ -1,13 +1,18 @@
 OM.Routers.Router = Backbone.Router.extend({
   initialize: function(options){
     this.pages = options.pages;
-    this.route(options.urls[0], 'root');
-    this.route(options.urls[1], 'friends');
-    this.route(options.urls[2], 'projects');
-    this.route(options.urls[3], 'team');
+    this.route('/', 'root');
+    this.route(options.urls[0], 'principles');
+    this.route(options.urls[1], 'team');
+    this.route(options.urls[2], 'services');
+    this.route(options.urls[3], 'portfolio');
     this.route(options.urls[4], 'lab');
+    this.route(options.urls[5], 'contact');
   },
   root: function(){
+    console.log('Main menu');
+  },
+  principles: function(){
     var principlesCollection = new OM.Collections.PagesCollection({pageId: this.pages[0]});
     principlesCollection.fetch({
       complete: function(xhr, textStatus){
@@ -17,12 +22,32 @@ OM.Routers.Router = Backbone.Router.extend({
       },
     });
   },
-  friends: function(){
+  team: function(){
+    var teamCollection = new OM.Collections.PagesCollection({pageId: this.pages[1]});
+    teamCollection.fetch({
+      complete: function(xhr, textStatus){
+        if(textStatus == 'success'){
+          window.views.team_view = new OM.Views.TeamView({collection: teamCollection});
+        }
+      }
+    });
+  },
+  /*friends: function(){
     var friendsCollection = new OM.Collections.FriendsCollection();
     friendsCollection.fetch({
       complete: function(xhr, textStatus){
         if(textStatus == 'success'){
           window.views.friends_view = new OM.Views.FriendsView({collection: friendsCollection});
+        }
+      }
+    });
+  },*/
+  portfolio: function(){
+    var projectCollection = new OM.Collections.ProjectsCollection();
+    projectCollection.fetch({
+      complete: function(xhr, textStatus){
+        if(textStatus == 'success'){
+          window.views.projects_view = new OM.Views.ProjectsView({collection: projectCollection});
         }
       }
     });
@@ -36,34 +61,5 @@ OM.Routers.Router = Backbone.Router.extend({
         }
       }
     });
-  },
-  projects: function(){
-    var projectCollection = new OM.Collections.ProjectsCollection();
-    projectCollection.fetch({
-      complete: function(xhr, textStatus){
-        if(textStatus == 'success'){
-          window.views.projects_view = new OM.Views.ProjectsView({collection: projectCollection});
-        }
-      }
-    });
-  },
-  team: function(){
-    console.log(this.pages)
-    var teamCollection = new OM.Collections.PagesCollection({pageId: this.pages[1]});
-    var personsCollection = new OM.Collections.TeamCollection();
-    teamCollection.fetch({
-      complete: function(xhr, textStatus){
-        if(textStatus == 'success'){
-          window.views.team_view = new OM.Views.TeamView({collection: teamCollection});
-        }
-      }
-    });
-    /*personsCollection.fetch({
-      complete: function(xhr, textStatus){
-        if(textStatus == 'success'){
-          window.views.persons_view = new OM.Views.PersonsView({collection: personsCollection});
-        }
-      }
-    });*/
   }
 });
