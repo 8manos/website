@@ -55,3 +55,11 @@ function page_id_nav_class($classes, $item){
 	}
 	return $classes;
 }
+
+add_filter( 'thermal_post_entity', 'add_team_meta' );
+function add_team_meta($data){
+	$contact_links = get_post_meta( $data->id, '_contact_link', true );
+	$data->contact_links = $contact_links;
+
+  return $data;
+}
