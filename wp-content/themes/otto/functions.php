@@ -22,6 +22,9 @@ function minimal_theme_setup() {
 
 	// Most themes need featured images.
 	add_theme_support('post-thumbnails' );
+	add_image_size('thumb', 150, 150, true);
+	add_image_size('thumb2x', 300, 300, true);
+	add_image_size('thumb4x', 600, 600, true);
 }
 add_action('after_setup_theme', 'minimal_theme_setup');
 
@@ -61,5 +64,13 @@ function add_team_meta($data){
 	$contact_links = get_post_meta( $data->id, '_contact_link', true );
 	$data->contact_links = $contact_links;
 
+	$img_id = $data->meta->featured_image;
+	$images['thumb'] = wp_get_attachment_image_src( $img_id, 'thumb' )[0];
+	$images['thumb2x'] = wp_get_attachment_image_src( $img_id, 'thumb2x' )[0];
+	$images['thumb4x'] = wp_get_attachment_image_src( $img_id, 'thumb4x' )[0];
+
+	$data->images = $images;
+
   return $data;
 }
+
