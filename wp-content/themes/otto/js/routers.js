@@ -17,7 +17,7 @@ OM.Routers.Router = Backbone.Router.extend({
     principlesCollection.fetch({
       complete: function(xhr, textStatus){
         if(textStatus == 'success'){
-          window.views.principles_view = new OM.Views.PrinciplesView({collection: principlesCollection});
+          window.views.principles_view = new OM.Views.PageView({collection: principlesCollection});
         }
       },
     });
@@ -32,16 +32,16 @@ OM.Routers.Router = Backbone.Router.extend({
       }
     });
   },
-  /*friends: function(){
-    var friendsCollection = new OM.Collections.FriendsCollection();
-    friendsCollection.fetch({
+  services: function(){
+    var servicesCollection = new OM.Collections.PagesCollection({pageId: this.pages[2]});
+    servicesCollection.fetch({
       complete: function(xhr, textStatus){
         if(textStatus == 'success'){
-          window.views.friends_view = new OM.Views.FriendsView({collection: friendsCollection});
+          window.views.services_view = new OM.Views.PageView({collection: servicesCollection});
         }
-      }
+      },
     });
-  },*/
+  },
   portfolio: function(){
     var projectCollection = new OM.Collections.ProjectsCollection();
     projectCollection.fetch({
@@ -61,5 +61,8 @@ OM.Routers.Router = Backbone.Router.extend({
         }
       }
     });
-  }
+  },
+  root: function(){
+    console.log('Contact menu');
+  },
 });

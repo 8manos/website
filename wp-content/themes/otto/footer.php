@@ -5,7 +5,7 @@
 	</footer>
 
 	<?php
-		get_template_part('template', 'principles');
+		get_template_part('template', 'pages');
 		get_template_part('template', 'team');
 		get_template_part('template', 'persons');
 		get_template_part('template', 'portfolio');

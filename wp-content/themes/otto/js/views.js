@@ -24,9 +24,9 @@ OM.Views.LabsView = Backbone.View.extend({
   }
 });
 
-OM.Views.PrinciplesView = Backbone.View.extend({
+OM.Views.PageView = Backbone.View.extend({
   el: 'main',
-  template: _.template($('#principlesTemplate').html()),
+  template: _.template($('#pageTemplate').html()),
 
   initialize: function(){
     this.render();
