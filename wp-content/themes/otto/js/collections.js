@@ -24,3 +24,8 @@ OM.Collections.TeamCollection = Backbone.Collection.extend({
   model: OM.Models.Team,
   url: '/wp_api/v1/posts?post_type=equipo',
 });
+
+OM.Collections.NodesCollection = Backbone.Collection.extend({
+  model: OM.Models.Node,
+  url: '/wp_api/v1/posts?post_type=colaboradores',
+});

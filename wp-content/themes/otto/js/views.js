@@ -128,7 +128,7 @@ OM.Views.TeamView = Backbone.View.extend({
       newCollection = new OM.Collections.TeamCollection();
     }
     else if(teamName == 'team-nodes'){
-      newCollection = new OM.Collections.TeamCollection();
+      newCollection = new OM.Collections.NodesCollection();
     }
     else if(teamName == 'team-friends'){
       newCollection = new OM.Collections.FriendsCollection();
