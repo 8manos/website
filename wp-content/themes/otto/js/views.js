@@ -116,8 +116,7 @@ OM.Views.PortfolioView = Backbone.View.extend({
 
 OM.Views.PersonsView = Backbone.View.extend({
   events: {
-    'click .module-control.more': 'showMore',
-    'click .module-control.less': 'showLess'
+    'click .toggle-details': 'clickToggle'
   },
   el: 'section.team .team-wrapper',
   initialize: function(){
@@ -130,13 +129,10 @@ OM.Views.PersonsView = Backbone.View.extend({
     console.log('PersonsView rendered');
     return this;
   },
-  showMore: function(e){
-    $(e.currentTarget).removeClass('more').addClass('less');
-    $(e.currentTarget).parent().find('.person-info').slideDown();
-  },
-  showLess: function(e){
-    $(e.currentTarget).removeClass('less').addClass('more');
-    $(e.currentTarget).parent().find('.person-info').slideUp();
+  clickToggle: function(e) {
+    var $person = $(e.currentTarget).parent();
+    $(e.currentTarget).toggleClass('more less');
+    $person.find('.person-info').slideToggle();
   }
 });
 

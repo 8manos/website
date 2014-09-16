@@ -168,49 +168,27 @@ nav {
    }
 }
 
-.team-wrapper {
-   padding: 0 10px;
-
-   .person {
-      padding: 12px;
-      background: $gris;
-      text-align: center; 
-
-      h3 {
-         
-      }
-      h4 {
-         font-weight: normal;
-      }
-      picture img {
-         display: inline-block; 
-         width: 50px;
-         border-radius: 50px;
-         border: 3px solid $naranja;
-         margin-top: -25px; 
-      }
-   }
-}
+.team-wrapper,
 .lab-wrapper {
    padding: 0 10px;
 
-   .project {
+   .project,
+   .person {
       padding: 12px;
       background: $gris;
-      text-align: left; 
+      text-align: center;
 
       h3 {
-         
+
       }
       h4 {
          font-weight: normal;
       }
-      picture img {
-         display: inline-block; 
+      img {
+         display: inline-block;
          width: 50px;
          border-radius: 50px;
          border: 3px solid $naranja;
-         margin-top: -25px; 
       }
    }
 }
