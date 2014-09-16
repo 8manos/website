@@ -42,9 +42,12 @@ OM.Views.PageView = Backbone.View.extend({
 });
 
 OM.Views.ProjectsView = Backbone.View.extend({
-  el: 'main',
+  el: '.works-wrapper',
+  events: {
+    'click .toggle-details': 'toggleDetails'
+  },
   initialize: function(){
-    this.template = _.template($('#portfolioTemplate').html());
+    this.template = _.template($('#projectsTemplate').html());
 
     this.render = _.wrap(this.render, function(render) {
       this.beforeRender();
@@ -59,6 +62,9 @@ OM.Views.ProjectsView = Backbone.View.extend({
     this.$el.html(this.template({'posts': posts}));
     return this;
   },
+  toggleDetails: function(e){
+    $(e.currentTarget).toggleClass('more less').parent().find('.more-info').slideToggle();
+  },
 
   beforeRender: function () {
     console.log("Before render");
@@ -70,6 +76,29 @@ OM.Views.ProjectsView = Backbone.View.extend({
       loop: true,
       nav: true,
       navText: ['&#60;','&#62;']
+    });
+  }
+});
+
+OM.Views.PortfolioView = Backbone.View.extend({
+  el: 'main',
+  initialize: function(){
+    this.template = _.template($('#portfolioTemplate').html());
+    this.render();
+    this.renderProjects();
+  },
+  render: function(){
+    this.$el.html(this.template(this.collection.models[0].attributes.posts[0]));
+    return this;
+  },
+  renderProjects: function(col){
+    projectsCollection = new OM.Collections.ProjectsCollection();
+    projectsCollection.fetch({
+      complete: function(xhr, textStatus){
+        if(textStatus == 'success'){
+          window.views.projects_view = new OM.Views.ProjectsView({collection: projectsCollection});
+        }
+      }
     });
   }
 });

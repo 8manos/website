@@ -43,11 +43,11 @@ OM.Routers.Router = Backbone.Router.extend({
     });
   },
   portfolio: function(){
-    var projectCollection = new OM.Collections.ProjectsCollection();
-    projectCollection.fetch({
+    var portfolioCollection = new OM.Collections.PagesCollection({pageId: this.pages[3]});
+    portfolioCollection.fetch({
       complete: function(xhr, textStatus){
         if(textStatus == 'success'){
-          window.views.projects_view = new OM.Views.ProjectsView({collection: projectCollection});
+          window.views.portfolio_view = new OM.Views.PortfolioView({collection: portfolioCollection});
         }
       }
     });
