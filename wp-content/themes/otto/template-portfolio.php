@@ -12,7 +12,7 @@
 <script id="projectsTemplate" type="text/template">
   <% _.each(posts, function(post){ %>
     <article class="project">
-      <div class="toggle-details less">+</div>
+      <div class="toggle-details more">+</div>
       <h3><%= post.title %></h3>
       <h4>septiembre de 2014</h4>
       <picture>

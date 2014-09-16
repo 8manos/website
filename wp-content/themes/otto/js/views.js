@@ -44,7 +44,7 @@ OM.Views.PageView = Backbone.View.extend({
 OM.Views.ProjectsView = Backbone.View.extend({
   el: '.works-wrapper',
   events: {
-    'click .toggle-details': 'toggleDetails'
+    'click .toggle-details': 'clickToggle'
   },
   initialize: function(){
     this.template = _.template($('#projectsTemplate').html());
@@ -62,21 +62,32 @@ OM.Views.ProjectsView = Backbone.View.extend({
     this.$el.html(this.template({'posts': posts}));
     return this;
   },
-  toggleDetails: function(e){
-    $(e.currentTarget).toggleClass('more less').parent().find('.more-info').slideToggle();
+  clickToggle: function(e) {
+    var $project = $(e.currentTarget).parent();
+    this.toggleDetails($project);
+  },
+  toggleDetails: function($project) {
+    $project.find('.toggle-details').toggleClass('more less');
+
+    $project.find('.more-info').slideToggle(function() {
+      if ( $(this).is(':visible') ) {
+        $project.find('.owl-carousel').owlCarousel({
+          items: 1,
+          loop: true,
+          nav: true,
+          navText: ['&#60;','&#62;']
+        });
+      }
+    });
   },
 
   beforeRender: function () {
-    console.log("Before render");
+    //console.log("Before render");
   },
 
   afterRender: function () {
-    $(".owl-carousel").owlCarousel({
-      items: 1,
-      loop: true,
-      nav: true,
-      navText: ['&#60;','&#62;']
-    });
+    //open first project after load
+    //this.toggleDetails($('article.project:eq(0)'));
   }
 });
 
