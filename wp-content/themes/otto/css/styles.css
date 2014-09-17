@@ -457,24 +457,28 @@ nav {
       border-radius: 50px;
       border: 3px solid #FF3300; }
 
-/* line 195, ../sass/styles.scss */
+/* line 196, ../sass/styles.scss */
+.works-wrapper .project-img {
+  width: 300px; }
+
+/* line 200, ../sass/styles.scss */
 .more-info {
   display: none;
   text-align: left; }
-  /* line 199, ../sass/styles.scss */
+  /* line 204, ../sass/styles.scss */
   .more-info p {
     padding-bottom: 10px; }
-  /* line 202, ../sass/styles.scss */
+  /* line 207, ../sass/styles.scss */
   .more-info p + p {
     padding: 5px 0 15px; }
-  /* line 205, ../sass/styles.scss */
+  /* line 210, ../sass/styles.scss */
   .more-info .person-links,
   .more-info .lab-tags {
     margin: 0 10px;
     padding: 15px 10px;
     list-style: none;
     border-top: 2px dotted #FF3300; }
-    /* line 212, ../sass/styles.scss */
+    /* line 217, ../sass/styles.scss */
     .more-info .person-links li,
     .more-info .lab-tags li {
       display: inline-block; }
@@ -485,13 +489,13 @@ nav {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 225, ../sass/styles.scss */
+/* line 230, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.2s linear;
           transition: color 0.2s linear; }
 
-/* line 230, ../sass/styles.scss */
+/* line 235, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.2s linear;
           transition: background-color 0.2s linear; }
@@ -500,16 +504,16 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 240, ../sass/styles.scss */
+/* line 245, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 241, ../sass/styles.scss */
+/* line 246, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 242, ../sass/styles.scss */
+/* line 247, ../sass/styles.scss */
 .alignright {
   float: right; }
 

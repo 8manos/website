@@ -25,6 +25,8 @@ function minimal_theme_setup() {
 	add_image_size('thumb', 150, 150, true);
 	add_image_size('thumb2x', 300, 300, true);
 	add_image_size('thumb4x', 600, 600, true);
+	add_image_size('project', 300, 200);
+	add_image_size('project2x', 600, 400);
 }
 add_action('after_setup_theme', 'minimal_theme_setup');
 
@@ -64,10 +66,18 @@ function add_team_meta($data){
 	$contact_links = get_post_meta( $data->id, '_contact_link', true );
 	$data->contact_links = $contact_links;
 
+	$ext_link = get_post_meta( $data->id, '_url', true );
+	$data->ext_link = $ext_link;
+
+	$featuring = get_post_meta( $data->id, '_featuring', true );
+	$data->featuring = $featuring;
+
 	$img_id = $data->meta->featured_image;
 	$images['thumb'] = wp_get_attachment_image_src( $img_id, 'thumb' )[0];
 	$images['thumb2x'] = wp_get_attachment_image_src( $img_id, 'thumb2x' )[0];
 	$images['thumb4x'] = wp_get_attachment_image_src( $img_id, 'thumb4x' )[0];
+	$images['project'] = wp_get_attachment_image_src( $img_id, 'project' )[0];
+	$images['project2x'] = wp_get_attachment_image_src( $img_id, 'project2x' )[0];
 
 	$data->images = $images;
 

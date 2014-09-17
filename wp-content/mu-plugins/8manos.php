@@ -135,6 +135,11 @@ class Manos {
 							'id' => 'url',
 							'title' => 'URL',
 							'type' => 'text'
+						),
+						array(
+							'id' => 'featuring',
+							'title' => 'Featuring',
+							'type' => 'text'
 						)
 					)
 				)
@@ -205,7 +210,7 @@ class Manos {
 			// $data->meta->today_thumbnail_url = $today_thumbnail;
 
 			// prev and next tests
-			$this_post = new WP_Query( array( 'p' => $post->ID ) ); 
+			$this_post = new WP_Query( array( 'p' => $post->ID ) );
 			$this_post->the_post();
 			$data->meta->previous_post_link = get_previous_post_link( '%link', '%title', true );
 			$data->meta->next_post_link = get_next_post_link( '%link', '%title', true );
