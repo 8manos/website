@@ -73,11 +73,14 @@ function add_team_meta($data){
 	$data->featuring = $featuring;
 
 	$img_id = $data->meta->featured_image;
-	$images['thumb'] = wp_get_attachment_image_src( $img_id, 'thumb' )[0];
-	$images['thumb2x'] = wp_get_attachment_image_src( $img_id, 'thumb2x' )[0];
-	$images['thumb4x'] = wp_get_attachment_image_src( $img_id, 'thumb4x' )[0];
-	$images['project'] = wp_get_attachment_image_src( $img_id, 'project' )[0];
-	$images['project2x'] = wp_get_attachment_image_src( $img_id, 'project2x' )[0];
+	$images = array();
+	if ($img_id) {
+		$images['thumb'] = wp_get_attachment_image_src( $img_id, 'thumb' )[0];
+		$images['thumb2x'] = wp_get_attachment_image_src( $img_id, 'thumb2x' )[0];
+		$images['thumb4x'] = wp_get_attachment_image_src( $img_id, 'thumb4x' )[0];
+		$images['project'] = wp_get_attachment_image_src( $img_id, 'project' )[0];
+		$images['project2x'] = wp_get_attachment_image_src( $img_id, 'project2x' )[0];
+	}
 
 	$data->images = $images;
 
