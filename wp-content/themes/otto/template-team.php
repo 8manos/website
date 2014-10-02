@@ -2,7 +2,7 @@
   <section class="team main-section">
     <div class="inner-header">
       <h2><%= title %></h2>
-      <%= content %>
+      <%= content_display %>
     </div>
     <div class="team-nav">
       <ul>

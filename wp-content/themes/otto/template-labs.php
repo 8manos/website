@@ -2,7 +2,7 @@
   <section class="lab main-section">
     <div class="inner-header">
       <h2><%= title %></h2>
-      <%= content %>
+      <%= content_display %>
     </div>
     <div class="lab-wrapper">
     </div>
@@ -26,7 +26,7 @@
       <div class="lab-url"><a href="<%= setHttp(post.ext_link) %>"><%= setHttp(post.ext_link) %></a></div>
 
       <div class="more-info">
-        <p><%= post.content %></p>
+        <%= post.content_display %>
         <ul class="lab-tags">
           <li class="icon-plugin">Plugin</li>
           <li class="icon-app">App</li>

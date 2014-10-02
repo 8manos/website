@@ -2,7 +2,7 @@
   <section class="portfolio main-section">
     <div class="inner-header">
       <h2><%= title %></h2>
-      <%= content %>
+      <%= content_display %>
     </div>
     <div class="works-wrapper">
     </div>
@@ -47,7 +47,7 @@
 
       <div class="more-info">
         <p class="project-link"><a href="<%= setHttp(post.ext_link) %>">Visita <%= post.title %></a></p>
-        <p><%= post.content %></p>
+        <%= post.content_display %>
         <div class="project-gallery">
           <div class="owl-carousel">
             <% _.each(post.media, function(media){ %>

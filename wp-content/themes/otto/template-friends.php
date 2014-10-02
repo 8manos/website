@@ -7,7 +7,7 @@
         <div class="friend-url"><a href="">URL del proyecto</a></div>
 
         <div class="more-info">
-          <p><%= post.content %></p>
+          <%= post.content_display %>
           <ul class="friend-tags">
             <li class="icon-plugin">Plugin</li>
             <li class="icon-app">App</li>
