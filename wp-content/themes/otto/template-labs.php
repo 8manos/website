@@ -23,14 +23,15 @@
       <div class="toggle-details more">+</div>
       <h3><%= post.title %></h3>
       <h4><%= post.date.substr(0,7) %></h4>
-      <div class="lab-url"><a href="<%= setHttp(post.ext_link) %>"><%= setHttp(post.ext_link) %></a></div>
+      <ul class="lab-tags">
+        <% _.each(post.taxonomies.lab_type, function(tag){ %>
+          <li><span class="icon-<%= tag.slug %>"></span><%= tag.name %></li>
+        <% }); %>
+      </ul>
 
       <div class="more-info">
+        <div class="lab-url"><a href="<%= setHttp(post.ext_link) %>"><%= setHttp(post.ext_link) %></a></div>
         <%= post.content_display %>
-        <ul class="lab-tags">
-          <li class="icon-plugin">Plugin</li>
-          <li class="icon-app">App</li>
-        </ul>
       </div>
     </article>
   <% }); %>
