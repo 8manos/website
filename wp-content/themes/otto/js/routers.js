@@ -53,11 +53,11 @@ OM.Routers.Router = Backbone.Router.extend({
     });
   },
   lab: function(){
-    var labCollection = new OM.Collections.LabsCollection();
+    var labCollection = new OM.Collections.PagesCollection({pageId: this.pages[4]});
     labCollection.fetch({
       complete: function(xhr, textStatus){
         if(textStatus == 'success'){
-          window.views.labs_view = new OM.Views.LabsView({collection: labCollection});
+          window.views.labs_view = new OM.Views.LabView({collection: labCollection});
         }
       }
     });

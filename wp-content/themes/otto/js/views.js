@@ -12,7 +12,10 @@ OM.Views.FriendsView = Backbone.View.extend({
 });
 
 OM.Views.LabsView = Backbone.View.extend({
-  el: 'section.lab',
+  el: '.lab-wrapper',
+  events: {
+    'click .toggle-details': 'clickToggle'
+  },
   initialize: function(){
     this.template = _.template($('#labsTemplate').html());
     this.render();
@@ -21,6 +24,34 @@ OM.Views.LabsView = Backbone.View.extend({
     var posts = this.collection.models[0].attributes.posts;
     this.$el.html(this.template({'posts': posts}));
     return this;
+  },
+  clickToggle: function(e) {
+    var $person = $(e.currentTarget).parent();
+    $(e.currentTarget).toggleClass('more less');
+    $person.find('.more-info').slideToggle();
+  }
+});
+
+OM.Views.LabView = Backbone.View.extend({
+  el: 'main',
+  initialize: function(){
+    this.template = _.template($('#labTemplate').html());
+    this.render();
+    this.renderLabs();
+  },
+  render: function(){
+    this.$el.html(this.template(this.collection.models[0].attributes.posts[0]));
+    return this;
+  },
+  renderLabs: function(col){
+    labsCollection = new OM.Collections.LabsCollection();
+    labsCollection.fetch({
+      complete: function(xhr, textStatus){
+        if(textStatus == 'success'){
+          window.views.labs_view = new OM.Views.LabsView({collection: labsCollection});
+        }
+      }
+    });
   }
 });
 
