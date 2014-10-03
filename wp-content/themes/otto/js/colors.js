@@ -89,7 +89,7 @@
 		// Setting de color
 		setRGB( r, g, b );
 
-		$('a, .color, .color-bg').css({
+		$('a, .color, .color-bg').not('.main-nav a').css({
 			WebkitTransition : 'all 5s linear',
 			MozTransition    : 'all 5s linear',
 			MsTransition     : 'all 5s linear',
@@ -156,7 +156,7 @@
 	function setRGB( r, g, b ){
 
 		// Setting de color
-		$( 'a, .color' ).css( 'color', 'rgb('+r+','+g+','+b+')' );
+		$( 'a, .color' ).not('.main-nav a').css( 'color', 'rgb('+r+','+g+','+b+')' );
 		$( '.color-bg' ).css( 'background-color', 'rgb('+r+','+g+','+b+')' );
 
 	}

@@ -29,8 +29,8 @@
 
 	<header role="banner">
 		<a href="" class="menu-toggle">Menú</a>
-		<nav role="navigation">
-			<?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+		<nav role="navigation" class="main-nav color-bg">
+			<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false)); ?>
 		</nav>
 
 		<h1 class="ochomanos"><a href="<?php echo home_url(); ?>/" rel="home"><?php bloginfo('name');?></a></h1>
