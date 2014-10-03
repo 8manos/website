@@ -38,6 +38,7 @@ $(document).on('ready', function(){
     Backbone.history.navigate(linkPath, {trigger: true});
   });
 
+  window.views.main = new OM.Views.MainView();
   window.routers.router = new OM.Routers.Router({pages: pages, urls: menuUrls});
   Backbone.history.start({
     pushState: true,

@@ -1,3 +1,15 @@
+OM.Views.MainView = Backbone.View.extend({
+  el: 'body',
+  events: {
+    'click .menu-toggle': 'toggleMenu',
+    'click .menu-item a': 'toggleMenu'
+  },
+  toggleMenu: function(e) {
+    e.preventDefault();
+    $('#header').toggleClass('is-collapsed');
+  }
+});
+
 OM.Views.FriendsView = Backbone.View.extend({
   el: 'main',
   initialize: function(){
