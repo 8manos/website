@@ -80,7 +80,13 @@ h6 { font-size: $size-seis;}
 }
 .menu-toggle {
   bottom: 0;
+  left: 15px;
+  padding: 12px 0;
   position: absolute;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 .main-nav {
   border-right: 1px solid #fff;

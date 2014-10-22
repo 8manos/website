@@ -5,7 +5,7 @@
   font-weight: normal;
   font-style: normal; }
 /* line 12, ../sass/fonts.scss */
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -349,9 +349,14 @@ h6 {
 /* line 81, ../sass/styles.scss */
 .menu-toggle {
   bottom: 0;
+  left: 15px;
+  padding: 12px 0;
   position: absolute; }
+  /* line 87, ../sass/styles.scss */
+  .menu-toggle:hover {
+    text-decoration: none; }
 
-/* line 85, ../sass/styles.scss */
+/* line 91, ../sass/styles.scss */
 .main-nav {
   border-right: 1px solid #fff;
   border-top: 1px solid #fff;
@@ -359,14 +364,14 @@ h6 {
   height: calc(100% - 40px - 1px);
   width: -webkit-calc(100% - 1px);
   width: calc(100% - 1px); }
-  /* line 91, ../sass/styles.scss */
+  /* line 97, ../sass/styles.scss */
   .main-nav ul {
     height: 100%;
     list-style: none;
     margin: 0;
     overflow: hidden;
     padding: 0; }
-  /* line 98, ../sass/styles.scss */
+  /* line 104, ../sass/styles.scss */
   .main-nav li {
     border-bottom: 1px solid #fff;
     border-left: 1px solid #fff;
@@ -377,7 +382,7 @@ h6 {
     text-align: center;
     width: -webkit-calc(50% - 1px);
     width: calc(50% - 1px); }
-  /* line 107, ../sass/styles.scss */
+  /* line 113, ../sass/styles.scss */
   .main-nav a {
     color: #fff;
     display: block;
@@ -386,7 +391,7 @@ h6 {
     font-size: 1em;
     text-transform: uppercase;
     vertical-align: middle; }
-    /* line 116, ../sass/styles.scss */
+    /* line 122, ../sass/styles.scss */
     .main-nav a:before {
       content: '';
       display: inline-block;
@@ -395,13 +400,13 @@ h6 {
       margin-right: -0.25em;
       /* Adjusts for spacing */ }
 
-/* line 125, ../sass/styles.scss */
+/* line 131, ../sass/styles.scss */
 .ochomanos {
   padding: 12px 0;
   height: 16px;
   margin: 0 15px 0 0;
   text-align: right; }
-  /* line 131, ../sass/styles.scss */
+  /* line 137, ../sass/styles.scss */
   .ochomanos a {
     color: #fff;
     display: inline-block;
@@ -409,18 +414,18 @@ h6 {
     overflow: hidden;
     vertical-align: top;
     width: 130px; }
-  /* line 139, ../sass/styles.scss */
+  /* line 145, ../sass/styles.scss */
   .ochomanos a:before {
     content: "\e603";
     display: block;
     font: 16px/1 icomoon;
     height: 150%;
     width: 0; }
-  /* line 146, ../sass/styles.scss */
+  /* line 152, ../sass/styles.scss */
   .ochomanos a:hover {
     opacity: 0.4; }
 
-/* line 151, ../sass/styles.scss */
+/* line 157, ../sass/styles.scss */
 .wrap {
   margin-top: 40px; }
 
@@ -428,19 +433,19 @@ h6 {
    Content
    ========================================================================== */
 /*encabezado modulo*/
-/* line 161, ../sass/styles.scss */
+/* line 167, ../sass/styles.scss */
 .inner-header h2 {
   display: inline-block; }
-  /* line 164, ../sass/styles.scss */
+  /* line 170, ../sass/styles.scss */
   .inner-header h2 span:after {
     content: '\00a0 \2f \00a0'; }
 
-/* line 169, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 .back-link {
   display: inline-block;
   float: right; }
 
-/* line 173, ../sass/styles.scss */
+/* line 179, ../sass/styles.scss */
 .nav-tabs {
   list-style: none;
   width: 100%;
@@ -449,12 +454,12 @@ h6 {
   text-transform: uppercase;
   padding: 0 8px;
   border-bottom: 1px solid #FF3300; }
-  /* line 182, ../sass/styles.scss */
+  /* line 188, ../sass/styles.scss */
   .nav-tabs li {
     display: inline-block;
     margin-left: 1px;
     width: 32%; }
-  /* line 188, ../sass/styles.scss */
+  /* line 194, ../sass/styles.scss */
   .nav-tabs li a {
     display: block;
     color: #FFF;
@@ -462,17 +467,17 @@ h6 {
     background: rgba(255, 51, 0, 0.2);
     position: relative;
     font-weight: bold; }
-  /* line 197, ../sass/styles.scss */
+  /* line 203, ../sass/styles.scss */
   .nav-tabs li.active a,
   .nav-tabs li a:hover {
     background: #FF3300;
     color: #FFF; }
 
-/* line 204, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .team-wrapper,
 .lab-wrapper {
   padding: 0 10px; }
-  /* line 208, ../sass/styles.scss */
+  /* line 214, ../sass/styles.scss */
   .team-wrapper .project,
   .team-wrapper .person,
   .lab-wrapper .project,
@@ -480,13 +485,13 @@ h6 {
     padding: 12px;
     background: #ECECEC;
     text-align: center; }
-    /* line 217, ../sass/styles.scss */
+    /* line 223, ../sass/styles.scss */
     .team-wrapper .project h4,
     .team-wrapper .person h4,
     .lab-wrapper .project h4,
     .lab-wrapper .person h4 {
       font-weight: normal; }
-    /* line 220, ../sass/styles.scss */
+    /* line 226, ../sass/styles.scss */
     .team-wrapper .project img,
     .team-wrapper .person img,
     .lab-wrapper .project img,
@@ -496,28 +501,28 @@ h6 {
       border-radius: 50px;
       border: 3px solid #FF3300; }
 
-/* line 229, ../sass/styles.scss */
+/* line 235, ../sass/styles.scss */
 .works-wrapper .project-img {
   width: 300px; }
 
-/* line 233, ../sass/styles.scss */
+/* line 239, ../sass/styles.scss */
 .more-info {
   display: none;
   text-align: left; }
-  /* line 237, ../sass/styles.scss */
+  /* line 243, ../sass/styles.scss */
   .more-info p {
     padding-bottom: 10px; }
-  /* line 240, ../sass/styles.scss */
+  /* line 246, ../sass/styles.scss */
   .more-info p + p {
     padding: 5px 0 15px; }
-  /* line 243, ../sass/styles.scss */
+  /* line 249, ../sass/styles.scss */
   .more-info .person-links,
   .more-info .lab-tags {
     margin: 0 10px;
     padding: 15px 10px;
     list-style: none;
     border-top: 2px dotted #FF3300; }
-    /* line 250, ../sass/styles.scss */
+    /* line 256, ../sass/styles.scss */
     .more-info .person-links li,
     .more-info .lab-tags li {
       display: inline-block; }
@@ -528,13 +533,13 @@ h6 {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 263, ../sass/styles.scss */
+/* line 269, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.2s linear;
           transition: color 0.2s linear; }
 
-/* line 268, ../sass/styles.scss */
+/* line 274, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.2s linear;
           transition: background-color 0.2s linear; }
@@ -543,16 +548,16 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 278, ../sass/styles.scss */
+/* line 284, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 279, ../sass/styles.scss */
+/* line 285, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 280, ../sass/styles.scss */
+/* line 286, ../sass/styles.scss */
 .alignright {
   float: right; }
 
