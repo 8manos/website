@@ -7,7 +7,6 @@ OM.Routers.Router = Backbone.Router.extend({
     this.route(options.urls[2], 'services');
     this.route(options.urls[3], 'portfolio');
     this.route(options.urls[4], 'lab');
-    this.route(options.urls[5], 'contact');
   },
   root: function(){
     console.log('Main menu');
