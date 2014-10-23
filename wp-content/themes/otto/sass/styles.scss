@@ -127,6 +127,13 @@ h6 { font-size: $size-seis;}
       margin-right: -0.25em; /* Adjusts for spacing */
     }
   }
+
+  @media screen and (min-aspect-ratio: 6/5) {
+    li {
+      height: calc(50% - 1px);
+      width: calc(33.33% - 1px);
+    }
+  }
 }
 .ochomanos {
   padding: 12px 0;

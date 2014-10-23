@@ -13,39 +13,40 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  margin-right: 0.25em;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 26, ../sass/fonts.scss */
+/* line 27, ../sass/fonts.scss */
 .icon-m_tipografico_130x16px:before {
   content: "\e603"; }
 
-/* line 29, ../sass/fonts.scss */
+/* line 30, ../sass/fonts.scss */
 .icon-icono_otto:before {
   content: "\e600"; }
 
-/* line 32, ../sass/fonts.scss */
+/* line 33, ../sass/fonts.scss */
 .icon-icono_:before {
   content: "\e601"; }
 
-/* line 35, ../sass/fonts.scss */
+/* line 36, ../sass/fonts.scss */
 .icon-m_tipografico:before {
   content: "\e602"; }
 
-/* line 38, ../sass/fonts.scss */
+/* line 39, ../sass/fonts.scss */
 .icon-menu:before {
   content: "\e604"; }
 
-/* line 41, ../sass/fonts.scss */
+/* line 42, ../sass/fonts.scss */
 .icon-close:before {
   content: "\e605"; }
 
-/* line 44, ../sass/fonts.scss */
+/* line 45, ../sass/fonts.scss */
 .icon-message-01:before {
   content: "\e606"; }
 
-/* line 47, ../sass/fonts.scss */
+/* line 48, ../sass/fonts.scss */
 .icon-svg:before {
   content: "\e607"; }
 
@@ -399,14 +400,21 @@ h6 {
       vertical-align: middle;
       margin-right: -0.25em;
       /* Adjusts for spacing */ }
+  @media screen and (min-aspect-ratio: 6 / 5) {
+    /* line 132, ../sass/styles.scss */
+    .main-nav li {
+      height: -webkit-calc(50% - 1px);
+      height: calc(50% - 1px);
+      width: -webkit-calc(33.33% - 1px);
+      width: calc(33.33% - 1px); } }
 
-/* line 131, ../sass/styles.scss */
+/* line 138, ../sass/styles.scss */
 .ochomanos {
   padding: 12px 0;
   height: 16px;
   margin: 0 15px 0 0;
   text-align: right; }
-  /* line 137, ../sass/styles.scss */
+  /* line 144, ../sass/styles.scss */
   .ochomanos a {
     color: #fff;
     display: inline-block;
@@ -414,18 +422,18 @@ h6 {
     overflow: hidden;
     vertical-align: top;
     width: 130px; }
-  /* line 145, ../sass/styles.scss */
+  /* line 152, ../sass/styles.scss */
   .ochomanos a:before {
     content: "\e603";
     display: block;
     font: 16px/1 icomoon;
     height: 150%;
     width: 0; }
-  /* line 152, ../sass/styles.scss */
+  /* line 159, ../sass/styles.scss */
   .ochomanos a:hover {
     opacity: 0.4; }
 
-/* line 157, ../sass/styles.scss */
+/* line 164, ../sass/styles.scss */
 .wrap {
   margin-top: 40px; }
 
@@ -433,19 +441,19 @@ h6 {
    Content
    ========================================================================== */
 /*encabezado modulo*/
-/* line 167, ../sass/styles.scss */
+/* line 174, ../sass/styles.scss */
 .inner-header h2 {
   display: inline-block; }
-  /* line 170, ../sass/styles.scss */
+  /* line 177, ../sass/styles.scss */
   .inner-header h2 span:after {
     content: '\00a0 \2f \00a0'; }
 
-/* line 175, ../sass/styles.scss */
+/* line 182, ../sass/styles.scss */
 .back-link {
   display: inline-block;
   float: right; }
 
-/* line 179, ../sass/styles.scss */
+/* line 186, ../sass/styles.scss */
 .nav-tabs {
   list-style: none;
   width: 100%;
@@ -454,12 +462,12 @@ h6 {
   text-transform: uppercase;
   padding: 0 8px;
   border-bottom: 1px solid #FF3300; }
-  /* line 188, ../sass/styles.scss */
+  /* line 195, ../sass/styles.scss */
   .nav-tabs li {
     display: inline-block;
     margin-left: 1px;
     width: 32%; }
-  /* line 194, ../sass/styles.scss */
+  /* line 201, ../sass/styles.scss */
   .nav-tabs li a {
     display: block;
     color: #FFF;
@@ -467,17 +475,17 @@ h6 {
     background: rgba(255, 51, 0, 0.2);
     position: relative;
     font-weight: bold; }
-  /* line 203, ../sass/styles.scss */
+  /* line 210, ../sass/styles.scss */
   .nav-tabs li.active a,
   .nav-tabs li a:hover {
     background: #FF3300;
     color: #FFF; }
 
-/* line 210, ../sass/styles.scss */
+/* line 217, ../sass/styles.scss */
 .team-wrapper,
 .lab-wrapper {
   padding: 0 10px; }
-  /* line 214, ../sass/styles.scss */
+  /* line 221, ../sass/styles.scss */
   .team-wrapper .project,
   .team-wrapper .person,
   .lab-wrapper .project,
@@ -485,13 +493,13 @@ h6 {
     padding: 12px;
     background: #ECECEC;
     text-align: center; }
-    /* line 223, ../sass/styles.scss */
+    /* line 230, ../sass/styles.scss */
     .team-wrapper .project h4,
     .team-wrapper .person h4,
     .lab-wrapper .project h4,
     .lab-wrapper .person h4 {
       font-weight: normal; }
-    /* line 226, ../sass/styles.scss */
+    /* line 233, ../sass/styles.scss */
     .team-wrapper .project img,
     .team-wrapper .person img,
     .lab-wrapper .project img,
@@ -501,28 +509,28 @@ h6 {
       border-radius: 50px;
       border: 3px solid #FF3300; }
 
-/* line 235, ../sass/styles.scss */
+/* line 242, ../sass/styles.scss */
 .works-wrapper .project-img {
   width: 300px; }
 
-/* line 239, ../sass/styles.scss */
+/* line 246, ../sass/styles.scss */
 .more-info {
   display: none;
   text-align: left; }
-  /* line 243, ../sass/styles.scss */
+  /* line 250, ../sass/styles.scss */
   .more-info p {
     padding-bottom: 10px; }
-  /* line 246, ../sass/styles.scss */
+  /* line 253, ../sass/styles.scss */
   .more-info p + p {
     padding: 5px 0 15px; }
-  /* line 249, ../sass/styles.scss */
+  /* line 256, ../sass/styles.scss */
   .more-info .person-links,
   .more-info .lab-tags {
     margin: 0 10px;
     padding: 15px 10px;
     list-style: none;
     border-top: 2px dotted #FF3300; }
-    /* line 256, ../sass/styles.scss */
+    /* line 263, ../sass/styles.scss */
     .more-info .person-links li,
     .more-info .lab-tags li {
       display: inline-block; }
@@ -533,13 +541,13 @@ h6 {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 269, ../sass/styles.scss */
+/* line 276, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.2s linear;
           transition: color 0.2s linear; }
 
-/* line 274, ../sass/styles.scss */
+/* line 281, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.2s linear;
           transition: background-color 0.2s linear; }
@@ -548,16 +556,16 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 284, ../sass/styles.scss */
+/* line 291, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 285, ../sass/styles.scss */
+/* line 292, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 286, ../sass/styles.scss */
+/* line 293, ../sass/styles.scss */
 .alignright {
   float: right; }
 

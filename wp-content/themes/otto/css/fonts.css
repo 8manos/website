@@ -5,7 +5,7 @@
   font-weight: normal;
   font-style: normal; }
 /* line 12, ../sass/fonts.scss */
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -13,39 +13,40 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  margin-right: 0.25em;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 26, ../sass/fonts.scss */
+/* line 27, ../sass/fonts.scss */
 .icon-m_tipografico_130x16px:before {
   content: "\e603"; }
 
-/* line 29, ../sass/fonts.scss */
+/* line 30, ../sass/fonts.scss */
 .icon-icono_otto:before {
   content: "\e600"; }
 
-/* line 32, ../sass/fonts.scss */
+/* line 33, ../sass/fonts.scss */
 .icon-icono_:before {
   content: "\e601"; }
 
-/* line 35, ../sass/fonts.scss */
+/* line 36, ../sass/fonts.scss */
 .icon-m_tipografico:before {
   content: "\e602"; }
 
-/* line 38, ../sass/fonts.scss */
+/* line 39, ../sass/fonts.scss */
 .icon-menu:before {
   content: "\e604"; }
 
-/* line 41, ../sass/fonts.scss */
+/* line 42, ../sass/fonts.scss */
 .icon-close:before {
   content: "\e605"; }
 
-/* line 44, ../sass/fonts.scss */
+/* line 45, ../sass/fonts.scss */
 .icon-message-01:before {
   content: "\e606"; }
 
-/* line 47, ../sass/fonts.scss */
+/* line 48, ../sass/fonts.scss */
 .icon-svg:before {
   content: "\e607"; }
 
