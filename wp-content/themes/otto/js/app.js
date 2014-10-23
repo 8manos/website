@@ -19,6 +19,15 @@ $(document).on('ready', function(){
     return url;
   }
 
+  function positionFooter() {
+    $('.contact-footer').css('height', 'auto');
+    var height = $('.contact-footer').outerHeight();
+    console.log(height);
+    $('.contact-footer').css('bottom', -1*height);
+  }
+
+  positionFooter();
+
   $('#menu-main .menu-item a').each(function() {
     var href = $(this).attr('href');
     var linkPath = urlPath(href);

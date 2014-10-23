@@ -1,6 +1,7 @@
 	</div>
 
 	<footer role="contentinfo" class="contact-footer">
+		<a href="#" class="footer-close icon-close">X</a>
 		<h1 class="section-header icon-contacto">Contacto</h1>
 		<h3>Aca va un texto introductorio que se administra como una página en wordpress. O podemos poner un texto relacionado con la sección en la que uno se encuentra?</h3>
 		<p>Prometemos responder en el menor tiempo posible.</p>
@@ -25,16 +26,20 @@
 				<input type="submit" Value="Enviar">
 			</p>
 		</form>
-		<h4>8manos en Bogotá</h4>
-		<p>Calle 94 # 15-32 Oficina 301<br>Tel: (57-1) 6057039</p>
-		<h4>8manos en la red</h4>
-		<ul class="contact-links">
-			<li><a href="" class="icon-twitter">Twitter</a></li>
-			<li><a href="" class="icon-github">Github</a></li>
-			<li><a href="" class="icon-tumblr">Tumblr</a></li>
-		</ul>
+		<div class="contact-block">
+			<h4>8manos en Bogotá</h4>
+			<p>Calle 94 # 15-32 Oficina 301<br>Tel: (57-1) 6057039</p>
+		</div>
+		<div class="contact-block">
+			<h4>8manos en la red</h4>
+			<ul class="contact-links">
+				<li><a href="" class="icon-twitter">Twitter</a></li>
+				<li><a href="" class="icon-github">Github</a></li>
+				<li><a href="" class="icon-tumblr">Tumblr</a></li>
+			</ul>
+		</div>
 	</footer>
-	<div class="footer-toggle">Contáctanos</div>
+	<div class="footer-toggle color-bg">Contáctanos</div>
 
 	<?php
 		get_template_part('template', 'pages');

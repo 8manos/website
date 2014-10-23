@@ -2,11 +2,17 @@ OM.Views.MainView = Backbone.View.extend({
   el: 'body',
   events: {
     'click .menu-toggle': 'toggleMenu',
-    'click .menu-item a': 'toggleMenu'
+    'click .menu-item a': 'toggleMenu',
+    'click .footer-toggle': 'toggleFooter',
+    'click .footer-close': 'toggleFooter'
   },
   toggleMenu: function(e) {
     e.preventDefault();
     $('#header').toggleClass('is-collapsed');
+  },
+  toggleFooter: function(e) {
+    e.preventDefault();
+    $('.contact-footer').toggleClass('is-collapsed');
   }
 });
 
