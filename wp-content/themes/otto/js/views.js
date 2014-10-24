@@ -2,8 +2,8 @@ OM.Views.MainView = Backbone.View.extend({
   el: 'body',
   events: {
     'click .menu-toggle': 'toggleMenu',
-    'click #menu-main .menu-item a': 'toggleMenu',
-    'click #menu-main .menu-item:nth-child(6) a': 'toggleFooter',
+    'click .main-nav .menu-item a': 'toggleMenu',
+    'click .main-nav .menu-item:nth-child(6) a': 'toggleFooter',
     'click .footer-toggle': 'toggleFooter',
     'click .footer-close': 'toggleFooter'
   },

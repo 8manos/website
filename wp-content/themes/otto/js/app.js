@@ -28,19 +28,19 @@ $(document).on('ready', function(){
 
   positionFooter();
 
-  $('#menu-main .menu-item a').each(function() {
+  $('.main-nav .menu-item a').each(function() {
     var href = $(this).attr('href');
     var linkPath = urlPath(href);
     menuUrls.push(linkPath);
   });
 
-  $('#menu-main .menu-item-object-page').each(function() {
+  $('.main-nav .menu-item-object-page').each(function() {
     var pageClasses = $(this).attr('class');
     var pageId = pageClasses.split('page-id-')[1];
     pages.push(pageId);
   });
 
-  $('#menu-main .menu-item a').on('click', function(e) {
+  $('.main-nav .menu-item a').on('click', function(e) {
     e.preventDefault();
     var href = $(this).attr('href');
     var linkPath = urlPath(href);
