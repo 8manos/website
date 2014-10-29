@@ -1,6 +1,6 @@
 OM.Collections.FriendsCollection = Backbone.Collection.extend({
   model: OM.Models.Friend,
-  url: '/wp_api/v1/posts?post_type=amigos',
+  url: '/wp_api/v1/posts?post_type=friend',
 });
 
 OM.Collections.LabsCollection = Backbone.Collection.extend({
@@ -26,6 +26,6 @@ OM.Collections.TeamCollection = Backbone.Collection.extend({
 });
 
 OM.Collections.NodesCollection = Backbone.Collection.extend({
-  model: OM.Models.Node,
+  model: OM.Models.Team,
   url: '/wp_api/v1/posts?post_type=colaboradores',
 });
