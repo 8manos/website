@@ -27,7 +27,15 @@
 </head>
 <body <?php body_class(); ?>>
 
-	<header role="banner" id="header">
+	<?php
+	if (! is_front_page()) {
+		$header_class = 'class="is-collapsed"';
+	} else {
+		$header_class = '';
+	}
+	?>
+
+	<header role="banner" id="header" <?php echo $header_class; ?>>
 		<a href="" class="menu-toggle icon-menu">Menú</a>
 		<nav role="navigation" class="main-nav color-bg">
 			<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false)); ?>
