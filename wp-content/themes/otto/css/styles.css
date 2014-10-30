@@ -546,23 +546,24 @@ h6 {
   bottom: -100%;
   height: 100%;
   max-height: 100%;
+  padding: 1px 0;
   overflow: auto;
   position: fixed;
   -webkit-transition: bottom 0.5s;
           transition: bottom 0.5s;
   z-index: 2; }
-  /* line 285, ../sass/styles.scss */
+  /* line 286, ../sass/styles.scss */
   .contact-footer.is-collapsed {
     bottom: 0 !important;
     height: auto; }
-  /* line 290, ../sass/styles.scss */
+  /* line 291, ../sass/styles.scss */
   .contact-footer .footer-close {
     float: right;
     margin: 1em;
     overflow: hidden;
     width: 1em; }
 
-/* line 297, ../sass/styles.scss */
+/* line 298, ../sass/styles.scss */
 .footer-toggle {
   bottom: 0;
   color: #fff;
@@ -576,7 +577,7 @@ h6 {
   text-transform: uppercase;
   width: 100%; }
 
-/* line 310, ../sass/styles.scss */
+/* line 311, ../sass/styles.scss */
 .contact-block {
   display: inline-block;
   vertical-align: top; }
@@ -584,13 +585,13 @@ h6 {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 319, ../sass/styles.scss */
+/* line 320, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.2s linear;
           transition: color 0.2s linear; }
 
-/* line 324, ../sass/styles.scss */
+/* line 325, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.2s linear;
           transition: background-color 0.2s linear; }
@@ -599,16 +600,16 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 334, ../sass/styles.scss */
+/* line 335, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 335, ../sass/styles.scss */
+/* line 336, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 336, ../sass/styles.scss */
+/* line 337, ../sass/styles.scss */
 .alignright {
   float: right; }
 
