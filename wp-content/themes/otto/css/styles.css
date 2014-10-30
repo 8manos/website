@@ -436,8 +436,8 @@ h6 {
 
 /* line 166, ../sass/styles.scss */
 .wrap {
-  margin-bottom: 3em;
-  margin-top: 40px; }
+  padding-bottom: 3em;
+  padding-top: 40px; }
 
 /* ==========================================================================
    Content
