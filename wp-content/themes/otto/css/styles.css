@@ -342,7 +342,7 @@ h6 {
   -webkit-transition: top 0.5s;
           transition: top 0.5s;
   width: 100%;
-  z-index: 2; }
+  z-index: 3; }
   /* line 79, ../sass/styles.scss */
   #header.is-collapsed {
     top: -webkit-calc(-100% + 40px);
@@ -436,26 +436,29 @@ h6 {
 
 /* line 166, ../sass/styles.scss */
 .wrap {
-  padding-bottom: 3em;
-  padding-top: 40px; }
+  background: #eee;
+  margin-bottom: 3em;
+  padding: 40px 0;
+  position: relative;
+  z-index: 1; }
 
 /* ==========================================================================
    Content
    ========================================================================== */
 /*encabezado modulo*/
-/* line 177, ../sass/styles.scss */
+/* line 180, ../sass/styles.scss */
 .inner-header h2 {
   display: inline-block; }
-  /* line 180, ../sass/styles.scss */
+  /* line 183, ../sass/styles.scss */
   .inner-header h2 span:after {
     content: '\00a0 \2f \00a0'; }
 
-/* line 185, ../sass/styles.scss */
+/* line 188, ../sass/styles.scss */
 .back-link {
   display: inline-block;
   float: right; }
 
-/* line 189, ../sass/styles.scss */
+/* line 192, ../sass/styles.scss */
 .nav-tabs {
   list-style: none;
   width: 100%;
@@ -464,12 +467,12 @@ h6 {
   text-transform: uppercase;
   padding: 0 8px;
   border-bottom: 1px solid #FF3300; }
-  /* line 198, ../sass/styles.scss */
+  /* line 201, ../sass/styles.scss */
   .nav-tabs li {
     display: inline-block;
     margin-left: 1px;
     width: 32%; }
-  /* line 204, ../sass/styles.scss */
+  /* line 207, ../sass/styles.scss */
   .nav-tabs li a {
     display: block;
     color: #FFF;
@@ -477,17 +480,17 @@ h6 {
     background: rgba(255, 51, 0, 0.2);
     position: relative;
     font-weight: bold; }
-  /* line 213, ../sass/styles.scss */
+  /* line 216, ../sass/styles.scss */
   .nav-tabs li.active a,
   .nav-tabs li a:hover {
     background: #FF3300;
     color: #FFF; }
 
-/* line 220, ../sass/styles.scss */
+/* line 223, ../sass/styles.scss */
 .team-wrapper,
 .lab-wrapper {
   padding: 0 10px; }
-  /* line 224, ../sass/styles.scss */
+  /* line 227, ../sass/styles.scss */
   .team-wrapper .project,
   .team-wrapper .person,
   .lab-wrapper .project,
@@ -495,13 +498,13 @@ h6 {
     padding: 12px;
     background: #ECECEC;
     text-align: center; }
-    /* line 233, ../sass/styles.scss */
+    /* line 236, ../sass/styles.scss */
     .team-wrapper .project h4,
     .team-wrapper .person h4,
     .lab-wrapper .project h4,
     .lab-wrapper .person h4 {
       font-weight: normal; }
-    /* line 236, ../sass/styles.scss */
+    /* line 239, ../sass/styles.scss */
     .team-wrapper .project img,
     .team-wrapper .person img,
     .lab-wrapper .project img,
@@ -511,28 +514,28 @@ h6 {
       border-radius: 50px;
       border: 3px solid #FF3300; }
 
-/* line 245, ../sass/styles.scss */
+/* line 248, ../sass/styles.scss */
 .works-wrapper .project-img {
   width: 300px; }
 
-/* line 249, ../sass/styles.scss */
+/* line 252, ../sass/styles.scss */
 .more-info {
   display: none;
   text-align: left; }
-  /* line 253, ../sass/styles.scss */
+  /* line 256, ../sass/styles.scss */
   .more-info p {
     padding-bottom: 10px; }
-  /* line 256, ../sass/styles.scss */
+  /* line 259, ../sass/styles.scss */
   .more-info p + p {
     padding: 5px 0 15px; }
-  /* line 259, ../sass/styles.scss */
+  /* line 262, ../sass/styles.scss */
   .more-info .person-links,
   .more-info .lab-tags {
     margin: 0 10px;
     padding: 15px 10px;
     list-style: none;
     border-top: 2px dotted #FF3300; }
-    /* line 266, ../sass/styles.scss */
+    /* line 269, ../sass/styles.scss */
     .more-info .person-links li,
     .more-info .lab-tags li {
       display: inline-block; }
@@ -540,30 +543,25 @@ h6 {
 /* ==========================================================================
    Footer
    ========================================================================== */
-/* line 275, ../sass/styles.scss */
+/* line 278, ../sass/styles.scss */
 .contact-footer {
   background: #fff;
-  bottom: -100%;
-  height: 100%;
-  max-height: 100%;
+  bottom: 3em;
+  max-height: -webkit-calc(100% - 40px - 3em);
+  max-height: calc(100% - 40px - 3em);
   padding: 1px 0;
   overflow: auto;
   position: fixed;
   -webkit-transition: bottom 0.5s;
-          transition: bottom 0.5s;
-  z-index: 2; }
-  /* line 286, ../sass/styles.scss */
-  .contact-footer.is-collapsed {
-    bottom: 0 !important;
-    height: auto; }
-  /* line 291, ../sass/styles.scss */
+          transition: bottom 0.5s; }
+  /* line 287, ../sass/styles.scss */
   .contact-footer .footer-close {
     float: right;
     margin: 1em;
     overflow: hidden;
     width: 1em; }
 
-/* line 298, ../sass/styles.scss */
+/* line 294, ../sass/styles.scss */
 .footer-toggle {
   bottom: 0;
   color: #fff;
@@ -575,9 +573,10 @@ h6 {
   position: fixed;
   text-align: center;
   text-transform: uppercase;
-  width: 100%; }
+  width: 100%;
+  z-index: 2; }
 
-/* line 311, ../sass/styles.scss */
+/* line 308, ../sass/styles.scss */
 .contact-block {
   display: inline-block;
   vertical-align: top; }
@@ -585,13 +584,13 @@ h6 {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 320, ../sass/styles.scss */
+/* line 317, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.2s linear;
           transition: color 0.2s linear; }
 
-/* line 325, ../sass/styles.scss */
+/* line 322, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.2s linear;
           transition: background-color 0.2s linear; }
@@ -600,16 +599,16 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 335, ../sass/styles.scss */
+/* line 332, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 336, ../sass/styles.scss */
+/* line 333, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 337, ../sass/styles.scss */
+/* line 334, ../sass/styles.scss */
 .alignright {
   float: right; }
 

@@ -20,10 +20,11 @@ $(document).on('ready', function(){
   }
 
   function positionFooter() {
-    $('.contact-footer').css('height', 'auto');
-    var height = $('.contact-footer').outerHeight();
-    console.log(height);
-    $('.contact-footer').css('bottom', -1*height);
+    var footerHeight = $('.contact-footer').outerHeight();
+    var footToggleHeight = $('.footer-toggle').outerHeight();
+    console.log(footerHeight);
+    console.log(footToggleHeight);
+    $('.wrap').css('margin-bottom', (footerHeight+footToggleHeight));
   }
 
   positionFooter();
