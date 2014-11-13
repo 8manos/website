@@ -4,8 +4,8 @@ OM.Views.MainView = Backbone.View.extend({
     'click .menu-toggle': 'toggleMenu',
     'click .main-nav .menu-item a': 'toggleMenu',
     'click .main-nav .menu-item:nth-child(6) a': 'toggleFooter',
-    'click .footer-toggle': 'toggleFooter',
-    'click .footer-close': 'toggleFooter'
+    'click .footer-toggle': 'showFooter',
+    'click .footer-close': 'hideFooter'
   },
   initialize: function(){
     this.positionFooter();
@@ -15,9 +15,19 @@ OM.Views.MainView = Backbone.View.extend({
     e.preventDefault();
     $('#header').toggleClass('is-collapsed');
   },
-  toggleFooter: function(e) {
+  showFooter: function(e) {
     e.preventDefault();
-    $('.contact-footer').toggleClass('is-collapsed');
+    if ((window.innerHeight + window.scrollY) < document.documentElement.scrollHeight) {
+      $.scrollTo( 'max', 500 );
+    } else {
+      //scrolled to the bottom
+      this.hideFooter();
+    }
+  },
+  hideFooter: function() {
+    var scrollOffset = $('.contact-footer').outerHeight();
+    $.scrollTo( '-='+scrollOffset, 500 );
+    return false;
   },
   resizeCallback: function() {
     clearTimeout(this.resizeTimer);
