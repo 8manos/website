@@ -19,16 +19,6 @@ $(document).on('ready', function(){
     return url;
   }
 
-  function positionFooter() {
-    var footerHeight = $('.contact-footer').outerHeight();
-    var footToggleHeight = $('.footer-toggle').outerHeight();
-    console.log(footerHeight);
-    console.log(footToggleHeight);
-    $('.wrap').css('margin-bottom', (footerHeight+footToggleHeight));
-  }
-
-  positionFooter();
-
   $('.main-nav .menu-item a').each(function() {
     var href = $(this).attr('href');
     var linkPath = urlPath(href);
@@ -53,4 +43,7 @@ $(document).on('ready', function(){
   Backbone.history.start({
     pushState: true,
   });
+  console.log(menuUrls);
+  console.log(pages);
+  console.log(homeUrl);
 });

@@ -7,6 +7,10 @@ OM.Views.MainView = Backbone.View.extend({
     'click .footer-toggle': 'toggleFooter',
     'click .footer-close': 'toggleFooter'
   },
+  initialize: function(){
+    this.positionFooter();
+    window.addEventListener('resize', this.resizeCallback);
+  },
   toggleMenu: function(e) {
     e.preventDefault();
     $('#header').toggleClass('is-collapsed');
@@ -14,6 +18,15 @@ OM.Views.MainView = Backbone.View.extend({
   toggleFooter: function(e) {
     e.preventDefault();
     $('.contact-footer').toggleClass('is-collapsed');
+  },
+  resizeCallback: function() {
+    clearTimeout(this.resizeTimer);
+    this.resizeTimer = setTimeout(this.views.main.positionFooter, 100);
+  },
+  positionFooter: function() {
+    var footerHeight = $('.contact-footer').outerHeight();
+    var footToggleHeight = $('.footer-toggle').outerHeight();
+    $('.wrap').css('margin-bottom', (footerHeight+footToggleHeight));
   }
 });
 
