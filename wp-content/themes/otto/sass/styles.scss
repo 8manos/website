@@ -27,6 +27,7 @@ body {
   font: normal normal 16px 'Ubuntu', sans-serif;
   color: #000;
   height: 100%;
+  overflow-y: scroll;
 
   &.normal {
     background: gray;
@@ -166,6 +167,7 @@ h6 { font-size: $size-seis;}
 .wrap {
   background: #eee;
   margin-bottom: $contact-height;
+  min-height: calc(100% - 2 * #{$bar-height} - #{$contact-height});
   padding: $bar-height 0;
   position: relative;
   z-index: 1;
