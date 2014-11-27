@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?6kutlw");
-  src: url("../fonts/icomoon.eot?#iefix6kutlw") format("embedded-opentype"), url("../fonts/icomoon.woff?6kutlw") format("woff"), url("../fonts/icomoon.ttf?6kutlw") format("truetype"), url("../fonts/icomoon.svg?6kutlw#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?qxoyam");
+  src: url("../fonts/icomoon.eot?#iefixqxoyam") format("embedded-opentype"), url("../fonts/icomoon.woff?qxoyam") format("woff"), url("../fonts/icomoon.ttf?qxoyam") format("truetype"), url("../fonts/icomoon.svg?qxoyam#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* line 12, ../sass/fonts.scss */
@@ -19,34 +19,99 @@
   -moz-osx-font-smoothing: grayscale; }
 
 /* line 27, ../sass/fonts.scss */
-.icon-m_tipografico_130x16px:before {
-  content: "\e603"; }
-
-/* line 30, ../sass/fonts.scss */
 .icon-icono_otto:before {
   content: "\e600"; }
 
-/* line 33, ../sass/fonts.scss */
-.icon-icono_:before {
+/* line 30, ../sass/fonts.scss */
+.icon-icono_8:before {
   content: "\e601"; }
 
-/* line 36, ../sass/fonts.scss */
+/* line 33, ../sass/fonts.scss */
 .icon-m_tipografico:before {
   content: "\e602"; }
 
+/* line 36, ../sass/fonts.scss */
+.icon-imoticon:before {
+  content: "\e608"; }
+
 /* line 39, ../sass/fonts.scss */
+.icon-lab:before {
+  content: "\e609"; }
+
+/* line 42, ../sass/fonts.scss */
+.icon-team:before {
+  content: "\e60b"; }
+
+/* line 45, ../sass/fonts.scss */
+.icon-back:before {
+  content: "\e603"; }
+
+/* line 48, ../sass/fonts.scss */
+.icon-work:before {
+  content: "\e60c"; }
+
+/* line 51, ../sass/fonts.scss */
 .icon-menu:before {
   content: "\e604"; }
 
-/* line 42, ../sass/fonts.scss */
+/* line 54, ../sass/fonts.scss */
 .icon-close:before {
   content: "\e605"; }
 
-/* line 45, ../sass/fonts.scss */
-.icon-message-01:before {
+/* line 57, ../sass/fonts.scss */
+.icon-heart:before {
+  content: "\e607"; }
+
+/* line 60, ../sass/fonts.scss */
+.icon-website:before {
+  content: "\e60a"; }
+
+/* line 63, ../sass/fonts.scss */
+.icon-message:before {
   content: "\e606"; }
 
-/* line 48, ../sass/fonts.scss */
-.icon-svg:before {
-  content: "\e607"; }
+/* line 66, ../sass/fonts.scss */
+.icon-phone:before {
+  content: "\e611"; }
+
+/* line 69, ../sass/fonts.scss */
+.icon-frontend:before {
+  content: "\e612"; }
+
+/* line 72, ../sass/fonts.scss */
+.icon-twitter:before {
+  content: "\e60f"; }
+
+/* line 75, ../sass/fonts.scss */
+.icon-github:before {
+  content: "\e616"; }
+
+/* line 78, ../sass/fonts.scss */
+.icon-github2:before {
+  content: "\e617"; }
+
+/* line 81, ../sass/fonts.scss */
+.icon-tumblr:before {
+  content: "\e610"; }
+
+/* line 84, ../sass/fonts.scss */
+.icon-comment-alt:before {
+  content: "\e60d"; }
+
+/* line 87, ../sass/fonts.scss */
+.icon-backend:before {
+  content: "\e60e"; }
+
+/* line 90, ../sass/fonts.scss */
+.icon-envelope:before {
+  content: "\e613"; }
+
+/* line 93, ../sass/fonts.scss */
+.icon-branding:before {
+  content: "\e614"; }
+
+/* line 96, ../sass/fonts.scss */
+.icon-design:before {
+  content: "\e615"; }
+
 /*# sourceMappingURL=fonts.css.map */
