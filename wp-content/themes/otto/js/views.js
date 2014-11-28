@@ -39,19 +39,6 @@ OM.Views.MainView = Backbone.View.extend({
   }
 });
 
-OM.Views.FriendsView = Backbone.View.extend({
-  el: 'main',
-  initialize: function(){
-    this.template = _.template($('#friendsTemplate').html());
-    this.render();
-  },
-  render: function(){
-    var posts = this.collection.models[0].attributes.posts;
-    this.$el.html(this.template({'posts': posts}));
-    return this;
-  }
-});
-
 OM.Views.LabsView = Backbone.View.extend({
   el: '.lab-wrapper',
   events: {
