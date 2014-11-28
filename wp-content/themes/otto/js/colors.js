@@ -18,15 +18,14 @@
 	}
 
 	setTimeout( function(){ 
-		console.log( "timeout" );
-
+		/*console.log( "timeout" );
 		console.log( r_x_inicial );
-		console.log( r_y_inicial );
+		console.log( r_y_inicial );*/
 
 		var touch_support = Modernizr.touch;
 
 		if( touch_support == false && ( ( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ) || ( r_x_inicial === null && r_y_inicial === null ) ) ){
-			console.log( 'No me he movido y no tengo touch' );
+			//console.log( 'No me he movido y no tengo touch' );
 
 			r_z = 0;
 
@@ -40,7 +39,7 @@
 			});
 
 			$( window ).on('mousewheel', function(event) {
-				console.log( event.deltaY );
+				//console.log( event.deltaY );
 				r_z = r_z + ( event.deltaY * 2 );
 				if( r_z < 0 ){
 					r_z = 255;
@@ -70,13 +69,13 @@
 			}
 
 		}else if( Modernizr.touch && ( ( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ) || ( r_x_inicial === null && r_y_inicial === null ) ) ){
-			console.log( 'Touch pero quieto' );
+			//console.log( 'Touch pero quieto' );
 
 			randomColor();
 			setInterval( randomColor , 5000 );
 
 		}else{
-			console.log( 'Me moví ');
+			//console.log( 'Me moví ');
 		}
 
 	}, 1000);

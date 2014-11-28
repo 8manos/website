@@ -43,7 +43,7 @@ $(document).on('ready', function(){
   Backbone.history.start({
     pushState: true,
   });
-  console.log(menuUrls);
-  console.log(pages);
-  console.log(homeUrl);
+  //console.log(menuUrls);
+  //console.log(pages);
+  //console.log(homeUrl);
 });
