@@ -12,8 +12,8 @@
 <script id="labsTemplate" type="text/template">
   <%
   function setHttp(link) {
-    if (link.search(/^http[s]?\:\/\//) == -1) {
-        link = 'http://' + link;
+    if (link && link.search(/^http[s]?\:\/\//) == -1) {
+      link = 'http://' + link;
     }
     return link;
   }

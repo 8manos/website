@@ -1,8 +1,13 @@
 <script id="personsTemplate" type="text/template">
   <%
   function setHttp(link) {
-    if (link.search(/^http[s]?\:\/\//) == -1) {
+    if (link) {
+      if (link.search(/\S+@\S+\.\S+/) > -1 && link.search(/^mailto\:/) == -1) {
+        link = 'mailto:' + link;
+      }
+      else if (link.search(/^http[s]?\:\/\//) == -1) {
         link = 'http://' + link;
+      }
     }
     return link;
   }
