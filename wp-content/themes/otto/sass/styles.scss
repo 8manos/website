@@ -121,8 +121,22 @@ h6 { font-size: $size-seis;}
     font-size: 1em;
     text-transform: uppercase;
     vertical-align: middle;
+    position: relative;
 
     &:before {
+      content: '';
+      display: block;
+      height: 38px;
+      width: 38px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -58px -19px;
+
+      font-family: 'icomoon';
+      text-transform: none;      
+    }
+    &:after {
       content: '';
       display: inline-block;
       height: 100%;
@@ -130,6 +144,25 @@ h6 { font-size: $size-seis;}
       margin-right: -0.25em; /* Adjusts for spacing */
     }
   }
+  li#menu-item-95 a:before {
+    content: 'e60d';
+  }
+  li#menu-item-26 a:before {
+    content: 'e60b';
+  }
+  li#menu-item-104 a:before {
+    content: 'e60c';
+  }
+  li#menu-item-103 a:before {
+    content: 'e60a';
+  }
+  li#menu-item-102 a:before {
+    content: 'e609';
+  }
+  li#menu-item-107 a:before {
+    content: 'e608';
+  } 
+
 
   @media screen and (min-aspect-ratio: 6/5) {
     li {

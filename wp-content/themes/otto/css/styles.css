@@ -457,15 +457,45 @@ h6 {
     padding: 0 12px;
     font-size: 1em;
     text-transform: uppercase;
-    vertical-align: middle; }
+    vertical-align: middle;
+    position: relative; }
     /* line 125, ../sass/styles.scss */
     .main-nav a:before {
+      content: '';
+      display: block;
+      height: 38px;
+      width: 38px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -58px -19px;
+
+      font-family: 'icomoon';
+      text-transform: none;}
+    .main-nav a:after {
       content: '';
       display: inline-block;
       height: 100%;
       vertical-align: middle;
-      margin-right: -0.25em;
-      /* Adjusts for spacing */ }
+      margin-right: -0.25em; /* Adjusts for spacing */}
+  .main-nav li#menu-item-95 a:before {
+    content: 'e60d';
+  }
+  .main-nav li#menu-item-26 a:before {
+    content: 'e60b';
+  }
+  .main-nav li#menu-item-104 a:before {
+    content: 'e60c';
+  }
+  .main-nav li#menu-item-103 a:before {
+    content: 'e60a';
+  }
+  .main-nav li#menu-item-102 a:before {
+    content: 'e609';
+  }
+  .main-nav li#menu-item-107 a:before {
+    content: 'e608';
+  }  
   @media screen and (min-aspect-ratio: 6 / 5) {
     /* line 135, ../sass/styles.scss */
     .main-nav li {
