@@ -366,7 +366,7 @@ a {
 
 /* line 53, ../sass/styles.scss */
 a:hover {
-  text-decoration: underline; }
+  text-decoration: none; }
 
 /* line 57, ../sass/styles.scss */
 h1, h2, h3, h4, h5, h6 {
@@ -471,6 +471,11 @@ h6 {
       margin: -58px -19px;
 
       font-family: 'icomoon';
+      font-size: 2.25em;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
       text-transform: none;}
     .main-nav a:after {
       content: '';
@@ -479,22 +484,22 @@ h6 {
       vertical-align: middle;
       margin-right: -0.25em; /* Adjusts for spacing */}
   .main-nav li#menu-item-95 a:before {
-    content: 'e60d';
+    content: '\e60d';
   }
   .main-nav li#menu-item-26 a:before {
-    content: 'e60b';
+    content: '\e60b';
   }
   .main-nav li#menu-item-104 a:before {
-    content: 'e60c';
+    content: '\e60c';
   }
   .main-nav li#menu-item-103 a:before {
-    content: 'e60a';
+    content: '\e60a';
   }
   .main-nav li#menu-item-102 a:before {
-    content: 'e609';
+    content: '\e609';
   }
   .main-nav li#menu-item-107 a:before {
-    content: 'e608';
+    content: '\e608';
   }  
   @media screen and (min-aspect-ratio: 6 / 5) {
     /* line 135, ../sass/styles.scss */
@@ -677,6 +682,15 @@ h6 {
 .contact-block {
   display: inline-block;
   vertical-align: top; }
+
+.contact-links {
+  list-style: none;
+}
+.contact-links li {
+  display: inline-block;
+  width: 20px;
+  overflow: hidden;
+}
 
 /* ==========================================================================
    Games

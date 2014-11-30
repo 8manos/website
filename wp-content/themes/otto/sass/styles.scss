@@ -51,7 +51,7 @@ a {
    font-weight: bold;
 }
 a:hover {
-   text-decoration: underline;
+   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -134,6 +134,11 @@ h6 { font-size: $size-seis;}
       margin: -58px -19px;
 
       font-family: 'icomoon';
+      font-size: 2.25em;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
       text-transform: none;      
     }
     &:after {
@@ -145,22 +150,22 @@ h6 { font-size: $size-seis;}
     }
   }
   li#menu-item-95 a:before {
-    content: 'e60d';
+    content: '\e60d';
   }
   li#menu-item-26 a:before {
-    content: 'e60b';
+    content: '\e60b';
   }
   li#menu-item-104 a:before {
-    content: 'e60c';
+    content: '\e60c';
   }
   li#menu-item-103 a:before {
-    content: 'e60a';
+    content: '\e60a';
   }
   li#menu-item-102 a:before {
-    content: 'e609';
+    content: '\e609';
   }
   li#menu-item-107 a:before {
-    content: 'e608';
+    content: '\e608';
   } 
 
 
@@ -344,6 +349,16 @@ h6 { font-size: $size-seis;}
   display: inline-block;
   vertical-align: top;
 }
+.contact-links {
+  list-style: none;
+
+  li {
+    display: inline-block;
+    width: 20px;
+    overflow: hidden;
+  }
+}
+
 
 /* ==========================================================================
    Games
