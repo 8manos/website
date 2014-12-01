@@ -72,7 +72,7 @@ function add_team_meta($data){
 	$featuring = get_post_meta( $data->id, '_featuring', true );
 	$data->featuring = $featuring;
 
-	$img_id = $data->meta->featured_image;
+	$img_id = get_post_thumbnail_id( $data->id );
 	$images = array();
 	if ($img_id) {
 		$images['thumb'] = wp_get_attachment_image_src( $img_id, 'thumb' )[0];

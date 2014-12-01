@@ -6,8 +6,6 @@ class Manos {
 		add_action( 'init', array( __CLASS__, 'manos_post_types' ) );
 		add_action( 'init', array( __CLASS__, 'manos_taxonomies' ) );
 		add_filter( 'kc_post_settings', array( __CLASS__, 'manos_custom_fields' ) );
-		add_filter( 'thermal_post_entity', array(__CLASS__, 'api_return_fields') , 10, 3);
-
 		add_action( 'p2p_init', array( __CLASS__, 'my_connection_types' ) );
 	}
 
@@ -193,31 +191,6 @@ class Manos {
 			'from' => 'portafolio',
 			'to' => 'equipo'
 		) );
-	}
-
-	function api_return_fields( $data, &$post, $state ) {
-		if( $state === 'read' ){
-
-			// Build images
-			$featured_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-			// $today_thumbnail = wp_get_attachment_image_src( get_post_meta( $post->ID, '_today_thumbnail', true ) , 'full' );
-			// $copy_image = wp_get_attachment_image_src( get_post_meta( $post->ID, '_today_copy', true ) , 'full' );
-
-			// $data->meta->subtitle = get_post_meta( $post->ID, '_subtitle', true );
-			// $data->meta->copy_image = $copy_image;
-			// $data->meta->bg_color = get_post_meta( $post->ID, '_today_bg_color', true );
-			// $data->meta->featured_image_url = $featured_image;
-			// $data->meta->today_thumbnail_url = $today_thumbnail;
-
-			// prev and next tests
-			$this_post = new WP_Query( array( 'p' => $post->ID ) );
-			$this_post->the_post();
-			$data->meta->previous_post_link = get_previous_post_link( '%link', '%title', true );
-			$data->meta->next_post_link = get_next_post_link( '%link', '%title', true );
-			wp_reset_postdata();
-
-			return $data;
-		}
 	}
 }
 
