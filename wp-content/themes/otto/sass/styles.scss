@@ -149,24 +149,24 @@ h6 { font-size: $size-seis;}
       margin-right: -0.25em; /* Adjusts for spacing */
     }
   }
-  li#menu-item-95 a:before {
+  li:nth-child(1) a:before {
     content: '\e60d';
   }
-  li#menu-item-26 a:before {
-    content: '\e60b';
+  li:nth-child(2) a:before {
+    content: '\1f464';
   }
-  li#menu-item-104 a:before {
-    content: '\e60c';
+  li:nth-child(3) a:before {
+    content: '\1f4bc';
   }
-  li#menu-item-103 a:before {
+  li:nth-child(4) a:before {
     content: '\e60a';
   }
-  li#menu-item-102 a:before {
+  li:nth-child(5) a:before {
     content: '\e609';
   }
-  li#menu-item-107 a:before {
-    content: '\e608';
-  } 
+  li:nth-child(6) a:before {
+    content: '\1f60e';
+  }
 
 
   @media screen and (min-aspect-ratio: 6/5) {

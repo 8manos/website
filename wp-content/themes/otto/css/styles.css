@@ -20,99 +20,103 @@
 
 /* line 27, ../sass/fonts.scss */
 .icon-icono_otto:before {
-  content: "\e600"; }
+  content: "\1f419"; }
 
 /* line 30, ../sass/fonts.scss */
 .icon-icono_8:before {
-  content: "\e601"; }
+  content: "\221e"; }
 
 /* line 33, ../sass/fonts.scss */
-.icon-m_tipografico:before {
+.icon-8manos:before {
   content: "\e602"; }
 
 /* line 36, ../sass/fonts.scss */
-.icon-imoticon:before {
-  content: "\e608"; }
+.icon-principios:before {
+  content: "\e60d"; }
 
 /* line 39, ../sass/fonts.scss */
-.icon-lab:before {
-  content: "\e609"; }
+.icon-equipo:before {
+  content: "\1f464"; }
 
 /* line 42, ../sass/fonts.scss */
-.icon-team:before {
-  content: "\e60b"; }
+.icon-servicios:before {
+  content: "\1f4bc"; }
 
 /* line 45, ../sass/fonts.scss */
-.icon-back:before {
-  content: "\e603"; }
-
-/* line 48, ../sass/fonts.scss */
-.icon-work:before {
-  content: "\e60c"; }
-
-/* line 51, ../sass/fonts.scss */
-.icon-menu:before {
-  content: "\e604"; }
-
-/* line 54, ../sass/fonts.scss */
-.icon-close:before {
-  content: "\e605"; }
-
-/* line 57, ../sass/fonts.scss */
-.icon-heart:before {
-  content: "\e607"; }
-
-/* line 60, ../sass/fonts.scss */
-.icon-website:before {
+.icon-trabajo:before {
   content: "\e60a"; }
 
+/* line 48, ../sass/fonts.scss */
+.icon-8lab:before {
+  content: "\e609"; }
+
+/* line 51, ../sass/fonts.scss */
+.icon-contacto:before {
+  content: "\1f60e"; }
+
+/* line 54, ../sass/fonts.scss */
+.icon-back:before {
+  content: "\2190"; }
+
+/* line 57, ../sass/fonts.scss */
+.icon-menu:before {
+  content: "\2261"; }
+
+/* line 60, ../sass/fonts.scss */
+.icon-close:before {
+  content: "\78"; }
+
 /* line 63, ../sass/fonts.scss */
-.icon-message:before {
-  content: "\e606"; }
+.icon-heart:before {
+  content: "\2665"; }
 
 /* line 66, ../sass/fonts.scss */
-.icon-phone:before {
-  content: "\e611"; }
+.icon-target:before {
+  content: "\1f3af"; }
 
 /* line 69, ../sass/fonts.scss */
-.icon-frontend:before {
-  content: "\e612"; }
+.icon-gear:before {
+  content: "\26ed"; }
 
 /* line 72, ../sass/fonts.scss */
-.icon-twitter:before {
+.icon-computer:before {
   content: "\e60f"; }
 
 /* line 75, ../sass/fonts.scss */
-.icon-github:before {
-  content: "\e616"; }
-
-/* line 78, ../sass/fonts.scss */
-.icon-github2:before {
-  content: "\e617"; }
-
-/* line 81, ../sass/fonts.scss */
-.icon-tumblr:before {
+.icon-tools:before {
   content: "\e610"; }
 
+/* line 78, ../sass/fonts.scss */
+.icon-email:before {
+  content: "\e611"; }
+
+/* line 81, ../sass/fonts.scss */
+.icon-twitter:before {
+  content: "\e612"; }
+
 /* line 84, ../sass/fonts.scss */
-.icon-comment-alt:before {
-  content: "\e60d"; }
+.icon-tumblr:before {
+  content: "\74"; }
 
 /* line 87, ../sass/fonts.scss */
-.icon-backend:before {
-  content: "\e60e"; }
-
-/* line 90, ../sass/fonts.scss */
-.icon-envelope:before {
-  content: "\e613"; }
-
-/* line 93, ../sass/fonts.scss */
-.icon-branding:before {
+.icon-linkedin:before {
   content: "\e614"; }
 
-/* line 96, ../sass/fonts.scss */
-.icon-design:before {
+/* line 90, ../sass/fonts.scss */
+.icon-github:before {
   content: "\e615"; }
+
+/* line 93, ../sass/fonts.scss */
+.icon-direccion:before {
+  content: "\e616"; }
+
+/* line 96, ../sass/fonts.scss */
+.icon-telefono:before {
+  content: "\260e"; }
+
+/* line 99, ../sass/fonts.scss */
+.icon-correo:before {
+  content: "\2709"; }
 
 /* 
  *  Owl Carousel - Animate Plugin
@@ -459,7 +463,7 @@ h6 {
     text-transform: uppercase;
     vertical-align: middle;
     position: relative; }
-    /* line 125, ../sass/styles.scss */
+    /* line 126, ../sass/styles.scss */
     .main-nav a:before {
       content: '';
       display: block;
@@ -469,53 +473,54 @@ h6 {
       top: 50%;
       left: 50%;
       margin: -58px -19px;
-
       font-family: 'icomoon';
       font-size: 2.25em;
       speak: none;
       font-style: normal;
       font-weight: normal;
       font-variant: normal;
-      text-transform: none;}
+      text-transform: none; }
+    /* line 144, ../sass/styles.scss */
     .main-nav a:after {
       content: '';
       display: inline-block;
       height: 100%;
       vertical-align: middle;
-      margin-right: -0.25em; /* Adjusts for spacing */}
-  .main-nav li#menu-item-95 a:before {
-    content: '\e60d';
-  }
-  .main-nav li#menu-item-26 a:before {
-    content: '\e60b';
-  }
-  .main-nav li#menu-item-104 a:before {
-    content: '\e60c';
-  }
-  .main-nav li#menu-item-103 a:before {
-    content: '\e60a';
-  }
-  .main-nav li#menu-item-102 a:before {
-    content: '\e609';
-  }
-  .main-nav li#menu-item-107 a:before {
-    content: '\e608';
-  }  
+      margin-right: -0.25em;
+      /* Adjusts for spacing */ }
+  /* line 152, ../sass/styles.scss */
+  .main-nav li:nth-child(1) a:before {
+    content: '\e60d'; }
+  /* line 155, ../sass/styles.scss */
+  .main-nav li:nth-child(2) a:before {
+    content: '\1f464'; }
+  /* line 158, ../sass/styles.scss */
+  .main-nav li:nth-child(3) a:before {
+    content: '\1f4bc'; }
+  /* line 161, ../sass/styles.scss */
+  .main-nav li:nth-child(4) a:before {
+    content: '\e60a'; }
+  /* line 164, ../sass/styles.scss */
+  .main-nav li:nth-child(5) a:before {
+    content: '\e609'; }
+  /* line 167, ../sass/styles.scss */
+  .main-nav li:nth-child(6) a:before {
+    content: '\1f60e'; }
   @media screen and (min-aspect-ratio: 6 / 5) {
-    /* line 135, ../sass/styles.scss */
+    /* line 173, ../sass/styles.scss */
     .main-nav li {
       height: -webkit-calc(50% - 1px);
       height: calc(50% - 1px);
       width: -webkit-calc(33.33% - 1px);
       width: calc(33.33% - 1px); } }
 
-/* line 141, ../sass/styles.scss */
+/* line 179, ../sass/styles.scss */
 .ochomanos {
   padding: 12px 0;
   height: 16px;
   margin: 0 15px 0 0;
   text-align: right; }
-  /* line 147, ../sass/styles.scss */
+  /* line 185, ../sass/styles.scss */
   .ochomanos a {
     color: #fff;
     display: inline-block;
@@ -523,18 +528,18 @@ h6 {
     overflow: hidden;
     vertical-align: top;
     width: 130px; }
-  /* line 155, ../sass/styles.scss */
+  /* line 193, ../sass/styles.scss */
   .ochomanos a:before {
     content: "\e602";
     display: block;
     font: 16px/1 icomoon;
     height: 150%;
     width: 0; }
-  /* line 162, ../sass/styles.scss */
+  /* line 200, ../sass/styles.scss */
   .ochomanos a:hover {
     opacity: 0.4; }
 
-/* line 167, ../sass/styles.scss */
+/* line 205, ../sass/styles.scss */
 .wrap {
   background: #eee;
   margin-bottom: 3em;
@@ -548,19 +553,19 @@ h6 {
    Content
    ========================================================================== */
 /*encabezado modulo*/
-/* line 182, ../sass/styles.scss */
+/* line 220, ../sass/styles.scss */
 .inner-header h2 {
   display: inline-block; }
-  /* line 185, ../sass/styles.scss */
+  /* line 223, ../sass/styles.scss */
   .inner-header h2 span:after {
     content: '\00a0 \2f \00a0'; }
 
-/* line 190, ../sass/styles.scss */
+/* line 228, ../sass/styles.scss */
 .back-link {
   display: inline-block;
   float: right; }
 
-/* line 194, ../sass/styles.scss */
+/* line 232, ../sass/styles.scss */
 .nav-tabs {
   list-style: none;
   width: 100%;
@@ -569,12 +574,12 @@ h6 {
   text-transform: uppercase;
   padding: 0 8px;
   border-bottom: 1px solid #FF3300; }
-  /* line 203, ../sass/styles.scss */
+  /* line 241, ../sass/styles.scss */
   .nav-tabs li {
     display: inline-block;
     margin-left: 1px;
     width: 32%; }
-  /* line 209, ../sass/styles.scss */
+  /* line 247, ../sass/styles.scss */
   .nav-tabs li a {
     display: block;
     color: #FFF;
@@ -582,17 +587,17 @@ h6 {
     background: rgba(255, 51, 0, 0.2);
     position: relative;
     font-weight: bold; }
-  /* line 218, ../sass/styles.scss */
+  /* line 256, ../sass/styles.scss */
   .nav-tabs li.active a,
   .nav-tabs li a:hover {
     background: #FF3300;
     color: #FFF; }
 
-/* line 225, ../sass/styles.scss */
+/* line 263, ../sass/styles.scss */
 .team-wrapper,
 .lab-wrapper {
   padding: 0 10px; }
-  /* line 229, ../sass/styles.scss */
+  /* line 267, ../sass/styles.scss */
   .team-wrapper .project,
   .team-wrapper .person,
   .lab-wrapper .project,
@@ -600,13 +605,13 @@ h6 {
     padding: 12px;
     background: #ECECEC;
     text-align: center; }
-    /* line 238, ../sass/styles.scss */
+    /* line 276, ../sass/styles.scss */
     .team-wrapper .project h4,
     .team-wrapper .person h4,
     .lab-wrapper .project h4,
     .lab-wrapper .person h4 {
       font-weight: normal; }
-    /* line 241, ../sass/styles.scss */
+    /* line 279, ../sass/styles.scss */
     .team-wrapper .project img,
     .team-wrapper .person img,
     .lab-wrapper .project img,
@@ -616,28 +621,28 @@ h6 {
       border-radius: 50px;
       border: 3px solid #FF3300; }
 
-/* line 250, ../sass/styles.scss */
+/* line 288, ../sass/styles.scss */
 .works-wrapper .project-img {
   width: 300px; }
 
-/* line 254, ../sass/styles.scss */
+/* line 292, ../sass/styles.scss */
 .more-info {
   display: none;
   text-align: left; }
-  /* line 258, ../sass/styles.scss */
+  /* line 296, ../sass/styles.scss */
   .more-info p {
     padding-bottom: 10px; }
-  /* line 261, ../sass/styles.scss */
+  /* line 299, ../sass/styles.scss */
   .more-info p + p {
     padding: 5px 0 15px; }
-  /* line 264, ../sass/styles.scss */
+  /* line 302, ../sass/styles.scss */
   .more-info .person-links,
   .more-info .lab-tags {
     margin: 0 10px;
     padding: 15px 10px;
     list-style: none;
     border-top: 2px dotted #FF3300; }
-    /* line 271, ../sass/styles.scss */
+    /* line 309, ../sass/styles.scss */
     .more-info .person-links li,
     .more-info .lab-tags li {
       display: inline-block; }
@@ -645,7 +650,7 @@ h6 {
 /* ==========================================================================
    Footer
    ========================================================================== */
-/* line 280, ../sass/styles.scss */
+/* line 318, ../sass/styles.scss */
 .contact-footer {
   background: #fff;
   bottom: 3em;
@@ -656,14 +661,14 @@ h6 {
   position: fixed;
   -webkit-transition: bottom 0.5s;
           transition: bottom 0.5s; }
-  /* line 289, ../sass/styles.scss */
+  /* line 327, ../sass/styles.scss */
   .contact-footer .footer-close {
     float: right;
     margin: 1em;
     overflow: hidden;
     width: 1em; }
 
-/* line 296, ../sass/styles.scss */
+/* line 334, ../sass/styles.scss */
 .footer-toggle {
   bottom: 0;
   color: #fff;
@@ -678,30 +683,30 @@ h6 {
   width: 100%;
   z-index: 2; }
 
-/* line 310, ../sass/styles.scss */
+/* line 348, ../sass/styles.scss */
 .contact-block {
   display: inline-block;
   vertical-align: top; }
 
+/* line 352, ../sass/styles.scss */
 .contact-links {
-  list-style: none;
-}
-.contact-links li {
-  display: inline-block;
-  width: 20px;
-  overflow: hidden;
-}
+  list-style: none; }
+  /* line 355, ../sass/styles.scss */
+  .contact-links li {
+    display: inline-block;
+    width: 20px;
+    overflow: hidden; }
 
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 319, ../sass/styles.scss */
+/* line 367, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.2s linear;
           transition: color 0.2s linear; }
 
-/* line 324, ../sass/styles.scss */
+/* line 372, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.2s linear;
           transition: background-color 0.2s linear; }
@@ -710,16 +715,16 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 334, ../sass/styles.scss */
+/* line 382, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 335, ../sass/styles.scss */
+/* line 383, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 336, ../sass/styles.scss */
+/* line 384, ../sass/styles.scss */
 .alignright {
   float: right; }
 

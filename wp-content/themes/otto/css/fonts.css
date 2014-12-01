@@ -20,98 +20,102 @@
 
 /* line 27, ../sass/fonts.scss */
 .icon-icono_otto:before {
-  content: "\e600"; }
+  content: "\1f419"; }
 
 /* line 30, ../sass/fonts.scss */
 .icon-icono_8:before {
-  content: "\e601"; }
+  content: "\221e"; }
 
 /* line 33, ../sass/fonts.scss */
-.icon-m_tipografico:before {
+.icon-8manos:before {
   content: "\e602"; }
 
 /* line 36, ../sass/fonts.scss */
-.icon-imoticon:before {
-  content: "\e608"; }
+.icon-principios:before {
+  content: "\e60d"; }
 
 /* line 39, ../sass/fonts.scss */
-.icon-lab:before {
-  content: "\e609"; }
+.icon-equipo:before {
+  content: "\1f464"; }
 
 /* line 42, ../sass/fonts.scss */
-.icon-team:before {
-  content: "\e60b"; }
+.icon-servicios:before {
+  content: "\1f4bc"; }
 
 /* line 45, ../sass/fonts.scss */
-.icon-back:before {
-  content: "\e603"; }
-
-/* line 48, ../sass/fonts.scss */
-.icon-work:before {
-  content: "\e60c"; }
-
-/* line 51, ../sass/fonts.scss */
-.icon-menu:before {
-  content: "\e604"; }
-
-/* line 54, ../sass/fonts.scss */
-.icon-close:before {
-  content: "\e605"; }
-
-/* line 57, ../sass/fonts.scss */
-.icon-heart:before {
-  content: "\e607"; }
-
-/* line 60, ../sass/fonts.scss */
-.icon-website:before {
+.icon-trabajo:before {
   content: "\e60a"; }
 
+/* line 48, ../sass/fonts.scss */
+.icon-8lab:before {
+  content: "\e609"; }
+
+/* line 51, ../sass/fonts.scss */
+.icon-contacto:before {
+  content: "\1f60e"; }
+
+/* line 54, ../sass/fonts.scss */
+.icon-back:before {
+  content: "\2190"; }
+
+/* line 57, ../sass/fonts.scss */
+.icon-menu:before {
+  content: "\2261"; }
+
+/* line 60, ../sass/fonts.scss */
+.icon-close:before {
+  content: "\78"; }
+
 /* line 63, ../sass/fonts.scss */
-.icon-message:before {
-  content: "\e606"; }
+.icon-heart:before {
+  content: "\2665"; }
 
 /* line 66, ../sass/fonts.scss */
-.icon-phone:before {
-  content: "\e611"; }
+.icon-target:before {
+  content: "\1f3af"; }
 
 /* line 69, ../sass/fonts.scss */
-.icon-frontend:before {
-  content: "\e612"; }
+.icon-gear:before {
+  content: "\26ed"; }
 
 /* line 72, ../sass/fonts.scss */
-.icon-twitter:before {
+.icon-computer:before {
   content: "\e60f"; }
 
 /* line 75, ../sass/fonts.scss */
-.icon-github:before {
-  content: "\e616"; }
-
-/* line 78, ../sass/fonts.scss */
-.icon-github2:before {
-  content: "\e617"; }
-
-/* line 81, ../sass/fonts.scss */
-.icon-tumblr:before {
+.icon-tools:before {
   content: "\e610"; }
 
+/* line 78, ../sass/fonts.scss */
+.icon-email:before {
+  content: "\e611"; }
+
+/* line 81, ../sass/fonts.scss */
+.icon-twitter:before {
+  content: "\e612"; }
+
 /* line 84, ../sass/fonts.scss */
-.icon-comment-alt:before {
-  content: "\e60d"; }
+.icon-tumblr:before {
+  content: "\74"; }
 
 /* line 87, ../sass/fonts.scss */
-.icon-backend:before {
-  content: "\e60e"; }
-
-/* line 90, ../sass/fonts.scss */
-.icon-envelope:before {
-  content: "\e613"; }
-
-/* line 93, ../sass/fonts.scss */
-.icon-branding:before {
+.icon-linkedin:before {
   content: "\e614"; }
 
-/* line 96, ../sass/fonts.scss */
-.icon-design:before {
+/* line 90, ../sass/fonts.scss */
+.icon-github:before {
   content: "\e615"; }
+
+/* line 93, ../sass/fonts.scss */
+.icon-direccion:before {
+  content: "\e616"; }
+
+/* line 96, ../sass/fonts.scss */
+.icon-telefono:before {
+  content: "\260e"; }
+
+/* line 99, ../sass/fonts.scss */
+.icon-correo:before {
+  content: "\2709"; }
 
 /*# sourceMappingURL=fonts.css.map */
