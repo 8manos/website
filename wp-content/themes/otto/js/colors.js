@@ -71,8 +71,6 @@
 
 		}else if( Modernizr.touch && ( ( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ) || ( r_x_inicial === null && r_y_inicial === null ) ) ){
 			// console.log( 'Touch pero quieto' );
-
-			randomColor();
 			setInterval( randomColor() , 5000 );
 
 		}else{
@@ -215,7 +213,5 @@
 		var converted = ( val * 100 ) / 180;
 		return Math.floor( converted );
 	}
-
-	$(document).on( 'load' , randomColor() );
 
 })(jQuery);
