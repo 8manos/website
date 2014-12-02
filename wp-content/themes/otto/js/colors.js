@@ -161,6 +161,9 @@
 			var random_component = componentes[ Math.floor(Math.random() * componentes.length) ];
 			console.log( random_component );
 			random_component = 0;
+			console.log( "R", r );
+			console.log( "G", g );
+			console.log( "B", b );
 			console.log( "blanco!" );
 		}
 
