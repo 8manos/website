@@ -25,7 +25,7 @@
 		var touch_support = Modernizr.touch;
 
 		if( touch_support == false && ( ( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ) || ( r_x_inicial === null && r_y_inicial === null ) ) ){
-			//console.log( 'No me he movido y no tengo touch' );
+			console.log( 'No me he movido y no tengo touch' );
 
 			r_z = 0;
 
@@ -69,18 +69,19 @@
 			}
 
 		}else if( Modernizr.touch && ( ( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ) || ( r_x_inicial === null && r_y_inicial === null ) ) ){
-			//console.log( 'Touch pero quieto' );
+			console.log( 'Touch pero quieto' );
 
 			randomColor();
 			setInterval( randomColor() , 5000 );
 
 		}else{
-			//console.log( 'Me moví ');
+			console.log( 'Me moví ');
 		}
 
 	}, 1000);
 
 	function randomColor(){
+		console.log( "Random color called" );
 
 		var r = Math.floor((Math.random() * 255) + 1);
 		var g = Math.floor((Math.random() * 255) + 1);
