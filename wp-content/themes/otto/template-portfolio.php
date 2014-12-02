@@ -1,7 +1,7 @@
 <script id="portfolioTemplate" type="text/template">
   <section class="portfolio main-section">
     <div class="inner-header">
-      <h2><%= title %></h2>
+      <h2 class="icon-trabajo"><%= title %></h2>
       <%= content_display %>
     </div>
     <div class="works-wrapper">

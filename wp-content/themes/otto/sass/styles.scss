@@ -17,6 +17,8 @@ $gris: #ECECEC;
 $bar-height: 40px;
 $contact-height: 3em;
 
+$inner_h2_height: 70px;
+
 /* =============================================================================
    Generales
    ========================================================================== */
@@ -215,15 +217,32 @@ h6 { font-size: $size-seis;}
    ========================================================================== */
 
 /*encabezado modulo*/
-.inner-header {  
+.inner-header {
 
-   h2 {
+  h2 {
+    background: orange;
+    color: $naranja;
+    font-style: normal;
+    height: $inner_h2_height;
+    line-height: $inner_h2_height;
+    margin: 0;
+    text-transform: uppercase;
+    
+    span:after {
+      content: '\00a0 \2f \00a0';
+    }
+
+    &:before {
+      background: $naranja;
+      color: white;
       display: inline-block;
-   
-      span:after {
-       content: '\00a0 \2f \00a0';
-      }
-   }
+      font-size: xx-large;
+      height: $inner_h2_height;
+      line-height: $inner_h2_height;
+      padding: 0 0.5em;
+      vertical-align: top;
+    }
+  }
 }
 .back-link {
    display: inline-block;
