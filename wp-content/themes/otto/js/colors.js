@@ -72,7 +72,7 @@
 			//console.log( 'Touch pero quieto' );
 
 			randomColor();
-			setInterval( randomColor , 5000 );
+			setInterval( randomColor() , 5000 );
 
 		}else{
 			//console.log( 'Me moví ');
