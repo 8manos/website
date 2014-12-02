@@ -158,7 +158,9 @@
 
 		if( ( r + g + b ) > 700 ){
 			// Escogemos un componente de color al azar y lo bajamos a 0 para que nunca haya blanco
-			componentes[ Math.floor(Math.random() * componentes.length) ] = 0;
+			var random_component = componentes[ Math.floor(Math.random() * componentes.length) ];
+			console.log( random_component );
+			random_component = 0;
 			console.log( "blanco!" );
 		}
 
