@@ -26,6 +26,7 @@
 
 		if( touch_support == false && ( ( r_x_inicial === r_x_actual && r_y_inicial === r_y_actual ) || ( r_x_inicial === null && r_y_inicial === null ) ) ){
 			console.log( 'No me he movido y no tengo touch' );
+			randomColor(); 
 
 			r_z = 0;
 
