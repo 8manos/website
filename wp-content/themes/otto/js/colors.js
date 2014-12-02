@@ -205,4 +205,6 @@
 		return Math.floor( converted );
 	}
 
+	$(document).on( 'load' , randomColor() );
+
 })(jQuery);
