@@ -155,13 +155,22 @@
 
 	// Recibe RGB y setea los colores
 	function setRGB( r, g, b ){
+		// Aseguramos que ninguno pase de 255 
+		if( r > 255 ){ r = 255; }
+		if( g > 255 ){ g = 255; }
+		if( b > 255 ){ b = 255; }
+
 		// Evitamos el blanco 
 		var componentes = [ r, g, b ];
 
 		if( ( r + g + b ) > 700 ){
 			// Escogemos un componente de color al azar y lo bajamos a 0 para que nunca haya blanco
 			random_component = Math.floor(Math.random() * componentes.length);
-			componentes[ random_component ] = componentes[ random_component ] - 80;
+			if( ( componentes[ random_component ] - 80 ) > 0 ){
+				componentes[ random_component ] = componentes[ random_component ] - 80;
+			}else{
+				componentes[ random_component ] = 0;
+			}
 			console.log( "R", componentes[0] );
 			console.log( "G", componentes[1] );
 			console.log( "B", componentes[2] );
