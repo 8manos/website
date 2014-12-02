@@ -153,6 +153,13 @@
 
 	// Recibe RGB y setea los colores
 	function setRGB( r, g, b ){
+		// Evitamos el blanco 
+		var componentes = [ r, g, b ];
+
+		if( ( r + g + b ) > 700 ){
+			// Escogemos un componente de color al azar y lo bajamos a 0 para que nunca haya blanco
+			componentes[ Math.floor(Math.random() * componentes.length) ] = 0;
+		}
 
 		// Setting de color
 		$( 'a, .color' ).not('.main-nav a').css( 'color', 'rgb('+r+','+g+','+b+')' );
