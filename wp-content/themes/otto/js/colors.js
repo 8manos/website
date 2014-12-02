@@ -127,6 +127,13 @@
 
 	function handleAccelerometer ( r_x, r_y, r_z ){
 
+		$('a, .color, .color-bg').not('.main-nav a').css({
+			WebkitTransition : 'all 0.2s linear',
+			MozTransition    : 'all 0.2s linear',
+			MsTransition     : 'all 0.2s linear',
+			OTransition      : 'all 0.2s linear',
+			transition       : 'all 0.2s linear'
+		});
 
 		// convierte rangos de sensores para que todos vayan de 0 a 360 ver: http://w3c.github.io/deviceorientation/spec-source-orientation.html
 		var x = r_x + 180;           
