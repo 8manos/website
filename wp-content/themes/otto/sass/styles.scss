@@ -205,7 +205,7 @@ h6 { font-size: $size-seis;}
 }
 
 .wrap {
-  background: #eee;
+  background: #fff;
   margin-bottom: $contact-height;
   min-height: calc(100% - 2 * #{$bar-height} - #{$contact-height});
   padding: $bar-height 0;
@@ -219,7 +219,7 @@ h6 { font-size: $size-seis;}
 /*encabezado modulo*/
 .inner-header {
 
-  h2 {
+  h1 {
     background: orange;
     color: $naranja;
     font-style: normal;
@@ -243,11 +243,51 @@ h6 { font-size: $size-seis;}
       vertical-align: top;
     }
   }
+
+  .sect-conventions {
+    border-bottom: 2px dotted;
+    border-top: 2px dotted;
+    padding: 0 1em;
+    text-align: center;
+
+    h3 {
+      font-style: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  .section-desc {
+    padding: 1em;
+  }
 }
 .back-link {
-   display: inline-block;
-   float: right; 
+  display: inline-block;
+  float: right; 
 }
+
+.conventions {
+  color: black;
+  list-style-type: none;
+  padding: 0;
+
+  .convention {
+    display: inline-block;
+    font-style: italic;
+    margin: 0.5em;
+
+    &:before {
+      background-color: $gris;
+      border-radius: 50%;
+      display: inline-block;
+      font-size: 1.5em;
+      height: 1.5em;
+      line-height: 1.5em;
+      vertical-align: middle;
+      width: 1.5em;
+    }
+  }
+}
+
 .nav-tabs{
   list-style: none;
   width: 100%;

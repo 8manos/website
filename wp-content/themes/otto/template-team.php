@@ -1,7 +1,7 @@
 <script id="teamTemplate" type="text/template">
   <section class="team main-section">
     <div class="inner-header">
-      <h2 class="icon-equipo"><%= title %></h2>
+      <h1 class="icon-equipo"><%= title %></h1>
       <%= content_display %>
     </div>
     <div class="team-nav">

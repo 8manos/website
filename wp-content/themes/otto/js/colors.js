@@ -184,7 +184,7 @@
 
 		// Setting de color
 		$( 'a, .color' ).not('.main-nav a').css( 'color', 'rgb('+componentes[0]+','+componentes[1]+','+componentes[2]+')' );
-		$( '.color-bg' ).css( 'background-color', 'rgb('+componentes[0]+','+componentes[1]+','+componentes[2]+')' );
+		$( '.color-bg, h1::before' ).css( 'background-color', 'rgb('+componentes[0]+','+componentes[1]+','+componentes[2]+')' );
 
 	}
 
