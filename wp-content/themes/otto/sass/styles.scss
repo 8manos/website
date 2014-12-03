@@ -359,7 +359,7 @@ h6 { font-size: $size-seis;}
 
     li {
       display: inline-block;
-      margin: 0.5em;
+      margin: 0 0.25em;
       text-align: center;
 
       &:before {
@@ -369,6 +369,7 @@ h6 { font-size: $size-seis;}
         font-size: 1.5em;
         height: 1.5em;
         line-height: 1.5em;
+        margin-right: 0;
         vertical-align: middle;
         width: 1.5em;
       }

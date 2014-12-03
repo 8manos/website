@@ -134,13 +134,6 @@ OM.Views.ProjectsView = Backbone.View.extend({
         });
       }*/
     });
-  },
-  beforeRender: function () {
-    //console.log("Before render");
-  },
-  afterRender: function () {
-    //open first project after load
-    //this.toggleDetails($('article.project:eq(0)'));
   }
 });
 
