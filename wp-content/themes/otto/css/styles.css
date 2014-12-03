@@ -76,7 +76,7 @@
   content: "\1f3af"; }
 
 /* line 69, ../sass/fonts.scss */
-.icon-gear:before {
+.icon-gear:before, .icon-desarrollo:before {
   content: "\26ed"; }
 
 /* line 72, ../sass/fonts.scss */
@@ -84,7 +84,8 @@
   content: "\e60f"; }
 
 /* line 75, ../sass/fonts.scss */
-.icon-tools:before {
+.icon-tools:before, .icon-diseno:before,
+.icon-rediseno:before {
   content: "\e610"; }
 
 /* line 78, ../sass/fonts.scss */
@@ -560,44 +561,47 @@ h6 {
    Content
    ========================================================================== */
 /*encabezado módulo*/
-/* line 226, ../sass/styles.scss */
-.inner-header .sect-conventions {
-  border-bottom: 2px dotted;
-  border-top: 2px dotted;
-  padding: 0 1em;
-  text-align: center; }
-  /* line 232, ../sass/styles.scss */
-  .inner-header .sect-conventions h3 {
-    font-style: normal;
-    text-transform: uppercase; }
-/* line 238, ../sass/styles.scss */
+/* line 236, ../sass/styles.scss */
 .inner-header .section-desc {
   padding: 1em; }
 
-/* line 242, ../sass/styles.scss */
+/* line 240, ../sass/styles.scss */
 .back-link {
   display: inline-block;
   float: right; }
 
-/* line 246, ../sass/styles.scss */
+/* line 244, ../sass/styles.scss */
+.sect-conventions {
+  border-bottom: 2px dotted;
+  border-top: 2px dotted;
+  color: #FF3300;
+  margin: 1em auto;
+  padding: 0 1em;
+  text-align: center; }
+  /* line 252, ../sass/styles.scss */
+  .sect-conventions h3 {
+    font-style: normal;
+    text-transform: uppercase; }
+
+/* line 257, ../sass/styles.scss */
 .section-name {
   background: #ECECEC;
   height: 70px;
   line-height: 70px; }
-  /* line 251, ../sass/styles.scss */
+  /* line 262, ../sass/styles.scss */
   .section-name button {
     color: #FF3300;
     float: right;
     height: 100%;
     padding: 0 1em; }
-  /* line 257, ../sass/styles.scss */
+  /* line 268, ../sass/styles.scss */
   .section-name h1 {
     color: #FF3300;
     font-style: normal;
     margin: 0;
     padding: 0 1em;
     text-transform: uppercase; }
-  /* line 264, ../sass/styles.scss */
+  /* line 275, ../sass/styles.scss */
   .section-name [class^="icon-"] {
     background: #FF3300;
     box-sizing: border-box;
@@ -610,24 +614,24 @@ h6 {
     text-align: center;
     vertical-align: top;
     width: 70px; }
-    /* line 277, ../sass/styles.scss */
+    /* line 288, ../sass/styles.scss */
     .section-name [class^="icon-"]:before {
       margin: 0; }
-  /* line 281, ../sass/styles.scss */
+  /* line 292, ../sass/styles.scss */
   .section-name > * {
     display: inline-block; }
 
-/* line 285, ../sass/styles.scss */
+/* line 296, ../sass/styles.scss */
 .conventions {
   color: black;
   list-style-type: none;
   padding: 0; }
-  /* line 290, ../sass/styles.scss */
+  /* line 301, ../sass/styles.scss */
   .conventions .convention {
     display: inline-block;
     font-style: italic;
     margin: 0.5em; }
-    /* line 295, ../sass/styles.scss */
+    /* line 306, ../sass/styles.scss */
     .conventions .convention:before {
       background-color: #ECECEC;
       border-radius: 50%;
@@ -638,7 +642,7 @@ h6 {
       vertical-align: middle;
       width: 1.5em; }
 
-/* line 308, ../sass/styles.scss */
+/* line 319, ../sass/styles.scss */
 .nav-tabs {
   list-style: none;
   width: 100%;
@@ -647,12 +651,12 @@ h6 {
   text-transform: uppercase;
   padding: 0 8px;
   border-bottom: 1px solid #FF3300; }
-  /* line 317, ../sass/styles.scss */
+  /* line 328, ../sass/styles.scss */
   .nav-tabs li {
     display: inline-block;
     margin-left: 1px;
     width: 32%; }
-  /* line 323, ../sass/styles.scss */
+  /* line 334, ../sass/styles.scss */
   .nav-tabs li a {
     display: block;
     color: #FFF;
@@ -660,17 +664,61 @@ h6 {
     background: rgba(255, 51, 0, 0.2);
     position: relative;
     font-weight: bold; }
-  /* line 332, ../sass/styles.scss */
+  /* line 343, ../sass/styles.scss */
   .nav-tabs li.active a,
   .nav-tabs li a:hover {
     background: #FF3300;
     color: #FFF; }
 
-/* line 339, ../sass/styles.scss */
+/* line 350, ../sass/styles.scss */
+.project {
+  background-color: #ECECEC;
+  margin: 0.5em 0;
+  padding: 1em;
+  position: relative; }
+  /* line 356, ../sass/styles.scss */
+  .project .project-tags {
+    list-style-type: none;
+    padding: 0; }
+    /* line 360, ../sass/styles.scss */
+    .project .project-tags li {
+      display: inline-block;
+      margin: 0.5em;
+      text-align: center; }
+      /* line 365, ../sass/styles.scss */
+      .project .project-tags li:before {
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+        font-size: 1.5em;
+        height: 1.5em;
+        line-height: 1.5em;
+        vertical-align: middle;
+        width: 1.5em; }
+  /* line 378, ../sass/styles.scss */
+  .project .project-title {
+    margin: 0; }
+  /* line 382, ../sass/styles.scss */
+  .project .toggle-details {
+    height: 1em;
+    padding: 0;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    -webkit-transition: -webkit-transform 0.3s;
+            transition: transform 0.3s;
+    width: 1em; }
+    /* line 391, ../sass/styles.scss */
+    .project .toggle-details.more {
+      -webkit-transform: rotate(315deg);
+          -ms-transform: rotate(315deg);
+              transform: rotate(315deg); }
+
+/* line 397, ../sass/styles.scss */
 .team-wrapper,
 .lab-wrapper {
   padding: 0 10px; }
-  /* line 343, ../sass/styles.scss */
+  /* line 401, ../sass/styles.scss */
   .team-wrapper .project,
   .team-wrapper .person,
   .lab-wrapper .project,
@@ -678,13 +726,13 @@ h6 {
     padding: 12px;
     background: #ECECEC;
     text-align: center; }
-    /* line 352, ../sass/styles.scss */
+    /* line 410, ../sass/styles.scss */
     .team-wrapper .project h4,
     .team-wrapper .person h4,
     .lab-wrapper .project h4,
     .lab-wrapper .person h4 {
       font-weight: normal; }
-    /* line 355, ../sass/styles.scss */
+    /* line 413, ../sass/styles.scss */
     .team-wrapper .project img,
     .team-wrapper .person img,
     .lab-wrapper .project img,
@@ -694,28 +742,31 @@ h6 {
       border-radius: 50px;
       border: 3px solid #FF3300; }
 
-/* line 364, ../sass/styles.scss */
-.works-wrapper .project-img {
-  width: 300px; }
+/* line 421, ../sass/styles.scss */
+.works-wrapper {
+  padding: 0.5em; }
+  /* line 424, ../sass/styles.scss */
+  .works-wrapper .project-img {
+    width: 300px; }
 
-/* line 368, ../sass/styles.scss */
+/* line 428, ../sass/styles.scss */
 .more-info {
   display: none;
   text-align: left; }
-  /* line 372, ../sass/styles.scss */
+  /* line 432, ../sass/styles.scss */
   .more-info p {
     padding-bottom: 10px; }
-  /* line 375, ../sass/styles.scss */
+  /* line 435, ../sass/styles.scss */
   .more-info p + p {
     padding: 5px 0 15px; }
-  /* line 378, ../sass/styles.scss */
+  /* line 438, ../sass/styles.scss */
   .more-info .person-links,
   .more-info .lab-tags {
     margin: 0 10px;
     padding: 15px 10px;
     list-style: none;
     border-top: 2px dotted #FF3300; }
-    /* line 385, ../sass/styles.scss */
+    /* line 445, ../sass/styles.scss */
     .more-info .person-links li,
     .more-info .lab-tags li {
       display: inline-block; }
@@ -723,7 +774,7 @@ h6 {
 /* ==========================================================================
    Footer
    ========================================================================== */
-/* line 394, ../sass/styles.scss */
+/* line 454, ../sass/styles.scss */
 .contact-footer {
   background: #fff;
   bottom: 3em;
@@ -735,7 +786,7 @@ h6 {
   -webkit-transition: bottom 0.5s;
           transition: bottom 0.5s; }
 
-/* line 403, ../sass/styles.scss */
+/* line 463, ../sass/styles.scss */
 .footer-toggle {
   bottom: 0;
   color: #fff;
@@ -750,15 +801,15 @@ h6 {
   width: 100%;
   z-index: 2; }
 
-/* line 417, ../sass/styles.scss */
+/* line 477, ../sass/styles.scss */
 .contact-block {
   display: inline-block;
   vertical-align: top; }
 
-/* line 421, ../sass/styles.scss */
+/* line 481, ../sass/styles.scss */
 .contact-links {
   list-style: none; }
-  /* line 424, ../sass/styles.scss */
+  /* line 484, ../sass/styles.scss */
   .contact-links li {
     display: inline-block;
     width: 20px;
@@ -767,13 +818,13 @@ h6 {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 436, ../sass/styles.scss */
+/* line 496, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.2s linear;
           transition: color 0.2s linear; }
 
-/* line 441, ../sass/styles.scss */
+/* line 501, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.2s linear;
           transition: background-color 0.2s linear; }
@@ -782,16 +833,16 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 451, ../sass/styles.scss */
+/* line 511, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 452, ../sass/styles.scss */
+/* line 512, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 453, ../sass/styles.scss */
+/* line 513, ../sass/styles.scss */
 .alignright {
   float: right; }
 

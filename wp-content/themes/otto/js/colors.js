@@ -89,11 +89,11 @@
 		setRGB( r, g, b );
 
 		$('a, .color, .color-bg').not('.main-nav a').css({
-			WebkitTransition : 'all 5s linear',
-			MozTransition    : 'all 5s linear',
-			MsTransition     : 'all 5s linear',
-			OTransition      : 'all 5s linear',
-			transition       : 'all 5s linear'
+			WebkitTransition : 'all 0.5s linear',
+			MozTransition    : 'all 0.5s linear',
+			MsTransition     : 'all 0.5s linear',
+			OTransition      : 'all 0.5s linear',
+			transition       : 'all 0.5s linear'
 		});
 
 	}

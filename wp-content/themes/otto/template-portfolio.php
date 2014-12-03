@@ -47,30 +47,35 @@
 
   <% _.each(posts, function(post){ %>
     <article class="project">
-      <div class="toggle-details more">+</div>
-      <h3><%= post.title %></h3>
-      <h4><%= post.date.substr(0,7) %></h4>
-      <picture>
-        <source srcset="<%= post.images.project %> 1x, <%= post.images.project2x %> 2x">
-        <img class="project-img" src="<%= post.images.project %>" alt="Website 8manos">
-      </picture>
+      <button type="button" class="toggle-details more color icon-close"></button>
+      <h3 class="project-title"><%= post.title %></h3>
       <ul class="project-tags">
         <% _.each(post.taxonomies.post_tag, function(tag){ %>
-          <li><span class="icon-<%= tag.slug %>"></span><%= tag.name %></li>
+          <li class="icon-<%= tag.slug %>"></li>
         <% }); %>
       </ul>
-      <div class="featuring"><%= post.featuring %></div>
-
       <div class="more-info">
-        <p class="project-link"><a href="<%= setHttp(post.ext_link) %>">Visita <%= post.title %></a></p>
-        <%= post.content_display %>
+        <figure>
+          <img class="project-img" src="<%= post.images.project %>" srcset="<%= post.images.project %> 1x, <%= post.images.project2x %> 2x" alt="Website 8manos">
+        </figure>
+        <div class="project-info">
+          <p class="data">Cliente: <strong><%= post.title %></strong></p>
+          <p class="data">Co-workers: <strong><%= post.featuring %></strong></p>
+          <p class="data">Año: <strong><%= post.date.substr(0,4) %></strong></p>
+          <div class="project-desc">
+            <%= post.content_display %>
+          </div>
+        </div>
         <div class="project-gallery">
-          <div class="owl-carousel">
+          <div id="carousel-<%= post.name %>" class="owl-carousel">
             <% _.each(post.media, function(media){ %>
-              <img src="<%= mediaGalleryUrl(media.sizes) %>">
+              <figure>
+                <img src="<%= mediaGalleryUrl(media.sizes) %>">
+              </figure>
             <% }); %>
           </div>
         </div>
+        <p class="project-link"><a href="<%= setHttp(post.ext_link) %>">Visita <%= post.title %></a></p>
       </div>
     </article>
   <% }); %>

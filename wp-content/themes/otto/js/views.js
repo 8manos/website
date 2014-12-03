@@ -123,27 +123,21 @@ OM.Views.ProjectsView = Backbone.View.extend({
   },
   clickToggle: function(e) {
     var $project = $(e.currentTarget).parent();
-    this.toggleDetails($project);
-  },
-  toggleDetails: function($project) {
     $project.find('.toggle-details').toggleClass('more less');
-
     $project.find('.more-info').slideToggle(function() {
-      if ( $(this).is(':visible') ) {
+      /*if($(this).is(':visible')){
         $project.find('.owl-carousel').owlCarousel({
           items: 1,
           loop: true,
           nav: true,
           navText: ['&#60;','&#62;']
         });
-      }
+      }*/
     });
   },
-
   beforeRender: function () {
     //console.log("Before render");
   },
-
   afterRender: function () {
     //open first project after load
     //this.toggleDetails($('article.project:eq(0)'));

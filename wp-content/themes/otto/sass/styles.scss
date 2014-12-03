@@ -217,24 +217,22 @@ h6 { font-size: $size-seis;}
   position: relative;
   z-index: 1;
 }
+
+.icon-desarrollo {
+  @extend .icon-gear
+}
+
+.icon-diseno,
+.icon-rediseno {
+  @extend .icon-tools
+}
+
 /* ==========================================================================
    Content
    ========================================================================== */
 
 /*encabezado módulo*/
 .inner-header {
-  .sect-conventions {
-    border-bottom: 2px dotted;
-    border-top: 2px dotted;
-    padding: 0 1em;
-    text-align: center;
-
-    h3 {
-      font-style: normal;
-      text-transform: uppercase;
-    }
-  }
-
   .section-desc {
     padding: 1em;
   }
@@ -242,6 +240,19 @@ h6 { font-size: $size-seis;}
 .back-link {
   display: inline-block;
   float: right; 
+}
+.sect-conventions {
+  border-bottom: 2px dotted;
+  border-top: 2px dotted;
+  color: $naranja;
+  margin: 1em auto;
+  padding: 0 1em;
+  text-align: center;
+
+  h3 {
+    font-style: normal;
+    text-transform: uppercase;
+  }
 }
 .section-name {
   background: $gris;
@@ -336,6 +347,53 @@ h6 { font-size: $size-seis;}
    }
 }
 
+.project {
+  background-color: $gris;
+  margin: 0.5em 0;
+  padding: 1em;
+  position: relative;
+
+  .project-tags {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 0.5em;
+      text-align: center;
+
+      &:before {
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+        font-size: 1.5em;
+        height: 1.5em;
+        line-height: 1.5em;
+        vertical-align: middle;
+        width: 1.5em;
+      }
+    }
+  }
+
+  .project-title {
+    margin: 0;
+  }
+
+  .toggle-details {
+    height: 1em;
+    padding: 0;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    transition: transform 0.3s;
+    width: 1em;
+
+    &.more{
+      transform: rotate(315deg);
+    }
+  }
+}
+
 .team-wrapper,
 .lab-wrapper {
    padding: 0 10px;
@@ -361,6 +419,8 @@ h6 { font-size: $size-seis;}
    }
 }
 .works-wrapper {
+  padding: 0.5em;
+
   .project-img {
     width: 300px;
   }
