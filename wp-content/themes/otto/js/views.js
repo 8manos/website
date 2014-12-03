@@ -109,9 +109,7 @@ OM.Views.ProjectsView = Backbone.View.extend({
     this.template = _.template($('#projectsTemplate').html());
 
     this.render = _.wrap(this.render, function(render) {
-      this.beforeRender();
       render.apply(this);
-      this.afterRender();
     });
 
     this.render();
@@ -125,14 +123,14 @@ OM.Views.ProjectsView = Backbone.View.extend({
     var $project = $(e.currentTarget).parent();
     $project.find('.toggle-details').toggleClass('more less');
     $project.find('.more-info').slideToggle(function() {
-      /*if($(this).is(':visible')){
+      if($(this).is(':visible')){
         $project.find('.owl-carousel').owlCarousel({
           items: 1,
           loop: true,
           nav: true,
           navText: ['&#60;','&#62;']
         });
-      }*/
+      }
     });
   }
 });
