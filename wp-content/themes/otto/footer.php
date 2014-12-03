@@ -1,8 +1,11 @@
 	</div>
 
 	<footer role="contentinfo" class="contact-footer">
-		<a href="#" class="footer-close icon-close">X</a>
-		<h1 class="section-header icon-contacto">Contacto</h1>
+		<div class="section-name">
+        	<div class="icon-contacto color-bg"></div>
+        	<h1 class="color">Contacto</h1>
+        	<button type="button" class="color icon-close footer-close"></button>
+      	</div>
 		<h3>Aca va un texto introductorio que se administra como una página en wordpress. O podemos poner un texto relacionado con la sección en la que uno se encuentra?</h3>
 		<p>Prometemos responder en el menor tiempo posible.</p>
 		<form>

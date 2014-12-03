@@ -1,7 +1,11 @@
 <script id="pageTemplate" type="text/template">
 	<section class="<%= name %> main-section">
 		<div class="inner-header">
-			<h1 class="section-header icon-<%= name %>"><%= title %></h1>
+			<div class="section-name">
+	        	<div class="icon-<%= name %> color-bg"></div>
+	        	<h1 class="color"><%= title %></h1>
+	        	<!--<button type="button" class="color icon-close"></button>-->
+	      	</div>
 			<%= content_display %>
 		</div>
 	</section>

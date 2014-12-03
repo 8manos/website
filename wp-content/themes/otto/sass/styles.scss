@@ -46,6 +46,11 @@ body {
     color: black;
   }
 }
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
 a {
    color: $naranja;
    text-decoration: none;
@@ -216,34 +221,8 @@ h6 { font-size: $size-seis;}
    Content
    ========================================================================== */
 
-/*encabezado modulo*/
+/*encabezado módulo*/
 .inner-header {
-
-  h1 {
-    background: orange;
-    color: $naranja;
-    font-style: normal;
-    height: $inner_h2_height;
-    line-height: $inner_h2_height;
-    margin: 0;
-    text-transform: uppercase;
-    
-    span:after {
-      content: '\00a0 \2f \00a0';
-    }
-
-    &:before {
-      background: $naranja;
-      color: white;
-      display: inline-block;
-      font-size: xx-large;
-      height: $inner_h2_height;
-      line-height: $inner_h2_height;
-      padding: 0 0.5em;
-      vertical-align: top;
-    }
-  }
-
   .sect-conventions {
     border-bottom: 2px dotted;
     border-top: 2px dotted;
@@ -264,7 +243,45 @@ h6 { font-size: $size-seis;}
   display: inline-block;
   float: right; 
 }
+.section-name {
+  background: $gris;
+  height: $inner_h2_height;
+  line-height: $inner_h2_height;
 
+  button {
+    color: $naranja;
+    float: right;
+    height: 100%;
+    padding: 0 1em;
+  }
+  h1 {
+    color: $naranja;
+    font-style: normal;
+    margin: 0;
+    padding: 0 1em;
+    text-transform: uppercase;
+  }
+  [class^="icon-"] {
+    background: $naranja;
+    box-sizing: border-box;
+    color: white;
+    display: inline-block;
+    font-size: xx-large;
+    height: $inner_h2_height;
+    line-height: $inner_h2_height;
+    padding: 0 0.5em;
+    text-align: center;
+    vertical-align: top;
+    width: $inner_h2_height;
+
+    &:before {
+      margin: 0;
+    }
+  }
+  & > * {
+    display: inline-block;
+  }
+}
 .conventions {
   color: black;
   list-style-type: none;
@@ -382,13 +399,6 @@ h6 { font-size: $size-seis;}
   overflow: auto;
   position: fixed;
   transition: bottom 0.5s;
-
-  .footer-close {
-    float: right;
-    margin: 1em;
-    overflow: hidden;
-    width: 1em;
-  }
 }
 .footer-toggle {
   bottom: 0;

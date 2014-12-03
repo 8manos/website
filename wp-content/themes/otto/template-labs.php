@@ -1,7 +1,11 @@
 <script id="labTemplate" type="text/template">
   <section class="lab main-section">
     <div class="inner-header">
-      <h1 class="icon-8lab"><%= title %></h1>
+      <div class="section-name">
+        <div class="icon-8lab color-bg"></div>
+        <h1 class="color"><%= title %></h1>
+        <!--<button type="button" class="color icon-close"></button>-->
+      </div>
       <%= content_display %>
     </div>
     <div class="lab-wrapper">

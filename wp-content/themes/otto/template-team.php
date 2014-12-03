@@ -1,7 +1,11 @@
 <script id="teamTemplate" type="text/template">
   <section class="team main-section">
     <div class="inner-header">
-      <h1 class="icon-equipo"><%= title %></h1>
+      <div class="section-name">
+        <div class="icon-equipo color-bg"></div>
+        <h1 class="color"><%= title %></h1>
+        <!--<button type="button" class="color icon-close"></button>-->
+      </div>
       <%= content_display %>
     </div>
     <div class="team-nav">

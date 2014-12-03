@@ -1,7 +1,11 @@
 <script id="portfolioTemplate" type="text/template">
   <section class="portfolio main-section">
     <div class="inner-header">
-      <h1 class="icon-trabajo color"><%= title %></h1>
+      <div class="section-name">
+        <div class="icon-trabajo color-bg"></div>
+        <h1 class="color"><%= title %></h1>
+        <!--<button type="button" class="color icon-close"></button>-->
+      </div>
       <div class="section-desc">
         <%= content_display %>
         <h2>Amor por la tecnología + habilidades técnicas</h2>
