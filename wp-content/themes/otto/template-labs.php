@@ -6,7 +6,12 @@
         <h1 class="color"><%= title %></h1>
         <!--<button type="button" class="color icon-close"></button>-->
       </div>
-      <%= content_display %>
+      <div class="section-desc">
+        <%= content_display %>
+        <h2>Experimentar para aprender... y compartir.</h2>
+        <p>Fomentamos el uso de tecnologías libres y de código abierto.</p>
+        <p>Aquí encontrarás algunos desarrollos de libre uso:</p>
+      </div>
     </div>
     <div class="lab-wrapper">
     </div>
@@ -24,19 +29,22 @@
   %>
   <% _.each(posts, function(post){ %>
     <article class="project">
-      <div class="toggle-details more">+</div>
-      <h3><%= post.title %></h3>
-      <h4><%= post.date.substr(0,7) %></h4>
+      <button type="button" class="toggle-details more color icon-close"></button>
+      <h3 class="project-title"><%= post.title %></h3>
+      <h4 class="project-subtitle"><%= post.date.substr(0,4) %></h4>
+      <div class="more-info">
+        <div class="project-info">
+          <div class="project-desc">
+            <%= post.content_display %>
+          </div>
+        </div>
+        <div class="project-link"><a href="<%= setHttp(post.ext_link) %>" target="_blank"><%= setHttp(post.ext_link) %></a></div>
+      </div>
       <ul class="lab-tags">
         <% _.each(post.taxonomies.lab_type, function(tag){ %>
           <li><span class="icon-<%= tag.slug %>"></span><%= tag.name %></li>
         <% }); %>
       </ul>
-
-      <div class="more-info">
-        <div class="lab-url"><a href="<%= setHttp(post.ext_link) %>"><%= setHttp(post.ext_link) %></a></div>
-        <%= post.content_display %>
-      </div>
     </article>
   <% }); %>
 </script>

@@ -368,18 +368,10 @@ h6 { font-size: $size-seis;}
   .data {
     font-style: italic;
     margin: 0;
-    padding: 0 1rem;
+    padding: 0;
   }
 
-  .owl-controls {
-    display: none;
-  }
-
-  .project-desc,
-  .project-link {
-    padding: 0 1rem;
-  }
-
+  .lab-tags,
   .project-tags {
     list-style-type: none;
     padding: 0 1rem;
@@ -388,23 +380,56 @@ h6 { font-size: $size-seis;}
       display: inline-block;
       margin: 0 0.25em;
       text-align: center;
+    }
+  }
 
-      &:before {
-        background-color: white;
-        border-radius: 50%;
-        display: inline-block;
-        font-size: 1.5em;
-        height: 1.5em;
-        line-height: 1.5em;
-        margin-right: 0;
-        vertical-align: middle;
-        width: 1.5em;
-      }
+  .lab-tags {
+    li {
+      background-color: #ccc;
+      border-radius: 3px;
+      color: white;
+      font-style: italic;
+      padding: 0.25em 0.5em;
+    }
+  }
+
+  .owl-controls {
+    display: none;
+  }
+
+  .project-desc {
+    p {
+      padding: 0;
+    }
+  }
+
+  .project-info,
+  .project-link {
+    padding: 0 1rem;
+  }
+
+  .project-tags {
+    li:before {
+      background-color: white;
+      border-radius: 50%;
+      display: inline-block;
+      font-size: 1.5em;
+      height: 1.5em;
+      line-height: 1.5em;
+      margin-right: 0;
+      vertical-align: middle;
+      width: 1.5em;
     }
   }
 
   .project-gallery-title {
     font-style: normal;
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  .project-subtitle {
+    font-weight: normal;
     margin: 0;
     padding: 0 1rem;
   }
@@ -431,27 +456,27 @@ h6 { font-size: $size-seis;}
 
 .team-wrapper,
 .lab-wrapper {
-   padding: 0 10px;
+  padding: 0 10px;
 
-   .project,
-   .person {
-      padding: 12px;
-      background: $gris;
-      text-align: center;
+  .person {
+    padding: 12px;
+    text-align: center;
+  }
 
-      h3 {
+  .project,
+  .person {
+    background: $gris;
 
-      }
-      h4 {
-         font-weight: normal;
-      }
-      img {
-         display: inline-block;
-         width: 50px;
-         border-radius: 50px;
-         border: 3px solid $naranja;
-      }
-   }
+    h4 {
+       font-weight: normal;
+    }
+    img {
+       display: inline-block;
+       width: 50px;
+       border-radius: 50px;
+       border: 3px solid $naranja;
+    }
+  }
 }
 .works-wrapper {
   padding: 0.5em;
