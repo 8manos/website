@@ -122,7 +122,7 @@ OM.Views.ProjectsView = Backbone.View.extend({
   clickToggle: function(e) {
     var $project = $(e.currentTarget).parent();
     $project.find('.toggle-details').toggleClass('more less');
-    $project.find('.more-info').slideToggle(function() {
+    $project.find('.more-info').slideToggle(function(){
       if($(this).is(':visible')){
         $project.find('.owl-carousel').owlCarousel({
           items: 1,

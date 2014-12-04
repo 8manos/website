@@ -56,7 +56,7 @@
       </ul>
       <div class="more-info">
         <figure>
-          <img class="project-img" src="<%= post.images.project %>" srcset="<%= post.images.project %> 1x, <%= post.images.project2x %> 2x" alt="Website 8manos">
+          <img src="<%= post.images.project %>" srcset="<%= post.images.project %> 1x, <%= post.images.project2x %> 2x" alt="Website 8manos">
         </figure>
         <div class="project-info">
           <p class="data">Cliente: <strong><%= post.title %></strong></p>
@@ -66,6 +66,7 @@
             <%= post.content_display %>
           </div>
         </div>
+        <h4 class="project-gallery-title">Galería de imágenes</h4>
         <div class="project-gallery">
           <div id="carousel-<%= post.name %>" class="owl-carousel">
             <% _.each(post.media, function(media){ %>
@@ -75,7 +76,7 @@
             <% }); %>
           </div>
         </div>
-        <p class="project-link"><a href="<%= setHttp(post.ext_link) %>">Visita <%= post.title %></a></p>
+        <p class="project-link"><a href="<%= setHttp(post.ext_link) %>" target="_blank">Visita <%= post.title %></a></p>
       </div>
     </article>
   <% }); %>

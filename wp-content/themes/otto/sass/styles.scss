@@ -61,6 +61,13 @@ a:hover {
    text-decoration: none;
 }
 
+figure {
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-style: italic;
 }
@@ -350,12 +357,32 @@ h6 { font-size: $size-seis;}
 .project {
   background-color: $gris;
   margin: 0.5em 0;
-  padding: 1em;
+  padding: 1em 0;
   position: relative;
+
+  figure {
+    margin: 1em auto;
+    width: 100%;
+  }
+
+  .data {
+    font-style: italic;
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  .owl-controls {
+    display: none;
+  }
+
+  .project-desc,
+  .project-link {
+    padding: 0 1rem;
+  }
 
   .project-tags {
     list-style-type: none;
-    padding: 0;
+    padding: 0 1rem;
 
     li {
       display: inline-block;
@@ -376,8 +403,15 @@ h6 { font-size: $size-seis;}
     }
   }
 
+  .project-gallery-title {
+    font-style: normal;
+    margin: 0;
+    padding: 0 1rem;
+  }
+
   .project-title {
     margin: 0;
+    padding: 0 1rem;
   }
 
   .toggle-details {
