@@ -87,3 +87,24 @@ function add_team_meta($data){
   return $data;
 }
 
+function flags_menu() {
+	$langs = pll_the_languages( array('raw'=>1) );
+	foreach ( $langs as $key => $lang ) {
+		if ( $lang['current_lang'] ) {
+			$current = $lang;
+			unset( $langs[$key] );
+			break;
+		}
+	}
+	array_unshift( $langs, $current );
+
+	foreach ( $langs as $key => $lang ) {
+		$classes = implode(' ', $lang['classes']);
+
+		echo "<li class='$classes'>";
+			echo ( $key == 0 )? "<span>":"<a hreflang='{$lang['slug']}' href='{$lang['url']}'>";
+				echo "<img src='{$lang['flag']}' title='{$lang['name']}' alt='{$lang['name']}' />&nbsp;{$lang['name']}";
+			echo ( $key == 0 )? "</span>":"</a>";
+		echo "</li>";
+	}
+}

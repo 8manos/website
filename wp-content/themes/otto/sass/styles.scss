@@ -100,6 +100,7 @@ h6 { font-size: $size-seis;}
   left: 15px;
   padding: 12px 0;
   position: absolute;
+  z-index: 3;
 
   &:hover {
     text-decoration: none;
@@ -153,7 +154,7 @@ h6 { font-size: $size-seis;}
       font-style: normal;
       font-weight: normal;
       font-variant: normal;
-      text-transform: none;      
+      text-transform: none;
     }
     &:after {
       content: '';
@@ -190,13 +191,14 @@ h6 { font-size: $size-seis;}
     }
   }
 }
-.ochomanos {
-  padding: 12px 0;
+.menu-bar {
   height: 16px;
-  margin: 0 15px 0 0;
-  text-align: right;
+  margin: 0;
+  padding: 12px 0;
+  position: relative;
+  text-align: center;
 
-  a {
+  .logo {
     color: #fff;
     display: inline-block;
     height: 16px;
@@ -204,16 +206,70 @@ h6 { font-size: $size-seis;}
     vertical-align: top;
     width: 130px;
   }
-  a:before {
+  .logo:before {
      content: "\e602";
      display: block;
      font: 16px/1 icomoon;
      height: 150%;
      width: 0;
   }
-  a:hover {
+  .logo:hover {
     opacity: 0.4;
   }
+}
+
+.language-switch {
+  background: #fff;
+  bottom: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 0.5em;
+  font-style: normal;
+  font-weight: normal;
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+  position: absolute;
+  right: 0;
+  text-align: left;
+
+  a {
+    color: #000;
+    font-size: 1em;
+    font-weight: normal;
+    display: block;
+    padding: 7px;
+  }
+
+  .current-lang span {
+    background: $naranja;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    padding: 7px;
+  }
+
+  &.is-closed {
+    background: transparent;
+    height: 28px;
+    overflow: hidden;
+    width: 30px;
+
+    .lang-item + .lang-item {
+      display: none;
+    }
+
+    .current-lang span {
+      background: transparent;
+      color: #000;
+      white-space: nowrap;
+    }
+  }
+}
+#header.is-collapsed .language-switch {
+  flex-direction: column;
+  bottom: auto;
+  top: 0;
 }
 
 .wrap {

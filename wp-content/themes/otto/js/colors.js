@@ -88,7 +88,7 @@
 		// Setting de color
 		setRGB( r, g, b );
 
-		$('a, .color, .color-bg').not('.main-nav a').css({
+		$('a, .color, .color-bg').not('.main-nav a, .language-switch a').css({
 			WebkitTransition : 'all 0.5s linear',
 			MozTransition    : 'all 0.5s linear',
 			MsTransition     : 'all 0.5s linear',
@@ -127,7 +127,7 @@
 
 	function handleAccelerometer ( r_x, r_y, r_z ){
 
-		$('a, .color, .color-bg').not('.main-nav a').css({
+		$('a, .color, .color-bg').not('.main-nav a, .language-switch a').css({
 			WebkitTransition : 'all 0.2s linear',
 			MozTransition    : 'all 0.2s linear',
 			MsTransition     : 'all 0.2s linear',
@@ -183,7 +183,7 @@
 		}
 
 		// Setting de color
-		$( 'a, .color' ).not('.main-nav a').css( 'color', 'rgb('+componentes[0]+','+componentes[1]+','+componentes[2]+')' );
+		$( 'a, .color' ).not('.main-nav a, .language-switch a').css( 'color', 'rgb('+componentes[0]+','+componentes[1]+','+componentes[2]+')' );
 		$( '.color-bg' ).css( 'background-color', 'rgb('+componentes[0]+','+componentes[1]+','+componentes[2]+')' );
 
 	}

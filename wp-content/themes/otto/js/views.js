@@ -4,7 +4,8 @@ OM.Views.MainView = Backbone.View.extend({
     'click .menu-toggle': 'toggleMenu',
     'click .main-nav .menu-item a': 'toggleMenu',
     'click .footer-toggle': 'showFooter',
-    'click .footer-close': 'hideFooter'
+    'click .footer-close': 'hideFooter',
+    'click .current-lang': 'toggleLangs'
   },
   initialize: function(){
     this.positionFooter();
@@ -27,6 +28,9 @@ OM.Views.MainView = Backbone.View.extend({
     var scrollOffset = $('.contact-footer').outerHeight();
     $.scrollTo( '-='+scrollOffset, 500 );
     return false;
+  },
+  toggleLangs: function() {
+    $('.language-switch').toggleClass('is-closed');
   },
   resizeCallback: function() {
     clearTimeout(this.resizeTimer);
