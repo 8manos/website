@@ -275,10 +275,14 @@ h6 { font-size: $size-seis;}
 .wrap {
   background: #fff;
   margin-bottom: $contact-height;
-  min-height: calc(100% - 2 * #{$bar-height} - #{$contact-height});
-  padding: $bar-height 0;
+  min-height: calc(100% - #{$bar-height} - #{$contact-height});
+  padding: $bar-height 0 0;
   position: relative;
   z-index: 1;
+
+  &.is-contact-hidden {
+    padding-bottom: $contact-height;
+  }
 }
 
 .icon-desarrollo {
@@ -567,28 +571,51 @@ h6 { font-size: $size-seis;}
    Footer
    ========================================================================== */
 
+.contact-header {
+  height: $contact-height;
+  line-height: 1;
+  width: 100%;
+
+  .icon-contacto {
+    height: $contact-height / 2;
+    line-height: $contact-height / 2;
+  }
+
+  .footer-toggle {
+    color: #fff;
+    cursor: pointer;
+    font-size: $contact-height / 2;
+    margin: 0;
+    padding: 0.5em 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &.is-fixed {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+
+    .icon-contacto,
+    .footer-close {
+      display: none;
+    }
+
+    .footer-toggle {
+      width: 100%;
+    }
+  }
+}
+
 .contact-footer {
   background: #fff;
-  bottom: $contact-height;
+  bottom: 0;
   max-height: calc(100% - #{$bar-height} - #{$contact-height});
   padding: 1px 0; // chrome bug #363067
   overflow: auto;
   position: fixed;
   transition: bottom 0.5s;
-}
-.footer-toggle {
-  bottom: 0;
-  color: #fff;
-  cursor: pointer;
-  font-size: $contact-height / 2;
-  line-height: 1;
-  margin: 0;
-  padding: 0.5em;
-  position: fixed;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
-  z-index: 2;
 }
 .contact-block {
   display: inline-block;

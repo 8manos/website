@@ -1,11 +1,11 @@
+		<div class="section-name contact-header is-fixed">
+			<div class="icon-contacto color-bg"></div>
+			<h1 class="footer-toggle color-bg">¡Yo Quiero!</h1>
+			<button type="button" class="color icon-close footer-close"></button>
+		</div>
 	</div>
 
 	<footer role="contentinfo" class="contact-footer">
-		<div class="section-name">
-        	<div class="icon-contacto color-bg"></div>
-        	<h1 class="color">Contacto</h1>
-        	<button type="button" class="color icon-close footer-close"></button>
-      	</div>
 		<h3>Aca va un texto introductorio que se administra como una página en wordpress. O podemos poner un texto relacionado con la sección en la que uno se encuentra?</h3>
 		<p>Prometemos responder en el menor tiempo posible.</p>
 		<form>
@@ -42,7 +42,6 @@
 			</ul>
 		</div>
 	</footer>
-	<div class="footer-toggle color-bg">Contáctanos</div>
 
 	<?php
 		get_template_part('template', 'pages');
