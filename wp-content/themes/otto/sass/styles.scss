@@ -274,15 +274,10 @@ h6 { font-size: $size-seis;}
 
 .wrap {
   background: #fff;
-  margin-bottom: $contact-height;
   min-height: calc(100% - #{$bar-height} - #{$contact-height});
-  padding: $bar-height 0 0;
+  padding: $bar-height 0 $contact-height;
   position: relative;
   z-index: 1;
-
-  &.is-contact-hidden {
-    padding-bottom: $contact-height;
-  }
 }
 
 .icon-desarrollo {
@@ -572,9 +567,13 @@ h6 { font-size: $size-seis;}
    ========================================================================== */
 
 .contact-header {
+  bottom: 0;
   height: $contact-height;
+  left: 0;
   line-height: 1;
+  position: absolute;
   width: 100%;
+  z-index: 2;
 
   .icon-contacto {
     height: $contact-height / 2;
@@ -592,10 +591,7 @@ h6 { font-size: $size-seis;}
   }
 
   &.is-fixed {
-    bottom: 0;
-    left: 0;
     position: fixed;
-    z-index: 2;
 
     .icon-contacto,
     .footer-close {

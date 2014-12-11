@@ -12,7 +12,7 @@ OM.Views.MainView = Backbone.View.extend({
   initialize: function(){
     this.positionFooter();
     window.addEventListener('resize', this.resizeCallback);
-    window.addEventListener('scroll', this.scrollCallback);
+    window.addEventListener('scroll', this.isContactVisible);
   },
   toggleMenu: function(e) {
     e.preventDefault();
@@ -28,8 +28,8 @@ OM.Views.MainView = Backbone.View.extend({
     }
   },
   hideFooter: function() {
-    var scrollOffset = $('.contact-footer').outerHeight();
-    $.scrollTo( '-='+scrollOffset, 500 );
+    var scrollOffset = document.documentElement.scrollHeight - window.innerHeight - $('.contact-footer').outerHeight();
+    $.scrollTo( scrollOffset, 500 );
     return false;
   },
   toggleLangs: function() {
@@ -43,12 +43,18 @@ OM.Views.MainView = Backbone.View.extend({
     if (arguments.length == 0) {
       view = this;
     }
+
     view.wrapHeight = $('.wrap').outerHeight();
     view.footerHeight = $('.contact-footer').outerHeight();
     $('.wrap').css('margin-bottom', (view.footerHeight));
+
+    view.isContactVisible(view);
   },
-  scrollCallback: function() {
-    view = this.views.main;
+  isContactVisible: function(view) {
+    if (arguments.length == 0) {
+      view = this.views.main;
+    }
+
     view.wrapHeight = $('.wrap').outerHeight();
 
     if (window.scrollY + window.innerHeight > view.wrapHeight) {
