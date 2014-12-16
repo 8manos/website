@@ -513,6 +513,13 @@ h6 { font-size: $size-seis;}
   }
 }
 
+.team-nav {
+  ul {
+    border-bottom: 1px solid $naranja;
+    list-style-type: none;
+  }
+}
+
 .team-wrapper,
 .lab-wrapper {
   padding: 0 10px;
