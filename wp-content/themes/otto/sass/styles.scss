@@ -517,11 +517,14 @@ h6 { font-size: $size-seis;}
   ul {
     border-bottom: 1px solid $naranja;
     list-style-type: none;
-    text-align: right;
+    text-align: center;
 
     li {
+      background: $gris;
       cursor: pointer;
       display: inline-block;
+      line-height: 3em;
+      padding: 0 1em;
     }
   }
 }
