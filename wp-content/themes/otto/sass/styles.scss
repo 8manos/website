@@ -517,6 +517,12 @@ h6 { font-size: $size-seis;}
   ul {
     border-bottom: 1px solid $naranja;
     list-style-type: none;
+    text-align: right;
+
+    li {
+      cursor: pointer;
+      display: inline-block;
+    }
   }
 }
 
