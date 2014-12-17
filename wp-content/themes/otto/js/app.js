@@ -24,6 +24,7 @@ $(document).on('ready', function(){
     var linkPath = urlPath(href);
     menuUrls.push(linkPath);
   });
+  menuUrls.push('guia-de-estilos/');
 
   $('.main-nav .menu-item-object-page').each(function() {
     var pageClasses = $(this).attr('class');

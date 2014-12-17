@@ -52,6 +52,7 @@
 		get_template_part('template', 'portfolio');
 		get_template_part('template', 'labs');
 		get_template_part('template', 'friends');
+		get_template_part('template', 'guide');
 	?>
 
 	<?php wp_footer(); ?>

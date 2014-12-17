@@ -278,6 +278,10 @@ h6 { font-size: $size-seis;}
   padding: $bar-height 0 $contact-height;
   position: relative;
   z-index: 1;
+
+  main {
+    padding: 0 5%;
+  }
 }
 .ugly-filler {
   height: 1px;
@@ -320,10 +324,18 @@ h6 { font-size: $size-seis;}
     text-transform: uppercase;
   }
 }
+main .section-name {
+  //test mientras se organiza el markup
+  width: 112%;
+  margin-left: -6%;
+
+}
+
 .section-name {
   background: $gris;
   height: $inner_h2_height;
   line-height: $inner_h2_height;
+   
 
   button {
     color: $naranja;

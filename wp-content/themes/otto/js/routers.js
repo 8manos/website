@@ -7,6 +7,7 @@ OM.Routers.Router = Backbone.Router.extend({
     this.route(options.urls[2], 'services');
     this.route(options.urls[3], 'portfolio');
     this.route(options.urls[4], 'lab');
+    this.route(options.urls[6], 'style_guide');
   },
   root: function(){
     console.log('Main menu');
@@ -61,7 +62,7 @@ OM.Routers.Router = Backbone.Router.extend({
       }
     });
   },
-  root: function(){
-    console.log('Contact menu');
-  },
+  style_guide: function(){
+    window.views.guide_view = new OM.Views.GuideView();
+  }
 });

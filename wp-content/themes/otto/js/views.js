@@ -253,3 +253,15 @@ OM.Views.TeamView = Backbone.View.extend({
     });
   }
 });
+
+OM.Views.GuideView = Backbone.View.extend({
+  el: 'main',
+  initialize: function(){
+    this.template = _.template($('#guideTemplate').html());
+    this.render();
+  },
+  render: function(){
+    this.$el.html(this.template());
+    return this;
+  },
+});
