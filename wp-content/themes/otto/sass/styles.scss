@@ -287,6 +287,24 @@ h6 { font-size: $size-seis;}
 
   .inner-main {
     padding: 0 5%;
+
+    strong {
+      font-size: $size-uno+0.3;
+    }
+    li strong {
+      font-size: inherit;
+    }
+    ol,
+    ul {
+      list-style: inside;
+      padding: 0;
+    }
+    ol {
+      list-style-type: ideograph-numeric;
+    }
+    li {
+      padding: 0 0 6px;
+    }
   }
 }
 .ugly-filler {
