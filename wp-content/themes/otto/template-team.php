@@ -12,7 +12,7 @@
       <%= content_display %>
     </div>
     
-    <div class="team-nav">
+    <div class="team-nav color">
       <ul>
         <li class="team-core">Núcleo</li>
         <li class="team-nodes">Nodos</li>

@@ -28,8 +28,8 @@
 				<label for="message">Mensaje:</label>
 				<textarea name="message" id="message"></textarea>
 			</p>
-			<p>
-				<input type="submit" Value="Enviar">
+			<p class="submit">
+				<input class="color-bg" type="submit" Value="Enviar">
 			</p>
 		</form>
 		<div class="contact-block">

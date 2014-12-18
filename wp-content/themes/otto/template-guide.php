@@ -1,5 +1,5 @@
 <script id="guideTemplate" type="text/template">
-<h1>testetstetste</h1>
+<div class="inner-main">
 	<h1 class="main-title">Titulo Principal</h1>
 	<p class="intro">Parrafo principal marshmallow pie gummi bears marzipan gingerbread liquorice unerdwear.com. Carrot cake chupa chups sugar plum. Pie biscuit toffee danish cheesecake unerdwear.com cupcake soufflé. Chupa chups lollipop jelly bonbon icing chupa chups pastry jujubes.</p>
 
@@ -88,4 +88,5 @@
 	Caramels wypas wafer caramels muffin faworki I love gummies. Jelly sweet I love oat cake carrot cake tiramisu I love I love. Lemon drops sesame snaps tootsie roll. Cotton candy chupa chups gingerbread I love cookie cheesecake toffee cheesecake.
 
 	<a class="btn" href="#">lollipop pudding</a>
+</div>
 </script>

@@ -13,7 +13,7 @@
         <h2>Amor por la tecnología + habilidades técnicas</h2>
         <p>Explora nuestro portafolio de trabajos. Si no te gustan, presiona (Cmd + W).</p>
         <div class="sect-conventions color">
-          <h3 class="color">Convenciones:</h3>
+          <h3>Convenciones:</h3>
           <ul class="conventions">
             <li class="convention icon-target">Identidad</li>
             <li class="convention icon-tools">Diseño UX/UI</li>
