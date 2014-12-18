@@ -6,13 +6,15 @@
         <h1 class="color"><%= title %></h1>
         <!--<button type="button" class="color icon-close"></button>-->
       </div>
-      <div class="section-desc">
+    </div>
+
+    <div class="inner-main section-desc">
         <%= content_display %>
         <h2>Experimentar para aprender... y compartir.</h2>
         <p>Fomentamos el uso de tecnologías libres y de código abierto.</p>
         <p>Aquí encontrarás algunos desarrollos de libre uso:</p>
-      </div>
     </div>
+
     <div class="lab-wrapper">
     </div>
   </section>

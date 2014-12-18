@@ -279,7 +279,7 @@ h6 { font-size: $size-seis;}
   position: relative;
   z-index: 1;
 
-  main {
+  .inner-main {
     padding: 0 5%;
   }
 }
@@ -323,12 +323,6 @@ h6 { font-size: $size-seis;}
     font-style: normal;
     text-transform: uppercase;
   }
-}
-main .section-name {
-  //test mientras se organiza el markup
-  width: 112%;
-  margin-left: -6%;
-
 }
 
 .section-name {
@@ -620,6 +614,10 @@ main .section-name {
     padding: 0.5em 0;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  &.normal .footer-toggle {
+    background: none !important;
   }
 
   &.is-fixed {

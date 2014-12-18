@@ -6,7 +6,9 @@
         <h1 class="color"><%= title %></h1>
         <!--<button type="button" class="color icon-close"></button>-->
       </div>
-      <div class="section-desc">
+    </div>
+
+      <div class="inner-main section-desc">
         <%= content_display %>
         <h2>Amor por la tecnología + habilidades técnicas</h2>
         <p>Explora nuestro portafolio de trabajos. Si no te gustan, presiona (Cmd + W).</p>
@@ -19,7 +21,7 @@
           </ul>
         </div>
       </div>
-    </div>
+    
     <div class="works-wrapper">
     </div>
   </section>

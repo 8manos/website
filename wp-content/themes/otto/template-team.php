@@ -6,8 +6,12 @@
         <h1 class="color"><%= title %></h1>
         <!--<button type="button" class="color icon-close"></button>-->
       </div>
+    </div>
+
+    <div class="inner-main">
       <%= content_display %>
     </div>
+    
     <div class="team-nav">
       <ul>
         <li class="team-core">Núcleo</li>

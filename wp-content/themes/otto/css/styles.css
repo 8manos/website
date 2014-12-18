@@ -624,7 +624,7 @@ h6 {
   position: relative;
   z-index: 1; }
   /* line 282, ../sass/styles.scss */
-  .wrap main {
+  .wrap .inner-main {
     padding: 0 5%; }
 
 /* line 286, ../sass/styles.scss */
@@ -658,30 +658,25 @@ h6 {
     font-style: normal;
     text-transform: uppercase; }
 
-/* line 327, ../sass/styles.scss */
-main .section-name {
-  width: 112%;
-  margin-left: -6%; }
-
-/* line 334, ../sass/styles.scss */
+/* line 328, ../sass/styles.scss */
 .section-name {
   background: #ECECEC;
   height: 70px;
   line-height: 70px; }
-  /* line 340, ../sass/styles.scss */
+  /* line 334, ../sass/styles.scss */
   .section-name button {
     color: #FF3300;
     float: right;
     height: 100%;
     padding: 0 1em; }
-  /* line 346, ../sass/styles.scss */
+  /* line 340, ../sass/styles.scss */
   .section-name h1 {
     color: #FF3300;
     font-style: normal;
     margin: 0;
     padding: 0 1em;
     text-transform: uppercase; }
-  /* line 353, ../sass/styles.scss */
+  /* line 347, ../sass/styles.scss */
   .section-name [class^="icon-"] {
     background: #FF3300;
     box-sizing: border-box;
@@ -694,24 +689,24 @@ main .section-name {
     text-align: center;
     vertical-align: top;
     width: 70px; }
-    /* line 366, ../sass/styles.scss */
+    /* line 360, ../sass/styles.scss */
     .section-name [class^="icon-"]:before {
       margin: 0; }
-  /* line 370, ../sass/styles.scss */
+  /* line 364, ../sass/styles.scss */
   .section-name > * {
     display: inline-block; }
 
-/* line 374, ../sass/styles.scss */
+/* line 368, ../sass/styles.scss */
 .conventions {
   color: black;
   list-style-type: none;
   padding: 0; }
-  /* line 379, ../sass/styles.scss */
+  /* line 373, ../sass/styles.scss */
   .conventions .convention {
     display: inline-block;
     font-style: italic;
     margin: 0.5em; }
-    /* line 384, ../sass/styles.scss */
+    /* line 378, ../sass/styles.scss */
     .conventions .convention:before {
       background-color: #ECECEC;
       border-radius: 50%;
@@ -722,7 +717,7 @@ main .section-name {
       vertical-align: middle;
       width: 1.5em; }
 
-/* line 397, ../sass/styles.scss */
+/* line 391, ../sass/styles.scss */
 .nav-tabs {
   list-style: none;
   width: 100%;
@@ -731,12 +726,12 @@ main .section-name {
   text-transform: uppercase;
   padding: 0 8px;
   border-bottom: 1px solid #FF3300; }
-  /* line 406, ../sass/styles.scss */
+  /* line 400, ../sass/styles.scss */
   .nav-tabs li {
     display: inline-block;
     margin-left: 1px;
     width: 32%; }
-  /* line 412, ../sass/styles.scss */
+  /* line 406, ../sass/styles.scss */
   .nav-tabs li a {
     display: block;
     color: #FFF;
@@ -744,56 +739,56 @@ main .section-name {
     background: rgba(255, 51, 0, 0.2);
     position: relative;
     font-weight: bold; }
-  /* line 421, ../sass/styles.scss */
+  /* line 415, ../sass/styles.scss */
   .nav-tabs li.active a,
   .nav-tabs li a:hover {
     background: #FF3300;
     color: #FFF; }
 
-/* line 428, ../sass/styles.scss */
+/* line 422, ../sass/styles.scss */
 .project {
   background-color: #ECECEC;
   margin: 0.5em 0;
   padding: 1em 0;
   position: relative; }
-  /* line 434, ../sass/styles.scss */
+  /* line 428, ../sass/styles.scss */
   .project figure {
     margin: 1em auto;
     width: 100%; }
-  /* line 439, ../sass/styles.scss */
+  /* line 433, ../sass/styles.scss */
   .project .data {
     font-style: italic;
     margin: 0;
     padding: 0; }
-  /* line 445, ../sass/styles.scss */
+  /* line 439, ../sass/styles.scss */
   .project .lab-tags,
   .project .project-tags {
     list-style-type: none;
     padding: 0 1rem; }
-    /* line 450, ../sass/styles.scss */
+    /* line 444, ../sass/styles.scss */
     .project .lab-tags li,
     .project .project-tags li {
       display: inline-block;
       margin: 0 0.25em;
       text-align: center; }
-  /* line 458, ../sass/styles.scss */
+  /* line 452, ../sass/styles.scss */
   .project .lab-tags li {
     background-color: #ccc;
     border-radius: 3px;
     color: white;
     font-style: italic;
     padding: 0.25em 0.5em; }
-  /* line 467, ../sass/styles.scss */
+  /* line 461, ../sass/styles.scss */
   .project .owl-controls {
     display: none; }
-  /* line 472, ../sass/styles.scss */
+  /* line 466, ../sass/styles.scss */
   .project .project-desc p {
     padding: 0; }
-  /* line 477, ../sass/styles.scss */
+  /* line 471, ../sass/styles.scss */
   .project .project-info,
   .project .project-link {
     padding: 0 1rem; }
-  /* line 483, ../sass/styles.scss */
+  /* line 477, ../sass/styles.scss */
   .project .project-tags li:before {
     background-color: white;
     border-radius: 50%;
@@ -804,21 +799,21 @@ main .section-name {
     margin-right: 0;
     vertical-align: middle;
     width: 1.5em; }
-  /* line 496, ../sass/styles.scss */
+  /* line 490, ../sass/styles.scss */
   .project .project-gallery-title {
     font-style: normal;
     margin: 0;
     padding: 0 1rem; }
-  /* line 502, ../sass/styles.scss */
+  /* line 496, ../sass/styles.scss */
   .project .project-subtitle {
     font-weight: normal;
     margin: 0;
     padding: 0 1rem; }
-  /* line 508, ../sass/styles.scss */
+  /* line 502, ../sass/styles.scss */
   .project .project-title {
     margin: 0;
     padding: 0 1rem; }
-  /* line 513, ../sass/styles.scss */
+  /* line 507, ../sass/styles.scss */
   .project .toggle-details {
     height: 1em;
     padding: 0;
@@ -828,18 +823,18 @@ main .section-name {
     -webkit-transition: -webkit-transform 0.3s;
             transition: transform 0.3s;
     width: 1em; }
-    /* line 522, ../sass/styles.scss */
+    /* line 516, ../sass/styles.scss */
     .project .toggle-details.more {
       -webkit-transform: rotate(315deg);
           -ms-transform: rotate(315deg);
               transform: rotate(315deg); }
 
-/* line 529, ../sass/styles.scss */
+/* line 523, ../sass/styles.scss */
 .team-nav ul {
   border-bottom: 1px solid #FF3300;
   list-style-type: none;
   text-align: center; }
-  /* line 534, ../sass/styles.scss */
+  /* line 528, ../sass/styles.scss */
   .team-nav ul li {
     background: #ECECEC;
     cursor: pointer;
@@ -847,28 +842,28 @@ main .section-name {
     line-height: 3em;
     padding: 0 1em; }
 
-/* line 544, ../sass/styles.scss */
+/* line 538, ../sass/styles.scss */
 .team-wrapper,
 .lab-wrapper {
   padding: 0 10px; }
-  /* line 548, ../sass/styles.scss */
+  /* line 542, ../sass/styles.scss */
   .team-wrapper .person,
   .lab-wrapper .person {
     padding: 12px;
     text-align: center; }
-  /* line 553, ../sass/styles.scss */
+  /* line 547, ../sass/styles.scss */
   .team-wrapper .project,
   .team-wrapper .person,
   .lab-wrapper .project,
   .lab-wrapper .person {
     background: #ECECEC; }
-    /* line 557, ../sass/styles.scss */
+    /* line 551, ../sass/styles.scss */
     .team-wrapper .project h4,
     .team-wrapper .person h4,
     .lab-wrapper .project h4,
     .lab-wrapper .person h4 {
       font-weight: normal; }
-    /* line 560, ../sass/styles.scss */
+    /* line 554, ../sass/styles.scss */
     .team-wrapper .project img,
     .team-wrapper .person img,
     .lab-wrapper .project img,
@@ -878,31 +873,31 @@ main .section-name {
       border-radius: 50px;
       border: 3px solid #FF3300; }
 
-/* line 568, ../sass/styles.scss */
+/* line 562, ../sass/styles.scss */
 .works-wrapper {
   padding: 0.5em; }
-  /* line 571, ../sass/styles.scss */
+  /* line 565, ../sass/styles.scss */
   .works-wrapper .project-img {
     width: 300px; }
 
-/* line 575, ../sass/styles.scss */
+/* line 569, ../sass/styles.scss */
 .more-info {
   display: none;
   text-align: left; }
-  /* line 579, ../sass/styles.scss */
+  /* line 573, ../sass/styles.scss */
   .more-info p {
     padding-bottom: 10px; }
-  /* line 582, ../sass/styles.scss */
+  /* line 576, ../sass/styles.scss */
   .more-info p + p {
     padding: 5px 0 15px; }
-  /* line 585, ../sass/styles.scss */
+  /* line 579, ../sass/styles.scss */
   .more-info .person-links,
   .more-info .lab-tags {
     margin: 0 10px;
     padding: 15px 10px;
     list-style: none;
     border-top: 2px dotted #FF3300; }
-    /* line 592, ../sass/styles.scss */
+    /* line 586, ../sass/styles.scss */
     .more-info .person-links li,
     .more-info .lab-tags li {
       display: inline-block; }
@@ -910,7 +905,7 @@ main .section-name {
 /* ==========================================================================
    Footer
    ========================================================================== */
-/* line 601, ../sass/styles.scss */
+/* line 595, ../sass/styles.scss */
 .contact-header {
   bottom: 0;
   height: 3em;
@@ -919,11 +914,11 @@ main .section-name {
   position: absolute;
   width: 100%;
   z-index: 2; }
-  /* line 610, ../sass/styles.scss */
+  /* line 604, ../sass/styles.scss */
   .contact-header .icon-contacto {
     height: 1.5em;
     line-height: 1.5em; }
-  /* line 615, ../sass/styles.scss */
+  /* line 609, ../sass/styles.scss */
   .contact-header .footer-toggle {
     color: #fff;
     cursor: pointer;
@@ -932,18 +927,21 @@ main .section-name {
     padding: 0.5em 0;
     text-align: center;
     text-transform: uppercase; }
-  /* line 625, ../sass/styles.scss */
+  /* line 619, ../sass/styles.scss */
+  .contact-header.normal .footer-toggle {
+    background: none !important; }
+  /* line 623, ../sass/styles.scss */
   .contact-header.is-fixed {
     position: fixed; }
-    /* line 628, ../sass/styles.scss */
+    /* line 626, ../sass/styles.scss */
     .contact-header.is-fixed .icon-contacto,
     .contact-header.is-fixed .footer-close {
       display: none; }
-    /* line 633, ../sass/styles.scss */
+    /* line 631, ../sass/styles.scss */
     .contact-header.is-fixed .footer-toggle {
       width: 100%; }
 
-/* line 639, ../sass/styles.scss */
+/* line 637, ../sass/styles.scss */
 .contact-footer {
   background: #fff;
   bottom: 0;
@@ -955,15 +953,15 @@ main .section-name {
   -webkit-transition: bottom 0.5s;
           transition: bottom 0.5s; }
 
-/* line 648, ../sass/styles.scss */
+/* line 646, ../sass/styles.scss */
 .contact-block {
   display: inline-block;
   vertical-align: top; }
 
-/* line 652, ../sass/styles.scss */
+/* line 650, ../sass/styles.scss */
 .contact-links {
   list-style: none; }
-  /* line 655, ../sass/styles.scss */
+  /* line 653, ../sass/styles.scss */
   .contact-links li {
     display: inline-block;
     width: 20px;
@@ -972,13 +970,13 @@ main .section-name {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 667, ../sass/styles.scss */
+/* line 665, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.2s linear;
           transition: color 0.2s linear; }
 
-/* line 672, ../sass/styles.scss */
+/* line 670, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.2s linear;
           transition: background-color 0.2s linear; }
@@ -987,16 +985,16 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 682, ../sass/styles.scss */
+/* line 680, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 683, ../sass/styles.scss */
+/* line 681, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 684, ../sass/styles.scss */
+/* line 682, ../sass/styles.scss */
 .alignright {
   float: right; }
 
