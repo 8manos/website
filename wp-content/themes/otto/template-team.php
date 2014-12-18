@@ -21,8 +21,8 @@
     </div>
     <div class="team-wrapper">
     </div>
-    <div class="inner-footer">
-      <p>Estamos en permanente búsqueda de talentos excepcionales. Si eres uno, no dudes en <a href="">contactarnos</a> :-)</p>
-    </div>
+    
+    <p class="close-search">Estamos en permanente búsqueda de talentos excepcionales. Si eres uno, no dudes en <a href="">contactarnos</a> :-)</p>
+    
   </section>
 </script>

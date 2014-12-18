@@ -874,30 +874,35 @@ h6 {
       border: 3px solid #FF3300; }
 
 /* line 562, ../sass/styles.scss */
+.close-search {
+  padding: 0 5%;
+  margin-bottom: 40px; }
+
+/* line 566, ../sass/styles.scss */
 .works-wrapper {
   padding: 0.5em; }
-  /* line 565, ../sass/styles.scss */
+  /* line 569, ../sass/styles.scss */
   .works-wrapper .project-img {
     width: 300px; }
 
-/* line 569, ../sass/styles.scss */
+/* line 573, ../sass/styles.scss */
 .more-info {
   display: none;
   text-align: left; }
-  /* line 573, ../sass/styles.scss */
+  /* line 577, ../sass/styles.scss */
   .more-info p {
     padding-bottom: 10px; }
-  /* line 576, ../sass/styles.scss */
+  /* line 580, ../sass/styles.scss */
   .more-info p + p {
     padding: 5px 0 15px; }
-  /* line 579, ../sass/styles.scss */
+  /* line 583, ../sass/styles.scss */
   .more-info .person-links,
   .more-info .lab-tags {
     margin: 0 10px;
     padding: 15px 10px;
     list-style: none;
     border-top: 2px dotted #FF3300; }
-    /* line 586, ../sass/styles.scss */
+    /* line 590, ../sass/styles.scss */
     .more-info .person-links li,
     .more-info .lab-tags li {
       display: inline-block; }
@@ -905,43 +910,48 @@ h6 {
 /* ==========================================================================
    Footer
    ========================================================================== */
-/* line 595, ../sass/styles.scss */
+/* line 599, ../sass/styles.scss */
 .contact-header {
   bottom: 0;
-  height: 3em;
+  height: 70px;
+  line-height: 70px;
   left: 0;
-  line-height: 1;
   position: absolute;
   width: 100%;
   z-index: 2; }
-  /* line 604, ../sass/styles.scss */
+  /* line 608, ../sass/styles.scss */
   .contact-header .icon-contacto {
-    height: 1.5em;
-    line-height: 1.5em; }
-  /* line 609, ../sass/styles.scss */
+    height: 70px;
+    line-height: 70px; }
+  /* line 613, ../sass/styles.scss */
   .contact-header .footer-toggle {
     color: #fff;
     cursor: pointer;
     font-size: 1.5em;
     margin: 0;
-    padding: 0.5em 0;
     text-align: center;
     text-transform: uppercase; }
-  /* line 619, ../sass/styles.scss */
-  .contact-header.normal .footer-toggle {
-    background: none !important; }
   /* line 623, ../sass/styles.scss */
+  .contact-header .footer-toggle.color {
+    background: none !important; }
+  /* line 626, ../sass/styles.scss */
+  .contact-header .footer-toggle.color-bg {
+    color: #FFF !important; }
+  /* line 630, ../sass/styles.scss */
   .contact-header.is-fixed {
-    position: fixed; }
-    /* line 626, ../sass/styles.scss */
+    position: fixed;
+    height: 3em;
+    line-height: 1; }
+    /* line 635, ../sass/styles.scss */
     .contact-header.is-fixed .icon-contacto,
     .contact-header.is-fixed .footer-close {
       display: none; }
-    /* line 631, ../sass/styles.scss */
+    /* line 640, ../sass/styles.scss */
     .contact-header.is-fixed .footer-toggle {
-      width: 100%; }
+      width: 100%;
+      padding: 0.5em 0; }
 
-/* line 637, ../sass/styles.scss */
+/* line 647, ../sass/styles.scss */
 .contact-footer {
   background: #fff;
   bottom: 0;
@@ -952,16 +962,19 @@ h6 {
   position: fixed;
   -webkit-transition: bottom 0.5s;
           transition: bottom 0.5s; }
+  /* line 656, ../sass/styles.scss */
+  .contact-footer .inner-footer {
+    padding: 0 5%; }
 
-/* line 646, ../sass/styles.scss */
+/* line 660, ../sass/styles.scss */
 .contact-block {
   display: inline-block;
   vertical-align: top; }
 
-/* line 650, ../sass/styles.scss */
+/* line 664, ../sass/styles.scss */
 .contact-links {
   list-style: none; }
-  /* line 653, ../sass/styles.scss */
+  /* line 667, ../sass/styles.scss */
   .contact-links li {
     display: inline-block;
     width: 20px;
@@ -970,13 +983,13 @@ h6 {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 665, ../sass/styles.scss */
+/* line 679, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.2s linear;
           transition: color 0.2s linear; }
 
-/* line 670, ../sass/styles.scss */
+/* line 684, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.2s linear;
           transition: background-color 0.2s linear; }
@@ -985,16 +998,16 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 680, ../sass/styles.scss */
+/* line 694, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 681, ../sass/styles.scss */
+/* line 695, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 682, ../sass/styles.scss */
+/* line 696, ../sass/styles.scss */
 .alignright {
   float: right; }
 
