@@ -22,7 +22,7 @@ OM.Views.MainView = Backbone.View.extend({
     if(type == 'email'){
       $('#contact-info').attr('type', 'email');
     } else{
-      $('#contact-info').attr('type', 'phone');
+      $('#contact-info').attr('type', 'tel');
     }
   },
   toggleMenu: function(e) {
