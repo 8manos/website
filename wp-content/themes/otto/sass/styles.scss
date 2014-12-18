@@ -520,10 +520,14 @@ h6 { font-size: $size-seis;}
 }
 
 .team-nav {
+  text-align: center;
+
   ul {
     border-bottom: 1px solid $naranja;
     list-style-type: none;
-    text-align: center;
+    display: inline-block;
+    ///DEMO
+    padding: 0 20px;
 
     li {
       background: $gris;
@@ -595,7 +599,11 @@ h6 { font-size: $size-seis;}
 /* ==========================================================================
    Footer
    ========================================================================== */
-
+*, *:before, *:after {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
 .contact-header {
   bottom: 0;
   height: $inner_h2_height;
@@ -657,9 +665,33 @@ h6 { font-size: $size-seis;}
     padding: 0 5%;
   }
 }
+label {
+  display: block;
+  font-weight: bold;
+  padding-bottom: 6px;
+  font-size: $size-cinco;
+}
+input,
+textarea {
+  padding: 8px 12px;
+  border: none;
+  background: $gris;
+}
+textarea {
+  resize:vertical;
+  /*max-height:300px;*/
+}
+select {
+  font-family: icomoon;
+  
+  overflow: hidden;
+}
+ 
+
 .contact-block {
   display: inline-block;
   vertical-align: top;
+  text-align: center;
 }
 .contact-links {
   list-style: none;
@@ -694,3 +726,19 @@ h6 { font-size: $size-seis;}
 .aligncenter { display: block; margin: 0 auto; }
 .alignleft { float: left; }
 .alignright { float: right; }
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media screen and (max-width: 600px) {
+
+  .contact-block {
+    display: block;
+  }
+  input[type="text"],
+  input[type="tel"],
+  textarea{
+    width: 100%;
+  }
+}

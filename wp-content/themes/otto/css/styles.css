@@ -829,41 +829,45 @@ h6 {
           -ms-transform: rotate(315deg);
               transform: rotate(315deg); }
 
-/* line 523, ../sass/styles.scss */
-.team-nav ul {
-  border-bottom: 1px solid #FF3300;
-  list-style-type: none;
+/* line 522, ../sass/styles.scss */
+.team-nav {
   text-align: center; }
-  /* line 528, ../sass/styles.scss */
-  .team-nav ul li {
-    background: #ECECEC;
-    cursor: pointer;
+  /* line 525, ../sass/styles.scss */
+  .team-nav ul {
+    border-bottom: 1px solid #FF3300;
+    list-style-type: none;
     display: inline-block;
-    line-height: 3em;
-    padding: 0 1em; }
+    padding: 0 20px; }
+    /* line 532, ../sass/styles.scss */
+    .team-nav ul li {
+      background: #ECECEC;
+      cursor: pointer;
+      display: inline-block;
+      line-height: 3em;
+      padding: 0 1em; }
 
-/* line 538, ../sass/styles.scss */
+/* line 542, ../sass/styles.scss */
 .team-wrapper,
 .lab-wrapper {
   padding: 0 10px; }
-  /* line 542, ../sass/styles.scss */
+  /* line 546, ../sass/styles.scss */
   .team-wrapper .person,
   .lab-wrapper .person {
     padding: 12px;
     text-align: center; }
-  /* line 547, ../sass/styles.scss */
+  /* line 551, ../sass/styles.scss */
   .team-wrapper .project,
   .team-wrapper .person,
   .lab-wrapper .project,
   .lab-wrapper .person {
     background: #ECECEC; }
-    /* line 551, ../sass/styles.scss */
+    /* line 555, ../sass/styles.scss */
     .team-wrapper .project h4,
     .team-wrapper .person h4,
     .lab-wrapper .project h4,
     .lab-wrapper .person h4 {
       font-weight: normal; }
-    /* line 554, ../sass/styles.scss */
+    /* line 558, ../sass/styles.scss */
     .team-wrapper .project img,
     .team-wrapper .person img,
     .lab-wrapper .project img,
@@ -873,36 +877,36 @@ h6 {
       border-radius: 50px;
       border: 3px solid #FF3300; }
 
-/* line 562, ../sass/styles.scss */
+/* line 566, ../sass/styles.scss */
 .close-search {
   padding: 0 5%;
   margin-bottom: 40px; }
 
-/* line 566, ../sass/styles.scss */
+/* line 570, ../sass/styles.scss */
 .works-wrapper {
   padding: 0.5em; }
-  /* line 569, ../sass/styles.scss */
+  /* line 573, ../sass/styles.scss */
   .works-wrapper .project-img {
     width: 300px; }
 
-/* line 573, ../sass/styles.scss */
+/* line 577, ../sass/styles.scss */
 .more-info {
   display: none;
   text-align: left; }
-  /* line 577, ../sass/styles.scss */
+  /* line 581, ../sass/styles.scss */
   .more-info p {
     padding-bottom: 10px; }
-  /* line 580, ../sass/styles.scss */
+  /* line 584, ../sass/styles.scss */
   .more-info p + p {
     padding: 5px 0 15px; }
-  /* line 583, ../sass/styles.scss */
+  /* line 587, ../sass/styles.scss */
   .more-info .person-links,
   .more-info .lab-tags {
     margin: 0 10px;
     padding: 15px 10px;
     list-style: none;
     border-top: 2px dotted #FF3300; }
-    /* line 590, ../sass/styles.scss */
+    /* line 594, ../sass/styles.scss */
     .more-info .person-links li,
     .more-info .lab-tags li {
       display: inline-block; }
@@ -910,7 +914,11 @@ h6 {
 /* ==========================================================================
    Footer
    ========================================================================== */
-/* line 599, ../sass/styles.scss */
+/* line 602, ../sass/styles.scss */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+/* line 607, ../sass/styles.scss */
 .contact-header {
   bottom: 0;
   height: 70px;
@@ -919,11 +927,11 @@ h6 {
   position: absolute;
   width: 100%;
   z-index: 2; }
-  /* line 608, ../sass/styles.scss */
+  /* line 616, ../sass/styles.scss */
   .contact-header .icon-contacto {
     height: 70px;
     line-height: 70px; }
-  /* line 613, ../sass/styles.scss */
+  /* line 621, ../sass/styles.scss */
   .contact-header .footer-toggle {
     color: #fff;
     cursor: pointer;
@@ -931,27 +939,27 @@ h6 {
     margin: 0;
     text-align: center;
     text-transform: uppercase; }
-  /* line 623, ../sass/styles.scss */
+  /* line 631, ../sass/styles.scss */
   .contact-header .footer-toggle.color {
     background: none !important; }
-  /* line 626, ../sass/styles.scss */
+  /* line 634, ../sass/styles.scss */
   .contact-header .footer-toggle.color-bg {
     color: #FFF !important; }
-  /* line 630, ../sass/styles.scss */
+  /* line 638, ../sass/styles.scss */
   .contact-header.is-fixed {
     position: fixed;
     height: 3em;
     line-height: 1; }
-    /* line 635, ../sass/styles.scss */
+    /* line 643, ../sass/styles.scss */
     .contact-header.is-fixed .icon-contacto,
     .contact-header.is-fixed .footer-close {
       display: none; }
-    /* line 640, ../sass/styles.scss */
+    /* line 648, ../sass/styles.scss */
     .contact-header.is-fixed .footer-toggle {
       width: 100%;
       padding: 0.5em 0; }
 
-/* line 647, ../sass/styles.scss */
+/* line 655, ../sass/styles.scss */
 .contact-footer {
   background: #fff;
   bottom: 0;
@@ -962,19 +970,44 @@ h6 {
   position: fixed;
   -webkit-transition: bottom 0.5s;
           transition: bottom 0.5s; }
-  /* line 656, ../sass/styles.scss */
+  /* line 664, ../sass/styles.scss */
   .contact-footer .inner-footer {
     padding: 0 5%; }
 
-/* line 660, ../sass/styles.scss */
+/* line 668, ../sass/styles.scss */
+label {
+  display: block;
+  font-weight: bold;
+  padding-bottom: 6px;
+  font-size: 0.875em; }
+
+/* line 674, ../sass/styles.scss */
+input,
+textarea {
+  padding: 8px 12px;
+  border: none;
+  background: #ECECEC; }
+
+/* line 680, ../sass/styles.scss */
+textarea {
+  resize: vertical;
+  /*max-height:300px;*/ }
+
+/* line 684, ../sass/styles.scss */
+select {
+  font-family: icomoon;
+  overflow: hidden; }
+
+/* line 691, ../sass/styles.scss */
 .contact-block {
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: top;
+  text-align: center; }
 
-/* line 664, ../sass/styles.scss */
+/* line 696, ../sass/styles.scss */
 .contact-links {
   list-style: none; }
-  /* line 667, ../sass/styles.scss */
+  /* line 699, ../sass/styles.scss */
   .contact-links li {
     display: inline-block;
     width: 20px;
@@ -983,13 +1016,13 @@ h6 {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 679, ../sass/styles.scss */
+/* line 711, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.2s linear;
           transition: color 0.2s linear; }
 
-/* line 684, ../sass/styles.scss */
+/* line 716, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.2s linear;
           transition: background-color 0.2s linear; }
@@ -998,17 +1031,31 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 694, ../sass/styles.scss */
+/* line 726, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 695, ../sass/styles.scss */
+/* line 727, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 696, ../sass/styles.scss */
+/* line 728, ../sass/styles.scss */
 .alignright {
   float: right; }
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media screen and (max-width: 600px) {
+  /* line 736, ../sass/styles.scss */
+  .contact-block {
+    display: block; }
+
+  /* line 739, ../sass/styles.scss */
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+    width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */

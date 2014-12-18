@@ -5,7 +5,8 @@ OM.Views.MainView = Backbone.View.extend({
     'click .main-nav .menu-item a': 'toggleMenu',
     'click .footer-toggle': 'showFooter',
     'click .footer-close': 'hideFooter',
-    'click .current-lang': 'toggleLangs'
+    'click .current-lang': 'toggleLangs',
+    'change #contact-medium': 'changeInputType'
   },
   wrapHeight: 0,
   footerHeight: 0,
@@ -13,6 +14,16 @@ OM.Views.MainView = Backbone.View.extend({
     this.positionFooter();
     window.addEventListener('resize', this.resizeCallback);
     window.addEventListener('scroll', this.isContactVisible);
+  },
+  changeInputType: function(e){
+    var type = $(e.currentTarget).val();
+    console.log(type);
+
+    if(type == 'email'){
+      $('#contact-info').attr('type', 'email');
+    } else{
+      $('#contact-info').attr('type', 'phone');
+    }
   },
   toggleMenu: function(e) {
     e.preventDefault();

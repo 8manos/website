@@ -19,10 +19,10 @@
 			<p>
 				<label for="contact-medium">Como te contactamos:</label>
 				<select id="contact-medium" name="contact-medium">
-					<option value="email">Correo electrónico</option>
-					<option value="phone">Teléfono</option>
+					<option selected value="email">&#x2709;</option>
+					<option value="phone">&#x260e;</option>
 				</select>
-				<input type="text" name="contact-info" id="contact-info">
+				<input type="email" name="contact-info" id="contact-info">
 			</p>
 			<p>
 				<label for="message">Mensaje:</label>
