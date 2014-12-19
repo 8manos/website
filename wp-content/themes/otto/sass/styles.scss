@@ -584,17 +584,31 @@ h6 { font-size: $size-seis;}
     }
     img {
        display: inline-block;
-       width: 50px;
+       width: 68px;
        border-radius: 50px;
        border: 3px solid;
     }
   }
 }
-.person picture {
-  display: inline-block;
-  /*margin-top: -20px;*/
-  position: absolute;
-  top: -20px; //altura de la imagen a la mitad 
+.person {
+  picture {
+    display: inline-block;
+    /*margin-top: -20px;*/
+    position: absolute;
+    top: -34px; //altura de la imagen a la mitad
+    left: 50%;
+    margin: 0 -34px;
+  }
+
+  .person-name {
+    padding-top: 10px;
+    margin: 18px 0 0;
+  }
+  .person-position {
+    padding: 4px 0;
+    margin: 0;
+  } 
+ 
 }
 .close-search {
   padding: 0 5%;
