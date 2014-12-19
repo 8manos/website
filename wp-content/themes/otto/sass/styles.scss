@@ -527,7 +527,9 @@ h6 { font-size: $size-seis;}
     margin: 0;
     padding: 0 1rem;
   }
-
+}
+.project,
+.person {
   .toggle-details {
     height: 1em;
     padding: 0;
@@ -542,7 +544,6 @@ h6 { font-size: $size-seis;}
     }
   }
 }
-
 .team-nav {
   text-align: center;
 
@@ -570,6 +571,8 @@ h6 { font-size: $size-seis;}
   .person {
     padding: 12px;
     text-align: center;
+    position: relative;
+    margin: 45px 0;
   }
 
   .project,
@@ -586,6 +589,12 @@ h6 { font-size: $size-seis;}
        border: 3px solid;
     }
   }
+}
+.person picture {
+  display: inline-block;
+  /*margin-top: -20px;*/
+  position: absolute;
+  top: -20px; //altura de la imagen a la mitad 
 }
 .close-search {
   padding: 0 5%;
