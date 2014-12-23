@@ -37,13 +37,13 @@
 	?>
 
 	<header role="banner" id="header" <?php echo $header_class; ?>>
-		<a href="" class="menu-toggle icon-menu">Menú</a>
+		<a href="" class="menu-toggle icon-menu color-against-black">Menú</a>
 		<nav role="navigation" class="main-nav color-bg">
 			<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false)); ?>
 		</nav>
 
 		<h1 class="menu-bar">
-			<a href="<?php echo home_url(); ?>/" rel="home" class="logo"><?php bloginfo('name');?></a>
+			<a href="<?php echo home_url(); ?>/" rel="home" class="logo color-against-black"><?php bloginfo('name');?></a>
 
 			<ul class="language-switch is-closed">
 				<?php

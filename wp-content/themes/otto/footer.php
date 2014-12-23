@@ -71,7 +71,7 @@
 	<script src="<?php bloginfo('template_directory'); ?>/js/collections.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/js/routers.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/js/views.js"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/js/colors.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/time.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/js/contrast.js"></script>
 </body>
 </html>

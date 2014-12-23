@@ -13,6 +13,7 @@ $size-seis: 0.750em;
 
 $naranja: #FF3300;
 $gris: #ECECEC;
+$neutro: #999;
 
 $bar-height: 40px;
 $contact-height: 3em;
@@ -52,7 +53,7 @@ button {
   outline: none;
 }
 a {
-   color: $naranja;
+   color: $gris;
    text-decoration: none;
    font-size: $size-cinco;
    font-weight: bold;
@@ -146,7 +147,7 @@ h6 { font-size: $size-seis;}
       position: absolute;
       top: 50%;
       left: 50%;
-      margin: -28px -19px;
+      margin: -38px -19px;
 
       font-family: 'icomoon';
       font-size: 2.25em;
@@ -327,12 +328,12 @@ h6 { font-size: $size-seis;}
 }
 .back-link {
   display: inline-block;
-  float: right; 
+  float: right;
 }
 .sect-conventions {
   border-bottom: 2px dotted;
   border-top: 2px dotted;
-  color: $naranja;
+  color: $neutro;
   margin: 1em auto;
   padding: 0 1em;
   text-align: center;
@@ -347,23 +348,23 @@ h6 { font-size: $size-seis;}
   background: $gris;
   height: $inner_h2_height;
   line-height: $inner_h2_height;
-   
+
 
   button {
-    color: $naranja;
+    color: $neutro;
     float: right;
     height: 100%;
     padding: 0 1em;
   }
   h1 {
-    color: $naranja;
+    color: $neutro;
     font-style: normal;
     margin: 0;
     padding: 0 1em;
     text-transform: uppercase;
   }
   [class^="icon-"] {
-    background: $naranja;
+    background: $neutro;
     box-sizing: border-box;
     color: white;
     display: inline-block;
@@ -413,8 +414,8 @@ h6 { font-size: $size-seis;}
   margin: 20px 0;
   text-transform: uppercase;
   padding: 0 8px;
-  border-bottom: 1px solid $naranja;
-  
+  border-bottom: 1px solid $neutro;
+
   li {
       display: inline-block;
       margin-left: 1px;
@@ -429,10 +430,10 @@ h6 { font-size: $size-seis;}
      position: relative;
      font-weight: bold;
    }
-   
+
    li.active a,
    li a:hover{
-      background: $naranja;
+      background: $neutro;
       color: #FFF;
    }
 }
