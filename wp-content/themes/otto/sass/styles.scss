@@ -643,16 +643,16 @@ h6 { font-size: $size-seis;}
    ========================================================================== */
 .contact-header {
   bottom: 0;
-  height: $inner_h2_height;
-  line-height:  $inner_h2_height;
-  left: 0; 
+  height: $contact-height;
+  line-height: $contact-height;
+  left: 0;
   position: absolute;
   width: 100%;
   z-index: 2;
 
   .icon-contacto {
-    height: $inner_h2_height;
-    line-height:  $inner_h2_height;
+    height: $contact-height / 2;
+    line-height: $contact-height / 2;
   }
 
   .footer-toggle {

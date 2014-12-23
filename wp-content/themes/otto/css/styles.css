@@ -956,16 +956,16 @@ h6 {
 /* line 644, ../sass/styles.scss */
 .contact-header {
   bottom: 0;
-  height: 70px;
-  line-height: 70px;
+  height: 3em;
+  line-height: 3em;
   left: 0;
   position: absolute;
   width: 100%;
   z-index: 2; }
   /* line 653, ../sass/styles.scss */
   .contact-header .icon-contacto {
-    height: 70px;
-    line-height: 70px; }
+    height: 1.5em;
+    line-height: 1.5em; }
   /* line 658, ../sass/styles.scss */
   .contact-header .footer-toggle {
     color: #fff;
