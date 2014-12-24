@@ -660,7 +660,7 @@ h6 { font-size: $size-seis;}
     cursor: pointer;
     font-size: $contact-height / 2;
     margin: 0;
-    
+    padding: 0 0 0 1em;
     text-align: center;
     text-transform: uppercase;
   }
@@ -734,7 +734,7 @@ select {
   }
 }
 
- 
+
 
 .contact-block {
   display: inline-block;

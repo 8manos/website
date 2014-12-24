@@ -67,14 +67,15 @@ OM.Views.MainView = Backbone.View.extend({
     }
 
     view.wrapHeight = $('.wrap').outerHeight();
+    var isContactHeaderFixed = $('.contact-header').hasClass('is-fixed');
 
-    if (window.scrollY + window.innerHeight > view.wrapHeight) {
+    if (window.scrollY + window.innerHeight > view.wrapHeight && isContactHeaderFixed) {
       $('.contact-header').removeClass('is-fixed');
       $('.wrap').removeClass('is-contact-hidden');
 
       $('.footer-toggle').addClass('color');
       $('.footer-toggle').removeClass('color-bg');
-    } else {
+    } else if ( ! isContactHeaderFixed ) {
       $('.contact-header').addClass('is-fixed');
       $('.wrap').addClass('is-contact-hidden');
 

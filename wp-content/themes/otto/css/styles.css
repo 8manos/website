@@ -972,6 +972,7 @@ h6 {
     cursor: pointer;
     font-size: 1.5em;
     margin: 0;
+    padding: 0 0 0 1em;
     text-align: center;
     text-transform: uppercase; }
   /* line 668, ../sass/styles.scss */
