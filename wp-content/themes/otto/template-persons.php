@@ -14,7 +14,7 @@
   %>
 
 	<% _.each(posts, function(post){ %>
-    <article class="person">
+    <article class="person cerrado">
       <picture>
         <source media="(min-width: 40em)" srcset="<%= post.images.thumb2x %> 1x, <%= post.images.thumb4x %> 2x">
         <source srcset="<%= post.images.thumb %> 1x, <%= post.images.thumb2x %> 2x">
@@ -27,7 +27,7 @@
         <p><%= post.content %></p>
         <ul class="person-links color">
           <% _.each(post.contact_links, function(link){ %>
-            <li><a href="<%= setHttp(link.link_url) %>"><span class="icon-<%= link.link_type %>"></span><%= link.link_type %></a></li>
+            <li><a class="icon-<%= link.link_type %>" href="<%= setHttp(link.link_url) %>"><%= link.link_type %></a></li>
           <% }); %>
         </ul>
       </div>

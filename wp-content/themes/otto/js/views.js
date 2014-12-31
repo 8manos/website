@@ -221,6 +221,7 @@ OM.Views.PersonsView = Backbone.View.extend({
   },
   clickToggle: function(e) {
     var $person = $(e.currentTarget).parent();
+    $person.toggleClass('abierto cerrado');
     $(e.currentTarget).toggleClass('more less');
     $person.find('.person-info').slideToggle();
   }
