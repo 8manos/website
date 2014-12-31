@@ -10,5 +10,8 @@
 		<div class="inner-main">
 			<%= content_display %>
 		</div>
+
+		<!--texto especifico para pagina de servicios--> 
+		<p class="close-search color"> ¿Eres un cliente chévere? <br> <a href="">Déjanos tus datos para contatarte.</a> :-)</p>
 	</section>
 </script>
