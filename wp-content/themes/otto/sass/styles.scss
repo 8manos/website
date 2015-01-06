@@ -86,26 +86,14 @@ h6 { font-size: $size-seis;}
   background: #000;
   height: 100%;
   left: 0;
-  position: fixed;
+  position: relative;
   top: 0;
-  transition: top 0.5s;
   width: 100%;
   z-index: 3;
 
-  &.is-collapsed {
-    top: calc(-100% + #{$bar-height});
-  }
-}
-.menu-toggle {
-  bottom: 0;
-  left: 15px;
-  padding: 12px 0;
-  position: absolute;
-  z-index: 3;
-
-  &:hover {
-    text-decoration: none;
-  }
+  /*&.is-collapsed {
+    margin-bottom: $bar-height;
+  }*/
 }
 .main-nav {
   border-right: 1px solid #fff;
@@ -193,11 +181,13 @@ h6 { font-size: $size-seis;}
   }
 }
 .menu-bar {
+  background: #000;
   height: 16px;
   margin: 0;
   padding: 12px 0;
   position: relative;
   text-align: center;
+  width: 100%;
 
   .logo {
     color: #fff;
@@ -216,6 +206,24 @@ h6 { font-size: $size-seis;}
   }
   .logo:hover {
     opacity: 0.4;
+  }
+}
+#header.is-collapsed .menu-bar {
+  position: fixed;
+  top: 0;
+}
+
+.menu-toggle {
+  bottom: 0;
+  font-size: 0.6em;
+  font-style: normal;
+  left: 15px;
+  padding: 12px 0;
+  position: absolute;
+  z-index: 3;
+
+  &:hover {
+    text-decoration: none;
   }
 }
 
@@ -247,7 +255,7 @@ h6 { font-size: $size-seis;}
     color: #fff;
     cursor: pointer;
     display: block;
-    padding: 7px 0;
+    padding: 7px;
   }
 
   &.is-closed {
@@ -276,7 +284,7 @@ h6 { font-size: $size-seis;}
 .wrap {
   background: #fff;
   min-height: calc(100% - #{$bar-height} - #{$contact-height});
-  padding: $bar-height 0 $contact-height;
+  padding: 0 0 $contact-height;
   position: relative;
   z-index: 1;
 

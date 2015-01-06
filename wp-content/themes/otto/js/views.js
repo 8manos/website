@@ -2,19 +2,19 @@ OM.Views.MainView = Backbone.View.extend({
   el: 'body',
   events: {
     'click .menu-toggle': 'toggleMenu',
-    'click .main-nav .menu-item a': 'toggleMenu',
+    'click .main-nav .menu-item a': 'hideMenu',
     'click .main-nav .menu-item:nth-child(6) a': 'showFooter',
     'click .footer-toggle': 'showFooter',
     'click .footer-close': 'hideFooter',
     'click .current-lang': 'toggleLangs',
     'change #contact-medium': 'changeInputType'
   },
-  wrapHeight: 0,
   footerHeight: 0,
   initialize: function(){
     this.positionFooter();
     window.addEventListener('resize', this.resizeCallback);
     window.addEventListener('scroll', this.isContactVisible);
+    window.addEventListener('scroll', this.isHeaderHidden);
   },
   changeInputType: function(e){
     var type = $(e.currentTarget).val();
@@ -28,7 +28,15 @@ OM.Views.MainView = Backbone.View.extend({
   },
   toggleMenu: function(e) {
     e.preventDefault();
-    $('#header').toggleClass('is-collapsed');
+    if (window.scrollY) {
+      $.scrollTo( 0, 500 );
+    } else {
+      this.hideMenu();
+    }
+  },
+  hideMenu: function() {
+    var menuHeight = window.innerHeight - $('.menu-bar').outerHeight();
+    $.scrollTo( menuHeight, 500 );
   },
   showFooter: function(e) {
     e.preventDefault();
@@ -56,7 +64,6 @@ OM.Views.MainView = Backbone.View.extend({
       view = this;
     }
 
-    view.wrapHeight = $('.wrap').outerHeight();
     view.footerHeight = $('.contact-footer').outerHeight();
     $('.wrap').css('margin-bottom', (view.footerHeight));
 
@@ -67,9 +74,9 @@ OM.Views.MainView = Backbone.View.extend({
       view = this.views.main;
     }
 
-    view.wrapHeight = $('.wrap').outerHeight();
+    view.footerHeight = $('.contact-footer').outerHeight();
     var isContactHeaderFixed = $('.contact-header').hasClass('is-fixed');
-    var isBottomReached = window.scrollY + window.innerHeight > view.wrapHeight;
+    var isBottomReached = document.documentElement.scrollHeight - view.footerHeight < window.scrollY + window.innerHeight;
 
     if (isBottomReached && isContactHeaderFixed) {
       $('.contact-header').removeClass('is-fixed');
@@ -83,6 +90,21 @@ OM.Views.MainView = Backbone.View.extend({
 
       $('.footer-toggle').removeClass('color');
       $('.footer-toggle').addClass('color-bg');
+    }
+  },
+  isHeaderHidden: function(view) {
+    if (arguments.length == 0) {
+      view = this.views.main;
+    }
+
+    var menuBarHeight = $('.menu-bar').outerHeight();
+    var isMenuFixed = $('#header').hasClass('is-collapsed');
+    var isHeaderHidden = window.innerHeight - menuBarHeight <= window.scrollY;
+
+    if (isHeaderHidden && ! isMenuFixed) {
+      $('#header').addClass('is-collapsed');
+    } else if ( ! isHeaderHidden && isMenuFixed ) {
+      $('#header').removeClass('is-collapsed');
     }
   }
 });
