@@ -82,4 +82,5 @@
       </div>
     </article>
   <% }); %>
+  <p class="close-search color"> <b>¿Te gusta lo que ves?</b> <br> Invitanos a conocer tu proyecto <a href="">contactanos</a> :-)</p>
 </script>

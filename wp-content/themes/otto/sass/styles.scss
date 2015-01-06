@@ -281,13 +281,15 @@ h6 { font-size: $size-seis;}
   z-index: 1;
 
   .inner-main {
-    padding: 0 5%;
+    padding: 3% 8% 0;
 
     strong {
-      font-size: $size-uno+0.3;
+      font-size: $size-uno+0.1;
+      font-style: italic;
     }
     li strong {
       font-size: inherit;
+      font-style: normal;
     }
     ol,
     ul {
@@ -295,7 +297,7 @@ h6 { font-size: $size-seis;}
       padding: 0;
     }
     ol {
-      list-style-type: ideograph-numeric;
+      list-style-type: decimal;
     }
     li {
       padding: 0 0 6px;
@@ -561,13 +563,14 @@ h6 { font-size: $size-seis;}
 
 .team-wrapper,
 .lab-wrapper {
-  padding: 0 10px;
+  padding: 0 5%;
 
   .person {
     padding: 12px;
     text-align: center;
     position: relative;
     margin: 45px 0;
+    transition: all 0.3s;
   }
 
   .project,
@@ -582,6 +585,7 @@ h6 { font-size: $size-seis;}
        width: 68px;
        border-radius: 50px;
        border: 3px solid;
+       transition: all 0.3s;
     }
   }
 }
@@ -594,7 +598,14 @@ h6 { font-size: $size-seis;}
     left: 50%;
     margin: 0 -34px;
   }
+  &.abierto {
+    margin-top: 70px;
 
+    img {
+      width: 88px;
+      margin: -25px -10px;
+    }
+  } 
   .person-name {
     padding-top: 10px;
     margin: 18px 0 0;
@@ -606,11 +617,13 @@ h6 { font-size: $size-seis;}
  
 }
 .close-search {
-  padding: 0 5%;
-  margin-bottom: 40px;
+  padding: 40px 5% 0;
+  margin: 40px 0;
+  border-top: 1px dashed;
+  text-align: center;
 }
 .works-wrapper {
-  padding: 0.5em;
+  padding: 0.5em 5%;
 
   .project-img {
     width: 300px;
@@ -629,12 +642,24 @@ h6 { font-size: $size-seis;}
    .person-links,
    .lab-tags {
       margin: 0 10px;
-      padding: 15px 10px;
+      padding: 12px 10px 0;
       list-style: none;
-      border-top: 2px dotted; 
+      border-top: 2px dotted;
+      text-align: center; 
    
       li {
        display: inline-block;
+
+        a { 
+          font-size: 0;
+          width: 30px;
+          overflow: hidden;
+
+          &:before {
+            font-size: 30px;
+            margin: 0;
+          }
+        }
       }
    }
 }
@@ -710,9 +735,11 @@ label {
 }
 input,
 textarea {
+  width: 100%;
   padding: 8px 12px;
   border: none;
   background: $gris;
+  box-sizing: border-box;
 }
 textarea {
   resize:vertical;
@@ -734,14 +761,13 @@ select {
   }
 }
 
-
-
 .contact-block {
-  display: inline-block;
+  display: block;
   vertical-align: top;
   text-align: center;
 }
 .contact-links {
+  margin-top: -12px;
   list-style: none;
   padding: 0;
   font-size: 35px;
@@ -781,16 +807,12 @@ select {
    Responsive
    ========================================================================== */
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
 
   .contact-block {
-    display: block;
+    display: inline-block;
   }
   .contact-links {
-    margin-top: -12px;
-  }
-  input[type="text"],
-  textarea{
-    width: 100%;
+    margin-top: 0; 
   }
 }
