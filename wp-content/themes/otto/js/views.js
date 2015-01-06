@@ -11,6 +11,7 @@ OM.Views.MainView = Backbone.View.extend({
   },
   footerHeight: 0,
   initialize: function(){
+    this.collapseMenu();
     this.positionFooter();
     window.addEventListener('resize', this.resizeCallback);
     window.addEventListener('scroll', this.isContactVisible);
@@ -31,12 +32,17 @@ OM.Views.MainView = Backbone.View.extend({
     if (window.scrollY) {
       $.scrollTo( 0, 500 );
     } else {
-      this.hideMenu();
+      this.hideMenu(true);
     }
   },
-  hideMenu: function() {
+  hideMenu: function(animate) {
     var menuHeight = window.innerHeight - $('.menu-bar').outerHeight();
-    $.scrollTo( menuHeight, 500 );
+
+    if (typeof animate == 'object' || animate) { //if it's an event, also animate
+      $.scrollTo( menuHeight, 500 );
+    } else {
+      $.scrollTo( menuHeight, 0 );
+    }
   },
   showFooter: function(e) {
     e.preventDefault();
@@ -58,6 +64,11 @@ OM.Views.MainView = Backbone.View.extend({
   resizeCallback: function() {
     clearTimeout(this.resizeTimer);
     this.resizeTimer = setTimeout(this.views.main.positionFooter, 100, this.views.main);
+  },
+  collapseMenu: function() {
+    if ( $('#header').hasClass('is-collapsed') ) {
+      this.hideMenu(false);
+    }
   },
   positionFooter: function(view) {
     if (arguments.length == 0) {
