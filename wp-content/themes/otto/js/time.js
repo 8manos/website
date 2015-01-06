@@ -9,8 +9,21 @@
     var mins = d.getMinutes();
     var secs = d.getSeconds();
 
-    var h = mins*6;
-    var s = secs+40; // avoid grays
+    /*
+    Hue changes every 10 seconds
+    */
+    var h = (mins*6) + Math.floor(secs/10);
+
+    /*
+    Saturation range 40-100 to avoid grays
+    0secs -> 40%, 30secs -> 100%, 60secs -> 40%
+    */
+    var s = secs+40;
+    if ( secs < 30) {
+      s = (2*secs)+40;
+    } else {
+      s = 160-(secs*2);
+    }
 
     /*
     Lightness should provide maximum contrast at midday
@@ -21,10 +34,10 @@
     var lb;
     if ( hours < 12) {
       lw = 30-hours;
-      lb = 60+hours*2;
+      lb = 60+(hours*2);
     } else {
       lw = hours+6;
-      lb = 108-hours*2;
+      lb = 108-(hours*2);
     }
 
     var colorW = 'hsl('+h+','+s+'%,'+lw+'%)';
@@ -36,6 +49,5 @@
 
     setTimeout(doTime, 1000);
   }
-
 
 })(jQuery);
