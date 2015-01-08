@@ -48,7 +48,7 @@
   %>
 
   <% _.each(posts, function(post){ %>
-    <article class="project">
+    <article class="project off">
       <button type="button" class="toggle-details more color icon-close"></button>
       <h3 class="project-title"><%= post.title %></h3>
       <ul class="project-tags">
