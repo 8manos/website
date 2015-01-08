@@ -21,7 +21,7 @@
           </ul>
         </div>
       </div>
-    
+
     <div class="works-wrapper">
     </div>
   </section>
@@ -36,9 +36,9 @@
     return link;
   }
 
-  function mediaGalleryUrl(sizes) {
+  function mediaGalleryUrl(sizes, size) {
     for (var i = 0; i < sizes.length; i++) {
-      if (sizes[i].name == 'project') {
+      if (sizes[i].name == size) {
         return sizes[i].url;
       }
     };
@@ -57,9 +57,9 @@
         <% }); %>
       </ul>
       <figure>
-        <img src="<%= post.images.project %>" srcset="<%= post.images.project %> 1x, <%= post.images.project2x %> 2x" alt="Website 8manos">
+        <img src="<%= post.images.project %>" srcset="<%= post.images.project %> 300w, <%= post.images.project2x %> 600w" sizes="90vw" alt="<%= post.title %>">
       </figure>
-      
+
       <div class="more-info">
         <div class="project-info">
           <p class="data">Cliente: <strong><%= post.title %></strong></p>
@@ -73,9 +73,7 @@
         <div class="project-gallery">
           <div id="carousel-<%= post.name %>" class="owl-carousel">
             <% _.each(post.media, function(media){ %>
-              <figure>
-                <img src="<%= mediaGalleryUrl(media.sizes) %>">
-              </figure>
+              <img src="<%= mediaGalleryUrl(media.sizes, 'project') %>" srcset="<%= mediaGalleryUrl(media.sizes, 'project') %> 300w, <%= mediaGalleryUrl(media.sizes, 'project2x') %> 600w" sizes="90vw">
             <% }); %>
           </div>
         </div>
