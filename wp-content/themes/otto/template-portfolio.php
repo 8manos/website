@@ -56,10 +56,11 @@
           <li class="icon-<%= tag.slug %>"></li>
         <% }); %>
       </ul>
+      <figure>
+        <img src="<%= post.images.project %>" srcset="<%= post.images.project %> 1x, <%= post.images.project2x %> 2x" alt="Website 8manos">
+      </figure>
+      
       <div class="more-info">
-        <figure>
-          <img src="<%= post.images.project %>" srcset="<%= post.images.project %> 1x, <%= post.images.project2x %> 2x" alt="Website 8manos">
-        </figure>
         <div class="project-info">
           <p class="data">Cliente: <strong><%= post.title %></strong></p>
           <p class="data">Co-workers: <strong><%= post.featuring %></strong></p>
