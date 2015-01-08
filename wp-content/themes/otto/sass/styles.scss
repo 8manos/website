@@ -351,6 +351,7 @@ h6 { font-size: $size-seis;}
   h3 {
     font-style: normal;
     text-transform: uppercase;
+    font-size: 0.875em;
   }
 }
 
@@ -461,14 +462,20 @@ h6 { font-size: $size-seis;}
 
   .data {
     font-style: italic;
+    line-height: 1;
     margin: 0;
-    padding: 0;
+    padding: 0.2em 0;
+
+    strong {
+      margin-left: 0.15em;
+    }
   }
 
   .lab-tags,
   .project-tags {
     list-style-type: none;
     padding: 0 1rem;
+    margin: 1em 0; 
 
     li {
       display: inline-block;
@@ -496,7 +503,6 @@ h6 { font-size: $size-seis;}
       padding: 0;
     }
   }
-
   .project-info,
   .project-link {
     padding: 0 1rem;
@@ -531,6 +537,19 @@ h6 { font-size: $size-seis;}
   .project-title {
     margin: 0;
     padding: 0 1rem;
+  }
+}
+/*demo test para altura de imagen en proyectos*/
+.project.off {
+  padding-bottom: 0;
+
+  figure {
+    height: 8em;
+    overflow: hidden;
+
+    /*img{
+      margin-top: -40%; 
+    }*/
   }
 }
 .project,
@@ -597,6 +616,9 @@ h6 { font-size: $size-seis;}
     }
   }
 }
+.lab-wrapper .project{
+  padding: 1em 0 0.5em;
+}
 .person {
   picture {
     display: inline-block;
@@ -635,6 +657,9 @@ h6 { font-size: $size-seis;}
 
   .project-img {
     width: 300px;
+  }
+  .project-link {
+    text-align: right;
   }
 }
 .more-info {
