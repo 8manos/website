@@ -81,8 +81,16 @@ function add_team_meta($data){
 		$images['project'] = wp_get_attachment_image_src( $img_id, 'project' )[0];
 		$images['project2x'] = wp_get_attachment_image_src( $img_id, 'project2x' )[0];
 	}
-
 	$data->images = $images;
+
+	$gallery = get_post_meta( $data->id, '_gallery', true );
+	if (is_array($gallery)) {
+		foreach ($gallery as $key => $img_id) {
+			$gallery_src[$key]['small'] = wp_get_attachment_image_src( $img_id, 'project' );
+			$gallery_src[$key]['medium'] = wp_get_attachment_image_src( $img_id, 'project2x' );
+		}
+		$data->gallery = $gallery_src;
+	}
 
   return $data;
 }

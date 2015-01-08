@@ -35,16 +35,6 @@
     }
     return link;
   }
-
-  function mediaGalleryUrl(sizes, size) {
-    for (var i = 0; i < sizes.length; i++) {
-      if (sizes[i].name == size) {
-        return sizes[i].url;
-      }
-    };
-    //if not found return full size
-    return sizes[0].url;
-  }
   %>
 
   <% _.each(posts, function(post){ %>
@@ -72,8 +62,8 @@
         <h4 class="project-gallery-title">Galería de imágenes</h4>
         <div class="project-gallery">
           <div id="carousel-<%= post.name %>" class="owl-carousel">
-            <% _.each(post.media, function(media){ %>
-              <img src="<%= mediaGalleryUrl(media.sizes, 'project') %>" srcset="<%= mediaGalleryUrl(media.sizes, 'project') %> 300w, <%= mediaGalleryUrl(media.sizes, 'project2x') %> 600w" sizes="90vw">
+            <% _.each(post.gallery, function(slide){ %>
+              <img src="<%= slide.small[0] %>" srcset="<%= slide.small[0] %> 300w, <%= slide.medium[0] %> 600w" sizes="90vw">
             <% }); %>
           </div>
         </div>

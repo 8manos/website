@@ -138,6 +138,12 @@ class Manos {
 							'id' => 'featuring',
 							'title' => 'Featuring',
 							'type' => 'text'
+						),
+						array(
+							'id'       => 'gallery',
+							'title'    => 'Galería',
+							'type'     => 'media',
+							'multiple' => true
 						)
 					)
 				)
