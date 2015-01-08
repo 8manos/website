@@ -1105,34 +1105,35 @@ select {
     padding: 12px 25px;
     color: #FFF; }
 
-/* line 797, ../sass/styles.scss */
-.contact-block {
-  display: block;
-  vertical-align: top;
+/* line 796, ../sass/styles.scss */
+.footer-block {
   text-align: center; }
-
-/* line 802, ../sass/styles.scss */
-.contact-links {
-  margin-top: -12px;
-  list-style: none;
-  padding: 0;
-  font-size: 35px; }
-  /* line 808, ../sass/styles.scss */
-  .contact-links li {
-    display: inline-block;
-    width: 28px;
-    overflow: hidden; }
+  /* line 799, ../sass/styles.scss */
+  .footer-block .contact-block {
+    display: block;
+    vertical-align: top; }
+  /* line 803, ../sass/styles.scss */
+  .footer-block .contact-links {
+    margin-top: -12px;
+    list-style: none;
+    padding: 0;
+    font-size: 35px; }
+    /* line 808, ../sass/styles.scss */
+    .footer-block .contact-links li {
+      display: inline-block;
+      width: 28px;
+      overflow: hidden; }
 
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 820, ../sass/styles.scss */
+/* line 823, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.2s linear;
           transition: color 0.2s linear; }
 
-/* line 825, ../sass/styles.scss */
+/* line 828, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.2s linear;
           transition: background-color 0.2s linear; }
@@ -1141,29 +1142,96 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 835, ../sass/styles.scss */
+/* line 838, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 836, ../sass/styles.scss */
+/* line 839, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 837, ../sass/styles.scss */
+/* line 840, ../sass/styles.scss */
 .alignright {
   float: right; }
 
 /* ==========================================================================
    Responsive
    ========================================================================== */
-@media screen and (min-width: 600px) {
-  /* line 845, ../sass/styles.scss */
-  .contact-block {
-    display: inline-block; }
+@media screen and (min-width: 790px) {
+  /* line 857, ../sass/styles.scss */
+  h1 {
+    font-size: 1.65em; }
 
-  /* line 848, ../sass/styles.scss */
-  .contact-links {
+  /* line 858, ../sass/styles.scss */
+  h2 {
+    font-size: 1.463em; }
+
+  /* line 859, ../sass/styles.scss */
+  h3 {
+    font-size: 1.275em; }
+
+  /* line 860, ../sass/styles.scss */
+  h4 {
+    font-size: 1.15em; }
+
+  /* line 861, ../sass/styles.scss */
+  h5 {
+    font-size: 1.025em; }
+
+  /* line 862, ../sass/styles.scss */
+  h6 {
+    font-size: 0.9em; }
+
+  /* line 864, ../sass/styles.scss */
+  .section-name:not(.contact-header) {
+    height: 80.5px;
+    line-height: 80.5px; }
+    /* line 868, ../sass/styles.scss */
+    .section-name:not(.contact-header) [class^="icon-"] {
+      font-size: xx-large;
+      height: 80.5px;
+      line-height: 80.5px;
+      padding: 0 0.5em;
+      width: 80.5px; }
+
+  /* line 877, ../sass/styles.scss */
+  .wrap .inner-main {
+    padding: 3% 8% 0; }
+    /* line 880, ../sass/styles.scss */
+    .wrap .inner-main li {
+      padding: 4px 0 7px; }
+    /* line 883, ../sass/styles.scss */
+    .wrap .inner-main p {
+      margin-bottom: 1.8em; }
+      /* line 886, ../sass/styles.scss */
+      .wrap .inner-main p:first-child {
+        width: 45%; }
+
+  /* line 892, ../sass/styles.scss */
+  .team-wrapper,
+  .lab-wrapper {
+    padding: 0 8%; }
+
+  /* line 897, ../sass/styles.scss */
+  .inner-footer .name,
+  .inner-footer .medium {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top; } }
+@media screen and (min-width: 600px) {
+  /* line 908, ../sass/styles.scss */
+  .footer-block .contact-block {
+    display: inline-block; }
+  /* line 911, ../sass/styles.scss */
+  .footer-block h4 {
+    margin: 0.4em; }
+  /* line 914, ../sass/styles.scss */
+  .footer-block .contact-links {
     margin-top: 0; } }
+@media screen and (max-width: 500px) {
+  /* line 921, ../sass/styles.scss */
+  body {
+    text-rendering: optimizeSpeed; } }
 
 /*# sourceMappingURL=styles.css.map */

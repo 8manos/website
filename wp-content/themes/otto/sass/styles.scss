@@ -793,24 +793,27 @@ select {
     color: #FFF;
   }
 }
-
-.contact-block {
-  display: block;
-  vertical-align: top;
+.footer-block {
   text-align: center;
-}
-.contact-links {
-  margin-top: -12px;
-  list-style: none;
-  padding: 0;
-  font-size: 35px;
 
-  li {
-    display: inline-block;
-    width: 28px;
-    overflow: hidden;
+  .contact-block {
+    display: block;
+    vertical-align: top;    
+  }
+  .contact-links {
+    margin-top: -12px;
+    list-style: none;
+    padding: 0;
+    font-size: 35px;
+    li {
+      display: inline-block;
+      width: 28px;
+      overflow: hidden;
+    }
   }
 }
+
+
 
 
 /* ==========================================================================
@@ -840,12 +843,80 @@ select {
    Responsive
    ========================================================================== */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1680px) {
+}
+@media screen and (min-width: 1240px) {
+}
+@media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 960px) {
+}
+@media screen and (min-width: 820px) {
+}
+@media screen and (min-width: 790px) {
+  h1 { font-size: $size-uno+0.15;}
+  h2 { font-size: $size-dos+0.15;}
+  h3 { font-size: $size-tres+0.15;}
+  h4 { font-size: $size-cuatro+0.15;}
+  h5 { font-size: $size-cinco+0.15;}
+  h6 { font-size: $size-seis+0.15;}
 
-  .contact-block {
-    display: inline-block;
+  .section-name:not(.contact-header) {
+    height: $inner_h2_height*1.15;
+    line-height: $inner_h2_height*1.15;
+
+    [class^="icon-"] {
+      font-size: xx-large;
+      height: $inner_h2_height*1.15;
+      line-height: $inner_h2_height*1.15;
+      padding: 0 0.5em;
+      width: $inner_h2_height*1.15;
+    }
   }
-  .contact-links {
-    margin-top: 0; 
+  .wrap {
+    .inner-main {
+      padding: 3% 8% 0;
+
+      li {
+        padding: 4px 0 7px;
+      }
+      p {
+        margin-bottom: 1.8em;
+
+      &:first-child {
+        width: 45%;
+        } 
+      }
+    }
   }
+  .team-wrapper,
+  .lab-wrapper {
+    padding: 0 8%;
+  }
+  .inner-footer {
+    .name,
+    .medium {
+      display: inline-block;
+      width: 49%;
+      vertical-align: top;
+    }
+  }
+
+}
+@media screen and (min-width: 600px) {
+  .footer-block {
+    .contact-block {
+      display: inline-block;
+    }
+    h4 {
+      margin: 0.4em;; 
+    }
+    .contact-links {
+      margin-top: 0; 
+    }
+  }
+  
+}
+@media screen and (max-width: 500px) {
+  body {text-rendering: optimizeSpeed;}
 }

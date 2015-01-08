@@ -12,18 +12,18 @@
 		<h3>Aca va un texto introductorio que se administra como una página en wordpress. O podemos poner un texto relacionado con la sección en la que uno se encuentra?</h3>
 		<p>Prometemos responder en el menor tiempo posible.</p>
 		<form>
-			<p>
+			<div class="name">
 				<label for="name">Nombre:</label>
 				<input type="text" placeholder="como te gusta que te llamen" name="name" id="name">
-			</p>
-			<p>
+			</div>
+			<div class="medium">
 				<label for="contact-medium">Como te contactamos:</label>
 				<select id="contact-medium" name="contact-medium">
 					<option selected value="email">&#x2709;</option>
 					<option value="phone">&#x260e;</option>
 				</select>
 				<input type="email" name="contact-info" id="contact-info">
-			</p>
+			</div>
 			<p>
 				<label for="message">Mensaje:</label>
 				<textarea name="message" id="message"></textarea>
@@ -32,18 +32,20 @@
 				<input class="color-bg" type="submit" Value="Enviar">
 			</p>
 		</form>
-		<div class="contact-block">
-			<h4>8manos en Bogotá</h4>
-			<p>Calle 94 # 15-32 Oficina 301<br>Tel: (57-1) 6057039</p>
-		</div>
-		<div class="contact-block">
-			<h4>8manos en la red</h4>
-			<ul class="contact-links">
-				<li><a href="" class="icon-twitter">Twitter</a></li>
-				<li><a href="" class="icon-github">Github</a></li>
-				<li><a href="" class="icon-tumblr">Tumblr</a></li>
-			</ul>
-		</div>
+		<div class="footer-block">
+			<div class="contact-block">
+				<h4>8manos en Bogotá</h4>
+				<p>Calle 94 # 15-32 Oficina 301<br>Tel: (57-1) 6057039</p>
+			</div>
+			<div class="contact-block">
+				<h4>8manos en la red</h4>
+				<ul class="contact-links">
+					<li><a href="" class="icon-twitter">Twitter</a></li>
+					<li><a href="" class="icon-github">Github</a></li>
+					<li><a href="" class="icon-tumblr">Tumblr</a></li>
+				</ul>
+			</div>
+		</div>		
 	</div>
 	</footer>
 
