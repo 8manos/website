@@ -452,7 +452,7 @@ h6 { font-size: $size-seis;}
 .project {
   background-color: $gris;
   margin: 0.5em 0;
-  padding: 1em 0 0;
+  padding: 1em 0;
   position: relative;
 
   figure {
@@ -503,9 +503,6 @@ h6 { font-size: $size-seis;}
       padding: 0;
     }
   }
-  .project-link {
-    text-align: right;
-  }
   .project-info,
   .project-link {
     padding: 0 1rem;
@@ -544,9 +541,15 @@ h6 { font-size: $size-seis;}
 }
 /*demo test para altura de imagen en proyectos*/
 .project.off {
+  padding-bottom: 0;
+
   figure {
     height: 8em;
     overflow: hidden;
+
+    /*img{
+      margin-top: -40%; 
+    }*/
   }
 }
 .project,
@@ -654,6 +657,9 @@ h6 { font-size: $size-seis;}
 
   .project-img {
     width: 300px;
+  }
+  .project-link {
+    text-align: right;
   }
 }
 .more-info {
