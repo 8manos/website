@@ -542,16 +542,6 @@ h6 { font-size: $size-seis;}
     margin: 0;
     padding: 0 1rem;
   }
-
-  @media screen and (min-width: 60em) {
-    display: inline-block;
-    vertical-align: top;
-    width: 48%;
-
-    &:nth-child(2n+1) {
-      margin-right: 3%;
-    }
-  }
 }
 /*demo test para altura de imagen en proyectos*/
 .project.off {
@@ -628,15 +618,27 @@ h6 { font-size: $size-seis;}
        border: 3px solid;
        transition: all 0.3s;
     }
-  }
 
-  @media screen and (min-width: 80em) {
-    .project {
+    @media screen and (min-width: 48em) {
+      display: inline-block;
+      margin-left: 3%;
+      vertical-align: top;
+      width: 48%;
+
+      &:nth-child(2n+1) {
+        margin-left: 0;
+      }
+    }
+
+    @media screen and (min-width: 72em) {
+      margin-left: 3%;
       width: 31%;
-      margin-right: 3%;
 
-      &:nth-child(3n+3) {
-        margin-right: 0;
+      &:nth-child(2n+1) {
+        margin-left: 3%;
+      }
+      &:nth-child(3n+1) {
+        margin-left: 0;
       }
     }
   }
@@ -685,6 +687,19 @@ h6 { font-size: $size-seis;}
   }
   .project-link {
     text-align: right;
+  }
+
+  @media screen and (min-width: 60em) {
+    .project {
+      display: inline-block;
+      margin-left: 3%;
+      vertical-align: top;
+      width: 48%;
+
+      &:nth-child(2n+1) {
+        margin-left: 0;
+      }
+    }
   }
 }
 .more-info {
