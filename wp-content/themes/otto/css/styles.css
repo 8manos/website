@@ -680,29 +680,33 @@ h6 {
   text-align: center; }
   /* line 351, ../sass/styles.scss */
   .sect-conventions h3 {
+    display: inline-block;
     font-style: normal;
     text-transform: uppercase;
     font-size: 0.875em; }
+  /* line 357, ../sass/styles.scss */
+  .sect-conventions ul {
+    display: inline-block; }
 
-/* line 358, ../sass/styles.scss */
+/* line 362, ../sass/styles.scss */
 .section-name {
   background: #ECECEC;
   height: 70px;
   line-height: 70px; }
-  /* line 364, ../sass/styles.scss */
+  /* line 368, ../sass/styles.scss */
   .section-name button {
     color: #999;
     float: right;
     height: 100%;
     padding: 0 1em; }
-  /* line 370, ../sass/styles.scss */
+  /* line 374, ../sass/styles.scss */
   .section-name h1 {
     color: #999;
     font-style: normal;
     margin: 0;
     padding: 0 1em;
     text-transform: uppercase; }
-  /* line 377, ../sass/styles.scss */
+  /* line 381, ../sass/styles.scss */
   .section-name [class^="icon-"] {
     background: #999;
     box-sizing: border-box;
@@ -715,24 +719,24 @@ h6 {
     text-align: center;
     vertical-align: top;
     width: 70px; }
-    /* line 390, ../sass/styles.scss */
+    /* line 394, ../sass/styles.scss */
     .section-name [class^="icon-"]:before {
       margin: 0; }
-  /* line 394, ../sass/styles.scss */
+  /* line 398, ../sass/styles.scss */
   .section-name > * {
     display: inline-block; }
 
-/* line 398, ../sass/styles.scss */
+/* line 402, ../sass/styles.scss */
 .conventions {
   color: black;
   list-style-type: none;
   padding: 0; }
-  /* line 403, ../sass/styles.scss */
+  /* line 407, ../sass/styles.scss */
   .conventions .convention {
     display: inline-block;
     font-style: italic;
     margin: 0.5em; }
-    /* line 408, ../sass/styles.scss */
+    /* line 412, ../sass/styles.scss */
     .conventions .convention:before {
       background-color: #ECECEC;
       border-radius: 50%;
@@ -743,7 +747,7 @@ h6 {
       vertical-align: middle;
       width: 1.5em; }
 
-/* line 421, ../sass/styles.scss */
+/* line 425, ../sass/styles.scss */
 .nav-tabs {
   list-style: none;
   width: 100%;
@@ -752,12 +756,12 @@ h6 {
   text-transform: uppercase;
   padding: 0 8px;
   border-bottom: 1px solid #999; }
-  /* line 430, ../sass/styles.scss */
+  /* line 434, ../sass/styles.scss */
   .nav-tabs li {
     display: inline-block;
     margin-left: 1px;
     width: 32%; }
-  /* line 436, ../sass/styles.scss */
+  /* line 440, ../sass/styles.scss */
   .nav-tabs li a {
     display: block;
     color: #FFF;
@@ -765,61 +769,61 @@ h6 {
     background: rgba(255, 51, 0, 0.2);
     position: relative;
     font-weight: bold; }
-  /* line 445, ../sass/styles.scss */
+  /* line 449, ../sass/styles.scss */
   .nav-tabs li.active a,
   .nav-tabs li a:hover {
     background: #999;
     color: #FFF; }
 
-/* line 452, ../sass/styles.scss */
+/* line 456, ../sass/styles.scss */
 .project {
   background-color: #ECECEC;
   margin: 0.5em 0;
   padding: 1em 0;
   position: relative; }
-  /* line 458, ../sass/styles.scss */
+  /* line 462, ../sass/styles.scss */
   .project figure {
     margin: 1em auto;
     width: 100%; }
-  /* line 463, ../sass/styles.scss */
+  /* line 467, ../sass/styles.scss */
   .project .data {
     font-style: italic;
     line-height: 1;
     margin: 0;
     padding: 0.2em 0; }
-    /* line 469, ../sass/styles.scss */
+    /* line 473, ../sass/styles.scss */
     .project .data strong {
       margin-left: 0.15em; }
-  /* line 474, ../sass/styles.scss */
+  /* line 478, ../sass/styles.scss */
   .project .lab-tags,
   .project .project-tags {
     list-style-type: none;
     padding: 0 1rem;
     margin: 1em 0; }
-    /* line 480, ../sass/styles.scss */
+    /* line 484, ../sass/styles.scss */
     .project .lab-tags li,
     .project .project-tags li {
       display: inline-block;
       margin: 0 0.25em;
       text-align: center; }
-  /* line 488, ../sass/styles.scss */
+  /* line 492, ../sass/styles.scss */
   .project .lab-tags li {
     background-color: #ccc;
     border-radius: 3px;
     color: white;
     font-style: italic;
     padding: 0.25em 0.5em; }
-  /* line 497, ../sass/styles.scss */
+  /* line 501, ../sass/styles.scss */
   .project .owl-controls {
     display: none; }
-  /* line 502, ../sass/styles.scss */
+  /* line 506, ../sass/styles.scss */
   .project .project-desc p {
     padding: 0; }
-  /* line 506, ../sass/styles.scss */
+  /* line 510, ../sass/styles.scss */
   .project .project-info,
   .project .project-link {
     padding: 0 1rem; }
-  /* line 512, ../sass/styles.scss */
+  /* line 516, ../sass/styles.scss */
   .project .project-tags li:before {
     background-color: white;
     border-radius: 50%;
@@ -830,35 +834,35 @@ h6 {
     margin-right: 0;
     vertical-align: middle;
     width: 1.5em; }
-  /* line 525, ../sass/styles.scss */
+  /* line 529, ../sass/styles.scss */
   .project .project-gallery-title {
     font-style: normal;
     margin: 0;
     padding: 0 1rem; }
-  /* line 531, ../sass/styles.scss */
+  /* line 535, ../sass/styles.scss */
   .project .project-subtitle {
     font-weight: normal;
     margin: 0;
     padding: 0 1rem; }
-  /* line 537, ../sass/styles.scss */
+  /* line 541, ../sass/styles.scss */
   .project .project-title {
     margin: 0;
     padding: 0 1rem; }
   @media screen and (min-width: 60em) {
-    /* line 452, ../sass/styles.scss */
+    /* line 456, ../sass/styles.scss */
     .project {
       display: inline-block;
       vertical-align: top;
       width: 48%; }
-      /* line 547, ../sass/styles.scss */
+      /* line 551, ../sass/styles.scss */
       .project:nth-child(2n+1) {
         margin-right: 3%; } }
 
 /*demo test para altura de imagen en proyectos*/
-/* line 553, ../sass/styles.scss */
+/* line 557, ../sass/styles.scss */
 .project.off {
   padding-bottom: 0; }
-  /* line 556, ../sass/styles.scss */
+  /* line 560, ../sass/styles.scss */
   .project.off figure {
     height: 8em;
     overflow: hidden;
@@ -866,7 +870,7 @@ h6 {
       margin-top: -40%;
     }*/ }
 
-/* line 567, ../sass/styles.scss */
+/* line 571, ../sass/styles.scss */
 .project .toggle-details,
 .person .toggle-details {
   height: 1em;
@@ -877,23 +881,23 @@ h6 {
   -webkit-transition: -webkit-transform 0.3s;
           transition: transform 0.3s;
   width: 1em; }
-  /* line 576, ../sass/styles.scss */
+  /* line 580, ../sass/styles.scss */
   .project .toggle-details.more,
   .person .toggle-details.more {
     -webkit-transform: rotate(315deg);
         -ms-transform: rotate(315deg);
             transform: rotate(315deg); }
 
-/* line 581, ../sass/styles.scss */
+/* line 585, ../sass/styles.scss */
 .team-nav {
   text-align: center; }
-  /* line 584, ../sass/styles.scss */
+  /* line 588, ../sass/styles.scss */
   .team-nav ul {
     border-bottom: 1px solid;
     list-style-type: none;
     display: inline-block;
     padding: 0 20px; }
-    /* line 591, ../sass/styles.scss */
+    /* line 595, ../sass/styles.scss */
     .team-nav ul li {
       background: #ECECEC;
       cursor: pointer;
@@ -901,11 +905,11 @@ h6 {
       line-height: 3em;
       padding: 0 1em; }
 
-/* line 601, ../sass/styles.scss */
+/* line 605, ../sass/styles.scss */
 .team-wrapper,
 .lab-wrapper {
   padding: 0 5%; }
-  /* line 605, ../sass/styles.scss */
+  /* line 609, ../sass/styles.scss */
   .team-wrapper .person,
   .lab-wrapper .person {
     padding: 12px;
@@ -914,19 +918,19 @@ h6 {
     margin: 45px 0;
     -webkit-transition: all 0.3s;
             transition: all 0.3s; }
-  /* line 613, ../sass/styles.scss */
+  /* line 617, ../sass/styles.scss */
   .team-wrapper .project,
   .team-wrapper .person,
   .lab-wrapper .project,
   .lab-wrapper .person {
     background: #ECECEC; }
-    /* line 617, ../sass/styles.scss */
+    /* line 621, ../sass/styles.scss */
     .team-wrapper .project h4,
     .team-wrapper .person h4,
     .lab-wrapper .project h4,
     .lab-wrapper .person h4 {
       font-weight: normal; }
-    /* line 620, ../sass/styles.scss */
+    /* line 624, ../sass/styles.scss */
     .team-wrapper .project img,
     .team-wrapper .person img,
     .lab-wrapper .project img,
@@ -938,11 +942,11 @@ h6 {
       -webkit-transition: all 0.3s;
               transition: all 0.3s; }
 
-/* line 629, ../sass/styles.scss */
+/* line 633, ../sass/styles.scss */
 .lab-wrapper .project {
   padding: 1em 0 0.5em; }
 
-/* line 633, ../sass/styles.scss */
+/* line 637, ../sass/styles.scss */
 .person picture {
   display: inline-block;
   /*margin-top: -20px;*/
@@ -950,50 +954,50 @@ h6 {
   top: -34px;
   left: 50%;
   margin: 0 -34px; }
-/* line 641, ../sass/styles.scss */
+/* line 645, ../sass/styles.scss */
 .person.abierto {
   margin-top: 70px; }
-  /* line 644, ../sass/styles.scss */
+  /* line 648, ../sass/styles.scss */
   .person.abierto img {
     width: 88px;
     margin: -25px -10px; }
-/* line 649, ../sass/styles.scss */
+/* line 653, ../sass/styles.scss */
 .person .person-name {
   padding-top: 10px;
   margin: 18px 0 0; }
-/* line 653, ../sass/styles.scss */
+/* line 657, ../sass/styles.scss */
 .person .person-position {
   padding: 4px 0;
   margin: 0; }
 
-/* line 659, ../sass/styles.scss */
+/* line 663, ../sass/styles.scss */
 .close-search {
   padding: 40px 5% 0;
   margin: 40px 0;
   border-top: 1px dashed;
   text-align: center; }
 
-/* line 665, ../sass/styles.scss */
+/* line 669, ../sass/styles.scss */
 .works-wrapper {
   padding: 0.5em 5%; }
-  /* line 668, ../sass/styles.scss */
+  /* line 672, ../sass/styles.scss */
   .works-wrapper .project-img {
     width: 300px; }
-  /* line 671, ../sass/styles.scss */
+  /* line 675, ../sass/styles.scss */
   .works-wrapper .project-link {
     text-align: right; }
 
-/* line 675, ../sass/styles.scss */
+/* line 679, ../sass/styles.scss */
 .more-info {
   display: none;
   text-align: left; }
-  /* line 679, ../sass/styles.scss */
+  /* line 683, ../sass/styles.scss */
   .more-info p {
     padding-bottom: 10px; }
-  /* line 682, ../sass/styles.scss */
+  /* line 686, ../sass/styles.scss */
   .more-info p + p {
     padding: 5px 0 15px; }
-  /* line 685, ../sass/styles.scss */
+  /* line 689, ../sass/styles.scss */
   .more-info .person-links,
   .more-info .lab-tags {
     margin: 0 10px;
@@ -1001,17 +1005,17 @@ h6 {
     list-style: none;
     border-top: 2px dotted;
     text-align: center; }
-    /* line 693, ../sass/styles.scss */
+    /* line 697, ../sass/styles.scss */
     .more-info .person-links li,
     .more-info .lab-tags li {
       display: inline-block; }
-      /* line 696, ../sass/styles.scss */
+      /* line 700, ../sass/styles.scss */
       .more-info .person-links li a,
       .more-info .lab-tags li a {
         font-size: 0;
         width: 30px;
         overflow: hidden; }
-        /* line 701, ../sass/styles.scss */
+        /* line 705, ../sass/styles.scss */
         .more-info .person-links li a:before,
         .more-info .lab-tags li a:before {
           font-size: 36px;
@@ -1020,7 +1024,7 @@ h6 {
 /* ==========================================================================
    Footer
    ========================================================================== */
-/* line 712, ../sass/styles.scss */
+/* line 716, ../sass/styles.scss */
 .contact-header {
   bottom: 0;
   height: 3em;
@@ -1029,11 +1033,11 @@ h6 {
   position: absolute;
   width: 100%;
   z-index: 2; }
-  /* line 721, ../sass/styles.scss */
+  /* line 725, ../sass/styles.scss */
   .contact-header .icon-contacto {
     height: 1.5em;
     line-height: 1.5em; }
-  /* line 726, ../sass/styles.scss */
+  /* line 730, ../sass/styles.scss */
   .contact-header .footer-toggle {
     color: #fff;
     cursor: pointer;
@@ -1042,27 +1046,27 @@ h6 {
     padding: 0 0 0 1em;
     text-align: center;
     text-transform: uppercase; }
-  /* line 736, ../sass/styles.scss */
+  /* line 740, ../sass/styles.scss */
   .contact-header .footer-toggle.color {
     background: none !important; }
-  /* line 739, ../sass/styles.scss */
+  /* line 743, ../sass/styles.scss */
   .contact-header .footer-toggle.color-bg {
     color: #FFF !important; }
-  /* line 743, ../sass/styles.scss */
+  /* line 747, ../sass/styles.scss */
   .contact-header.is-fixed {
     position: fixed;
     height: 3em;
     line-height: 1; }
-    /* line 748, ../sass/styles.scss */
+    /* line 752, ../sass/styles.scss */
     .contact-header.is-fixed .icon-contacto,
     .contact-header.is-fixed .footer-close {
       display: none; }
-    /* line 753, ../sass/styles.scss */
+    /* line 757, ../sass/styles.scss */
     .contact-header.is-fixed .footer-toggle {
       width: 100%;
       padding: 0.5em 0; }
 
-/* line 760, ../sass/styles.scss */
+/* line 764, ../sass/styles.scss */
 .contact-footer {
   background: #fff;
   bottom: 0;
@@ -1073,18 +1077,18 @@ h6 {
   position: fixed;
   -webkit-transition: bottom 0.5s;
           transition: bottom 0.5s; }
-  /* line 769, ../sass/styles.scss */
+  /* line 773, ../sass/styles.scss */
   .contact-footer .inner-footer {
     padding: 0 5%; }
 
-/* line 773, ../sass/styles.scss */
+/* line 777, ../sass/styles.scss */
 label {
   display: block;
   font-weight: bold;
   padding-bottom: 10px;
   font-size: 0.875em; }
 
-/* line 779, ../sass/styles.scss */
+/* line 783, ../sass/styles.scss */
 input,
 textarea {
   width: 100%;
@@ -1093,40 +1097,40 @@ textarea {
   background: #ECECEC;
   box-sizing: border-box; }
 
-/* line 787, ../sass/styles.scss */
+/* line 791, ../sass/styles.scss */
 textarea {
   resize: vertical;
   /*max-height:300px;*/ }
 
-/* line 791, ../sass/styles.scss */
+/* line 795, ../sass/styles.scss */
 select {
   font-family: icomoon;
   overflow: hidden; }
 
-/* line 795, ../sass/styles.scss */
+/* line 799, ../sass/styles.scss */
 .submit {
   text-align: center;
   margin-bottom: 60px; }
-  /* line 799, ../sass/styles.scss */
+  /* line 803, ../sass/styles.scss */
   .submit input[type="submit"] {
     font-weight: bold;
     text-transform: uppercase;
     padding: 12px 25px;
     color: #FFF; }
 
-/* line 807, ../sass/styles.scss */
+/* line 811, ../sass/styles.scss */
 .contact-block {
   display: block;
   vertical-align: top;
   text-align: center; }
 
-/* line 812, ../sass/styles.scss */
+/* line 816, ../sass/styles.scss */
 .contact-links {
   margin-top: -12px;
   list-style: none;
   padding: 0;
   font-size: 35px; }
-  /* line 818, ../sass/styles.scss */
+  /* line 822, ../sass/styles.scss */
   .contact-links li {
     display: inline-block;
     width: 28px;
@@ -1135,13 +1139,13 @@ select {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 830, ../sass/styles.scss */
+/* line 834, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.2s linear;
           transition: color 0.2s linear; }
 
-/* line 835, ../sass/styles.scss */
+/* line 839, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.2s linear;
           transition: background-color 0.2s linear; }
@@ -1150,28 +1154,28 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 845, ../sass/styles.scss */
+/* line 849, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 846, ../sass/styles.scss */
+/* line 850, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 847, ../sass/styles.scss */
+/* line 851, ../sass/styles.scss */
 .alignright {
   float: right; }
 
 /* ==========================================================================
    Responsive
    ========================================================================== */
-@media screen and (min-width: 600px) {
-  /* line 855, ../sass/styles.scss */
+@media screen and (min-width: 35em) {
+  /* line 859, ../sass/styles.scss */
   .contact-block {
     display: inline-block; }
 
-  /* line 858, ../sass/styles.scss */
+  /* line 862, ../sass/styles.scss */
   .contact-links {
     margin-top: 0; } }
 
