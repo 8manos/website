@@ -244,10 +244,8 @@ OM.Views.PersonsView = Backbone.View.extend({
   events: {
     'click .toggle-details': 'clickToggle'
   },
-  el: 'section.team .team-wrapper',
   initialize: function(){
     this.template = _.template($('#personsTemplate').html());
-    this.render();
   },
   render: function(){
     var posts = this.collection.models[0].attributes.posts;
@@ -298,11 +296,12 @@ OM.Views.TeamView = Backbone.View.extend({
     }
     this.renderTeam(newCollection)
   },
-  renderTeam: function(col){
-    col.fetch({
+  renderTeam: function(collection){
+    collection.fetch({
       complete: function(xhr, textStatus){
         if(textStatus == 'success'){
-          window.views.persons_view = new OM.Views.PersonsView({collection: col});
+          var persons_view = new OM.Views.PersonsView({collection: collection});
+          $('section.team .team-wrapper').html(persons_view.render().el);
         }
       }
     });
