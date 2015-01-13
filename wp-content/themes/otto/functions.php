@@ -25,9 +25,9 @@ function minimal_theme_setup() {
 	add_image_size('thumb', 150, 150, true);
 	add_image_size('thumb2x', 300, 300, true);
 	add_image_size('thumb4x', 600, 600, true);
-	add_image_size('projectth', 300, 126, true, array( 'center', 'top' ));
-	add_image_size('projectth2x', 600, 251, true, array( 'center', 'top' ));
-	add_image_size('projectth3x', 900, 377, true, array( 'center', 'top' ));
+	add_image_size('projectth', 300, 126, array( 'center', 'top' ));
+	add_image_size('projectth2x', 600, 251, array( 'center', 'top' ));
+	add_image_size('projectth3x', 900, 377, array( 'center', 'top' ));
 	add_image_size('project', 300, 600);
 	add_image_size('project2x', 600, 1000);
 	add_image_size('project3x', 900, 1600);
