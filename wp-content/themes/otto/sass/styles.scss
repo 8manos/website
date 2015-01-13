@@ -543,19 +543,7 @@ h6 { font-size: $size-seis;}
     padding: 0 1rem;
   }
 }
-/*demo test para altura de imagen en proyectos*/
-.project.off {
-  padding-bottom: 0;
 
-  figure {
-    height: 8em;
-    overflow: hidden;
-
-    /*img{
-      margin-top: -40%; 
-    }*/
-  }
-}
 .project,
 .person {
   .toggle-details {
@@ -578,9 +566,6 @@ h6 { font-size: $size-seis;}
   ul {
     border-bottom: 1px solid;
     list-style-type: none;
-    display: inline-block;
-    ///DEMO
-    padding: 0 20px;
 
     li {
       background: $gris;
@@ -607,6 +592,7 @@ h6 { font-size: $size-seis;}
   .project,
   .person {
     background: $gris;
+    box-sizing: border-box;
 
     h4 {
        font-weight: normal;
