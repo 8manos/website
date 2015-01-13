@@ -566,14 +566,23 @@ h6 { font-size: $size-seis;}
   ul {
     border-bottom: 1px solid;
     list-style-type: none;
+    padding: 0;
+  }
 
-    li {
-      background: $gris;
-      cursor: pointer;
-      display: inline-block;
-      line-height: 3em;
-      padding: 0 1em;
-    }
+  li {
+    background: $gris;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.875em;
+    font-weight: bold;
+    line-height: 3em;
+    margin: 0 2px;
+    padding: 0 1em;
+    text-transform: uppercase;
+  }
+  li.active-team {
+    background: $neutro;
+    color: #fff;
   }
 }
 

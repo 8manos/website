@@ -278,11 +278,15 @@ OM.Views.TeamView = Backbone.View.extend({
   chooseTeam: function(e){
     var teamName = '';
     if(e){
-      teamName = $(e.currentTarget).context.className;
+      teamName = $(e.currentTarget).context.classList[0];
     }
     else{
       teamName = 'team-core';
     }
+
+    $('.active-team').removeClass('active-team color-bg').css('background-color', '');
+    $('.'+teamName).addClass('active-team color-bg');
+
     var newCollection = {};
     //newCollection changes according to teamName
     if(teamName == 'team-core'){
