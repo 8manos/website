@@ -122,7 +122,7 @@ h6 { font-size: $size-seis;}
     display: block;
     height: 100%;
     padding: 0 12px;
-    font-size: 1em;
+    font-size: 0.875em;
     text-transform: uppercase;
     vertical-align: middle;
     position: relative;
@@ -138,7 +138,7 @@ h6 { font-size: $size-seis;}
       margin: -38px -19px;
 
       font-family: 'icomoon';
-      font-size: 2.25em;
+      font-size: 1.95em;
       speak: none;
       font-style: normal;
       font-weight: normal;
@@ -148,11 +148,22 @@ h6 { font-size: $size-seis;}
     &:after {
       content: '';
       display: inline-block;
-      height: 112%;
+      height: 104%;
       vertical-align: middle;
       margin-right: -0.25em; /* Adjusts for spacing */
     }
+    @media screen and (min-width: 48em) {
+      font-size: 1em;
+
+      &:before {
+        font-size: 2.25em;
+      }
+      &:after {
+        height: 112%;
+      }
+    }
   }
+
   li:nth-child(1) a:before {
     content: '\e60d';
   }
@@ -289,6 +300,7 @@ h6 { font-size: $size-seis;}
   z-index: 1;
 
   .inner-main {
+    font-size: 0.875em;
     padding: 3% 8% 0;
 
     strong {
@@ -309,6 +321,9 @@ h6 { font-size: $size-seis;}
     }
     li {
       padding: 0 0 6px;
+    }
+    @media screen and (min-width: 48em) {
+      font-size: 1em;
     }
   }
 }
@@ -355,7 +370,18 @@ h6 { font-size: $size-seis;}
     font-size: 0.875em;
   }
   ul {
+    width: 120%;
+    margin-left: -10%;
     display: inline-block;
+
+  }
+  @media screen and (min-width: 35em) {
+  
+  ul {
+    width: auto;
+    margin-left: initial;
+  }
+
   }
 }
 
@@ -828,27 +854,24 @@ select {
     color: #FFF;
   }
 }
-.footer-block {
-  text-align: center;
 
-  .contact-block {
-    display: block;
-    vertical-align: top;    
-  }
-  .contact-links {
-    margin-top: -12px;
-    list-style: none;
-    padding: 0;
-    font-size: 35px;
-    li {
-      display: inline-block;
-      width: 28px;
-      overflow: hidden;
-    }
+.contact-block {
+  display: block;
+  vertical-align: top;
+  text-align: center;
+}
+.contact-links {
+  margin-top: -12px;
+  list-style: none;
+  padding: 0;
+  font-size: 35px;
+
+  li {
+    display: inline-block;
+    width: 28px;
+    overflow: hidden;
   }
 }
-
-
 
 
 /* ==========================================================================
@@ -878,89 +901,12 @@ select {
    Responsive
    ========================================================================== */
 
-<<<<<<< HEAD
-@media screen and (min-width: 1680px) {
-}
-@media screen and (min-width: 1240px) {
-}
-@media screen and (min-width: 1024px) {
-}
-@media screen and (min-width: 960px) {
-}
-@media screen and (min-width: 820px) {
-}
-@media screen and (min-width: 790px) {
-  h1 { font-size: $size-uno+0.15;}
-  h2 { font-size: $size-dos+0.15;}
-  h3 { font-size: $size-tres+0.15;}
-  h4 { font-size: $size-cuatro+0.15;}
-  h5 { font-size: $size-cinco+0.15;}
-  h6 { font-size: $size-seis+0.15;}
-=======
 @media screen and (min-width: 35em) {
->>>>>>> 257394e9039c9d411bdfb3be93140ae4cc597dce
 
-  .section-name:not(.contact-header) {
-    height: $inner_h2_height*1.15;
-    line-height: $inner_h2_height*1.15;
-
-    [class^="icon-"] {
-      font-size: xx-large;
-      height: $inner_h2_height*1.15;
-      line-height: $inner_h2_height*1.15;
-      padding: 0 0.5em;
-      width: $inner_h2_height*1.15;
-    }
+  .contact-block {
+    display: inline-block;
   }
-<<<<<<< HEAD
-  .wrap {
-    .inner-main {
-      padding: 3% 8% 0;
-
-      li {
-        padding: 4px 0 7px;
-      }
-      p {
-        margin-bottom: 1.8em;
-
-      &:first-child {
-        width: 45%;
-        } 
-      }
-    }
-=======
   .contact-links {
     margin-top: 0;
->>>>>>> 257394e9039c9d411bdfb3be93140ae4cc597dce
   }
-  .team-wrapper,
-  .lab-wrapper {
-    padding: 0 8%;
-  }
-  .inner-footer {
-    .name,
-    .medium {
-      display: inline-block;
-      width: 49%;
-      vertical-align: top;
-    }
-  }
-
-}
-@media screen and (min-width: 600px) {
-  .footer-block {
-    .contact-block {
-      display: inline-block;
-    }
-    h4 {
-      margin: 0.4em;; 
-    }
-    .contact-links {
-      margin-top: 0; 
-    }
-  }
-  
-}
-@media screen and (max-width: 500px) {
-  body {text-rendering: optimizeSpeed;}
 }
