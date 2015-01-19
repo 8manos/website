@@ -25,8 +25,12 @@ function minimal_theme_setup() {
 	add_image_size('thumb', 150, 150, true);
 	add_image_size('thumb2x', 300, 300, true);
 	add_image_size('thumb4x', 600, 600, true);
-	add_image_size('project', 300, 200);
-	add_image_size('project2x', 600, 400);
+	add_image_size('projectth', 300, 126, array( 'center', 'top' ));
+	add_image_size('projectth2x', 600, 251, array( 'center', 'top' ));
+	add_image_size('projectth3x', 900, 377, array( 'center', 'top' ));
+	add_image_size('project', 300, 600);
+	add_image_size('project2x', 600, 1000);
+	add_image_size('project3x', 900, 1600);
 }
 add_action('after_setup_theme', 'minimal_theme_setup');
 
@@ -78,11 +82,21 @@ function add_team_meta($data){
 		$images['thumb'] = wp_get_attachment_image_src( $img_id, 'thumb' )[0];
 		$images['thumb2x'] = wp_get_attachment_image_src( $img_id, 'thumb2x' )[0];
 		$images['thumb4x'] = wp_get_attachment_image_src( $img_id, 'thumb4x' )[0];
-		$images['project'] = wp_get_attachment_image_src( $img_id, 'project' )[0];
-		$images['project2x'] = wp_get_attachment_image_src( $img_id, 'project2x' )[0];
+		$images['projectth'] = wp_get_attachment_image_src( $img_id, 'projectth' )[0];
+		$images['projectth2x'] = wp_get_attachment_image_src( $img_id, 'projectth2x' )[0];
+		$images['projectth3x'] = wp_get_attachment_image_src( $img_id, 'projectth3x' )[0];
 	}
-
 	$data->images = $images;
+
+	$gallery = get_post_meta( $data->id, '_gallery', true );
+	if (is_array($gallery)) {
+		foreach ($gallery as $key => $img_id) {
+			$gallery_src[$key]['small'] = wp_get_attachment_image_src( $img_id, 'project' );
+			$gallery_src[$key]['medium'] = wp_get_attachment_image_src( $img_id, 'project2x' );
+			$gallery_src[$key]['large'] = wp_get_attachment_image_src( $img_id, 'project3x' );
+		}
+		$data->gallery = $gallery_src;
+	}
 
   return $data;
 }

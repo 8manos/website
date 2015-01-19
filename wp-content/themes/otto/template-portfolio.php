@@ -21,7 +21,7 @@
           </ul>
         </div>
       </div>
-    
+
     <div class="works-wrapper">
     </div>
   </section>
@@ -35,16 +35,6 @@
     }
     return link;
   }
-
-  function mediaGalleryUrl(sizes) {
-    for (var i = 0; i < sizes.length; i++) {
-      if (sizes[i].name == 'project') {
-        return sizes[i].url;
-      }
-    };
-    //if not found return full size
-    return sizes[0].url;
-  }
   %>
 
   <% _.each(posts, function(post){ %>
@@ -57,9 +47,9 @@
         <% }); %>
       </ul>
       <figure>
-        <img src="<%= post.images.project %>" srcset="<%= post.images.project %> 1x, <%= post.images.project2x %> 2x" alt="Website 8manos">
+        <img src="<%= post.images.project %>" srcset="<%= post.images.projectth %> 300w, <%= post.images.projectth2x %> 600w, <%= post.images.projectth3x %> 900w" sizes="90vw, (min-width: 60em) 45vw" alt="<%= post.title %>">
       </figure>
-      
+
       <div class="more-info">
         <div class="project-info">
           <p class="data">Cliente: <strong><%= post.title %></strong></p>
@@ -72,10 +62,8 @@
         <h4 class="project-gallery-title">Galería de imágenes</h4>
         <div class="project-gallery">
           <div id="carousel-<%= post.name %>" class="owl-carousel">
-            <% _.each(post.media, function(media){ %>
-              <figure>
-                <img src="<%= mediaGalleryUrl(media.sizes) %>">
-              </figure>
+            <% _.each(post.gallery, function(slide){ %>
+              <img src="<%= slide.small[0] %>" srcset="<%= slide.small[0] %> 300w, <%= slide.medium[0] %> 600w, <%= slide.large[0] %> 900w" sizes="90vw, (min-width: 60em) 45vw">
             <% }); %>
           </div>
         </div>

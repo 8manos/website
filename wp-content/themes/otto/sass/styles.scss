@@ -349,9 +349,13 @@ h6 { font-size: $size-seis;}
   text-align: center;
 
   h3 {
+    display: inline-block;
     font-style: normal;
     text-transform: uppercase;
     font-size: 0.875em;
+  }
+  ul {
+    display: inline-block;
   }
 }
 
@@ -539,19 +543,7 @@ h6 { font-size: $size-seis;}
     padding: 0 1rem;
   }
 }
-/*demo test para altura de imagen en proyectos*/
-.project.off {
-  padding-bottom: 0;
 
-  figure {
-    height: 8em;
-    overflow: hidden;
-
-    /*img{
-      margin-top: -40%; 
-    }*/
-  }
-}
 .project,
 .person {
   .toggle-details {
@@ -574,17 +566,23 @@ h6 { font-size: $size-seis;}
   ul {
     border-bottom: 1px solid;
     list-style-type: none;
-    display: inline-block;
-    ///DEMO
-    padding: 0 20px;
+    padding: 0;
+  }
 
-    li {
-      background: $gris;
-      cursor: pointer;
-      display: inline-block;
-      line-height: 3em;
-      padding: 0 1em;
-    }
+  li {
+    background: $gris;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.875em;
+    font-weight: bold;
+    line-height: 3em;
+    margin: 0 2px;
+    padding: 0 1em;
+    text-transform: uppercase;
+  }
+  li.active-team {
+    background: $neutro;
+    color: #fff;
   }
 }
 
@@ -603,6 +601,7 @@ h6 { font-size: $size-seis;}
   .project,
   .person {
     background: $gris;
+    box-sizing: border-box;
 
     h4 {
        font-weight: normal;
@@ -613,6 +612,29 @@ h6 { font-size: $size-seis;}
        border-radius: 50px;
        border: 3px solid;
        transition: all 0.3s;
+    }
+
+    @media screen and (min-width: 48em) {
+      display: inline-block;
+      margin-left: 3%;
+      vertical-align: top;
+      width: 48%;
+
+      &:nth-child(2n+1) {
+        margin-left: 0;
+      }
+    }
+
+    @media screen and (min-width: 72em) {
+      margin-left: 3%;
+      width: 31%;
+
+      &:nth-child(2n+1) {
+        margin-left: 3%;
+      }
+      &:nth-child(3n+1) {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -660,6 +682,19 @@ h6 { font-size: $size-seis;}
   }
   .project-link {
     text-align: right;
+  }
+
+  @media screen and (min-width: 60em) {
+    .project {
+      display: inline-block;
+      margin-left: 3%;
+      vertical-align: top;
+      width: 48%;
+
+      &:nth-child(2n+1) {
+        margin-left: 0;
+      }
+    }
   }
 }
 .more-info {
@@ -843,6 +878,7 @@ select {
    Responsive
    ========================================================================== */
 
+<<<<<<< HEAD
 @media screen and (min-width: 1680px) {
 }
 @media screen and (min-width: 1240px) {
@@ -860,6 +896,9 @@ select {
   h4 { font-size: $size-cuatro+0.15;}
   h5 { font-size: $size-cinco+0.15;}
   h6 { font-size: $size-seis+0.15;}
+=======
+@media screen and (min-width: 35em) {
+>>>>>>> 257394e9039c9d411bdfb3be93140ae4cc597dce
 
   .section-name:not(.contact-header) {
     height: $inner_h2_height*1.15;
@@ -873,6 +912,7 @@ select {
       width: $inner_h2_height*1.15;
     }
   }
+<<<<<<< HEAD
   .wrap {
     .inner-main {
       padding: 3% 8% 0;
@@ -888,6 +928,10 @@ select {
         } 
       }
     }
+=======
+  .contact-links {
+    margin-top: 0;
+>>>>>>> 257394e9039c9d411bdfb3be93140ae4cc597dce
   }
   .team-wrapper,
   .lab-wrapper {
