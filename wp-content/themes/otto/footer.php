@@ -37,7 +37,7 @@
 				<h4>8manos en Bogotá</h4>
 				<p>Calle 94 # 15-32 Oficina 301<br>Tel: (57-1) 6057039</p>
 			</div>
-			<div class="contact-block">
+			<div class="contact-block social">
 				<h4>8manos en la red</h4>
 				<ul class="contact-links">
 					<li><a href="" class="icon-twitter">Twitter</a></li>

@@ -324,6 +324,15 @@ h6 { font-size: $size-seis;}
     }
     @media screen and (min-width: 48em) {
       font-size: 1em;
+      p {
+        margin-bottom: 1.6em;
+      }
+      p:first-child {
+        width: 45%;
+      }
+      li {
+        padding: 4px 0 7px;
+      }
     }
   }
 }
@@ -376,7 +385,7 @@ h6 { font-size: $size-seis;}
 
   }
   @media screen and (min-width: 35em) {
-  
+
   ul {
     width: auto;
     margin-left: initial;
@@ -423,6 +432,20 @@ h6 { font-size: $size-seis;}
   }
   & > * {
     display: inline-block;
+  }
+  @media screen and (min-width: 48em) {
+    &:not(.contact-header) {
+      height: $inner_h2_height+10;
+      line-height: $inner_h2_height+10;
+      
+      [class^="icon-"] {
+        font-size: 2.450em;
+        height: $inner_h2_height+10;
+        line-height: $inner_h2_height+10;
+        padding: 0 0.5em;
+        width: $inner_h2_height+10; 
+      }
+    }
   }
 }
 .conventions {
@@ -710,7 +733,7 @@ h6 { font-size: $size-seis;}
     text-align: right;
   }
 
-  @media screen and (min-width: 60em) {
+  @media screen and (min-width: 42em) {
     .project {
       display: inline-block;
       margin-left: 3%;
@@ -819,7 +842,32 @@ h6 { font-size: $size-seis;}
 
   .inner-footer {
     padding: 0 5%;
+
+    .footer-block {
+      text-align: center;
+    }
   }
+  @media screen and (min-width: 48em) {
+    width: 90%;
+    left: 5%;
+
+    .footer-block {
+      padding: 0 5%;
+    }
+    .name,
+    .medium {
+      display: inline-block;
+      width: 45%;
+      vertical-align: top;
+    }
+    .medium {
+      margin-left: 9%; 
+    }
+  }
+  @media screen and (min-width: 72em) {
+    width: 80%;
+    left: 10%;
+  }  
 }
 label {
   display: block;
@@ -850,7 +898,7 @@ select {
   input[type="submit"] {
     font-weight: bold;
     text-transform: uppercase;
-    padding: 12px 25px;
+    padding: 10px 35px;
     color: #FFF;
   }
 }
@@ -858,18 +906,18 @@ select {
 .contact-block {
   display: block;
   vertical-align: top;
-  text-align: center;
-}
-.contact-links {
-  margin-top: -12px;
-  list-style: none;
-  padding: 0;
-  font-size: 35px;
 
-  li {
-    display: inline-block;
-    width: 28px;
-    overflow: hidden;
+  .contact-links {
+    margin-top: 0;
+    list-style: none;
+    padding: 0;
+    font-size: 35px;
+
+    li {
+      display: inline-block;
+      width: 28px;
+      overflow: hidden;
+    }
   }
 }
 
@@ -903,10 +951,16 @@ select {
 
 @media screen and (min-width: 35em) {
 
-  .contact-block {
+  input[type="submit"] {
+    width: auto;
     display: inline-block;
   }
-  .contact-links {
-    margin-top: 0;
+  .contact-block {
+    display: inline-block;
+    margin: 0 6%;
+
+    h4 {
+      margin-bottom: 0.5em;
+    }
   }
 }
