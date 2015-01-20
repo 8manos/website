@@ -9,29 +9,31 @@
 
 	<footer role="contentinfo" class="contact-footer">
 	<div class="inner-footer">
-		<h3>Aca va un texto introductorio que se administra como una página en wordpress. O podemos poner un texto relacionado con la sección en la que uno se encuentra?</h3>
-		<p>Prometemos responder en el menor tiempo posible.</p>
-		<form>
-			<div class="name">
-				<label for="name">Nombre:</label>
-				<input type="text" placeholder="como te gusta que te llamen" name="name" id="name">
-			</div>
-			<div class="medium">
-				<label for="contact-medium">Como te contactamos:</label>
-				<select id="contact-medium" name="contact-medium">
-					<option selected value="email">&#x2709;</option>
-					<option value="phone">&#x260e;</option>
-				</select>
-				<input type="email" name="contact-info" id="contact-info">
-			</div>
-			<p>
-				<label for="message">Mensaje:</label>
-				<textarea name="message" id="message"></textarea>
-			</p>
-			<p class="submit">
-				<input class="color-bg" type="submit" Value="Enviar">
-			</p>
-		</form>
+		<div class="footer-form">
+			<h3>Aca va un texto introductorio que se administra como una página en wordpress. O podemos poner un texto relacionado con la sección en la que uno se encuentra?</h3>
+			<p>Prometemos responder en el menor tiempo posible.</p>
+			<form>
+				<div class="name">
+					<label for="name">Nombre:</label>
+					<input type="text" placeholder="como te gusta que te llamen" name="name" id="name">
+				</div>
+				<div class="medium">
+					<label for="contact-medium">Como te contactamos:</label>
+					<select id="contact-medium" name="contact-medium">
+						<option selected value="email">&#x2709;</option>
+						<option value="phone">&#x260e;</option>
+					</select>
+					<input type="email" name="contact-info" id="contact-info">
+				</div>
+				<p>
+					<label for="message">Mensaje:</label>
+					<textarea name="message" id="message"></textarea>
+				</p>
+				<p class="submit">
+					<input class="color-bg" type="submit" Value="Enviar">
+				</p>
+			</form>
+		</div>
 		<div class="footer-block">
 			<div class="contact-block">
 				<h4>8manos en Bogotá</h4>

@@ -322,6 +322,7 @@ h6 { font-size: $size-seis;}
     li {
       padding: 0 0 6px;
     }
+
     @media screen and (min-width: 48em) {
       font-size: 1em;
       p {
@@ -332,6 +333,17 @@ h6 { font-size: $size-seis;}
       }
       li {
         padding: 4px 0 7px;
+      }
+    }
+
+    @media screen and (min-width: 72em) {
+      font-size: 1.045em;
+      p {
+        margin-bottom: 2em;
+      }
+      p:first-child {
+        width: 30%;
+        max-width: 20em;
       }
     }
   }
@@ -591,6 +603,16 @@ h6 { font-size: $size-seis;}
     margin: 0;
     padding: 0 1rem;
   }
+  //@media screen and (min-width: 48em) {
+    //si y solo si la imagen en el projecto no tiene el borde gris inferior para todos los quiebres
+    &.off {
+      padding-bottom: 0;
+
+      figure {
+        margin-bottom: 0;
+      }
+    }
+  //}
 }
 
 .project,
@@ -632,6 +654,9 @@ h6 { font-size: $size-seis;}
   li.active-team {
     background: $neutro;
     color: #fff;
+  }
+  @media screen and (min-width: 48em) {
+    margin-top: 5em;
   }
 }
 
@@ -722,6 +747,15 @@ h6 { font-size: $size-seis;}
   margin: 40px 0;
   border-top: 1px dashed;
   text-align: center;
+
+  @media screen and (min-width: 42em) {
+    font-size: 1.2em;
+
+    span{
+      font-size: 0.775em;
+      font-style: italic;
+    }
+  }
 }
 .works-wrapper {
   padding: 0.5em 5%;
@@ -867,6 +901,13 @@ h6 { font-size: $size-seis;}
   @media screen and (min-width: 72em) {
     width: 80%;
     left: 10%;
+  }
+  @media screen and (min-width: 94em) {
+    left: 5%;
+    
+    .footer-form {
+      width: 60%;
+    }
   }  
 }
 label {

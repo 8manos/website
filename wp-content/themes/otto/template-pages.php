@@ -11,7 +11,13 @@
 			<%= content_display %>
 		</div>
 
-		<!--texto especifico para pagina de servicios--> 
-		<p class="close-search color"> ¿Eres un cliente chévere? <br> <a href="">Déjanos tus datos para contatarte.</a> :-)</p>
+		<!--demo texto especifico para pagina de principios--> 
+		<p class="close-search color"> ¿Te sientes identificado? <br> <span><a href="">Unete a nuestro equipo.</a> :-)</span></p>
+		
+		<!--demo texto especifico para pagina de servicios-->
+		<!--
+		<p class="close-search color"> ¿Eres un cliente chévere? <br> <span><a href="">Déjanos tus datos para contatarte.</a> :-)</span></p>
+		-->
+		
 	</section>
 </script>
