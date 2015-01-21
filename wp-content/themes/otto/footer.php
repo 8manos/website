@@ -8,6 +8,12 @@
 	<div class="ugly-filler"></div>
 
 	<footer role="contentinfo" class="contact-footer">
+
+	  	<div class="section-name">
+        	<div class="icon-contacto color-bg"></div>
+        	<h1 class="color">contacto</h1>
+      	</div>
+	
 	<div class="inner-footer">
 		<div class="footer-form">
 			<h3>Aca va un texto introductorio que se administra como una página en wordpress. O podemos poner un texto relacionado con la sección en la que uno se encuentra?</h3>

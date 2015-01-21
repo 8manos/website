@@ -867,11 +867,8 @@ h6 { font-size: $size-seis;}
 
 .contact-footer {
   background: #fff;
-  bottom: 0;
   max-height: calc(100% - #{$bar-height} - #{$contact-height});
   padding: 1px 0; // chrome bug #363067
-  overflow: auto;
-  position: fixed;
   transition: bottom 0.5s;
 
   .inner-footer {
@@ -881,13 +878,19 @@ h6 { font-size: $size-seis;}
       text-align: center;
     }
   }
-  @media screen and (min-width: 48em) {
-    width: 90%;
-    left: 5%;
+  .section-name {
+    display: none;
+  }
 
-    .footer-block {
-      padding: 0 5%;
-    }
+  @media screen and (min-width: 48em) {
+    .inner-footer {
+      width: 90%;
+      left: 5%;
+
+      .footer-block {
+        padding: 0 5%;
+      }
+    }    
     .name,
     .medium {
       display: inline-block;
@@ -898,13 +901,19 @@ h6 { font-size: $size-seis;}
       margin-left: 9%; 
     }
   }
-  @media screen and (min-width: 72em) {
-    width: 80%;
-    left: 10%;
+  @media screen and (min-width: 60em) {
+    max-height: initial;    
+    height: calc(100vh - 40px);
+
+    .section-name {
+      display: block;
+      margin-bottom: 5em;
+    }
   }
-  @media screen and (min-width: 94em) {
+  @media screen and (min-width: 72em) {
+    padding-top: 10em;
     left: 5%;
-    
+
     .footer-form {
       width: 60%;
     }
@@ -1002,6 +1011,17 @@ select {
 
     h4 {
       margin-bottom: 0.5em;
+    }
+  }
+}
+
+@media screen and (min-width: 60em) {
+  /*DEMO PARA PARTE SUPERIOR CONTACTO*/ 
+  .contact-header {
+    display: none;
+
+    &.is-fixed {
+      display: block;
     }
   }
 }
