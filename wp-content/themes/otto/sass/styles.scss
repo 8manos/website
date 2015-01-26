@@ -80,6 +80,66 @@ h4 { font-size: $size-cuatro;}
 h5 { font-size: $size-cinco;}
 h6 { font-size: $size-seis;}
 
+ul.select {
+  background-color: $gris;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 1.4em;
+  position: relative;
+  vertical-align: middle;
+
+  li {
+    background-color: $gris;
+    padding: 0.4em;
+    position: relative;
+
+    &.option {
+      box-sizing: border-box;
+      box-shadow: 0 1px 1px black;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+
+  i:before {
+    margin: 0;
+  }
+
+  .options-wrapper {
+    display: none;
+    position: absolute;
+    width: 100%;
+  }
+
+  &:after {
+    border-color: black transparent transparent transparent;
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    content: '';
+    display: inline-block;
+    margin: 0.75em 0.5em;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.means-wrapper {
+  input {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 54px);
+  }
+}
+
 /*navegacion*/
 
 #header {
@@ -191,6 +251,7 @@ h6 { font-size: $size-seis;}
     }
   }
 }
+
 .menu-bar {
   background: #000;
   height: 16px;

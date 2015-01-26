@@ -7,7 +7,10 @@ OM.Views.MainView = Backbone.View.extend({
     'click .footer-toggle': 'showFooter',
     'click .footer-close': 'hideFooter',
     'click .current-lang': 'toggleLangs',
-    'change #contact-medium': 'changeInputType'
+    //'change #contact-medium': 'changeInputType',
+    'click ul.select': 'showOptions',
+    'click ul.select .option': 'selectOption',
+    'customSelectChange #contact-means': 'changeInputType'
   },
   footerHeight: 0,
   initialize: function(){
@@ -16,16 +19,37 @@ OM.Views.MainView = Backbone.View.extend({
     window.addEventListener('resize', this.resizeCallback);
     window.addEventListener('scroll', this.isContactVisible);
     window.addEventListener('scroll', this.isHeaderHidden);
+    $.event.trigger({
+      type: 'customSelectChange'
+    });
   },
   changeInputType: function(e){
-    var type = $(e.currentTarget).val();
-    console.log(type);
+    var type = $(e.currentTarget).find('.selected').html();
 
-    if(type == 'email'){
-      $('#contact-info').attr('type', 'email');
-    } else{
-      $('#contact-info').attr('type', 'tel');
+    if(type.indexOf('correo') > 0){
+      $('#contact-field').attr({
+        placeholder: 'Tu correo electrónico',
+        type: 'email'
+      });
     }
+    else{
+      $('#contact-field').attr({
+        placeholder: 'Tu número celular',
+        type: 'tel'
+      });
+    }
+  },
+  selectOption: function(e){
+    var $option = $(e.currentTarget);
+    var $select = $option.parent().parent();
+    var $selected = $select.find('.selected');
+    $selected.html($option.html());
+    $select.trigger('customSelectChange');
+  },
+  showOptions: function(e){
+    var $select = $(e.currentTarget);
+    var $options = $select.find('.options-wrapper');
+    $options.fadeToggle();
   },
   toggleMenu: function(e) {
     e.preventDefault();
