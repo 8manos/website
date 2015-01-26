@@ -10,7 +10,8 @@ OM.Views.MainView = Backbone.View.extend({
     //'change #contact-medium': 'changeInputType',
     'click ul.select': 'showOptions',
     'click ul.select .option': 'selectOption',
-    'customSelectChange #contact-means': 'changeInputType'
+    'customSelectChange #contact-means': 'changeInputType',
+    'blur ul.select': 'customSelectBlur'
   },
   footerHeight: 0,
   initialize: function(){
@@ -38,6 +39,11 @@ OM.Views.MainView = Backbone.View.extend({
         type: 'tel'
       });
     }
+  },
+  customSelectBlur: function(e){
+    var $select = $(e.currentTarget);
+    var $options = $select.find('.options-wrapper');
+    $options.fadeOut();
   },
   selectOption: function(e){
     var $option = $(e.currentTarget);

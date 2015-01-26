@@ -21,23 +21,23 @@
 			<form>
 				<div class="name">
 					<label for="name">Nombre:</label>
-					<input type="text" placeholder="¿Cómo te gusta que te llamen?" name="name" id="name">
+					<input type="text" placeholder="¿Cómo te gusta que te llamen?" name="name" id="name" tabindex="1">
 				</div>
 				<div class="medium">
 					<label>¿Cómo te contactamos?</label>
 					<div class="means-wrapper">
-						<ul id="contact-means" class="select">
+						<ul id="contact-means" class="select" tabindex="2">
 							<li class="selected"><i class="icon-correo"></i></li>
 							<div class="options-wrapper">
 								<li class="option"><i class="icon-correo"></i></li>
 								<li class="option"><i class="icon-telefono"></i></li>
 							</div>
-						</ul><input type="email" name="contact-field" id="contact-field" placeholder="Escribe tu correo electrónico">
+						</ul><input type="email" name="contact-field" id="contact-field" placeholder="Escribe tu correo electrónico" tabindex="3">
 					</div>
 				</div>
 				<p>
 					<label for="message">Mensaje:</label>
-					<textarea name="message" id="message"></textarea>
+					<textarea name="message" id="message" tabindex="4"></textarea>
 				</p>
 				<p class="submit">
 					<input class="color-bg" type="submit" Value="Enviar">
