@@ -122,15 +122,10 @@ OM.Views.MainView = Backbone.View.extend({
     if (isBottomReached && isContactHeaderFixed) {
       $('.contact-header').removeClass('is-fixed');
       $('.wrap').removeClass('is-contact-hidden');
-
-      $('.footer-toggle').addClass('color');
-      $('.footer-toggle').removeClass('color-bg');
+      
     } else if ( ! isBottomReached && ! isContactHeaderFixed ) {
       $('.contact-header').addClass('is-fixed');
       $('.wrap').addClass('is-contact-hidden');
-
-      $('.footer-toggle').removeClass('color');
-      $('.footer-toggle').addClass('color-bg');
     }
   },
   isHeaderHidden: function(view) {

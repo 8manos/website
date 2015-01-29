@@ -408,7 +408,7 @@ ul.select {
       }
     }
   }
-  
+
   @media screen and (max-width: 60em) {
     margin-bottom: 0 !important; 
   }
@@ -917,8 +917,9 @@ ul.select {
 }
 
 .contact-footer {
-  background: #fff;
-  max-height: initial;    
+  //background: #fff;
+  max-height: initial;
+  min-height: 34em;    
   height: calc(100vh - 88px);
 
   padding: 1px 0; // chrome bug #363067
@@ -931,14 +932,26 @@ ul.select {
       text-align: center;
     }
   }
-  .section-name {
+  .otto {
     display: none;
+    width: 100%;
+    max-width: 18em;
+    position: absolute;
+    bottom: -2%;
+    left: 2%;
+    z-index: -1;
+    
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
   }
 
   @media screen and (min-width: 48em) {
     .inner-footer {
-      width: 90%;
-      left: 5%;
+      width: 88%;
+      margin: 2% auto 0; 
 
       .footer-block {
         padding: 0 5%;
@@ -955,19 +968,46 @@ ul.select {
     }
   }
   @media screen and (min-width: 60em) {
+    width: 100%;
     position: fixed;
     bottom: 0;
 
-    .section-name {
+    .otto {
       display: block;
-      margin-bottom: 5em;
+    }
+
+    .inner-footer {
+
+      .footer-form {
+        width: 80%;
+      }
+      .footer-block {
+        text-align: right;
+        padding: 0;
+      }
+      .contact-block {
+        margin: 0 0 0 8%;
+      }
     }
   }
   @media screen and (min-width: 72em) {
-
-    .footer-form {
-      width: 60%;
+    .otto {
+      max-width: 25em;
     }
+    .inner-footer {
+      width: 84%;
+
+      .footer-form {
+        width: 60%;
+      }
+      .footer-block {
+        margin-top: 3em;
+      }
+      .contact-block {
+        margin: 0 0 0 10%;
+      }
+    }
+     
   }  
 }
 label {
@@ -1059,6 +1099,7 @@ select {
   .contact-block {
     display: inline-block;
     margin: 0 6%;
+    text-align: center;
 
     h4 {
       margin-bottom: 0.5em;
