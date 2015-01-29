@@ -1195,41 +1195,31 @@ ul.select {
   left: 0;
   position: absolute;
   width: 100%;
-  z-index: 2; }
-  /* line 893, ../sass/styles.scss */
-  .contact-header .icon-contacto {
-    height: 1.5em;
-    line-height: 1.5em; }
-  /* line 898, ../sass/styles.scss */
+  z-index: 2;
+  color: #FFF !important;
+  text-align: center; }
+  /* line 895, ../sass/styles.scss */
   .contact-header .footer-toggle {
     color: #fff;
     cursor: pointer;
     font-size: 1.5em;
     margin: 0;
-    padding: 0 0 0 1em;
-    text-align: center;
+    padding: 0;
     text-transform: uppercase; }
-  /* line 908, ../sass/styles.scss */
+  /* line 904, ../sass/styles.scss */
   .contact-header .footer-toggle.color {
     background: none !important; }
+  /* line 907, ../sass/styles.scss */
+  .contact-header button {
+    color: #FFF; }
   /* line 911, ../sass/styles.scss */
-  .contact-header .footer-toggle.color-bg {
-    color: #FFF !important; }
-  /* line 915, ../sass/styles.scss */
   .contact-header.is-fixed {
-    position: fixed;
-    height: 3em;
-    line-height: 1; }
-    /* line 920, ../sass/styles.scss */
-    .contact-header.is-fixed .icon-contacto,
+    position: fixed; }
+    /* line 914, ../sass/styles.scss */
     .contact-header.is-fixed .footer-close {
       display: none; }
-    /* line 925, ../sass/styles.scss */
-    .contact-header.is-fixed .footer-toggle {
-      width: 100%;
-      padding: 0.5em 0; }
 
-/* line 932, ../sass/styles.scss */
+/* line 920, ../sass/styles.scss */
 .contact-footer {
   background: #fff;
   max-height: initial;
@@ -1238,56 +1228,56 @@ ul.select {
   padding: 1px 0;
   -webkit-transition: bottom 0.5s;
           transition: bottom 0.5s; }
-  /* line 941, ../sass/styles.scss */
+  /* line 929, ../sass/styles.scss */
   .contact-footer .inner-footer {
     padding: 0 5%; }
-    /* line 944, ../sass/styles.scss */
+    /* line 932, ../sass/styles.scss */
     .contact-footer .inner-footer .footer-block {
       text-align: center; }
-  /* line 948, ../sass/styles.scss */
+  /* line 936, ../sass/styles.scss */
   .contact-footer .section-name {
     display: none; }
   @media screen and (min-width: 48em) {
-    /* line 953, ../sass/styles.scss */
+    /* line 941, ../sass/styles.scss */
     .contact-footer .inner-footer {
       width: 90%;
       left: 5%; }
-      /* line 957, ../sass/styles.scss */
+      /* line 945, ../sass/styles.scss */
       .contact-footer .inner-footer .footer-block {
         padding: 0 5%; }
-    /* line 961, ../sass/styles.scss */
+    /* line 949, ../sass/styles.scss */
     .contact-footer .name,
     .contact-footer .medium {
       display: inline-block;
       width: 45%;
       vertical-align: top; }
-    /* line 967, ../sass/styles.scss */
+    /* line 955, ../sass/styles.scss */
     .contact-footer .medium {
       margin-left: 9%; } }
   @media screen and (min-width: 60em) {
-    /* line 932, ../sass/styles.scss */
+    /* line 920, ../sass/styles.scss */
     .contact-footer {
       height: -webkit-calc(100vh - 40px);
       height: calc(100vh - 40px);
       position: fixed;
       bottom: 0; }
-      /* line 976, ../sass/styles.scss */
+      /* line 964, ../sass/styles.scss */
       .contact-footer .section-name {
         display: block;
         margin-bottom: 5em; } }
   @media screen and (min-width: 72em) {
-    /* line 983, ../sass/styles.scss */
+    /* line 971, ../sass/styles.scss */
     .contact-footer .footer-form {
       width: 60%; } }
 
-/* line 988, ../sass/styles.scss */
+/* line 976, ../sass/styles.scss */
 label {
   display: block;
   font-weight: bold;
   padding-bottom: 10px;
   font-size: 0.875em; }
 
-/* line 994, ../sass/styles.scss */
+/* line 982, ../sass/styles.scss */
 input,
 textarea {
   width: 100%;
@@ -1296,38 +1286,38 @@ textarea {
   background: #ECECEC;
   box-sizing: border-box; }
 
-/* line 1002, ../sass/styles.scss */
+/* line 990, ../sass/styles.scss */
 textarea {
   resize: vertical;
   /*max-height:300px;*/ }
 
-/* line 1006, ../sass/styles.scss */
+/* line 994, ../sass/styles.scss */
 select {
   font-family: icomoon;
   overflow: hidden; }
 
-/* line 1010, ../sass/styles.scss */
+/* line 998, ../sass/styles.scss */
 .submit {
   text-align: center;
   margin-bottom: 60px; }
-  /* line 1014, ../sass/styles.scss */
+  /* line 1002, ../sass/styles.scss */
   .submit input[type="submit"] {
     font-weight: bold;
     text-transform: uppercase;
     padding: 10px 35px;
     color: #FFF; }
 
-/* line 1022, ../sass/styles.scss */
+/* line 1010, ../sass/styles.scss */
 .contact-block {
   display: block;
   vertical-align: top; }
-  /* line 1026, ../sass/styles.scss */
+  /* line 1014, ../sass/styles.scss */
   .contact-block .contact-links {
     margin-top: 0;
     list-style: none;
     padding: 0;
     font-size: 35px; }
-    /* line 1032, ../sass/styles.scss */
+    /* line 1020, ../sass/styles.scss */
     .contact-block .contact-links li {
       display: inline-block;
       width: 28px;
@@ -1336,13 +1326,13 @@ select {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 1045, ../sass/styles.scss */
+/* line 1033, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.2s linear;
           transition: color 0.2s linear; }
 
-/* line 1050, ../sass/styles.scss */
+/* line 1038, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.2s linear;
           transition: background-color 0.2s linear; }
@@ -1351,16 +1341,16 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 1060, ../sass/styles.scss */
+/* line 1048, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 1061, ../sass/styles.scss */
+/* line 1049, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 1062, ../sass/styles.scss */
+/* line 1050, ../sass/styles.scss */
 .alignright {
   float: right; }
 
@@ -1368,25 +1358,17 @@ a,
    Responsive
    ========================================================================== */
 @media screen and (min-width: 35em) {
-  /* line 1070, ../sass/styles.scss */
+  /* line 1058, ../sass/styles.scss */
   input[type="submit"] {
     width: auto;
     display: inline-block; }
 
-  /* line 1074, ../sass/styles.scss */
+  /* line 1062, ../sass/styles.scss */
   .contact-block {
     display: inline-block;
     margin: 0 6%; }
-    /* line 1078, ../sass/styles.scss */
+    /* line 1066, ../sass/styles.scss */
     .contact-block h4 {
       margin-bottom: 0.5em; } }
-@media screen and (min-width: 60em) {
-  /*DEMO PARA PARTE SUPERIOR CONTACTO*/
-  /* line 1086, ../sass/styles.scss */
-  .contact-header {
-    display: none; }
-    /* line 1089, ../sass/styles.scss */
-    .contact-header.is-fixed {
-      display: block; } }
 
 /*# sourceMappingURL=styles.css.map */

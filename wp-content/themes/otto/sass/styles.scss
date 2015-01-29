@@ -889,42 +889,30 @@ ul.select {
   position: absolute;
   width: 100%;
   z-index: 2;
-
-  .icon-contacto {
-    height: $contact-height / 2;
-    line-height: $contact-height / 2;
-  }
+  color: #FFF !important;
+  text-align: center;
 
   .footer-toggle {
     color: #fff;
     cursor: pointer;
     font-size: $contact-height / 2;
     margin: 0;
-    padding: 0 0 0 1em;
-    text-align: center;
+    padding: 0;
     text-transform: uppercase;
   }
 
   .footer-toggle.color {
     background: none !important;
   }
-  .footer-toggle.color-bg {
-    color: #FFF !important;
+  button {
+    color: #FFF;
   }
 
   &.is-fixed {
-    position: fixed;
-    height: $contact-height;
-    line-height: 1;
+    position: fixed;  
 
-    .icon-contacto,
     .footer-close {
       display: none;
-    }
-
-    .footer-toggle {
-      width: 100%;
-      padding: 0.5em 0;
     }
   }
 }
@@ -1077,17 +1065,6 @@ select {
 
     h4 {
       margin-bottom: 0.5em;
-    }
-  }
-}
-
-@media screen and (min-width: 60em) {
-  /*DEMO PARA PARTE SUPERIOR CONTACTO*/ 
-  .contact-header {
-    display: none;
-
-    &.is-fixed {
-      display: block;
     }
   }
 }

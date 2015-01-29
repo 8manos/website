@@ -1,18 +1,12 @@
-		<div class="section-name contact-header is-fixed">
-			<div class="icon-contacto color-bg"></div>
-			<h1 class="footer-toggle color-bg">¡Yo Quiero!</h1>
-			<button type="button" class="color icon-close footer-close"></button>
+		<div class="section-name contact-header is-fixed color-bg">
+			<h1 class="footer-toggle">¡Yo Quiero!</h1>
+			<button type="button" class="footer-close icon-close"></button>
 		</div>
 	</div>
 
 	<div class="ugly-filler"></div>
 
 	<footer role="contentinfo" class="contact-footer">
-
-	  	<div class="section-name">
-        	<div class="icon-contacto color-bg"></div>
-        	<h1 class="color">contacto</h1>
-      	</div>
 	
 	<div class="inner-footer">
 		<div class="footer-form">
