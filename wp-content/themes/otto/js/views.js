@@ -105,8 +105,8 @@ OM.Views.MainView = Backbone.View.extend({
       view = this;
     }
 
-    //view.footerHeight = $('.contact-footer').outerHeight();
-    //$('.wrap').css('margin-bottom', (view.footerHeight));
+    view.footerHeight = $('.contact-footer').outerHeight();
+    $('.wrap').css('margin-bottom', (view.footerHeight));
 
     view.isContactVisible(view);
   },

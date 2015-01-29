@@ -408,6 +408,9 @@ ul.select {
       }
     }
   }
+  @media screen and (max-width: 60em) {
+    margin-bottom: 0 !important; 
+  }
 }
 .ugly-filler {
   height: 1px;
@@ -928,7 +931,10 @@ ul.select {
 
 .contact-footer {
   background: #fff;
-  max-height: calc(100% - #{$bar-height} - #{$contact-height});
+  //max-height: calc(100% - #{$bar-height} - #{$contact-height});
+  max-height: initial;    
+  height: calc(100vh - 88px);
+
   padding: 1px 0; // chrome bug #363067
   transition: bottom 0.5s;
 
@@ -962,9 +968,10 @@ ul.select {
       margin-left: 9%; 
     }
   }
-  @media screen and (min-width: 60em) {
-    max-height: initial;    
+  @media screen and (min-width: 60em) {    
     height: calc(100vh - 40px);
+    position: fixed;
+    bottom: 0;
 
     .section-name {
       display: block;
@@ -972,8 +979,6 @@ ul.select {
     }
   }
   @media screen and (min-width: 72em) {
-    padding-top: 10em;
-    left: 5%;
 
     .footer-form {
       width: 60%;
