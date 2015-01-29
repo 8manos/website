@@ -408,6 +408,7 @@ ul.select {
       }
     }
   }
+  
   @media screen and (max-width: 60em) {
     margin-bottom: 0 !important; 
   }
@@ -893,19 +894,17 @@ ul.select {
   text-align: center;
 
   .footer-toggle {
-    color: #fff;
+    color: #FFF;
     cursor: pointer;
     font-size: $contact-height / 2;
     margin: 0;
-    padding: 0;
     text-transform: uppercase;
-  }
-
-  .footer-toggle.color {
-    background: none !important;
   }
   button {
     color: #FFF;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
   &.is-fixed {
@@ -919,7 +918,6 @@ ul.select {
 
 .contact-footer {
   background: #fff;
-  //max-height: calc(100% - #{$bar-height} - #{$contact-height});
   max-height: initial;    
   height: calc(100vh - 88px);
 
@@ -956,8 +954,7 @@ ul.select {
       margin-left: 9%; 
     }
   }
-  @media screen and (min-width: 60em) {    
-    height: calc(100vh - 40px);
+  @media screen and (min-width: 60em) {
     position: fixed;
     bottom: 0;
 
