@@ -1204,21 +1204,22 @@ ul.select {
     cursor: pointer;
     font-size: 1.5em;
     margin: 0;
+    padding: 0 3.8em;
     text-transform: uppercase; }
-  /* line 903, ../sass/styles.scss */
+  /* line 904, ../sass/styles.scss */
   .contact-header button {
     color: #FFF;
     position: absolute;
     top: 0;
     right: 0; }
-  /* line 910, ../sass/styles.scss */
+  /* line 911, ../sass/styles.scss */
   .contact-header.is-fixed {
     position: fixed; }
-    /* line 913, ../sass/styles.scss */
+    /* line 914, ../sass/styles.scss */
     .contact-header.is-fixed .footer-close {
       display: none; }
 
-/* line 919, ../sass/styles.scss */
+/* line 920, ../sass/styles.scss */
 .contact-footer {
   max-height: initial;
   min-height: 34em;
@@ -1227,13 +1228,30 @@ ul.select {
   padding: 1px 0;
   -webkit-transition: bottom 0.5s;
           transition: bottom 0.5s; }
-  /* line 928, ../sass/styles.scss */
+  /* line 930, ../sass/styles.scss */
   .contact-footer .inner-footer {
     padding: 0 5%; }
-    /* line 931, ../sass/styles.scss */
+    /* line 933, ../sass/styles.scss */
     .contact-footer .inner-footer .footer-block {
       text-align: center; }
-  /* line 935, ../sass/styles.scss */
+  /* line 937, ../sass/styles.scss */
+  .contact-footer ul.select {
+    border-color: rgba(0, 0, 0, 0.2); }
+    /* line 940, ../sass/styles.scss */
+    .contact-footer ul.select:after {
+      border-color: #FFF transparent transparent; }
+    /* line 943, ../sass/styles.scss */
+    .contact-footer ul.select li.option {
+      padding: 0.2em;
+      font-size: 1.2em; }
+      /* line 948, ../sass/styles.scss */
+      .contact-footer ul.select li.option [class^="icon-"] {
+        padding-left: 0.2em; }
+    /* line 952, ../sass/styles.scss */
+    .contact-footer ul.select li.selected {
+      background: none;
+      color: #FFF; }
+  /* line 957, ../sass/styles.scss */
   .contact-footer .otto {
     display: none;
     width: 100%;
@@ -1242,71 +1260,75 @@ ul.select {
     bottom: -2%;
     left: 2%;
     z-index: -1; }
-    /* line 945, ../sass/styles.scss */
+    /* line 967, ../sass/styles.scss */
     .contact-footer .otto svg {
       width: 100%;
       height: auto; }
   @media screen and (min-width: 48em) {
-    /* line 952, ../sass/styles.scss */
+    /* line 974, ../sass/styles.scss */
     .contact-footer .inner-footer {
       width: 88%;
       margin: 2% auto 0; }
-      /* line 956, ../sass/styles.scss */
+      /* line 978, ../sass/styles.scss */
       .contact-footer .inner-footer .footer-block {
         padding: 0 5%; }
-    /* line 960, ../sass/styles.scss */
+    /* line 982, ../sass/styles.scss */
     .contact-footer .name,
     .contact-footer .medium {
       display: inline-block;
       width: 45%;
       vertical-align: top; }
-    /* line 966, ../sass/styles.scss */
+    /* line 988, ../sass/styles.scss */
     .contact-footer .medium {
-      margin-left: 9%; } }
+      margin-left: 9%; }
+    /* line 991, ../sass/styles.scss */
+    .contact-footer .otto {
+      display: block; } }
   @media screen and (min-width: 60em) {
-    /* line 919, ../sass/styles.scss */
+    /* line 920, ../sass/styles.scss */
     .contact-footer {
       width: 100%;
       position: fixed;
       bottom: 0; }
-      /* line 975, ../sass/styles.scss */
-      .contact-footer .otto {
-        display: block; }
-      /* line 981, ../sass/styles.scss */
+      /* line 1002, ../sass/styles.scss */
       .contact-footer .inner-footer .footer-form {
         width: 80%; }
-      /* line 984, ../sass/styles.scss */
+      /* line 1005, ../sass/styles.scss */
       .contact-footer .inner-footer .footer-block {
         text-align: right;
         padding: 0; }
-      /* line 988, ../sass/styles.scss */
+      /* line 1009, ../sass/styles.scss */
       .contact-footer .inner-footer .contact-block {
         margin: 0 0 0 8%; } }
   @media screen and (min-width: 72em) {
-    /* line 994, ../sass/styles.scss */
+    /* line 1015, ../sass/styles.scss */
     .contact-footer .otto {
       max-width: 25em; }
-    /* line 997, ../sass/styles.scss */
+    /* line 1018, ../sass/styles.scss */
     .contact-footer .inner-footer {
       width: 84%; }
-      /* line 1000, ../sass/styles.scss */
+      /* line 1021, ../sass/styles.scss */
       .contact-footer .inner-footer .footer-form {
-        width: 60%; }
-      /* line 1003, ../sass/styles.scss */
+        width: 75%; }
+      /* line 1024, ../sass/styles.scss */
       .contact-footer .inner-footer .footer-block {
         margin-top: 3em; }
-      /* line 1006, ../sass/styles.scss */
+      /* line 1027, ../sass/styles.scss */
       .contact-footer .inner-footer .contact-block {
         margin: 0 0 0 10%; } }
+  @media screen and (min-width: 78em) {
+    /* line 1037, ../sass/styles.scss */
+    .contact-footer .inner-footer .footer-form {
+      width: 70%; } }
 
-/* line 1013, ../sass/styles.scss */
+/* line 1043, ../sass/styles.scss */
 label {
   display: block;
   font-weight: bold;
   padding-bottom: 10px;
   font-size: 0.875em; }
 
-/* line 1019, ../sass/styles.scss */
+/* line 1049, ../sass/styles.scss */
 input,
 textarea {
   width: 100%;
@@ -1315,38 +1337,38 @@ textarea {
   background: #ECECEC;
   box-sizing: border-box; }
 
-/* line 1027, ../sass/styles.scss */
+/* line 1057, ../sass/styles.scss */
 textarea {
   resize: vertical;
   /*max-height:300px;*/ }
 
-/* line 1031, ../sass/styles.scss */
+/* line 1061, ../sass/styles.scss */
 select {
   font-family: icomoon;
   overflow: hidden; }
 
-/* line 1035, ../sass/styles.scss */
+/* line 1065, ../sass/styles.scss */
 .submit {
   text-align: center;
   margin-bottom: 60px; }
-  /* line 1039, ../sass/styles.scss */
+  /* line 1069, ../sass/styles.scss */
   .submit input[type="submit"] {
     font-weight: bold;
     text-transform: uppercase;
     padding: 10px 35px;
     color: #FFF; }
 
-/* line 1047, ../sass/styles.scss */
+/* line 1077, ../sass/styles.scss */
 .contact-block {
   display: block;
   vertical-align: top; }
-  /* line 1051, ../sass/styles.scss */
+  /* line 1081, ../sass/styles.scss */
   .contact-block .contact-links {
     margin-top: 0;
     list-style: none;
     padding: 0;
     font-size: 35px; }
-    /* line 1057, ../sass/styles.scss */
+    /* line 1087, ../sass/styles.scss */
     .contact-block .contact-links li {
       display: inline-block;
       width: 28px;
@@ -1355,13 +1377,13 @@ select {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 1070, ../sass/styles.scss */
+/* line 1100, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.2s linear;
           transition: color 0.2s linear; }
 
-/* line 1075, ../sass/styles.scss */
+/* line 1105, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.2s linear;
           transition: background-color 0.2s linear; }
@@ -1370,16 +1392,16 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 1085, ../sass/styles.scss */
+/* line 1115, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 1086, ../sass/styles.scss */
+/* line 1116, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 1087, ../sass/styles.scss */
+/* line 1117, ../sass/styles.scss */
 .alignright {
   float: right; }
 
@@ -1387,17 +1409,17 @@ a,
    Responsive
    ========================================================================== */
 @media screen and (min-width: 35em) {
-  /* line 1095, ../sass/styles.scss */
+  /* line 1125, ../sass/styles.scss */
   input[type="submit"] {
     width: auto;
     display: inline-block; }
 
-  /* line 1099, ../sass/styles.scss */
+  /* line 1129, ../sass/styles.scss */
   .contact-block {
     display: inline-block;
     margin: 0 6%;
     text-align: center; }
-    /* line 1104, ../sass/styles.scss */
+    /* line 1134, ../sass/styles.scss */
     .contact-block h4 {
       margin-bottom: 0.5em; } }
 

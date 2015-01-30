@@ -20,7 +20,7 @@
 				<div class="medium">
 					<label>¿Cómo te contactamos?</label>
 					<div class="means-wrapper">
-						<ul id="contact-means" class="select" tabindex="2">
+						<ul id="contact-means" class="select color-bg" tabindex="2">
 							<li class="selected"><i class="icon-correo"></i></li>
 							<div class="options-wrapper">
 								<li class="option"><i class="icon-correo"></i></li>

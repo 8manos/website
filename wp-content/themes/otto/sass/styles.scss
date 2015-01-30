@@ -898,6 +898,7 @@ ul.select {
     cursor: pointer;
     font-size: $contact-height / 2;
     margin: 0;
+    padding: 0 3.8em;
     text-transform: uppercase;
   }
   button {
@@ -921,6 +922,7 @@ ul.select {
   max-height: initial;
   min-height: 34em;    
   height: calc(100vh - 88px);
+  //position: relative;
 
   padding: 1px 0; // chrome bug #363067
   transition: bottom 0.5s;
@@ -930,6 +932,26 @@ ul.select {
 
     .footer-block {
       text-align: center;
+    }
+  }
+  ul.select {
+    border-color: rgba(0, 0, 0, 0.2);
+
+    &:after {
+      border-color: #FFF transparent transparent;
+    }
+    li.option {
+      padding: 0.2em;
+      font-size: 1.2em;
+      //text-align: center;
+
+      [class^="icon-"] {
+        padding-left: 0.2em;
+      }
+    }
+    li.selected {
+      background: none;
+      color: #FFF;
     }
   }
   .otto {
@@ -966,15 +988,14 @@ ul.select {
     .medium {
       margin-left: 9%; 
     }
+    .otto {
+      display: block;
+    }
   }
   @media screen and (min-width: 60em) {
     width: 100%;
     position: fixed;
     bottom: 0;
-
-    .otto {
-      display: block;
-    }
 
     .inner-footer {
 
@@ -998,7 +1019,7 @@ ul.select {
       width: 84%;
 
       .footer-form {
-        width: 60%;
+        width: 75%;
       }
       .footer-block {
         margin-top: 3em;
@@ -1007,7 +1028,16 @@ ul.select {
         margin: 0 0 0 10%;
       }
     }
-     
+    input, textarea {
+      //padding: 11px 15px;
+    } 
+  }
+  @media screen and (min-width: 78em) {
+    .inner-footer {
+      .footer-form {
+        width: 70%;
+      }
+    }
   }  
 }
 label {
