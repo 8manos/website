@@ -699,7 +699,7 @@ ul.select {
     padding: 3% 8% 0;
     /*TEST SERVICICES WIDTH*/ }
     /* line 367, ../sass/styles.scss */
-    .wrap .inner-main p:first-child strong {
+    .wrap .inner-main p:first-of-type strong {
       font-size: 1.6em;
       font-style: italic; }
     /* line 371, ../sass/styles.scss */

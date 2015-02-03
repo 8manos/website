@@ -364,7 +364,7 @@ ul.select {
     font-size: 0.875em;
     padding: 3% 8% 0;
 
-    p:first-child strong {
+    p:first-of-type strong {
       font-size: $size-uno+0.1;
       font-style: italic;
     }
