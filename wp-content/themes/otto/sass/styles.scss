@@ -844,6 +844,19 @@ ul.select {
       }
     }
   }
+  @media screen and (min-width: 100em) {
+    .project {
+      margin-left: 3%;
+      width: 31%;
+
+      &:nth-child(2n+1) {
+      margin-left: 3%;
+      }
+      &:nth-child(3n+1) {
+        margin-left: 0;
+      }
+    }
+  }
 }
 .more-info {
   display: none;
@@ -898,7 +911,7 @@ ul.select {
     cursor: pointer;
     font-size: $contact-height / 2;
     margin: 0;
-    padding: 0 3.8em;
+    padding: 0 2.8em;
     text-transform: uppercase;
   }
   button {
@@ -922,7 +935,7 @@ ul.select {
   max-height: initial;
   min-height: 34em;    
   height: calc(100vh - 88px);
-  //position: relative;
+  position: relative;
 
   padding: 1px 0; // chrome bug #363067
   transition: bottom 0.5s;
@@ -959,14 +972,15 @@ ul.select {
     width: 100%;
     max-width: 18em;
     position: absolute;
-    bottom: -2%;
+    bottom: 0;
     left: 2%;
     z-index: -1;
     
 
     svg {
       width: 100%;
-      height: auto;
+      height: 100%;
+      max-height: 20em;
     }
   }
 
@@ -992,6 +1006,14 @@ ul.select {
       display: block;
     }
   }
+  @media screen and (min-height: 48em) {
+    .otto {
+      display: block;
+    }
+    .inner-footer {
+      padding-top: 4%;
+    } 
+  }
   @media screen and (min-width: 60em) {
     width: 100%;
     position: fixed;
@@ -1003,7 +1025,6 @@ ul.select {
         width: 80%;
       }
       .footer-block {
-        text-align: right;
         padding: 0;
       }
       .contact-block {
@@ -1043,7 +1064,7 @@ ul.select {
 label {
   display: block;
   font-weight: bold;
-  padding-bottom: 10px;
+  padding: 1.125em 0;
   font-size: $size-cinco;
 }
 input,
@@ -1135,4 +1156,11 @@ select {
       margin-bottom: 0.5em;
     }
   }
+  label {
+    padding: 0.625em 0;
+  }
+  .contact-header .footer-toggle {
+      padding: 0 3.8em;
+  }
+  
 }
