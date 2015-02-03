@@ -22,7 +22,7 @@
     <div class="team-wrapper">
     </div>
     
-    <p class="close-search color">Estamos en permanente búsqueda de talentos excepcionales. <br> <span>Si eres uno, no dudes en <a href="">contactarnos</a> :-)</span></p>
+    <p class="close-search color">Estamos en permanente búsqueda de talentos excepcionales. <br> <span>Si eres uno, no dudes en contactarnos :-)</span></p>
     
   </section>
 </script>

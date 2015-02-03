@@ -71,5 +71,5 @@
       </div>
     </article>
   <% }); %>
-  <p class="close-search color"> <b>¿Te gusta lo que ves?</b> <br> <span>Invitanos a conocer tu proyecto <a href="">contactanos</a> :-)</span></p>
+  <p class="close-search color"> <b>¿Te gusta lo que ves?</b> <br> <span>Invitanos a conocer tu proyecto contactanos :-)</span></p>
 </script>

@@ -12,11 +12,11 @@
 		</div>
 
 		<!--demo texto especifico para pagina de principios--> 
-		<p class="close-search color"> ¿Te sientes identificado? <br> <span><a href="">Unete a nuestro equipo.</a> :-)</span></p>
+		<p class="close-search color"> ¿Te sientes identificado? <br> <span>Unete a nuestro equipo. :-)</span></p>
 		
 		<!--demo texto especifico para pagina de servicios-->
 		<!--
-		<p class="close-search color"> ¿Eres un cliente chévere? <br> <span><a href="">Déjanos tus datos para contatarte.</a> :-)</span></p>
+		<p class="close-search color"> ¿Eres un cliente chévere? <br> <span>Déjanos tus datos para contatarte. :-)</span></p>
 		-->
 		
 	</section>
