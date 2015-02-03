@@ -368,7 +368,7 @@ ul.select {
       font-size: $size-uno+0.1;
       font-style: italic;
     }
-    .color {
+    p .color {
       display: block;
       text-align: right;
     }
@@ -386,6 +386,10 @@ ul.select {
     }
     li {
       padding: 0 0 6px;
+    }
+
+    @media screen and (min-height: 48em) {
+      padding-top: 5.2%;
     }
 
     @media screen and (min-width: 48em) {
@@ -411,8 +415,13 @@ ul.select {
           width: 30%;
           max-width: 20em;
         }
+      } 
+    }
+    /*TEST SERVICICES WIDTH*/
+    @media screen and (min-width: 100em) {
+      .services {
+        max-width: 53%;
       }
-      
     }
   }
 
@@ -789,6 +798,19 @@ ul.select {
         margin-left: 0;
       }
     }
+    /*
+
+    Test 4 integrantes por fila
+
+    @media screen and (min-width: 100em) {
+      margin-left: 4%;
+      width: 21%;
+
+      &:nth-child(3n+1) {
+        margin-left: 4%;
+      }
+    }
+    */
   }
 }
 .lab-wrapper .project{
