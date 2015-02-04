@@ -640,8 +640,31 @@ ul.select {
     }
   }
 
-  .owl-controls {
-    display: none;
+  .owl-carousel {
+    padding-top: 3em;
+  }
+  .owl-nav {
+    background: $neutro;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .owl-prev,
+  .owl-next {
+    color: white;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    width: 33.33%;
+  }
+  .owl-prev {
+    float: left;
+  }
+  .owl-next {
+    float: right;
   }
 
   .project-desc {

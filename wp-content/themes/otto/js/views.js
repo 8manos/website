@@ -236,6 +236,7 @@ OM.Views.ProjectsView = Backbone.View.extend({
           items: 1,
           loop: true,
           lazyLoad:true,
+          dots: false,
           nav: true,
           navText: ['&#60;','&#62;']
         });

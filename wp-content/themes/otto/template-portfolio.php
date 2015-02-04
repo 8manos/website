@@ -52,14 +52,12 @@
 
       <div class="more-info">
         <div class="project-info">
-          <p class="data">Cliente: <strong><%= post.title %></strong></p>
-          <p class="data">Co-workers: <strong><%= post.featuring %></strong></p>
-          <p class="data">Año: <strong><%= post.date.substr(0,4) %></strong></p>
+          <p class="data">Aliados: <strong><%= post.featuring %></strong></p>
+          <p class="data">Año: <strong><%= post.date.substr(0,7) %></strong></p>
           <div class="project-desc">
             <%= post.content_display %>
           </div>
         </div>
-        <h4 class="project-gallery-title">Galería de imágenes</h4>
         <div class="project-gallery">
           <div id="carousel-<%= post.name %>" class="owl-carousel">
             <% _.each(post.gallery, function(slide){ %>
