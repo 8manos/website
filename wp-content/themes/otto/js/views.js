@@ -161,9 +161,10 @@ OM.Views.LabsView = Backbone.View.extend({
     return this;
   },
   clickToggle: function(e) {
-    var $person = $(e.currentTarget).parent();
+    var $project = $(e.currentTarget).parent();
     $(e.currentTarget).toggleClass('more less');
-    $person.find('.more-info').slideToggle();
+    $project.find('.more-info').slideToggle();
+    $.scrollTo( $project, 500, {offset: {top:-50}} );
   }
 });
 
@@ -242,6 +243,7 @@ OM.Views.ProjectsView = Backbone.View.extend({
         });
       }
     });
+    $.scrollTo( $project, 500, {offset: {top:-50}} );
   }
 });
 
@@ -286,6 +288,7 @@ OM.Views.PersonsView = Backbone.View.extend({
     $person.toggleClass('abierto cerrado');
     $(e.currentTarget).toggleClass('more less');
     $person.find('.person-info').slideToggle();
+    $.scrollTo( $person, 500, {offset: {top:-50}} );
   }
 });
 
