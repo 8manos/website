@@ -19,6 +19,10 @@ $(document).on('ready', function(){
     return url;
   }
 
+  function isRelativeUrl(url) {
+    return url.substring(0,4) != 'http'
+  }
+
   $('.main-nav .menu-item a').each(function() {
     var href = $(this).attr('href');
     var linkPath = urlPath(href);
@@ -37,6 +41,15 @@ $(document).on('ready', function(){
     var href = $(this).attr('href');
     var linkPath = urlPath(href);
     Backbone.history.navigate(linkPath, {trigger: true});
+  });
+
+  $('main').on('click', 'a:not([target="_blank"])', function(e) {
+    var href = $(this).attr('href');
+    var linkPath = urlPath(href);
+    if (isRelativeUrl(linkPath)) {
+      e.preventDefault();
+      Backbone.history.navigate(linkPath, {trigger: true});
+    }
   });
 
   window.views.main = new OM.Views.MainView();

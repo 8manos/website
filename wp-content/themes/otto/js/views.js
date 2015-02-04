@@ -3,6 +3,7 @@ OM.Views.MainView = Backbone.View.extend({
   events: {
     'click .menu-toggle': 'toggleMenu',
     'click .main-nav .menu-item a': 'hideMenu',
+    'click main a': 'hideMenu',
     'click .main-nav .menu-item:nth-child(6) a': 'showFooter',
     'click .footer-toggle': 'showFooter',
     'click .footer-close': 'hideFooter',
@@ -122,7 +123,7 @@ OM.Views.MainView = Backbone.View.extend({
     if (isBottomReached && isContactHeaderFixed) {
       $('.contact-header').removeClass('is-fixed');
       $('.wrap').removeClass('is-contact-hidden');
-      
+
     } else if ( ! isBottomReached && ! isContactHeaderFixed ) {
       $('.contact-header').addClass('is-fixed');
       $('.wrap').addClass('is-contact-hidden');
