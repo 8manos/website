@@ -17,3 +17,4 @@ RewriteRule . /index.php [L]
 
 # END WordPress
 
+# Redirect 302 /wp-content/uploads/ http://dev.8manos.com/wp-content/uploads/

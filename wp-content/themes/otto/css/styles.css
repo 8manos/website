@@ -1096,6 +1096,7 @@ ul.select {
     /* line 794, ../sass/styles.scss */
     .team-wrapper .project img,
     .team-wrapper .person img,
+    .team-wrapper .person .placeholder,
     .lab-wrapper .project img,
     .lab-wrapper .person img {
       display: inline-block;
@@ -1104,6 +1105,21 @@ ul.select {
       border: 3px solid;
       -webkit-transition: all 0.3s;
               transition: all 0.3s; }
+
+    .team-wrapper .person img,
+    .team-wrapper .person .placeholder {
+      height: 68px;
+    }
+
+    .placeholder {
+      background-color: white;
+      font-size: 50px;
+      line-height: 68px;
+    }
+    .placeholder:before {
+      margin: 0;
+    }
+
     @media screen and (min-width: 45em) {
       /* line 786, ../sass/styles.scss */
       .team-wrapper .project,
@@ -1145,8 +1161,8 @@ ul.select {
 .lab-wrapper .project {
   padding: 1em 0 0.5em; }
 
-/* line 843, ../sass/styles.scss */
-.person picture {
+/* line 820, ../sass/styles.scss */
+.person figure {
   display: inline-block;
   /*margin-top: -20px;*/
   position: absolute;
@@ -1156,11 +1172,19 @@ ul.select {
 /* line 851, ../sass/styles.scss */
 .person.abierto {
   margin-top: 70px; }
-  /* line 854, ../sass/styles.scss */
+
+  /* line 831, ../sass/styles.scss */
+  .person.abierto .placeholder,
   .person.abierto img {
+    height: 88px;
     width: 88px;
     margin: -25px -10px; }
-/* line 859, ../sass/styles.scss */
+
+  .person.abierto .placeholder {
+    font-size: 78px;
+    line-height: 88px;
+  }
+/* line 836, ../sass/styles.scss */
 .person .person-name {
   padding-top: 10px;
   margin: 18px 0 0; }
