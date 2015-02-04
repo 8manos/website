@@ -235,6 +235,7 @@ OM.Views.ProjectsView = Backbone.View.extend({
         $project.find('.owl-carousel').owlCarousel({
           items: 1,
           loop: true,
+          lazyLoad:true,
           nav: true,
           navText: ['&#60;','&#62;']
         });

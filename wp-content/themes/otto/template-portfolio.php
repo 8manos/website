@@ -47,7 +47,7 @@
         <% }); %>
       </ul>
       <figure>
-        <img src="<%= post.images.project %>" srcset="<%= post.images.projectth %> 300w, <%= post.images.projectth2x %> 600w, <%= post.images.projectth3x %> 900w" sizes="90vw, (min-width: 60em) 45vw" alt="<%= post.title %>">
+        <img src="<%= post.images.project %>" srcset="<%= post.images.projectth %> 300w, <%= post.images.projectth2x %> 600w, <%= post.images.projectth3x %> 900w" sizes="90vw, (min-width: 45em) 45vw, (min-width: 90em) 30vw" alt="<%= post.title %>">
       </figure>
 
       <div class="more-info">
@@ -63,7 +63,7 @@
         <div class="project-gallery">
           <div id="carousel-<%= post.name %>" class="owl-carousel">
             <% _.each(post.gallery, function(slide){ %>
-              <img src="<%= slide.small[0] %>" srcset="<%= slide.small[0] %> 300w, <%= slide.medium[0] %> 600w, <%= slide.large[0] %> 900w" sizes="90vw, (min-width: 60em) 45vw">
+              <img class="owl-lazy" data-src="<%= slide.medium[0] %>">
             <% }); %>
           </div>
         </div>

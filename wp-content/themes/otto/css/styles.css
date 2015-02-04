@@ -1081,7 +1081,7 @@ ul.select {
       border: 3px solid;
       -webkit-transition: all 0.3s;
               transition: all 0.3s; }
-    @media screen and (min-width: 48em) {
+    @media screen and (min-width: 45em) {
       /* line 763, ../sass/styles.scss */
       .team-wrapper .project,
       .team-wrapper .person,
@@ -1173,7 +1173,7 @@ ul.select {
   /* line 871, ../sass/styles.scss */
   .works-wrapper .project-link {
     text-align: right; }
-  @media screen and (min-width: 42em) {
+  @media screen and (min-width: 45em) {
     /* line 876, ../sass/styles.scss */
     .works-wrapper .project {
       display: inline-block;
@@ -1183,7 +1183,7 @@ ul.select {
       /* line 882, ../sass/styles.scss */
       .works-wrapper .project:nth-child(2n+1) {
         margin-left: 0; } }
-  @media screen and (min-width: 100em) {
+  @media screen and (min-width: 90em) {
     /* line 888, ../sass/styles.scss */
     .works-wrapper .project {
       margin-left: 3%;
