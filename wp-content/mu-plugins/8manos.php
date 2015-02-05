@@ -100,7 +100,7 @@ class Manos {
 			'public' => true,
 			'map_meta_cap' => true,
 			'hierarchical' => true,
-			'supports' => array('title','excerpt','thumbnail','page-attributes')
+			'supports' => array('title','editor','thumbnail','page-attributes')
 			)
 		);
 	}
