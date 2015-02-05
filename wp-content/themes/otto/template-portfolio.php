@@ -43,7 +43,7 @@
       <h3 class="project-title"><%= post.title %></h3>
       <ul class="project-tags">
         <% _.each(post.taxonomies.post_tag, function(tag){ %>
-          <li class="icon-<%= tag.slug %>"></li>
+          <li class="icon-<%= tag.slug %>" title="<%= tag.name %>"></li>
         <% }); %>
       </ul>
       <figure>
