@@ -3,7 +3,7 @@ midatacredito
 test
 wp-content/plugins/wp-gallery-cycle
 .htaccess
-wp-*.php
+/wp-*.php
 xmlrpc.php
 wp-admin/
 wp-includes/
