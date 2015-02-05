@@ -41,22 +41,24 @@
     <article class="project off">
       <button type="button" class="toggle-details more color icon-close"></button>
       <h3 class="project-title"><%= post.title %></h3>
+      <p class="project-date"><strong><%= post.date.substr(0,7) %></strong></p>
       <ul class="project-tags">
         <% _.each(post.taxonomies.post_tag, function(tag){ %>
           <li class="icon-<%= tag.slug %>" title="<%= tag.name %>"></li>
         <% }); %>
       </ul>
+      <% if(post.featuring) { %>
+      <div class="project-info">
+        <p class="data">Aliados: <strong><%= post.featuring %></strong></p>
+      </div>
+      <% } %>
       <figure>
         <img src="<%= post.images.project %>" srcset="<%= post.images.projectth %> 300w, <%= post.images.projectth2x %> 600w, <%= post.images.projectth3x %> 900w" sizes="90vw, (min-width: 45em) 45vw, (min-width: 90em) 30vw" alt="<%= post.title %>">
       </figure>
 
       <div class="more-info">
         <div class="project-info">
-          <p class="data">Aliados: <strong><%= post.featuring %></strong></p>
-          <p class="data">Año: <strong><%= post.date.substr(0,7) %></strong></p>
-          <div class="project-desc">
-            <%= post.content_display %>
-          </div>
+          <%= post.content_display %>
         </div>
         <div class="project-gallery">
           <div id="carousel-<%= post.name %>" class="owl-carousel">

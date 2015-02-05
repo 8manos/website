@@ -606,6 +606,12 @@ ul.select {
     vertical-align: top;
   }
 
+  .project-date {
+    float: right;
+    margin: 1.5em 0;
+    padding: 0 1em;
+  }
+
   .data {
     font-style: italic;
     line-height: 1;
@@ -640,25 +646,23 @@ ul.select {
     }
   }
 
-  .owl-carousel {
-    padding-top: 3em;
-  }
   .owl-nav {
-    background: $neutro;
+    margin-top: -1.5em;
     overflow: hidden;
     position: absolute;
-    top: 0;
+    top: 50%;
     width: 100%;
   }
   .owl-prev,
   .owl-next {
+    background: rgba(0,0,0,0.5);
     color: white;
     display: inline-block;
     font-size: 2em;
     font-weight: bold;
     line-height: 1.5;
     text-align: center;
-    width: 33.33%;
+    width: 20%;
   }
   .owl-prev {
     float: left;
