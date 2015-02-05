@@ -7,37 +7,13 @@
 	<div class="ugly-filler"></div>
 
 	<footer role="contentinfo" class="contact-footer">
-	
+
 	<div class="inner-footer">
 		<div class="footer-form">
 			<h3>Aca va un texto introductorio que se administra como una página en wordpress. O podemos poner un texto relacionado con la sección en la que uno se encuentra?</h3>
 			<p>Prometemos responder en el menor tiempo posible.</p>
-			<form>
-				<div class="name">
-					<label for="name">Nombre:</label>
-					<input type="text" placeholder="¿Cómo te gusta que te llamen?" name="name" id="name" tabindex="1">
-				</div>
-				<div class="medium">
-					<label>¿Cómo te contactamos?</label>
-					<div class="means-wrapper">
-						<ul id="contact-means" class="select color-bg" tabindex="2">
-							<li class="selected"><i class="icon-correo"></i></li>
-							<div class="options-wrapper">
-								<li class="option"><i class="icon-correo"></i></li>
-								<li class="option"><i class="icon-telefono"></i></li>
-							</div>
-						</ul><input type="email" name="contact-field" id="contact-field" placeholder="Escribe tu correo electrónico" tabindex="3">
-					</div>
-				</div>
-				<div>
-					<label for="message">Mensaje:</label>
-					<textarea name="message" id="message" tabindex="4"></textarea>					
-				</div>
 
-				<p class="submit">
-					<input class="color-bg" type="submit" Value="Enviar">
-				</p>
-			</form>
+			<?php echo do_shortcode( '[contact-form-7 id="413" title="Contacto ES"]' ); ?>
 		</div>
 		<div class="footer-block">
 			<div class="contact-block">
@@ -52,7 +28,7 @@
 					<li><a href="" class="icon-tumblr">Tumblr</a></li>
 				</ul>
 			</div>
-		</div>		
+		</div>
 	</div>
 	<div class="otto">
 		<svg id="otto" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="128px" height="113px" viewBox="0 0 128 113" enable-background="new 0 0 128 113"
