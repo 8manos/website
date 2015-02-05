@@ -29,7 +29,7 @@
         <p><%= post.content_display %></p>
         <ul class="person-links color">
           <% _.each(post.contact_links, function(link){ %>
-            <li><a class="icon-<%= link.link_type %>" href="<%= setHttp(link.link_url) %>"><%= link.link_type %></a></li>
+            <li><a class="icon-<%= link.link_type %>" href="<%= setHttp(link.link_url) %>"><span><%= link.link_type %></span></a></li>
           <% }); %>
         </ul>
       </div>

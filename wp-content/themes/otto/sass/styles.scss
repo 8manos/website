@@ -212,6 +212,10 @@ ul.select {
       vertical-align: middle;
       margin-right: -0.25em; /* Adjusts for spacing */
     }
+    &:hover {
+      transform: scale(1.5);
+    }
+
     @media screen and (min-width: 48em) {
       font-size: 1em;
 
@@ -948,35 +952,45 @@ ul.select {
   display: none;
   text-align: left;
 
-   p {
-      padding-bottom: 10px;
-   }
-   p + p {
-      padding: 5px 0 15px;
-   }
-   .person-links,
-   .lab-tags {
-      margin: 0 10px;
-      padding: 12px 10px 0;
-      list-style: none;
-      border-top: 2px dotted;
-      text-align: center; 
+  p {
+    padding-bottom: 10px;
+  }
+  p + p {
+    padding: 5px 0 15px;
+  }
+  .person-links,
+  .lab-tags {
+    margin: 0 10px;
+    padding: 12px 10px 0;
+    list-style: none;
+    border-top: 2px dotted;
+    text-align: center;
    
-      li {
-       display: inline-block;
+    li {
+      display: inline-block;
+      transition: all 0.3s;
 
-        a { 
+      a { 
+        width: 30px;
+        overflow: hidden;
+
+        span {
           font-size: 0;
-          width: 30px;
-          overflow: hidden;
+          opacity: 0;
+        }
 
-          &:before {
-            font-size: 36px;
-            margin: 0;
-          }
+        &:before {
+          font-size: 36px;
+          margin: 0;
         }
       }
-   }
+    }
+  }
+  .person-links {
+    li:hover {
+      transform: scale(1.25);
+    }
+  }
 }
 /* ==========================================================================
    Footer
@@ -1206,7 +1220,7 @@ select {
 
    a ,
    .color {
-      transition: color 0.2s linear;
+      transition: all 0.2s linear;
    }
 
    .color-bg {
