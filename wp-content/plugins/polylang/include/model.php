@@ -195,6 +195,9 @@ class PLL_Model {
 			if (defined('PLL_CACHE_HOME_URL') && !PLL_CACHE_HOME_URL)
 				$language->set_home_url();
 
+			// ensures that the (possibly cached) home url uses the right scheme http or https
+			$language->set_home_url_scheme();
+
 			// add flags (not in db cache as they may be different on frontend and admin)
 			$language->set_flag();
 		}
