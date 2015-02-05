@@ -166,6 +166,7 @@ ul.select {
     display: block;
     float: left;
     height: calc(33.33% - 1px);
+    overflow: hidden;
     text-align: center;
     width: calc(50% - 1px);
   }
@@ -1211,6 +1212,11 @@ select {
       display: inline-block;
       width: 36px;
       overflow: hidden;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.25);
+      }
     }
   }
 }
