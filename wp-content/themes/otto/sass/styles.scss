@@ -957,19 +957,15 @@ ul.select {
     list-style: none;
     border-top: 2px dotted;
     text-align: center;
-   
+
     li {
       display: inline-block;
       transition: all 0.3s;
 
-      a { 
-        width: 30px;
+      a {
+        display: inline-block;
         overflow: hidden;
-
-        span {
-          font-size: 0;
-          opacity: 0;
-        }
+        width: 34px;
 
         &:before {
           font-size: 36px;
