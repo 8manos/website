@@ -773,6 +773,21 @@ ul.select {
     position: relative;
     margin: 45px 0;
     transition: all 0.3s;
+
+    img,
+    .placeholder {
+      height: 68px;
+    }
+
+    .placeholder {
+      background-color: white;
+      font-size: 50px;
+      line-height: 68px;
+
+      &:before {
+        margin: 0;
+      }
+    }
   }
 
   .project,
@@ -783,12 +798,13 @@ ul.select {
     h4 {
        font-weight: normal;
     }
-    img {
+    img,
+    .placeholder {
        display: inline-block;
-       width: 68px;
        border-radius: 50px;
        border: 3px solid;
        transition: all 0.3s;
+       width: 68px;
     }
 
     @media screen and (min-width: 45em) {
@@ -832,7 +848,7 @@ ul.select {
   padding: 1em 0 0.5em;
 }
 .person {
-  picture {
+  figure {
     display: inline-block;
     /*margin-top: -20px;*/
     position: absolute;
@@ -843,9 +859,16 @@ ul.select {
   &.abierto {
     margin-top: 70px;
 
-    img {
-      width: 88px;
+    img,
+    .placeholder {
+      height: 88px;
       margin: -25px -10px;
+      width: 88px;
+    }
+
+    .placeholder {
+      font-size: 78px;
+      line-height: 88px;
     }
   } 
   .person-name {

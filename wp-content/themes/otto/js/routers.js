@@ -18,6 +18,7 @@ OM.Routers.Router = Backbone.Router.extend({
       complete: function(xhr, textStatus){
         if(textStatus == 'success'){
           window.views.principles_view = new OM.Views.PageView({collection: principlesCollection});
+          document.title = '∞manos | '+principlesCollection.models[0].attributes.posts[0].title;
         }
       },
     });
@@ -28,6 +29,7 @@ OM.Routers.Router = Backbone.Router.extend({
       complete: function(xhr, textStatus){
         if(textStatus == 'success'){
           window.views.team_view = new OM.Views.TeamView({collection: teamCollection});
+          document.title = '∞manos | '+teamCollection.models[0].attributes.posts[0].title;
         }
       }
     });
@@ -38,6 +40,7 @@ OM.Routers.Router = Backbone.Router.extend({
       complete: function(xhr, textStatus){
         if(textStatus == 'success'){
           window.views.services_view = new OM.Views.PageView({collection: servicesCollection});
+          document.title = '∞manos | '+servicesCollection.models[0].attributes.posts[0].title;
         }
       },
     });
@@ -48,6 +51,7 @@ OM.Routers.Router = Backbone.Router.extend({
       complete: function(xhr, textStatus){
         if(textStatus == 'success'){
           window.views.portfolio_view = new OM.Views.PortfolioView({collection: portfolioCollection});
+          document.title = '∞manos | '+portfolioCollection.models[0].attributes.posts[0].title;
         }
       }
     });
@@ -58,6 +62,7 @@ OM.Routers.Router = Backbone.Router.extend({
       complete: function(xhr, textStatus){
         if(textStatus == 'success'){
           window.views.labs_view = new OM.Views.LabView({collection: labCollection});
+          document.title = '∞manos | '+labCollection.models[0].attributes.posts[0].title;
         }
       }
     });

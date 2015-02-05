@@ -44,7 +44,7 @@
     var colorB = 'hsl('+h+','+s+'%,'+lb+'%)';
 
     $( 'a, .color' ).not( '.main-nav a, .language-switch a').css( 'color', colorW );
-    $( '.color-bg' ).css( 'background-color', colorW );
+    $( '.color-bg, .owl-prev, .owl-next' ).css( 'background-color', colorW );
     $( '.color-against-black' ).css( 'color', colorB );
     $( '#otto').css('fill', colorB );
 
