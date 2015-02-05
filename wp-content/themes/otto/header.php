@@ -45,12 +45,6 @@
 		<h1 class="menu-bar">
 			<a href="" class="menu-toggle icon-menu color-against-black">Menú</a>
 			<a href="<?php echo home_url(); ?>/" rel="home" class="logo color-against-black"><?php bloginfo('name');?></a>
-
-			<ul class="language-switch is-closed">
-				<?php
-				flags_menu();
-				?>
-			</ul>
 		</h1>
 	</header>
 
