@@ -1007,7 +1007,7 @@ ul.select {
     p {
       display: inline-block;
       margin: 0;
-      vertical-align: middle;
+      vertical-align: top;
       width: calc(100% - 58px);
     }
   }
@@ -1032,6 +1032,9 @@ ul.select {
       background: none;
       color: #FFF;
     }
+  }
+  div.wpcf7-response-output {
+    background: white;
   }
   .otto {
     display: none;

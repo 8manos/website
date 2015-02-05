@@ -1300,7 +1300,7 @@ ul.select {
   .contact-footer .means-wrapper p {
     display: inline-block;
     margin: 0;
-    vertical-align: middle;
+    vertical-align: top;
     width: -webkit-calc(100% - 58px);
     width: calc(100% - 58px); }
   /* line 1015, ../sass/styles.scss */
@@ -1322,6 +1322,9 @@ ul.select {
       background: none;
       color: #FFF; }
   /* line 1036, ../sass/styles.scss */
+  .contact-footer div.wpcf7-response-output {
+    background: white; }
+  /* line 1039, ../sass/styles.scss */
   .contact-footer .otto {
     display: none;
     width: 100%;
@@ -1330,36 +1333,36 @@ ul.select {
     bottom: 0;
     left: 2%;
     z-index: -1; }
-    /* line 1046, ../sass/styles.scss */
+    /* line 1049, ../sass/styles.scss */
     .contact-footer .otto svg {
       width: 100%;
       height: 100%;
       max-height: 20em; }
   @media screen and (min-width: 48em) {
-    /* line 1054, ../sass/styles.scss */
+    /* line 1057, ../sass/styles.scss */
     .contact-footer .inner-footer {
       width: 88%;
       margin: 2% auto 0; }
-      /* line 1058, ../sass/styles.scss */
+      /* line 1061, ../sass/styles.scss */
       .contact-footer .inner-footer .footer-block {
         padding: 0 5%; }
-    /* line 1062, ../sass/styles.scss */
+    /* line 1065, ../sass/styles.scss */
     .contact-footer div.name,
     .contact-footer div.medium {
       display: inline-block;
       width: 45%;
       vertical-align: top; }
-    /* line 1068, ../sass/styles.scss */
+    /* line 1071, ../sass/styles.scss */
     .contact-footer div.medium {
       margin-left: 9%; }
-    /* line 1071, ../sass/styles.scss */
+    /* line 1074, ../sass/styles.scss */
     .contact-footer .otto {
       display: block; } }
   @media screen and (min-height: 48em) {
-    /* line 1076, ../sass/styles.scss */
+    /* line 1079, ../sass/styles.scss */
     .contact-footer .otto {
       display: block; }
-    /* line 1079, ../sass/styles.scss */
+    /* line 1082, ../sass/styles.scss */
     .contact-footer .inner-footer {
       padding-top: 4%; } }
   @media screen and (min-width: 60em) {
@@ -1368,44 +1371,44 @@ ul.select {
       width: 100%;
       position: fixed;
       bottom: 0; }
-      /* line 1090, ../sass/styles.scss */
+      /* line 1093, ../sass/styles.scss */
       .contact-footer .inner-footer .footer-form {
         width: 80%; }
-      /* line 1093, ../sass/styles.scss */
+      /* line 1096, ../sass/styles.scss */
       .contact-footer .inner-footer .footer-block {
         padding: 0; }
-      /* line 1096, ../sass/styles.scss */
+      /* line 1099, ../sass/styles.scss */
       .contact-footer .inner-footer .contact-block {
         margin: 0 0 0 8%; } }
   @media screen and (min-width: 72em) {
-    /* line 1102, ../sass/styles.scss */
+    /* line 1105, ../sass/styles.scss */
     .contact-footer .otto {
       max-width: 25em; }
-    /* line 1105, ../sass/styles.scss */
+    /* line 1108, ../sass/styles.scss */
     .contact-footer .inner-footer {
       width: 84%; }
-      /* line 1108, ../sass/styles.scss */
+      /* line 1111, ../sass/styles.scss */
       .contact-footer .inner-footer .footer-form {
         width: 75%; }
-      /* line 1111, ../sass/styles.scss */
+      /* line 1114, ../sass/styles.scss */
       .contact-footer .inner-footer .footer-block {
         margin-top: 3em; }
-      /* line 1114, ../sass/styles.scss */
+      /* line 1117, ../sass/styles.scss */
       .contact-footer .inner-footer .contact-block {
         margin: 0 0 0 10%; } }
   @media screen and (min-width: 78em) {
-    /* line 1124, ../sass/styles.scss */
+    /* line 1127, ../sass/styles.scss */
     .contact-footer .inner-footer .footer-form {
       width: 70%; } }
 
-/* line 1130, ../sass/styles.scss */
+/* line 1133, ../sass/styles.scss */
 label {
   display: block;
   font-weight: bold;
   padding: 1.125em 0;
   font-size: 0.875em; }
 
-/* line 1136, ../sass/styles.scss */
+/* line 1139, ../sass/styles.scss */
 input,
 textarea {
   width: 100%;
@@ -1414,38 +1417,38 @@ textarea {
   background: #ECECEC;
   box-sizing: border-box; }
 
-/* line 1144, ../sass/styles.scss */
+/* line 1147, ../sass/styles.scss */
 textarea {
   resize: vertical;
   /*max-height:300px;*/ }
 
-/* line 1148, ../sass/styles.scss */
+/* line 1151, ../sass/styles.scss */
 select {
   font-family: icomoon;
   overflow: hidden; }
 
-/* line 1152, ../sass/styles.scss */
+/* line 1155, ../sass/styles.scss */
 .submit {
   text-align: center;
   margin-bottom: 60px; }
-  /* line 1156, ../sass/styles.scss */
+  /* line 1159, ../sass/styles.scss */
   .submit input[type="submit"] {
     font-weight: bold;
     text-transform: uppercase;
     padding: 10px 35px;
     color: #FFF; }
 
-/* line 1164, ../sass/styles.scss */
+/* line 1167, ../sass/styles.scss */
 .contact-block {
   display: block;
   vertical-align: top; }
-  /* line 1168, ../sass/styles.scss */
+  /* line 1171, ../sass/styles.scss */
   .contact-block .contact-links {
     margin-top: 0;
     list-style: none;
     padding: 0;
     font-size: 35px; }
-    /* line 1174, ../sass/styles.scss */
+    /* line 1177, ../sass/styles.scss */
     .contact-block .contact-links li {
       display: inline-block;
       width: 28px;
@@ -1454,13 +1457,13 @@ select {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 1187, ../sass/styles.scss */
+/* line 1190, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: color 0.2s linear;
           transition: color 0.2s linear; }
 
-/* line 1192, ../sass/styles.scss */
+/* line 1195, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.2s linear;
           transition: background-color 0.2s linear; }
@@ -1469,16 +1472,16 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 1202, ../sass/styles.scss */
+/* line 1205, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 1203, ../sass/styles.scss */
+/* line 1206, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 1204, ../sass/styles.scss */
+/* line 1207, ../sass/styles.scss */
 .alignright {
   float: right; }
 
@@ -1486,25 +1489,25 @@ a,
    Responsive
    ========================================================================== */
 @media screen and (min-width: 35em) {
-  /* line 1212, ../sass/styles.scss */
+  /* line 1215, ../sass/styles.scss */
   input[type="submit"] {
     width: auto;
     display: inline-block; }
 
-  /* line 1216, ../sass/styles.scss */
+  /* line 1219, ../sass/styles.scss */
   .contact-block {
     display: inline-block;
     margin: 0 6%;
     text-align: center; }
-    /* line 1221, ../sass/styles.scss */
+    /* line 1224, ../sass/styles.scss */
     .contact-block h4 {
       margin-bottom: 0.5em; }
 
-  /* line 1225, ../sass/styles.scss */
+  /* line 1228, ../sass/styles.scss */
   label {
     padding: 0.625em 0; }
 
-  /* line 1228, ../sass/styles.scss */
+  /* line 1231, ../sass/styles.scss */
   .contact-header .footer-toggle {
     padding: 0 3.8em; } }
 
