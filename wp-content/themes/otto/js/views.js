@@ -288,7 +288,7 @@ OM.Views.PersonsView = Backbone.View.extend({
     $person.toggleClass('abierto cerrado');
     $(e.currentTarget).toggleClass('more less');
     $person.find('.person-info').slideToggle();
-    $.scrollTo( $person, 500, {offset: {top:-50}} );
+    $.scrollTo( $person, 500, {offset: {top:-100}} );
   }
 });
 

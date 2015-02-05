@@ -26,7 +26,7 @@
       <h3 class="person-name"><%= post.title %></h3>
       <h4 class="person-position"><%= post.excerpt %></h4>
       <div class="person-info more-info">
-        <p><%= post.content_display %></p>
+        <%= post.content_display %>
         <ul class="person-links color">
           <% _.each(post.contact_links, function(link){ %>
             <li><a class="icon-<%= link.link_type %>" href="<%= setHttp(link.link_url) %>" target="_blank"><%= link.link_type %></a></li>
