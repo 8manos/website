@@ -10,22 +10,22 @@
 
 	<div class="inner-footer">
 		<div class="footer-form">
-			<h3>Aca va un texto introductorio que se administra como una página en wordpress. O podemos poner un texto relacionado con la sección en la que uno se encuentra?</h3>
-			<p>Prometemos responder en el menor tiempo posible.</p>
-
-			<?php echo do_shortcode( '[contact-form-7 id="413" title="Contacto ES"]' ); ?>
+			<?php echo kc_get_option( 'manos', 'contact_fields', 'intro' ); ?>
+			<?php echo do_shortcode( kc_get_option( 'manos', 'contact_fields', 'form' ) ); ?>
 		</div>
 		<div class="footer-block">
 			<div class="contact-block">
-				<h4>8manos en Bogotá</h4>
-				<p>Calle 94 # 15-32 Oficina 301<br>Tel: (57-1) 6057039</p>
+				<?php echo kc_get_option( 'manos', 'contact_fields', 'address' ); ?>
 			</div>
 			<div class="contact-block social">
 				<h4>8manos en la red</h4>
 				<ul class="contact-links">
-					<li><a href="" class="icon-twitter">Twitter</a></li>
-					<li><a href="" class="icon-github">Github</a></li>
-					<li><a href="" class="icon-tumblr">Tumblr</a></li>
+					<?php
+					$links = kc_get_option( 'manos', 'contact_fields', 'links' );
+					foreach ($links as $link) {
+						echo '<li><a href="'.$link['link_url'].'" class="icon-'.$link['link_type'].'" target="_blank">'.$link['link_type'].'</a></li>';
+					}
+					?>
 				</ul>
 			</div>
 		</div>

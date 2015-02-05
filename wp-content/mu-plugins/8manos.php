@@ -6,6 +6,7 @@ class Manos {
 		add_action( 'init', array( __CLASS__, 'manos_post_types' ) );
 		add_action( 'init', array( __CLASS__, 'manos_taxonomies' ) );
 		add_filter( 'kc_post_settings', array( __CLASS__, 'manos_custom_fields' ) );
+		add_filter( 'kc_plugin_settings', array( __CLASS__, 'manos_theme_fields' ) );
 		add_action( 'p2p_init', array( __CLASS__, 'my_connection_types' ) );
 	}
 
@@ -161,7 +162,7 @@ class Manos {
 								array(
 									'id' => 'link_type',
 									'title' => 'Tipo de enlace',
-									'desc' => 'Los tipos de enlace son: dribbble, behance, skype, flickr, vimeo, github, twitter o mail',
+									'desc' => 'Los tipos de enlace son: github, twitter, tumblr, linkedin o email',
 									'type' => 'text'
 								),array(
 									'id' => 'link_url',
@@ -197,6 +198,60 @@ class Manos {
 			'from' => 'portafolio',
 			'to' => 'equipo'
 		) );
+	}
+
+	function manos_theme_fields( $settings ) {
+		$fields = array(
+			array(
+				'id'     => 'contact_fields',
+				'title'  => 'Contact',
+				'fields' => array(
+					array(
+						'id'    => 'intro',
+						'title' => 'Texto introductorio',
+						'type'  => 'editor'
+					),
+					array(
+						'id'    => 'form',
+						'title' => 'Formulario',
+						'desc'  => 'Shortcode de Contact Form 7',
+						'type'  => 'text'
+					),
+					array(
+						'id'    => 'address',
+						'title' => 'Dirección 8manos',
+						'type'  => 'editor'
+					),
+					array(
+						'id'        => 'links',
+						'title'     => '8manos en la red',
+						'type'      => 'multiinput',
+						'subfields' => array(
+							array(
+								'id'    => 'link_type',
+								'title' => 'Tipo de enlace',
+								'desc'  => 'Los tipos de enlace son: github, twitter, tumblr o linkedin',
+								'type'  => 'text'
+							),array(
+								'id'    => 'link_url',
+								'title' => 'Enlace',
+								'type'  => 'text'
+							)
+						)
+					)
+				)
+			)
+		);
+		$my_settings = array(
+			'prefix'  => 'manos',
+			'menu_location' => 'themes.php',
+			'menu_title' => 'Footer Contact',
+			'page_title' => 'Footer Contact',
+			'display' => 'metabox',
+			'options' => $fields
+		);
+		$settings[] = $my_settings;
+		return $settings;
 	}
 }
 

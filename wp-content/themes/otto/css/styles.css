@@ -1447,11 +1447,11 @@ select {
     margin-top: 0;
     list-style: none;
     padding: 0;
-    font-size: 35px; }
+    font-size: 37px; }
     /* line 1177, ../sass/styles.scss */
     .contact-block .contact-links li {
       display: inline-block;
-      width: 28px;
+      width: 36px;
       overflow: hidden; }
 
 /* ==========================================================================
@@ -1510,5 +1510,4 @@ a,
   /* line 1231, ../sass/styles.scss */
   .contact-header .footer-toggle {
     padding: 0 3.8em; } }
-
 /*# sourceMappingURL=styles.css.map */
