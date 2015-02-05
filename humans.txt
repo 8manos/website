@@ -6,7 +6,34 @@
   8manos S.A.S
   Site: 8manos.com
   Twitter: @8manos
-  Location: Tenjo, Colombia
+  Location: Bogotá, Colombia
+
+  Designer: Mauricio Solano
+  Contact: m@8manos.com
+  Twitter: @maosolano
+
+  Designer/Developer: Nicolás García
+  Contact: nicolazgarcia@gmail.com
+  Twitter: @NicolazG
+
+  Developer: Mauricio Mantilla
+  Contact: mauricio@8manos.com
+  Twitter: @Mantish
+
+  Developer: Jorge Parada
+  Contact: jorge@8manos.com
+  Twitter: @heyanabelle
+
+  Developer: Carlos Sosa
+  Contact: carlos@8manos.com
+  Twitter: @cesosag
+
+  Contents: Helena Ángel
+  Twitter: @anonimah
+
+  Contents: Mafe Domínguez
+  Contact: mafe@8manos.com
+  Twitter: @MafeRaptor
 
 /* THANKS */
   Names (& URL):
@@ -18,6 +45,5 @@
 
 /* SITE */
   Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
+  Components: Backbone.js, jQuery
   Software: WordPress
-
