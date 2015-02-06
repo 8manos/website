@@ -478,7 +478,7 @@ ul.select {
 
   ul {
     width: auto;
-    margin-left: initial;
+    margin-left: 0;
   }
 
   }
@@ -1029,7 +1029,7 @@ ul.select {
 
 .contact-footer {
   //background: #fff;
-  max-height: initial;
+  max-height: none;
   min-height: 34em;    
   height: calc(100vh - 88px);
   position: relative;

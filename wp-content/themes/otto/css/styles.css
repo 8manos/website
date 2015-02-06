@@ -798,7 +798,7 @@ ul.select {
     /* line 479, ../sass/styles.scss */
     .sect-conventions ul {
       width: auto;
-      margin-left: initial; } }
+      margin-left: 0; } }
 
 /* line 487, ../sass/styles.scss */
 .section-name {
@@ -1328,7 +1328,7 @@ ul.select {
 
 /* line 1030, ../sass/styles.scss */
 .contact-footer {
-  max-height: initial;
+  max-height: none;
   min-height: 34em;
   height: -webkit-calc(100vh - 88px);
   height: calc(100vh - 88px);
