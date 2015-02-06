@@ -422,8 +422,8 @@ ul.select {
     }
   }
 
-  @media screen and (max-width: 60em) {
-    margin-bottom: 0 !important; 
+  @media screen and (max-width: 59.99em) {
+    margin-bottom: 0 !important;
   }
 }
 .ugly-filler {
@@ -1028,9 +1028,7 @@ ul.select {
 }
 
 .contact-footer {
-  //background: #fff;
   max-height: none;
-  min-height: 34em;    
   height: calc(100vh - 88px);
   position: relative;
 
@@ -1197,7 +1195,7 @@ select {
 }
 .submit {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 
   input[type="submit"] {
     font-weight: bold;
@@ -1214,7 +1212,7 @@ select {
   .contact-links {
     font-size: 37px;
     list-style: none;
-    margin-top: 0;
+    margin: 0;
     padding: 0;
 
     li {
