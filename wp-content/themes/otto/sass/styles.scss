@@ -972,6 +972,7 @@ ul.select {
 
       a {
         display: inline-block;
+        height: 34px;
         overflow: hidden;
         width: 34px;
 
@@ -1211,16 +1212,17 @@ select {
   vertical-align: top;
 
   .contact-links {
-    margin-top: 0;
-    list-style: none;
-    padding: 0;
     font-size: 37px;
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
 
     li {
       display: inline-block;
-      width: 36px;
+      height: 36px;
       overflow: hidden;
       transition: all 0.3s;
+      width: 36px;
 
       &:hover {
         transform: scale(1.25);
