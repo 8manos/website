@@ -233,13 +233,25 @@ OM.Views.ProjectsView = Backbone.View.extend({
     $project.find('.toggle-details').toggleClass('more less');
     $project.find('.more-info').slideToggle(function(){
       if($(this).is(':visible')){
-        $project.find('.owl-carousel').owlCarousel({
+        var $carousel = $project.find('.owl-carousel');
+        $carousel.owlCarousel({
           items: 1,
           loop: true,
           lazyLoad:true,
           dots: false,
           nav: true,
-          navText: ['&#60;','&#62;']
+          navText: ['&#60;','&#62;'],
+          onLoadedLazy: function(){
+            $items = $carousel.find('.owl-item');
+            $items.css('height', 'auto');
+            var highest = 0;
+            $items.each(function(){
+              //console.log(this);
+              highest = Math.max(highest, $(this).innerHeight());
+            });
+            //console.log(highest);
+            $items.css('height', highest);
+          }
         });
       }
     });

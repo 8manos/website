@@ -646,6 +646,14 @@ ul.select {
     }
   }
 
+  .owl-carousel {
+    img {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
   .owl-nav {
     margin-top: -1.5em;
     overflow: hidden;
