@@ -60,7 +60,7 @@ OM.Views.MainView = Backbone.View.extend({
   },
   toggleMenu: function(e) {
     e.preventDefault();
-    if (window.scrollY) {
+    if (window.scrollY > 0) {
       $.scrollTo( 0, 500 );
     } else {
       this.hideMenu(true);
