@@ -77,7 +77,7 @@ OM.Views.MainView = Backbone.View.extend({
   },
   showFooter: function(e) {
     e.preventDefault();
-    if ((window.innerHeight + window.scrollY) < document.documentElement.scrollHeight) {
+    if ((window.innerHeight + $(window).scrollTop()) < document.documentElement.scrollHeight) {
       $.scrollTo( 'max', 500 );
     } else {
       //scrolled to the bottom
@@ -118,7 +118,7 @@ OM.Views.MainView = Backbone.View.extend({
 
     view.footerHeight = $('.contact-footer').outerHeight();
     var isContactHeaderFixed = $('.contact-header').hasClass('is-fixed');
-    var isBottomReached = document.documentElement.scrollHeight - view.footerHeight < window.scrollY + window.innerHeight;
+    var isBottomReached = document.documentElement.scrollHeight - view.footerHeight < $(window).scrollTop() + window.innerHeight;
 
     if (isBottomReached && isContactHeaderFixed) {
       $('.contact-header').removeClass('is-fixed');
@@ -136,7 +136,7 @@ OM.Views.MainView = Backbone.View.extend({
 
     var menuBarHeight = $('.menu-bar').outerHeight();
     var isMenuFixed = $('#header').hasClass('is-collapsed');
-    var isHeaderHidden = window.innerHeight - menuBarHeight <= window.scrollY;
+    var isHeaderHidden = window.innerHeight - menuBarHeight <= $(window).scrollTop();
 
     if (isHeaderHidden && ! isMenuFixed) {
       $('#header').addClass('is-collapsed');
