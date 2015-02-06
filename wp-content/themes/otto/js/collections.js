@@ -1,11 +1,11 @@
 OM.Collections.FriendsCollection = Backbone.Collection.extend({
   model: OM.Models.Friend,
-  url: '/wp_api/v1/posts?post_type=friend',
+  url: '/wp_api/v1/posts?post_type=friend&orderby=menu_order&order=ASC',
 });
 
 OM.Collections.LabsCollection = Backbone.Collection.extend({
   model: OM.Models.Lab,
-  url: '/wp_api/v1/posts?post_type=lab',
+  url: '/wp_api/v1/posts?post_type=lab&orderby=menu_order&order=ASC',
 });
 
 OM.Collections.PagesCollection = Backbone.Collection.extend({
@@ -22,10 +22,10 @@ OM.Collections.ProjectsCollection = Backbone.Collection.extend({
 
 OM.Collections.TeamCollection = Backbone.Collection.extend({
   model: OM.Models.Team,
-  url: '/wp_api/v1/posts?post_type=equipo',
+  url: '/wp_api/v1/posts?post_type=equipo&orderby=menu_order&order=ASC',
 });
 
 OM.Collections.NodesCollection = Backbone.Collection.extend({
   model: OM.Models.Team,
-  url: '/wp_api/v1/posts?post_type=colaboradores',
+  url: '/wp_api/v1/posts?post_type=colaboradores&orderby=menu_order&order=ASC',
 });
