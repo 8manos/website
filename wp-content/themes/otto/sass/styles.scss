@@ -1035,6 +1035,7 @@ ul.select {
 
   padding: 1px 0; // chrome bug #363067
   transition: bottom 0.5s;
+  z-index: 0;
 
   .inner-footer {
     padding: 0 5%;

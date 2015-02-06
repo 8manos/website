@@ -1334,42 +1334,43 @@ ul.select {
   position: relative;
   padding: 1px 0;
   -webkit-transition: bottom 0.5s;
-          transition: bottom 0.5s; }
-  /* line 1039, ../sass/styles.scss */
+          transition: bottom 0.5s;
+  z-index: 0; }
+  /* line 1040, ../sass/styles.scss */
   .contact-footer .inner-footer {
     padding: 0 5%; }
-    /* line 1042, ../sass/styles.scss */
+    /* line 1043, ../sass/styles.scss */
     .contact-footer .inner-footer .footer-block {
       text-align: center; }
-  /* line 1048, ../sass/styles.scss */
+  /* line 1049, ../sass/styles.scss */
   .contact-footer .means-wrapper p {
     display: inline-block;
     margin: 0;
     vertical-align: top;
     width: -webkit-calc(100% - 58px);
     width: calc(100% - 58px); }
-  /* line 1056, ../sass/styles.scss */
+  /* line 1057, ../sass/styles.scss */
   .contact-footer ul.select {
     border-color: rgba(0, 0, 0, 0.2);
     z-index: 2; }
-    /* line 1060, ../sass/styles.scss */
+    /* line 1061, ../sass/styles.scss */
     .contact-footer ul.select:after {
       border-color: #FFF transparent transparent; }
-    /* line 1063, ../sass/styles.scss */
+    /* line 1064, ../sass/styles.scss */
     .contact-footer ul.select li.option {
       padding: 0.2em;
       font-size: 1.2em; }
-      /* line 1068, ../sass/styles.scss */
+      /* line 1069, ../sass/styles.scss */
       .contact-footer ul.select li.option [class^="icon-"] {
         padding-left: 0.2em; }
-    /* line 1072, ../sass/styles.scss */
+    /* line 1073, ../sass/styles.scss */
     .contact-footer ul.select li.selected {
       background: none;
       color: #FFF; }
-  /* line 1077, ../sass/styles.scss */
+  /* line 1078, ../sass/styles.scss */
   .contact-footer div.wpcf7-response-output {
     background: white; }
-  /* line 1080, ../sass/styles.scss */
+  /* line 1081, ../sass/styles.scss */
   .contact-footer .otto {
     display: none;
     width: 100%;
@@ -1378,36 +1379,36 @@ ul.select {
     bottom: 0;
     left: 2%;
     z-index: -1; }
-    /* line 1090, ../sass/styles.scss */
+    /* line 1091, ../sass/styles.scss */
     .contact-footer .otto svg {
       width: 100%;
       height: 100%;
       max-height: 20em; }
   @media screen and (min-width: 48em) {
-    /* line 1098, ../sass/styles.scss */
+    /* line 1099, ../sass/styles.scss */
     .contact-footer .inner-footer {
       width: 88%;
       margin: 2% auto 0; }
-      /* line 1102, ../sass/styles.scss */
+      /* line 1103, ../sass/styles.scss */
       .contact-footer .inner-footer .footer-block {
         padding: 0 5%; }
-    /* line 1106, ../sass/styles.scss */
+    /* line 1107, ../sass/styles.scss */
     .contact-footer div.name,
     .contact-footer div.medium {
       display: inline-block;
       width: 45%;
       vertical-align: top; }
-    /* line 1112, ../sass/styles.scss */
+    /* line 1113, ../sass/styles.scss */
     .contact-footer div.medium {
       margin-left: 9%; }
-    /* line 1115, ../sass/styles.scss */
+    /* line 1116, ../sass/styles.scss */
     .contact-footer .otto {
       display: block; } }
   @media screen and (min-height: 48em) {
-    /* line 1120, ../sass/styles.scss */
+    /* line 1121, ../sass/styles.scss */
     .contact-footer .otto {
       display: block; }
-    /* line 1123, ../sass/styles.scss */
+    /* line 1124, ../sass/styles.scss */
     .contact-footer .inner-footer {
       padding-top: 4%; } }
   @media screen and (min-width: 60em) {
@@ -1416,44 +1417,44 @@ ul.select {
       width: 100%;
       position: fixed;
       bottom: 0; }
-      /* line 1134, ../sass/styles.scss */
+      /* line 1135, ../sass/styles.scss */
       .contact-footer .inner-footer .footer-form {
         width: 80%; }
-      /* line 1137, ../sass/styles.scss */
+      /* line 1138, ../sass/styles.scss */
       .contact-footer .inner-footer .footer-block {
         padding: 0; }
-      /* line 1140, ../sass/styles.scss */
+      /* line 1141, ../sass/styles.scss */
       .contact-footer .inner-footer .contact-block {
         margin: 0 0 0 8%; } }
   @media screen and (min-width: 72em) {
-    /* line 1146, ../sass/styles.scss */
+    /* line 1147, ../sass/styles.scss */
     .contact-footer .otto {
       max-width: 25em; }
-    /* line 1149, ../sass/styles.scss */
+    /* line 1150, ../sass/styles.scss */
     .contact-footer .inner-footer {
       width: 84%; }
-      /* line 1152, ../sass/styles.scss */
+      /* line 1153, ../sass/styles.scss */
       .contact-footer .inner-footer .footer-form {
         width: 75%; }
-      /* line 1155, ../sass/styles.scss */
+      /* line 1156, ../sass/styles.scss */
       .contact-footer .inner-footer .footer-block {
         margin-top: 3em; }
-      /* line 1158, ../sass/styles.scss */
+      /* line 1159, ../sass/styles.scss */
       .contact-footer .inner-footer .contact-block {
         margin: 0 0 0 10%; } }
   @media screen and (min-width: 78em) {
-    /* line 1168, ../sass/styles.scss */
+    /* line 1169, ../sass/styles.scss */
     .contact-footer .inner-footer .footer-form {
       width: 70%; } }
 
-/* line 1174, ../sass/styles.scss */
+/* line 1175, ../sass/styles.scss */
 label {
   display: block;
   font-weight: bold;
   padding: 1.125em 0;
   font-size: 0.875em; }
 
-/* line 1180, ../sass/styles.scss */
+/* line 1181, ../sass/styles.scss */
 input,
 textarea {
   width: 100%;
@@ -1462,45 +1463,45 @@ textarea {
   background: #ECECEC;
   box-sizing: border-box; }
 
-/* line 1188, ../sass/styles.scss */
+/* line 1189, ../sass/styles.scss */
 textarea {
   resize: vertical;
   /*max-height:300px;*/ }
 
-/* line 1192, ../sass/styles.scss */
+/* line 1193, ../sass/styles.scss */
 select {
   font-family: icomoon;
   overflow: hidden; }
 
-/* line 1196, ../sass/styles.scss */
+/* line 1197, ../sass/styles.scss */
 .submit {
   text-align: center;
   margin-bottom: 60px; }
-  /* line 1200, ../sass/styles.scss */
+  /* line 1201, ../sass/styles.scss */
   .submit input[type="submit"] {
     font-weight: bold;
     text-transform: uppercase;
     padding: 10px 35px;
     color: #FFF; }
 
-/* line 1208, ../sass/styles.scss */
+/* line 1209, ../sass/styles.scss */
 .contact-block {
   display: block;
   vertical-align: top; }
-  /* line 1212, ../sass/styles.scss */
+  /* line 1213, ../sass/styles.scss */
   .contact-block .contact-links {
     margin-top: 0;
     list-style: none;
     padding: 0;
     font-size: 37px; }
-    /* line 1218, ../sass/styles.scss */
+    /* line 1219, ../sass/styles.scss */
     .contact-block .contact-links li {
       display: inline-block;
       width: 36px;
       overflow: hidden;
       -webkit-transition: all 0.3s;
               transition: all 0.3s; }
-      /* line 1224, ../sass/styles.scss */
+      /* line 1225, ../sass/styles.scss */
       .contact-block .contact-links li:hover {
         -webkit-transform: scale(1.25);
             -ms-transform: scale(1.25);
@@ -1509,13 +1510,13 @@ select {
 /* ==========================================================================
    Games
    ========================================================================== */
-/* line 1236, ../sass/styles.scss */
+/* line 1237, ../sass/styles.scss */
 a,
 .color {
   -webkit-transition: all 0.2s linear;
           transition: all 0.2s linear; }
 
-/* line 1241, ../sass/styles.scss */
+/* line 1242, ../sass/styles.scss */
 .color-bg {
   -webkit-transition: background-color 0.2s linear;
           transition: background-color 0.2s linear; }
@@ -1524,16 +1525,16 @@ a,
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-/* line 1251, ../sass/styles.scss */
+/* line 1252, ../sass/styles.scss */
 .aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 1252, ../sass/styles.scss */
+/* line 1253, ../sass/styles.scss */
 .alignleft {
   float: left; }
 
-/* line 1253, ../sass/styles.scss */
+/* line 1254, ../sass/styles.scss */
 .alignright {
   float: right; }
 
@@ -1541,25 +1542,25 @@ a,
    Responsive
    ========================================================================== */
 @media screen and (min-width: 35em) {
-  /* line 1261, ../sass/styles.scss */
+  /* line 1262, ../sass/styles.scss */
   input[type="submit"] {
     width: auto;
     display: inline-block; }
 
-  /* line 1265, ../sass/styles.scss */
+  /* line 1266, ../sass/styles.scss */
   .contact-block {
     display: inline-block;
     margin: 0 6%;
     text-align: center; }
-    /* line 1270, ../sass/styles.scss */
+    /* line 1271, ../sass/styles.scss */
     .contact-block h4 {
       margin-bottom: 0.5em; }
 
-  /* line 1274, ../sass/styles.scss */
+  /* line 1275, ../sass/styles.scss */
   label {
     padding: 0.625em 0; }
 
-  /* line 1277, ../sass/styles.scss */
+  /* line 1278, ../sass/styles.scss */
   .contact-header .footer-toggle {
     padding: 0 3.8em; } }
 
