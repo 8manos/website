@@ -49,5 +49,5 @@
       </ul>
     </article>
   <% }); %>
-  <p class="close-search color"> <b>¿Te gusta el FOOS?</b> <br> <span>Únete como coolaborador. :-)</span></p>
+  <p class="close-search color"> <b>¿Te gusta el FOSS?</b> <br> <span>Únete como coolaborador. :-)</span></p>
 </script>

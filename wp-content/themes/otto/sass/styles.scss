@@ -594,7 +594,8 @@ ul.select {
 
 .project {
   background-color: $gris;
-  margin: 0.5em 0;
+  box-shadow: 0 -2px 6px -2px #666;
+  margin: 1em 0;
   padding: 1em 0;
   position: relative;
 
