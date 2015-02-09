@@ -47,8 +47,10 @@ $(document).on('ready', function(){
     var href = $(this).attr('href');
     var linkPath = urlPath(href);
     if (isRelativeUrl(linkPath)) {
-      e.preventDefault();
-      Backbone.history.navigate(linkPath, {trigger: true});
+      navigateOk = Backbone.history.navigate(linkPath, {trigger: true});
+      if (navigateOk) {
+        e.preventDefault();
+      }
     }
   });
 
