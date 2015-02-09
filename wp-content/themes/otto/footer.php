@@ -297,13 +297,5 @@
 		ga('create', 'UA-18501899-1', 'auto');
 		ga('send', 'pageview');
 	</script>
-	<script src="<?php bloginfo('template_directory'); ?>/js/init.js"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/js/app.js"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/js/models.js"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/js/collections.js"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/js/routers.js"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/js/views.js"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/js/time.js"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/js/contrast.js"></script>
 </body>
 </html>
