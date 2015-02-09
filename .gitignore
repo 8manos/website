@@ -2,6 +2,7 @@ expreso
 midatacredito
 test
 wp-content/plugins/wp-gallery-cycle
+wp-content/plugins/bwp-minify/cache
 .htaccess
 /wp-*.php
 xmlrpc.php
