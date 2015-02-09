@@ -53,7 +53,7 @@
       </div>
       <% } %>
       <figure>
-        <img src="<%= post.images.project %>" srcset="<%= post.images.projectth %> 300w, <%= post.images.projectth2x %> 600w, <%= post.images.projectth3x %> 900w" sizes="90vw, (min-width: 45em) 45vw, (min-width: 90em) 30vw" alt="<%= post.title %>">
+        <img src="<%= post.images.projectth2x %>" srcset="<%= post.images.projectth %> 300w, <%= post.images.projectth2x %> 600w, <%= post.images.projectth3x %> 900w" sizes="90vw, (min-width: 45em) 45vw, (min-width: 90em) 30vw" alt="<%= post.title %>">
       </figure>
 
       <div class="more-info">

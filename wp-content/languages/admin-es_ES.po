@@ -1182,8 +1182,8 @@ msgid "WordPress %1$s running %2$s theme."
 msgstr "WordPress %1$s funciona con el tema %2$s."
 
 #: wp-admin/includes/class-wp-upgrader.php:2024
-#: wp-admin/includes/update-core.php:817 wp-admin/includes/update-core.php:892
-#: wp-admin/includes/update-core.php:915
+#: wp-admin/includes/update-core.php:818 wp-admin/includes/update-core.php:893
+#: wp-admin/includes/update-core.php:916
 msgid "The update cannot be installed because we will be unable to copy some files. This is usually due to inconsistent file permissions."
 msgstr "No se ha podido instalar la actualización debido a que no se han podido copiar algunos archivos. Normalmente esto es debido a permisos de archivo inconsistentes."
 
@@ -1353,7 +1353,7 @@ msgstr "Actualizando tema: %s"
 msgid "Updating plugin: %s"
 msgstr "Actualizando plugin: %s"
 
-#: wp-admin/includes/update-core.php:948
+#: wp-admin/includes/update-core.php:949
 msgid "There is not enough free disk space to complete the update."
 msgstr "No hay suficiente espacio en disco para completar la actualización."
 
@@ -1377,7 +1377,7 @@ msgstr "Actualizar a una versión más nueva del mismo tema sobrescribirá los c
 msgid "Create a brand new user and add them to this site."
 msgstr "Crea un nuevo usuario y añádelo a este sitio."
 
-#: wp-admin/includes/update-core.php:905
+#: wp-admin/includes/update-core.php:906
 msgid "Copying the required files&#8230;"
 msgstr "Copiando los archivos necesarios&#8230;"
 
@@ -1475,7 +1475,7 @@ msgstr "La suma de verificación del archivo (%1$s) no coincide con el valor de 
 msgid "This password will not be stored on the server."
 msgstr "Esta contraseña no se almacenará en el servidor."
 
-#: wp-admin/includes/update-core.php:845
+#: wp-admin/includes/update-core.php:846
 msgid "Preparing to install the latest version&#8230;"
 msgstr "Preparando para instalar la última versión&#8230;"
 
@@ -2333,7 +2333,7 @@ msgstr "Obtener favoritos"
 msgid "The \"%s\" options group has been removed. Use another settings group."
 msgstr "El grupo de opciones \"%s\" ha sido eliminado. Utiliza otro grupo de ajustes."
 
-#: wp-admin/includes/update-core.php:1174 wp-admin/update-core.php:431
+#: wp-admin/includes/update-core.php:1175 wp-admin/update-core.php:431
 msgid "Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href=\"%2$s\">here</a>."
 msgstr "Bienvenido a WordPress %1$s. Serás redirigido a la pantalla Sobre WordPress. Si no es así, haz clic <a href=\"%2$s\">aquí</a>."
 
@@ -3612,7 +3612,7 @@ msgstr "Esta pantalla te permite elegir la estructura de enlaces permanentes. Pu
 msgid "Return to Updates"
 msgstr "Volver a las actualizaciones"
 
-#: wp-admin/includes/update-core.php:1175 wp-admin/update-core.php:432
+#: wp-admin/includes/update-core.php:1176 wp-admin/update-core.php:432
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "Bienvenido a WordPress %1$s. <a href=\"%2$s\">Aprende más</a>."
 
@@ -6460,7 +6460,7 @@ msgid "User already exists. Password inherited."
 msgstr "El usuario ya existe. No se ha modificado la contraseña."
 
 #: wp-admin/includes/class-wp-upgrader.php:2671
-#: wp-admin/includes/update-core.php:1171 wp-admin/update-core.php:430
+#: wp-admin/includes/update-core.php:1172 wp-admin/update-core.php:430
 msgid "WordPress updated successfully"
 msgstr "WordPress ha sido actualizado correctamente"
 
@@ -7198,11 +7198,11 @@ msgstr "Ha sido imposible localizar el directorio de temas de WordPress."
 msgid "Could not fully remove the theme %s."
 msgstr "No se pudo eliminar completamente el tema %s."
 
-#: wp-admin/includes/update-core.php:796
+#: wp-admin/includes/update-core.php:797
 msgid "Verifying the unpacked files&#8230;"
 msgstr "Verificando los archivos descomprimidos&#8230;"
 
-#: wp-admin/includes/update-core.php:809
+#: wp-admin/includes/update-core.php:810
 msgid "The update could not be unpacked"
 msgstr "No se ha podido descomprimir la actualización."
 
@@ -8159,7 +8159,7 @@ msgstr "Publicar por correo electrónico"
 msgid "Version: %s"
 msgstr "Versión: %s"
 
-#: wp-admin/includes/update-core.php:838
+#: wp-admin/includes/update-core.php:839
 msgid "The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
 msgstr "La actualización no se pudo instalar a causa de que  WordPress %1$s requiere la versión %2$s o superior de PHP y la versión %3$s o superior de MySQL. Estás usando la versión %4$s de PHP y la versión %5$s de MySQL."
 
@@ -8167,11 +8167,11 @@ msgstr "La actualización no se pudo instalar a causa de que  WordPress %1$s req
 msgid "You are using a development version (%1$s). Cool! Please <a href=\"%2$s\">stay updated</a>."
 msgstr "Estás usando una versión en desarrollo (%1$s). ¡Mola! Por favor, <a href=\"%2$s\">mantente actualizado</a>."
 
-#: wp-admin/includes/update-core.php:840
+#: wp-admin/includes/update-core.php:841
 msgid "The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher. You are running version %3$s."
 msgstr "La actualización no puede instalarse ya que WordPress %1$s requiere la versión %2$s o superior de PHP. Estás usando la versión %3$s."
 
-#: wp-admin/includes/update-core.php:842
+#: wp-admin/includes/update-core.php:843
 msgid "The update cannot be installed because WordPress %1$s requires MySQL version %2$s or higher. You are running version %3$s."
 msgstr "La actualización no puede instalarse porque WordPress %1$s requiere la versión %2$s o superior de MySQL. Estás usando la versión %3$s."
 
@@ -8278,7 +8278,7 @@ msgstr "%s consultas"
 msgid "Media Settings"
 msgstr "Ajustes multimedia"
 
-#: wp-admin/includes/update-core.php:1052
+#: wp-admin/includes/update-core.php:1053
 msgid "Upgrading database&#8230;"
 msgstr "Actualizando la base de datos&#8230;"
 
@@ -9359,12 +9359,12 @@ msgstr "La carpeta ya existe."
 
 #: wp-admin/includes/class-wp-upgrader.php:133 wp-admin/includes/file.php:632
 #: wp-admin/includes/file.php:735 wp-admin/includes/file.php:786
-#: wp-admin/includes/update-core.php:1125
+#: wp-admin/includes/update-core.php:1126
 msgid "Could not create directory."
 msgstr "No ha sido posible crear el directorio"
 
 #: wp-admin/includes/class-wp-upgrader.php:136
-#: wp-admin/includes/update-core.php:897
+#: wp-admin/includes/update-core.php:898
 msgid "Enabling Maintenance mode&#8230;"
 msgstr "Activando el modo mantenimiento&#8230;"
 
@@ -9524,8 +9524,8 @@ msgid "Could not extract file from archive."
 msgstr "No podemos descomprimir el archivo."
 
 #: wp-admin/includes/file.php:651 wp-admin/includes/file.php:748
-#: wp-admin/includes/file.php:781 wp-admin/includes/update-core.php:1017
-#: wp-admin/includes/update-core.php:1120
+#: wp-admin/includes/file.php:781 wp-admin/includes/update-core.php:1018
+#: wp-admin/includes/update-core.php:1121
 msgid "Could not copy file."
 msgstr "No ha sido posible copiar el archivo."
 
@@ -10073,7 +10073,7 @@ msgid "Incompatible Archive."
 msgstr "Archivo incompatible."
 
 #: wp-admin/includes/class-wp-upgrader.php:137
-#: wp-admin/includes/update-core.php:980
+#: wp-admin/includes/update-core.php:981
 msgid "Disabling Maintenance mode&#8230;"
 msgstr "Desactivando el modo de mantenimiento&#8230;"
 
