@@ -319,27 +319,29 @@ OM.Views.TeamView = Backbone.View.extend({
     return this;
   },
   chooseTeam: function(e){
-    var teamName = '';
-    if(e){
-      teamName = $(e.currentTarget).context.classList[0];
+    if(!e){
+      newCollection = new OM.Collections.TeamCollection();
+      $('.active-team').removeClass('active-team color-bg').css('background-color', '');
+      $('.team-core').addClass('active-team color-bg');
     }
     else{
-      teamName = 'team-core';
-    }
-
-    $('.active-team').removeClass('active-team color-bg').css('background-color', '');
-    $('.'+teamName).addClass('active-team color-bg');
-
-    var newCollection = {};
-    //newCollection changes according to teamName
-    if(teamName == 'team-core'){
-      newCollection = new OM.Collections.TeamCollection();
-    }
-    else if(teamName == 'team-nodes'){
-      newCollection = new OM.Collections.NodesCollection();
-    }
-    else if(teamName == 'team-friends'){
-      newCollection = new OM.Collections.FriendsCollection();
+      var newCollection = {};
+      //newCollection changes according to teamName
+      if($(e.currentTarget).hasClass('team-core')){
+        newCollection = new OM.Collections.TeamCollection();
+        $('.active-team').removeClass('active-team color-bg').css('background-color', '');
+        $('.team-core').addClass('active-team color-bg');
+      }
+      else if($(e.currentTarget).hasClass('team-nodes')){
+        newCollection = new OM.Collections.NodesCollection();
+        $('.active-team').removeClass('active-team color-bg').css('background-color', '');
+        $('.team-nodes').addClass('active-team color-bg');
+      }
+      else if($(e.currentTarget).hasClass('team-friends')){
+        newCollection = new OM.Collections.FriendsCollection();
+        $('.active-team').removeClass('active-team color-bg').css('background-color', '');
+        $('.team-friends').addClass('active-team color-bg');
+      }
     }
     this.renderTeam(newCollection)
   },
