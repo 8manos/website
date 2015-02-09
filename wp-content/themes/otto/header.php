@@ -18,7 +18,6 @@
 
 	<?php
 	wp_enqueue_style( 'otto-css', get_template_directory_uri().'/css/styles.css', '', '', 'all' );
-	wp_enqueue_script( 'otto-modernizr', get_template_directory_uri().'/js/lib/modernizr.js', array(), '2.5.2', false );
 	wp_enqueue_script( 'otto-plugins', get_template_directory_uri().'/js/lib/plugins.js', array( 'jquery' ), '2.5.2', true );
 	wp_enqueue_script( 'owl', get_template_directory_uri().'/js/lib/owl.carousel.min.js', array(), '2.0.0', true );
 	wp_enqueue_script( 'scrollTo', get_template_directory_uri().'/js/lib/jquery.scrollTo.min.js', array(), '1.4.13', true );
@@ -31,7 +30,6 @@
 	wp_enqueue_script('routers', get_template_directory_uri().'/js/routers.js', array(), '', true);
 	wp_enqueue_script('views', get_template_directory_uri().'/js/views.js', array(), '', true);
 	wp_enqueue_script('time', get_template_directory_uri().'/js/time.js', array(), '', true);
-	wp_enqueue_script('contrast', get_template_directory_uri().'/js/contrast.js', array(), '', true);
 	wp_head();
 	?>
 
