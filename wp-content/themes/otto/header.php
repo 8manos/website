@@ -18,6 +18,7 @@
 
 	<?php
 	wp_enqueue_style( 'otto-css', get_template_directory_uri().'/css/styles.css', '', '', 'all' );
+	wp_enqueue_script( 'picturefill', get_template_directory_uri().'/js/lib/picturefill.min.js', array(), '2.2.0', false);
 	wp_enqueue_script( 'otto-plugins', get_template_directory_uri().'/js/lib/plugins.js', array( 'jquery' ), '2.5.2', true );
 	wp_enqueue_script( 'owl', get_template_directory_uri().'/js/lib/owl.carousel.min.js', array(), '2.0.0', true );
 	wp_enqueue_script( 'scrollTo', get_template_directory_uri().'/js/lib/jquery.scrollTo.min.js', array(), '1.4.13', true );
