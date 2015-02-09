@@ -289,11 +289,14 @@
 
 	<?php wp_footer(); ?>
 
-	<!-- Google Analytics - Optimized version by Mathias Bynens -->
-	<!-- See: http://mathiasbynens.be/notes/async-analytics-snippet -->
-	<!-- Change the UA-XXXX-XX string to your site's ID -->
 	<script>
-		var _gaq=[['_setAccount','UA-XXXX-XX'],['_trackPageview']];(function(a,b){var c=a.createElement(b),d=a.getElementsByTagName(b)[0];c.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";d.parentNode.insertBefore(c,d)})(document,"script");
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-18501899-1', 'auto');
+		ga('send', 'pageview');
 	</script>
 	<script src="<?php bloginfo('template_directory'); ?>/js/init.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/js/app.js"></script>
