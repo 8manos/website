@@ -46,7 +46,7 @@
     $( 'a, .color' ).not( '.main-nav a, .language-switch a').css( 'color', colorW );
     $( '.color-bg' ).css( 'background-color', colorW );
     $( '.color-against-black' ).css( 'color', colorB );
-    $( '#otto').css('fill', colorB );
+    $( '.svg-otto').css('fill', colorB );
 
     setTimeout(doTime, 1000);
   }
