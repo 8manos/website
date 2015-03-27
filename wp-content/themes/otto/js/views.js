@@ -240,7 +240,7 @@ OM.Views.ProjectsView = Backbone.View.extend({
           lazyLoad:true,
           dots: false,
           nav: true,
-          navText: ['&#60;','&#62;'],
+          //navText: ['&#60;','&#62;'],
           onLoadedLazy: function(){
             $items = $carousel.find('.owl-item');
             $items.css('height', 'auto');

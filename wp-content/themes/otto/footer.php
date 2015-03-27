@@ -31,7 +31,7 @@
 			</div>
 		</div>
 		<div class="otto">
-			<svg id="otto" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="128px" height="113px" viewBox="0 0 128 113" enable-background="new 0 0 128 113"
+			<svg id="otto" class="svg-otto" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="128px" height="113px" viewBox="0 0 128 113" enable-background="new 0 0 128 113"
 			xml:space="preserve">
 				<defs>
 				</defs>

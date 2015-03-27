@@ -1,5 +1,6 @@
 OM.Routers.Router = Backbone.Router.extend({
   initialize: function(options){
+    this.bind('route', this.trackPageview);
     this.pages = options.pages;
     this.route('/', 'root');
     this.route(options.urls[0], 'principles');
@@ -8,6 +9,16 @@ OM.Routers.Router = Backbone.Router.extend({
     this.route(options.urls[3], 'portfolio');
     this.route(options.urls[4], 'lab');
     this.route(options.urls[6], 'style_guide');
+  },
+  trackPageview: function () {
+    var url = Backbone.history.getFragment();
+
+    //prepend slash
+    if (!/^\//.test(url) && url != "") {
+      url = "/" + url;
+    }
+
+    ga('send', 'pageview', url);
   },
   root: function(){
     console.log('Main menu');
