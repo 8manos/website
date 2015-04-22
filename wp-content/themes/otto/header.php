@@ -34,6 +34,8 @@
 	wp_head();
 	?>
 
+	<meta property="og:image" content="http://8manos.com/favicon-194x194.png" />
+
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
