@@ -4,8 +4,8 @@ OM.Views.MainView = Backbone.View.extend({
     'click .menu-toggle': 'toggleMenu',
     'click .main-nav .menu-item a': 'hideMenu',
     'click main a': 'hideMenu',
-    'click .main-nav .menu-item:nth-child(6) a': 'showFooter',
-    'click .footer-toggle': 'showFooter',
+    'click .main-nav .menu-item:nth-child(6) a': 'contactClick',
+    'click .footer-toggle': 'footerToggle',
     'click .footer-close': 'hideFooter',
     'click .current-lang': 'toggleLangs',
     //'change #contact-medium': 'changeInputType',
@@ -62,7 +62,9 @@ OM.Views.MainView = Backbone.View.extend({
     e.preventDefault();
     if ($(window).scrollTop() > 0) {
       $.scrollTo( 0, 500 );
+      ga('send', 'event', 'button', 'click', 'menu', 'open');
     } else {
+      ga('send', 'event', 'button', 'click', 'menu', 'close');
       this.hideMenu(true);
     }
   },
@@ -75,14 +77,25 @@ OM.Views.MainView = Backbone.View.extend({
       $.scrollTo( menuHeight, 0 );
     }
   },
-  showFooter: function(e) {
+  contactClick: function(e) {
+    e.preventDefault();
+    ga('send', 'event', 'button', 'click', 'contacto');
+    this.showFooter();
+  },
+  footerToggle: function(e) {
     e.preventDefault();
     if ((window.innerHeight + $(window).scrollTop()) < document.documentElement.scrollHeight) {
-      $.scrollTo( 'max', 500 );
+      ga('send', 'event', 'button', 'click', 'yo quiero', 'open');
+      this.showFooter();
     } else {
       //scrolled to the bottom
+      ga('send', 'event', 'button', 'click', 'yo quiero', 'close');
       this.hideFooter();
     }
+  },
+  showFooter: function() {
+    $.scrollTo( 'max', 500 );
+    return false;
   },
   hideFooter: function() {
     var scrollOffset = document.documentElement.scrollHeight - window.innerHeight - $('.contact-footer').outerHeight();
@@ -163,7 +176,12 @@ OM.Views.LabsView = Backbone.View.extend({
   clickToggle: function(e) {
     var $project = $(e.currentTarget).parent();
     $(e.currentTarget).toggleClass('more less');
-    $project.find('.more-info').slideToggle();
+    var $moreInfo = $project.find('.more-info');
+    if ($moreInfo.is(':hidden')) {
+      var title = $project.find('.project-title').text();
+      ga('send', 'event', 'button', 'click', 'lab-more', title);
+    }
+    $moreInfo.slideToggle();
     $.scrollTo( $project, 500, {offset: {top:-50}} );
   }
 });
@@ -231,7 +249,14 @@ OM.Views.ProjectsView = Backbone.View.extend({
     var $project = $(e.currentTarget).parent();
     $project.toggleClass('on off');
     $project.find('.toggle-details').toggleClass('more less');
-    $project.find('.more-info').slideToggle(function(){
+
+    var $moreInfo = $project.find('.more-info');
+    if ($moreInfo.is(':hidden')) {
+      var title = $project.find('.project-title').text();
+      ga('send', 'event', 'button', 'click', 'work-more', title);
+    }
+
+    $moreInfo.slideToggle(function(){
       if($(this).is(':visible')){
         var $carousel = $project.find('.owl-carousel');
         $carousel.owlCarousel({
@@ -299,7 +324,14 @@ OM.Views.PersonsView = Backbone.View.extend({
     var $person = $(e.currentTarget).parent();
     $person.toggleClass('abierto cerrado');
     $(e.currentTarget).toggleClass('more less');
-    $person.find('.person-info').slideToggle();
+
+    var $personInfo = $person.find('.person-info');
+    if ($personInfo.is(':hidden')) {
+      var title = $person.find('.person-name').text();
+      ga('send', 'event', 'button', 'click', 'team-more', title);
+    }
+
+    $personInfo.slideToggle();
     $.scrollTo( $person, 500, {offset: {top:-100}} );
   }
 });
@@ -331,16 +363,19 @@ OM.Views.TeamView = Backbone.View.extend({
         newCollection = new OM.Collections.TeamCollection();
         $('.active-team').removeClass('active-team color-bg').css('background-color', '');
         $('.team-core').addClass('active-team color-bg');
+        ga('send', 'event', 'button', 'click', 'team-tab', 'nucleo');
       }
       else if($(e.currentTarget).hasClass('team-nodes')){
         newCollection = new OM.Collections.NodesCollection();
         $('.active-team').removeClass('active-team color-bg').css('background-color', '');
         $('.team-nodes').addClass('active-team color-bg');
+        ga('send', 'event', 'button', 'click', 'team-tab', 'nodos');
       }
       else if($(e.currentTarget).hasClass('team-friends')){
         newCollection = new OM.Collections.FriendsCollection();
         $('.active-team').removeClass('active-team color-bg').css('background-color', '');
         $('.team-friends').addClass('active-team color-bg');
+        ga('send', 'event', 'button', 'click', 'team-tab', 'amigos');
       }
     }
     this.renderTeam(newCollection)
