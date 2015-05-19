@@ -162,7 +162,7 @@ OM.Views.MainView = Backbone.View.extend({
 OM.Views.LabsView = Backbone.View.extend({
   el: '.lab-wrapper',
   events: {
-    'click .toggle-details': 'clickToggle'
+    'click .toggle-details, .project-title': 'clickToggle'
   },
   initialize: function(){
     this.template = _.template($('#labsTemplate').html());
@@ -175,7 +175,7 @@ OM.Views.LabsView = Backbone.View.extend({
   },
   clickToggle: function(e) {
     var $project = $(e.currentTarget).parent();
-    $(e.currentTarget).toggleClass('more less');
+    $project.find('.toggle-details').toggleClass('more less');
     var $moreInfo = $project.find('.more-info');
     if ($moreInfo.is(':hidden')) {
       var title = $project.find('.project-title').text();
@@ -229,7 +229,7 @@ OM.Views.PageView = Backbone.View.extend({
 OM.Views.ProjectsView = Backbone.View.extend({
   el: '.works-wrapper',
   events: {
-    'click .toggle-details': 'clickToggle'
+    'click .toggle-details, .project-title': 'clickToggle'
   },
   initialize: function(){
     this.template = _.template($('#projectsTemplate').html());
@@ -309,7 +309,7 @@ OM.Views.PortfolioView = Backbone.View.extend({
 
 OM.Views.PersonsView = Backbone.View.extend({
   events: {
-    'click .toggle-details': 'clickToggle'
+    'click .toggle-details, figure, .person-name': 'clickToggle'
   },
   initialize: function(){
     this.template = _.template($('#personsTemplate').html());
@@ -322,8 +322,9 @@ OM.Views.PersonsView = Backbone.View.extend({
   },
   clickToggle: function(e) {
     var $person = $(e.currentTarget).parent();
+    var $button = $person.find('.toggle-details');
     $person.toggleClass('abierto cerrado');
-    $(e.currentTarget).toggleClass('more less');
+    $button.toggleClass('more less');
 
     var $personInfo = $person.find('.person-info');
     if ($personInfo.is(':hidden')) {
